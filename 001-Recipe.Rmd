@@ -1,0 +1,17 @@
+# Recipe - Changing chords
+
+1.  Three clips in each track.
+
+2.  Stacked chords (8 notes or so) from A minor, D minor, G minor in each clip within tracks, avoiding notes that are specific to each scale in the clip. Use Scales in Ableton to help. (scales are arbitrary, but next door to each other in the cycle of 5ths - <https://en.wikipedia.org/wiki/Circle_of_fifths>)
+
+3.  Use random note probability (Live 11, remember) set at about 50-60% probability so that each time the clip triggers, the note choice / chord is different.
+
+4.  Clip lengths vary between tracks. 16 bars, 15, 14 13. (The important thing is not the clip length, but the fact that they vary across tracks)
+
+5.  Vary clip lengths between scenes within tracks. So a track that has 16 in clip 1, maybe has 15 or 14 in clip 2. (Similarly the exact length is unimportant. You don't want to have them being the same is the important point).
+
+6.  Use follow actions to progress to Next clip at end of each clip.
+
+7.  Choose sounds that make a nice noise together. Could be pads, arpeggios, textures etc.
+
+8.  Press play. Sit back and relax.
