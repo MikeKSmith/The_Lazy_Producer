@@ -24,4 +24,9 @@
 
 You can hear one instance of this track here: <https://soundcloud.com/mikeksmith/recipe-changing-chords/s-LNeHFk2AeCI>
 
+```{r, echo=FALSE, results="asis"}
+htmltools::includeHTML(path = "Recipe1-Changing_Chords.html")
+
+```
+
 (I say "one instance" because this is generative and uses probability. So the next time I render the track it could well sound different. Similar, but different.)
