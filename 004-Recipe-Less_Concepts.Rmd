@@ -27,3 +27,15 @@
 13. Experiment with different seed values in Less Concepts. If you're feeling brave you can try different rules as well, although these have a more radical effect.
 
 14. Note that although the transport is running, no MIDI information is being captured or stored. If you wish to capture the MIDI for later gardening, you should arm the tracks for recording and press the "record" button on the transport.
+
+15. Sit back and enjoy endless piano riffs.
+
+## Extra enhancements
+
+1.  Add a Velocity MIDI plugin before the Upright Piano. Scale the "Out Hi" parameter to a low value (below 64). Add Randomness to the velocity. You may wish to increase the "Drive" setting of the plugin. This will make the Upright piano vary the sounds more due to lower velocity settings.
+
+2.  Add a Note Length MIDI plugin to the Less Concepts track and automate the note length using an LFO modulator. Place the LFO plugin on the Less Concepts track and map the LFO to the Note Length parameter.
+
+3.  As an alternative to the LFO modulator, you may wish to download and save Max For Live device Strange Mod modulator from <https://maxforlive.com/library/device/6872/strange-mod>. You can try the plugin for free, but I suggest a small donation to the developer, Dillon Bastan. Suggested donation is \$5+. Save the plugin to your User_Library, and place the plugin on the Less Concepts track. Map the X parameter of the Strange Mod plugin to Time Length parameter of the Note Length MIDI plugin, and map the Y parameter to the Gate parameter.
+
+4.  Smother it in delay and reverb. Add Return channels with effects like Delay or Echo, Reverb. Use the Send dials to send your audio to reverb and delay effects.
