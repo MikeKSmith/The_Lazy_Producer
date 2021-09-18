@@ -1,3 +1,5 @@
+------------------------------------------------------------------------
+
 # Recipe - Changing chords
 
 1.  Start with three MIDI tracks.
@@ -17,3 +19,9 @@
 8.  Choose sounds for each track that make a nice noise together. Could be pads, arpeggios, textures etc. Arpeggios and sounds that evolve are particularly useful in this recipe. You can automate parameters within clips as well to introduce additional movement in the sound. An important point is that the sound shouldn't be too static.
 
 9.  Press play. Sit back and relax.
+
+------------------------------------------------------------------------
+
+You can hear one instance of this track here: <https://soundcloud.com/mikeksmith/recipe-changing-chords/s-LNeHFk2AeCI>
+
+(I say "one instance" because this is generative and uses probability. So the next time I render the track it could well sound different. Similar, but different.)
