@@ -6,13 +6,13 @@ One clear use of this is in drum parts. You can program the core drum part that 
 
 ------------------------------------------------------------------------
 
-## Key idea
+## Key idea {.unnumbered}
 
 Varying parts as they play through the song adds interest as it stops the listener getting bored of "the same old pattern". Too much randomness ***is*** difficult to listen to, so balancing the unexpected with something predictable is the sweet spot.
 
 ------------------------------------------------------------------------
 
-But the note-wise probability extends beyond drum parts, and even lead parts.
+But the note-wise probability extends beyond drum parts and lead parts.
 
 In Idea 1 Recipe - Changing Chords, I have suggested using probability on chords. If you add 8 MIDI notes in a chord and specify 50% probability for all of them, then Ableton is going to (effectively) toss a coin 8 times to choose which notes to play. Now, when we toss a coin 8 times, we don't always get 4 heads and 4 tails. Sometimes we get 3 heads, 5 tails (or vice versa), and occasionally outcomes like 2 heads, 6 tails. Imagine if in the coin toss, heads means that Ableton plays the note. Then the number of notes that gets played will vary each time the chord is played - sometimes it will be 3, sometimes 6 etc. This means that you can specify as many notes as you like, and tune the probability until you get something that you like the sound of, depending on whether you want more or fewer notes in the resulting chord. It also means that careful choice of notes from the scale within the chord allows you to sometimes get rich, complex chords, sometimes chord inversions.
 

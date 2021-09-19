@@ -1,6 +1,5 @@
 recipe---changing-chords
 process---note-wise-probability
-key-idea
 tools-and-plugins---the-probability-pack-probability-arp
 recipe---less-concepts
 extra-enhancements
