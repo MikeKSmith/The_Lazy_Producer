@@ -14,7 +14,7 @@
 
 6.  ALSO, vary clip lengths between scenes ***within*** tracks. So a track that has 16 in clip 1, maybe has 15 bar loop in clip 2 and 14 bar loop in clip 3. Similarly, the exact length is unimportant. The important thing is that the clip lengths vary both within tracks and between tracks. AVOID having the same clip lengths in the same scenes.
 
-7.  Set up Follow Actions to progress to Next clip at end of each clip.
+7.  Set up Follow Actions to progress to Next clip at end of each clip with 100% probability.
 
 8.  Choose sounds for each track that make a nice noise together. Could be pads, arpeggios, textures etc. Arpeggios and sounds that evolve are particularly useful in this recipe. You can automate parameters within clips as well to introduce additional movement in the sound. An important point is that the sound shouldn't be too static.
 
