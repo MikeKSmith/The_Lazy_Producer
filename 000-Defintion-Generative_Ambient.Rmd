@@ -1,0 +1,25 @@
+# What do we mean "Generative Ambient"
+
+## Generative: {.unnumbered}
+
+"Generative" music is where, following some trigger event such as pressing "play" or playing a note, or initiating some voltage (in modular synthesis rack), the music follows some rules, algorithms or uses probability to generate or evolve the musical ideas (notes, rhythms, timbres) for an arbitrary amount of time. In some cases the generative algorithms work ***with*** the performer, reacting to their input. In other cases the performer may intervene with the algorithms to tweak, adjust or change direction.
+
+## Ambient: {.unnumbered}
+
+> "Ambient Music must be able to accommodate many levels of listening attention without enforcing one in particular; it must be as ignorable as it is interesing" - Brian Eno (1978)
+
+------------------------------------------------------------------------
+
+## Key idea {.unnumbered}
+
+Generative Ambient music means (to me) that the music should be able to go on indefinitely, with enough going on to make it interesting, but without anything particularly "sticking out" to catch the listener's ear.
+
+------------------------------------------------------------------------
+
+Some generative algorithms take parts that the performer plays and augments this with additional harmony, chords or (counter) melodies. An example of this is Olafur Arnalds' and Halldór Eldjárn's Stratus algorithm for performer pianos where MIDI triggers generate sequences of associated notes, chords and "ripples" in a separate instrument or player piano.\
+\
+Other generative music involves complex algorithms, probability triggers and modulations to create ever-changing sounds, sequences, rhythms. Often these are programmed via modular synth rigs using LFOs, sequencers, quantizers, harmonic generators, bernoulli gates, Turing machines.
+
+With Ableton Live 11 Suite, it's possible to create both kinds of generative sequences - either shorter, reactive sequences or long infinitely varying sequences. Through modulation and automation it's possible to create ambient music where the sounds evolve, appear, disappear, blend or create dissonance. In this book we'll try to present some ideas that will help get you started on this journey. I recommend that you try out the ideas in practice. Let the sequences play. Sit with them a while and let what you hear guide what to try next...
+
+This is only the beginning.

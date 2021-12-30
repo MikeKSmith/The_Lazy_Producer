@@ -1,5 +1,7 @@
+what-do-we-mean-generative-ambient
 recipe---changing-chords
 process---note-wise-probability
+process---follow-actions
 tools-and-plugins---the-probability-pack-probability-arp
 recipe---less-concepts
 extra-enhancements
