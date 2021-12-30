@@ -1,4 +1,4 @@
-# 101_ambient_recipes
+# The Lazy Producer - Starter ideas for making ambient and generative music
 Tips and tricks about creating ambient sounds based on my experience
 
 # How to contribute
