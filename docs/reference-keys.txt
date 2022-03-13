@@ -6,6 +6,7 @@ follow-actions
 follow-actions-1
 follow-action-probabilities
 a-random-walk
+process---balancing-the-unexpected-and-the-predictable
 tools-and-plugins---the-probability-pack-probability-arp
 recipe---less-concepts
 extra-enhancements
