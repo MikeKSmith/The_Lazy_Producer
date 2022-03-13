@@ -1,7 +1,7 @@
 ---
 title: "The Lazy Producer - Starter ideas for making ambient music"
 author: "Mike K Smith"
-date: "2021-12-30"
+date: "2022-03-13"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
