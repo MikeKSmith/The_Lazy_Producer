@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>6 Recipe - Doing more with less using MIDI tools and plugins | The Lazy Producer - Starter ideas for making ambient music</title>
+<meta name="author" content="Mike K Smith">
+<meta name="description" content="Create a MIDI track but do not add an instrument to that track. This is going to be the “generator” for our track. Within this track, add MIDI clips like those created in Recipe - Changing chords....">
+<meta name="generator" content="bookdown 0.29 with bs4_book()">
+<meta property="og:title" content="6 Recipe - Doing more with less using MIDI tools and plugins | The Lazy Producer - Starter ideas for making ambient music">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Create a MIDI track but do not add an instrument to that track. This is going to be the “generator” for our track. Within this track, add MIDI clips like those created in Recipe - Changing chords....">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="6 Recipe - Doing more with less using MIDI tools and plugins | The Lazy Producer - Starter ideas for making ambient music">
+<meta name="twitter:description" content="Create a MIDI track but do not add an instrument to that track. This is going to be the “generator” for our track. Within this track, add MIDI clips like those created in Recipe - Changing chords....">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="bs4_style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">The Lazy Producer - Starter ideas for making ambient music</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Preface</a></li>
+<li><a class="" href="what-do-we-mean-generative-ambient.html"><span class="header-section-number">1</span> What do we mean “Generative Ambient”</a></li>
+<li><a class="" href="recipe---changing-chords.html"><span class="header-section-number">2</span> Recipe - Changing chords</a></li>
+<li><a class="" href="process---note-wise-probability.html"><span class="header-section-number">3</span> Process - Note-wise probability</a></li>
+<li><a class="" href="process---follow-actions.html"><span class="header-section-number">4</span> Process - Follow Actions</a></li>
+<li><a class="" href="process---balancing-the-unexpected-and-the-predictable.html"><span class="header-section-number">5</span> Process - Balancing the unexpected and the predictable</a></li>
+<li><a class="active" href="recipe---doing-more-with-less-using-midi-tools-and-plugins.html"><span class="header-section-number">6</span> Recipe - Doing more with less using MIDI tools and plugins</a></li>
+<li><a class="" href="tools---midi-tools-chords-and-added-notes.html"><span class="header-section-number">7</span> Tools - MIDI tools: chords and added notes</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="recipe---doing-more-with-less-using-midi-tools-and-plugins" class="section level1" number="6">
+<h1>
+<span class="header-section-number">6</span> Recipe - Doing more with less using MIDI tools and plugins<a class="anchor" aria-label="anchor" href="#recipe---doing-more-with-less-using-midi-tools-and-plugins"><i class="fas fa-link"></i></a>
+</h1>
+<ol style="list-style-type: decimal">
+<li><p>Create a MIDI track but do not add an instrument to that track. This is going to be the “generator” for our track.</p></li>
+<li><p>Within this track, add MIDI clips like those created in <a href="recipe---changing-chords.html#recipe---changing-chords">Recipe - Changing chords</a>. Or you can use a Max for Live device like the (free Max for Live plugin) <a href="https://maxforlive.com/library/device/917/chord-generator">Nordmann Chord Generator</a> to generate chords. Name this the “Generator” track (CTRL+R to rename).</p></li>
+<li>
+<p>Add MIDI tracks and assign the input for these tracks to be the “Generator” track that you have just created above.</p>
+<div class="inline-figure"><img src="images/MIDI_inputs.png" width="100%"></div>
+</li>
+<li>
+<p>In your tracks, you can add MIDI plugins to alter the incoming chord. For example:</p>
+<div class="inline-figure"><img src="images/MIDI_Effects.png" width="100%"></div>
+<p>Here I am using a Velocity plugin to change and add a little randomness to the velocity output. Some virtual instruments can use velocity to alter the timbre of the produced sound, for example changing the filter cutoff frequency.<br><br>
+I have also used an arpeggiator to add some movement in the incoming MIDI chords. This breaks up the chords and allows me to do interesting things with individual notes.<br><br>
+It’s reasonable to view MIDI Note Echo as fairly pointless when you can take the output from the virtual instrument and apply audio echo. But MIDI Note Echo allows you to pitch up (or down) the echo and feedback (continuing to pitch up or down the repeated note). This in itself is pretty cool. Here I’m using the MIDI Random pitch plugin to occasionally add some extra randomness to the resulting note, then applying <strong><em>another</em></strong> MIDI Note Echo to that. This then gives you an ever changing set of notes out of the chain.<br><br>
+What we will get out of this chain has potential to get quite messy. That’s why we’ve applied a MIDI Scale plugin to “quantize” the notes back to a scale. This <strong><em>isn’t</em></strong> cheating - quantizers are routinely used in modular synths to bring control voltages onto scales. Here I’m using a pentatonic scale since any note in the scale will work pretty well with any other. The choice of scale dictates the overall sound coming out, but since there is a fair bit of randomness going on, pick your scale wisely to avoid the potential for harsh clashes. Unless that’s your thing.</p>
+</li>
+<li>
+<p>In one of the tracks place a Max for Live plugin called <a href="https://maxforlive.com/library/device/7569/tintinnabulator">Tintinnabulator</a>. This devices takes incoming MIDI and adds additional notes around the incoming notes using Arvo Pärt’s tintinnabulation technique. See [Tools - Chords and added notes].</p>
+<div class="inline-figure"><img src="images/Tintinnabulator.png" width="100%"></div>
+</li>
+<li>
+<p>Another MIDI plugin I’ve used in the set is the MIDI Note Length plugin. This is a <strong><em>very</em></strong> useful tool for this recipe, as it allows you to lengthen or shorten incoming MIDI notes. So if your input is short, staccato notes you can make them longer, or if the notes are long, you can make them shorter. In the context of this recipe we can take longer chord tones and split them into shorter notes to feed into a pad sound with a long decay or release, allowing that sound to ring out longer.</p>
+<div class="inline-figure">
+<img src="images/Note_Length.png"><!-- -->
+</div>
+<p>You could also apply an LFO to the note length and gate to randomly or systematically change the note lengths.</p>
+</li>
+<li>
+<p>We have mostly been looking at MIDI <strong><em>NOTE</em></strong> plugins here. But there’s a much overlooked MIDI plugin called “Expression control” which allows you to map various MIDI incoming signals to <strong><em>ANY</em></strong> parameter in Live, including controls of other plugins. In the example below we’ve mapped various parameters to controls in the Operator instrument just for illustration.</p>
+<div class="inline-figure">
+<img src="images/Expression_control.png"><!-- -->
+</div>
+<p>Sure, Operator itself has the ability to vary cutoff frequency using MIDI Velocity information, but notice how each of the MIDI parameters on the left hand side has a drop-down menu option. Let’s look at what we can do…</p>
+<div class="inline-figure">
+<img src="images/Expression_control_2.png"><!-- -->
+</div>
+<p>There’s a wide variety of incoming MIDI inputs which can then be used to map to plugin controls, as well as a “random” input which will select a new value for every MIDI input note, and “incremental” which will increment values for every MIDI input note.<br><br>
+Also note that the plugin allows you to specify Min and Max levels for each of these - for example the Random input is mapped to Tone in Operator, but the range is limited between 55% and 75% of the values. This kind of constraint can add nice variations in timbre for each note without it sounding too jarring.</p>
+</li>
+<li><p>The basic concept in this recipe - and one that I use frequently - is to take one MIDI part and make the most of it. Using MIDI plugins like this can ensure that the resulting sounds are <strong><em>related</em></strong> to the input, without having to be <strong><em>exactly</em></strong> the same. Anything you can do to delay, alter, spread out, harmonise and alter the incoming MIDI will add interest to the part. Using these MIDI parts with different instrument parts / sounds and audio effects will add variety and interest.<br><br>
+I have used this technique alongside existing audio stems in remixes. By using Ableton’s “Harmony to MIDI” I can get close to the original MIDI inputs by “tidying” the resulting part (getting rid of short notes by lengthening notes by hand, getting rid of notes outside the scale being used, transposing notes into a two or three octaves range rather than four or five, etc.), then augment that stem with virtual instruments driven by that “transcribed” MIDI part, but transformed through these MIDI plugins.</p></li>
+<li><p>Press play. Sit back and relax.</p></li>
+</ol>
+<hr>
+<p>You can hear one instance of this track here:</p>
+
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="process---balancing-the-unexpected-and-the-predictable.html"><span class="header-section-number">5</span> Process - Balancing the unexpected and the predictable</a></div>
+<div class="next"><a href="tools---midi-tools-chords-and-added-notes.html"><span class="header-section-number">7</span> Tools - MIDI tools: chords and added notes</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#recipe---doing-more-with-less-using-midi-tools-and-plugins"><span class="header-section-number">6</span> Recipe - Doing more with less using MIDI tools and plugins</a></li></ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/005-Recipe-MIDI_tools.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/005-Recipe-MIDI_tools.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2022-10-21.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

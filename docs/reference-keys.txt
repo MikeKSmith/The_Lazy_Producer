@@ -7,6 +7,14 @@ follow-actions-1
 follow-action-probabilities
 a-random-walk
 process---balancing-the-unexpected-and-the-predictable
-tools-and-plugins---the-probability-pack-probability-arp
-recipe---less-concepts
-extra-enhancements
+recipe---doing-more-with-less-using-midi-tools-and-plugins
+tools---midi-tools-chords-and-added-notes
+abletons-note-echo-plugin
+abletons-random-plugin
+abletons-note-length-plugin
+abletons-scale-plugin
+abletons-chord-plugin
+max-for-live-chord-generator-plugin
+max-for-live-tintinnabulator-plugin
+max-for-live-mt.sev-plugin
+max-for-live-schwartzonator-plugin

@@ -1,6 +1,6 @@
 # Process - Follow Actions
 
-Ableton has had "Follow Actions" within Session View clips for a ***long*** time. Follow Actions allow you to perform a variety of actions at the end of a clip or after a given number of bars and beats. Follow actions are generally used where there are a number of clips within a track, allow the performer or Lazy Producer to automate moving from one clip to another. This allows you to determine a sequence of events - movign from one clip to another or playing the clip again, etc. There are a number of really useful uses for follow actions for live performance, but it also has incredible uses for making generative music. Follow Actions help govern the amount of variability in our generative sequences - whether there is a definite sequence of events that happen predictably, or whether there is an element of chance introduced.
+Ableton has had "Follow Actions" within Session View clips for a ***long*** time. Follow Actions allow you to perform a variety of actions at the end of a clip or after a given number of bars and beats. Follow actions are generally used where there are a number of clips within a track, allow the performer or Lazy Producer to automate moving from one clip to another. This allows you to determine a sequence of events - moving from one clip to another or playing the clip again, etc. There are a number of really useful uses for follow actions for live performance, but it also has incredible uses for making generative music. Follow Actions help govern the amount of variability in our generative sequences - whether there is a definite sequence of events that happen predictably, or whether there is an element of chance introduced.
 
 ------------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ Clips can also contain nothing at all. And these empty clips can have different 
 
 To see the Follow Actions for a clip, click on the "Launch" item to expand the section. To enable Follow Actions for the clip, click on the the button marked "Follow Action", and ensure that it is active / orange.
 
-<img src="./images/Launch_Follow-Actions.png" title="Ableton Live Launch and Follow Action dialogue showing follow action options" alt="Ableton Live Launch and Follow Action dialogue showing follow action options"  />
+<img src="./images/Launch_Follow-Actions.png" alt="Ableton Live Launch and Follow Action dialogue showing follow action options"  />
 
 There are many different possible actions with the Follow Action. These are mostly self-explanatory but there are a few subtleties that are worth pointing out. As we point out above, Ableton needs to have contiguous sets of clips within a track to enable Follow Actions. The "First" and "Last" options above refer to ***the first and last clips within that contiguous set***, not necessarily the first and last within the track. The "Any" option randomly jumps to any of the clips within the contiguous set, including the current clip. "Other" randomly jumps to a different clip within the set. "Any" can be useful when you want to allow a repeat of the currently playing clip, while "Other" is more useful to force a jump to a different clip. "Jump" allows you to nominate a specific clip to jump to. "No Action" can be used as a "catch all" default action. With "No Action" in the alternative (right hand) Action, you can automate Ableton moving to a different clip after a certain number of bars and beats, but if this option is not taken then the clip continues playing to the end of the clip.
 
@@ -26,7 +26,7 @@ There are many different possible actions with the Follow Action. These are most
 
 In previous versions of Ableton Live, Follow Actions were set up so that the user had to specify a number of bars, beats and subdivisions before the action would happen. This leads to a lot of mental arithmetic to determine how many bars and beats AFTER the clip starts to make the jump. Fortunately now in Live 11 the default is to apply the Follow Action at the end of the clip, as long as the "Linked" button is active.
 
-<img src="./images/Launch_Follow-Actions_Linked.png" title="Ableton Live default Launch and Follow Action dialogue" alt="Ableton Live default Launch and Follow Action dialogue"  />
+<img src="./images/Launch_Follow-Actions_Linked.png" alt="Ableton Live default Launch and Follow Action dialogue"  />
 
 There is also the option to play the clip a number of times before applying the Follow Action. This helps us balance between the familiar and newness - hearing something repeated helps reduce the randomness and uncertainty of constantly introducing new things. While repeating one part or track you can introduce something new with a different part or track.
 

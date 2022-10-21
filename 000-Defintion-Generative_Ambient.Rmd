@@ -20,6 +20,8 @@ Some generative algorithms take parts that the performer plays and augments this
 \
 Other generative music involves complex algorithms, probability triggers and modulations to create ever-changing sounds, sequences, rhythms. Often these are programmed via modular synth rigs using LFOs, sequencers, quantizers, harmonic generators, bernoulli gates, Turing machines.
 
-With Ableton Live 11 Suite, it's possible to create both kinds of generative sequences - either shorter, reactive sequences or long infinitely varying sequences. Through modulation and automation it's possible to create ambient music where the sounds evolve, appear, disappear, blend or create dissonance. In this book we'll try to present some ideas that will help get you started on this journey. I recommend that you try out the ideas in practice. Let the sequences play. Sit with them a while and let what you hear guide what to try next...
+With [Ableton Live 11 Suite](https://www.ableton.com/en/live/), it's possible to create both kinds of generative sequences - either shorter, reactive sequences or long infinitely varying sequences. Through modulation and automation it's possible to create ambient music where the sounds evolve, appear, disappear, blend or create dissonance. In this book we'll try to present some ideas that will help get you started on this journey. I recommend that you try out the ideas in practice. Let the sequences play. Sit with them a while and let what you hear guide what to try next...
+
+It is my firm belief that the tools provided in Ableton Live Suite, including Max for Live, can replicate many of the generative possibilities within modular synthesis rigs. I hope to show within the following chapters how a combination of stock Ableton plugins plus some free (or inexpensive) Max for Live plugins can help you create generative music that is interesting to listen to.
 
 This is only the beginning.
