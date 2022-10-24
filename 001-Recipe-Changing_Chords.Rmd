@@ -15,7 +15,7 @@
     Following the advice above you should wind up with something like this in the first three clip slots of the three tracks:
 
     | Track 1                 | Track 2                 | Track 3                 |
-    |-------------------------|-------------------------|-------------------------|
+    |------------------------|------------------------|------------------------|
     | Clip 1 - Amin - 4 beats | Clip 1 - Amin - 5 beats | Clip 1 - Amin - 6 beats |
     | Clip 2 - Dmin - 5 beats | Clip 2 - Dmin - 6 beats | Clip 2 - Dmin - 4 beats |
     | Clip 3 - Gmin - 6 beats | Clip 3 - Gmin - 4 beats | Clip 3 - Gmin - 5 beats |
@@ -33,7 +33,7 @@
 You can hear one instance of this track here: <https://soundcloud.com/mikeksmith/changing-chords/s-LNeHFk2AeCI>
 
 ```{r, echo=FALSE, results="asis"}
-htmltools::includeHTML(path = "Recipe1-Changing_Chords.html")
+htmltools::includeHTML(path = file.path("HTML","Recipe1-Changing_Chords_Soundcloud.html"))
 
 ```
 

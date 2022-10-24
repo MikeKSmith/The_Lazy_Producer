@@ -16,5 +16,4 @@ abletons-scale-plugin
 abletons-chord-plugin
 max-for-live-chord-generator-plugin
 max-for-live-tintinnabulator-plugin
-max-for-live-mt.sev-plugin
 max-for-live-schwartzonator-plugin

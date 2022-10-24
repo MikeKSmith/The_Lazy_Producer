@@ -144,22 +144,22 @@
 <span class="header-section-number">7.6</span> Max for Live Chord Generator plugin<a class="anchor" aria-label="anchor" href="#max-for-live-chord-generator-plugin"><i class="fas fa-link"></i></a>
 </h2>
 <p>The <a href="https://maxforlive.com/library/device/917/chord-generator">Nordmann Chord Generator</a> Max for Live plugin.</p>
+<div class="inline-figure">
+<img src="images/Nordmann_chord.png"><!-- -->
+</div>
 </div>
 <div id="max-for-live-tintinnabulator-plugin" class="section level2" number="7.7">
 <h2>
 <span class="header-section-number">7.7</span> Max for Live Tintinnabulator plugin<a class="anchor" aria-label="anchor" href="#max-for-live-tintinnabulator-plugin"><i class="fas fa-link"></i></a>
 </h2>
-<p>The <a href="https://maxforlive.com/library/device/7569/tintinnabulator">Tintinnabulator</a> Max for Live plugin by Milton Mermikedes is an implementation of Arvo Part’s <a href="https://en.wikipedia.org/wiki/Tintinnabuli">Tintinnabulation technique</a>. This technique arpeggiates the original chord, and then adds additional notes / harmonies after those notes in the scale of the original notes. Within the plugin you can specify the delay between the original notes and the additional harmonies, and you can also choose the chord inversion of the harmony notes. The good news for producers of generative, ambient music is that the choice of chord / harmonic inversion for the added notes can be set to random. This will add variety and keep the patterns changing.</p>
+<p>The <a href="https://maxforlive.com/library/device/7569/tintinnabulator">Tintinnabulator</a> Max for Live plugin by Milton Mermikedes is an implementation of Arvo Part’s <a href="https://en.wikipedia.org/wiki/Tintinnabuli">Tintinnabulation technique</a>. This technique arpeggiates the original chord, and then adds additional notes / harmonies to those notes based on the nearest tone from the scale triad. So 1st position inferior C minor takes a C minor triad (C - Eb - G) and assigns a harmony to the incoming notes using the nearest chord tone 1 position lower than the incoming note (the M-Voice). Within the plugin you can specify the delay between the original notes and the additional harmonies. The good news for producers of generative, ambient music is that the choice of T-Voice position (1st Superior, 2nd Superior, 1st Inferior, 2nd Inferior) can be set to be random. This will add variety and keeps the T-Voice harmony changing. This plugin can be used on melody lines or chord inputs for a variety of different effects.</p>
+<div class="inline-figure">
+<img src="images/Tintinnabulator.png"><!-- -->
 </div>
-<div id="max-for-live-mt.sev-plugin" class="section level2" number="7.8">
-<h2>
-<span class="header-section-number">7.8</span> Max for Live Mt.Sev plugin<a class="anchor" aria-label="anchor" href="#max-for-live-mt.sev-plugin"><i class="fas fa-link"></i></a>
-</h2>
-<p>The <a href="https://maxforlive.com/library/device/4589/mt-sev">Mt.Sev</a> Max for Live plugin by pATCHES.</p>
 </div>
-<div id="max-for-live-schwartzonator-plugin" class="section level2" number="7.9">
+<div id="max-for-live-schwartzonator-plugin" class="section level2" number="7.8">
 <h2>
-<span class="header-section-number">7.9</span> Max for Live Schwartzonator plugin<a class="anchor" aria-label="anchor" href="#max-for-live-schwartzonator-plugin"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.8</span> Max for Live Schwartzonator plugin<a class="anchor" aria-label="anchor" href="#max-for-live-schwartzonator-plugin"><i class="fas fa-link"></i></a>
 </h2>
 <p>The Schwartzonator plugin</p>
 
@@ -191,8 +191,7 @@ DeSantis, D. <em>Making Music: 74 Creative Strategies for Electronic Music Produ
 <li><a class="nav-link" href="#abletons-chord-plugin"><span class="header-section-number">7.5</span> Ableton’s Chord plugin</a></li>
 <li><a class="nav-link" href="#max-for-live-chord-generator-plugin"><span class="header-section-number">7.6</span> Max for Live Chord Generator plugin</a></li>
 <li><a class="nav-link" href="#max-for-live-tintinnabulator-plugin"><span class="header-section-number">7.7</span> Max for Live Tintinnabulator plugin</a></li>
-<li><a class="nav-link" href="#max-for-live-mt.sev-plugin"><span class="header-section-number">7.8</span> Max for Live Mt.Sev plugin</a></li>
-<li><a class="nav-link" href="#max-for-live-schwartzonator-plugin"><span class="header-section-number">7.9</span> Max for Live Schwartzonator plugin</a></li>
+<li><a class="nav-link" href="#max-for-live-schwartzonator-plugin"><span class="header-section-number">7.8</span> Max for Live Schwartzonator plugin</a></li>
 </ul>
 
       <div class="book-extra">
@@ -210,7 +209,7 @@ DeSantis, D. <em>Making Music: 74 Creative Strategies for Electronic Music Produ
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2022-10-23.</p>
+    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2022-10-24.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
