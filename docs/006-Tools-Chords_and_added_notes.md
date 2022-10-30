@@ -52,7 +52,7 @@ Coupling the Chord plugin with the Arpeggiator and Random plugins is a good way 
 
 The [Tintinnabulator](https://maxforlive.com/library/device/7569/tintinnabulator) Max for Live plugin by Milton Mermikedes is an implementation of Arvo Part's [Tintinnabulation technique](https://en.wikipedia.org/wiki/Tintinnabuli). This technique arpeggiates the original chord, and then adds additional notes / harmonies to those notes based on the nearest tone from the scale triad. So 1st position inferior C minor takes a C minor triad (C - Eb - G) and assigns a harmony to the incoming notes using the nearest chord tone 1 position lower than the incoming note (the M-Voice). Within the plugin you can specify the delay between the original notes and the additional harmonies. The good news for producers of generative, ambient music is that the choice of T-Voice position (1st Superior, 2nd Superior, 1st Inferior, 2nd Inferior) can be set to be random. This will add variety and keeps the T-Voice harmony changing. This plugin can be used on melody lines or chord inputs for a variety of different effects.
 
-![](./images/Tintinnabulator.png)<!-- -->
+<img src="./images/Tintinnabulator.png" width="100%" />
 
 ## Max for Live Schwartzonator plugin
 
@@ -60,10 +60,10 @@ The Schwartzonator plugin (<https://www.ableton.com/en/packs/schwarzonator/>) co
 \
 Schwartzonator was designed to help musicians who did not know musical theory generate chords from single input notes and the scale or chord quantising allows the user to generate musical ideas that sound good. For the generative ambient musician there are many things in this plugin that are appealing - the ability to turn single input notes into chords that conform to a scale or chord pattern and the ability to also add randomness to ensure that the chords are different each time they are triggered. These coupled with the MIDI tools above can help create evolving patterns that fit with an overall scale key, chord pattern etc. defined for the track.
 
-![](./images/Schwarzonator.png)<!-- -->
+<img src="./images/Schwarzonator.png" width="100%" />
 
 ## Max for Live Chord Generator plugin
 
 The [Nordmann Chord Generator](https://maxforlive.com/library/device/917/chord-generator) Max for Live plugin is similar to the Schwartzonator above in that it takes input MIDI notes and turns them into chords. The difference is that while the Schwartzonator works by defining notes that can be used or not in the output, the Nordmann Chord Generator assumes a little more musical theory that the user knows what adding a 6, 7, add9 means. Of course, you can listen and find out... Also not every note in a MIDI scale is going to produce output chords that are in scale if you use a "b5" chord with them. In this way, using the MIDI scale plugin after the Chord Generator may help quantise the MIDI to sound reasonable in the context of the scale.
 
-![](./images/Nordmann_chord.png)<!-- -->
+<img src="./images/Nordmann_chord.png" width="100%" />
