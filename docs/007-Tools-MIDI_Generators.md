@@ -30,7 +30,7 @@ Bouncy Notes is a device provided in the "Inspired by Nature" pack developed by 
 
 In the screenshot below I have specified that all generated notes should be quantised to D minor pentatonic. I have also chosen for notes to be generated automatically every bar (Drop setting to Auto and "1b") and last for at most 4 bars ("Lifetime"). At any one time we'll have at most 6 balls in play ("Voices"). I have also set the note "Quantize" to be eighth notes = 8n. This ensures that the note triggers will not clash with anything else going on in the sequencer that is rhythmic or on the beat. But tuning the "Speed" setting you can tailor the density of notes generated. Adding randomness on direction that the balls are travelling when they are generated "Rnd\>Dir" you can generate additional notes in the scale as the balls bounce off the sides and hit the "notes" on the bottom.
 
-![](./images/Bouncy_notes.png)<!-- -->
+<img src="./images/Bouncy_notes.png" width="100%" />
 
 ## Dr Chaos
 
@@ -38,13 +38,13 @@ In the screenshot below I have specified that all generated notes should be quan
 
 Dr Chaos can store a number of patterns for both the note network (left) and the note attributes (right) so it's possible to set up sequences that you want to use and play through these, or jump to specific combinations.
 
-![](./images/Dr_Chaos.png)<!-- -->
+<img src="./images/Dr_Chaos.png" width="100%" />
 
 ## Euclidean Sequencer Pro
 
 Euclidean sequencers are commonly found in modular rigs, where can produce interesting polyrhythms for melodic instruments and also interesting rhythmic sequences for drum sounds. This [Max for Live Euclidean Sequencer](https://maxforlive.com/library/device/7608/euclidean-sequencer-pro) is an implementation of that for Ableton Live. Euclidean sequencers work by defining the number of steps in one rotation of a circle, then allocating a number of events as evenly as possible around the steps in that circle. All sequences start at the twelve o'clock position unless you specify a "Rotation" amount to offset the starting point. You can also specify a "Speed" setting for each of the four sequences, nominate a note that corresponds to each sequence (especially useful when used in conjunction with a drum rack). Particularly useful for generating sequences that are rhythmically interesting.
 
-![](./images/Euclidean_sequencer_pro.png)<!-- -->
+<img src="./images/Euclidean_sequencer_pro.png" width="100%" />
 
 ## Less Concepts
 
@@ -62,7 +62,7 @@ The "low" and "high" settings define the range of notes that will be used in the
 
 Less Concepts is definitely a sequencer that invites exploration, trial and error. Sometimes the results are surprising, other times they fade away and you're left in silence. If you need further explanation of what's happening under the hood, I suggest you explore the notes that Dan Derks provides.
 
-![](./images/Less_concepts.png)<!-- -->
+<img src="./images/Less_concepts.png" width="100%" />
 
 ## MIDI Waves
 
@@ -70,13 +70,13 @@ Less Concepts is definitely a sequencer that invites exploration, trial and erro
 
 This technique is sometimes employed in modular synths if a more traditional sequencer is not being used, as all you need to drive it is a base LFO and a "sample and hold" random generator.
 
-![](./images/MIDI_waves.png)<!-- -->
+<img src="./images/MIDI_waves.png" width="100%" />
 
 ## Midivolve
 
 The [Ableton Max for Live pack and device with Coldcut - Midivolve](https://www.ableton.com/en/packs/midivolve/) Pack is a paid plugin for Ableton Suite. It works by randomly adding variation to MIDI clip in the track where the plugin is placed. That variation can act on MIDI notes, velocity, duration, density (how many notes are playing) as well as being able to map two different parameters in Live. The "A" column defines which parameters experience variation on the next "Evolve!" trigger (in the screenshot below this is set to automatically evolve all parameters once the clip has played through 3 times). If the "I" column is checked then the last evolution acts as the basis for the next variation change. Note that variation amount can be specified via "Ammt" and this is separate to "Chance" of the variation happening. Chance is the probability of the value being varied / evolved ***for each note / step.*** This opens up a large number of possibilities to vary input sequences but to balance the unexpected evolution with a repeat of the evolved pattern before the next change is made i.e. let the listener get used to each chance - being predictable, if only for a finite period. Variation can be constrained through the Scale settings.
 
-![](./images/Midivolve.png)<!-- -->
+<img src="./images/Midivolve.png" width="100%" />
 
 ## SEEDS - Polymath and friends
 
@@ -94,7 +94,7 @@ Each track can run to a different clock, so it's possible to set up four differe
 
 The SEEDS pack also includes very useful plugins that can send output to and from various devices and clocks. The "Hub" plugin receives and sends MIDI information from one track to another. So it's possible to have generative plugins on one track which send MIDI information to a completely different track, which can then be processed independently.
 
-![](./images/Polymath.png)<!-- -->
+<img src="./images/Polymath.png" width="100%" />
 
 ## Others I haven't mentioned
 

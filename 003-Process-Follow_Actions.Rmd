@@ -18,7 +18,8 @@ Clips can also contain nothing at all. And these empty clips can have different 
 
 To see the Follow Actions for a clip, click on the "Launch" item to expand the section. To enable Follow Actions for the clip, click on the the button marked "Follow Action", and ensure that it is active / orange.
 
-```{r, echo = FALSE, fig.alt="Ableton Live Launch and Follow Action dialogue showing follow action options"}
+```{r, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 knitr::include_graphics(path = "./images/Launch_Follow-Actions.png")
 ```
 

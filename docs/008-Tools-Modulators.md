@@ -37,7 +37,7 @@ The MIDI Envelope device provides an envelope (shock!) that can then trigger any
 
 This allows modular synthesis like control over all kinds of parameters in Live where an incoming MIDI event can trigger changes in ***anything***.
 
-![](./images/MIDI_envelope.png)<!-- -->
+<img src="./images/MIDI_envelope.png" width="100%" />
 
 ## Envelope Follower
 
@@ -47,13 +47,13 @@ Then, using the usual mapping process you can choose which parameter in Live you
 
 The devices above (LFO, MIDI Envelope and Envelope Follower) offer modular synthesis like control over pretty much any parameter in Ableton Live. This is one of the strengths of Ableton Live with Max for Live devices over the standard Ableton version - the level of control and the ability to control devices is really unparalleled.
 
-![](./images/Envelope_follower.png)<!-- -->
+<img src="./images/Envelope_follower.png" width="100%" />
 
 ## Shaper
 
 The Shaper device allows you to draw modulation envelopes by specifying nodes across a grid then defining how the modulation should change between the nodes. In the screenshot below the nodes are "Snap"ed to the a grid of four equal divisions. The "Rate" setting defines the length of each division compared to the clock, which can be set according to musical divisions, or in Hz time.
 
-![](./images/Shaper.png)<!-- -->
+<img src="./images/Shaper.png" width="100%" />
 
 ## MIDI Expression Control
 
@@ -65,11 +65,11 @@ The "Random" setting generates a new parameter modulation value ***with every in
 
 The "Incremental" setting is also useful in that it increments the parameter value by a nominated amount (1% in the screenshot below) with each incoming MIDI note. When it reaches the maximum, it resets to the minimum value, so is effectively a sawtooth LFO but triggered by incoming MIDI rather than periodic in time.
 
-![](./images/Expression_control.png)<!-- -->
+<img src="./images/Expression_control.png" width="100%" />
 
 One thing to note is that Expression Control can assign the same MIDI control message to multiple parameters. You can click on the "down" arrow next to the MIDI control type and select a different input.
 
-![](./images/Expression_control_2.png)<!-- -->
+<img src="./images/Expression_control_2.png" width="100%" />
 
 ## Strange Mod
 
@@ -77,7 +77,7 @@ One thing to note is that Expression Control can assign the same MIDI control me
 
 It's this combination of smooth and random that makes this my preferred device for modulation. Slowing down the "Speed" of modulation can be useful to map to sound parameters where you want things to evolve smoothly and gradually.
 
-![](./images/Strange_mod.png)<!-- -->
+<img src="./images/Strange_mod.png" width="100%" />
 
 ## Dispatch
 
@@ -87,7 +87,7 @@ Dispatch is massively flexible in how you can define and combine modulation sour
 
 The vision for Dispatch is that it can be a single modulation device that can send modulation out to parameters throughout an Ableton Live set, rather than having modulators and LFOs scattered throughout the set.
 
-![](./images/Dispatch.png)<!-- -->
+<img src="./images/Dispatch.png" width="100%" />
 
 ## Deviate
 
@@ -95,4 +95,4 @@ We've come across the free [Deviate Max for Live device from Novel Music](https:
 
 Again, it's worth reviewing [the tutorial video from Novel Music](https://www.youtube.com/watch?v=4WwKGUV2H4I) to learn about all possible features of this device.
 
-![](./images/Deviate_map.png)<!-- -->
+<img src="./images/Deviate_map.png" width="100%" />

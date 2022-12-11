@@ -6,7 +6,7 @@
 
 3.  Add MIDI tracks and assign the input for these tracks to be the "Generator" track that you have just created above.
 
-    <img src="./images/MIDI_inputs.png" width="100%" />
+    ![](./images/MIDI_inputs.png)<!-- -->
 
 4.  In your tracks, you can add MIDI plugins to alter the incoming chord. For example:
 
@@ -26,17 +26,17 @@
 
 6.  Another MIDI plugin I've used in the set is the MIDI Note Length plugin. This is a ***very*** useful tool for this recipe, as it allows you to lengthen or shorten incoming MIDI notes. So if your input is short, staccato notes you can make them longer, or if the notes are long, you can make them shorter. In the context of this recipe we can take longer chord tones and split them into shorter notes to feed into a pad sound with a long decay or release, allowing that sound to ring out longer.
 
-    ![](./images/Note_Length.png)<!-- -->
+    <img src="./images/Note_Length.png" width="100%" />
 
     You could also apply an LFO to the note length and gate to randomly or systematically change the note lengths.
 
 7.  We have mostly been looking at MIDI ***NOTE*** plugins here. But there's a much overlooked MIDI plugin called "Expression control" which allows you to map various MIDI incoming signals to ***ANY*** parameter in Live, including controls of other plugins. In the example below we've mapped various parameters to controls in the Operator instrument just for illustration.
 
-    ![](./images/Expression_control.png)<!-- -->
+    <img src="./images/Expression_control.png" width="100%" />
 
     Sure, Operator itself has the ability to vary cutoff frequency using MIDI Velocity information, but notice how each of the MIDI parameters on the left hand side has a drop-down menu option. Let's look at what we can do...
 
-    ![](./images/Expression_control_2.png)<!-- -->
+    <img src="./images/Expression_control_2.png" width="100%" />
 
     There's a wide variety of incoming MIDI inputs which can then be used to map to plugin controls, as well as a "random" input which will select a new value for every MIDI input note, and "incremental" which will increment values for every MIDI input note.\
     \

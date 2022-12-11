@@ -93,7 +93,9 @@
 <li><p>Within this track, add MIDI clips like those created in <a href="recipe---changing-chords.html#recipe---changing-chords">Recipe - Changing chords</a>. Or you can use a Max for Live device like the (free Max for Live plugin) <a href="https://maxforlive.com/library/device/917/chord-generator">Nordmann Chord Generator</a> to generate chords. Name this the “Generator” track (CTRL+R to rename).</p></li>
 <li>
 <p>Add MIDI tracks and assign the input for these tracks to be the “Generator” track that you have just created above.</p>
-<div class="inline-figure"><img src="images/MIDI_inputs.png" width="100%"></div>
+<div class="inline-figure">
+<img src="images/MIDI_inputs.png"><!-- -->
+</div>
 </li>
 <li>
 <p>In your tracks, you can add MIDI plugins to alter the incoming chord. For example:</p>
@@ -109,20 +111,14 @@ What we will get out of this chain has potential to get quite messy. That’s wh
 </li>
 <li>
 <p>Another MIDI plugin I’ve used in the set is the MIDI Note Length plugin. This is a <strong><em>very</em></strong> useful tool for this recipe, as it allows you to lengthen or shorten incoming MIDI notes. So if your input is short, staccato notes you can make them longer, or if the notes are long, you can make them shorter. In the context of this recipe we can take longer chord tones and split them into shorter notes to feed into a pad sound with a long decay or release, allowing that sound to ring out longer.</p>
-<div class="inline-figure">
-<img src="images/Note_Length.png"><!-- -->
-</div>
+<div class="inline-figure"><img src="images/Note_Length.png" width="100%"></div>
 <p>You could also apply an LFO to the note length and gate to randomly or systematically change the note lengths.</p>
 </li>
 <li>
 <p>We have mostly been looking at MIDI <strong><em>NOTE</em></strong> plugins here. But there’s a much overlooked MIDI plugin called “Expression control” which allows you to map various MIDI incoming signals to <strong><em>ANY</em></strong> parameter in Live, including controls of other plugins. In the example below we’ve mapped various parameters to controls in the Operator instrument just for illustration.</p>
-<div class="inline-figure">
-<img src="images/Expression_control.png"><!-- -->
-</div>
+<div class="inline-figure"><img src="images/Expression_control.png" width="100%"></div>
 <p>Sure, Operator itself has the ability to vary cutoff frequency using MIDI Velocity information, but notice how each of the MIDI parameters on the left hand side has a drop-down menu option. Let’s look at what we can do…</p>
-<div class="inline-figure">
-<img src="images/Expression_control_2.png"><!-- -->
-</div>
+<div class="inline-figure"><img src="images/Expression_control_2.png" width="100%"></div>
 <p>There’s a wide variety of incoming MIDI inputs which can then be used to map to plugin controls, as well as a “random” input which will select a new value for every MIDI input note, and “incremental” which will increment values for every MIDI input note.<br><br>
 Also note that the plugin allows you to specify Min and Max levels for each of these - for example the Random input is mapped to Tone in Operator, but the range is limited between 55% and 75% of the values. This kind of constraint can add nice variations in timbre for each note without it sounding too jarring.</p>
 </li>

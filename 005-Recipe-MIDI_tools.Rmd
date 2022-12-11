@@ -6,13 +6,14 @@
 
 3.  Add MIDI tracks and assign the input for these tracks to be the "Generator" track that you have just created above.
 
-    ```{r, echo = FALSE, out.width="100%"}
+    ```{r, echo = FALSE}
+    knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
     knitr::include_graphics(path = "./images/MIDI_inputs.png")
     ```
 
 4.  In your tracks, you can add MIDI plugins to alter the incoming chord. For example:
 
-    ```{r, echo = FALSE, out.width="100%"}
+    ```{r}
     knitr::include_graphics(path = "./images/MIDI_Effects.png")
     ```
 
@@ -26,13 +27,13 @@
 
 5.  In one of the tracks place a Max for Live plugin called [Tintinnabulator](https://maxforlive.com/library/device/7569/tintinnabulator). This devices takes incoming MIDI and adds additional notes around the incoming notes using Arvo Pärt's tintinnabulation technique. See [Tools - Chords and added notes].
 
-    ```{r, echo = FALSE, out.width="100%"}
+    ```{r}
     knitr::include_graphics(path = "./images/Tintinnabulator.png")
     ```
 
 6.  Another MIDI plugin I've used in the set is the MIDI Note Length plugin. This is a ***very*** useful tool for this recipe, as it allows you to lengthen or shorten incoming MIDI notes. So if your input is short, staccato notes you can make them longer, or if the notes are long, you can make them shorter. In the context of this recipe we can take longer chord tones and split them into shorter notes to feed into a pad sound with a long decay or release, allowing that sound to ring out longer.
 
-    ```{r, echo = FALSE}
+    ```{r}
     knitr::include_graphics(path = "./images/Note_Length.png")
     ```
 
@@ -40,13 +41,13 @@
 
 7.  We have mostly been looking at MIDI ***NOTE*** plugins here. But there's a much overlooked MIDI plugin called "Expression control" which allows you to map various MIDI incoming signals to ***ANY*** parameter in Live, including controls of other plugins. In the example below we've mapped various parameters to controls in the Operator instrument just for illustration.
 
-    ```{r, echo = FALSE}
+    ```{r}
     knitr::include_graphics(path = "./images/Expression_control.png")
     ```
 
     Sure, Operator itself has the ability to vary cutoff frequency using MIDI Velocity information, but notice how each of the MIDI parameters on the left hand side has a drop-down menu option. Let's look at what we can do...
 
-    ```{r, echo = FALSE}
+    ```{r}
     knitr::include_graphics(path = "./images/Expression_control_2.png")
     ```
 

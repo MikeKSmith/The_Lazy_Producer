@@ -119,9 +119,7 @@
 </h2>
 <p>The MIDI Envelope device provides an envelope (shock!) that can then trigger any parameter in Ableton Live. This envelope can operate free of the tempo, with attack, decay, sustain and release in milliseconds, or it can be synced to the tempo. The envelope can also loop if required. The attack, decay and release rates can be linear (when set to 0%) or curved.</p>
 <p>This allows modular synthesis like control over all kinds of parameters in Live where an incoming MIDI event can trigger changes in <strong><em>anything</em></strong>.</p>
-<div class="inline-figure">
-<img src="images/MIDI_envelope.png"><!-- -->
-</div>
+<div class="inline-figure"><img src="images/MIDI_envelope.png" width="100%"></div>
 </div>
 <div id="envelope-follower" class="section level2" number="9.3">
 <h2>
@@ -130,18 +128,14 @@
 <p>The Envelope Follower device is similar to the MIDI Envelope device, but instead of being triggered by MIDI notes, it is triggered by audio. Adjust the “Gain” of the input until the orange envelope shows a decent range of modulation. By then tweaking the “Rise” and “Fall” parameters you can smooth out the signal if needed. There’s also an option to delay the envelope rather than having it follow the input signal immediately.</p>
 <p>Then, using the usual mapping process you can choose which parameter in Live you want to modulate using this signal. This device allows you to modulate anything using an input audio signal, whether that signal is heard in the Master audio track or not.</p>
 <p>The devices above (LFO, MIDI Envelope and Envelope Follower) offer modular synthesis like control over pretty much any parameter in Ableton Live. This is one of the strengths of Ableton Live with Max for Live devices over the standard Ableton version - the level of control and the ability to control devices is really unparalleled.</p>
-<div class="inline-figure">
-<img src="images/Envelope_follower.png"><!-- -->
-</div>
+<div class="inline-figure"><img src="images/Envelope_follower.png" width="100%"></div>
 </div>
 <div id="shaper" class="section level2" number="9.4">
 <h2>
 <span class="header-section-number">9.4</span> Shaper<a class="anchor" aria-label="anchor" href="#shaper"><i class="fas fa-link"></i></a>
 </h2>
 <p>The Shaper device allows you to draw modulation envelopes by specifying nodes across a grid then defining how the modulation should change between the nodes. In the screenshot below the nodes are “Snap”ed to the a grid of four equal divisions. The “Rate” setting defines the length of each division compared to the clock, which can be set according to musical divisions, or in Hz time.</p>
-<div class="inline-figure">
-<img src="images/Shaper.png"><!-- -->
-</div>
+<div class="inline-figure"><img src="images/Shaper.png" width="100%"></div>
 </div>
 <div id="midi-expression-control" class="section level2" number="9.5">
 <h2>
@@ -151,13 +145,9 @@
 <p>Expression Control allows you to see the minimum and maximum percentage of modulation, and the shape of onset / offset of that modulation - either linear or logarithmic (curved). It also allows you to specify the “Rise” and “Fall” rate of change to help smooth out the change and prevent sudden changes in parameter values. There’s also a curve shaper in the top right of the device where you can tailor your own curves for the MIDI input, like compression etc.</p>
 <p>The “Random” setting generates a new parameter modulation value <strong><em>with every incoming MIDI note</em></strong>. So rather than cycling through a periodic modulation, Expression control can be used to change parameters with each note. Subtle use of this is good for changing the sound of rhythmic parts - selecting slightly different decay and filter cutoff for example.</p>
 <p>The “Incremental” setting is also useful in that it increments the parameter value by a nominated amount (1% in the screenshot below) with each incoming MIDI note. When it reaches the maximum, it resets to the minimum value, so is effectively a sawtooth LFO but triggered by incoming MIDI rather than periodic in time.</p>
-<div class="inline-figure">
-<img src="images/Expression_control.png"><!-- -->
-</div>
+<div class="inline-figure"><img src="images/Expression_control.png" width="100%"></div>
 <p>One thing to note is that Expression Control can assign the same MIDI control message to multiple parameters. You can click on the “down” arrow next to the MIDI control type and select a different input.</p>
-<div class="inline-figure">
-<img src="images/Expression_control_2.png"><!-- -->
-</div>
+<div class="inline-figure"><img src="images/Expression_control_2.png" width="100%"></div>
 </div>
 <div id="strange-mod" class="section level2" number="9.6">
 <h2>
@@ -165,9 +155,7 @@
 </h2>
 <p><a href="https://maxforlive.com/library/device/6872/strange-mod">Dillon Baston’s paid Max for Live plugin “Strange Mod”</a>is my “go to” modulation device. It uses chaotic processes - strange attractors - and evaluates the X, Y, and Z three dimensional attributes of a particle within the chaotic system, generating three distinct modulation values (like LFO outputs) which can then be mapped to any parameter as we’ve seen above with other modulators. The change in the three different modulation values is random / chaotic but because they are mapping the three dimensions of the particle moving in the chaotic system, they do not “jump” to new values. Also the three dimensions are somewhat related - the X value does not jump values, but neither do the Y and Z values. They may change quickly, but if they do happens smoothly. Note that the “Map” button here allows you to map each modulation value - X, Y and Z - to any parameter in Live, but also each individual value (say X) can also be mapped to 7 other parameters, as with the LFO device. That means that a single Strange Mod device could map out to 24 different parameters. There are 11 different strange attractor algorithms to choose from, and you can randomise the starting point of the process to generate new paths of random modulation. The “R” button ensures that the process is reset each time you start Ableton’s transport control (press play). This ensures that your random, chaotic process is at least somewhat repeatable!</p>
 <p>It’s this combination of smooth and random that makes this my preferred device for modulation. Slowing down the “Speed” of modulation can be useful to map to sound parameters where you want things to evolve smoothly and gradually.</p>
-<div class="inline-figure">
-<img src="images/Strange_mod.png"><!-- -->
-</div>
+<div class="inline-figure"><img src="images/Strange_mod.png" width="100%"></div>
 </div>
 <div id="dispatch" class="section level2" number="9.7">
 <h2>
@@ -176,9 +164,7 @@
 <p>Dispatch is a paid <a href="https://maxforlive.com/library/device/7361/dispatch-global-modulation-matrix">Max for Live modulation matrix</a> which generates 4 different modulation processes (A, B, C and D) which can be modulated by the other processes and then allows you to sum these to another set of modulation values - I, II, III and IV. The Matrix view defines the modulation processes while the Grid view allows you to further combine the A, B, C and D modulation and map these to another 16 parameters.</p>
 <p>Dispatch is massively flexible in how you can define and combine modulation sources and types. It can also be quite intimidating at first to know what’s going on. I can recommend reviewing the Cong Burn (Dispatch developer) video on the tool on Youtube: <a href="https://youtu.be/Vlef8VON4Rw" class="uri">https://youtu.be/Vlef8VON4Rw</a></p>
 <p>The vision for Dispatch is that it can be a single modulation device that can send modulation out to parameters throughout an Ableton Live set, rather than having modulators and LFOs scattered throughout the set.</p>
-<div class="inline-figure">
-<img src="images/Dispatch.png"><!-- -->
-</div>
+<div class="inline-figure"><img src="images/Dispatch.png" width="100%"></div>
 </div>
 <div id="deviate-1" class="section level2" number="9.8">
 <h2>
@@ -186,9 +172,7 @@
 </h2>
 <p>We’ve come across the free <a href="https://www.novelmusic.org/m4l/deviate">Deviate Max for Live device from Novel Music</a> in the section [Tools - Chords and added notes], but it also offers random modulation control on parameters. You can dial up randomness at various levels in Deviate, and also control the amount of randomness which is very useful in generative music. But it also has a key feature - the ability to monitor parameter deviations in its “MEMORY” and then “Lock” in patterns if you find something you like - this mirrors functionality in Turing Machine modules that exist in the modular synthesis world.</p>
 <p>Again, it’s worth reviewing <a href="https://www.youtube.com/watch?v=4WwKGUV2H4I">the tutorial video from Novel Music</a> to learn about all possible features of this device.</p>
-<div class="inline-figure">
-<img src="images/Deviate_map.png"><!-- -->
-</div>
+<div class="inline-figure"><img src="images/Deviate_map.png" width="100%"></div>
 
 </div>
 </div>

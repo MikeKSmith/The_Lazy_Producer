@@ -17,6 +17,7 @@ MIDI generators (as discussed in [Tools - MIDI Generators] produce MIDI notes wh
 From the Inspired by Nature pack by Dillon Bastan this is primarily a resonant drone generator but with some additional bells and whistles.
 
 ```{r, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 knitr::include_graphics(path = "./images/Tree_tone.png")
 ```
 
@@ -24,7 +25,7 @@ knitr::include_graphics(path = "./images/Tree_tone.png")
 
 Does exactly what is says on the tin. This is a drone generator from the Drone Lab pack in Ableton Suite.
 
-```{r, echo = FALSE}
+```{r}
 knitr::include_graphics(path = "./images/Harmonic_Drone_Generator.png")
 ```
 
@@ -38,6 +39,6 @@ So what this gives us is a way of generating tones. You can quantize changes to 
 
 The sound the generator creates is a little odd, but through use of additional audio effects it's possible to create some interesting evolving drone textures.
 
-```{r, echo = FALSE}
+```{r}
 knitr::include_graphics(path = "./images/Cellular_Degradation.png")
 ```

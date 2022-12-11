@@ -22,7 +22,7 @@ From the Inspired by Nature pack by Dillon Bastan this is primarily a resonant d
 
 Does exactly what is says on the tin. This is a drone generator from the Drone Lab pack in Ableton Suite.
 
-![](./images/Harmonic_Drone_Generator.png)<!-- -->
+<img src="./images/Harmonic_Drone_Generator.png" width="100%" />
 
 ## Cellular Degradation
 
@@ -34,4 +34,4 @@ So what this gives us is a way of generating tones. You can quantize changes to 
 
 The sound the generator creates is a little odd, but through use of additional audio effects it's possible to create some interesting evolving drone textures.
 
-![](./images/Cellular_Degradation.png)<!-- -->
+<img src="./images/Cellular_Degradation.png" width="100%" />

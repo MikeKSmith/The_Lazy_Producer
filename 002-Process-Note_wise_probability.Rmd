@@ -16,7 +16,8 @@ But the note-wise probability extends beyond drum parts and lead parts.
 
 To see the note chance, click on the MIDI clip then click on the arrow at the bottom of the piano-roll to show velocity. To see the chance / note probability, click on the button below the velocity.
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, out.width="100%"}
+knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 knitr::include_graphics(path = "./images/Note-wise_probability.png")
 ```
 

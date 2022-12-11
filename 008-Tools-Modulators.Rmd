@@ -30,6 +30,7 @@ A basic LFO is a useful modulator, but there are two drawbacks to the standard L
 2.  The "Random" setting is not smooth, as it is a "sample and hold" - so the value changes at the nominated cycle time and holds that value until a new value is assigned at the start of the next cycle. This means that the modulated parameter changes in a step fashion rather than smoothly. The LFO has a "Smooth" value (bottom right of the wave display) but this smoothes out with exponential curves, meaning that the value starts changing quickly at the start of the next cycle. This may still be "not quite smooth enough".
 
 ```{r, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 knitr::include_graphics(path = "./images/LFO.png")
 ```
 
@@ -39,7 +40,7 @@ The MIDI Envelope device provides an envelope (shock!) that can then trigger any
 
 This allows modular synthesis like control over all kinds of parameters in Live where an incoming MIDI event can trigger changes in ***anything***.
 
-```{r, echo = FALSE}
+```{r}
 knitr::include_graphics(path = "./images/MIDI_envelope.png")
 ```
 
@@ -51,7 +52,7 @@ Then, using the usual mapping process you can choose which parameter in Live you
 
 The devices above (LFO, MIDI Envelope and Envelope Follower) offer modular synthesis like control over pretty much any parameter in Ableton Live. This is one of the strengths of Ableton Live with Max for Live devices over the standard Ableton version - the level of control and the ability to control devices is really unparalleled.
 
-```{r, echo = FALSE}
+```{r}
 knitr::include_graphics(path = "./images/Envelope_follower.png")
 ```
 
@@ -59,7 +60,7 @@ knitr::include_graphics(path = "./images/Envelope_follower.png")
 
 The Shaper device allows you to draw modulation envelopes by specifying nodes across a grid then defining how the modulation should change between the nodes. In the screenshot below the nodes are "Snap"ed to the a grid of four equal divisions. The "Rate" setting defines the length of each division compared to the clock, which can be set according to musical divisions, or in Hz time.
 
-```{r, echo = FALSE}
+```{r}
 knitr::include_graphics(path = "./images/Shaper.png")
 ```
 
@@ -73,13 +74,13 @@ The "Random" setting generates a new parameter modulation value ***with every in
 
 The "Incremental" setting is also useful in that it increments the parameter value by a nominated amount (1% in the screenshot below) with each incoming MIDI note. When it reaches the maximum, it resets to the minimum value, so is effectively a sawtooth LFO but triggered by incoming MIDI rather than periodic in time.
 
-```{r, echo = FALSE}
+```{r}
 knitr::include_graphics(path = "./images/Expression_control.png")
 ```
 
 One thing to note is that Expression Control can assign the same MIDI control message to multiple parameters. You can click on the "down" arrow next to the MIDI control type and select a different input.
 
-```{r, echo = FALSE}
+```{r}
 knitr::include_graphics(path = "./images/Expression_control_2.png")
 ```
 
@@ -89,7 +90,7 @@ knitr::include_graphics(path = "./images/Expression_control_2.png")
 
 It's this combination of smooth and random that makes this my preferred device for modulation. Slowing down the "Speed" of modulation can be useful to map to sound parameters where you want things to evolve smoothly and gradually.
 
-```{r, echo=FALSE}
+```{r}
 knitr::include_graphics(path = "./images/Strange_mod.png")
 ```
 
@@ -101,7 +102,7 @@ Dispatch is massively flexible in how you can define and combine modulation sour
 
 The vision for Dispatch is that it can be a single modulation device that can send modulation out to parameters throughout an Ableton Live set, rather than having modulators and LFOs scattered throughout the set.
 
-```{r, echo=FALSE}
+```{r}
 knitr::include_graphics(path = "./images/Dispatch.png")
 ```
 
@@ -111,6 +112,6 @@ We've come across the free [Deviate Max for Live device from Novel Music](https:
 
 Again, it's worth reviewing [the tutorial video from Novel Music](https://www.youtube.com/watch?v=4WwKGUV2H4I) to learn about all possible features of this device.
 
-```{r, echo=FALSE}
+```{r}
 knitr::include_graphics(path = "./images/Deviate_map.png")
 ```
