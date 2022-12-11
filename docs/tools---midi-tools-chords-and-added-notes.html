@@ -74,8 +74,9 @@
 <li><a class="" href="recipe---doing-more-with-less-using-midi-tools-and-plugins.html"><span class="header-section-number">6</span> Recipe - Doing more with less using MIDI tools and plugins</a></li>
 <li><a class="active" href="tools---midi-tools-chords-and-added-notes.html"><span class="header-section-number">7</span> Tools - MIDI tools: chords and added notes</a></li>
 <li><a class="" href="tools---midi-generators.html"><span class="header-section-number">8</span> Tools - MIDI Generators</a></li>
-<li><a class="" href="tools---audio-generators.html"><span class="header-section-number">9</span> Tools - Audio Generators</a></li>
-<li><a class="" href="tools---modulators.html"><span class="header-section-number">10</span> Tools - Modulators</a></li>
+<li><a class="" href="tools---modulators.html"><span class="header-section-number">9</span> Tools - Modulators</a></li>
+<li><a class="" href="recipe---evolving-synths.html"><span class="header-section-number">10</span> Recipe - Evolving synths</a></li>
+<li><a class="" href="tools---audio-generators.html"><span class="header-section-number">11</span> Tools - Audio Generators</a></li>
 </ul>
 
         <div class="book-extra">
@@ -142,24 +143,34 @@
 <p>Coupling the Chord plugin with the Arpeggiator and Random plugins is a good way to make arpeggiated lines that do not repeat exactly. As with most of these MIDI plugins the order you specify them can provide interesting variations. So Chord -&gt; Arpeggiator -&gt; Random -&gt; Scale adds random notes into the arpeggio resulting in cascades of notes that change note to note, but within a constrained set of output notes. Random -&gt; Chord -&gt; Arpeggio -&gt; Scale would lead to a consistent arpeggio for the duration of the input note but could be different for each cycle of the generating MIDI loop.</p>
 <div class="inline-figure"><img src="images/Cascading_notes.png" width="100%"></div>
 </div>
-<div id="max-for-live-tintinnabulator-plugin" class="section level2" number="7.6">
+<div id="deviate" class="section level2" number="7.6">
 <h2>
-<span class="header-section-number">7.6</span> Max for Live Tintinnabulator plugin<a class="anchor" aria-label="anchor" href="#max-for-live-tintinnabulator-plugin"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.6</span> Deviate<a class="anchor" aria-label="anchor" href="#deviate"><i class="fas fa-link"></i></a>
+</h2>
+<p>The <a href="https://www.novelmusic.org/m4l/deviate">free Deviate Max for Live plugin from Novel Music</a> can add variation to incoming MIDI notes. The “TRIGGER” section defines how often the deviation or variation will occur - so it is possible to balance the unexpected with the predictable, or keep things the same before introducing randomness. One important aspect of Deviate is that it has a memory, so if you like the random pattern generated, you can “lock” this by moving the “LOCK” slider to the right. This means it acts a bit like the Turing Machine devices used in modular synthesis rigs. Deviate has two sides - MIDI, which we’ll cover here and MOD which we’ll cover in the <a href="tools---modulators.html#tools---modulators">Tools - Modulators</a> section.</p>
+<p>The “TRIGGER” section is worth spending a little time to understand. It determines how many MIDI notes will pass before the deviation is triggered. So if set to “1” then every note triggers a new deviation. If set to 8 then every 8 notes the deviation settings may be triggered, but then these deviation settings persist for the next 7 notes. The probability to the right (below set to 100%) means that the deviation will be triggered every time, but if lower than 100% then that probability determines whether <strong><em>any</em></strong> deviation will occur. So if you set 8 notes, with 100% probability then the Octave deviation may trigger 18% of the time, but if it does then notes will sound either an octave up (or down) for the next 7 notes.</p>
+<p>The “MEMORY” section works along side the “LOCK” switch. Deviate can “listen” to a sequence of MIDI notes of the nominated length (here 8 notes) and will keep track of what deviations were applied in that 8 note sequence. If you like what you’re hearing you can “LOCK” the deviation settings in by sliding the “LOCK slider to the right. As you bring the”LOCK” slider back to the left it will start to reintroduce new deviations while retaining the memory of the locked settings. With the “LOCK” slider all the way to the left, the “TRIGGER” and Deviate settings are applied according to the “TRIGGER” settings. Deviate can also learn how many notes are in a MIDI clip if you click on the “L” button next to “MEMORY”. The memory sequence can be divided by 2 or multiplied by 2 using the adjacent buttons.</p>
+<p>It is worth reviewing <a href="https://youtu.be/4WwKGUV2H4I">the YouTube tutorial for this device</a> as it can do <strong><em>a lot</em></strong>.</p>
+<div class="inline-figure"><img src="images/Deviate_MIDI.png" width="100%"></div>
+</div>
+<div id="max-for-live-tintinnabulator-plugin" class="section level2" number="7.7">
+<h2>
+<span class="header-section-number">7.7</span> Max for Live Tintinnabulator plugin<a class="anchor" aria-label="anchor" href="#max-for-live-tintinnabulator-plugin"><i class="fas fa-link"></i></a>
 </h2>
 <p>The <a href="https://maxforlive.com/library/device/7569/tintinnabulator">Tintinnabulator</a> Max for Live plugin by Milton Mermikedes is an implementation of Arvo Part’s <a href="https://en.wikipedia.org/wiki/Tintinnabuli">Tintinnabulation technique</a>. This technique arpeggiates the original chord, and then adds additional notes / harmonies to those notes based on the nearest tone from the scale triad. So 1st position inferior C minor takes a C minor triad (C - Eb - G) and assigns a harmony to the incoming notes using the nearest chord tone 1 position lower than the incoming note (the M-Voice). Within the plugin you can specify the delay between the original notes and the additional harmonies. The good news for producers of generative, ambient music is that the choice of T-Voice position (1st Superior, 2nd Superior, 1st Inferior, 2nd Inferior) can be set to be random. This will add variety and keeps the T-Voice harmony changing. This plugin can be used on melody lines or chord inputs for a variety of different effects.</p>
 <div class="inline-figure"><img src="images/Tintinnabulator.png" width="100%"></div>
 </div>
-<div id="max-for-live-schwartzonator-plugin" class="section level2" number="7.7">
+<div id="max-for-live-schwartzonator-plugin" class="section level2" number="7.8">
 <h2>
-<span class="header-section-number">7.7</span> Max for Live Schwartzonator plugin<a class="anchor" aria-label="anchor" href="#max-for-live-schwartzonator-plugin"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.8</span> Max for Live Schwartzonator plugin<a class="anchor" aria-label="anchor" href="#max-for-live-schwartzonator-plugin"><i class="fas fa-link"></i></a>
 </h2>
 <p>The Schwartzonator plugin (<a href="https://www.ableton.com/en/packs/schwarzonator/" class="uri">https://www.ableton.com/en/packs/schwarzonator/</a>) combines chord generation with scale quantising. You specify what notes are “valid” for the output - quantising input to output - and then the knobs below the “piano” define the makeup of the output chord. The “add notes” knobe defines how many additional notes you want to add to the input MIDI note to create a chord. “spread” spreads these out over the keyboard. “random” changes the disposition of the chord - creating chord inversions and changing the output chord when it’s triggered by the input MIDI note. With “random” increased you can get ever-changing output chords for the same input notes. “dynamic” adds random velocity across the output notes. “select” allows you to automate selection of the Chord Set.<br><br>
 Schwartzonator was designed to help musicians who did not know musical theory generate chords from single input notes and the scale or chord quantising allows the user to generate musical ideas that sound good. For the generative ambient musician there are many things in this plugin that are appealing - the ability to turn single input notes into chords that conform to a scale or chord pattern and the ability to also add randomness to ensure that the chords are different each time they are triggered. These coupled with the MIDI tools above can help create evolving patterns that fit with an overall scale key, chord pattern etc. defined for the track.</p>
 <div class="inline-figure"><img src="images/Schwarzonator.png" width="100%"></div>
 </div>
-<div id="max-for-live-chord-generator-plugin" class="section level2" number="7.8">
+<div id="max-for-live-chord-generator-plugin" class="section level2" number="7.9">
 <h2>
-<span class="header-section-number">7.8</span> Max for Live Chord Generator plugin<a class="anchor" aria-label="anchor" href="#max-for-live-chord-generator-plugin"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.9</span> Max for Live Chord Generator plugin<a class="anchor" aria-label="anchor" href="#max-for-live-chord-generator-plugin"><i class="fas fa-link"></i></a>
 </h2>
 <p>The <a href="https://maxforlive.com/library/device/917/chord-generator">Nordmann Chord Generator</a> Max for Live plugin is similar to the Schwartzonator above in that it takes input MIDI notes and turns them into chords. The difference is that while the Schwartzonator works by defining notes that can be used or not in the output, the Nordmann Chord Generator assumes a little more musical theory that the user knows what adding a 6, 7, add9 means. Of course, you can listen and find out… Also not every note in a MIDI scale is going to produce output chords that are in scale if you use a “b5” chord with them. In this way, using the MIDI scale plugin after the Chord Generator may help quantise the MIDI to sound reasonable in the context of the scale.</p>
 <div class="inline-figure"><img src="images/Nordmann_chord.png" width="100%"></div>
@@ -180,9 +191,10 @@ Schwartzonator was designed to help musicians who did not know musical theory ge
 <li><a class="nav-link" href="#abletons-note-length-plugin"><span class="header-section-number">7.3</span> Ableton’s Note Length plugin</a></li>
 <li><a class="nav-link" href="#abletons-scale-plugin"><span class="header-section-number">7.4</span> Ableton’s Scale plugin</a></li>
 <li><a class="nav-link" href="#abletons-chord-plugin"><span class="header-section-number">7.5</span> Ableton’s Chord plugin</a></li>
-<li><a class="nav-link" href="#max-for-live-tintinnabulator-plugin"><span class="header-section-number">7.6</span> Max for Live Tintinnabulator plugin</a></li>
-<li><a class="nav-link" href="#max-for-live-schwartzonator-plugin"><span class="header-section-number">7.7</span> Max for Live Schwartzonator plugin</a></li>
-<li><a class="nav-link" href="#max-for-live-chord-generator-plugin"><span class="header-section-number">7.8</span> Max for Live Chord Generator plugin</a></li>
+<li><a class="nav-link" href="#deviate"><span class="header-section-number">7.6</span> Deviate</a></li>
+<li><a class="nav-link" href="#max-for-live-tintinnabulator-plugin"><span class="header-section-number">7.7</span> Max for Live Tintinnabulator plugin</a></li>
+<li><a class="nav-link" href="#max-for-live-schwartzonator-plugin"><span class="header-section-number">7.8</span> Max for Live Schwartzonator plugin</a></li>
+<li><a class="nav-link" href="#max-for-live-chord-generator-plugin"><span class="header-section-number">7.9</span> Max for Live Chord Generator plugin</a></li>
 </ul>
 
       <div class="book-extra">
@@ -200,7 +212,7 @@ Schwartzonator was designed to help musicians who did not know musical theory ge
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2022-12-08.</p>
+    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2022-12-11.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

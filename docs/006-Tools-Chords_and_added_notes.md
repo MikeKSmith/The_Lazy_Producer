@@ -48,6 +48,18 @@ Coupling the Chord plugin with the Arpeggiator and Random plugins is a good way 
 
 <img src="./images/Cascading_notes.png" width="100%" />
 
+## Deviate
+
+The [free Deviate Max for Live plugin from Novel Music](https://www.novelmusic.org/m4l/deviate) can add variation to incoming MIDI notes. The "TRIGGER" section defines how often the deviation or variation will occur - so it is possible to balance the unexpected with the predictable, or keep things the same before introducing randomness. One important aspect of Deviate is that it has a memory, so if you like the random pattern generated, you can "lock" this by moving the "LOCK" slider to the right. This means it acts a bit like the Turing Machine devices used in modular synthesis rigs. Deviate has two sides - MIDI, which we'll cover here and MOD which we'll cover in the [Tools - Modulators] section.
+
+The "TRIGGER" section is worth spending a little time to understand. It determines how many MIDI notes will pass before the deviation is triggered. So if set to "1" then every note triggers a new deviation. If set to 8 then every 8 notes the deviation settings may be triggered, but then these deviation settings persist for the next 7 notes. The probability to the right (below set to 100%) means that the deviation will be triggered every time, but if lower than 100% then that probability determines whether ***any*** deviation will occur. So if you set 8 notes, with 100% probability then the Octave deviation may trigger 18% of the time, but if it does then notes will sound either an octave up (or down) for the next 7 notes.
+
+The "MEMORY" section works along side the "LOCK" switch. Deviate can "listen" to a sequence of MIDI notes of the nominated length (here 8 notes) and will keep track of what deviations were applied in that 8 note sequence. If you like what you're hearing you can "LOCK" the deviation settings in by sliding the "LOCK slider to the right. As you bring the"LOCK" slider back to the left it will start to reintroduce new deviations while retaining the memory of the locked settings. With the "LOCK" slider all the way to the left, the "TRIGGER" and Deviate settings are applied according to the "TRIGGER" settings. Deviate can also learn how many notes are in a MIDI clip if you click on the "L" button next to "MEMORY". The memory sequence can be divided by 2 or multiplied by 2 using the adjacent buttons.
+
+It is worth reviewing [the YouTube tutorial for this device](https://youtu.be/4WwKGUV2H4I) as it can do ***a lot***.
+
+<img src="./images/Deviate_MIDI.png" width="100%" />
+
 ## Max for Live Tintinnabulator plugin
 
 The [Tintinnabulator](https://maxforlive.com/library/device/7569/tintinnabulator) Max for Live plugin by Milton Mermikedes is an implementation of Arvo Part's [Tintinnabulation technique](https://en.wikipedia.org/wiki/Tintinnabuli). This technique arpeggiates the original chord, and then adds additional notes / harmonies to those notes based on the nearest tone from the scale triad. So 1st position inferior C minor takes a C minor triad (C - Eb - G) and assigns a harmony to the incoming notes using the nearest chord tone 1 position lower than the incoming note (the M-Voice). Within the plugin you can specify the delay between the original notes and the additional harmonies. The good news for producers of generative, ambient music is that the choice of T-Voice position (1st Superior, 2nd Superior, 1st Inferior, 2nd Inferior) can be set to be random. This will add variety and keeps the T-Voice harmony changing. This plugin can be used on melody lines or chord inputs for a variety of different effects.
