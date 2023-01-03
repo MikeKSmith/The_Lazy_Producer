@@ -16,7 +16,9 @@ MIDI generators (as discussed in [Tools - MIDI Generators] produce MIDI notes wh
 
 From the Inspired by Nature pack by Dillon Bastan this is primarily a resonant drone generator but with some additional bells and whistles.
 
-![](./images/Tree_tone.png)<!-- -->
+
+
+<img src="./images/Tree_tone.png" width="100%" />
 
 ## Harmonic Drone Generator
 
