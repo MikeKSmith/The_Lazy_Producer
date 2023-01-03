@@ -20,6 +20,9 @@ To see the Follow Actions for a clip, click on the "Launch" item to expand the s
 
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+```
+
+```{r}
 knitr::include_graphics(path = "./images/Launch_Follow-Actions.png")
 ```
 

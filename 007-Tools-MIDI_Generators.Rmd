@@ -22,8 +22,11 @@ In Ableton Live 11 Suite, there are many plugins that will generate note sequenc
 
 Melodic steps (Max for Live sequencer provided with Ableton Live 11 Suite) is a sequencer that disentangles note pitch, octave, length, velocity and probability. This allows you to sequence these attributes separately. You can define the length of each sequence separately, so you can have all sequences with the same length for predictable MIDI sequences, or change the length of one or more to produce more elaborate patterns. Having sequences that are even numbers of steps will bring you back to repetition faster than having sequences that are prime sequences (remember common factors from your elementary arithmetic lessons?). Note that each lane has the option to "roll the dice" and add randomness, either a little (score 2 dice) or a lot (score 5 dice). Also, note that the "Playback" setting can choose to play back at twice the speed or half the speed.
 
-```{r, echo = FALSE}
+```{r setup, echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+```
+
+```{r}
 knitr::include_graphics(path = "./images/Melodic_Steps.png")
 ```
 

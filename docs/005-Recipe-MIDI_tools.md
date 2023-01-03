@@ -6,7 +6,9 @@
 
 3.  Add MIDI tracks and assign the input for these tracks to be the "Generator" track that you have just created above.
 
-    ![](./images/MIDI_inputs.png)<!-- -->
+    
+
+<img src="./images/MIDI_inputs.png" width="100%" />
 
 4.  In your tracks, you can add MIDI plugins to alter the incoming chord. For example:
 

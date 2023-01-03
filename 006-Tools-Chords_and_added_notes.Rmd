@@ -20,6 +20,9 @@ Ableton's Note Echo plugin may at first seem a bit pointless. I mean you can tak
 
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+```
+
+```{r}
 knitr::include_graphics(path = "./images/Note_Echo.png")
 ```
 

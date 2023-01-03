@@ -8,6 +8,9 @@
 
     ```{r, echo = FALSE}
     knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+    ```
+
+```{r}
     knitr::include_graphics(path = "./images/MIDI_inputs.png")
     ```
 

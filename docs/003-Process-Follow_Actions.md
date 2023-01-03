@@ -18,7 +18,9 @@ Clips can also contain nothing at all. And these empty clips can have different 
 
 To see the Follow Actions for a clip, click on the "Launch" item to expand the section. To enable Follow Actions for the clip, click on the the button marked "Follow Action", and ensure that it is active / orange.
 
-![](./images/Launch_Follow-Actions.png)<!-- -->
+
+
+<img src="./images/Launch_Follow-Actions.png" width="100%" />
 
 There are many different possible actions with the Follow Action. These are mostly self-explanatory but there are a few subtleties that are worth pointing out. As we point out above, Ableton needs to have contiguous sets of clips within a track to enable Follow Actions. The "First" and "Last" options above refer to ***the first and last clips within that contiguous set***, not necessarily the first and last within the track. The "Any" option randomly jumps to any of the clips within the contiguous set, including the current clip. "Other" randomly jumps to a different clip within the set. "Any" can be useful when you want to allow a repeat of the currently playing clip, while "Other" is more useful to force a jump to a different clip. "Jump" allows you to nominate a specific clip to jump to. "No Action" can be used as a "catch all" default action. With "No Action" in the alternative (right hand) Action, you can automate Ableton moving to a different clip after a certain number of bars and beats, but if this option is not taken then the clip continues playing to the end of the clip.
 

@@ -18,7 +18,9 @@ Adding notes, changing the lengths of notes and generating chords within a given
 
 Ableton's Note Echo plugin may at first seem a bit pointless. I mean you can take the output from an audio track and just apply a Delay or Echo to that, so why bother doing it on the MIDI side? Well, because with Note Echo it will adjust the velocity of each echoed note, and you can also pitch up or down the echos, leading to changing pitch. You can also combine Note Echo plugins to produce nice "multi-tap" delays, each with different characteristics. The echos can build up quickly if you stack these, so I tend to use them with minimal or no feedback. Combined with the Random plugin discussed below you can easily build up evolving and interesting patterns which are similar without repeating. The "Feed Delay" amount controls the amount that the velocity decays with each repeat.
 
-![](./images/Note_Echo.png)<!-- -->
+
+
+<img src="./images/Note_Echo.png" width="100%" />
 
 ## Ableton's Random plugin
 
