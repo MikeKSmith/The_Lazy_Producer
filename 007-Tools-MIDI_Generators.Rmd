@@ -43,6 +43,8 @@ knitr::include_graphics(path = "./images/Bouncy_notes.png")
 
 Dr Chaos can store a number of patterns for both the note network (left) and the note attributes (right) so it's possible to set up sequences that you want to use and play through these, or jump to specific combinations.
 
+I like Dr Chaos because you can set up networks of notes that will give potentially nice sounding sequences, but randomness can kick in to take you somewhere else instead. It breaks you out of the typical sequencer where the sequence of notes is predictable, even if probability is intervening to stop some notes from happening every time.
+
 ```{r}
 knitr::include_graphics(path = "./images/Dr_Chaos.png")
 ```
@@ -50,6 +52,8 @@ knitr::include_graphics(path = "./images/Dr_Chaos.png")
 ## Euclidean Sequencer Pro
 
 Euclidean sequencers are commonly found in modular rigs, where can produce interesting polyrhythms for melodic instruments and also interesting rhythmic sequences for drum sounds. This [Max for Live Euclidean Sequencer](https://maxforlive.com/library/device/7608/euclidean-sequencer-pro) is an implementation of that for Ableton Live. Euclidean sequencers work by defining the number of steps in one rotation of a circle, then allocating a number of events as evenly as possible around the steps in that circle. All sequences start at the twelve o'clock position unless you specify a "Rotation" amount to offset the starting point. You can also specify a "Speed" setting for each of the four sequences, nominate a note that corresponds to each sequence (especially useful when used in conjunction with a drum rack). Particularly useful for generating sequences that are rhythmically interesting.
+
+I have used the Euclidean Sequencer Pro with non-rhythmic ideas as well. Choose four notes e.g. C3, D4, G3 and A#3/ Bb3. Setting a pattern with more sparse settings for D4 and A#3 can give some interesting patterns and chords. I combined this with the Random and Scales plugins described earlier to add some variation to the generated notes.
 
 ```{r}
 knitr::include_graphics(path = "./images/Euclidean_sequencer_pro.png")
