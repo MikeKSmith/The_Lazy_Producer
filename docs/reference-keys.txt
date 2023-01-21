@@ -29,6 +29,7 @@ midivolve
 seeds---polymath-and-friends
 others-i-havent-mentioned
 tools---modulators
+modulators-in-ableton-live-general-rule-of-thumb
 lfo
 midi-envelope
 envelope-follower
@@ -37,8 +38,10 @@ midi-expression-control
 strange-mod
 dispatch
 deviate-1
+process---routing-midi-and-audio
 recipe---evolving-synths
 tools---audio-generators
+pinging-resonantors-resonant-filters
 tree-tone
 harmonic-drone-generator
 cellular-degradation

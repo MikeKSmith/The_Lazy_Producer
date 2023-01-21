@@ -12,7 +12,7 @@
 
 ```{r}
     knitr::include_graphics(path = "./images/MIDI_inputs.png")
-    ```
+```
 
 4.  In your tracks, you can add MIDI plugins to alter the incoming chord. For example:
 

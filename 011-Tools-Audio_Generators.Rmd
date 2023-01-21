@@ -4,6 +4,10 @@
 
 # Tools - Audio Generators
 
+```{r, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+```
+
 ------------------------------------------------------------------------
 
 ## Key idea {.unnumbered}
@@ -12,13 +16,25 @@ MIDI generators (as discussed in [Tools - MIDI Generators] produce MIDI notes wh
 
 ------------------------------------------------------------------------
 
+## Pinging resonantors / resonant filters
+
+There's a technique in synthesis where you "ping" a resonant filter with a click or burst of noise which provides the "exciter" to generate a tone. This is relatively simple to achieve in Ableton Live using stock effects in Live Suite. We use a burst of noise from the "Vinyl Distortion" plugin which emulates the crackles and noise from a vinyl record, gate this to only allow the crackles to come through. The "Erosion" plugin accentuates the noise around this crackle and the "Auto Filter" specifies a frequency band that will pass through to the later resonators and effects.
+
+```{r}
+knitr::include_graphics(path = "./images/Pinging_Filters.png")
+```
+
+Hainbach has a great video explaining the technique here: <https://www.youtube.com/watch?v=qJRXxkswXdg>
+
+In our case, instead of using feedback with filters, we can exploit Ableton Live's own resonator plugins: "Resonator", "Spectral Resonator" and "Corpus". In the image below we're using the "Spectral Resonator" to generate some pitched tones. We're feeding it notes from an external MIDI clip which uses the same note probability techniques explained previously. This then feeds into the "Resonators" plugin which provides additional pitched resonance, and the "Spectral Time" plugin which smears out this pitched resonance so that it's not a short burst of pitched information.
+
+```{r}
+knitr::include_graphics(path = "./images/Resonators.png")
+```
+
 ## Tree Tone
 
 From the Inspired by Nature pack by Dillon Bastan this is primarily a resonant drone generator but with some additional bells and whistles.
-
-```{r, echo = FALSE}
-knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
-```
 
 ```{r}
 knitr::include_graphics(path = "./images/Tree_tone.png")
