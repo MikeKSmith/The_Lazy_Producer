@@ -39,7 +39,6 @@ strange-mod
 dispatch
 deviate-1
 process---routing-midi-and-audio
-recipe---evolving-synths
 tools---audio-generators
 pinging-resonantors-resonant-filters
 tree-tone
