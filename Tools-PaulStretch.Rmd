@@ -1,0 +1,25 @@
+---
+---
+---
+
+# Tools - PaulXStretch
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+```
+
+<Description>
+
+------------------------------------------------------------------------
+
+## Key idea {.unnumbered}
+
+<Key Idea>
+
+------------------------------------------------------------------------
+
+## What does it do?
+
+```
+knitr::include_graphics(path = "./images/PaulXStretch.png")
+```
