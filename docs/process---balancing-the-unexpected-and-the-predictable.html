@@ -7,7 +7,7 @@
 <title>5 Process - Balancing the unexpected and the predictable | The Lazy Producer - Starter ideas for making ambient music</title>
 <meta name="author" content="Mike K Smith">
 <meta name="description" content="In generative music, we’re likely to be using some probability to govern when to trigger certain events, to select clips, to change some aspect of the sounds being generated. The problem with...">
-<meta name="generator" content="bookdown 0.29 with bs4_book()">
+<meta name="generator" content="bookdown 0.34 with bs4_book()">
 <meta property="og:title" content="5 Process - Balancing the unexpected and the predictable | The Lazy Producer - Starter ideas for making ambient music">
 <meta property="og:type" content="book">
 <meta property="og:description" content="In generative music, we’re likely to be using some probability to govern when to trigger certain events, to select clips, to change some aspect of the sounds being generated. The problem with...">
@@ -16,7 +16,7 @@
 <meta name="twitter:description" content="In generative music, we’re likely to be using some probability to govern when to trigger certain events, to select clips, to change some aspect of the sounds being generated. The problem with...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.0/transition.js"></script><script src="libs/bs3compat-0.5.0/tabs.js"></script><script src="libs/bs3compat-0.5.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -77,6 +77,7 @@
 <li><a class="" href="tools---modulators.html"><span class="header-section-number">9</span> Tools - Modulators</a></li>
 <li><a class="" href="process---routing-midi-and-audio.html"><span class="header-section-number">10</span> Process - Routing MIDI and Audio</a></li>
 <li><a class="" href="tools---audio-generators.html"><span class="header-section-number">11</span> Tools - Audio Generators</a></li>
+<li><a class="" href="tools---paulxstretch.html"><span class="header-section-number">12</span> Tools - PaulXStretch</a></li>
 </ul>
 
         <div class="book-extra">
@@ -98,10 +99,34 @@
 <p>There are many aspects of musical ideas and sounds that can change - rhythm, timbre, tonality, texture, timing. If all of these are changing all the time it quickly becomes overwhelming. Sudden changes will “stick out” in a way that’s typically undesirable for ambient music (see the definition chapter). Evolving changes are preferred as it’s possible to “hide” these so that the listener only realises something has changed over an extended period.</p>
 <p>Finding the balance between things that change and things that stay the same is important for creating generative, ambient music that will bear repeated (or prolonged) listening.</p>
 <hr>
-<p>In the “Changing Chords” recipe the clips across and within tracks had different lengths, and the note-wise probability led to different chords with each triggering of the clips. With the lengths of clips being 8 bars or so, this meant that chords evolved slowly, with changes being gradual rather than all at once. The longer clip length gives the listener time to acclimatise to a particular chord before it changes and gradual, evolving change means that the listener can pick out which part has changed and then settle in to that change, before the next change happens.</p>
-<p>What we have seen in this first recipe is how to evolve chords and notes. We could also change other attributes of the sounds or rhythms and in other recipes we’ll look into modulation - changing timbre and texture of the sound - and changing rhythms.</p>
-<p>In the Western music tradition we have many familiar tropes - chord patterns, melodic harmony, rhythmic patterns - that helps those familiar with those constructs to feel “comfortable” with music that follows those tropes. Almost by definition, probabilistic and randomness in generative music is likely to break some or all of those rules. As a consequence we often apply constraints that limit the randomness, quantising the rhythm and pitch so that it’s within the bounds of what we recognise. These constraints - using scale quantisers or rhythmic quantisers - are not necessarily crutches, but rather just guard-rails that help stop what we’re producing stray into areas that would “catch the ear” of the listener. Of course, it’s completely possible to play with those constraints in order to deliberately play with this listener’s expectations. Again, what’s important to me is the balance of the unexpected with the predictable. Carpet weavers will often “disguise” mistakes in a pattern by repeating them and weaving them into the pattern so that they become a feature, rather than a mistake. Similarly, repetition and weaving of “wonky” beats into a pattern of music can bring them back to something more predictable - contextualising the wonkiness.</p>
+</div>
+<div id="evolving-changes" class="section level2" number="5.1">
+<h2>
+<span class="header-section-number">5.1</span> Evolving changes<a class="anchor" aria-label="anchor" href="#evolving-changes"><i class="fas fa-link"></i></a>
+</h2>
+<p>In the “Changing Chords” recipe the clips across and within tracks had different lengths, and the note-wise probability led to different chords with each triggering of the clips. This meant that chords evolved slowly, with changes being gradual rather than all at once. The longer clip length gives the listener time to acclimatise to a particular chord before it changes and gradual, evolving change means that the listener can pick out which part has changed and then settle in to that change, before the next change happens. What we have seen in this first recipe is how to evolve chords and notes. We could also change other attributes of the sounds or rhythms and in other recipes we’ll look into modulation - changing timbre and texture of the sound - and changing rhythms.</p>
+</div>
+<div id="taming-randomness---gardening-the-random-processes" class="section level2" number="5.2">
+<h2>
+<span class="header-section-number">5.2</span> Taming randomness - gardening the random processes<a class="anchor" aria-label="anchor" href="#taming-randomness---gardening-the-random-processes"><i class="fas fa-link"></i></a>
+</h2>
+<p>In the Western music tradition we have many familiar tropes - chord patterns, melodic harmony, rhythmic patterns - that helps those familiar with those constructs to feel “comfortable” with music that follows those tropes. Almost by definition, probabilistic and randomness in generative music is likely to break some or all of those rules. This quickly becomes “too much” for the listener if <strong><em>everything</em></strong> is random.</p>
+<p>The key to making music that is generative and pleasant to listen to is to balance unexpected and predictable elements. These could be the notes that are happening, the texture or character of the sound (high-pitched, lower pitched), the volume of tracks, rhythmic patterns. I refer to this process as “gardening” the random processes - taming things that are unruly, messy, too unpredictable or random. You can change the number of repeats of a random process before it changes, or you can rein in the range of a random LFO (or dynamically change the range with another LFO). We can also apply constraints that limit the randomness of note pitches or rhythms, quantising so that it’s within the bounds of what we recognise. These constraints - using scale quantisers or rhythmic quantisers - are not necessarily crutches, but rather just guard-rails that help stop what we’re producing stray into areas that would “catch the ear” of the listener. Of course, it’s completely possible to play with those constraints in order to deliberately play with this listener’s expectations.</p>
+<p>What’s important to me is the balance of the unexpected with the predictable. Carpet weavers will often “disguise” mistakes in a pattern by repeating them and weaving them into the pattern so that they become a feature, rather than a mistake. Similarly, repetition and weaving of “wonky” beats into a pattern of music can bring them back to something more predictable - contextualising the wonkiness.</p>
+</div>
+<div id="deliberate-use-of-repeating-patterns---ostinato-and-predictable-rhythmic-parts" class="section level2" number="5.3">
+<h2>
+<span class="header-section-number">5.3</span> Deliberate use of repeating patterns - ostinato and predictable rhythmic parts<a class="anchor" aria-label="anchor" href="#deliberate-use-of-repeating-patterns---ostinato-and-predictable-rhythmic-parts"><i class="fas fa-link"></i></a>
+</h2>
+<p>As well as “gardening” the random processes and quantising the randomness, we can introduce deliberatly repeating patterns to help hook the listener into a pattern to contextualise the randomness. Ostinato lines are musical phrases that repeat over and over (and over) throughout a piece of music. Pachabel’s Cannon features a repeating line in the bass instruments (continuo part) which repeats throughout. Over this the upper strings play variations on a theme (pattern with variations). The bass-line in this music never changes - it’s there to provide a “ground” theme above which we can weave other parts. Ostinato parts don’t <strong><em>have</em></strong> to be the bass part though, they can be higher parts which are predictable and unchanging. Since they are unchanging throughout, it <strong><em>could</em></strong> make them boring, but we can play with things like changing the key centre underneath them, or implying new key and chord structures above them (for bass parts). If the ostinato line is a single voice, it’s easier to recontextualise these notes than repeating chord patterns, which may get tiring to listen to.</p>
+<p>The same concept can be used in rhythmic parts - using a 4/4 kick drum part (notes on 1, 2, 3, 4 of the bar) can provide an anchoring for the listener, allowing you to use much more complex rhythms around this. Even if this kick part isn’t very loud or prominent, it can provide enough anchoring for you to layer other “kick” sounds around it to play with rhythms. You can alternatively (also?) use a common snare part with snare hits on 2 and 4 of the bar but have a much more fluid and random kick part. Adding something predictable in one part allows the listener to “hook in” to what’s static and provides enough context for what is going on around that.</p>
+</div>
+<div id="repeat-yourself" class="section level2" number="5.4">
+<h2>
+<span class="header-section-number">5.4</span> Repeat yourself<a class="anchor" aria-label="anchor" href="#repeat-yourself"><i class="fas fa-link"></i></a>
+</h2>
 <p>If you look at the Follow Action dialogue box in <a href="process---follow-actions.html#process---follow-actions">Process - Follow Actions</a> you’ll see that it allows you to specify a number of repeats before taking the next action. You can exploit this feature to build in repetition before evolution. Playing the clip 4 times, say, before moving on. This works for shorter clip lengths or for rhythmic patterns, but you may want to avoid this for longer clips.</p>
+<p>You could build an ostinato pattern within a clip and variations or evolutions of that pattern and then use the Follow Actions to gradually move through those evolutions, balancing repetition with gradual evolution. This would break the strict “ostinato repeating all the way through” but may allow you to balance predictability with the unexpected.</p>
 <p>In future chapters we’ll be looking at tools and techniques for changing different aspects of Ableton plugins and instruments. The act of changing something non-destructively i.e. not permanently is called modulation. Modulation tools can be used to gradually change timbres, relative volumes and many other sound attributes.</p>
 
 </div>
@@ -114,6 +139,10 @@
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#process---balancing-the-unexpected-and-the-predictable"><span class="header-section-number">5</span> Process - Balancing the unexpected and the predictable</a></li>
 <li><a class="nav-link" href="#key-idea-3">Key idea</a></li>
+<li><a class="nav-link" href="#evolving-changes"><span class="header-section-number">5.1</span> Evolving changes</a></li>
+<li><a class="nav-link" href="#taming-randomness---gardening-the-random-processes"><span class="header-section-number">5.2</span> Taming randomness - gardening the random processes</a></li>
+<li><a class="nav-link" href="#deliberate-use-of-repeating-patterns---ostinato-and-predictable-rhythmic-parts"><span class="header-section-number">5.3</span> Deliberate use of repeating patterns - ostinato and predictable rhythmic parts</a></li>
+<li><a class="nav-link" href="#repeat-yourself"><span class="header-section-number">5.4</span> Repeat yourself</a></li>
 </ul>
 
       <div class="book-extra">
@@ -131,7 +160,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2023-02-28.</p>
+    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2023-07-13.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

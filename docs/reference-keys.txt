@@ -7,6 +7,10 @@ follow-actions-1
 follow-action-probabilities
 a-random-walk
 process---balancing-the-unexpected-and-the-predictable
+evolving-changes
+taming-randomness---gardening-the-random-processes
+deliberate-use-of-repeating-patterns---ostinato-and-predictable-rhythmic-parts
+repeat-yourself
 recipe---doing-more-with-less-using-midi-tools-and-plugins
 tools---midi-tools-chords-and-added-notes
 abletons-note-echo-plugin
@@ -44,3 +48,7 @@ pinging-resonantors-resonant-filters
 tree-tone
 harmonic-drone-generator
 cellular-degradation
+tools---paulxstretch
+what-does-it-do
+how-do-i-use-it
+what-should-i-use-it-for
