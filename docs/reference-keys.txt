@@ -11,7 +11,7 @@ evolving-changes
 taming-randomness---gardening-the-random-processes
 deliberate-use-of-repeating-patterns---ostinato-and-predictable-rhythmic-parts
 repeat-yourself
-recipe---doing-more-with-less-using-midi-tools-and-plugins
+recipe---balancing-the-unexpected-and-the-predictable
 tools---midi-tools-chords-and-added-notes
 abletons-note-echo-plugin
 abletons-random-plugin
@@ -43,6 +43,7 @@ strange-mod
 dispatch
 deviate-1
 process---routing-midi-and-audio
+recipe---doing-more-with-less-using-midi-tools-and-plugins
 tools---audio-generators
 pinging-resonantors-resonant-filters
 tree-tone
