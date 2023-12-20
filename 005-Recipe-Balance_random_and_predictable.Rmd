@@ -8,7 +8,7 @@
 
     1.  Lower the probability of the notes in the second part (for example somewhere between 50% and 80%) - so that each time the loop plays you get a different set of notes.
 
-    2.  Add MIDI effects like Random and Scale to this part (see chapter 10 - MIDI Tools) to add some variation on the notes being played. This means that each time the loop repeats you will hear a different set of notes. On its own, this would be "too much randomness". But because this sits alongside a predictable repeating part, it will sound more grounded.
+    2.  Add MIDI effects like Random and Scale to this part (see chapter 6 - MIDI Tools: chords and added notes) to add some variation on the notes being played. This means that each time the loop repeats you will hear a different set of notes. On its own, this would be "too much randomness". But because this sits alongside a predictable repeating part, it will sound more grounded.
 
     3.  I also like to add a delay to this second part. Because the notes are more sparse you can add more effects to them and they will stand out over the repeating, predictable melodic line. If this second part has a higher pitch or brighter tone this will also help. If you are using a Return FX channel with Delay, then you can send the predictable part to this delay at a lower level than the second part. That will mean the unpredictable, higher or brighter tone part "pings out" over the more predictable part.
 
