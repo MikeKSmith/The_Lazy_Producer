@@ -32,7 +32,7 @@
 
 You can hear one instance of this track here: <https://soundcloud.com/mikeksmith/changing-chords/s-LNeHFk2AeCI>
 
-```{r, echo=FALSE, results="asis"}
+```{r, echo=FALSE, results = "asis", eval = FALSE}
 htmltools::includeHTML(path = file.path("HTML","Recipe1-Changing_Chords_Soundcloud.html"))
 
 ```

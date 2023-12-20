@@ -44,6 +44,13 @@ dispatch
 deviate-1
 process---routing-midi-and-audio
 recipe---doing-more-with-less-using-midi-tools-and-plugins
+process---workflow-capturing-generative-ideas
+in-the-beginning
+midi-generators
+midi-transformer-tracks
+capturing-the-midi
+modulation-on-track-volume---use-the-utility-device-to-modulate-gain
+group-tracks-to-tidy-your-live-set
 tools---audio-generators
 pinging-resonantors-resonant-filters
 tree-tone
