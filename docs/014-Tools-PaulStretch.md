@@ -34,9 +34,8 @@ The plugin also features various options to tweak the output of the stretched au
 
 You *can* use PaulXStretch as a plugin, but you can also use it as a standalone application. This would allow you to import, stretch, and then export the stretched file ready to import into your DAW as standalone audio. The latter is probably preferable in many cases - audition the file and stretching in the context of your tune, then commit and export to file.
 
-```         
-knitr::include_graphics(path = file.path(here::here, "images", "paulxstretch_screenshot.png"))
-```
+<img src="images/paulxstretch_screenshot.png" width="100%" />
+
 
 ## What should I use it for?
 
