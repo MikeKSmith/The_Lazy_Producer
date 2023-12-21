@@ -28,6 +28,7 @@ bouncy-notes
 dr-chaos
 euclidean-sequencer-pro
 less-concepts
+turing-machines
 midi-waves
 midivolve
 seeds---polymath-and-friends
@@ -42,6 +43,12 @@ midi-expression-control
 strange-mod
 dispatch
 deviate-1
+process---tuning-parameters
+the-problem
+the-tast-test
+waving-not-droning
+be-random-but-not-too-random
+tune-the-parameters
 process---routing-midi-and-audio
 recipe---doing-more-with-less-using-midi-tools-and-plugins
 process---workflow-capturing-generative-ideas

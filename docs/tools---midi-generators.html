@@ -75,11 +75,12 @@
 <li><a class="" href="tools---midi-tools-chords-and-added-notes.html"><span class="header-section-number">7</span> Tools - MIDI tools: chords and added notes</a></li>
 <li><a class="active" href="tools---midi-generators.html"><span class="header-section-number">8</span> Tools - MIDI Generators</a></li>
 <li><a class="" href="tools---modulators.html"><span class="header-section-number">9</span> Tools - Modulators</a></li>
-<li><a class="" href="process---routing-midi-and-audio.html"><span class="header-section-number">10</span> Process - Routing MIDI and Audio</a></li>
-<li><a class="" href="recipe---doing-more-with-less-using-midi-tools-and-plugins.html"><span class="header-section-number">11</span> Recipe - Doing more with less using MIDI tools and plugins</a></li>
-<li><a class="" href="process---workflow-capturing-generative-ideas.html"><span class="header-section-number">12</span> Process - Workflow: capturing generative ideas</a></li>
-<li><a class="" href="tools---audio-generators.html"><span class="header-section-number">13</span> Tools - Audio Generators</a></li>
-<li><a class="" href="tools---paulxstretch.html"><span class="header-section-number">14</span> Tools - PaulXStretch</a></li>
+<li><a class="" href="process---tuning-parameters.html"><span class="header-section-number">10</span> Process - Tuning Parameters</a></li>
+<li><a class="" href="process---routing-midi-and-audio.html"><span class="header-section-number">11</span> Process - Routing MIDI and Audio</a></li>
+<li><a class="" href="recipe---doing-more-with-less-using-midi-tools-and-plugins.html"><span class="header-section-number">12</span> Recipe - Doing more with less using MIDI tools and plugins</a></li>
+<li><a class="" href="process---workflow-capturing-generative-ideas.html"><span class="header-section-number">13</span> Process - Workflow: capturing generative ideas</a></li>
+<li><a class="" href="tools---audio-generators.html"><span class="header-section-number">14</span> Tools - Audio Generators</a></li>
+<li><a class="" href="tools---paulxstretch.html"><span class="header-section-number">15</span> Tools - PaulXStretch</a></li>
 </ul>
 
         <div class="book-extra">
@@ -148,24 +149,33 @@
 <p>Less Concepts is definitely a sequencer that invites exploration, trial and error. Sometimes the results are surprising, other times they fade away and you’re left in silence. If you need further explanation of what’s happening under the hood, I suggest you explore the notes that Dan Derks provides.</p>
 <div class="inline-figure"><img src="images/Less_concepts.png" width="100%"></div>
 </div>
-<div id="midi-waves" class="section level2" number="8.6">
+<div id="turing-machines" class="section level2" number="8.6">
 <h2>
-<span class="header-section-number">8.6</span> MIDI Waves<a class="anchor" aria-label="anchor" href="#midi-waves"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.6</span> Turing machines<a class="anchor" aria-label="anchor" href="#turing-machines"><i class="fas fa-link"></i></a>
+</h2>
+<p><strong><em>How</em></strong> Turing machines work for pattern generation involves things called Shift Registers and moving zeros or ones down a line. Sound &amp; Voltage has an excellent description here: <a href="https://www.youtube.com/watch?v=va2XAdFtmeU" class="uri">https://www.youtube.com/watch?v=va2XAdFtmeU</a> if you want to dig into that and understand better. But it’s <strong><em>what</em></strong> they do that is of interest to the Lazy Producer. It’s a device that spits out random sequences of notes, until you move a dial and “lock in” a pattern. Move the dial a little way back towards the random (middle position) and the device will repeat the locked in sequence, but add occasional new notes. What’s of interest then to the Lazy Producer is the ability to move gradually from random to repeating, predictable sequence and anywhere in between allowing us to balance the unexpected with the predictable.</p>
+<p>In the image below the key part is the left hand end of the Turing Machine. If the dial is set to “Random” then we get a random sequence of notes in the given range (here between A2 and A5) based on the specified clock setting - in this case 8th notes. If we turn the dial completely to the right to “Lock” then we will lock in a repeating sequence of given length - here 8 notes. As we move the dial gradually back to the “Random” setting then we introduce a chance of random changes to the pattern, with the chance of randomness depending how close we are to the “Random” setting. What this means in practice is that we can Lock a sequence, gradually turn the dial back to allow changes to that sequence, then Lock again to “capture” that change. If we turn the dial all the way to the left then we also Lock the sequence, but the repeating sequence will be twice as long i.e. it will take twice as long to come back to the start of the sequence. Because what is generated is a random sequence, we might want to apply a Scale plugin to this to quantise the note outputs and conform them to a particular scale.</p>
+<p>The Max for Live device shown below includes additional features to map output “voltage” signals (modulation) from the Turing Machine to devices in Live, and to use the Gate information from the Turing machine to trigger devices like drum machines. These extensions to functionality are still driven by the same essential random processes and “locking in” sequences discussed above.</p>
+<div class="inline-figure"><img src="images/Turing_Machine.png" width="100%"></div>
+</div>
+<div id="midi-waves" class="section level2" number="8.7">
+<h2>
+<span class="header-section-number">8.7</span> MIDI Waves<a class="anchor" aria-label="anchor" href="#midi-waves"><i class="fas fa-link"></i></a>
 </h2>
 <p><a href="https://isotonikstudios.com/product/midi-waves-by-ned-rush/">MIDI Waves</a> is a paid Max for Live plugin from Isotonik and <a href="https://www.youtube.com/@NedRush">Ned Rush</a>. It is a very useful MIDI sequencer based on the principle of quantising base LFO waveforms through sample and hold. The base LFO waveform (in the screenshot below it’s a Triangle wave) runs at a specified rate, either Hz or Synced to Ableton’s clock. Pitch values here are sample at a separate rate (here 16th notes) to generate ascending and descending note pitches. The rate of sample and the rate of the base LFO dictate how closely the generated pitches follow the base LFO but can sometimes result in sequences that follow arpeggio like patterns, but not quite (due to slight differences between the base LFO and the sample rate). Note that a second LFO is available to add into the base LFO as a frequency modulation (FM) and you can choose the frequency, shape and amount to be added to the base LFO. This can add more random variability in the pitch sequence generated. Note that the FM LFO is added <strong><em>before</em></strong> the blue “sampling” process. So the Sine LFO here is adding a little positive and negative to the base triangle LFO before sampling, resulting in pitch sequences that change subtly each time. Similar processes can be used to generate Velocity, Duration and Gate information. Gate in particular allows you to define the rate at which notes are generated, independent of their pitch. What can result is slight changes in the rhythms of the generated notes, right up to their being clusters of notes, rather than a steady stream.</p>
 <p>This technique is sometimes employed in modular synths if a more traditional sequencer is not being used, as all you need to drive it is a base LFO and a “sample and hold” random generator.</p>
 <div class="inline-figure"><img src="images/MIDI_waves.png" width="100%"></div>
 </div>
-<div id="midivolve" class="section level2" number="8.7">
+<div id="midivolve" class="section level2" number="8.8">
 <h2>
-<span class="header-section-number">8.7</span> Midivolve<a class="anchor" aria-label="anchor" href="#midivolve"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.8</span> Midivolve<a class="anchor" aria-label="anchor" href="#midivolve"><i class="fas fa-link"></i></a>
 </h2>
 <p>The <a href="https://www.ableton.com/en/packs/midivolve/">Ableton Max for Live pack and device with Coldcut - Midivolve</a> Pack is a paid plugin for Ableton Suite. It works by randomly adding variation to MIDI clip in the track where the plugin is placed. That variation can act on MIDI notes, velocity, duration, density (how many notes are playing) as well as being able to map two different parameters in Live. The “A” column defines which parameters experience variation on the next “Evolve!” trigger (in the screenshot below this is set to automatically evolve all parameters once the clip has played through 3 times). If the “I” column is checked then the last evolution acts as the basis for the next variation change. Note that variation amount can be specified via “Ammt” and this is separate to “Chance” of the variation happening. Chance is the probability of the value being varied / evolved <strong><em>for each note / step.</em></strong> This opens up a large number of possibilities to vary input sequences but to balance the unexpected evolution with a repeat of the evolved pattern before the next change is made i.e. let the listener get used to each chance - being predictable, if only for a finite period. Variation can be constrained through the Scale settings.</p>
 <div class="inline-figure"><img src="images/Midivolve.png" width="100%"></div>
 </div>
-<div id="seeds---polymath-and-friends" class="section level2" number="8.8">
+<div id="seeds---polymath-and-friends" class="section level2" number="8.9">
 <h2>
-<span class="header-section-number">8.8</span> SEEDS - Polymath and friends<a class="anchor" aria-label="anchor" href="#seeds---polymath-and-friends"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.9</span> SEEDS - Polymath and friends<a class="anchor" aria-label="anchor" href="#seeds---polymath-and-friends"><i class="fas fa-link"></i></a>
 </h2>
 <p><a href="https://www.novelmusic.org/m4l/seeds">Seeds from Novel Music</a> is actually a collection of sequencing plugins that offer modular synthesiser style control over clocks, note sequences, scales, and much more. This is a paid pack of Max for Live devices, but if you are interested in a collection of tools for modular style sequencing with Ableton Live there is a HUGE amount of potential in this pack. In fact, I can’t do justice to the full set of features available, and I can only recommend that interested users look into the <a href="https://youtube.com/playlist?list=PLjyWHWk9AS6MMpgD88K4U6TICgEjjClFR">tutorial videos prepared by Novel Music to describe their functionality</a>.</p>
 <p>In the screenshot below I’m using the “Sweet 16” clock module from SEEDS which provides four different clocks which can be used by Polymath. Each clock proceeds at a different pace, all driven by Ableton Live’s master clock i.e. Ableton provides the “1/16th” pulse that drives the clocks. Each clock is allocated a label - here “W”, “X”, “Y”, and “Z”. This helps to identify the clock drivers in other devices.</p>
@@ -176,9 +186,9 @@
 <p>The SEEDS pack also includes very useful plugins that can send output to and from various devices and clocks. The “Hub” plugin receives and sends MIDI information from one track to another. So it’s possible to have generative plugins on one track which send MIDI information to a completely different track, which can then be processed independently.</p>
 <div class="inline-figure"><img src="images/Polymath.png" width="100%"></div>
 </div>
-<div id="others-i-havent-mentioned" class="section level2" number="8.9">
+<div id="others-i-havent-mentioned" class="section level2" number="8.10">
 <h2>
-<span class="header-section-number">8.9</span> Others I haven’t mentioned<a class="anchor" aria-label="anchor" href="#others-i-havent-mentioned"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.10</span> Others I haven’t mentioned<a class="anchor" aria-label="anchor" href="#others-i-havent-mentioned"><i class="fas fa-link"></i></a>
 </h2>
 <p>Tom Glendinning / ELPHNT is keeping a curated list of Max for Live plugins he uses in his music which includes some excellent sequencers. If I haven’t touched on your favourite Max for Live sequencer here, you should <a href="https://elphnt.io/max-for-live-curated/">check out Tom’s list</a> and review what he’s presenting.</p>
 <p>For example the MDD_____SNAKE device is based on the Make Noise Renee modular sequencer. Tom has provided a <a href="https://www.youtube.com/watch?v=v2_mdrz9XrU">very helpful introduction here</a>.</p>
@@ -199,10 +209,11 @@
 <li><a class="nav-link" href="#dr-chaos"><span class="header-section-number">8.3</span> Dr Chaos</a></li>
 <li><a class="nav-link" href="#euclidean-sequencer-pro"><span class="header-section-number">8.4</span> Euclidean Sequencer Pro</a></li>
 <li><a class="nav-link" href="#less-concepts"><span class="header-section-number">8.5</span> Less Concepts</a></li>
-<li><a class="nav-link" href="#midi-waves"><span class="header-section-number">8.6</span> MIDI Waves</a></li>
-<li><a class="nav-link" href="#midivolve"><span class="header-section-number">8.7</span> Midivolve</a></li>
-<li><a class="nav-link" href="#seeds---polymath-and-friends"><span class="header-section-number">8.8</span> SEEDS - Polymath and friends</a></li>
-<li><a class="nav-link" href="#others-i-havent-mentioned"><span class="header-section-number">8.9</span> Others I haven’t mentioned</a></li>
+<li><a class="nav-link" href="#turing-machines"><span class="header-section-number">8.6</span> Turing machines</a></li>
+<li><a class="nav-link" href="#midi-waves"><span class="header-section-number">8.7</span> MIDI Waves</a></li>
+<li><a class="nav-link" href="#midivolve"><span class="header-section-number">8.8</span> Midivolve</a></li>
+<li><a class="nav-link" href="#seeds---polymath-and-friends"><span class="header-section-number">8.9</span> SEEDS - Polymath and friends</a></li>
+<li><a class="nav-link" href="#others-i-havent-mentioned"><span class="header-section-number">8.10</span> Others I haven’t mentioned</a></li>
 </ul>
 
       <div class="book-extra">
@@ -220,7 +231,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2023-12-20.</p>
+    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2023-12-21.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

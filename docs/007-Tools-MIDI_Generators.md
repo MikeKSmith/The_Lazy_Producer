@@ -24,7 +24,7 @@ Melodic steps (Max for Live sequencer provided with Ableton Live 11 Suite) is a 
 
 
 
-<img src="./images/Melodic_Steps.png" width="100%" />
+<img src="images/Melodic_Steps.png" width="100%" />
 
 ## Bouncy Notes
 
@@ -32,7 +32,7 @@ Bouncy Notes is a device provided in the "Inspired by Nature" pack developed by 
 
 In the screenshot below I have specified that all generated notes should be quantised to D minor pentatonic. I have also chosen for notes to be generated automatically every bar (Drop setting to Auto and "1b") and last for at most 4 bars ("Lifetime"). At any one time we'll have at most 6 balls in play ("Voices"). I have also set the note "Quantize" to be eighth notes = 8n. This ensures that the note triggers will not clash with anything else going on in the sequencer that is rhythmic or on the beat. But tuning the "Speed" setting you can tailor the density of notes generated. Adding randomness on direction that the balls are travelling when they are generated "Rnd\>Dir" you can generate additional notes in the scale as the balls bounce off the sides and hit the "notes" on the bottom.
 
-<img src="./images/Bouncy_notes.png" width="100%" />
+<img src="images/Bouncy_notes.png" width="100%" />
 
 ## Dr Chaos
 
@@ -42,7 +42,7 @@ Dr Chaos can store a number of patterns for both the note network (left) and the
 
 I like Dr Chaos because you can set up networks of notes that will give potentially nice sounding sequences, but randomness can kick in to take you somewhere else instead. It breaks you out of the typical sequencer where the sequence of notes is predictable, even if probability is intervening to stop some notes from happening every time.
 
-<img src="./images/Dr_Chaos.png" width="100%" />
+<img src="images/Dr_Chaos.png" width="100%" />
 
 ## Euclidean Sequencer Pro
 
@@ -50,7 +50,7 @@ Euclidean sequencers are commonly found in modular rigs, where can produce inter
 
 I have used the Euclidean Sequencer Pro with non-rhythmic ideas as well. Choose four notes e.g. C3, D4, G3 and A#3/ Bb3. Setting a pattern with more sparse settings for D4 and A#3 can give some interesting patterns and chords. I combined this with the Random and Scales plugins described earlier to add some variation to the generated notes.
 
-<img src="./images/Euclidean_sequencer_pro.png" width="100%" />
+<img src="images/Euclidean_sequencer_pro.png" width="100%" />
 
 ## Less Concepts
 
@@ -68,7 +68,16 @@ The "low" and "high" settings define the range of notes that will be used in the
 
 Less Concepts is definitely a sequencer that invites exploration, trial and error. Sometimes the results are surprising, other times they fade away and you're left in silence. If you need further explanation of what's happening under the hood, I suggest you explore the notes that Dan Derks provides.
 
-<img src="./images/Less_concepts.png" width="100%" />
+<img src="images/Less_concepts.png" width="100%" />
+
+## Turing machines
+***How*** Turing machines work for pattern generation involves things called Shift Registers and moving zeros or ones down a line. Sound & Voltage has an excellent description here: https://www.youtube.com/watch?v=va2XAdFtmeU if you want to dig into that and understand better. But it's ***what*** they do that is of interest to the Lazy Producer. It's a device that spits out random sequences of notes, until you move a dial and "lock in" a pattern. Move the dial a little way back towards the random (middle position) and the device will repeat the locked in sequence, but add occasional new notes. What's of interest then to the Lazy Producer is the ability to move gradually from random to repeating, predictable sequence and anywhere in between allowing us to balance the unexpected with the predictable.
+
+In the image below the key part is the left hand end of the Turing Machine. If the dial is set to "Random" then we get a random sequence of notes in the given range (here between A2 and A5) based on the specified clock setting - in this case 8th notes. If we turn the dial completely to the right to "Lock" then we will lock in a repeating sequence of given length - here 8 notes. As we move the dial gradually back to the "Random" setting then we introduce a chance of random changes to the pattern, with the chance of randomness depending how close we are to the "Random" setting. What this means in practice is that we can Lock a sequence, gradually turn the dial back to allow changes to that sequence, then Lock again to "capture" that change. If we turn the dial all the way to the left then we also Lock the sequence, but the repeating sequence will be twice as long i.e. it will take twice as long to come back to the start of the sequence. Because what is generated is a random sequence, we might want to apply a Scale plugin to this to quantise the note outputs and conform them to a particular scale.
+
+The Max for Live device shown below includes additional features to map output "voltage" signals (modulation) from the Turing Machine to devices in Live, and to use the Gate information from the Turing machine to trigger devices like drum machines. These extensions to functionality are still driven by the same essential random processes and "locking in" sequences discussed above.
+
+<img src="images/Turing_Machine.png" width="100%" />
 
 ## MIDI Waves
 
@@ -76,13 +85,13 @@ Less Concepts is definitely a sequencer that invites exploration, trial and erro
 
 This technique is sometimes employed in modular synths if a more traditional sequencer is not being used, as all you need to drive it is a base LFO and a "sample and hold" random generator.
 
-<img src="./images/MIDI_waves.png" width="100%" />
+<img src="images/MIDI_waves.png" width="100%" />
 
 ## Midivolve
 
 The [Ableton Max for Live pack and device with Coldcut - Midivolve](https://www.ableton.com/en/packs/midivolve/) Pack is a paid plugin for Ableton Suite. It works by randomly adding variation to MIDI clip in the track where the plugin is placed. That variation can act on MIDI notes, velocity, duration, density (how many notes are playing) as well as being able to map two different parameters in Live. The "A" column defines which parameters experience variation on the next "Evolve!" trigger (in the screenshot below this is set to automatically evolve all parameters once the clip has played through 3 times). If the "I" column is checked then the last evolution acts as the basis for the next variation change. Note that variation amount can be specified via "Ammt" and this is separate to "Chance" of the variation happening. Chance is the probability of the value being varied / evolved ***for each note / step.*** This opens up a large number of possibilities to vary input sequences but to balance the unexpected evolution with a repeat of the evolved pattern before the next change is made i.e. let the listener get used to each chance - being predictable, if only for a finite period. Variation can be constrained through the Scale settings.
 
-<img src="./images/Midivolve.png" width="100%" />
+<img src="images/Midivolve.png" width="100%" />
 
 ## SEEDS - Polymath and friends
 
@@ -100,7 +109,7 @@ Each track can run to a different clock, so it's possible to set up four differe
 
 The SEEDS pack also includes very useful plugins that can send output to and from various devices and clocks. The "Hub" plugin receives and sends MIDI information from one track to another. So it's possible to have generative plugins on one track which send MIDI information to a completely different track, which can then be processed independently.
 
-<img src="./images/Polymath.png" width="100%" />
+<img src="images/Polymath.png" width="100%" />
 
 ## Others I haven't mentioned
 
