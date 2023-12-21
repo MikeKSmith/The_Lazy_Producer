@@ -63,7 +63,12 @@ pinging-resonantors-resonant-filters
 tree-tone
 harmonic-drone-generator
 cellular-degradation
-tools---paulxstretch
+tools---extreme-audio-stretching-with-paulstretch
+why-would-you-want-to-stretch-audio
 what-does-it-do
 how-do-i-use-it
 what-should-i-use-it-for
+tools---paulxstretch
+what-does-it-do-1
+how-do-i-use-it-1
+what-should-i-use-it-for-1
