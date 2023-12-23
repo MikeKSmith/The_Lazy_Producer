@@ -68,3 +68,11 @@ why-would-you-want-to-stretch-audio
 what-does-it-do
 how-do-i-use-it
 what-should-i-use-it-for
+tools---creative-use-of-audio-effects
+the-tools-of-the-trade
+hybrid-reverb
+valhalla-supermassive
+distortion
+resonators
+spectral-processing
+return-fx-techniques

@@ -33,7 +33,7 @@ I also recommend Loopop's "In-complete book of electronic music tips and tricks"
 
 But if you're looking for some ideas to get you started and make some nice ambient sounds that you could later build up into finished tracks, then this ***IS*** that book. What I'm going to try to present here is a collection of "starter ideas" or recipes for you to follow. I'll also talk a bit about some specific tools and plugins you might use, and touch on some general processes that I use for making ambient, textural and generative music.
 
-You might think that ambient music is essentially "Take any sound, drown it in reverb and delay... JOB. DONE." To my mind there's a ***little*** more to it than that...
+You might think that ambient music is essentially "Take any sound, drown it in reverb and delay... JOB DONE." To my mind there's a ***little*** more to it than that...
 
 ## What do you mean, "Lazy Producer"? {.unnumbered}
 
