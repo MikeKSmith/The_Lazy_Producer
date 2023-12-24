@@ -75,4 +75,8 @@ valhalla-supermassive
 distortion
 resonators
 spectral-processing
+ableton-spectral-effects
+michael-norris-soundmagic-spectral-collection
+other-notable-mentions
+shifter
 return-fx-techniques

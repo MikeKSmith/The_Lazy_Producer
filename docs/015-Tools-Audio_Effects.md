@@ -55,9 +55,37 @@ I have found that a little drive to the input signal (which boosts upper resonan
 <img src="images/Resonator.png" width="100%" />
 
 ## Spectral processing
-Ableton Live Suite 11 includes two Spectral audio effects - Spectral Time which is a delay shifting different parts of the audio based on frequency (high, low sounds) and Spectral Resonator which resonates different parts of the frequency spectrum.
+Ableton Live Suite 11 includes three Spectral audio effects. Spectral processing is interesting because instead of applying effects in a time-based manner (as audio comes through the effect) it is applying effects according to frequency (low to high) and loudness.
+ 
+### Ableton Spectral effects
+Spectral Blur blurs the incoming audio between nominated frequency bands. Tweaking the Residual and Halo amounts will apply different amounts of blurring in the output.
 
-<To be continued...>
+Spectral Time which can be either apply a freezing algorithm to catch and hold incoming audio, or delay which applies delay and frequency shifting. The Tilt, Spray and Mask parameters apply the delayed audio to different parts of the frequency spectrum and gives some interesting smeared, granular and glitchy sounds. The Freezer and Delay algorithms can be used separately or chained serially from one into the other. Setting long fade in and fade out times allows you to catch and smear incoming audio which may be useful as part of a performance to join between two tracks or two sections of a mix.
+
+Spectral Resonator is a resonator which focuses on different parts of the frequency spectrum, so you can tailor the resonance quite precisely. You can have a static tone for the resonance or pass in a MIDI part to change the resonance around a MIDI part. The different resonance algorithms - Chorus, Wander and Granular all have different sounds and it's worth playing with these to see which ones fit what you're trying to achieve.
+
+<img src="images/Spectral_Devices.png" width="100%" />
+
+Rishabh Rajan has useful YouTube videos explaining the Spectral Time (https://www.youtube.com/watch?v=KUZLXAK8do4) and Spectral Resonator (https://www.youtube.com/watch?v=VAebi_brjEs) effects. 
+
+### Michael Norris Soundmagic Spectral collection
+Michael Norris has created some fantastic spectral plugins which can be downloaded here: https://www.michaelnorris.info/software/soundmagic-spectral as donation-ware.
+
+The Spectral Averaging and Spectral Blurring are my two favourites from this collection to smear and blur incoming audio and create lush drones with the same sonic "fingerprint" as the original, but as a long drone texture. Applying these to the an audio clip or to a PaulStretch stretched audio will apply even more smearing and blurring to create fantastic drone textures. 
+
+The key parameter in both of these plugins is the FFT size which determines the size of the sample window in which the blurring or averaging is taking place. Larger FFT sizes smear more, but take longer to fade in and out since the processing is happening over a larger window of audio. You may also find that you need to increase the gain of the output.
+
+<img src="images/Spectral_Averaging.png" width="100%" />
+
+<img src="images/Spectral_Blurring.png" width="100%" />
+
+The whole collection is worth checking out for some very interesting effects, although as you can see above the user interface is VERY bare-bones.
+
+## Other notable mentions
+### Shifter
+Shifter is a combination of a pitch and frequency shifter and ring modulator. It's a bit of a beast because it can be either subtle and also extremely weird depending on how much shifting you do (and what type). 
+
+<Others TBD>
 
 ## Return FX techniques
 If your sound has a sharp attack, you may want to soften the send to the Return channel FX so that only the tail of the sound gets effected. By setting the Map to 100% lowest and 0% highest (inverting the signal) it will duck the initial part of the sound (turning the send DOWN) and then bring it back up as the audio decays. Not that in the device below I have turned up gain to accentuate the behaviour (basically to make the peak duck enough that the initial part of the audio has a low enough send amount) and I have smoothed out the Rise and Fall amounts which removes any "pumping" of the send to the Return channel effect. By setting a Delay you can also manually dial in how much or little of that initial part of the sound gets sent to the Return channel. This technique can be useful to capture and build drone sounds where you want to avoid sudden changes volume.

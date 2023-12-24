@@ -148,12 +148,44 @@ I tend to prefer Live Suite’s Echo effect rather than delay. There is a wide r
 <h2>
 <span class="header-section-number">16.6</span> Spectral processing<a class="anchor" aria-label="anchor" href="#spectral-processing"><i class="fas fa-link"></i></a>
 </h2>
-<p>Ableton Live Suite 11 includes two Spectral audio effects - Spectral Time which is a delay shifting different parts of the audio based on frequency (high, low sounds) and Spectral Resonator which resonates different parts of the frequency spectrum.</p>
-<p>&lt;To be continued…&gt;</p>
+<p>Ableton Live Suite 11 includes three Spectral audio effects. Spectral processing is interesting because instead of applying effects in a time-based manner (as audio comes through the effect) it is applying effects according to frequency (low to high) and loudness.</p>
+<div id="ableton-spectral-effects" class="section level3" number="16.6.1">
+<h3>
+<span class="header-section-number">16.6.1</span> Ableton Spectral effects<a class="anchor" aria-label="anchor" href="#ableton-spectral-effects"><i class="fas fa-link"></i></a>
+</h3>
+<p>Spectral Blur blurs the incoming audio between nominated frequency bands. Tweaking the Residual and Halo amounts will apply different amounts of blurring in the output.</p>
+<p>Spectral Time which can be either apply a freezing algorithm to catch and hold incoming audio, or delay which applies delay and frequency shifting. The Tilt, Spray and Mask parameters apply the delayed audio to different parts of the frequency spectrum and gives some interesting smeared, granular and glitchy sounds. The Freezer and Delay algorithms can be used separately or chained serially from one into the other. Setting long fade in and fade out times allows you to catch and smear incoming audio which may be useful as part of a performance to join between two tracks or two sections of a mix.</p>
+<p>Spectral Resonator is a resonator which focuses on different parts of the frequency spectrum, so you can tailor the resonance quite precisely. You can have a static tone for the resonance or pass in a MIDI part to change the resonance around a MIDI part. The different resonance algorithms - Chorus, Wander and Granular all have different sounds and it’s worth playing with these to see which ones fit what you’re trying to achieve.</p>
+<div class="inline-figure"><img src="images/Spectral_Devices.png" width="100%"></div>
+<p>Rishabh Rajan has useful YouTube videos explaining the Spectral Time (<a href="https://www.youtube.com/watch?v=KUZLXAK8do4" class="uri">https://www.youtube.com/watch?v=KUZLXAK8do4</a>) and Spectral Resonator (<a href="https://www.youtube.com/watch?v=VAebi_brjEs" class="uri">https://www.youtube.com/watch?v=VAebi_brjEs</a>) effects.</p>
 </div>
-<div id="return-fx-techniques" class="section level2" number="16.7">
+<div id="michael-norris-soundmagic-spectral-collection" class="section level3" number="16.6.2">
+<h3>
+<span class="header-section-number">16.6.2</span> Michael Norris Soundmagic Spectral collection<a class="anchor" aria-label="anchor" href="#michael-norris-soundmagic-spectral-collection"><i class="fas fa-link"></i></a>
+</h3>
+<p>Michael Norris has created some fantastic spectral plugins which can be downloaded here: <a href="https://www.michaelnorris.info/software/soundmagic-spectral" class="uri">https://www.michaelnorris.info/software/soundmagic-spectral</a> as donation-ware.</p>
+<p>The Spectral Averaging and Spectral Blurring are my two favourites from this collection to smear and blur incoming audio and create lush drones with the same sonic “fingerprint” as the original, but as a long drone texture. Applying these to the an audio clip or to a PaulStretch stretched audio will apply even more smearing and blurring to create fantastic drone textures.</p>
+<p>The key parameter in both of these plugins is the FFT size which determines the size of the sample window in which the blurring or averaging is taking place. Larger FFT sizes smear more, but take longer to fade in and out since the processing is happening over a larger window of audio. You may also find that you need to increase the gain of the output.</p>
+<div class="inline-figure"><img src="images/Spectral_Averaging.png" width="100%"></div>
+<div class="inline-figure"><img src="images/Spectral_Blurring.png" width="100%"></div>
+<p>The whole collection is worth checking out for some very interesting effects, although as you can see above the user interface is VERY bare-bones.</p>
+</div>
+</div>
+<div id="other-notable-mentions" class="section level2" number="16.7">
 <h2>
-<span class="header-section-number">16.7</span> Return FX techniques<a class="anchor" aria-label="anchor" href="#return-fx-techniques"><i class="fas fa-link"></i></a>
+<span class="header-section-number">16.7</span> Other notable mentions<a class="anchor" aria-label="anchor" href="#other-notable-mentions"><i class="fas fa-link"></i></a>
+</h2>
+<div id="shifter" class="section level3" number="16.7.1">
+<h3>
+<span class="header-section-number">16.7.1</span> Shifter<a class="anchor" aria-label="anchor" href="#shifter"><i class="fas fa-link"></i></a>
+</h3>
+<p>Shifter is a combination of a pitch and frequency shifter and ring modulator. It’s a bit of a beast because it can be either subtle and also extremely weird depending on how much shifting you do (and what type).</p>
+<p><others tbd></others></p>
+</div>
+</div>
+<div id="return-fx-techniques" class="section level2" number="16.8">
+<h2>
+<span class="header-section-number">16.8</span> Return FX techniques<a class="anchor" aria-label="anchor" href="#return-fx-techniques"><i class="fas fa-link"></i></a>
 </h2>
 <p>If your sound has a sharp attack, you may want to soften the send to the Return channel FX so that only the tail of the sound gets effected. By setting the Map to 100% lowest and 0% highest (inverting the signal) it will duck the initial part of the sound (turning the send DOWN) and then bring it back up as the audio decays. Not that in the device below I have turned up gain to accentuate the behaviour (basically to make the peak duck enough that the initial part of the audio has a low enough send amount) and I have smoothed out the Rise and Fall amounts which removes any “pumping” of the send to the Return channel effect. By setting a Delay you can also manually dial in how much or little of that initial part of the sound gets sent to the Return channel. This technique can be useful to capture and build drone sounds where you want to avoid sudden changes volume.</p>
 <div class="inline-figure"><img src="images/Envelope_Follower_Send.png" width="100%"></div>
@@ -184,8 +216,16 @@ DeSantis, D. <em>Making Music: 74 Creative Strategies for Electronic Music Produ
 <li><a class="nav-link" href="#valhalla-supermassive"><span class="header-section-number">16.3</span> Valhalla Supermassive</a></li>
 <li><a class="nav-link" href="#distortion"><span class="header-section-number">16.4</span> Distortion</a></li>
 <li><a class="nav-link" href="#resonators"><span class="header-section-number">16.5</span> Resonators</a></li>
-<li><a class="nav-link" href="#spectral-processing"><span class="header-section-number">16.6</span> Spectral processing</a></li>
-<li><a class="nav-link" href="#return-fx-techniques"><span class="header-section-number">16.7</span> Return FX techniques</a></li>
+<li>
+<a class="nav-link" href="#spectral-processing"><span class="header-section-number">16.6</span> Spectral processing</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#ableton-spectral-effects"><span class="header-section-number">16.6.1</span> Ableton Spectral effects</a></li>
+<li><a class="nav-link" href="#michael-norris-soundmagic-spectral-collection"><span class="header-section-number">16.6.2</span> Michael Norris Soundmagic Spectral collection</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#other-notable-mentions"><span class="header-section-number">16.7</span> Other notable mentions</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#shifter"><span class="header-section-number">16.7.1</span> Shifter</a></li></ul>
+</li>
+<li><a class="nav-link" href="#return-fx-techniques"><span class="header-section-number">16.8</span> Return FX techniques</a></li>
 </ul>
 
       <div class="book-extra">
@@ -203,7 +243,7 @@ DeSantis, D. <em>Making Music: 74 Creative Strategies for Electronic Music Produ
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2023-12-23.</p>
+    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2023-12-24.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
