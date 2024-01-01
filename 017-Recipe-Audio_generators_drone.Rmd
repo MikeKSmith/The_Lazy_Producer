@@ -1,0 +1,16 @@
+# Recipe - Making a drone using some audio generators and effects
+
+1.  Place the Tree Tone generator (from Inspired by Nature pack) on an audio track.
+
+2. ???
+
+8.  Press play. Sit back and relax.
+
+------------------------------------------------------------------------
+
+You can hear my version of this track here: <https://soundcloud.com/mikeksmith/single-note-input>
+
+
+```{r, echo=FALSE, results = "asis"}
+htmltools::includeHTML(path = file.path("HTML","Recipe3-Single_Note_Input.html"))
+```

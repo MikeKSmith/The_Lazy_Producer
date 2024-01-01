@@ -102,13 +102,38 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Spectral_Blurr
 The whole collection is worth checking out for some very interesting effects, although as you can see above the user interface is VERY bare-bones.
 
 ## Other notable mentions
+
 ### Shifter
-Shifter is a combination of a pitch and frequency shifter and ring modulator. It's a bit of a beast because it can be either subtle and also extremely weird depending on how much shifting you do (and what type). 
+Shifter is a combination of a pitch and frequency shifter and ring modulator. It's a bit of a beast because it can be either subtle and also extremely weird depending on how much shifting you do (and what type). This video provides a nice overview of the different modes and features: https://www.youtube.com/watch?v=IdhGroVd1aI
 
-<Others TBD>
+```{r}
+knitr::include_graphics(path = file.path(here::here(), "images", "Shifter.png"))
+```
 
-## Return FX techniques
-If your sound has a sharp attack, you may want to soften the send to the Return channel FX so that only the tail of the sound gets effected. By setting the Map to 100% lowest and 0% highest (inverting the signal) it will duck the initial part of the sound (turning the send DOWN) and then bring it back up as the audio decays. Not that in the device below I have turned up gain to accentuate the behaviour (basically to make the peak duck enough that the initial part of the audio has a low enough send amount) and I have smoothed out the Rise and Fall amounts which removes any "pumping" of the send to the Return channel effect. By setting a Delay you can also manually dial in how much or little of that initial part of the sound gets sent to the Return channel. This technique can be useful to capture and build drone sounds where you want to avoid sudden changes volume.
+### Corpus
+Corpus is the audio effect companion to the Collision instrument. The input audio is used to excite a resonator - a plate, tube, membrane etc. - which then resonates. Depending on the resonator you choose you get different artefacts and results. 
+
+```{r}
+knitr::include_graphics(path = file.path(here::here(), "images", "Corpus.png"))
+```
+
+## FX in series vs Effects Rack vs Return channels vs Separate tracks
+There are so many routing options in Ableton Live that give us a HUGE range of possibilities when it comes to routing audio through effects. The effects can be on the track itself either in series (each effect passes its output on to the next effect) or in parallel using Effects Racks, on a separate track that brings audio from another track into it - with Monitor set to "In" and input selecting from another audio track or group bus - or in a Return channel where one or more tracks are routed into the Return send for processing. So which to choose?
+
+I don't mind. It's YOUR track. But here are some thoughts on how ***I*** would use each option.
+
+I would use effects in series where I want the effects to build on each other. This is helpful if you're going to use an effect to add some colour which can be exploited in the next effect, for example adding some grit that will ping a resonator, or a compressor to reduce the highs and bring up quieter moments which can then be fed into a saturator.
+
+Effects in an Effects Rack are typically in parallel, although it's of course possible to build chains of effects within each chain or layer of the Effects Rack. I typically use these and then apply some modulation that will fade in and out each chain or select between them so that over time the different effects are not static over time.
+
+Return channels are really useful if you'd like to send more than one track to an effect (reverb or delay) where you'd like to keep the effect consistent for each track or where you want to "mix" various tracks through an effect.
+
+Using the output of one track as the input for another and then applying effects is a little like using a Return channel only the return channel is an ordinary Live track. This can be useful if you want to keep the "raw" track in the mix *and* apply effects separately, but it also allows you to pass the result of ***that*** track on into another track. So at any stage you can split out the audio, apply effects, route any of that signal to Return channels, then ingest the effected track into a further track for yet more processing.
+
+So the choice is yours. Really. Try them all out. See which one works for you in a given situation. I don't mean that you should ***pick one*** and stick with it, but rather that you have a range of possible avenues to explore even within one track.
+
+## Use an Envelope with your effect
+If your sound has a sharp attack, you may want to soften the send to the FX so that only the tail of the sound gets effected. Use an Envelope Follower effect before the audio effect. By setting the Map to 100% lowest and 0% highest (inverting the signal) it will duck the initial part of the sound (turning the send DOWN) and then bring it back up as the audio decays. Not that in the device below I have turned up gain to accentuate the behaviour (basically to make the peak duck enough that the initial part of the audio has a low enough send amount) and I have smoothed out the Rise and Fall amounts which removes any "pumping" of the send to the Return channel effect. By setting a Delay you can also manually dial in how much or little of that initial part of the sound gets sent to the Return channel. This technique can be useful to capture and build drone sounds where you want to avoid sudden changes volume.
 
 ```{r}
 knitr::include_graphics(path = file.path(here::here(), "images", "Envelope_Follower_Send.png"))
