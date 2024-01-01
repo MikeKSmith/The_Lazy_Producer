@@ -11,6 +11,4 @@
 You can hear my version of this track here: <https://soundcloud.com/mikeksmith/Euclidean-NonRhythm>
 
 
-```{r, echo=FALSE, results = "asis", eval = FALSE}
-# htmltools::includeHTML(path = file.path("HTML","Recipe3-Euclidean-NonRhythm.html"))
-```
+
