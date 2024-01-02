@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>7 Recipe - Doing more with less using MIDI tools and plugins | The Lazy Producer - Starter ideas for making ambient music</title>
 <meta name="author" content="Mike K Smith">
-<meta name="description" content="Create a MIDI track but do not add an instrument to that track. This is going to be the “generator” for our track. Within this track, add a single MIDI clip with C3 notes for one bar. Name this...">
+<meta name="description" content="In this recipe we’ll use a MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in Chapter 4. This recipe also uses MIDI and audio...">
 <meta name="generator" content="bookdown 0.34 with bs4_book()">
 <meta property="og:title" content="7 Recipe - Doing more with less using MIDI tools and plugins | The Lazy Producer - Starter ideas for making ambient music">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Create a MIDI track but do not add an instrument to that track. This is going to be the “generator” for our track. Within this track, add a single MIDI clip with C3 notes for one bar. Name this...">
+<meta property="og:description" content="In this recipe we’ll use a MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in Chapter 4. This recipe also uses MIDI and audio...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="7 Recipe - Doing more with less using MIDI tools and plugins | The Lazy Producer - Starter ideas for making ambient music">
-<meta name="twitter:description" content="Create a MIDI track but do not add an instrument to that track. This is going to be the “generator” for our track. Within this track, add a single MIDI clip with C3 notes for one bar. Name this...">
+<meta name="twitter:description" content="In this recipe we’ll use a MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in Chapter 4. This recipe also uses MIDI and audio...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.0/transition.js"></script><script src="libs/bs3compat-0.5.0/tabs.js"></script><script src="libs/bs3compat-0.5.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -95,13 +95,19 @@
 <h1>
 <span class="header-section-number">7</span> Recipe - Doing more with less using MIDI tools and plugins<a class="anchor" aria-label="anchor" href="#recipe---doing-more-with-less-using-midi-tools-and-plugins"><i class="fas fa-link"></i></a>
 </h1>
+<p>In this recipe we’ll use a MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in Chapter 4. This recipe also uses MIDI and audio routing in Live quite extensively, so it’s worth reviewing the content in Chapter 5. We’re also going to use modulation devices covered in Chapter 7.</p>
 <ol style="list-style-type: decimal">
 <li><p>Create a MIDI track but do not add an instrument to that track. This is going to be the “generator” for our track.</p></li>
 <li><p>Within this track, add a single MIDI clip with C3 notes for one bar. Name this the “Generator” track (CTRL+R to rename).</p></li>
-<li><p>Add MIDI tracks and assign the input for these tracks to be the “Generator” track that you have just created above. In the example below I’ve added a short, plucky sound in the Operator track, a Wavetable pad, and a track with the Electric piano sound. The Wavetable track has a compressor on it which has a sidechain setting taking in the 808 Kick sound. The 808 kick channel is muted so it is not heard in the mix, but the compressor can pick up this audio to sidechain the wavetable pad and add rhythm. The second Wavetable instrument “Wavetable pre-compressor” is taking the output from the Wavetable instrument but set to “Pre-FX” - before the ducking compression is applied. The audio from this track goes <strong><em>only</em></strong> to the Return FX, so essentially we get a nice pad sound, but we never hear the dry sound.</p></li>
+<li><p>Add MIDI tracks and assign the input for these tracks to be the “Generator” track that you have just created above. In the example below I’ve added a short, plucky sound in the Operator track, a Wavetable pad, and a track with the Electric piano sound.</p></li>
+<li><p>A Shaper modulation device is added to the Wavetable instrument track and the modulation is mapped to the Gain in a Utility device. The “minimum” is set to 50% and the “maximum” to 0% and the rate is set to 1/4 quarter notes so that each beat, the Shaper ducks the gain to produce a pumping “sidechain compressor” like effect.</p></li>
+</ol>
+<div class="inline-figure"><img src="images/Recipe2_MODULATION_Shaper-gain.png" width="100%"></div>
+<ol start="5" style="list-style-type: decimal">
+<li>The second Wavetable instrument “Wavetable pre-compressor” is taking the output from the Wavetable instrument but set to “Pre-FX” - before the ducking gain reduction is applied. The audio from this track goes <strong><em>only</em></strong> to the Return FX, so essentially we get a nice pad sound, but we never hear the dry sound.</li>
 </ol>
 <div class="inline-figure"><img src="images/Recipe2_MIDI-and-audio-routing.png" width="100%"></div>
-<ol start="4" style="list-style-type: decimal">
+<ol start="6" style="list-style-type: decimal">
 <li>
 <p>In your tracks, you can add MIDI plugins to alter the incoming chord. For example:</p>
 <div class="inline-figure"><img src="images/Recipe2_MIDI_fx.png" width="100%"></div>
@@ -125,7 +131,7 @@ These are just examples of what you could do, but the concept here is that the g
 <p>Tweaking the Length and Gate settings of “Note Length” will allow us to alter the sound of what is generated from the “Arpeggiator” plugin - note that the Gate setting in the “Arpeggiator” does this as well, but we could potentially map these parameters to a MIDI controller if we wanted to vary the arpeggiator sound coming from this track.</p>
 <p>From the MIDI routing screen capture above you can see that we send the MIDI output from the “Note Length” track to the input of the Wavetable pad sound (to give us a nice long chords to play with in Wavetable) while the output of the “Arp” track is being sent to the Electric Piano sound.<br><br>
 In performance of this track, I use a MIDI Controller to change settings of the MIDI Effect Rack in the MIDI note track, which essentially is using me (the human in charge) to dictate HOW MUCH generative randomness happens, but the MIDI effects in the “Note Length” and “Arp” tracks ingest this chaos and make some things happen downstream across a variety of instruments and sounds. I then use the controller to fade up and down the volume of each of the instrument tracks to allow me to shape the overall emerging track so that all sounds aren’t playing all the time.</p>
-<ol start="6" style="list-style-type: decimal">
+<ol start="8" style="list-style-type: decimal">
 <li>
 <p>We have mostly been looking at MIDI <strong><em>NOTE</em></strong> plugins here. But there’s a much overlooked MIDI plugin called “Expression control” which allows you to map various MIDI incoming signals to <strong><em>ANY</em></strong> parameter in Live, including controls of other plugins. In the example below we’ve mapped various parameters to controls in the Operator instrument just for illustration.</p>
 <div class="inline-figure"><img src="images/Expression_control.png" width="100%"></div>
@@ -171,7 +177,7 @@ The benefit of this approach is that because MIDI effects are altering the input
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2024-01-01.</p>
+    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2024-01-02.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

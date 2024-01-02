@@ -1,6 +1,8 @@
 # Recipe - Making a drone using some audio generators and effects
 
-1.  Place the Tree Tone generator (from Inspired by Nature pack) on an audio track.
+Using the concept of Pinging Resonators with other audio generation tools and audio effects to create a drone.
+
+1.  
 
 2. ???
 
@@ -8,7 +10,7 @@
 
 ------------------------------------------------------------------------
 
-You can hear my version of this track here: <https://soundcloud.com/mikeksmith/single-note-input>
+You can hear my version of this track here: 
 
 
 ```{r, echo=FALSE, results = "asis"}

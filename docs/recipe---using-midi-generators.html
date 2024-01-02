@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>14 Recipe - Using MIDI generators | The Lazy Producer - Starter ideas for making ambient music</title>
 <meta name="author" content="Mike K Smith">
-<meta name="description" content="Place the Euclidean generator (from Inspired by Nature pack) on an audio track. ??? Press play. Sit back and relax. You can hear my version of this track here:...">
+<meta name="description" content="In this recipe we’re going to use a MIDI generator tool - Euclidean Sequencer Pro - to generate the initial MIDI information which is then fed into additional tracks using techniques discussed in...">
 <meta name="generator" content="bookdown 0.34 with bs4_book()">
 <meta property="og:title" content="14 Recipe - Using MIDI generators | The Lazy Producer - Starter ideas for making ambient music">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Place the Euclidean generator (from Inspired by Nature pack) on an audio track. ??? Press play. Sit back and relax. You can hear my version of this track here:...">
+<meta property="og:description" content="In this recipe we’re going to use a MIDI generator tool - Euclidean Sequencer Pro - to generate the initial MIDI information which is then fed into additional tracks using techniques discussed in...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="14 Recipe - Using MIDI generators | The Lazy Producer - Starter ideas for making ambient music">
-<meta name="twitter:description" content="Place the Euclidean generator (from Inspired by Nature pack) on an audio track. ??? Press play. Sit back and relax. You can hear my version of this track here:...">
+<meta name="twitter:description" content="In this recipe we’re going to use a MIDI generator tool - Euclidean Sequencer Pro - to generate the initial MIDI information which is then fed into additional tracks using techniques discussed in...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.0/transition.js"></script><script src="libs/bs3compat-0.5.0/tabs.js"></script><script src="libs/bs3compat-0.5.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -95,9 +95,29 @@
 <h1>
 <span class="header-section-number">14</span> Recipe - Using MIDI generators<a class="anchor" aria-label="anchor" href="#recipe---using-midi-generators"><i class="fas fa-link"></i></a>
 </h1>
+<p>In this recipe we’re going to use a MIDI generator tool - Euclidean Sequencer Pro - to generate the initial MIDI information which is then fed into additional tracks using techniques discussed in Recipe 2 - MIDI Tools and Routing.</p>
 <ol style="list-style-type: decimal">
-<li><p>Place the Euclidean generator (from Inspired by Nature pack) on an audio track.</p></li>
-<li><p>???</p></li>
+<li>Place the Euclidean Sequencer Pro generator in a track. Euclidean Sequencer Pro is a Max for Live device which can be used to generate polyrhythmic sequences of notes, and is typically used for rhythmic patterns and because of this, by default it only generates 4 note values. Because we’re going to use it here for more melodic output, we’re going to add Random and Scale MIDI devices so that we generate a wider range of notes.</li>
+</ol>
+<p>Feel free to set up the Euclidean Sequencer Pro device to generate a variety of pulse Events across a variety of Step values for each note. It’s nice to mix up odd and even Events, Steps and Speeds across the 4 generators. This ensures that we don’t just get a repeating pattern, although it might also be interesting to explore a combination of predictable and more unexpected patterns (balancing the unexpected and predictable!). We can also use modulators to shift the Rotation / offset of the sequences to add additional unexpectedness if that’s helpful.</p>
+<div class="inline-figure"><img src="images/Recipe4_EuclideanSequencerPro.png" width="100%"></div>
+<ol start="2" style="list-style-type: decimal">
+<li>We’re now going to use many of the techniques previously seen in Recipe 2 - MIDI Tools and Routing, where we take the output from the Euclidean sequencer and then route it to a number of different synth engines while also applying some additional MIDI tool processing.</li>
+</ol>
+<div class="inline-figure"><img src="images/Recipe4_Routing.png" width="100%"></div>
+<p>First, let’s take the “raw” output from the Euclidean Sequencer and route it into a MIDI instrument track using a plucky Operator sound - could be a simple sine wave with no sustain and fairly quick decay.</p>
+<div class="inline-figure"><img src="images/Recipe4_Operator.png" width="100%"></div>
+<ol start="3" style="list-style-type: decimal">
+<li>Create another MIDI instrument track where we’re going to take the same Euclidean Sequencer Pro MIDI information, but now use the MIDI Note Echo device to delay the input by an amount (I’m using 16 16ths = 1 bar). The key thing is to MUTE the original MIDI information. Also add a Note Length MIDI device to turn the incoming MIDI notes into chords. We can then use these delayed and “smeared” MIDI chords with a pad sound. I’m using Wavetable, but you can choose a pad sound from any virtual instrument.</li>
+</ol>
+<div class="inline-figure"><img src="images/Recipe4_Pad.png" width="100%"></div>
+<ol start="4" style="list-style-type: decimal">
+<li>Create another MIDI instrument track and use the MIDI from the chord “pad” track we’ve just created as the input. Be sure to set the input to “Post FX” so that it will apply the MIDI device effects to transform the MIDI <strong><em>before</em></strong> routing it into the new track. In this track, we’ll add an Arpeggiator MIDI device. We can use a bell like tone for this track. I’m going to use Operator again, with some modulation applied to the second modulating oscillator (which will then vary the tone of the main Sine wave carrier oscillator). I’m also going to apply modulation to the rate of the Arpeggiator device. You can try out various settings here, including using an unsynced or “Free” running Arpeggiator rate. You may need to tailor the amount or range of modulation to get Arpeggiator rates that don’t swing too far between VERY quick and VERY slow.</li>
+</ol>
+<div class="inline-figure"><img src="images/Recipe4_Arp.png" width="100%"></div>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Feel free to continue adding additional tracks to bring texture and a variety of tones to your track. I’ve included a “choir” and textured pad tracks. Experiment with where these take the incoming MIDI information from, and how you can manipulate the MIDI further using a variety of MIDI transformation devices.</p></li>
+<li><p>You could also experiment with other MIDI generators discussed in Chapter 13, such as Bouncy Notes, Turing Machine, Less Concepts, etc. The MIDI generating tools provide the raw stream of MIDI notes, but the effects here are used to provide the texture around that sequence.</p></li>
 <li><p>Press play. Sit back and relax.</p></li>
 </ol>
 <hr>
@@ -127,7 +147,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2024-01-01.</p>
+    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2024-01-02.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
