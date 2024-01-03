@@ -14,8 +14,8 @@ Finding a few useful scales that work well in a generative context is a good ide
 
 You know how you can play only the black keys on the keyboard and no matter what you play it just all somehow "fits" and sounds good? That's because you are playing a pentatonic scale. Many guitarists will scoff at players who riff away on a pentatonic scale, because it is seen as being somehow a "cheat" and avoids having to learn more complex scales and harmonies. But for our generative purposes, ***pentatonic scales are your absolute number 1 pick***. You can combine any number of generative processes working within a pentatonic scale and they will fit together like hand in glove. 
 
-(C) Minor pentatonic: C - Eb - F - G - Bb - C; 1 - m3 - 4 - 5 - b7
-(C) Major pentatonic: C - D - E - G - A - C; 1 - 2 - 3 - 5 - 6
+C Minor pentatonic: C - Eb - F - G - Bb - C; 1 - m3 - 4 - 5 - b7  
+C Major pentatonic: C - D - E - G - A - C; 1 - 2 - 3 - 5 - 6
 
 If you pick any 3 out of either of these scales then you get nice triads from their respective (non-pentatonic) scales. 
 
@@ -27,14 +27,14 @@ Modal scales are ***hard*** to wrap your brain around at first. In practice, the
 
 Start on the G of the C major scale and play only the "white keys" of the C major scale up to the next G. That's the Mixolydian mode. Let's look at the notes and try to understand what's going on though:
 
-G Mixolydian: G - A - B - C - D - E - F; 1 - 2 - 3 - 4 - 5 - 6 - b7
+G Mixolydian: G - A - B - C - D - E - F; 1 - 2 - 3 - 4 - 5 - 6 - b7  
 C Mixolydian: C - D - E - F - G - A - Bb.
 
 Mixolydian is essentially a major scale but with a flattened 7th. This is a nicer alternative to the straight major scale because the harsh major 7th is "softened" by flattening it. You can combine this flattened 7th with other notes in the scale and get attractive chords. You can also swap between the Mixolydian mode and the fourth of the natural major key. So C Mixolydian has the same notes as F Major. G Mixolydian has the same notes as C Major. If your MIDI note generator process pings out the flattened seventh here, it won't sound harsh and abrasive. And you could either play a root drone of the Mixolydian mode root, or the fourth of the natural key and both would sound fine.
 
 ### Dorian mode
 
-D Dorian: D - E - F - G - A - B - C - D; 1 - 2 - m3 - 4 - 5 - 6 - b7
+D Dorian: D - E - F - G - A - B - C - D; 1 - 2 - m3 - 4 - 5 - 6 - b7  
 C Dorian: C - D - Eb - F - G - A - Bb - C
 
 Dorian is a more "minor" sounding mode (with a minor third from the natural scale) and also the flattened 7th we talked about above. Dorian is essentially the "minor" version of what we discussed above with the Mixolydian, and it works for many of the same reasons.
