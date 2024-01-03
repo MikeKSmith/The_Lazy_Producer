@@ -92,3 +92,8 @@ dorian-mode
 there-are-no-wrong-notes-only-context
 selections-of-notes---chords
 other-scales-traditions
+process---using-field-recordings
+natural-and-urban-sounds
+recording-noises
+online-sources-for-field-recordings
+using-the-samples
