@@ -84,3 +84,11 @@ what-does-it-do
 how-do-i-use-it
 what-should-i-use-it-for
 recipe---making-a-drone-using-some-audio-generators-and-effects
+process---using-scales
+pentatonics---minor-and-major
+modes
+mixolydian-mode
+dorian-mode
+there-are-no-wrong-notes-only-context
+selections-of-notes---chords
+other-scales-traditions
