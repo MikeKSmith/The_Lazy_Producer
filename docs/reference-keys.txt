@@ -97,3 +97,4 @@ natural-and-urban-sounds
 recording-noises
 online-sources-for-field-recordings
 using-the-samples
+recipe---audio-clip-or-sampler-into-effects
