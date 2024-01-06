@@ -16,7 +16,9 @@
   
 ***Track 1 clips***:   
   
-![](images/Recipe1_Track1_Chord1.png)<!-- -->![](images/Recipe1_Track1_Chord2.png)<!-- -->![](images/Recipe1_Track1_Chord3.png)<!-- -->
+
+
+<img src="images/Recipe1_Track1_Chord1.png" width="100%" /><img src="images/Recipe1_Track1_Chord2.png" width="100%" /><img src="images/Recipe1_Track1_Chord3.png" width="100%" />
   
 ***Track 2 clips***:   
   

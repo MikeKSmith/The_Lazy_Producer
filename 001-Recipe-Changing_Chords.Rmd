@@ -18,7 +18,9 @@
   
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+```
 
+```{r}
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track1_Chord1.png"))
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track1_Chord2.png"))
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track1_Chord3.png"))
