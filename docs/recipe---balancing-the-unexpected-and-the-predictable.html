@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>11 Recipe - Balancing the unexpected and the predictable | The Lazy Producer - Starter ideas for making ambient music</title>
 <meta name="author" content="Mike K Smith">
-<meta name="description" content="Create a short melodic phrase in one MIDI track. Loop that part. On another track, creating a second part that complements the first melodic phrase. Loop this part as well. Ensure that the second...">
+<meta name="description" content='knitr::opts_chunk$set(echo = FALSE, out.width = "100%") Create a short melodic phrase in one MIDI track. I’ve created three clips, which have Follow Actions set so that the clips advance to the...'>
 <meta name="generator" content="bookdown 0.34 with bs4_book()">
 <meta property="og:title" content="11 Recipe - Balancing the unexpected and the predictable | The Lazy Producer - Starter ideas for making ambient music">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Create a short melodic phrase in one MIDI track. Loop that part. On another track, creating a second part that complements the first melodic phrase. Loop this part as well. Ensure that the second...">
+<meta property="og:description" content='knitr::opts_chunk$set(echo = FALSE, out.width = "100%") Create a short melodic phrase in one MIDI track. I’ve created three clips, which have Follow Actions set so that the clips advance to the...'>
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="11 Recipe - Balancing the unexpected and the predictable | The Lazy Producer - Starter ideas for making ambient music">
-<meta name="twitter:description" content="Create a short melodic phrase in one MIDI track. Loop that part. On another track, creating a second part that complements the first melodic phrase. Loop this part as well. Ensure that the second...">
+<meta name="twitter:description" content='knitr::opts_chunk$set(echo = FALSE, out.width = "100%") Create a short melodic phrase in one MIDI track. I’ve created three clips, which have Follow Actions set so that the clips advance to the...'>
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.0/transition.js"></script><script src="libs/bs3compat-0.5.0/tabs.js"></script><script src="libs/bs3compat-0.5.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -98,20 +98,33 @@
 <h1>
 <span class="header-section-number">11</span> Recipe - Balancing the unexpected and the predictable<a class="anchor" aria-label="anchor" href="#recipe---balancing-the-unexpected-and-the-predictable"><i class="fas fa-link"></i></a>
 </h1>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">knitr</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/knitr/man/opts_chunk.html">opts_chunk</a></span><span class="op">$</span><span class="fu">set</span><span class="op">(</span>echo <span class="op">=</span> <span class="cn">FALSE</span>, out.width <span class="op">=</span> <span class="st">"100%"</span><span class="op">)</span></span></code></pre></div>
 <ol style="list-style-type: decimal">
-<li><p>Create a short melodic phrase in one MIDI track. Loop that part.</p></li>
-<li><p>On another track, creating a second part that complements the first melodic phrase. Loop this part as well. Ensure that the second part is distinguishable from the first either through having a different tone from the instrument or at a higher pitch. We are going to apply MIDI effects or probability to this second part while keeping the first melodic phrase as our “grounding” part that is predictable.</p></li>
+<li>Create a short melodic phrase in one MIDI track. I’ve created three clips, which have Follow Actions set so that the clips advance to the next clip after playing 4x times.</li>
+</ol>
+<p><img src="images/Recipe3_Predictable_Clip1.png" width="100%"><img src="images/Recipe3_Predictable_Clip2.png" width="100%"><img src="images/Recipe3_Predictable_Clip3.png" width="100%"></p>
+<ol start="2" style="list-style-type: decimal">
+<li>On another track, creating a second part that complements the first melodic phrase. Loop this part as well. Ensure that the second part is distinguishable from the first either through having a different tone from the instrument or at a higher pitch. We are going to apply MIDI effects or probability to this second part while keeping the first melodic phrase as our “grounding” part that is predictable.</li>
+</ol>
+<!-- --><ol start="3" style="list-style-type: decimal">
 <li>
 <p>You can now choose some options for the second part:</p>
 <ol style="list-style-type: decimal">
-<li><p>Lower the probability of the notes in the second part (for example somewhere between 50% and 80%) - so that each time the loop plays you get a different set of notes.</p></li>
+<li><p>Lower the probability of the notes in the second part (for example somewhere between 50% and 80%) - so that each time the loop plays you get a different set of notes. With lower probability you can choose to have more notes per clip, as they result will be more varied.</p></li>
 <li><p>Add MIDI effects like Random and Scale to this part (see chapter 6 - MIDI Tools: chords and added notes) to add some variation on the notes being played. This means that each time the loop repeats you will hear a different set of notes. On its own, this would be “too much randomness”. But because this sits alongside a predictable repeating part, it will sound more grounded.</p></li>
-<li><p>I also like to add a delay to this second part. Because the notes are more sparse you can add more effects to them and they will stand out over the repeating, predictable melodic line. If this second part has a higher pitch or brighter tone this will also help. If you are using a Return FX channel with Delay, then you can send the predictable part to this delay at a lower level than the second part. That will mean the unpredictable, higher or brighter tone part “pings out” over the more predictable part.</p></li>
+<li><p>I also like to add a delay to this second part, either with delay on the track itself or as a Return track. Because the notes are more sparse you can add more effects to them and they will stand out over the repeating, predictable melodic line. If this second part has a higher pitch or brighter tone this will also help. If you are using a Return FX channel with Delay, then you can send the predictable part to this delay at a lower level than the second part. That will mean the unpredictable, higher or brighter tone part “pings out” over the more predictable part.</p></li>
+<li><p>Notice that the clip lengths are not 4 bars exactly. This means that when the Follow Actions return to the first clip, the notes will be in a slightly different place in the bar. This will keep the unpredictable part more interesting for the listener.</p></li>
 </ol>
 </li>
-<li><p>You can repeat the above to generate variations on the repeating, “predictable” loop and the associated “unpredictable” part and then use Follow Actions to cycle between them. If using Follow Actions then I recommend repeating the “predictable” part at least twice before moving on to the next “variation”. This allows the listener time to become familiar with each predictable loop before it moves on.</p></li>
-<li><p>Similarly, create a 4/4 kick loop i.e. MIDI notes on 1,2,3 and 4th 1/4 note of each bar.</p></li>
+</ol>
+<p><img src="images/Recipe3_Unpredictable_Clip1.png" width="100%"><img src="images/Recipe3_Unpredictable_Clip2.png" width="100%"><img src="images/Recipe3_Unpredictable_Clip3.png" width="100%"><img src="images/Recipe3_Unpredictable_Plugins.png" width="100%"></p>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Similarly, create a 4/4 kick loop i.e. MIDI notes on 1,2,3 and 4th 1/4 note of each bar. This will be your predictable rhythmic part.</p></li>
 <li><p>Create a Hihat part with notes on every 16th note in the bar.</p></li>
+</ol>
+<p><img src="images/Recipe3_HH_Clip.png" width="100%"><img src="images/Recipe3_HH_Plugins.png" width="100%"></p>
+<ol start="5" style="list-style-type: decimal">
 <li><p>Lower the probability of notes in the Hihat part. You can choose to keep some notes with higher probability to “anchor” things, or make all notes have lower probability (50-80% probability is good). It’s also good to vary the velocity of notes - perhaps notes with higher probability have higher velocity, while notes with lower probability have lower velocity, to provide “ghost notes” on the Hihat part. Feel free to add a Beat Repeat plugin on this part to provide some random “rolls” and glitchy note repeats, if you like that kind of thing. The Hihat part here can be as complex as you like, because your kick part is completely predictable.</p></li>
 <li><p>Press play. Sit back and relax.</p></li>
 </ol>
@@ -142,7 +155,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2024-01-06.</p>
+    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2024-01-07.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
