@@ -1,9 +1,6 @@
 # Recipe - Balancing the unexpected and the predictable
 
 
-```r
-knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
-```
 
 1.  Create a short melodic phrase in one MIDI track. I've created three clips, which have Follow Actions set so that the clips advance to the next clip after playing 4x times.
 
@@ -11,9 +8,6 @@ knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 
 2.  On another track, creating a second part that complements the first melodic phrase. Loop this part as well. Ensure that the second part is distinguishable from the first either through having a different tone from the instrument or at a higher pitch. We are going to apply MIDI effects or probability to this second part while keeping the first melodic phrase as our "grounding" part that is predictable.
 
-```{=html}
-<!-- -->
-```
 3.  You can now choose some options for the second part:
 
     1.  Lower the probability of the notes in the second part (for example somewhere between 50% and 80%) - so that each time the loop plays you get a different set of notes. With lower probability you can choose to have more notes per clip, as they result will be more varied.
