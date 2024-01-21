@@ -1,6 +1,9 @@
 what-do-we-mean-generative-ambient
 recipe---changing-chords
 process---note-wise-probability
+drum-parts
+lead-parts
+chord-parts
 process---follow-actions
 follow-actions
 follow-actions-1
