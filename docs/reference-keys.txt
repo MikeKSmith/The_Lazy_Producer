@@ -96,11 +96,10 @@ dorian-mode
 there-are-no-wrong-notes-only-context
 selections-of-notes---chords
 other-scales-traditions
-process---using-field-recordings
-natural-and-urban-sounds
-recording-noises
-online-sources-for-field-recordings
-using-the-samples
+process---maximalist-ambient
+make-it-loud
+slow-evolution-but-noisy
+blender-rather-than-mixer
 recipe---audio-clip-or-sampler-into-effects
 process---unsynced-loops
 an-old-idea
@@ -108,3 +107,8 @@ easy-implementation-in-the-daw
 im-in-my-prime
 fibonacci-and-the-golden-ratio
 recipe---using-the-fibonacci-sequence-to-create-loops-ht-divkid
+process---maximalist-ambient-1
+make-it-loud-1
+slow-evolution-but-noisy-1
+blender-rather-than-mixer-1
+some-examples

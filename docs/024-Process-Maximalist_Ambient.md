@@ -27,3 +27,11 @@ Remember: more is more, in this case.
 ## Blender rather than mixer
 
 The challenging part of this is to bring the sounds together so that they blend and provide a cohesive whole. With saturation and distortion in many places and potentially with different effects, getting these to come together and not pile up in the sonic spectrum is difficult. Carving space for each, applying generous EQ to harness certain frequencies will be essential to making the elements sit together. This is usually how we mix tracks, but in this case where each sound is full and then saturate or distorted it's important to manage the whole, as well as the individual parts.
+
+## Some examples: 
+
+-   Alessandro Cortini - Volume Massimo. <https://cortini.bandcamp.com/album/volume-massimo>
+
+-   Sunn O))) - Pyroclasts. <https://sunn.bandcamp.com/album/pyroclasts>
+
+-   Norah Lorway - digitalOceans. <https://xylemrecords.bandcamp.com/album/digitaloceans>

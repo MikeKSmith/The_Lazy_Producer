@@ -1,29 +1,29 @@
-# Process - Using Field Recordings
+# Process - Maximalist ambient
 
-Computer goes "Bleep bloop bleep bleep bloopity bloop. Whoosh. Bleep bleep... BRRRRR...."
-
-If the sound sources for your generative ambient music using synths and sound generators that don't involve sounds from "real world" instruments and you add in random and probabilistic processes then pretty quickly you have moved away from anything that could be described as "natural" sounding. How can this kind of music appeal to humans, who by their nature are more used to organic sounds and textures they hear day to day?
+Not all ambient music goes plinky, plonky, drowned in reverb and delay. Some is harsh, abrasive, challenging and fills the entire sonic spectrum with noise. The key feature is slowness and evolution, rather than quiet.
 
 ------------------------------------------------------------------------
 
 ## Key idea {.unnumbered}
 
-Field recordings of nature, or sounds that humans might hear day to day add back in context that might help listeners feel more engaged with the generative and more random aspects of the music. The sound of a stream, birds, rain, wind, people talking in a street and cars passing, even the hum or mechanical clicks of machinery can help the listener create a mental picture to go with the more abstract or generative ideas.
+Rather than focussing on delicate and minimalist, create huge vistas, drones. Saturate the sonic palette and create a sound that is impossible to ignore. Remember to keep the sounds, chords, harmonics evolving rather than static to give the listener some room to breathe, but do not be afraid to make the sound note just heard but felt in the core of the listener's being.
 
 ------------------------------------------------------------------------
 
-## Natural and urban sounds
+## Make it loud
 
-Take a walk in a woodland area. It's never entirely silent. There's likely the sound of wildlife, wind in the trees, perhaps the sound of water. By describing it to you now, I'm sure you have a mental picture (even though it's sound!) of what you might expect to hear. The idea that we're aiming for is to provide some context that listeners are familiar with to counteract the "unnatural" sounds from the generative processes. Similarly, you can use urban sounds (street sounds), sounds from the house, mechanical noises - basically anything that listeners might be familiar with.
+Many of the sounds and ideas that have been presented so far are delicate, curated carefully to present the listener with something that is unobtrusive yet engaging. Another approach entirely is to make sounds that do not give the listener the opportunity to ignore them, designed to be played as loudly as possible through a sound system that has the potential to inflict hearing damage and rearrange internal organs.
 
-## Recording noises
+Artists like Sunn O))), Alessandro Cortini, Norah Lorway have produced albums and tracks that are designed to played as loudly as possible. A common feature of these tracks is a slowly evolving soundscape (very ambient) but also harmonics, overtones, noise, saturation, distortion that itself adds to the sonic palette making it impossible to ignore.
 
-You likely have a phone with you now, or perhaps nearby. In that case you have a microphone to hand. So next time you're out for a walk, take out the phone and record some noises. All you need to do is to be ready to listen and decide how the sounds you're hearing are interesting, or how they could be contextualised (or provide context). 
+## Slow evolution but noisy
 
-## Online sources for field recordings
+To harness this concept, it pays to have more slow movement, rather than busy parts. Stacking sounds, detuning oscillators and sound sources will provide a depth and modulation to the sounds that can then be picked up and effected. Using parallel saturation and distortion will further expand the sound and allow you to process different parts of the sonic frequency separately, bringing out overtones rather than squashing them.
 
-Many producers create field recording sound packs, and some of these are sold through places like Bandcamp. Searching for "Field Recordings" should allow you to find these.
+Make chords evolve rather than appear so that the listener is carried forward. The listener's senses will be pummeled by the sound itself rather than by rhythmic elements or rapid chord changes.
 
-## Using the samples
+Remember: more is more, in this case.
 
-You can use these as is, alternatively you might want to put the sample into Ableton's Simpler and have a MIDI note trigger the sample but with random modulation on the sample start point. This will vary the starting point of the sample with each MIDI note and allow you to effectively extend the length of the sample to an arbitrary extent. 
+## Blender rather than mixer
+
+The challenging part of this is to bring the sounds together so that they blend and provide a cohesive whole. With saturation and distortion in many places and potentially with different effects, getting these to come together and not pile up in the sonic spectrum is difficult. Carving space for each, applying generous EQ to harness certain frequencies will be essential to making the elements sit together. This is usually how we mix tracks, but in this case where each sound is full and then saturate or distorted it's important to manage the whole, as well as the individual parts.
