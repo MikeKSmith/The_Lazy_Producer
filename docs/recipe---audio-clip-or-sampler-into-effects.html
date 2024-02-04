@@ -7,7 +7,7 @@
 <title>21 Recipe - Audio clip or Sampler into effects | The Lazy Producer - Starter ideas for making ambient music</title>
 <meta name="author" content="Mike K Smith">
 <meta name="description" content="The Sampler instrument from Ableton Live is often used to slice and dice breaks and loops, or to produce multi-sampled instruments that allow you to recreate sounds and playback across the...">
-<meta name="generator" content="bookdown 0.34 with bs4_book()">
+<meta name="generator" content="bookdown 0.37 with bs4_book()">
 <meta property="og:title" content="21 Recipe - Audio clip or Sampler into effects | The Lazy Producer - Starter ideas for making ambient music">
 <meta property="og:type" content="book">
 <meta property="og:description" content="The Sampler instrument from Ableton Live is often used to slice and dice breaks and loops, or to produce multi-sampled instruments that allow you to recreate sounds and playback across the...">
@@ -16,7 +16,7 @@
 <meta name="twitter:description" content="The Sampler instrument from Ableton Live is often used to slice and dice breaks and loops, or to produce multi-sampled instruments that allow you to recreate sounds and playback across the...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.0/transition.js"></script><script src="libs/bs3compat-0.5.0/tabs.js"></script><script src="libs/bs3compat-0.5.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.6.1/transition.js"></script><script src="libs/bs3compat-0.6.1/tabs.js"></script><script src="libs/bs3compat-0.6.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -87,6 +87,8 @@
 <li><a class="" href="process---using-scales.html"><span class="header-section-number">19</span> Process - Using Scales</a></li>
 <li><a class="" href="process---using-field-recordings.html"><span class="header-section-number">20</span> Process - Using Field Recordings</a></li>
 <li><a class="active" href="recipe---audio-clip-or-sampler-into-effects.html"><span class="header-section-number">21</span> Recipe - Audio clip or Sampler into effects</a></li>
+<li><a class="" href="process---unsynced-loops.html"><span class="header-section-number">22</span> Process - Unsynced loops</a></li>
+<li><a class="" href="recipe---using-the-fibonacci-sequence-to-create-loops-ht-divkid.html"><span class="header-section-number">23</span> Recipe - Using the Fibonacci sequence to create loops (HT DivKid)</a></li>
 </ul>
 
         <div class="book-extra">
@@ -99,24 +101,22 @@
 <span class="header-section-number">21</span> Recipe - Audio clip or Sampler into effects<a class="anchor" aria-label="anchor" href="#recipe---audio-clip-or-sampler-into-effects"><i class="fas fa-link"></i></a>
 </h1>
 <p>The Sampler instrument from Ableton Live is often used to slice and dice breaks and loops, or to produce multi-sampled instruments that allow you to recreate sounds and playback across the keyboard. But in our context we’re going to use it to simply play back a longer textured sound sample and apply some modulation to the cutoff, producing a drone sound. We can then throw this through a barrage of effects - either using Return channels or via individual audio effects with the sampler output routed into each. Effectively we’re reusing an idea we’ve used before, but starting with Sampler as the audio generator. You could alternatively use the audio output from PaulStretch as the drone generator. The benefit of using Sampler is that we can add MIDI effects to (randomly) change the pitch of the sample so that it doesn’t have to be consistent from one loop to another. Other sample-based instruments like Granulator will allow you to do similar.</p>
-<p>1/</p>
-<p>2/</p>
-
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-desantis2015making" class="csl-entry">
-DeSantis, D. <em>Making Music: 74 Creative Strategies for Electronic Music Producers</em>. Ableton AG, 2015. <a href="https://books.google.co.uk/books?id=7WNsrgEACAAJ">https://books.google.co.uk/books?id=7WNsrgEACAAJ</a>.
+<ol style="list-style-type: decimal">
+<li><p>Create a track with the Sampler instrument and one clip with a single note of 8 or 16 bars.</p></li>
+<li><p>In the Sampler Filter/Global section, give the envelope a long attack (several seconds) and very long release (again, several seconds). This will allow different notes to blend rather than cut each other off.</p></li>
+<li><p>In the Sample Modulation section, create some modulation on Filter, Sample Offset and other parameters so that the sounds morph and change over time rather than staying static. You can also modulate the LFO amounts or rates in LFO2 and LFO3 so that the modulation itself isn’t static. Modulating the Sample Offset makes Sample work a little like a granulator - instead of starting at the beginning of the sample each time, the modulation picks a new position to start from. This prevents the sound from being too predictable with each new note.</p></li>
+</ol>
+<p><img src="images/Sampler_Drone_Global.png" width="100%"><img src="images/Sampler_Drone_Modulation.png" width="100%"></p>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Using techniques described in Chapter 15 (Audio Effects) and used in the Audio Generators Drone recipe, set up a network of audio effects on effect sends / Return channels.</p></li>
+<li><p>You can apply MIDI effects to the track to pick a new random &amp; quantised note each time the clip restarts. Unlike using an audio clip, using Sampler allows us to repitch the sound with each new note.</p></li>
+<li><p>Once you have a setup that works and produces pleasing sounds, try dropping a different pad sample into the Sampler. Doing this allows you to change up the sounds generated, as each sample will have different tones, resonances and features.</p></li>
+<li><p>Press play. Sit back and relax.</p></li>
+</ol>
 </div>
-</div>
-</div>
-
-
-
-
-
-
   <div class="chapter-nav">
 <div class="prev"><a href="process---using-field-recordings.html"><span class="header-section-number">20</span> Process - Using Field Recordings</a></div>
-<div class="empty"></div>
+<div class="next"><a href="process---unsynced-loops.html"><span class="header-section-number">22</span> Process - Unsynced loops</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav"><li><a class="nav-link" href="#recipe---audio-clip-or-sampler-into-effects"><span class="header-section-number">21</span> Recipe - Audio clip or Sampler into effects</a></li></ul>
@@ -136,7 +136,7 @@ DeSantis, D. <em>Making Music: 74 Creative Strategies for Electronic Music Produ
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2024-01-21.</p>
+    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2024-02-04.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

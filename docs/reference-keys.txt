@@ -1,3 +1,4 @@
+fig:unnamed-chunk-1
 what-do-we-mean-generative-ambient
 recipe---changing-chords
 process---note-wise-probability
@@ -101,3 +102,9 @@ recording-noises
 online-sources-for-field-recordings
 using-the-samples
 recipe---audio-clip-or-sampler-into-effects
+process---unsynced-loops
+an-old-idea
+easy-implementation-in-the-daw
+im-in-my-prime
+fibonacci-and-the-golden-ratio
+recipe---using-the-fibonacci-sequence-to-create-loops-ht-divkid
