@@ -1,5 +1,7 @@
 # Process - Unsynced loops
 
+
+
 "Around the world" - Daft Punk
 
 Everyone loves a good loop. If you get a good idea of a pattern or something that lasts 8 bars then you can let that good thing just loop around and around and around (the world). A large part of The Lazy Producer's arsenal depends on loops and repetition - after all we're balancing predictable and unexpected, right? But if there's something in your brain right now that's saying "No, 8 bar loops repeated infinitely really ***is*** the ultimate Lazy Producing..." then I'd have to agree with you. So how do we break away from the tyranny of the 8 bar loop? Arrangements? Verse-Chorus-Middle 8 structures?
@@ -32,14 +34,9 @@ So primes are nice for preventing repetition in the grand scheme of things, but 
 
 If you take the Fibonacci sequence and layout squares with their sides the length of the Fibonacci number, you get what is known as the "Golden Ratio" where the sizes of the squares are grow in relation to the ratio of the previous two parts. There is a familiar pattern also if you connect arcs - quarter of a circle with radius equal to the size of the square. We often see this pattern in nature - in the pattern of seeds or petals on a plant.
 
-
-```r
-knitr::include_graphics(path = file.path(here::here(), "images", "Fibonacci_Spiral.svg"))
-```
-
 <div class="figure">
-<img src="images/Fibonacci_Spiral.svg" alt="By Romain - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=114415511"  />
-<p class="caption">(\#fig:unnamed-chunk-1)By Romain - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=114415511</p>
+<img src="images/Fibonacci_Spiral.svg" alt="By Romain - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=114415511" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-2)By Romain - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=114415511</p>
 </div>
 
 I'm not going to pretend that it has mystical properties (it's only maths after all) but the combination of primes, even and multiples in the Fibonacci sequence might be the ultimate sweet spot of combining things that occasionally repeat and things that take a long time to repeat.

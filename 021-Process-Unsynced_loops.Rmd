@@ -1,5 +1,9 @@
 # Process - Unsynced loops
 
+```{r, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+```
+
 "Around the world" - Daft Punk
 
 Everyone loves a good loop. If you get a good idea of a pattern or something that lasts 8 bars then you can let that good thing just loop around and around and around (the world). A large part of The Lazy Producer's arsenal depends on loops and repetition - after all we're balancing predictable and unexpected, right? But if there's something in your brain right now that's saying "No, 8 bar loops repeated infinitely really ***is*** the ultimate Lazy Producing..." then I'd have to agree with you. So how do we break away from the tyranny of the 8 bar loop? Arrangements? Verse-Chorus-Middle 8 structures?
