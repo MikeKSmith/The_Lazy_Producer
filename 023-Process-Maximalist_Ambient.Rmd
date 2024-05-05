@@ -6,7 +6,7 @@ Not all ambient music goes plinky, plonky, drowned in reverb and delay. Some is 
 
 ## Key idea {.unnumbered}
 
-Rather than focussing on delicate and minimalist, create huge vistas, drones. Saturate the sonic palette and create a sound that is impossible to ignore. Remember to keep the sounds, chords, harmonics evolving rather than static to give the listener some room to breathe, but do not be afraid to make the sound note just heard but felt in the core of the listener's being.
+Rather than focussing on delicate and minimalist, create huge vistas, drones. Saturate the sonic palette and create a sound that is impossible to ignore. Remember to keep the sounds, chords, harmonics evolving rather than static to give the listener some room to breathe, but do not be afraid to make the sound not just heard but felt in the core of the listener's being.
 
 ------------------------------------------------------------------------
 
@@ -28,7 +28,7 @@ Remember: more is more, in this case.
 
 The challenging part of this is to bring the sounds together so that they blend and provide a cohesive whole. With saturation and distortion in many places and potentially with different effects, getting these to come together and not pile up in the sonic spectrum is difficult. Carving space for each, applying generous EQ to harness certain frequencies will be essential to making the elements sit together. This is usually how we mix tracks, but in this case where each sound is full and then saturate or distorted it's important to manage the whole, as well as the individual parts.
 
-## Some examples: 
+## Some examples:
 
 -   Alessandro Cortini - Volume Massimo. <https://cortini.bandcamp.com/album/volume-massimo>
 

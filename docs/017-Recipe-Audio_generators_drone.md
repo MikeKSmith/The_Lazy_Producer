@@ -15,7 +15,7 @@ In this recipe we'll make a simple drone track using a variety of audio generato
 3. Next let's add a real odd-ball: the Cellular Degradation plugin by Dillon Bastan. As described in Chapter 14, this is a weird instrument combining 5 different stereo FM oscillators, and it can make some VERY weird noises. That's what we're going to do here. Normally you "draw" into the main panel to make cells "alive" and then the cellular birth and death process retains these or allows them to "die". To automate that process we're using another favourite Dillon Bastan plugin, the Strange Mod modulation device. We can then use its chaotic modulation processes to automate "drawing" the X and Y values. This should produce some very strange buzzy textures.
 
 <img src="images/Recipe5_CellularDegradation.png" width="100%" />
-4. At this point I added a simple bass root note drone (on C1) using the Bass instrument (but you could also use the Drift instrument). This helps anchor our drone.
+4. At this point I added a simple bass root note drone (on C1) using the Drift instrument. This helps anchor our drone.
 
 Since we want to balance the unexpected and predictable, here the bass drone note, and Harmonic Generator provide the "anchor" around which we can place Tree Tone (as a mildy chaotic process) and the Cellular Degradation as a VERY chaotic process.
 
