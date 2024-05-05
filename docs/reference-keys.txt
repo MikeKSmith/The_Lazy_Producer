@@ -30,6 +30,7 @@ envelope-follower
 shaper
 midi-expression-control
 strange-mod
+lfo-trio---a-chaotic-lfo
 dispatch
 deviate-1
 process---tuning-parameters

@@ -182,18 +182,25 @@
 <p>It’s this combination of smooth and random that makes this my preferred device for modulation. Slowing down the “Speed” of modulation can be useful to map to sound parameters where you want things to evolve smoothly and gradually.</p>
 <div class="inline-figure"><img src="images/Strange_mod.png" width="100%"></div>
 </div>
-<div id="dispatch" class="section level2" number="8.8">
+<div id="lfo-trio---a-chaotic-lfo" class="section level2" number="8.8">
 <h2>
-<span class="header-section-number">8.8</span> Dispatch<a class="anchor" aria-label="anchor" href="#dispatch"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.8</span> LFO Trio - a chaotic LFO<a class="anchor" aria-label="anchor" href="#lfo-trio---a-chaotic-lfo"><i class="fas fa-link"></i></a>
+</h2>
+<p>One trick from modular synthesis is to modulate LFOs with other LFOs, and to modulate those LFOs by other LFOs. (It’s LFOs all the way down). I was looking to create an LFO where there wasn’t a perceptible pattern or period to its output. So I took a second LFO and changed the depth of the first LFO by the second. I took a third LFO and used it to change the Rate of the second LFO. I then took one of the mapping parameters from the first LFO to change the rate of the third LFO (so feeding back from first LFO back to third). What this gives me then is three LFOs which are all behaving in slightly chaotic and unpredictable ways, even using the standard Sine waveform.</p>
+<div class="inline-figure"><img src="images/Chaotic_LFOs.png" width="100%"></div>
+</div>
+<div id="dispatch" class="section level2" number="8.9">
+<h2>
+<span class="header-section-number">8.9</span> Dispatch<a class="anchor" aria-label="anchor" href="#dispatch"><i class="fas fa-link"></i></a>
 </h2>
 <p>Dispatch is a paid <a href="https://maxforlive.com/library/device/7361/dispatch-global-modulation-matrix">Max for Live modulation matrix</a> which generates 4 different modulation processes (A, B, C and D) which can be modulated by the other processes and then allows you to sum these to another set of modulation values - I, II, III and IV. The Matrix view defines the modulation processes while the Grid view allows you to further combine the A, B, C and D modulation and map these to another 16 parameters.</p>
 <p>Dispatch is massively flexible in how you can define and combine modulation sources and types. It can also be quite intimidating at first to know what’s going on. I can recommend reviewing the Cong Burn (Dispatch developer) video on the tool on Youtube: <a href="https://youtu.be/Vlef8VON4Rw" class="uri">https://youtu.be/Vlef8VON4Rw</a></p>
 <p>The vision for Dispatch is that it can be a single modulation device that can send modulation out to parameters throughout an Ableton Live set, rather than having modulators and LFOs scattered throughout the set. If you have the intention of creating generative ambient music where everything is modulated and curated for an extended playback, then Dispatch may be useful to control levels, panning, sends etc. in a single device.</p>
 <div class="inline-figure"><img src="images/Dispatch.png" width="100%"></div>
 </div>
-<div id="deviate-1" class="section level2" number="8.9">
+<div id="deviate-1" class="section level2" number="8.10">
 <h2>
-<span class="header-section-number">8.9</span> Deviate<a class="anchor" aria-label="anchor" href="#deviate-1"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.10</span> Deviate<a class="anchor" aria-label="anchor" href="#deviate-1"><i class="fas fa-link"></i></a>
 </h2>
 <p>We’ve come across the free <a href="https://www.novelmusic.org/m4l/deviate">Deviate Max for Live device from Novel Music</a> in the section [Tools - Chords and added notes], but it also offers random modulation control on parameters. You can dial up randomness at various levels in Deviate, and also control the amount of randomness which is very useful in generative music. But it also has a key feature - the ability to monitor parameter deviations in its “MEMORY” and then “Lock” in patterns if you find something you like - this mirrors functionality in Turing Machine modules that exist in the modular synthesis world.</p>
 <p>Again, it’s worth reviewing <a href="https://www.youtube.com/watch?v=4WwKGUV2H4I">the tutorial video from Novel Music</a> to learn about all possible features of this device.</p>
@@ -216,8 +223,9 @@
 <li><a class="nav-link" href="#shaper"><span class="header-section-number">8.5</span> Shaper</a></li>
 <li><a class="nav-link" href="#midi-expression-control"><span class="header-section-number">8.6</span> MIDI Expression Control</a></li>
 <li><a class="nav-link" href="#strange-mod"><span class="header-section-number">8.7</span> Strange Mod</a></li>
-<li><a class="nav-link" href="#dispatch"><span class="header-section-number">8.8</span> Dispatch</a></li>
-<li><a class="nav-link" href="#deviate-1"><span class="header-section-number">8.9</span> Deviate</a></li>
+<li><a class="nav-link" href="#lfo-trio---a-chaotic-lfo"><span class="header-section-number">8.8</span> LFO Trio - a chaotic LFO</a></li>
+<li><a class="nav-link" href="#dispatch"><span class="header-section-number">8.9</span> Dispatch</a></li>
+<li><a class="nav-link" href="#deviate-1"><span class="header-section-number">8.10</span> Deviate</a></li>
 </ul>
 
       <div class="book-extra">
