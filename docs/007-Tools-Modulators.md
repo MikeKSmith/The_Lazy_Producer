@@ -108,9 +108,9 @@ One trick from modular synthesis is to modulate LFOs with other LFOs, and to mod
 
 ## Live12 - LFO
 
-The need for this LFO trio (above) has largely disappeared with Live 12 as Live now has a couple of new LFO modes: Wander and Glider. These two modes provide a relatively random LFO pattern, but smooth. Wander has a slightly faster evolution than Glider. But both serve well in place of the chaotic Trio of LFOs described above.
+The need for this LFO trio (above) has largely disappeared with Live 12 as Live now has a couple of new LFO modes: Stray and Glider. These two modes provide a relatively random LFO pattern, but smooth. Stray has a slightly faster evolution than Glider. But both serve well in place of the chaotic Trio of LFOs described above.
 
-<img src="./images/LFO_Wander.png" width="100%" />
+<img src="./images/LFO_Stray.png" width="100%" />
 
 <img src="./images/LFO_Glider.png" width="100%" />
 
