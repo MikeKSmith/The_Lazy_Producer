@@ -132,6 +132,22 @@ One trick from modular synthesis is to modulate LFOs with other LFOs, and to mod
 knitr::include_graphics(path = "./images/Chaotic_LFOs.png")
 ```
 
+## Live12 - LFO
+
+The need for this LFO trio (above) has largely disappeared with Live 12 as Live now has a couple of new LFO modes: Wander and Glider. These two modes provide a relatively random LFO pattern, but smooth. Wander has a slightly faster evolution than Glider. But both serve well in place of the chaotic Trio of LFOs described above.
+
+```{r}
+knitr::include_graphics(path = "./images/LFO_Wander.png")
+```
+
+```{r}
+knitr::include_graphics(path = "./images/LFO_Glider.png")
+```
+
+Another big boon in Live 12's LFO is the ability to modulate parameters, rather than remote control. Previously when you mapped the LFO to a parameter the only option was to take over control of that parameter with the LFO, so a decent amount of "gardening" of the LFO range and depth was required to ensure that the LFO effect on the parameter was subtle enough.
+
+However, in Live 12 we can now modulate the parameter by the LFO, so we express the amount of LFO modulation of the parameter in percentage terms, but we can still tweak the parameter value. This allows us to tune in a sweet spot "center" value using the UI knob or slider, but then modulate the amount using the LFO. You can see the "modulate" button in blue in the images above. Clicking on this "modulate" button takes you back to the older "Remote" option from Live 11.
+
 ## Dispatch
 
 Dispatch is a paid [Max for Live modulation matrix](https://maxforlive.com/library/device/7361/dispatch-global-modulation-matrix) which generates 4 different modulation processes (A, B, C and D) which can be modulated by the other processes and then allows you to sum these to another set of modulation values - I, II, III and IV. The Matrix view defines the modulation processes while the Grid view allows you to further combine the A, B, C and D modulation and map these to another 16 parameters.
