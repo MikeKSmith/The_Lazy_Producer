@@ -91,6 +91,8 @@
 <li><a class="" href="process---unsynced-loops.html"><span class="header-section-number">22</span> Process - Unsynced loops</a></li>
 <li><a class="" href="recipe---using-the-fibonacci-sequence-to-create-loops-ht-divkid.html"><span class="header-section-number">23</span> Recipe - Using the Fibonacci sequence to create loops (HT DivKid)</a></li>
 <li><a class="" href="process---maximalist-ambient.html"><span class="header-section-number">24</span> Process - Maximalist ambient</a></li>
+<li><a class="" href="tools---live-12-midi-and-compositional-tools.html"><span class="header-section-number">25</span> Tools - Live 12 MIDI and compositional tools</a></li>
+<li><a class="" href="tools---live-12-sequencers.html"><span class="header-section-number">26</span> Tools - Live 12 Sequencers</a></li>
 </ul>
 
         <div class="book-extra">
@@ -137,33 +139,50 @@
 <li>The “Random” setting is not smooth, as it is a “sample and hold” - so the value changes at the nominated cycle time and holds that value until a new value is assigned at the start of the next cycle. This means that the modulated parameter changes in a step fashion rather than smoothly. The LFO has a “Smooth” value (bottom right of the wave display) but this smoothes out with exponential curves, meaning that the value starts changing quickly at the start of the next cycle. This may still be “not quite smooth enough”.</li>
 </ol>
 </div>
-<div id="midi-envelope" class="section level2" number="8.3">
+<div id="lfo-trio---a-chaotic-lfo" class="section level2" number="8.3">
 <h2>
-<span class="header-section-number">8.3</span> MIDI Envelope<a class="anchor" aria-label="anchor" href="#midi-envelope"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.3</span> LFO Trio - a chaotic LFO<a class="anchor" aria-label="anchor" href="#lfo-trio---a-chaotic-lfo"><i class="fas fa-link"></i></a>
+</h2>
+<p>One trick from modular synthesis is to modulate LFOs with other LFOs, and to modulate those LFOs by other LFOs. (It’s LFOs all the way down). I was looking to create an LFO where there wasn’t a perceptible pattern or period to its output. So I took a second LFO and changed the depth of the first LFO by the second. I took a third LFO and used it to change the Rate of the second LFO. I then took one of the mapping parameters from the first LFO to change the rate of the third LFO (so feeding back from first LFO back to third). What this gives me then is three LFOs which are all behaving in slightly chaotic and unpredictable ways, even using the standard Sine waveform.</p>
+<div class="inline-figure"><img src="images/Chaotic_LFOs.png" width="100%"></div>
+</div>
+<div id="live12---lfo" class="section level2" number="8.4">
+<h2>
+<span class="header-section-number">8.4</span> Live12 - LFO<a class="anchor" aria-label="anchor" href="#live12---lfo"><i class="fas fa-link"></i></a>
+</h2>
+<p>The need for this LFO trio (above) has largely disappeared with Live 12 as Live now has a couple of new LFO modes: Stray and Glider. These two modes provide a relatively random LFO pattern, but smooth. Stray has a slightly faster evolution than Glider. But both serve well in place of the chaotic Trio of LFOs described above.</p>
+<div class="inline-figure"><img src="images/LFO_Stray.png" width="100%"></div>
+<div class="inline-figure"><img src="images/LFO_Glider.png" width="100%"></div>
+<p>Another big boon in Live 12’s LFO is the ability to modulate parameters, rather than remote control. Previously when you mapped the LFO to a parameter the only option was to take over control of that parameter with the LFO, so a decent amount of “gardening” of the LFO range and depth was required to ensure that the LFO effect on the parameter was subtle enough.</p>
+<p>However, in Live 12 we can now modulate the parameter by the LFO, so we express the amount of LFO modulation of the parameter in percentage terms, but we can still tweak the parameter value. This allows us to tune in a sweet spot “center” value using the UI knob or slider, but then modulate the amount using the LFO. You can see the “modulate” button in blue in the images above. Clicking on this “modulate” button takes you back to the older “Remote” option from Live 11.</p>
+</div>
+<div id="midi-envelope" class="section level2" number="8.5">
+<h2>
+<span class="header-section-number">8.5</span> MIDI Envelope<a class="anchor" aria-label="anchor" href="#midi-envelope"><i class="fas fa-link"></i></a>
 </h2>
 <p>The MIDI Envelope device provides an envelope (shock!) that can then trigger any parameter in Ableton Live. This envelope can operate free of the tempo, with attack, decay, sustain and release in milliseconds, or it can be synced to the tempo. The envelope can also loop if required. The attack, decay and release rates can be linear (when set to 0%) or curved.</p>
 <p>This allows modular synthesis like control over all kinds of parameters in Live where an incoming MIDI event can trigger changes in <strong><em>anything</em></strong>.</p>
 <div class="inline-figure"><img src="images/MIDI_envelope.png" width="100%"></div>
 </div>
-<div id="envelope-follower" class="section level2" number="8.4">
+<div id="envelope-follower" class="section level2" number="8.6">
 <h2>
-<span class="header-section-number">8.4</span> Envelope Follower<a class="anchor" aria-label="anchor" href="#envelope-follower"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.6</span> Envelope Follower<a class="anchor" aria-label="anchor" href="#envelope-follower"><i class="fas fa-link"></i></a>
 </h2>
 <p>The Envelope Follower device is similar to the MIDI Envelope device, but instead of being triggered by MIDI notes, it is triggered by audio. Adjust the “Gain” of the input until the orange envelope shows a decent range of modulation. By then tweaking the “Rise” and “Fall” parameters you can smooth out the signal if needed. There’s also an option to delay the envelope rather than having it follow the input signal immediately.</p>
 <p>Then, using the usual mapping process you can choose which parameter in Live you want to modulate using this signal. This device allows you to modulate anything using an input audio signal, whether that signal is heard in the Master audio track or not.</p>
 <p>The devices above (LFO, MIDI Envelope and Envelope Follower) offer modular synthesis like control over pretty much any parameter in Ableton Live. This is one of the strengths of Ableton Live with Max for Live devices over the standard Ableton version - the level of control and the ability to control devices is really unparalleled. Don’t forget that you can also get modulators to modulate each other… So an envelope can modulate the amplitude or rate of an LFO and an LFO can then modulate the envelope of another input.</p>
 <div class="inline-figure"><img src="images/Envelope_follower.png" width="100%"></div>
 </div>
-<div id="shaper" class="section level2" number="8.5">
+<div id="shaper" class="section level2" number="8.7">
 <h2>
-<span class="header-section-number">8.5</span> Shaper<a class="anchor" aria-label="anchor" href="#shaper"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.7</span> Shaper<a class="anchor" aria-label="anchor" href="#shaper"><i class="fas fa-link"></i></a>
 </h2>
 <p>The Shaper device allows you to draw modulation envelopes by specifying nodes across a grid then defining how the modulation should change between the nodes. In the screenshot below the nodes are “Snap”ed to the a grid of four equal divisions. The “Rate” setting defines the length of each division compared to the clock, which can be set according to musical divisions, or in Hz time.</p>
 <div class="inline-figure"><img src="images/Shaper.png" width="100%"></div>
 </div>
-<div id="midi-expression-control" class="section level2" number="8.6">
+<div id="midi-expression-control" class="section level2" number="8.8">
 <h2>
-<span class="header-section-number">8.6</span> MIDI Expression Control<a class="anchor" aria-label="anchor" href="#midi-expression-control"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.8</span> MIDI Expression Control<a class="anchor" aria-label="anchor" href="#midi-expression-control"><i class="fas fa-link"></i></a>
 </h2>
 <p>The Wavetable instrument in Ableton Live has a really useful Modulation Matrix where you can map incoming MIDI expression control attributes (Velocity, Modwheel, Pitchbend, etc.) to parameters of the synthesis engine. The Expression Control device extends that to ANY instrument or effect in Ableton Live. As with LFO modulation mapping, you click on the “Map” button and then click the parameter you wish to modulate. Note that the Expression Control device is a MIDI device so is used <strong><em>before</em></strong> instruments while other modulators like LFO are placed <strong><em>after</em></strong> the instrument.</p>
 <p>Expression Control allows you to see the minimum and maximum percentage of modulation, and the shape of onset / offset of that modulation - either linear or logarithmic (curved). It also allows you to specify the “Rise” and “Fall” rate of change to help smooth out the change and prevent sudden changes in parameter values. There’s also a curve shaper in the top right of the device where you can tailor your own curves for the MIDI input, like compression etc.</p>
@@ -174,43 +193,33 @@
 <div class="inline-figure"><img src="images/Expression_control_2.png" width="100%"></div>
 <p>As I’ve said above, the combination of all of these tools are supremely powerful - so you could change envelopes with each incoming MIDI note or use that note to change an LFO setting that modulates something else. Also, be aware that the Expression Control and Envelope Follower can be used <strong><em>even if</em></strong> the MIDI or audio from the tracks are not sent to the Master audio output. OR EVEN NOT HEARD AT ALL. So you can use MIDI events to modulate items in sync with the master clock regardless of tempo.</p>
 </div>
-<div id="strange-mod" class="section level2" number="8.7">
+<div id="live12---midi-expression-control" class="section level2" number="8.9">
 <h2>
-<span class="header-section-number">8.7</span> Strange Mod<a class="anchor" aria-label="anchor" href="#strange-mod"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.9</span> Live12 - MIDI Expression Control<a class="anchor" aria-label="anchor" href="#live12---midi-expression-control"><i class="fas fa-link"></i></a>
+</h2>
+<p>The UI for Expression control has changed somewhat in Live 12. The functionality is largely the same, except that now (as with the LFO) we can modulate a mapped parameter and not just remote control it. This means that we can specify an amount of modulation on the mapped parameter for the expression to control, but the parameter itself can be tweaked by hand to set its level.</p>
+<div class="inline-figure"><img src="images/Expression_Control_Live12.png" width="100%"></div>
+</div>
+<div id="strange-mod" class="section level2" number="8.10">
+<h2>
+<span class="header-section-number">8.10</span> Strange Mod<a class="anchor" aria-label="anchor" href="#strange-mod"><i class="fas fa-link"></i></a>
 </h2>
 <p><a href="https://maxforlive.com/library/device/6872/strange-mod">Dillon Baston’s paid Max for Live plugin “Strange Mod”</a>is my “go to” modulation device. It uses chaotic processes - strange attractors - and evaluates the X, Y, and Z three dimensional attributes of a particle within the chaotic system, generating three distinct modulation values (like LFO outputs) which can then be mapped to any parameter as we’ve seen above with other modulators. The change in the three different modulation values is random / chaotic but because they are mapping the three dimensions of the particle moving in the chaotic system, they do not “jump” to new values. Also the three dimensions are somewhat related - the X value does not jump values, but neither do the Y and Z values. They may change quickly, but if they do happen smoothly. Note that the “Map” button here allows you to map each modulation value - X, Y and Z - to any parameter in Live, but also each individual value (say X) can also be mapped to 7 other parameters, as with the LFO device. That means that a single Strange Mod device could map out to 24 different parameters. There are 11 different strange attractor algorithms to choose from, and you can randomise the starting point of the process to generate new paths of random modulation. The “R” button ensures that the process is reset each time you start Ableton’s transport control (press play). This ensures that your random, chaotic process is at least somewhat repeatable! The “Var” setting scales variability in the process - more means that there’s more chaos, while lower values mean less chaos.</p>
 <p>It’s this combination of smooth and random that makes this my preferred device for modulation. Slowing down the “Speed” of modulation can be useful to map to sound parameters where you want things to evolve smoothly and gradually.</p>
 <div class="inline-figure"><img src="images/Strange_mod.png" width="100%"></div>
 </div>
-<div id="lfo-trio---a-chaotic-lfo" class="section level2" number="8.8">
+<div id="dispatch" class="section level2" number="8.11">
 <h2>
-<span class="header-section-number">8.8</span> LFO Trio - a chaotic LFO<a class="anchor" aria-label="anchor" href="#lfo-trio---a-chaotic-lfo"><i class="fas fa-link"></i></a>
-</h2>
-<p>One trick from modular synthesis is to modulate LFOs with other LFOs, and to modulate those LFOs by other LFOs. (It’s LFOs all the way down). I was looking to create an LFO where there wasn’t a perceptible pattern or period to its output. So I took a second LFO and changed the depth of the first LFO by the second. I took a third LFO and used it to change the Rate of the second LFO. I then took one of the mapping parameters from the first LFO to change the rate of the third LFO (so feeding back from first LFO back to third). What this gives me then is three LFOs which are all behaving in slightly chaotic and unpredictable ways, even using the standard Sine waveform.</p>
-<div class="inline-figure"><img src="images/Chaotic_LFOs.png" width="100%"></div>
-</div>
-<div id="live12---lfo" class="section level2" number="8.9">
-<h2>
-<span class="header-section-number">8.9</span> Live12 - LFO<a class="anchor" aria-label="anchor" href="#live12---lfo"><i class="fas fa-link"></i></a>
-</h2>
-<p>The need for this LFO trio (above) has largely disappeared with Live 12 as Live now has a couple of new LFO modes: Stray and Glider. These two modes provide a relatively random LFO pattern, but smooth. Stray has a slightly faster evolution than Glider. But both serve well in place of the chaotic Trio of LFOs described above.</p>
-<div class="inline-figure"><img src="images/LFO_Stray.png" width="100%"></div>
-<div class="inline-figure"><img src="images/LFO_Glider.png" width="100%"></div>
-<p>Another big boon in Live 12’s LFO is the ability to modulate parameters, rather than remote control. Previously when you mapped the LFO to a parameter the only option was to take over control of that parameter with the LFO, so a decent amount of “gardening” of the LFO range and depth was required to ensure that the LFO effect on the parameter was subtle enough.</p>
-<p>However, in Live 12 we can now modulate the parameter by the LFO, so we express the amount of LFO modulation of the parameter in percentage terms, but we can still tweak the parameter value. This allows us to tune in a sweet spot “center” value using the UI knob or slider, but then modulate the amount using the LFO. You can see the “modulate” button in blue in the images above. Clicking on this “modulate” button takes you back to the older “Remote” option from Live 11.</p>
-</div>
-<div id="dispatch" class="section level2" number="8.10">
-<h2>
-<span class="header-section-number">8.10</span> Dispatch<a class="anchor" aria-label="anchor" href="#dispatch"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.11</span> Dispatch<a class="anchor" aria-label="anchor" href="#dispatch"><i class="fas fa-link"></i></a>
 </h2>
 <p>Dispatch is a paid <a href="https://maxforlive.com/library/device/7361/dispatch-global-modulation-matrix">Max for Live modulation matrix</a> which generates 4 different modulation processes (A, B, C and D) which can be modulated by the other processes and then allows you to sum these to another set of modulation values - I, II, III and IV. The Matrix view defines the modulation processes while the Grid view allows you to further combine the A, B, C and D modulation and map these to another 16 parameters.</p>
 <p>Dispatch is massively flexible in how you can define and combine modulation sources and types. It can also be quite intimidating at first to know what’s going on. I can recommend reviewing the Cong Burn (Dispatch developer) video on the tool on Youtube: <a href="https://youtu.be/Vlef8VON4Rw" class="uri">https://youtu.be/Vlef8VON4Rw</a></p>
 <p>The vision for Dispatch is that it can be a single modulation device that can send modulation out to parameters throughout an Ableton Live set, rather than having modulators and LFOs scattered throughout the set. If you have the intention of creating generative ambient music where everything is modulated and curated for an extended playback, then Dispatch may be useful to control levels, panning, sends etc. in a single device.</p>
 <div class="inline-figure"><img src="images/Dispatch.png" width="100%"></div>
 </div>
-<div id="deviate-1" class="section level2" number="8.11">
+<div id="deviate-1" class="section level2" number="8.12">
 <h2>
-<span class="header-section-number">8.11</span> Deviate<a class="anchor" aria-label="anchor" href="#deviate-1"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.12</span> Deviate<a class="anchor" aria-label="anchor" href="#deviate-1"><i class="fas fa-link"></i></a>
 </h2>
 <p>We’ve come across the free <a href="https://www.novelmusic.org/m4l/deviate">Deviate Max for Live device from Novel Music</a> in the section [Tools - Chords and added notes], but it also offers random modulation control on parameters. You can dial up randomness at various levels in Deviate, and also control the amount of randomness which is very useful in generative music. But it also has a key feature - the ability to monitor parameter deviations in its “MEMORY” and then “Lock” in patterns if you find something you like - this mirrors functionality in Turing Machine modules that exist in the modular synthesis world.</p>
 <p>Again, it’s worth reviewing <a href="https://www.youtube.com/watch?v=4WwKGUV2H4I">the tutorial video from Novel Music</a> to learn about all possible features of this device.</p>
@@ -228,15 +237,16 @@
 <li><a class="nav-link" href="#key-idea-5">Key idea</a></li>
 <li><a class="nav-link" href="#modulators-in-ableton-live-general-rule-of-thumb"><span class="header-section-number">8.1</span> Modulators in Ableton Live (general rule of thumb)</a></li>
 <li><a class="nav-link" href="#lfo"><span class="header-section-number">8.2</span> LFO</a></li>
-<li><a class="nav-link" href="#midi-envelope"><span class="header-section-number">8.3</span> MIDI Envelope</a></li>
-<li><a class="nav-link" href="#envelope-follower"><span class="header-section-number">8.4</span> Envelope Follower</a></li>
-<li><a class="nav-link" href="#shaper"><span class="header-section-number">8.5</span> Shaper</a></li>
-<li><a class="nav-link" href="#midi-expression-control"><span class="header-section-number">8.6</span> MIDI Expression Control</a></li>
-<li><a class="nav-link" href="#strange-mod"><span class="header-section-number">8.7</span> Strange Mod</a></li>
-<li><a class="nav-link" href="#lfo-trio---a-chaotic-lfo"><span class="header-section-number">8.8</span> LFO Trio - a chaotic LFO</a></li>
-<li><a class="nav-link" href="#live12---lfo"><span class="header-section-number">8.9</span> Live12 - LFO</a></li>
-<li><a class="nav-link" href="#dispatch"><span class="header-section-number">8.10</span> Dispatch</a></li>
-<li><a class="nav-link" href="#deviate-1"><span class="header-section-number">8.11</span> Deviate</a></li>
+<li><a class="nav-link" href="#lfo-trio---a-chaotic-lfo"><span class="header-section-number">8.3</span> LFO Trio - a chaotic LFO</a></li>
+<li><a class="nav-link" href="#live12---lfo"><span class="header-section-number">8.4</span> Live12 - LFO</a></li>
+<li><a class="nav-link" href="#midi-envelope"><span class="header-section-number">8.5</span> MIDI Envelope</a></li>
+<li><a class="nav-link" href="#envelope-follower"><span class="header-section-number">8.6</span> Envelope Follower</a></li>
+<li><a class="nav-link" href="#shaper"><span class="header-section-number">8.7</span> Shaper</a></li>
+<li><a class="nav-link" href="#midi-expression-control"><span class="header-section-number">8.8</span> MIDI Expression Control</a></li>
+<li><a class="nav-link" href="#live12---midi-expression-control"><span class="header-section-number">8.9</span> Live12 - MIDI Expression Control</a></li>
+<li><a class="nav-link" href="#strange-mod"><span class="header-section-number">8.10</span> Strange Mod</a></li>
+<li><a class="nav-link" href="#dispatch"><span class="header-section-number">8.11</span> Dispatch</a></li>
+<li><a class="nav-link" href="#deviate-1"><span class="header-section-number">8.12</span> Deviate</a></li>
 </ul>
 
       <div class="book-extra">
@@ -254,7 +264,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2024-05-05.</p>
+    <p>"<strong>The Lazy Producer - Starter ideas for making ambient music</strong>" was written by Mike K Smith. It was last built on 2024-09-27.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
