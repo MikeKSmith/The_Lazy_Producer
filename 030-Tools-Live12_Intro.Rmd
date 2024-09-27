@@ -10,6 +10,10 @@ Live 12 contains a number of tools and new features which enhance how we can mak
 
 ------------------------------------------------------------------------
 
+```{r, echo = FALSE}
+    knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+```
+
 ## Scale awareness
 
 Live 12 now has a feature where the scale can be defined at the Set level, which then sets the scale for each new clip (or can change the scale of existing clips); but you can also ***set*** the current scale for the set from clips. This allows you to change the scale of the set for example during live performance when the each song might be in a different key.

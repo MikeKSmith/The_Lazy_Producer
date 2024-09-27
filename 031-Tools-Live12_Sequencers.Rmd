@@ -10,6 +10,10 @@ Why put sequencers in a DAW (which is essentially a sequencer)? Well, because th
 
 ------------------------------------------------------------------------
 
+```{r, echo = FALSE}
+    knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+```
+
 ## SQ
 
 The SQ sequencer offers a HUGE range of tweakability to specify note pitch, octave, velocity, length, time-shift, ratchet and condition and have the sequence of values for each of these run alongside the pitch sequence or operate with a different sequence length to each other. So for example you could specify a pitch sequence, then have the note velocities change and rotate with a shorter sequence length to add some variety. Click on the "link" icons to the right of the note attributes (e.g. Velocity) to unlink the sequence for that attribute from the pitch sequence length. Clicking on the "dice" icon will randomise values. The "Length" attribute defines the length of the sequence, while the "Dir" setting defines the sequence play order - the sequences also don't need to run forward, but can run in reverse, ping-pong back and forth (running forward then backward then forward), in a "snake" pattern or randomly. You can have the sequence be scale aware so that notes respect the Global Scale setting. You can change the starting note of the sequence by playing a different MIDI note. You can set the clock for the sequence to run at a different rate to the Global BPM setting in the Live set, or even set the clock from an external device. MIDI pitch information can be entered through the Pitch lane, or can be entered via a Step Sequenceer within the MIDI tab.

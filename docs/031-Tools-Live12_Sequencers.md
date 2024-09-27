@@ -10,16 +10,13 @@ Why put sequencers in a DAW (which is essentially a sequencer)? Well, because th
 
 ------------------------------------------------------------------------
 
+
+
 ## SQ
 
 The SQ sequencer offers a HUGE range of tweakability to specify note pitch, octave, velocity, length, time-shift, ratchet and condition and have the sequence of values for each of these run alongside the pitch sequence or operate with a different sequence length to each other. So for example you could specify a pitch sequence, then have the note velocities change and rotate with a shorter sequence length to add some variety. Click on the "link" icons to the right of the note attributes (e.g. Velocity) to unlink the sequence for that attribute from the pitch sequence length. Clicking on the "dice" icon will randomise values. The "Length" attribute defines the length of the sequence, while the "Dir" setting defines the sequence play order - the sequences also don't need to run forward, but can run in reverse, ping-pong back and forth (running forward then backward then forward), in a "snake" pattern or randomly. You can have the sequence be scale aware so that notes respect the Global Scale setting. You can change the starting note of the sequence by playing a different MIDI note. You can set the clock for the sequence to run at a different rate to the Global BPM setting in the Live set, or even set the clock from an external device. MIDI pitch information can be entered through the Pitch lane, or can be entered via a Step Sequenceer within the MIDI tab.
 
-
-```r
-knitr::include_graphics(path = file.path(here::here(), "images", "Live12_SQ.png"))
-```
-
-![](images/Live12_SQ.png)<!-- -->
+<img src="images/Live12_SQ.png" width="100%" />
 
 This is a really powerful sequencer then, that can provide endless variation and interest from fairly simple patterns.
 
@@ -27,12 +24,7 @@ This is a really powerful sequencer then, that can provide endless variation and
 
 Rhythmic Steps is quite similar in some ways to the SQ sequencer, in that we can define the sequence of certain attributes - chance, velocity, MPE slide, and roll - and vary the sequence length of each of these if we wish. Rhythmic Steps is set up to work with Drum Racks (you can see which note is going to be played from the Drum Rack in the left hand side graphic). The "Alt" attribute is interesting as it allows you to specify the probability of playing an alternate sound (in blue in the Drum Rack graphic), so you could mix closed hi-hat (second from top row) with an open hi-hat sound.
 
-
-```r
-knitr::include_graphics(path = file.path(here::here(), "images", "Live12_RhythmicSteps.png"))
-```
-
-![](images/Live12_RhythmicSteps.png)<!-- -->
+<img src="images/Live12_RhythmicSteps.png" width="100%" />
 
 You can also reset the pattern (using the [R] or [Auto] buttons in the image above) so that the patterns will start back at step 1 again. The [Auto] setting allows you to specify a number of bars after which the reset will happen if you don't want to manually trigger this. The icon to the left of the [R] reset button shows how the Rhythm Sequencer can be used directly from Ableton's Push controller.
 
@@ -40,11 +32,6 @@ You can also reset the pattern (using the [R] or [Auto] buttons in the image abo
 
 Much like the above sequencers, Step Arp allows you to tweak and sequence the attributes of an arpeggiator and have the sequence of those attributes run in parallel with the pitch sequence which is governed through the Octave and Notes button settings or unlinked to sequence the attributes with different lengths.
 
-
-```r
-knitr::include_graphics(path = file.path(here::here(), "images", "Live12_StepArp.png"))
-```
-
-![](images/Live12_StepArp.png)<!-- -->
+<img src="images/Live12_StepArp.png" width="100%" />
 
 The bar to the right of the sequence allows you to specify a range in which the values will be randomised, so here this would affect the range of velocities that would be randomised.
