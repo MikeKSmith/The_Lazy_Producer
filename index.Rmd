@@ -1,12 +1,10 @@
 ---
-title: "The Lazy Producer - Starter ideas for making ambient music"
+title: "The Lazy Producer - Making music using randomness and probability in Ableton Live"
 author: "Mike K Smith"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
 description: |
   This is a minimal example of using the bookdown package to write a book.
   The HTML output format for this example is bookdown::bs4_book,
@@ -21,7 +19,7 @@ csl: chicago-fullnote-bibliography.csl
 
 If you're looking for a guide to creating tracks from start to finish in a DAW then this is not that book.
 
-If you're looking for a description of recording a band or producing genres outside of ambient music, this is not that book.
+If you're looking for a description of recording a band or producing genres outside of electronic or ambient music, this is not that book.
 
 If you're looking for an in-depth guide to Ableton Live Suite, then you should read the manual. I'm assuming you know your way around Ableton Live.
 
@@ -31,9 +29,7 @@ I also recommend Loopop's "In-complete book of electronic music tips and tricks"
 
 ## But if you DO read this book, what should you expect? {.unnumbered}
 
-But if you're looking for some ideas to get you started and make some nice ambient sounds that you could later build up into finished tracks, then this ***IS*** that book. What I'm going to try to present here is a collection of "starter ideas" or recipes for you to follow. I'll also talk a bit about some specific tools and plugins you might use, and touch on some general processes that I use for making ambient, textural and generative music.
-
-You might think that ambient music is essentially "Take any sound, drown it in reverb and delay... JOB DONE." To my mind there's a ***little*** more to it than that...
+But if you're looking for some ways to generate fresh ideas to get you started and make some nice sounds that you could later build up into finished tracks, then this ***IS*** that book. What I'm going to try to present here is a collection of "starter ideas" or recipes for you to follow. I'll also talk a bit about some specific tools and plugins you might use, and touch on some general processes that I use in turning the techniques here into ambient, textural and generative music.
 
 ## What do you mean, "Lazy Producer"? {.unnumbered}
 
@@ -41,7 +37,7 @@ Most professional musicians, music creators and producers I know are very hard w
 
 The typical Ableton Live set I see from most electronic music producers has a huge number of tracks, precision edits, detailed automation, fills, transitions, risers, "ear-candy". It's a technicolor riot of clips. In stark contrast, my typical Live set for a track may have around 12 tracks. I use randomness, probability and automation to make things change from one bar or section to another. I start tracks largely by letting the computer make choices by finding the "best" settings in the randomness and probability parameters or "garden" the generated random MIDI and audio to create a little more order. I am a Lazy Producer.
 
-I will use the shorthand "Lazy Producer" in this book meaning that the techniques described will get you started on tracks, but are probably not finished tracks in themselves. However, if you're a REALLY Lazy Producer, they might be. I have been known to do this. Am I implying that you are, or should also be a lazy producer? No. Will my lazy production tips work in other genres? Also, no.
+I will use the shorthand "Lazy Producer" in this book meaning that the techniques described will get you started on tracks, but are probably not finished tracks in themselves. However, if you're a REALLY Lazy Producer, they might be. I have been known to do this.
 
 ## Lorem Ipsum {.unnumbered}
 
@@ -61,7 +57,7 @@ As a Lazy Producer I reuse MIDI parts that sound good across MANY tracks. This d
 
 ## What will I need to be able to use the ideas in this book? {.unnumbered}
 
-You will get most out of this book if you have Ableton Live 11 Suite. Some of the ideas could be translated to other DAWs, but there are some features like note-wise probability which I'm not sure how to replicate in other DAWs.
+You will get most out of this book if you have Ableton Live Suite (from v11 onwards). Some of the ideas could be translated to other DAWs, but there are some features like note-wise probability which I'm not sure how to replicate in other DAWs.
 
 Many of the tools and plugins discussed use Max For Live, which comes bundled with Ableton Suite. If you ***don't*** have Ableton Suite, then you can purchase Max For Live separately from ableton.com. You ***don't*** have to purchase the full Max license from Cycling 74 to use Max For Live.
 
@@ -69,7 +65,7 @@ I'm not assuming that you know how to program with Max For Live - you only need 
 
 ## Why Ableton? {.unnumbered}
 
-I am a long time Ableton user (since Live 4). As I write this guide, I am using Live 11 and I am particularly enjoying the new probability features in Live and Max For Live devices. I have a strong belief that Ableton Suite can be used much like a modular synthesiser - with the combination of audio and MIDI routing within Live, coupled with Max For Live devices, this amazing DAW can do so much. In fact, as you read through the chapters of the book you'll see how many of the tools, plugins and methods we'll talk about mimic what you would see and how you might use them for generative music in a modular synthesiser rack.
+I am a long time Ableton user (since Live 4). As I write this guide, I am using Live 12.1. I have a strong belief that Ableton Suite can be used much like a modular synthesiser - with the combination of audio and MIDI routing within Live, coupled with Max For Live devices, this amazing DAW can do so much. In fact, as you read through the chapters of the book you'll see how many of the tools, plugins and methods we'll talk about mimic what you would see and how you might use them for generative music in a modular synthesiser rack.
 
 ## Structure of this book {.unnumbered}
 
@@ -77,7 +73,7 @@ If you flick through the book you'll see different types of chapter.
 
 ### Recipes {.unnumbered}
 
-Recipes chapters introduce a set of instructions that you can follow to create your own generative, ambient music. If you're a Lazy Producer like me then you can use these recipes to generate ideas and sounds that you can then use to start your own process of creating a track. If you're a lazy reader too, then you can skip straight to these chapters and follow the recipe. If you're a creatively Lazy Producer then you can tweak the recipes or combine them with other recipes to make your own creations. That's OK.
+Recipes chapters introduce a set of instructions that you can follow to create your own music using randomness and probability i.e. generative music. If you're a Lazy Producer like me then you can use these recipes to generate ideas and sounds that you can then use to start your own process of creating a track. If you're a lazy reader too, then you can skip straight to these chapters and follow the recipe. If you're a creatively Lazy Producer then you can tweak the recipes or combine them with other recipes to make your own creations. That's OK.
 
 ### Process {.unnumbered}
 

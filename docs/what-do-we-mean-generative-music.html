@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>2 Recipe - Changing chords | The Lazy Producer - Making music using randomness and probability in Ableton Live</title>
+<title>1 What do we mean “Generative” music? | The Lazy Producer - Making music using randomness and probability in Ableton Live</title>
 <meta name="author" content="Mike K Smith">
-<meta name="description" content="Create three MIDI tracks, each with a virtual synth instrument. For this example we’re going to use long chords, so I’d recommend a pad sound. One thing that works quite well is to mix sounds with...">
+<meta name="description" content="Generative: “Generative” music is where, following some trigger event such as pressing “play” or playing a note, or initiating some voltage (in modular synthesis rack), the music follows some...">
 <meta name="generator" content="bookdown 0.39 with bs4_book()">
-<meta property="og:title" content="2 Recipe - Changing chords | The Lazy Producer - Making music using randomness and probability in Ableton Live">
+<meta property="og:title" content="1 What do we mean “Generative” music? | The Lazy Producer - Making music using randomness and probability in Ableton Live">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Create three MIDI tracks, each with a virtual synth instrument. For this example we’re going to use long chords, so I’d recommend a pad sound. One thing that works quite well is to mix sounds with...">
+<meta property="og:description" content="Generative: “Generative” music is where, following some trigger event such as pressing “play” or playing a note, or initiating some voltage (in modular synthesis rack), the music follows some...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2 Recipe - Changing chords | The Lazy Producer - Making music using randomness and probability in Ableton Live">
-<meta name="twitter:description" content="Create three MIDI tracks, each with a virtual synth instrument. For this example we’re going to use long chords, so I’d recommend a pad sound. One thing that works quite well is to mix sounds with...">
+<meta name="twitter:title" content="1 What do we mean “Generative” music? | The Lazy Producer - Making music using randomness and probability in Ableton Live">
+<meta name="twitter:description" content="Generative: “Generative” music is where, following some trigger event such as pressing “play” or playing a note, or initiating some voltage (in modular synthesis rack), the music follows some...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.7.0/transition.js"></script><script src="libs/bs3compat-0.7.0/tabs.js"></script><script src="libs/bs3compat-0.7.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -67,8 +67,8 @@
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html">Preface</a></li>
-<li><a class="" href="what-do-we-mean-generative-music.html"><span class="header-section-number">1</span> What do we mean “Generative” music?</a></li>
-<li><a class="active" href="recipe---changing-chords.html"><span class="header-section-number">2</span> Recipe - Changing chords</a></li>
+<li><a class="active" href="what-do-we-mean-generative-music.html"><span class="header-section-number">1</span> What do we mean “Generative” music?</a></li>
+<li><a class="" href="recipe---changing-chords.html"><span class="header-section-number">2</span> Recipe - Changing chords</a></li>
 <li><a class="" href="process---note-wise-probability.html"><span class="header-section-number">3</span> Process - Note-wise probability</a></li>
 <li><a class="" href="process---follow-actions.html"><span class="header-section-number">4</span> Process - Follow Actions</a></li>
 <li><a class="" href="tools---midi-tools-chords-and-added-notes.html"><span class="header-section-number">5</span> Tools - MIDI tools: chords and added notes</a></li>
@@ -99,50 +99,44 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="recipe---changing-chords" class="section level1" number="2">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="what-do-we-mean-generative-music" class="section level1" number="1">
 <h1>
-<span class="header-section-number">2</span> Recipe - Changing chords<a class="anchor" aria-label="anchor" href="#recipe---changing-chords"><i class="fas fa-link"></i></a>
+<span class="header-section-number">1</span> What do we mean “Generative” music?<a class="anchor" aria-label="anchor" href="#what-do-we-mean-generative-music"><i class="fas fa-link"></i></a>
 </h1>
-<ol style="list-style-type: decimal">
-<li><p>Create three MIDI tracks, each with a virtual synth instrument. For this example we’re going to use long chords, so I’d recommend a pad sound. One thing that works quite well is to mix sounds with rhythmic elements, that evolve or where there is modulation to vary the sound over time.</p></li>
-<li><p>Make three MIDI clips in each track.</p></li>
-<li><p>Prepare a MIDI clip with 8 to 10 notes within the scale of C major, G major, F major in each clip within the tracks. Avoiding the 3rd of the scale will make the chords tonally “ambiguous”, and avoiding (major) 7ths will help the sounds produced blend between tracks and clips (see the Chapter 18 on Scales for more discussion of scales in generative ambient music). Use the Scale button in the MIDI clip to only show notes within the scale. The chords suggested are arbitrary, but the recipe will work best if you use scales or chord intervals that are “next door” to each other in the cycle of 5ths - <a href="https://en.wikipedia.org/wiki/Circle_of_fifths" class="uri">https://en.wikipedia.org/wiki/Circle_of_fifths</a>). See the screenshots below for a visual representation of what I mean.</p></li>
-<li><p>Use random note probability on notes in the chord. Set the root notes of each clip to 75% probability, and set other notes at about 50-60% probability so that each time the clip triggers, the note choice / chord is different. This will mean that sometimes the chord will have 4 notes, but it could vary between 2 and 7… (in fact it could vary between none and 8, but the the extremes are very unlikely). Having higher probability on the root notes favours these notes within the chord, but if that probability is slightly less than 100% then you’ll not ALWAYS get that anchoring from the root note.</p></li>
-<li><p>Make sure that the clip lengths vary between tracks (all notes within the clip have the same length). So clip1 in track 1 could have 16 bars length; clip 1 in track 2 could be 13 bars; clip 1 in track 3 could have 10 bars length etc. The important thing is not the clip length, but the fact that they vary <strong><em>across</em></strong> tracks.</p></li>
-<li><p>ALSO, vary clip lengths between scenes <strong><em>within</em></strong> tracks. So a track that has 16 bars in clip 1, maybe has 14 bars in clip 2 and 12 bars in clip 3. Similarly, the exact length is unimportant. The important thing is that the clip lengths vary both within tracks and between tracks. AVOID having the same clip lengths in the same scenes.<br><br>
-Following the advice above you should wind up with something like this in the first three clip slots of the three tracks:</p></li>
-</ol>
-<p><strong><em>Track 1 clips</em></strong>:</p>
-<p><img src="images/Recipe1_Track1_Chord1.png" width="100%"><img src="images/Recipe1_Track1_Chord2.png" width="100%"><img src="images/Recipe1_Track1_Chord3.png" width="100%"></p>
-<p><strong><em>Track 2 clips</em></strong>:</p>
-<p><img src="images/Recipe1_Track2_Chord1.png" width="100%"><img src="images/Recipe1_Track2_Chord2.png" width="100%"><img src="images/Recipe1_Track2_Chord3.png" width="100%"></p>
-<p><strong><em>Track 3 clips</em></strong>:</p>
-<p><img src="images/Recipe1_Track3_Chord1.png" width="100%"><img src="images/Recipe1_Track3_Chord2.png" width="100%"><img src="images/Recipe1_Track3_Chord3.png" width="100%"></p>
-<p>The clips shown above are <em>my</em> choice of notes, length etc. and assume that we’re doing a slow moving, textured track. You can play with different choices of notes, shorter lengths of clip, more plucky sounds. Perhaps adding an arpeggiator or Note Echo to the track would help movement and retain interest (see Chapter 4 for more details on MIDI effects in Ableton Live).</p>
-<ol start="7" style="list-style-type: decimal">
-<li>
-<p>Set up Follow Actions (see the following chapter <a href="process---follow-actions.html#process---follow-actions">Process - Follow Actions</a>) to progress to Next clip at end of each clip with 80% probability, with the other action set to “Play again” with 20% probability. When you launch the scene, each clip will play to the end of the clip, but because individual note probability within each of the stacked chords is set to 50-60%, the chord will sound different each time it plays. Also, the randomness we’re using for note probability also means that the same chord clip in each track is also likely to sound different. The 80-20% split of next action - “Play again” or “Next” - will mean that some tracks may progress to the next chord while some will play the same clip again.</p>
-<p>If the clips are short, then a 50-50% split of next action chance might be more appropriate. In this case because the clips are long we want to force movement onwards. With shorter clips then we might favour repetition so that the listener isn’t bombarded with changes every few beats (see Chapter 9 for a discussion of balancing repetition with unexpected elements).</p>
-</li>
-<li><p>Choose sounds for each track that complement each other. Could be pads, arpeggios, textures etc. Arpeggios and sounds that evolve are particularly useful in this recipe. You can automate parameters within clips as well to introduce additional movement in the sound. An important point is that the sound shouldn’t be too static.</p></li>
-<li><p>Press play. Sit back and relax.</p></li>
-</ol>
+<div id="generative" class="section level2 unnumbered">
+<h2>Generative:<a class="anchor" aria-label="anchor" href="#generative"><i class="fas fa-link"></i></a>
+</h2>
+<p>“Generative” music is where, following some trigger event such as pressing “play” or playing a note, or initiating some voltage (in modular synthesis rack), the music follows some rules, algorithms or uses probability to generate or evolve the musical ideas (notes, rhythms, timbres) for an arbitrary amount of time. In some cases the generative algorithms work <strong><em>with</em></strong> the performer, reacting to their input. In other cases the performer may intervene with the algorithms to tweak, adjust or change direction.</p>
 <hr>
-<p>You can hear one instance of this track here: <a href="https://soundcloud.com/mikeksmith/changing-chords/s-LNeHFk2AeCI" class="uri">https://soundcloud.com/mikeksmith/changing-chords/s-LNeHFk2AeCI</a></p>
-<p>(I say “one instance” because this is generative and uses probability. So the next time I render the track it could well sound different. Similar, but different.)</p>
+</div>
+<div id="key-idea" class="section level2 unnumbered">
+<h2>Key idea<a class="anchor" aria-label="anchor" href="#key-idea"><i class="fas fa-link"></i></a>
+</h2>
+<p>Generative music means (to me) that the music should be able to go on indefinitely, with enough going on to make it interesting, but without anything particularly “sticking out” to catch the listener’s ear.</p>
+<hr>
+<p>Some generative algorithms take parts that the performer plays and augments this with additional harmony, chords or (counter) melodies. An example of this is Olafur Arnalds’ and Halldór Eldjárn’s Stratus algorithm for performer pianos where MIDI triggers generate sequences of associated notes, chords and “ripples” in a separate instrument or player piano.<br><br>
+Other generative music involves complex algorithms, probability triggers and modulations to create ever-changing sounds, sequences, rhythms. Often these are programmed via modular synth rigs using LFOs, sequencers, quantizers, harmonic generators, bernoulli gates, Turing machines.</p>
+<p>With <a href="https://www.ableton.com/en/live/">Ableton Live Suite</a>, it’s possible to create both kinds of generative sequences - either shorter, reactive sequences or long infinitely varying sequences. Through modulation and automation it’s possible to create music where the sounds evolve, appear, disappear, blend or create dissonance. In this book we’ll try to present some ideas that will help get you started on this journey. I recommend that you try out the ideas in practice. Let the sequences play. Sit with them a while and let what you hear guide what to try next…</p>
+<p>It is my firm belief that the tools provided in Ableton Live Suite, including Max for Live, can replicate many of the generative possibilities within modular synthesis rigs. I hope to show within the following chapters how a combination of stock Ableton plugins plus some free (or inexpensive) Max for Live plugins can help you create generative music that is interesting to listen to.</p>
+<p>This is only the beginning.</p>
 
 </div>
+</div>
   <div class="chapter-nav">
-<div class="prev"><a href="what-do-we-mean-generative-music.html"><span class="header-section-number">1</span> What do we mean “Generative” music?</a></div>
-<div class="next"><a href="process---note-wise-probability.html"><span class="header-section-number">3</span> Process - Note-wise probability</a></div>
+<div class="prev"><a href="index.html">Preface</a></div>
+<div class="next"><a href="recipe---changing-chords.html"><span class="header-section-number">2</span> Recipe - Changing chords</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#recipe---changing-chords"><span class="header-section-number">2</span> Recipe - Changing chords</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#what-do-we-mean-generative-music"><span class="header-section-number">1</span> What do we mean “Generative” music?</a></li>
+<li><a class="nav-link" href="#generative">Generative:</a></li>
+<li><a class="nav-link" href="#key-idea">Key idea</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/001-Recipe-Changing_Chords.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/001-Recipe-Changing_Chords.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/000-Defintion-Generative.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/000-Defintion-Generative.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>

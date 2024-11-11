@@ -1,5 +1,5 @@
 fig:unnamed-chunk-2
-what-do-we-mean-generative-ambient
+what-do-we-mean-generative-music
 recipe---changing-chords
 process---note-wise-probability
 drum-parts
@@ -111,11 +111,6 @@ easy-implementation-in-the-daw
 im-in-my-prime
 fibonacci-and-the-golden-ratio
 recipe---using-the-fibonacci-sequence-to-create-loops-ht-divkid
-process---maximalist-ambient
-make-it-loud
-slow-evolution-but-noisy
-blender-rather-than-mixer
-some-examples
 tools---live-12-midi-and-compositional-tools
 scale-awareness
 lfo-shapes-and-modulation
