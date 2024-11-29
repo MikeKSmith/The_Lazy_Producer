@@ -18,7 +18,7 @@ Making loops different lengths combines the predictable: each loop contains the 
 
 ------------------------------------------------------------------------
 
-## An old idea
+## Set phases to stunning
 
 Steve Reich and other minimalist composers worked with musical phrases that each performer played a number of times. Sometimes the number of repetitions was at the discretion of the performer, sometimes governed by the number of times the performer could play it in one breath, sometimes the composer worked with actual tape loops. The concept is that while each part is repeated, the repeated parts move out of phase with each other and so create new sounds, rhythms and harmonies. No two performances would be the same, since the number of repetitions isn't fixed.
 

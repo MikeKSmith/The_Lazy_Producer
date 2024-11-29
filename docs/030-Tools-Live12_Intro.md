@@ -1,4 +1,4 @@
-# Tools - Live 12 MIDI and compositional tools
+# Tools - Live 12 Overview: MIDI and compositional tools
 
 During the process of writing this book, Ableton released Live 12. With Live 12 there are a whole host of improvements and additions which make the life of someone making generative music a whole lot easier. In this chapter we'll look at the new compositional and MIDI tools and modulation. In the next chapter we'll look at new sequencer tools.
 
@@ -29,20 +29,6 @@ So now we can chain together MIDI Devices (as discussed in Chapters 4 and used i
 <img src="images/Live12_ScaleAware_MIDI_Devices.png" width="100%" />
 
 Scale awareness also extends to some of the Synth instruments in Live 12 - Meld in particular has scale awareness for some of its tone generators, where changing the macro knob for that generator adds harmonic content that is in tune with the Global Scale.
-
-## LFO shapes and modulation
-
-Another small change, but with a big impact is in modulation within Live 12. Previous versions of Live Suite allowed you to change values of parameters through the LFO device. In Live 12 this feature has been extended by allowing you to ***modulate*** a parameter by a given amount through the LFO. What this means in practice is that you can continue to change the value of the whatever parameter you are modulating, but the LFO will apply additional changes to that parameter relative to its current position. Previously, when the LFO controlled the parameter, you gave up complete control over that parameter to the LFO device, but now you can continue to make changes, while the LFO adds a relative change on top.
-
-<img src="images/Live12_LFO_Glider.png" width="100%" />
-
-In the screenshot above, the LFO is changing the value of the mapped parameter by 50% relative to its current value.
-
-Also, note the new LFO "Glider" type in Live 12. This gives a really useful random, but smooth change in values. Previously to get a smooth but random LFO, you had to chain LFOs together and cross-modulate the amount or rates. "Glider" Waveform makes that much easier.
-
-Another LFO Waveform - "Stray" - gives similar random but smooth changes, but with a faster rate of change. Personally I favour these "random but smooth" changing LFOs, as the previous "sample and hold" random LFO was a bit too "steppy" for my liking.\
-
-<img src="images/LFO_Stray.png" width="100%" />
 
 ## Compositional tools
 

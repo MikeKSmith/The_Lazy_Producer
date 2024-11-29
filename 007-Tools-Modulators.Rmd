@@ -60,6 +60,7 @@ Note that under the visualization of the LFO you'll see "Jitter" and "Smooth". "
 A basic LFO is a useful modulator, but there are two drawbacks to the standard LFO on its own:
 
 1.  Its cyclical nature. Having something modulate within a predictable cycle e.g. 6 bars is fine, but is a little too predictable if the listener is going to be engaged with that sound over a longer period. If that cycle is part of a larger group of modulations moving at different cycle lengths then this might be less obvious.
+  
 2.  The "Random" setting is not smooth, as it is a "sample and hold" - so the value changes at the nominated cycle time and holds that value until a new value is assigned at the start of the next cycle. This means that the modulated parameter changes in a step fashion rather than smoothly. The LFO has a "Smooth" value (bottom right of the wave display) but this smoothes out with exponential curves, meaning that the value starts changing quickly at the start of the next cycle. This may still be "not quite smooth enough".
 
 ## LFO Trio - a chaotic LFO
@@ -69,23 +70,6 @@ One trick from modular synthesis is to modulate LFOs with other LFOs, and to mod
 ```{r}
 knitr::include_graphics(path = "./images/Chaotic_LFOs.png")
 ```
-
-## Live12 - LFO
-
-The need for this LFO trio (above) has largely disappeared with Live 12 as Live now has a couple of new LFO modes: Stray and Glider. These two modes provide a relatively random LFO pattern, but smooth. Stray has a slightly faster evolution than Glider. But both serve well in place of the chaotic Trio of LFOs described above.
-
-```{r}
-knitr::include_graphics(path = "./images/LFO_Stray.png")
-```
-
-```{r}
-knitr::include_graphics(path = "./images/LFO_Glider.png")
-```
-
-Another big boon in Live 12's LFO is the ability to modulate parameters, rather than remote control. Previously when you mapped the LFO to a parameter the only option was to take over control of that parameter with the LFO, so a decent amount of "gardening" of the LFO range and depth was required to ensure that the LFO effect on the parameter was subtle enough.
-
-However, in Live 12 we can now modulate the parameter by the LFO, so we express the amount of LFO modulation of the parameter in percentage terms, but we can still tweak the parameter value. This allows us to tune in a sweet spot "center" value using the UI knob or slider, but then modulate the amount using the LFO. You can see the "modulate" button in blue in the images above. Clicking on this "modulate" button takes you back to the older "Remote" option from Live 11.
-
 
 ## MIDI Envelope
 
@@ -138,14 +122,6 @@ knitr::include_graphics(path = "./images/Expression_control_2.png")
 ```
 
 As I've said above, the combination of all of these tools are supremely powerful - so you could change envelopes with each incoming MIDI note or use that note to change an LFO setting that modulates something else. Also, be aware that the Expression Control and Envelope Follower can be used ***even if*** the MIDI or audio from the tracks are not sent to the Master audio output. OR EVEN NOT HEARD AT ALL. So you can use MIDI events to modulate items in sync with the master clock regardless of tempo.
-
-## Live12 - MIDI Expression Control
-
-The UI for Expression control has changed somewhat in Live 12. The functionality is largely the same, except that now (as with the LFO) we can modulate a mapped parameter and not just remote control it. This means that we can specify an amount of modulation on the mapped parameter for the expression to control, but the parameter itself can be tweaked by hand to set its level.
-
-```{r}
-knitr::include_graphics(path = "./images/Expression_Control_Live12.png")
-```
 
 ## Strange Mod
 

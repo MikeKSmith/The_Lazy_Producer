@@ -26,12 +26,10 @@ tools---modulators
 modulators-in-ableton-live-general-rule-of-thumb
 lfo
 lfo-trio---a-chaotic-lfo
-live12---lfo
 midi-envelope
 envelope-follower
 shaper
 midi-expression-control
-live12---midi-expression-control
 strange-mod
 dispatch
 deviate-1
@@ -106,14 +104,13 @@ online-sources-for-field-recordings
 using-the-samples
 recipe---audio-clip-or-sampler-into-effects
 process---unsynced-loops
-an-old-idea
+set-phases-to-stunning
 easy-implementation-in-the-daw
 im-in-my-prime
 fibonacci-and-the-golden-ratio
 recipe---using-the-fibonacci-sequence-to-create-loops-ht-divkid
-tools---live-12-midi-and-compositional-tools
+tools---live-12-overview-midi-and-compositional-tools
 scale-awareness
-lfo-shapes-and-modulation
 compositional-tools
 midi-generation
 midi-transformation
@@ -122,3 +119,6 @@ tools---live-12-sequencers
 sq
 rhythmic-steps
 step-arp
+tools---live-12-modulation
+lfo-shapes-and-modulation
+live12---midi-expression-control
