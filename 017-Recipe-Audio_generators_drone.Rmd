@@ -39,9 +39,9 @@ Since we want to balance the unexpected and predictable, here the bass drone not
 
 ------------------------------------------------------------------------
 
-You can hear my version of this track here: 
+You can hear my version of this track here: https://soundcloud.com/mikeksmith/audio-generator-drone/s-EsGEevQOU3a
 
 
 ```{r, echo=FALSE, results = "asis"}
-htmltools::includeHTML(path = file.path("HTML","Recipe3-Single_Note_Input.html"))
+htmltools::includeHTML(path = file.path("HTML","Recipe4-VariousAudioGenerators.html"))
 ```

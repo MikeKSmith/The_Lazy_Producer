@@ -112,9 +112,9 @@
 <p>Previous versions of Live Suite allowed you to change values of parameters through the (Max for Live) LFO device. In Live 12 this feature has been extended by allowing you to <strong><em>modulate</em></strong> a parameter by a given amount through the LFO. What this means in practice is that you can continue to change the value of the whatever parameter you are modulating, but the LFO will apply additional changes to that parameter relative to its current position. Previously, when the LFO controlled the parameter, you gave up complete control over that parameter to the LFO device, but now you can continue to make changes, while the LFO adds a relative change around the chosen value.</p>
 <hr>
 </div>
-<div id="lfo-shapes-and-modulation" class="section level2" number="26.1">
+<div id="live-12---lfo-shapes-and-modulation" class="section level2" number="26.1">
 <h2>
-<span class="header-section-number">26.1</span> LFO shapes and modulation<a class="anchor" aria-label="anchor" href="#lfo-shapes-and-modulation"><i class="fas fa-link"></i></a>
+<span class="header-section-number">26.1</span> Live 12 - LFO shapes and modulation<a class="anchor" aria-label="anchor" href="#live-12---lfo-shapes-and-modulation"><i class="fas fa-link"></i></a>
 </h2>
 <div class="inline-figure"><img src="images/Live12_LFO_Glider.png" width="100%"></div>
 <p>In the screenshot above, the LFO is changing the value of the mapped parameter by 50% relative to its current value.</p>
@@ -125,12 +125,19 @@
 <div class="inline-figure"><img src="images/Live12_LFO_shape_steps.png" width="100%"></div>
 <p>You can apply LFO modulation directly to parameters of an instrument, effect etc. but one useful trick is to then group the device(s) and map a Macro knob to the “Depth” of any LFO or modulation devices. This will allow you to dial in more or less modulation from only one knob, rather than having to individually change a number of settings. The combination of having modulation devices change parameter values relative to the current setting, and the ability to dial in more or less of this modulation allows the Lazy Producer (and Lazy Performer) to create sounds that are static, but also sounds that are constantly evolving. This is great for keeping the listener engaged.</p>
 </div>
-<div id="live12---midi-expression-control" class="section level2" number="26.2">
+<div id="live-12---midi-expression-control" class="section level2" number="26.2">
 <h2>
-<span class="header-section-number">26.2</span> Live12 - MIDI Expression Control<a class="anchor" aria-label="anchor" href="#live12---midi-expression-control"><i class="fas fa-link"></i></a>
+<span class="header-section-number">26.2</span> Live 12 - MIDI Expression Control<a class="anchor" aria-label="anchor" href="#live-12---midi-expression-control"><i class="fas fa-link"></i></a>
 </h2>
-<p>The UI for Expression control has changed somewhat in Live 12. The functionality is largely the same, except that now (as with the LFO) we can modulate a mapped parameter and not just remote control it. This means that we can specify an amount of modulation on the mapped parameter for the expression to control, but the parameter itself can be tweaked by hand to set its level.</p>
+<p>The UI for Expression control has changed somewhat in Live 12. The functionality is largely the same, except that now (as with the LFO) we can <strong><em>modulate</em></strong> a mapped parameter and not just remote control it. This means that we can specify an amount of modulation on the mapped parameter for the expression to control, but the parameter itself can be tweaked by hand to set its level.</p>
 <div class="inline-figure"><img src="images/Expression_Control_Live12.png" width="100%"></div>
+</div>
+<div id="live-12---shaper" class="section level2" number="26.3">
+<h2>
+<span class="header-section-number">26.3</span> Live 12 - Shaper<a class="anchor" aria-label="anchor" href="#live-12---shaper"><i class="fas fa-link"></i></a>
+</h2>
+<p>The Shaper modulation device remains much the same in Live 12 as in Live 11, and features the modulation capabilities, similar to LFO and MIDI Expression Control above. However in Live 12 there are some additional capabilities for specifying whether the Shaper modulation loops, is a One Shot or is triggered Manually.</p>
+<div class="inline-figure"><img src="images/Live12_Shaper.png" width="100%"></div>
 
 <div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div id="ref-desantis2015making" class="csl-entry">
@@ -153,8 +160,9 @@ DeSantis, D. <em>Making Music: 74 Creative Strategies for Electronic Music Produ
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#tools---live-12-modulation"><span class="header-section-number">26</span> Tools - Live 12: Modulation</a></li>
 <li><a class="nav-link" href="#key-idea-18">Key idea</a></li>
-<li><a class="nav-link" href="#lfo-shapes-and-modulation"><span class="header-section-number">26.1</span> LFO shapes and modulation</a></li>
-<li><a class="nav-link" href="#live12---midi-expression-control"><span class="header-section-number">26.2</span> Live12 - MIDI Expression Control</a></li>
+<li><a class="nav-link" href="#live-12---lfo-shapes-and-modulation"><span class="header-section-number">26.1</span> Live 12 - LFO shapes and modulation</a></li>
+<li><a class="nav-link" href="#live-12---midi-expression-control"><span class="header-section-number">26.2</span> Live 12 - MIDI Expression Control</a></li>
+<li><a class="nav-link" href="#live-12---shaper"><span class="header-section-number">26.3</span> Live 12 - Shaper</a></li>
 </ul>
 
       <div class="book-extra">
@@ -172,7 +180,7 @@ DeSantis, D. <em>Making Music: 74 Creative Strategies for Electronic Music Produ
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Lazy Producer - Making music using randomness and probability in Ableton Live</strong>" was written by Mike K Smith. It was last built on 2024-11-29.</p>
+    <p>"<strong>The Lazy Producer - Making music using randomness and probability in Ableton Live</strong>" was written by Mike K Smith. It was last built on 2024-11-30.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

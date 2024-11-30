@@ -12,7 +12,7 @@ Previous versions of Live Suite allowed you to change values of parameters throu
 
 
 
-## LFO shapes and modulation
+## Live 12 - LFO shapes and modulation
 
 <img src="images/Live12_LFO_Glider.png" width="100%" />
 
@@ -30,8 +30,14 @@ There are a couple of additional options in the Live12 LFO - Shape and Steps. Th
 
 You can apply LFO modulation directly to parameters of an instrument, effect etc. but one useful trick is to then group the device(s) and map a Macro knob to the "Depth" of any LFO or modulation devices. This will allow you to dial in more or less modulation from only one knob, rather than having to individually change a number of settings. The combination of having modulation devices change parameter values relative to the current setting, and the ability to dial in more or less of this modulation allows the Lazy Producer (and Lazy Performer) to create sounds that are static, but also sounds that are constantly evolving. This is great for keeping the listener engaged.
 
-## Live12 - MIDI Expression Control
+## Live 12 - MIDI Expression Control
 
-The UI for Expression control has changed somewhat in Live 12. The functionality is largely the same, except that now (as with the LFO) we can modulate a mapped parameter and not just remote control it. This means that we can specify an amount of modulation on the mapped parameter for the expression to control, but the parameter itself can be tweaked by hand to set its level.
+The UI for Expression control has changed somewhat in Live 12. The functionality is largely the same, except that now (as with the LFO) we can ***modulate*** a mapped parameter and not just remote control it. This means that we can specify an amount of modulation on the mapped parameter for the expression to control, but the parameter itself can be tweaked by hand to set its level.
 
-<img src="./images/Expression_Control_Live12.png" width="100%" />
+<img src="images/Expression_Control_Live12.png" width="100%" />
+
+## Live 12 - Shaper
+
+The Shaper modulation device remains much the same in Live 12 as in Live 11, and features the modulation capabilities, similar to LFO and MIDI Expression Control above. However in Live 12 there are some additional capabilities for specifying whether the Shaper modulation loops, is a One Shot or is triggered Manually.
+
+<img src="images/Live12_Shaper.png" width="100%" />

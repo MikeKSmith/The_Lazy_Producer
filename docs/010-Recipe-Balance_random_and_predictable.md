@@ -31,7 +31,4 @@
 6.  Press play. Sit back and relax.
 
 ------------------------------------------------------------------------
-
-You can hear one instance of this track here:
-
-(I say "one instance" because this is generative and uses probability. So the next time I render the track it could well sound different. Similar, but different.)
+ 

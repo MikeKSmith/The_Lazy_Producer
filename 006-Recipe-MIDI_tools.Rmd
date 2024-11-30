@@ -97,7 +97,7 @@ In performance of this track, I use a MIDI Controller to change settings of the 
 
 ------------------------------------------------------------------------
 
-You can hear one instance of this track here: <https://soundcloud.com/mikeksmith/single-note-input>
+You can hear one instance of this track here: <https://soundcloud.com/mikeksmith/single-note-input/s-o2nXMQ84jjH>
 
 
 ```{r, echo=FALSE, results = "asis"}

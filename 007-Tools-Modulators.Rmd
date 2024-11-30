@@ -1,7 +1,3 @@
----
----
----
-
 # Tools - Modulators
 
 The MIDI tools discussed in the previous chapter are useful to transform, augment and add notes to existing MIDI sequences, but we also need to generate those sequences in the first place. Ableton Live Suite and Max for Live plugins offer a few options to generate sequences of notes.
@@ -19,7 +15,7 @@ One strength of Ableton Live's modulation devices (and Max for Live modulation d
 ## Modulators in Ableton Live (general rule of thumb)
 
 In Ableton Live, most modulators include a "Map" button that you click, then select the item that you want to modulate. The beauty of this is that you map the modulation to ***the next thing you click***. This applies to any knob, fader, slider, and even third party plugins. In the case of third party plugins you can often click on the "Down arrow" beside the plugin on/off button to expand the parameters that can be automated.
-  
+
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 ```
@@ -28,8 +24,7 @@ knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 knitr::include_graphics(path = "./images/Labs.png")
 ```
 
-If no parameters are presented when you click this button, you may instead see a "Configure" button in the plugin container. When you click on this button and then open the plugin, whatever you click will show up as a slider in the container interface (see the images below showing the Zebralette instrument as an example). 
-
+If no parameters are presented when you click this button, you may instead see a "Configure" button in the plugin container. When you click on this button and then open the plugin, whatever you click will show up as a slider in the container interface (see the images below showing the Zebralette instrument as an example).
 
 ```{r}
 knitr::include_graphics(path = "./images/Zebralette_Configure.png")
@@ -42,7 +37,7 @@ knitr::include_graphics(path = "./images/Zebralette_Configured.png")
 ```{r}
 knitr::include_graphics(path = "./images/Zebralette.png")
 ```
-  
+
 This opens up huge potential for modulating pretty much anything you see in the Ableton interface. You can even modulate the track volume sliders, panning, effect sends etc. I have used this approach in the past to modulate track volume so that an ambient generative patch could play for an arbitrary amount of time with the volume levels fading in and out.
 
 ## LFO
@@ -60,7 +55,7 @@ Note that under the visualization of the LFO you'll see "Jitter" and "Smooth". "
 A basic LFO is a useful modulator, but there are two drawbacks to the standard LFO on its own:
 
 1.  Its cyclical nature. Having something modulate within a predictable cycle e.g. 6 bars is fine, but is a little too predictable if the listener is going to be engaged with that sound over a longer period. If that cycle is part of a larger group of modulations moving at different cycle lengths then this might be less obvious.
-  
+
 2.  The "Random" setting is not smooth, as it is a "sample and hold" - so the value changes at the nominated cycle time and holds that value until a new value is assigned at the start of the next cycle. This means that the modulated parameter changes in a step fashion rather than smoothly. The LFO has a "Smooth" value (bottom right of the wave display) but this smoothes out with exponential curves, meaning that the value starts changing quickly at the start of the next cycle. This may still be "not quite smooth enough".
 
 ## LFO Trio - a chaotic LFO
@@ -139,7 +134,7 @@ Dispatch is a paid [Max for Live modulation matrix](https://maxforlive.com/libra
 
 Dispatch is massively flexible in how you can define and combine modulation sources and types. It can also be quite intimidating at first to know what's going on. I can recommend reviewing the Cong Burn (Dispatch developer) video on the tool on Youtube: <https://youtu.be/Vlef8VON4Rw>
 
-The vision for Dispatch is that it can be a single modulation device that can send modulation out to parameters throughout an Ableton Live set, rather than having modulators and LFOs scattered throughout the set. If you have the intention of creating generative ambient music where everything is modulated and curated for an extended playback, then Dispatch may be useful to control levels, panning, sends etc. in a single device. 
+The vision for Dispatch is that it can be a single modulation device that can send modulation out to parameters throughout an Ableton Live set, rather than having modulators and LFOs scattered throughout the set. If you have the intention of creating generative ambient music where everything is modulated and curated for an extended playback, then Dispatch may be useful to control levels, panning, sends etc. in a single device.
 
 ```{r}
 knitr::include_graphics(path = "./images/Dispatch.png")

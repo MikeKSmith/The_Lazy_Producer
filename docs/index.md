@@ -1,7 +1,7 @@
 ---
 title: "The Lazy Producer - Making music using randomness and probability in Ableton Live"
 author: "Mike K Smith"
-date: "2024-11-29"
+date: "2024-11-30"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]

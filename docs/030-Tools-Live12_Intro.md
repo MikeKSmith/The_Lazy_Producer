@@ -1,6 +1,6 @@
 # Tools - Live 12 Overview: MIDI and compositional tools
 
-During the process of writing this book, Ableton released Live 12. With Live 12 there are a whole host of improvements and additions which make the life of someone making generative music a whole lot easier. In this chapter we'll look at the new compositional and MIDI tools and modulation. In the next chapter we'll look at new sequencer tools.
+During the process of writing this book, Ableton released Live 12. With Live 12 there are a whole host of improvements and additions which make the life of someone making generative music a whole lot easier. In this chapter we'll look at the new compositional and MIDI tools. In the next chapter we'll look at new sequencer tools. In subsequent chapters we'll look at some specific Transformer and Generator tools.
 
 ------------------------------------------------------------------------
 

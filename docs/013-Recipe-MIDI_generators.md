@@ -34,7 +34,7 @@ First, let's take the "raw" output from the Euclidean Sequencer and route it int
 
 ------------------------------------------------------------------------
 
-You can hear my version of this track here: <https://soundcloud.com/mikeksmith/Euclidean-NonRhythm>
+You can hear my version of this track here: <https://soundcloud.com/mikeksmith/euclidean-nonrhythm/s-dhj7xJVXSJU>
 
 
 

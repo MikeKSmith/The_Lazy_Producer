@@ -120,5 +120,6 @@ sq
 rhythmic-steps
 step-arp
 tools---live-12-modulation
-lfo-shapes-and-modulation
-live12---midi-expression-control
+live-12---lfo-shapes-and-modulation
+live-12---midi-expression-control
+live-12---shaper

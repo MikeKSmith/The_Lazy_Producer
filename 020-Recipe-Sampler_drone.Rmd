@@ -24,3 +24,11 @@ The Sampler instrument from Ableton Live is often used to slice and dice breaks 
 6. Once you have a setup that works and produces pleasing sounds, try dropping a different pad sample into the Sampler. Doing this allows you to change up the sounds generated, as each sample will have different tones, resonances and features.
 
 7.  Press play. Sit back and relax.
+
+------------------------------------------------------------------------
+
+You can hear my version of this track here: https://soundcloud.com/mikeksmith/sampler-drone/s-6JStw9WdnR4
+
+```{r, echo=FALSE, results = "asis"}
+htmltools::includeHTML(path = file.path("HTML","Recipe5-SamplerDrone.html"))
+```

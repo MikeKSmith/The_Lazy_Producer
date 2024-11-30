@@ -29,10 +29,10 @@ Since we want to balance the unexpected and predictable, here the bass drone not
 
 ------------------------------------------------------------------------
 
-You can hear my version of this track here: 
+You can hear my version of this track here: https://soundcloud.com/mikeksmith/audio-generator-drone/s-EsGEevQOU3a
 
 
 
 ```{=html}
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1367554990&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mikeksmith" title="MikeKSmith" target="_blank" style="color: #cccccc; text-decoration: none;">MikeKSmith</a> · <a href="https://soundcloud.com/mikeksmith/single-note-input" title="Single Note Input" target="_blank" style="color: #cccccc; text-decoration: none;">Single Note Input</a></div>
+<iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1706504574%3Fsecret_token%3Ds-EsGEevQOU3a&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mikeksmith" title="MikeKSmith" target="_blank" style="color: #cccccc; text-decoration: none;">MikeKSmith</a> · <a href="https://soundcloud.com/mikeksmith/audio-generator-drone/s-EsGEevQOU3a" title="Various Audio Generators Drone" target="_blank" style="color: #cccccc; text-decoration: none;">Various Audio Generators Drone</a></div>
 ```
