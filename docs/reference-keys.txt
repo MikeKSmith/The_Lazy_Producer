@@ -35,7 +35,7 @@ dispatch
 deviate-1
 process---tuning-parameters
 the-problem
-the-tast-test
+the-taste-test
 waving-not-droning
 be-random-but-not-too-random
 tune-the-parameters
