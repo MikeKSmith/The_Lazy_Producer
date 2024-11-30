@@ -112,8 +112,12 @@
 </ol>
 <p><img src="images/Sampler_Drone_Global.png" width="100%"><img src="images/Sampler_Drone_Modulation.png" width="100%"></p>
 <ol start="4" style="list-style-type: decimal">
-<li><p>Using techniques described in Chapter 15 (Audio Effects) and used in the Audio Generators Drone recipe, set up a network of audio effects on effect sends / Return channels.</p></li>
-<li><p>You can apply MIDI effects to the track to pick a new random &amp; quantised note each time the clip restarts. Unlike using an audio clip, using Sampler allows us to repitch the sound with each new note.</p></li>
+<li>Using techniques described in Chapter 15 (Audio Effects) and used in the Audio Generators Drone recipe, set up a network of audio effects on effect sends / Return channels.</li>
+</ol>
+<p>In the example below the Sampler instrument is in Channel 1 and is sending audio out to a variety of FX channels. Note that the Return channels are also routing audio around between them to further add layers of effects. You need to be a little cautious when doing this to prevent feeding audio back into an FX channel and creating a wall of harsh sound. You can see that Return A (the “Nice Reverse + Reverb” effect) is sending audio out to Return D (Spectral Resonator) and that that channel is sending audio back to Return A. This is a little dangerous, but being cautious with the send amounts and watching for signal overloading, it is possible to get away with this. Spectral Time and Spectral Resonators are interesting effects to add texture and resonance into fairly static inputs (like our drone here).</p>
+<div class="inline-figure"><img src="images/Recipe-Sampler_drone.png" width="100%"></div>
+<ol start="5" style="list-style-type: decimal">
+<li><p>You can apply MIDI effects to the Sampler track to pick a new random &amp; quantised note each time the clip restarts. Unlike using an audio clip, using Sampler allows us to repitch the sound with each new note.</p></li>
 <li><p>Once you have a setup that works and produces pleasing sounds, try dropping a different pad sample into the Sampler. Doing this allows you to change up the sounds generated, as each sample will have different tones, resonances and features.</p></li>
 <li><p>Press play. Sit back and relax.</p></li>
 </ol>
