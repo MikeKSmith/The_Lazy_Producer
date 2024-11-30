@@ -2,7 +2,7 @@
 
 Computer goes "Bleep bloop bleep bleep bloopity bloop. Whoosh. Bleep bleep... BRRRRR...."
 
-If the sound sources for your generative ambient music using synths and sound generators that don't involve sounds from "real world" instruments and you add in random and probabilistic processes then pretty quickly you have moved away from anything that could be described as "natural" sounding. How can this kind of music appeal to humans, who by their nature are more used to organic sounds and textures they hear day to day?
+If the sound sources for your generative music using synths and sound generators that don't involve sounds from "real world" instruments and you add in random and probabilistic processes then pretty quickly you have moved away from anything that could be described as "natural" sounding. How can this kind of music appeal to humans, who by their nature are more used to organic sounds and textures they hear day to day?
 
 ------------------------------------------------------------------------
 

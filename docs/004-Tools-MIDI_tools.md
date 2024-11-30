@@ -10,7 +10,7 @@ There are many tools within Ableton Live 11 and Max for Live that will generate 
 
 ## Key idea {.unnumbered}
 
-Adding notes, changing the lengths of notes and generating chords within a given scale using MIDI plugin tools can form the basis of a generative, ambient piece. Using other MIDI plugins to arpeggiate these chords and add additional notes and harmonies will produce a constantly evolving sequence of MIDI notes within the scale.
+Adding notes, changing the lengths of notes and generating chords within a given scale using MIDI plugin tools can form the basis of a generative piece. Using other MIDI plugins to arpeggiate these chords and add additional notes and harmonies will produce a constantly evolving sequence of MIDI notes within the scale.
 
 ------------------------------------------------------------------------
 
@@ -30,13 +30,13 @@ The Random plugin changes the pitch of the incoming note within a range specifie
 
 ## Ableton's Note Length plugin
 
-Note Length is a really useful plugin to help modify the incoming MIDI and make notes longer or shorter. The "Gate" control can be used to double an incoming notes length, while the "Length" control defines the length of the resulting MIDI note in milliseconds or seconds. I use this to take incoming MIDI information and "smear" it for use with pad sounds. This is useful in generative ambient music, because you can relate the pad chord using these smeared notes to any incoming moving MIDI part. Be aware though that long "Length" settings, it's possible to stack up MANY midi voices in a plugin. Limiting the number of voices in the plugin instrument or reducing the note length can prevent CPU overload!
+Note Length is a really useful plugin to help modify the incoming MIDI and make notes longer or shorter. The "Gate" control can be used to double an incoming notes length, while the "Length" control defines the length of the resulting MIDI note in milliseconds or seconds. I use this to take incoming MIDI information and "smear" it for use with pad sounds. This is useful in generative music, because you can relate the pad chord using these smeared notes to any incoming moving MIDI part. Be aware though that long "Length" settings, it's possible to stack up MANY midi voices in a plugin. Limiting the number of voices in the plugin instrument or reducing the note length can prevent CPU overload!
 
 <img src="./images/Note_Length.png" width="100%" />
 
 ## Ableton's Scale plugin
 
-The Scale plugin is the Generative Ambient musician's friend. It takes whatever MIDI nonsense you through at it and quantises it to a given scale. ***This isn't cheating.*** Well, it kind of is, but it's a well used cheat within the modular synthesis world where quantisers have been used for a long time to ensure that control voltage (CV) signals conform to a particular scale.
+The Scale plugin is the generative musician's friend. It takes whatever MIDI nonsense you through at it and quantises it to a given scale. ***This isn't cheating.*** Well, it kind of is, but it's a well used cheat within the modular synthesis world where quantisers have been used for a long time to ensure that control voltage (CV) signals conform to a particular scale.
 
 <img src="./images/Scale.png" width="100%" />
 
@@ -64,15 +64,15 @@ It is worth reviewing [the YouTube tutorial for this device](https://youtu.be/4W
 
 ## Max for Live Tintinnabulator plugin
 
-The [Tintinnabulator](https://maxforlive.com/library/device/7569/tintinnabulator) Max for Live plugin by Milton Mermikedes is an implementation of Arvo Part's [Tintinnabulation technique](https://en.wikipedia.org/wiki/Tintinnabuli). This technique arpeggiates the original chord, and then adds additional notes / harmonies to those notes based on the nearest tone from the scale triad. So 1st position inferior C minor takes a C minor triad (C - Eb - G) and assigns a harmony to the incoming notes using the nearest chord tone 1 position lower than the incoming note (the M-Voice). Within the plugin you can specify the delay between the original notes and the additional harmonies. The good news for producers of generative, ambient music is that the choice of T-Voice position (1st Superior, 2nd Superior, 1st Inferior, 2nd Inferior) can be set to be random. This will add variety and keeps the T-Voice harmony changing. This plugin can be used on melody lines or chord inputs for a variety of different effects.
+The [Tintinnabulator](https://maxforlive.com/library/device/7569/tintinnabulator) Max for Live plugin by Milton Mermikedes is an implementation of Arvo Part's [Tintinnabulation technique](https://en.wikipedia.org/wiki/Tintinnabuli). This technique arpeggiates the original chord, and then adds additional notes / harmonies to those notes based on the nearest tone from the scale triad. So 1st position inferior C minor takes a C minor triad (C - Eb - G) and assigns a harmony to the incoming notes using the nearest chord tone 1 position lower than the incoming note (the M-Voice). Within the plugin you can specify the delay between the original notes and the additional harmonies. The good news for producers of generative music is that the choice of T-Voice position (1st Superior, 2nd Superior, 1st Inferior, 2nd Inferior) can be set to be random. This will add variety and keeps the T-Voice harmony changing. This plugin can be used on melody lines or chord inputs for a variety of different effects.
 
 <img src="./images/Tintinnabulator.png" width="100%" />
 
 ## Max for Live Schwartzonator plugin
 
-The Schwartzonator plugin (<https://www.ableton.com/en/packs/schwarzonator/>) combines chord generation with scale quantising. You specify what notes are "valid" for the output - quantising input to output - and then the knobs below the "piano" define the makeup of the output chord. The "add notes" knobe defines how many additional notes you want to add to the input MIDI note to create a chord. "spread" spreads these out over the keyboard. "random" changes the disposition of the chord - creating chord inversions and changing the output chord when it's triggered by the input MIDI note. With "random" increased you can get ever-changing output chords for the same input notes. "dynamic" adds random velocity across the output notes. "select" allows you to automate selection of the Chord Set.\
-\
-Schwartzonator was designed to help musicians who did not know musical theory generate chords from single input notes and the scale or chord quantising allows the user to generate musical ideas that sound good. For the generative ambient musician there are many things in this plugin that are appealing - the ability to turn single input notes into chords that conform to a scale or chord pattern and the ability to also add randomness to ensure that the chords are different each time they are triggered. These coupled with the MIDI tools above can help create evolving patterns that fit with an overall scale key, chord pattern etc. defined for the track.
+The Schwartzonator plugin (<https://www.ableton.com/en/packs/schwarzonator/>) combines chord generation with scale quantising. You specify what notes are "valid" for the output - quantising input to output - and then the knobs below the "piano" define the makeup of the output chord. The "add notes" knobe defines how many additional notes you want to add to the input MIDI note to create a chord. "spread" spreads these out over the keyboard. "random" changes the disposition of the chord - creating chord inversions and changing the output chord when it's triggered by the input MIDI note. With "random" increased you can get ever-changing output chords for the same input notes. "dynamic" adds random velocity across the output notes. "select" allows you to automate selection of the Chord Set.  
+  
+Schwartzonator was designed to help musicians who did not know musical theory generate chords from single input notes and the scale or chord quantising allows the user to generate musical ideas that sound good. For the generative musician there are many things in this plugin that are appealing - the ability to turn single input notes into chords that conform to a scale or chord pattern and the ability to also add randomness to ensure that the chords are different each time they are triggered. These coupled with the MIDI tools above can help create evolving patterns that fit with an overall scale key, chord pattern etc. defined for the track.
 
 <img src="./images/Schwarzonator.png" width="100%" />
 

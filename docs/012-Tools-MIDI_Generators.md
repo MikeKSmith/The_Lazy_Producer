@@ -10,7 +10,7 @@ The MIDI tools discussed in the previous chapter are useful to transform, augmen
 
 ## Key idea {.unnumbered}
 
-You can play or program in sequences to be used as the basis for generative ambient music, and we did exactly this for [Recipe - Changing Chords]. But to create melodic or note sequences you may also wish to use a MIDI note generator like those discussed below. All of these devices will create MIDI note sequences - all of them can use random probability to generate note sequences that constantly change or evolve. As we have discussed in the section [Process - Balancing the unexpected with the predictable] too much randomness can be difficult for the listener to engage with. Fortunately, most of these plugins allow you to tailor the amount of randomness or to slowly evolve.
+You can play or program in sequences to be used as the basis for generative music, and we did exactly this for [Recipe - Changing Chords]. But to create melodic or note sequences you may also wish to use a MIDI note generator like those discussed below. All of these devices will create MIDI note sequences - all of them can use random probability to generate note sequences that constantly change or evolve. As we have discussed in the section [Process - Balancing the unexpected with the predictable] too much randomness can be difficult for the listener to engage with. Fortunately, most of these plugins allow you to tailor the amount of randomness or to slowly evolve.
 
 If you ever thought that DAW sequencers were too limited compared to modular synthesiser setups, I challenge you to review the tools below (and others available via Max for Live) and find holes in functionality. (But don't email me to argue, find them and let me know. Submit an Issue to tell me that there's a different sequencer that I haven't talked about!)
 
@@ -60,7 +60,7 @@ Less Concepts is a sequencer. How it works is complicated. That it works is down
 >
 > *seek. think. discover. - Linus Schrab*
 
-Suffice to say that it generates sequences or bursts of MIDI notes that can be used in generative ambient music. That it's available as a free Max for Live device is down to the generosity and genius of [the musician](https://dndrks.bandcamp.com) and [developer Dan Derks.](https://github.com/dndrks)
+Suffice to say that it generates sequences or bursts of MIDI notes that can be used in generative music. That it's available as a free Max for Live device is down to the generosity and genius of [the musician](https://dndrks.bandcamp.com) and [developer Dan Derks.](https://github.com/dndrks)
 
 Less Concepts produces MIDI sequences rather are less random and slightly more melodic. The key items to focus on here are the "Rule" setting, which in the screenshot below is 30, and the "Seed" setting which is 46. Different rules provide different rhythmic / melodic results and the "Seed" setting results in slightly different variations of that rule. For a given Rule and Seed you will always get predictable results, so if you use Less Concepts and fix the starting Rule and Seed you can always guarantee the same result. But one trick I've played with is to use a random LFO to vary the seed every 4 bars (or more) to balance unexpected and predictable, as we've discussed before.
 

@@ -1,4 +1,4 @@
-book_filename: "Ambient_Starter_Ideas"
+book_filename: "The Lazy Producer"
 new_session: true
 before_chapter_script: _common.R
 delete_merged_file: true

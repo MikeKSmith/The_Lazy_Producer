@@ -10,7 +10,7 @@ There are many tools within Ableton Live 11 and Max for Live that will generate 
 
 ## Key idea
 
-Adding notes, changing the lengths of notes and generating chords within a given scale using MIDI plugin tools can form the basis of a generative, ambient piece. Using other MIDI plugins to arpeggiate these chords and add additional notes and harmonies will produce a constantly evolving sequence of MIDI notes within the scale.
+Adding notes, changing the lengths of notes and generating chords within a given scale using MIDI plugin tools can form the basis of a generative piece. Using other MIDI plugins to arpeggiate these chords and add additional notes and harmonies will produce a constantly evolving sequence of MIDI notes within the scale.
 
 ------------------------------------------------------------------------
 

@@ -6,9 +6,9 @@ The MIDI tools discussed in the previous chapter are useful to transform, augmen
 
 ## Key idea {.unnumbered}
 
-Modulation keeps sounds interesting. Earlier in [Process - Balance the unexpected and the predictable] we discussed how repetition balances randomness. This also applies to the sounds you use in your track. Modulation of synth sounds through LFOs and other means is available in Ableton Live instruments, often with some very creative ways of achieving that - such as the Wavetable instrument's modulation matrix. But sometimes you want to apply modulation to a parameter where an LFO is immediately available for example to the macro knob of an Instrument or Effect Rack. In generative ambient music, having options where the modulation isn't obviously cyclical also helps as it adds to the "unpredictable" and helps engage listener's attention for longer.
+Modulation keeps sounds interesting. Earlier in [Process - Balance the unexpected and the predictable] we discussed how repetition balances randomness. This also applies to the sounds you use in your track. Modulation of synth sounds through LFOs and other means is available in Ableton Live instruments, often with some very creative ways of achieving that - such as the Wavetable instrument's modulation matrix. But sometimes you want to apply modulation to a parameter where an LFO is immediately available for example to the macro knob of an Instrument or Effect Rack. In generative music, having options where the modulation isn't obviously cyclical also helps as it adds to the "unpredictable" and helps engage listener's attention for longer.
 
-One strength of Ableton Live's modulation devices (and Max for Live modulation devices) is that you can map modulation to pretty much anything that you can tweak by hand. Yes, even tempo. You can assign the parameter that is being modulated simply by click on the "Map" button in the devices and then click on a knob, switch or fader in Live. Modulation also allows you to have "hands off" performance of generative ambient music by automating volume fades, if required.
+One strength of Ableton Live's modulation devices (and Max for Live modulation devices) is that you can map modulation to pretty much anything that you can tweak by hand. Yes, even tempo. You can assign the parameter that is being modulated simply by click on the "Map" button in the devices and then click on a knob, switch or fader in Live. Modulation also allows you to have "hands off" performance of generative music by automating volume fades, if required.
 
 ------------------------------------------------------------------------
 
@@ -38,7 +38,7 @@ knitr::include_graphics(path = "./images/Zebralette_Configured.png")
 knitr::include_graphics(path = "./images/Zebralette.png")
 ```
 
-This opens up huge potential for modulating pretty much anything you see in the Ableton interface. You can even modulate the track volume sliders, panning, effect sends etc. I have used this approach in the past to modulate track volume so that an ambient generative patch could play for an arbitrary amount of time with the volume levels fading in and out.
+This opens up huge potential for modulating pretty much anything you see in the Ableton interface. You can even modulate the track volume sliders, panning, effect sends etc. I have used this approach in the past to modulate track volume so that a generative patch could play for an arbitrary amount of time with the volume levels fading in and out.
 
 ## LFO
 
@@ -134,7 +134,7 @@ Dispatch is a paid [Max for Live modulation matrix](https://maxforlive.com/libra
 
 Dispatch is massively flexible in how you can define and combine modulation sources and types. It can also be quite intimidating at first to know what's going on. I can recommend reviewing the Cong Burn (Dispatch developer) video on the tool on Youtube: <https://youtu.be/Vlef8VON4Rw>
 
-The vision for Dispatch is that it can be a single modulation device that can send modulation out to parameters throughout an Ableton Live set, rather than having modulators and LFOs scattered throughout the set. If you have the intention of creating generative ambient music where everything is modulated and curated for an extended playback, then Dispatch may be useful to control levels, panning, sends etc. in a single device.
+The vision for Dispatch is that it can be a single modulation device that can send modulation out to parameters throughout an Ableton Live set, rather than having modulators and LFOs scattered throughout the set. If you have the intention of creating generative music where everything is modulated and curated for an extended playback, then Dispatch may be useful to control levels, panning, sends etc. in a single device.
 
 ```{r}
 knitr::include_graphics(path = "./images/Dispatch.png")

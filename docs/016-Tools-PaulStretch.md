@@ -12,7 +12,7 @@ PaulXStretch (<https://sonosaurus.com/paulxstretch/>) is a plugin that takes an 
 
 ## Key idea {.unnumbered}
 
-Taking an audio clip that has interesting harmonic structure, chords, textures and stretching it out using PaulXStretch can give you instant ambient textures and drones. Even using short audio clips and stretching out 5x or 10x can give interesting textures to work from.
+Taking an audio clip that has interesting harmonic structure, chords, textures and stretching it out using PaulXStretch can give you instant textures and drones. Even using short audio clips and stretching out 5x or 10x can give interesting textures to work from.
 
 ------------------------------------------------------------------------
 
