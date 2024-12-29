@@ -1,4 +1,4 @@
-# Recipe - Balancing the unexpected and the predictable
+# Recipe - Balancing the unexpected and the predictable {#recipe-balancing-unexpected-predictable}
 
 
 
@@ -39,3 +39,10 @@
 9.  Press play. Sit back and relax.
 
 ------------------------------------------------------------------------
+
+An example of this recipe can be found here: https://soundcloud.com/mikeksmith/3_balancing_predictable_unpredictable/s-gPj2EkRvfBh
+
+
+```{=html}
+<iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1985538851%3Fsecret_token%3Ds-gPj2EkRvfBh&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mikeksmith" title="MikeKSmith" target="_blank" style="color: #cccccc; text-decoration: none;">MikeKSmith</a> · <a href="https://soundcloud.com/mikeksmith/3_balancing_predictable_unpredictable/s-gPj2EkRvfBh" title="3_Balancing_Predictable_Unpredictable" target="_blank" style="color: #cccccc; text-decoration: none;">3_Balancing_Predictable_Unpredictable</a></div>
+```

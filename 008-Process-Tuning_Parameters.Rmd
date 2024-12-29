@@ -12,7 +12,7 @@ As with the advice to balance unexpected and predictable, the advice here is to 
 
 ## The Problem
 
-We defined "generative" music in our first chapter. There we defined it as "music (that) should be able to go on indefinitely, with enough going on to make it interesting, but without anything particularly "sticking out" to catch the listener's ear". When we use random processes to generate notes, modulate parameters, change the timbre and qualities of sounds, there's a danger that this randomness will produce sounds that ***do*** "catch the listener's ear", or more than that ***grate*** the listener's ear.
+We defined "generative" music in \@ref(definition-generative). There we defined it as "music (that) should be able to go on indefinitely, with enough going on to make it interesting, but without anything particularly "sticking out" to catch the listener's ear". When we use random processes to generate notes, modulate parameters, change the timbre and qualities of sounds, there's a danger that this randomness will produce sounds that ***do*** "catch the listener's ear", or more than that ***grate*** the listener's ear.
 
 ## The Taste Test
 

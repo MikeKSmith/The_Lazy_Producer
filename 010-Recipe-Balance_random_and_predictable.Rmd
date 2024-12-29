@@ -1,4 +1,4 @@
-# Recipe - Balancing the unexpected and the predictable
+# Recipe - Balancing the unexpected and the predictable {#recipe-balancing-unexpected-predictable}
 
 ```{r, echo=FALSE}
 knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
@@ -55,3 +55,9 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Recipe3_Ableto
 9.  Press play. Sit back and relax.
 
 ------------------------------------------------------------------------
+
+An example of this recipe can be found here: https://soundcloud.com/mikeksmith/3_balancing_predictable_unpredictable/s-gPj2EkRvfBh
+
+```{r, echo=FALSE, results = "asis"}
+htmltools::includeHTML(path = file.path("HTML","Recipe3-balancing_predictable_unpredictable.html"))
+```

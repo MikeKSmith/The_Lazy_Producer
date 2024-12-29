@@ -1,26 +1,43 @@
-# Recipe - Doing more with less using MIDI tools and plugins
+# Recipe - Doing more with less using MIDI tools and plugins {#recipe-midi-tools}
 
-    
+```{{r, echo = FALSE}}
+knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+```
 
-In this recipe we'll use a MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in Chapter 4. This recipe also uses MIDI and audio routing in Live quite extensively, so it's worth reviewing the content in Chapter 5. We're also going to use modulation devices covered in Chapter 7.
+In this recipe we'll use the simplest MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in . This recipe also uses MIDI and audio routing in Live quite extensively, so it's worth reviewing the content in \@ref(process-routing). We're also going to use modulation devices covered in \@ref(tools-modulators).
 
 1.  Create a MIDI track but do not add an instrument to that track. This is going to be the "generator" for our track.
 
 2.  Within this track, add a single MIDI clip with C3 notes for one bar. Name this the "Generator" track (CTRL+R to rename).
 
-3.  Add MIDI tracks and assign the input for these tracks to be the "Generator" track that you have just created above. In the example below I've added a short, plucky sound in the Operator track, a Wavetable pad, and a track with the Electric piano sound. 
+3.  Add MIDI tracks and assign the input for these tracks to be the "Generator" track that you have just created above. In the example below I've added a short, plucky sound in the Operator track, a Wavetable pad, and a track with the Electric piano sound.
 
-4. A Shaper modulation device is added to the Wavetable instrument track and the modulation is mapped to the Gain in a Utility device. The "minimum" is set to 50% and the "maximum" to 0% and the rate is set to 1/4 quarter notes so that each beat, the Shaper ducks the gain to produce a pumping "sidechain compressor" like effect.
+4.  A Shaper modulation device is added to the Wavetable instrument track and the modulation is mapped to the Gain in a Utility device. The "minimum" is set to 50% and the "maximum" to 0% and the rate is set to 1/4 quarter notes so that each beat, the Shaper ducks the gain to produce a pumping "sidechain compressor" like effect.
 
-<img src="images/Recipe2_MODULATION_Shaper-gain.png" width="100%" />
 
-5. The second Wavetable instrument "Wavetable pre-compressor" is taking the output from the Wavetable instrument but set to "Pre-FX" - before the ducking gain reduction is applied. The audio from this track goes ***only*** to the Return FX, so essentially we get a nice pad sound, but we never hear the dry sound.
+``` r
+    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MODULATION_Shaper-gain.png"))
+```
 
-<img src="images/Recipe2_MIDI-and-audio-routing.png" width="100%" />
+![](images/Recipe2_MODULATION_Shaper-gain.png)<!-- -->
+
+5.  The second Wavetable instrument "Wavetable pre-compressor" is taking the output from the Wavetable instrument but set to "Pre-FX" - before the ducking gain reduction is applied. The audio from this track goes ***only*** to the Return FX, so essentially we get a nice pad sound, but we never hear the dry sound.
+
+
+``` r
+    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI-and-audio-routing.png"))
+```
+
+![](images/Recipe2_MIDI-and-audio-routing.png)<!-- -->
 
 6.  In your tracks, you can add MIDI plugins to alter the incoming chord. For example:
 
-    <img src="images/Recipe2_MIDI_fx.png" width="100%" />
+    
+    ``` r
+        knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_fx.png"))
+    ```
+    
+    ![](images/Recipe2_MIDI_fx.png)<!-- -->
 
     You can employ all kinds of MIDI FX here. In this example I have grouped these FX into a MIDI Effect Rack and I'm using Macros to allow me to switch on and change various FX parameters from a single set of 8 knobs.\
     \
@@ -38,15 +55,30 @@ In this recipe we'll use a MIDI generator, in this case a single MIDI note, with
 
 7.  In the screen shot above, you may notice that my MIDI Generator track is actually Grouped tracks. Let's recreate that now. Create a new MIDI track called "Note length" and another called "Arp". In each of these tracks, set the MIDI input to Track one (the single note C3 track) and set Monitor to "In".
 
-    <img src="images/Recipe2_MIDI_manipulation.png" width="100%" />
+    
+    ``` r
+    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_manipulation.png"))
+    ```
+    
+    ![](images/Recipe2_MIDI_manipulation.png)<!-- -->
 
 In the "Note Length" track, add a MIDI Note Length MIDI effect. This will be used to take the output from Track 1 "MIDI Note" and stretch out the MIDI notes to last a nominated number of seconds.\
 
-<img src="images/Recipe2_MIDI_NoteLength.png" width="100%" />
+
+``` r
+knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_NoteLength.png"))
+```
+
+![](images/Recipe2_MIDI_NoteLength.png)<!-- -->
 
 In the "Arp" track we're going to add an Arpeggiator plugin (surprise!) but also another MIDI "Note Length" effect with which we can tweak the note length of the output from the Arpeggiator to suite taste, and a Velocity plugin to add a little variation to the velocity of the output MIDI notes.
 
-<img src="images/Recipe2_MIDI_Arp.png" width="100%" />
+
+``` r
+knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_Arp.png"))
+```
+
+![](images/Recipe2_MIDI_Arp.png)<!-- -->
 
 Tweaking the Length and Gate settings of "Note Length" will allow us to alter the sound of what is generated from the "Arpeggiator" plugin - note that the Gate setting in the "Arpeggiator" does this as well, but we could potentially map these parameters to a MIDI controller if we wanted to vary the arpeggiator sound coming from this track.
 
@@ -56,11 +88,21 @@ In performance of this track, I use a MIDI Controller to change settings of the 
 
 8.  We have mostly been looking at MIDI ***NOTE*** plugins here. But there's a much overlooked MIDI plugin called "Expression control" which allows you to map various MIDI incoming signals to ***ANY*** parameter in Live, including controls of other plugins. In the example below we've mapped various parameters to controls in the Operator instrument just for illustration.
 
-    <img src="images/Expression_control.png" width="100%" />
+    
+    ``` r
+    knitr::include_graphics(path = file.path(here::here(), "images", "Expression_control.png"))
+    ```
+    
+    ![](images/Expression_control.png)<!-- -->
 
     Sure, instruments like Operator and Wavetable have the ability to vary many different parameters using MIDI information, but notice how each of the MIDI parameters on the left hand side has a drop-down menu option. Let's look at what we can do...
 
-    <img src="images/Expression_control_2.png" width="100%" />
+    
+    ``` r
+    knitr::include_graphics(path = file.path(here::here(), "images", "Expression_control_2.png"))
+    ```
+    
+    ![](images/Expression_control_2.png)<!-- -->
 
     There's a wide variety of incoming MIDI inputs which can then be used to map to plugin controls, as well as a "random" input which will select a new value for every MIDI input note, and "incremental" which will increment values for every MIDI input note.\
     \
@@ -74,16 +116,13 @@ In performance of this track, I use a MIDI Controller to change settings of the 
     \
     The benefit of this approach is that because MIDI effects are altering the inputs, all of the MIDI tracks generated are related to each other and cohesive in their sound, without being THE SAME. This is a key attribute, because we can then use these MIDI tracks across different instruments with different timbres.
 
-10.  Press play. Sit back and relax.
+10. Press play. Sit back and relax.
 
 ------------------------------------------------------------------------
 
-You can hear one instance of this track here: <https://soundcloud.com/mikeksmith/single-note-input/s-o2nXMQ84jjH>
-
+You can hear an example of this track here: [https://soundcloud.com/mikeksmith/2_single-note-input/s-ijkBeXue1aw](https://soundcloud.com/mikeksmith/2_single-note-input/s-ijkBeXue1aw?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&si=4cb32f77057549d28894966ca45a2715&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing){.uri}
 
 
 ```{=html}
-<iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1927762811%3Fsecret_token%3Ds-o2nXMQ84jjH&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mikeksmith" title="MikeKSmith" target="_blank" style="color: #cccccc; text-decoration: none;">MikeKSmith</a> · <a href="https://soundcloud.com/mikeksmith/single-note-input/s-o2nXMQ84jjH" title="Single Note Input" target="_blank" style="color: #cccccc; text-decoration: none;">Single Note Input</a></div>
+<iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1985627111%3Fsecret_token%3Ds-ijkBeXue1aw&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mikeksmith" title="MikeKSmith" target="_blank" style="color: #cccccc; text-decoration: none;">MikeKSmith</a> · <a href="https://soundcloud.com/mikeksmith/2_single-note-input/s-ijkBeXue1aw" title="2_Single Note input" target="_blank" style="color: #cccccc; text-decoration: none;">2_Single Note input</a></div>
 ```
-
-(I say "one instance" because this is generative and uses probability. So the next time I render the track it could well sound different. Similar, but different.)

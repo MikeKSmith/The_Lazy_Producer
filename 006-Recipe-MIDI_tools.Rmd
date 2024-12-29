@@ -1,24 +1,24 @@
-# Recipe - Doing more with less using MIDI tools and plugins
+# Recipe - Doing more with less using MIDI tools and plugins {#recipe-midi-tools}
 
-    ```{r, echo = FALSE}
-    knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
-    ```
+```{{r, echo = FALSE}}
+knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+```
 
-In this recipe we'll use a MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in Chapter 4. This recipe also uses MIDI and audio routing in Live quite extensively, so it's worth reviewing the content in Chapter 5. We're also going to use modulation devices covered in Chapter 7.
+In this recipe we'll use the simplest MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in . This recipe also uses MIDI and audio routing in Live quite extensively, so it's worth reviewing the content in \@ref(process-routing). We're also going to use modulation devices covered in \@ref(tools-modulators).
 
 1.  Create a MIDI track but do not add an instrument to that track. This is going to be the "generator" for our track.
 
 2.  Within this track, add a single MIDI clip with C3 notes for one bar. Name this the "Generator" track (CTRL+R to rename).
 
-3.  Add MIDI tracks and assign the input for these tracks to be the "Generator" track that you have just created above. In the example below I've added a short, plucky sound in the Operator track, a Wavetable pad, and a track with the Electric piano sound. 
+3.  Add MIDI tracks and assign the input for these tracks to be the "Generator" track that you have just created above. In the example below I've added a short, plucky sound in the Operator track, a Wavetable pad, and a track with the Electric piano sound.
 
-4. A Shaper modulation device is added to the Wavetable instrument track and the modulation is mapped to the Gain in a Utility device. The "minimum" is set to 50% and the "maximum" to 0% and the rate is set to 1/4 quarter notes so that each beat, the Shaper ducks the gain to produce a pumping "sidechain compressor" like effect.
+4.  A Shaper modulation device is added to the Wavetable instrument track and the modulation is mapped to the Gain in a Utility device. The "minimum" is set to 50% and the "maximum" to 0% and the rate is set to 1/4 quarter notes so that each beat, the Shaper ducks the gain to produce a pumping "sidechain compressor" like effect.
 
 ```{r}
     knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MODULATION_Shaper-gain.png"))
 ```
 
-5. The second Wavetable instrument "Wavetable pre-compressor" is taking the output from the Wavetable instrument but set to "Pre-FX" - before the ducking gain reduction is applied. The audio from this track goes ***only*** to the Return FX, so essentially we get a nice pad sound, but we never hear the dry sound.
+5.  The second Wavetable instrument "Wavetable pre-compressor" is taking the output from the Wavetable instrument but set to "Pre-FX" - before the ducking gain reduction is applied. The audio from this track goes ***only*** to the Return FX, so essentially we get a nice pad sound, but we never hear the dry sound.
 
 ```{r}
     knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI-and-audio-routing.png"))
@@ -47,7 +47,7 @@ In this recipe we'll use a MIDI generator, in this case a single MIDI note, with
 7.  In the screen shot above, you may notice that my MIDI Generator track is actually Grouped tracks. Let's recreate that now. Create a new MIDI track called "Note length" and another called "Arp". In each of these tracks, set the MIDI input to Track one (the single note C3 track) and set Monitor to "In".
 
     ```{r}
-    
+
     knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_manipulation.png"))
     ```
 
@@ -93,15 +93,12 @@ In performance of this track, I use a MIDI Controller to change settings of the 
     \
     The benefit of this approach is that because MIDI effects are altering the inputs, all of the MIDI tracks generated are related to each other and cohesive in their sound, without being THE SAME. This is a key attribute, because we can then use these MIDI tracks across different instruments with different timbres.
 
-10.  Press play. Sit back and relax.
+10. Press play. Sit back and relax.
 
 ------------------------------------------------------------------------
 
-You can hear one instance of this track here: <https://soundcloud.com/mikeksmith/single-note-input/s-o2nXMQ84jjH>
-
+You can hear an example of this track here: [https://soundcloud.com/mikeksmith/2_single-note-input/s-ijkBeXue1aw](https://soundcloud.com/mikeksmith/2_single-note-input/s-ijkBeXue1aw?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&si=4cb32f77057549d28894966ca45a2715&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing){.uri}
 
 ```{r, echo=FALSE, results = "asis"}
-htmltools::includeHTML(path = file.path("HTML","Recipe3-Single_Note_Input.html"))
+htmltools::includeHTML(path = file.path("HTML","Recipe2-Single_Note_Input.html"))
 ```
-
-(I say "one instance" because this is generative and uses probability. So the next time I render the track it could well sound different. Similar, but different.)

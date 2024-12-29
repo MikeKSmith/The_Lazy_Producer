@@ -1,16 +1,12 @@
----
----
----
+# Tools - MIDI Generators {#tools-midi-generators}
 
-# Tools - MIDI Generators
-
-The MIDI tools discussed in the previous chapter are useful to transform, augment and add notes to existing MIDI sequences, but we also need to generate those sequences in the first place. Ableton Live Suite and Max for Live plugins offer a few options to generate sequences of notes.
+The MIDI tools discussed in \@ref(tools-midi-tools) are useful to transform, augment and add notes to existing MIDI sequences, but we also need to generate those sequences in the first place. Ableton Live Suite and Max for Live plugins offer a few options to generate sequences of notes.
 
 ------------------------------------------------------------------------
 
 ## Key idea {.unnumbered}
 
-You can play or program in sequences to be used as the basis for generative music, and we did exactly this for [Recipe - Changing Chords]. But to create melodic or note sequences you may also wish to use a MIDI note generator like those discussed below. All of these devices will create MIDI note sequences - all of them can use random probability to generate note sequences that constantly change or evolve. As we have discussed in the section [Process - Balancing the unexpected with the predictable] too much randomness can be difficult for the listener to engage with. Fortunately, most of these plugins allow you to tailor the amount of randomness or to slowly evolve.
+You can play or program in sequences to be used as the basis for generative music, and we did exactly this for \@ref(recipe-changing-chords). But to create melodic or note sequences you may also wish to use a MIDI note generator like those discussed below. All of these devices will create MIDI note sequences - all of them can use random probability to generate note sequences that constantly change or evolve. As we have discussed in the section \@ref(process-balance-unexpected-and-predictable) too much randomness can be difficult for the listener to engage with. Fortunately, most of these plugins allow you to tailor the amount of randomness or to slowly evolve.
 
 If you ever thought that DAW sequencers were too limited compared to modular synthesiser setups, I challenge you to review the tools below (and others available via Max for Live) and find holes in functionality. (But don't email me to argue, find them and let me know. Submit an Issue to tell me that there's a different sequencer that I haven't talked about!)
 

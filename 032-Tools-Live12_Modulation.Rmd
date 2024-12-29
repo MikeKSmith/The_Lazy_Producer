@@ -1,4 +1,4 @@
-# Tools - Live 12: Modulation
+# Tools - Live 12: Modulation {#tools-live12-modulation}
 
 Live 12 has now introduced the concept of parameter ***modulation*** through devices like the LFO effect, and others. Modulation (instead of ***control***) opens up new possibilities for the Lazy Producer.
 

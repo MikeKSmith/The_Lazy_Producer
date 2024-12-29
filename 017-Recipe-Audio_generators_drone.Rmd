@@ -1,4 +1,4 @@
-# Recipe - Making a drone using some audio generators and effects
+# Recipe - Making a drone using some audio generators and effects {#recipe-audio-generator-drone}
 
 ```{{r, echo = FALSE}}
 knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
@@ -18,7 +18,7 @@ In this recipe we'll make a simple drone track using a variety of audio generato
     knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_HarmonicGenerator.png"))
 ```
 
-3.  Next let's add a real odd-ball: the Cellular Degradation plugin by Dillon Bastan. As described in Chapter 14, this is a weird instrument combining 5 different stereo FM oscillators, and it can make some VERY weird noises. That's what we're going to do here. Normally you "draw" into the main panel to make cells "alive" and then the cellular birth and death process retains these or allows them to "die". To automate that process we're using another favourite Dillon Bastan plugin, the Strange Mod modulation device. We can then use its chaotic modulation processes to automate "drawing" the X and Y values. This should produce some very strange buzzy textures.
+3.  Next let's add a real odd-ball: the Cellular Degradation plugin by Dillon Bastan. As described in \@ref(tools-audio-generators), this is a weird instrument combining 5 different stereo FM oscillators, and it can make some VERY weird noises. That's what we're going to do here. Normally you "draw" into the main panel to make cells "alive" and then the cellular birth and death process retains these or allows them to "die". To automate that process we're using another favourite Dillon Bastan plugin, the Strange Mod modulation device. We can then use its chaotic modulation processes to automate "drawing" the X and Y values. This should produce some very strange buzzy textures.
 
 ```{r}
     knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_CellularDegradation.png"))
@@ -31,7 +31,7 @@ Since we want to balance the unexpected and predictable, here the bass drone not
 5.  From here, feel free to add effects on Return channels (Reverb and Delay are good options) and / or apply resonant processing within the individual tracks - like adding the Resonator or Spectral Resonator plugins. Experiment. See what works. I found that putting a resonator on the Cellular Degradation track and tuning additional resonance pitches within the C minor pentatonic scale helped to "tame" the weirdness, if that's what you'd prefer. Another decent option (in addition or instead) might be to drive the Cellular Degradation track using a Saturator or distortion.
 
 ```{r}
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_CellularDegradation_Resonator.png"))
+      knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_CellularDegradation_Resonator.png"))
 ```
 
 6.  Sometimes, if using an audio generator it helps to add a compressor (occasionally a multiband compressor). This will reduce the peaks and can also bring up some of the quieter moments (if you increase the make up gain). If you're using additional processing like a resonator, this is also helpful since it may "ping" the resonator with additional sounds, while avoiding very loud moments that can catch the listeners ear.
@@ -40,8 +40,8 @@ Since we want to balance the unexpected and predictable, here the bass drone not
 
 ------------------------------------------------------------------------
 
-You can hear my version of this track here: <https://soundcloud.com/mikeksmith/audio-generator-drone/s-EsGEevQOU3a>
+You can hear my version of this track here: [https://soundcloud.com/mikeksmith/5_audio_generator_drone/s-Nw7nwUKDhTg](https://soundcloud.com/mikeksmith/5_audio_generator_drone/s-Nw7nwUKDhTg?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&si=14f7efead4c14501a4eac7ae8b892aed&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing){.uri}
 
 ```{r, echo=FALSE, results = "asis"}
-htmltools::includeHTML(path = file.path("HTML","Recipe4-VariousAudioGenerators.html"))
+htmltools::includeHTML(path = file.path("HTML","Recipe5-VariousAudioGenerators.html"))
 ```

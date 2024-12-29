@@ -1,4 +1,4 @@
-# Tools - Live 12 Sequencers
+# Tools - Live 12 Sequencers {#tools-live12-sequencers}
 
 Live Suite has had Max for Live sequencer devices for some time, but with Live 12.1 some of those have now been included in a new Sequencers pack. The sequencers in this pack allow you to specify a pattern of notes, octaves, velocities, probabilities, and many other attributes and sequence these in ways that are much more like modular system sequencers, where pattern lengths may differ from number of beats in a bar, or where you can randomise aspects on the fly.
 

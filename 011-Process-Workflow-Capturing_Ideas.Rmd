@@ -1,4 +1,4 @@
-# Process - Workflow: capturing generative ideas
+# Process - Workflow: capturing generative ideas {#process-workflow}
 
 Setting up an Ableton Live set with lots of MIDI generators, MIDI manipulation and transformation, using that generated MIDI to create a nice collage of sounds that shifts and changes over time is very satisfying. From a performance perspective, once set up, you can press play and let it do its thing. But what if you want to commit the state of the system to share with others. That involves capturing the generated MIDI, modulations and generated audio. This chapter will discuss how you might go about capturing the processes so that you can later release the track.
 

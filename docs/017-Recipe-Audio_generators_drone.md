@@ -1,4 +1,4 @@
-# Recipe - Making a drone using some audio generators and effects
+# Recipe - Making a drone using some audio generators and effects {#recipe-audio-generator-drone}
 
 ```{{r, echo = FALSE}}
 knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
@@ -24,7 +24,7 @@ In this recipe we'll make a simple drone track using a variety of audio generato
 
 ![](images/Recipe5_HarmonicGenerator.png)<!-- -->
 
-3.  Next let's add a real odd-ball: the Cellular Degradation plugin by Dillon Bastan. As described in Chapter 14, this is a weird instrument combining 5 different stereo FM oscillators, and it can make some VERY weird noises. That's what we're going to do here. Normally you "draw" into the main panel to make cells "alive" and then the cellular birth and death process retains these or allows them to "die". To automate that process we're using another favourite Dillon Bastan plugin, the Strange Mod modulation device. We can then use its chaotic modulation processes to automate "drawing" the X and Y values. This should produce some very strange buzzy textures.
+3.  Next let's add a real odd-ball: the Cellular Degradation plugin by Dillon Bastan. As described in \@ref(tools-audio-generators), this is a weird instrument combining 5 different stereo FM oscillators, and it can make some VERY weird noises. That's what we're going to do here. Normally you "draw" into the main panel to make cells "alive" and then the cellular birth and death process retains these or allows them to "die". To automate that process we're using another favourite Dillon Bastan plugin, the Strange Mod modulation device. We can then use its chaotic modulation processes to automate "drawing" the X and Y values. This should produce some very strange buzzy textures.
 
 
 ``` r
@@ -41,7 +41,7 @@ Since we want to balance the unexpected and predictable, here the bass drone not
 
 
 ``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_CellularDegradation_Resonator.png"))
+      knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_CellularDegradation_Resonator.png"))
 ```
 
 ![](images/Recipe5_CellularDegradation_Resonator.png)<!-- -->
@@ -52,9 +52,9 @@ Since we want to balance the unexpected and predictable, here the bass drone not
 
 ------------------------------------------------------------------------
 
-You can hear my version of this track here: <https://soundcloud.com/mikeksmith/audio-generator-drone/s-EsGEevQOU3a>
+You can hear my version of this track here: [https://soundcloud.com/mikeksmith/5_audio_generator_drone/s-Nw7nwUKDhTg](https://soundcloud.com/mikeksmith/5_audio_generator_drone/s-Nw7nwUKDhTg?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&si=14f7efead4c14501a4eac7ae8b892aed&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing){.uri}
 
 
 ```{=html}
-<iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1706504574%3Fsecret_token%3Ds-EsGEevQOU3a&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mikeksmith" title="MikeKSmith" target="_blank" style="color: #cccccc; text-decoration: none;">MikeKSmith</a> · <a href="https://soundcloud.com/mikeksmith/audio-generator-drone/s-EsGEevQOU3a" title="Various Audio Generators Drone" target="_blank" style="color: #cccccc; text-decoration: none;">Various Audio Generators Drone</a></div>
+<iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1985556695%3Fsecret_token%3Ds-Nw7nwUKDhTg&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mikeksmith" title="MikeKSmith" target="_blank" style="color: #cccccc; text-decoration: none;">MikeKSmith</a> · <a href="https://soundcloud.com/mikeksmith/5_audio_generator_drone/s-Nw7nwUKDhTg" title="5_Audio_Generator_drone" target="_blank" style="color: #cccccc; text-decoration: none;">5_Audio_Generator_drone</a></div>
 ```

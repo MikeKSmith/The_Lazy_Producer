@@ -1,8 +1,4 @@
----
----
----
-
-# Tools - Audio Generators
+# Tools - Audio Generators {#tools-audio-generators}
 
 
 
@@ -12,7 +8,7 @@ Create something from nothing with these audio generators. These aren't so much 
 
 ## Key idea {.unnumbered}
 
-MIDI generators (as discussed in [Tools - MIDI Generators] produce MIDI notes which can be further processed via the MIDI plugins that we explored in [Tools - Chords and added notes] and then played through instruments. But Ableton Live also has some sound generators that will produce sounds without the need of MIDI input or in fact ***any*** input. We just need to think a little creatively and use a generous number of Audio plugins to process the sound into the shape we would like. These sound generators are more likely to produce drones and textures than melodies, so may augment some of the tools previously discussed.
+MIDI generators (as discussed in \@ref(tools-midi-generators) produce MIDI notes which can be further processed via the MIDI plugins that we explored in \@ref(tools-midi-tools) and then played through instruments. But Ableton Live also has some sound generators that will produce sounds without the need of MIDI input or in fact ***any*** input. We just need to think a little creatively and use a generous number of Audio plugins to process the sound into the shape we would like. These sound generators are more likely to produce drones and textures than melodies, so may augment some of the tools previously discussed.
 
 ------------------------------------------------------------------------
 
@@ -22,7 +18,7 @@ There's a technique in synthesis where you "ping" a resonant filter with a click
 
 <img src="./images/Pinging_Filters.png" width="100%" />
 
-Hainbach has a great video explaining the technique here: <https://www.youtube.com/watch?v=qJRXxkswXdg>
+Hainbach has a great video explaining the technique here: <https://www.youtube.com/watch?v=qJRXxkswXdg>. Ned Rush also routinely uses the Vinyl Distortion to ping other devices e.g. <https://www.youtube.com/watch?v=siWk44aAYeg>.
 
 In our case, instead of using feedback with filters, we can exploit Ableton Live's own resonator plugins: "Resonator", "Spectral Resonator" and "Corpus". In the image below we're using the "Spectral Resonator" to generate some pitched tones. We're feeding it notes from an external MIDI clip which uses the same note probability techniques explained previously. This then feeds into the "Resonators" plugin which provides additional pitched resonance, and the "Spectral Time" plugin which smears out this pitched resonance so that it's not a short burst of pitched information.
 

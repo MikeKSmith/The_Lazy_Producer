@@ -1,4 +1,4 @@
-# Process - Balancing the unexpected and the predictable
+# Process - Balancing the unexpected and the predictable {#process-balance-unexpected-and-predictable}
 
 In generative music, we're likely to be using some probability to govern when to trigger certain events, to select clips, to change some aspect of the sounds being generated. The problem with probability is that it generates randomness and in general music composed by humans is not random. Too much randomness can lead to listener fatigue because the "humanity" of the composition or performance is reduced and it's easy to feel detached from the music.
 
@@ -10,7 +10,7 @@ A counterbalance to randomness is repetition. "If you play a wrong note once it'
 
 Balance things that change, which are unexpected to the listener, with things that stay the same and are predictable for the listener.
 
-There are many aspects of musical ideas and sounds that can change - rhythm, timbre, tonality, texture, timing. If all of these are changing all the time it quickly becomes overwhelming. Sudden changes will "stick out" in a way that's typically undesirable for generative music (see the definition chapter). Evolving changes are preferred as it's possible to "hide" these so that the listener only realises something has changed over an extended period.
+There are many aspects of musical ideas and sounds that can change - rhythm, timbre, tonality, texture, timing. If all of these are changing all the time it quickly becomes overwhelming. Sudden changes will "stick out" in a way that's typically undesirable for generative music. Evolving changes are preferred as it's possible to "hide" these so that the listener only realises something has changed over an extended period.
 
 Finding the balance between things that change and things that stay the same is important for creating generative music that will bear repeated (or prolonged) listening.
 

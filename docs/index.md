@@ -1,16 +1,11 @@
 ---
 title: "The Lazy Producer - Making music using randomness and probability in Ableton Live"
 author: "Mike K Smith"
-date: "2024-11-30"
+date: "2024-12-29"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib]
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::bs4_book,
-  set in the _output.yml file.
-biblio-style: apalike
-csl: chicago-fullnote-bibliography.csl
+  Making music using randomness and probability in Ableton Live. A guide to creating generative music. With recipes.
 ---
 
 # Preface {.unnumbered}
@@ -21,9 +16,11 @@ If you're looking for a guide to creating tracks from start to finish in a DAW t
 
 If you're looking for a description of recording a band or producing genres outside of electronic or ambient music, this is not that book.
 
-If you're looking for an in-depth guide to Ableton Live Suite, then you should read the manual. I'm assuming you know your way around Ableton Live.
+If you're looking for an in-depth guide to Ableton Live Suite, [then you should read the manual](https://www.ableton.com/en/manual/welcome-to-live/). I'm assuming you know your way around Ableton Live.
 
-If you are looking for generic tips on creating music I wholeheartedly recommend reading "Making Music: 74 Creative Strategies for Electronic Music Producers" by Dennis DeSantis [@desantis2015making]. This is a great book and will help you get through difficulties starting, continuing and finishing your compositions.
+If you are looking for generic tips on creating music I wholeheartedly recommend reading "Making Music: 74 Creative Strategies for Electronic Music Producers" by Dennis DeSantis[^index-1]. This is a great book and will help you get through difficulties starting, continuing and finishing your compositions.
+
+[^index-1]: DeSantis, D. *Making Music: 74 Creative Strategies for Electronic Music Producers*. Ableton AG, 2015. <https://cdn-resources.ableton.com/resources/uploads/makingmusic/MakingMusic_DennisDeSantis.pdf>.
 
 I also recommend Loopop's "In-complete book of electronic music tips and tricks" available when you sign up as a Patron (<https://www.patreon.com/loopop>). His book contains an assortment of tips and tricks for making music including ideas for generative music.
 

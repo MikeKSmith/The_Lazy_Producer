@@ -1,4 +1,4 @@
-# Process - Unsynced loops
+# Process - Unsynced loops {#process-unsynced-loops}
 
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE, out.width = "100%")

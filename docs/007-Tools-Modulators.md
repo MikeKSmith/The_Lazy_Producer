@@ -1,12 +1,12 @@
-# Tools - Modulators
+# Tools - Modulators {#tools-modulators}
 
-The MIDI tools discussed in the previous chapter are useful to transform, augment and add notes to existing MIDI sequences, but we also need to generate those sequences in the first place. Ableton Live Suite and Max for Live plugins offer a few options to generate sequences of notes.
+The MIDI tools discussed in \@ref(tools-midi-tools) are useful to transform, augment and add notes to existing MIDI sequences, but we also need to generate those sequences in the first place. Ableton Live Suite and Max for Live plugins offer a few options to generate sequences of notes.
 
 ------------------------------------------------------------------------
 
 ## Key idea {.unnumbered}
 
-Modulation keeps sounds interesting. Earlier in [Process - Balance the unexpected and the predictable] we discussed how repetition balances randomness. This also applies to the sounds you use in your track. Modulation of synth sounds through LFOs and other means is available in Ableton Live instruments, often with some very creative ways of achieving that - such as the Wavetable instrument's modulation matrix. But sometimes you want to apply modulation to a parameter where an LFO is immediately available for example to the macro knob of an Instrument or Effect Rack. In generative music, having options where the modulation isn't obviously cyclical also helps as it adds to the "unpredictable" and helps engage listener's attention for longer.
+Modulation keeps sounds interesting. In \@ref(process-balance-unexpected-and-predictable) we discuss how repetition balances randomness. This also applies to the sounds you use in your track. Modulation of synth sounds through LFOs and other means is available in Ableton Live instruments, often with some very creative ways of achieving that - such as the Wavetable instrument's modulation matrix. But sometimes you want to apply modulation to a parameter where an LFO is not immediately available for example to the macro knob of an Instrument or Effect Rack. In generative music, having options where the modulation isn't obviously cyclical also helps as it adds to the "unpredictable" and helps engage listener's attention for longer.
 
 One strength of Ableton Live's modulation devices (and Max for Live modulation devices) is that you can map modulation to pretty much anything that you can tweak by hand. Yes, even tempo. You can assign the parameter that is being modulated simply by click on the "Map" button in the devices and then click on a knob, switch or fader in Live. Modulation also allows you to have "hands off" performance of generative music by automating volume fades, if required.
 
@@ -14,7 +14,9 @@ One strength of Ableton Live's modulation devices (and Max for Live modulation d
 
 ## Modulators in Ableton Live (general rule of thumb)
 
-In Ableton Live, most modulators include a "Map" button that you click, then select the item that you want to modulate. The beauty of this is that you map the modulation to ***the next thing you click***. This applies to any knob, fader, slider, and even third party plugins. In the case of third party plugins you can often click on the "Down arrow" beside the plugin on/off button to expand the parameters that can be automated.
+In Ableton Live, most modulators include a "Map" button that you click, then select the item that you want to modulate -e.g in the LFO device <https://www.ableton.com/en/live-manual/12/max-for-live-devices/#lfo>. The beauty of this is that you map the modulation to ***the next thing you click***. This applies to any knob, fader, slider, and even third party plugins.
+
+In the case of third party plugins you can often click on the "Down arrow" beside the plugin on/off button to expand the parameters that can be automated.
 
 
 
@@ -28,13 +30,13 @@ If no parameters are presented when you click this button, you may instead see a
 
 <img src="./images/Zebralette.png" width="100%" />
 
-This opens up huge potential for modulating pretty much anything you see in the Ableton interface. You can even modulate the track volume sliders, panning, effect sends etc. I have used this approach in the past to modulate track volume so that a generative patch could play for an arbitrary amount of time with the volume levels fading in and out.
+This opens up huge potential for modulating pretty much anything you see in the Ableton interface.
 
 ## LFO
 
-Low Frequency Oscillation (LFO) modulation is one of the oldest forms used in synthesisers. In Ableton Live 11 this is presented as a separate ***audio*** utility plugin. Because it is an audio plugin it has to come ***after*** instruments and effects. There is a Max for Live plugin called LFO MIDI if you need it to come before instruments. LFOs are a key element of a modular synth rig. They can be and often are used to modulate pretty much anything. The LFO in Ableton Live can be used in pretty much the same way.
+Low Frequency Oscillation (LFO) modulation is one of the oldest forms used in synthesisers. In Ableton Live 11 this is presented as a separate ***audio*** utility plugin (Max for Live plugin called "LFO"). Because it is an audio plugin it has to come ***after*** instruments and effects. There is another Max for Live plugin called LFO MIDI if you need it to come before instruments. LFOs are a key element of a modular synth rig. They can be and often are used to modulate pretty much anything. The LFO in Ableton Live can be used in pretty much the same way.
 
-The Ableton LFO is a really neat tool and illustrates some features that we'll see again and again in other modulators in this section. In the top left of the first LFO here you can see the parameter that is being affected by the LFO. In the screenshot below it's changing the Filter Cutoff in the Instrument Rack to its left. I have changed the minimum and maximum value from 30% to 80% in order to avoid extreme values of filter cutoff. It's often a good idea to tailor the range of values that the LFO is working across as often you want to avoid the extremes. In the bottom left of the device you'll see the Rate at which the LFO is cycling. In this example it's going to go through a full cycle (of the Sine wave) every 6 bars. If you click on the box with three horizontal lines in the top right of the LFO it will open a page (as seen in the second LFO) where you can assign other parameters to be affected by the same LFO. Not that the second LFO here is changing the Depth of the first LFO and the Offset. This means that the first LFO doesn't just cycle predictably from minimum to maximum and back, but instead wobbles in a slightly more interesting way. So one LFO might be too predictable, but using two and using one to modulate the other can bring just enough unpredictability to keep the result interesting.
+The Ableton LFO is a really neat tool and illustrates some features that we'll see again and again in other modulators in this section. In the top left of the first LFO here you can see the parameter that is being affected by the LFO. In the screenshot below it's changing the Filter Cutoff in the Instrument Rack to its left. I have changed the minimum and maximum value from 30% to 80% in order to avoid extreme values of filter cutoff. It's often a good idea to tailor the range of values that the LFO is working across as often you want to avoid the extremes. In the bottom left of the device you'll see the Rate at which the LFO is cycling. In this example it's going to go through a full cycle (of the Sine wave) every 6 bars. If you click on the box with three horizontal lines in the top right of the LFO it will open a page (as seen in the second LFO) where you can assign other parameters to be affected by the same LFO. Note that the second LFO here is changing the Depth of the first LFO and the Offset. This means that the first LFO doesn't just cycle predictably from minimum to maximum and back, but instead wobbles in a slightly more interesting way. So one LFO might be too predictable, but using two and using one to modulate the other can bring just enough unpredictability to keep the result interesting.
 
 <img src="./images/LFO.png" width="100%" />
 
@@ -114,7 +116,7 @@ The vision for Dispatch is that it can be a single modulation device that can se
 
 ## Deviate
 
-We've come across the free [Deviate Max for Live device from Novel Music](https://www.novelmusic.org/m4l/deviate) in the section [Tools - Chords and added notes], but it also offers random modulation control on parameters. You can dial up randomness at various levels in Deviate, and also control the amount of randomness which is very useful in generative music. But it also has a key feature - the ability to monitor parameter deviations in its "MEMORY" and then "Lock" in patterns if you find something you like - this mirrors functionality in Turing Machine modules that exist in the modular synthesis world.
+We've come across the free [Deviate Max for Live device from Novel Music](https://www.novelmusic.org/m4l/deviate) in @ref(tools-midi-tools), but it also offers random modulation control on parameters. You can dial up randomness at various levels in Deviate, and also control the amount of randomness which is very useful in generative music. But it also has a key feature - the ability to monitor parameter deviations in its "MEMORY" and then "Lock" in patterns if you find something you like - this mirrors functionality in Turing Machine modules that exist in the modular synthesis world.
 
 Again, it's worth reviewing [the tutorial video from Novel Music](https://www.youtube.com/watch?v=4WwKGUV2H4I) to learn about all possible features of this device.
 

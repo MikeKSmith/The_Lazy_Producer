@@ -1,4 +1,4 @@
-# What do we mean "Generative" music?
+# What do we mean "Generative" music? {#definition-generative}
 
 ## Generative: {.unnumbered}
 
@@ -12,9 +12,9 @@ Generative music means (to me) that the music should be able to go on indefinite
 
 ------------------------------------------------------------------------
 
-Some generative algorithms take parts that the performer plays and augments this with additional harmony, chords or (counter) melodies. An example of this is Olafur Arnalds' and Halldór Eldjárn's Stratus algorithm for performer pianos where MIDI triggers generate sequences of associated notes, chords and "ripples" in a separate instrument or player piano.\
+Some generative algorithms take parts that the performer plays and augments this with additional harmony, chords or (counter) melodies. An example of this is [Olafur Arnalds' and Halldór Eldjárn's Stratus algorithm for performer pianos](https://www.youtube.com/watch?v=ktxkEBT5CB0) where MIDI triggers generate sequences of associated notes, chords and "ripples" in a separate instrument or player piano.\
 \
-Other generative music involves complex algorithms, probability triggers and modulations to create ever-changing sounds, sequences, rhythms. Often these are programmed via modular synth rigs using LFOs, sequencers, quantizers, harmonic generators, bernoulli gates, Turing machines.
+Other generative music involves complex algorithms, probability triggers and modulations to create ever-changing sounds, sequences, rhythms. [Often these are programmed via modular synth rigs](https://www.youtube.com/watch?v=uNz1XfVfJak) using LFOs, sequencers, quantizers, harmonic generators, bernoulli gates, Turing machines.
 
 With [Ableton Live Suite](https://www.ableton.com/en/live/), it's possible to create both kinds of generative sequences - either shorter, reactive sequences or long infinitely varying sequences. Through modulation and automation it's possible to create music where the sounds evolve, appear, disappear, blend or create dissonance. In this book we'll try to present some ideas that will help get you started on this journey. I recommend that you try out the ideas in practice. Let the sequences play. Sit with them a while and let what you hear guide what to try next...
 

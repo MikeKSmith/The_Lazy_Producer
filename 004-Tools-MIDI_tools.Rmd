@@ -1,10 +1,6 @@
----
----
----
+# Tools - MIDI tools: chords and added notes {#tools-midi-tools}
 
-# Tools - MIDI tools: chords and added notes
-
-There are many tools within Ableton Live 11 and Max for Live that will generate (random) chords for you. In [Process - Note-wise probability] we looked at generating chords randomly by stacking MIDI notes in a clip, then applying probability to randomly select which notes to sound. This produced a chord that changed everytime the MIDI clip looped around.
+There are many tools within Ableton Live and Max for Live that will generate (random) chords for you. In [Process - Note-wise probability] we looked at generating chords randomly by stacking MIDI notes in a clip, then applying probability to randomly select which notes to sound. This produced a chord that changed everytime the MIDI clip looped around.
 
 ------------------------------------------------------------------------
 
@@ -66,7 +62,7 @@ knitr::include_graphics(path = "./images/Cascading_notes.png")
 
 ## Deviate
 
-The [free Deviate Max for Live plugin from Novel Music](https://www.novelmusic.org/m4l/deviate) can add variation to incoming MIDI notes. The "TRIGGER" section defines how often the deviation or variation will occur - so it is possible to balance the unexpected with the predictable, or keep things the same before introducing randomness. One important aspect of Deviate is that it has a memory, so if you like the random pattern generated, you can "lock" this by moving the "LOCK" slider to the right. This means it acts a bit like the Turing Machine devices used in modular synthesis rigs. Deviate has two sides - MIDI, which we'll cover here and MOD which we'll cover in the [Tools - Modulators] section.
+The free [Deviate Max for Live plugin from Novel Music](https://www.novelmusic.org/m4l/deviate) can add variation to incoming MIDI notes. The "TRIGGER" section defines how often the deviation or variation will occur - so it is possible to balance the unexpected with the predictable, or keep things the same before introducing randomness. One important aspect of Deviate is that it has a memory, so if you like the random pattern generated, you can "lock" this by moving the "LOCK" slider to the right. This means it acts a bit like the Turing Machine devices used in modular synthesis rigs. Deviate has two sides - MIDI, which we'll cover here and MOD which we'll cover in the section \@ref(tools-modulators).
 
 The "TRIGGER" section is worth spending a little time to understand. It determines how many MIDI notes will pass before the deviation is triggered. So if set to "1" then every note triggers a new deviation. If set to 8 then every 8 notes the deviation settings may be triggered, but then these deviation settings persist for the next 7 notes. The probability to the right (below set to 100%) means that the deviation will be triggered every time, but if lower than 100% then that probability determines whether ***any*** deviation will occur. So if you set 8 notes, with 100% probability then the Octave deviation may trigger 18% of the time, but if it does then notes will sound either an octave up (or down) for the next 7 notes.
 
@@ -88,8 +84,8 @@ knitr::include_graphics(path = "./images/Tintinnabulator.png")
 
 ## Max for Live Schwartzonator plugin
 
-The Schwartzonator plugin (<https://www.ableton.com/en/packs/schwarzonator/>) combines chord generation with scale quantising. You specify what notes are "valid" for the output - quantising input to output - and then the knobs below the "piano" define the makeup of the output chord. The "add notes" knobe defines how many additional notes you want to add to the input MIDI note to create a chord. "spread" spreads these out over the keyboard. "random" changes the disposition of the chord - creating chord inversions and changing the output chord when it's triggered by the input MIDI note. With "random" increased you can get ever-changing output chords for the same input notes. "dynamic" adds random velocity across the output notes. "select" allows you to automate selection of the Chord Set.  
-  
+The Schwartzonator plugin (<https://www.ableton.com/en/packs/schwarzonator/>) combines chord generation with scale quantising. You specify what notes are "valid" for the output - quantising input to output - and then the knobs below the "piano" define the makeup of the output chord. The "add notes" knob defines how many additional notes you want to add to the input MIDI note to create a chord. "spread" spreads these out over the keyboard. "random" changes the disposition of the chord - creating chord inversions and changing the output chord when it's triggered by the input MIDI note. With "random" increased you can get ever-changing output chords for the same input notes. "dynamic" adds random velocity across the output notes. "select" allows you to automate selection of the Chord Set.
+
 Schwartzonator was designed to help musicians who did not know musical theory generate chords from single input notes and the scale or chord quantising allows the user to generate musical ideas that sound good. For the generative musician there are many things in this plugin that are appealing - the ability to turn single input notes into chords that conform to a scale or chord pattern and the ability to also add randomness to ensure that the chords are different each time they are triggered. These coupled with the MIDI tools above can help create evolving patterns that fit with an overall scale key, chord pattern etc. defined for the track.
 
 ```{r}
