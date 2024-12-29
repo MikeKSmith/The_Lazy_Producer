@@ -23,7 +23,9 @@ If you're looking for a description of recording a band or producing genres outs
 
 If you're looking for an in-depth guide to Ableton Live Suite, then you should read the manual. I'm assuming you know your way around Ableton Live.
 
-If you are looking for generic tips on creating music I wholeheartedly recommend reading "Making Music: 74 Creative Strategies for Electronic Music Producers" by Dennis DeSantis [@desantis2015making]. This is a great book and will help you get through difficulties starting, continuing and finishing your compositions.
+If you are looking for generic tips on creating music I wholeheartedly recommend reading "Making Music: 74 Creative Strategies for Electronic Music Producers" by Dennis DeSantis[^index-1]. This is a great book and will help you get through difficulties starting, continuing and finishing your compositions.
+
+[^index-1]: DeSantis, D. *Making Music: 74 Creative Strategies for Electronic Music Producers*. Ableton AG, 2015. <https://cdn-resources.ableton.com/resources/uploads/makingmusic/MakingMusic_DennisDeSantis.pdf>.
 
 I also recommend Loopop's "In-complete book of electronic music tips and tricks" available when you sign up as a Patron (<https://www.patreon.com/loopop>). His book contains an assortment of tips and tricks for making music including ideas for generative music.
 
