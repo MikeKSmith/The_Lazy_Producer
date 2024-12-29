@@ -20,7 +20,7 @@ Ableton Live Suite comes with a HUGE range of audio effects and if you add in Ma
 
 ## Hybrid Reverb
 
-The [Hybrid Reverb in Live 11 Suite](https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#hybrid-reverb) is a really nice reverb. It has a Convolution Impulse Response (IR) section which allows you to dial up real-world reverb from a wide variety of spaces and an Algorithm section which applies reverb processing and colouration. You can blend between these or apply them in parallel and series. This in itself offers up a huge variety of sounds.
+The [Hybrid Reverb in Live Suite](https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#hybrid-reverb) is a really nice reverb. It has a Convolution Impulse Response (IR) section which allows you to dial up real-world reverb from a wide variety of spaces and an Algorithm section which applies reverb processing and colouration. You can blend between these or apply them in parallel and series. This in itself offers up a huge variety of sounds.
 
 But when you dig into the Convolution IR section you'll also find options for textural processing - this applies a textural Impulse Response (IR) to the sound, so instead of a straight reverb tail, you'll get some additional texture from the IR audio file. The other thing to point out is that there is an option to have User-defined IR. This means that you can find IR audio files for different spaces online at sites like Open Air <https://www.openair.hosted.york.ac.uk> and use some additional IR files for some famous spaces, like Hamilton Mausoleum and York Minster. Obviously finding the right reverb sound for ambient music is kind of a key item. But you don't have to use just one. I like to use a long, lush reverb to help smear sound and create drones. I usually put this on a FX Return channel so I can route several tracks to it and save CPU. But you may also need a shorter reverb for other instruments to give them presence, in the way that a close mic to an instrument in one of these huge reverb spaces will capture more of the raw sound, while the gigantic reverb captures the instrument in the space itself.
 
@@ -74,7 +74,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Resonator.png"
 
 ## Spectral processing
 
-Ableton Live Suite 11 includes three Spectral audio effects. Spectral processing is interesting because instead of applying effects in a time-based manner (as audio comes through the effect) it is applying effects according to frequency (low to high) and loudness.
+Ableton Live Suite includes three Spectral audio effects. Spectral processing is interesting because instead of applying effects in a time-based manner (as audio comes through the effect) it is applying effects according to frequency (low to high) and loudness.
 
 ### Ableton Spectral effects
 

@@ -1,6 +1,6 @@
 # Process - Note-wise probability {#process-note-wise-probability}
 
-[Ableton Live 11](https://www.ableton.com/en/live/) brought us the ability to specify not just the velocity of each note in a MIDI clip, but the probability that that note would play. This is a game changer for the Lazy Producer. Adding variation to MIDI parts is now much easier if you define the lower probability for "fill" notes and higher probability for notes that you want to "anchor" in the clip.
+[Ableton Live 11](https://www.ableton.com/en/live-manual/11/welcome-to-live/#welcome-to-live) brought us the ability to specify not just the velocity of each note in a MIDI clip, but the probability that that note would play. This is a game changer for the Lazy Producer. Adding variation to MIDI parts is now much easier if you define the lower probability for "fill" notes and higher probability for notes that you want to "anchor" in the clip.
 
 ------------------------------------------------------------------------
 

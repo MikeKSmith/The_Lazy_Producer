@@ -26,7 +26,7 @@ There are many different possible actions with the Follow Action. These are most
 
 ## FOLLOW Actions
 
-In previous versions of Ableton Live, Follow Actions were set up so that the user had to specify a number of bars, beats and subdivisions before the action would happen. This leads to a lot of mental arithmetic to determine how many bars and beats AFTER the clip starts to make the jump. Fortunately now in Live 11 the default is to apply the Follow Action at the end of the clip, as long as the "Linked" button is active.
+In previous versions of Ableton Live, Follow Actions were set up so that the user had to specify a number of bars, beats and subdivisions before the action would happen. This leads to a lot of mental arithmetic to determine how many bars and beats AFTER the clip starts to make the jump. Fortunately now from Live 11 the default is to apply the Follow Action at the end of the clip, as long as the "Linked" button is active.
 
 <img src="./images/Launch_Follow-Actions_Linked.png" alt="Ableton Live default Launch and Follow Action dialogue" width="100%" />
 
