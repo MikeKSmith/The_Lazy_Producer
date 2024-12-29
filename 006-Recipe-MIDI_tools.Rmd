@@ -1,6 +1,6 @@
 # Recipe - Doing more with less using MIDI tools and plugins {#recipe-midi-tools}
 
-```{{r, echo = FALSE}}
+```{r, echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 ```
 

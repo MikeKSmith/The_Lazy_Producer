@@ -1,8 +1,6 @@
 # Recipe - Doing more with less using MIDI tools and plugins {#recipe-midi-tools}
 
-```{{r, echo = FALSE}}
-knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
-```
+
 
 In this recipe we'll use the simplest MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in . This recipe also uses MIDI and audio routing in Live quite extensively, so it's worth reviewing the content in \@ref(process-routing). We're also going to use modulation devices covered in \@ref(tools-modulators).
 
@@ -14,30 +12,15 @@ In this recipe we'll use the simplest MIDI generator, in this case a single MIDI
 
 4.  A Shaper modulation device is added to the Wavetable instrument track and the modulation is mapped to the Gain in a Utility device. The "minimum" is set to 50% and the "maximum" to 0% and the rate is set to 1/4 quarter notes so that each beat, the Shaper ducks the gain to produce a pumping "sidechain compressor" like effect.
 
-
-``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MODULATION_Shaper-gain.png"))
-```
-
-![](images/Recipe2_MODULATION_Shaper-gain.png)<!-- -->
+<img src="images/Recipe2_MODULATION_Shaper-gain.png" width="100%" />
 
 5.  The second Wavetable instrument "Wavetable pre-compressor" is taking the output from the Wavetable instrument but set to "Pre-FX" - before the ducking gain reduction is applied. The audio from this track goes ***only*** to the Return FX, so essentially we get a nice pad sound, but we never hear the dry sound.
 
-
-``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI-and-audio-routing.png"))
-```
-
-![](images/Recipe2_MIDI-and-audio-routing.png)<!-- -->
+<img src="images/Recipe2_MIDI-and-audio-routing.png" width="100%" />
 
 6.  In your tracks, you can add MIDI plugins to alter the incoming chord. For example:
 
-    
-    ``` r
-        knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_fx.png"))
-    ```
-    
-    ![](images/Recipe2_MIDI_fx.png)<!-- -->
+    <img src="images/Recipe2_MIDI_fx.png" width="100%" />
 
     You can employ all kinds of MIDI FX here. In this example I have grouped these FX into a MIDI Effect Rack and I'm using Macros to allow me to switch on and change various FX parameters from a single set of 8 knobs.\
     \
@@ -55,30 +38,15 @@ In this recipe we'll use the simplest MIDI generator, in this case a single MIDI
 
 7.  In the screen shot above, you may notice that my MIDI Generator track is actually Grouped tracks. Let's recreate that now. Create a new MIDI track called "Note length" and another called "Arp". In each of these tracks, set the MIDI input to Track one (the single note C3 track) and set Monitor to "In".
 
-    
-    ``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_manipulation.png"))
-    ```
-    
-    ![](images/Recipe2_MIDI_manipulation.png)<!-- -->
+    <img src="images/Recipe2_MIDI_manipulation.png" width="100%" />
 
 In the "Note Length" track, add a MIDI Note Length MIDI effect. This will be used to take the output from Track 1 "MIDI Note" and stretch out the MIDI notes to last a nominated number of seconds.\
 
-
-``` r
-knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_NoteLength.png"))
-```
-
-![](images/Recipe2_MIDI_NoteLength.png)<!-- -->
+<img src="images/Recipe2_MIDI_NoteLength.png" width="100%" />
 
 In the "Arp" track we're going to add an Arpeggiator plugin (surprise!) but also another MIDI "Note Length" effect with which we can tweak the note length of the output from the Arpeggiator to suite taste, and a Velocity plugin to add a little variation to the velocity of the output MIDI notes.
 
-
-``` r
-knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_Arp.png"))
-```
-
-![](images/Recipe2_MIDI_Arp.png)<!-- -->
+<img src="images/Recipe2_MIDI_Arp.png" width="100%" />
 
 Tweaking the Length and Gate settings of "Note Length" will allow us to alter the sound of what is generated from the "Arpeggiator" plugin - note that the Gate setting in the "Arpeggiator" does this as well, but we could potentially map these parameters to a MIDI controller if we wanted to vary the arpeggiator sound coming from this track.
 
@@ -88,21 +56,11 @@ In performance of this track, I use a MIDI Controller to change settings of the 
 
 8.  We have mostly been looking at MIDI ***NOTE*** plugins here. But there's a much overlooked MIDI plugin called "Expression control" which allows you to map various MIDI incoming signals to ***ANY*** parameter in Live, including controls of other plugins. In the example below we've mapped various parameters to controls in the Operator instrument just for illustration.
 
-    
-    ``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Expression_control.png"))
-    ```
-    
-    ![](images/Expression_control.png)<!-- -->
+    <img src="images/Expression_control.png" width="100%" />
 
     Sure, instruments like Operator and Wavetable have the ability to vary many different parameters using MIDI information, but notice how each of the MIDI parameters on the left hand side has a drop-down menu option. Let's look at what we can do...
 
-    
-    ``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Expression_control_2.png"))
-    ```
-    
-    ![](images/Expression_control_2.png)<!-- -->
+    <img src="images/Expression_control_2.png" width="100%" />
 
     There's a wide variety of incoming MIDI inputs which can then be used to map to plugin controls, as well as a "random" input which will select a new value for every MIDI input note, and "incremental" which will increment values for every MIDI input note.\
     \

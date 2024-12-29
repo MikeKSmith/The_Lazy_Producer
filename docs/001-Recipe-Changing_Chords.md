@@ -32,16 +32,27 @@ The clips shown above are *my* choice of notes, length etc. and assume that we'r
 
 7.  Set up Follow Actions (see the following chapter @ref(process-follow-actions) to progress to Next clip at end of each clip with 80% probability, with the other action set to "Play again" with 20% probability. When you launch the scene, each clip will play to the end of the clip, but because individual note probability within each of the stacked chords is set to 50-60%, the chord will sound different each time it plays. Also, the randomness we're using for note probability also means that the same chord clip in each track is also likely to sound different. The 80-20% split of next action - "Play again" or "Next" - will mean that some tracks may progress to the next chord while some will play the same clip again.
 
-    If the clips are short, then a 50-50% split of next action chance might be more appropriate. In this case because the clips are long we want to force movement onwards. With shorter clips then we might favour repetition so that the listener isn't bombarded with changes every few beats (see Chapter 9 for a discussion of balancing repetition with unexpected elements).
+    If the clips are short, then a 50-50% split of next action chance might be
+    more appropriate. In this case because the clips are long we want to force
+    movement onwards. With shorter clips then we might favour repetition so that
+    the listener isn't bombarded with changes every few beats (see Chapter 9 for
+    a discussion of balancing repetition with unexpected elements).
 
-8.  Choose sounds for each track that complement each other. Could be pads, arpeggios, textures etc. Arpeggios and sounds that evolve are particularly useful in this recipe. You can automate parameters within clips as well to introduce additional movement in the sound. An important point is that the sound shouldn't be too static.
+8.  Choose sounds for each track that complement each other. Could be pads,
+arpeggios, textures etc. Arpeggios and sounds that evolve are particularly
+useful in this recipe. You can automate parameters within clips as well to
+introduce additional movement in the sound. An important point is that the sound
+shouldn't be too static.
 
 9.  Press play. Sit back and relax.
 
 ------------------------------------------------------------------------
 
-You can hear one instance of this track here: [https://soundcloud.com/mikeksmith/followactions_chords_and_arp/s-CKzkRoOEWrr](https://soundcloud.com/mikeksmith/followactions_chords_and_arp/s-CKzkRoOEWrr?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&si=e1846c9235ff47ad9ae0fa0cd5d52708&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing){.uri}
+You can hear one instance of this track here:
+[https://soundcloud.com/mikeksmith/followactions_chords_and_arp/s-CKzkRoOEWrr](https://soundcloud.com/mikeksmith/followactions_chords_and_arp/s-CKzkRoOEWrr?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&si=e1846c9235ff47ad9ae0fa0cd5d52708&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing){.uri}
 
 
 
-(I say "one instance" because this is generative and uses probability. So the next time I render the track it could well sound different. Similar, but different.)
+(I say "one instance" because this is generative and uses probability. So the
+next time I render the track it could well sound different. Similar, but
+different.)
