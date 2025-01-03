@@ -5,6 +5,7 @@ process-note-wise-probability
 drum-parts
 lead-parts
 chord-parts
+live-12---grouped-notes
 process-follow-actions
 follow-actions
 follow-actions-1
@@ -26,7 +27,7 @@ tools-modulators
 modulators-in-ableton-live-general-rule-of-thumb
 lfo
 lfo-trio---a-chaotic-lfo
-midi-envelope
+envelope-midi
 envelope-follower
 shaper
 midi-expression-control
@@ -74,7 +75,7 @@ the-tools-of-the-trade
 hybrid-reverb
 valhalla-supermassive
 echo
-distortion
+saturation-and-distortion
 resonators
 spectral-processing
 ableton-spectral-effects

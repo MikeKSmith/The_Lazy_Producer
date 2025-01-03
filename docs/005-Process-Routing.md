@@ -10,7 +10,7 @@ Reusing MIDI or audio tracks across many channels ensures that the different tra
 
 ------------------------------------------------------------------------
 
-In Ableton Live we have a couple of ways to either "push" or "pull" MIDI or audio from one track into another. In the image below, MIDI received by Track 1 is "pushed" (via MIDI To choices) to Track 2 which contains an instance of Operator. The second box below the MIDI Track specifies that the MIDI is to be sent to the input of the first MIDI device in this track - the Operator instrument in this case. You don't ***have*** to have this specified, but in this case it means that the Monitor setting in Track 2 can be left on "Auto". You can also route the input to a specific device in an instrument rack. You can use this approach to send MIDI from multiple MIDI tracks to ***the same device***. For example if you have separate MIDI patterns for Kick, Snare and High-hat these can be sent to the same instrument track containing a Drum Rack. This can be useful if you want to apply MIDI effects, randomness, follow-actions or modulation to the high-hat but not the kick.
+In Ableton Live [we have a couple of ways to either "push" or "pull" MIDI or audio from one track into another](https://www.ableton.com/en/live-manual/11/routing-and-i-o/#routing-and-io). In the image below, MIDI received by Track 1 is "pushed" (via MIDI To choices) to Track 2 which contains an instance of Operator. The second box below the MIDI Track specifies that the MIDI is to be sent to the input of the first MIDI device in this track - the Operator instrument in this case. You don't ***have*** to have this specified, but in this case it means that the Monitor setting in Track 2 can be left on "Auto". You can also route the input to a specific device in an instrument rack. You can use this approach to send MIDI from multiple MIDI tracks to ***the same device***. For example if you have separate MIDI patterns for Kick, Snare and High-hat these can be sent to the same instrument track containing a Drum Rack. This can be useful if you want to apply MIDI effects, randomness, follow-actions or modulation to the high-hat but not the kick.
 
 The third track (MIDI) here is "pulling" the MIDI from Track 1. Note that the Monitor is set to "In" so that it "listens" for the MIDI being sent. In this case I can add a MIDI device like Note Length to "stretch" the incoming MIDI and then apply an Arpeggiator to that to produce new moving parts that are related to the sequence in Track 1, but different.
 
@@ -23,3 +23,9 @@ An alternative approach to the same problem would be to employ "Instrument Racks
 
 
 <img src="./images/Routing.png" width="100%" />
+
+The flexibility and ease of routing audio and MIDI around in Live makes it a
+very versatile platform for creating complex signal paths, and apply different
+effects and modulation at a variety of points both before the MIDI information 
+is used by an instrument, and after the audio is creating via the instrument
+and effects.

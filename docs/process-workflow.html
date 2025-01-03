@@ -81,52 +81,120 @@
 <h1>
 <span class="header-section-number">12</span> Process - Workflow: capturing generative ideas<a class="anchor" aria-label="anchor" href="#process-workflow"><i class="fas fa-link"></i></a>
 </h1>
-<p>Setting up an Ableton Live set with lots of MIDI generators, MIDI manipulation and transformation, using that generated MIDI to create a nice collage of sounds that shifts and changes over time is very satisfying. From a performance perspective, once set up, you can press play and let it do its thing. But what if you want to commit the state of the system to share with others. That involves capturing the generated MIDI, modulations and generated audio. This chapter will discuss how you might go about capturing the processes so that you can later release the track.</p>
+<p>Setting up an Ableton Live set with lots of MIDI generators, MIDI manipulation
+and transformation, using that generated MIDI to create a nice collage of sounds
+that shifts and changes over time is very satisfying. From a performance
+perspective, once set up, you can press play and let it do its thing. But what
+if you want to commit the state of the system to share with others. That
+involves capturing the generated MIDI, modulations and generated audio. This
+chapter will discuss how you might go about capturing the processes so that you
+can later release the track.</p>
 <hr>
 <div id="key-idea-8" class="section level2 unnumbered">
 <h2>Key idea<a class="anchor" aria-label="anchor" href="#key-idea-8"><i class="fas fa-link"></i></a>
 </h2>
-<p>I find it useful to separate MIDI tracks that <em>generate</em> or <em>transform</em> MIDI information from instrument tracks that receive that MIDI information and generate sound. The idea is to capture the generated and transformed MIDI for later processing. It can then be copied into the instrument track and “bounced down” or rendered with the instrument track to capture the sound. In this process don’t worry about having more tracks than you think necessary. This will give more flexibility and options in the capturing process. There is quite a large difference between Live sets for performance and Live sets for capturing and committing the performance for release.</p>
+<p>I find it useful to separate MIDI tracks that <em>generate</em> or <em>transform</em> MIDI
+information from instrument tracks that receive that MIDI information and
+generate sound. The idea is to capture the generated and transformed MIDI for
+later processing. It can then be copied into the instrument track and “bounced
+down” or rendered with the instrument track to capture the sound. In this
+process don’t worry about having more tracks than you think necessary. This will
+give more flexibility and options in the capturing process. There is quite a
+large difference between Live sets for performance and Live sets for capturing
+and committing the performance for release.</p>
 <hr>
 </div>
 <div id="in-the-beginning" class="section level2" number="12.1">
 <h2>
 <span class="header-section-number">12.1</span> In the beginning<a class="anchor" aria-label="anchor" href="#in-the-beginning"><i class="fas fa-link"></i></a>
 </h2>
-<p>When you first start creating Live sets for generative music, the important thing is to have fun with the process. So throw MIDI devices into chains, see what happens, refine and reapply. Route MIDI from one place to another, add more MIDI transformations. Go wild. Play. Inevitably though, at some point, you’re going to want to apply a little order to the chaos. And in fact, even in the creation process taking a little time to plan ahead can open up some new avenues for generating, transforming and routing.</p>
+<p>When you first start creating Live sets for generative music, the important
+thing is to have fun with the process. So throw MIDI devices into chains, see
+what happens, refine and reapply. Route MIDI from one place to another, add more
+MIDI transformations. Go wild. Play. Inevitably though, at some point, you’re
+going to want to apply a little order to the chaos. And in fact, even in the
+creation process taking a little time to plan ahead can open up some new avenues
+for generating, transforming and routing.</p>
 </div>
 <div id="midi-generators" class="section level2" number="12.2">
 <h2>
 <span class="header-section-number">12.2</span> MIDI Generators<a class="anchor" aria-label="anchor" href="#midi-generators"><i class="fas fa-link"></i></a>
 </h2>
-<p>I like to have separate tracks for MIDI generators. These are the “starting point” of a process. They will be generating MIDI notes through random processes, patterns or Follow Actions. I like to keep the generators separate from the transformation MIDI tracks, because you may want to send the <strong><em>same</em></strong> generated MIDI notes into several transformation chains. This will lead to a more coherent result since different transformation chains ingest a consistent set of generated MIDI input notes.</p>
+<p>I like to have separate tracks for MIDI generators. These are the “starting
+point” of a process. They will be generating MIDI notes through random
+processes, patterns or Follow Actions. I like to keep the generators separate
+from the transformation MIDI tracks, because you may want to send the <strong><em>same</em></strong>
+generated MIDI notes into several transformation chains. This will lead to a
+more coherent result since different transformation chains ingest a consistent
+set of generated MIDI input notes.</p>
 </div>
 <div id="midi-transformer-tracks" class="section level2" number="12.3">
 <h2>
 <span class="header-section-number">12.3</span> MIDI Transformer tracks<a class="anchor" aria-label="anchor" href="#midi-transformer-tracks"><i class="fas fa-link"></i></a>
 </h2>
-<p>These tracks will take the MIDI generator process outputs and apply MIDI effects and transformations to add additional MIDI notes, information, modulation etc. You could have a virtual instrument / sound generator plugin in this track. If you do that, then you can route the MIDI from this track <strong><em>AFTER</em></strong> (MIDI) FX into another track for further transformation, MIDI effects or to another instrument.</p>
+<p>These tracks will take the MIDI generator process outputs and apply MIDI effects
+and transformations to add additional MIDI notes, information, modulation etc.
+You could have a virtual instrument / sound generator plugin in this track. If
+you do that, then you can route the MIDI from this track <strong><em>AFTER</em></strong> (MIDI) FX
+into another track for further transformation, MIDI effects or to another
+instrument.</p>
 </div>
 <div id="capturing-the-midi" class="section level2" number="12.4">
 <h2>
 <span class="header-section-number">12.4</span> Capturing the MIDI<a class="anchor" aria-label="anchor" href="#capturing-the-midi"><i class="fas fa-link"></i></a>
 </h2>
-<p>To capture the random processes from the generation and transformation steps, you should create new MIDI tracks that “listen” to the output of the generation and transformation tracks. In my Live sets I typically have a lot of tracks where the Monitor is set to “In” or “listening” mode. That passes the incoming audio from another track straight through to the effects or instruments on that track. Having separate “capturing” MIDI tracks allows you to pick up the generated and/or transformed MIDI when you record. This is a good thing to be able to “tidy up” or “garden” the generated MIDI information on the road to release.</p>
-<p>If you record only into tracks where there is MIDI effects and instruments then the transformed MIDI is never captured - only the <strong><em>generated</em></strong> MIDI. This may not be a problem <em>per se</em> but when you render out the final audio, you are at the mercy of Live’s internal random processes and you’ll be crossing your fingers that either the result is <strong><em>the same</em></strong> as you heard previously (if Live replays the randomness in the same way each time) or potentially different (perhaps if you reopen the set in a later version of Live).</p>
-<p>If you capture the (generated <strong><em>and</em></strong> transformed MIDI) in a separate track, then you can use this track as the input for tracks with virtual instruments / plugins in them. Where these tracks might have had MIDI Monitor set to “In” you can now switch that back to “Auto” so that the captured MIDI is used directly as the input for that instrument.</p>
-<p>Once you have captured the generated and transformed MIDI it’s safe to switch off the generators and MIDI effects in those tracks. This will ensure that it’s only the captured MIDI that is being used to drive the virtual instruments and plugins.</p>
+<p>To capture the random processes from the generation and transformation steps,
+you should create new MIDI tracks that “listen” to the output of the generation
+and transformation tracks. In my Live sets I typically have a lot of tracks
+where the Monitor is set to “In” or “listening” mode. That passes the incoming
+audio from another track straight through to the effects or instruments on that
+track. Having separate “capturing” MIDI tracks allows you to pick up the
+generated and/or transformed MIDI when you record. This is a good thing to be
+able to “tidy up” or “garden” the generated MIDI information on the road to
+release.</p>
+<p>If you record only into tracks where there is MIDI effects and instruments then
+the transformed MIDI is never captured - only the <strong><em>generated</em></strong> MIDI. This may
+not be a problem <em>per se</em> but when you render out the final audio, you are at
+the mercy of Live’s internal random processes and you’ll be crossing your
+fingers that either the result is <strong><em>the same</em></strong> as you heard previously (if
+Live replays the randomness in the same way each time) or potentially different
+(perhaps if you reopen the set in a later version of Live).</p>
+<p>If you capture the (generated <strong><em>and</em></strong> transformed MIDI) in a separate track,
+then you can use this track as the input for tracks with virtual instruments /
+plugins in them. Where these tracks might have had MIDI Monitor set to “In” you
+can now switch that back to “Auto” so that the captured MIDI is used directly as
+the input for that instrument.</p>
+<p>Once you have captured the generated and transformed MIDI it’s safe to switch
+off the generators and MIDI effects in those tracks. This will ensure that it’s
+only the captured MIDI that is being used to drive the virtual instruments and
+plugins.</p>
 </div>
 <div id="modulation-on-track-volume---use-the-utility-device-to-modulate-gain" class="section level2" number="12.5">
 <h2>
 <span class="header-section-number">12.5</span> Modulation on track volume - use the Utility device to modulate GAIN<a class="anchor" aria-label="anchor" href="#modulation-on-track-volume---use-the-utility-device-to-modulate-gain"><i class="fas fa-link"></i></a>
 </h2>
-<p>If you have gone completely down the rabbit hole of random modulation of your track volumes, it may have been tempting to modulate the Mixer Volume so that tracks fade in and out in a random way. But let me caution <strong><em>against</em></strong> doing this. This technique is fine for performance, but when it comes to capturing and committing a generative track, the better solution is to modulate the Gain of a Utility plugin. Modulating gain allows you to separately alter the Volume slider on the mixer to change the <strong><em>overall</em></strong> level of a track <strong><em>relative</em></strong> to the others. This is a good tip for audio production generally - automate your track Gain, not your Mixer Volume.</p>
+<p>If you have gone completely down the rabbit hole of random modulation of your
+track volumes, it may have been tempting to modulate the Mixer Volume so that
+tracks fade in and out in a random way. But let me caution <strong><em>against</em></strong> doing
+this. This technique is fine for performance, but when it comes to capturing and
+committing a generative track, the better solution is to modulate the Gain of a
+Utility plugin. Modulating gain allows you to separately alter the Volume slider
+on the mixer to change the <strong><em>overall</em></strong> level of a track <strong><em>relative</em></strong> to the
+others. This is a good tip for audio production generally - automate your track
+Gain, not your Mixer Volume.</p>
 </div>
 <div id="group-tracks-to-tidy-your-live-set" class="section level2" number="12.6">
 <h2>
 <span class="header-section-number">12.6</span> Group tracks to tidy your Live set<a class="anchor" aria-label="anchor" href="#group-tracks-to-tidy-your-live-set"><i class="fas fa-link"></i></a>
 </h2>
-<p>With all of these tracks floating about it can be tricky to keep track of what track does what in your Live set. Live’s ability to group tracks is a really useful feature. It’s <strong><em>your</em></strong> choice how you group them… You can group MIDI generation and transformation tracks - the individual tracks will still send MIDI output to wherever they are routed - as this allows you to “fold away” the generation and transformation processes when it comes to capturing and committing for release (assuming you have captured the MIDI as described above and copied it into the tracks with virtual instruments / plugins).</p>
+<p>With all of these tracks floating about it can be tricky to keep track of what
+track does what in your Live set. Live’s ability to group tracks is a really
+useful feature. It’s <strong><em>your</em></strong> choice how you group them… You can group MIDI
+generation and transformation tracks - the individual tracks will still send
+MIDI output to wherever they are routed - as this allows you to “fold away” the
+generation and transformation processes when it comes to capturing and
+committing for release (assuming you have captured the MIDI as described above
+and copied it into the tracks with virtual instruments / plugins).</p>
 
 </div>
 </div>
@@ -161,7 +229,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Lazy Producer - Making music using randomness and probability in Ableton Live</strong>" was written by Mike K Smith. It was last built on 2024-12-30.</p>
+    <p>"<strong>The Lazy Producer - Making music using randomness and probability in Ableton Live</strong>" was written by Mike K Smith. It was last built on 2025-01-03.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

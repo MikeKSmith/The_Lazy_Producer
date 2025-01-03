@@ -1,12 +1,12 @@
 # Tools - Modulators {#tools-modulators}
 
-The MIDI tools discussed in \@ref(tools-midi-tools) are useful to transform, augment and add notes to existing MIDI sequences, but we also need to generate those sequences in the first place. Ableton Live Suite and Max for Live plugins offer a few options to generate sequences of notes.
+The MIDI tools discussed in \@ref(tools-midi-tools) are useful to transform, augment and add notes to existing MIDI sequences, but we can also automate changing the value of pretty much ***anything*** in Live via modulation. [Max for Live provides a variety of modulation devices](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#max-for-live-audio-effects) which will allow you to "map" that automation to device parameters. This will then automate changes on those device parameters without you needing to tweak the values using a mouse or controller knob.
 
 ------------------------------------------------------------------------
 
 ## Key idea {.unnumbered}
 
-Modulation keeps sounds interesting. In \@ref(process-balance-unexpected-and-predictable) we discuss how repetition balances randomness. This also applies to the sounds you use in your track. Modulation of synth sounds through LFOs and other means is available in Ableton Live instruments, often with some very creative ways of achieving that - such as the Wavetable instrument's modulation matrix. But sometimes you want to apply modulation to a parameter where an LFO is not immediately available for example to the macro knob of an Instrument or Effect Rack. In generative music, having options where the modulation isn't obviously cyclical also helps as it adds to the "unpredictable" and helps engage listener's attention for longer.
+Modulation keeps sounds interesting. In \@ref(process-balance-unexpected-and-predictable) we discuss how repetition balances randomness. This also applies to the sounds you use in your track. Modulation of synth sounds through LFOs and other means is available within Ableton Live instruments, often with some very creative ways of achieving that - such as the Wavetable instrument's modulation matrix. But sometimes you want to apply modulation to a parameter where an LFO is not immediately available for example to the macro knob of an Instrument or Effect Rack. In generative music, having options where the modulation isn't obviously cyclical also helps as it adds to the "unpredictable" and helps engage listener's attention for longer.
 
 One strength of Ableton Live's modulation devices (and Max for Live modulation devices) is that you can map modulation to pretty much anything that you can tweak by hand. Yes, even tempo. You can assign the parameter that is being modulated simply by click on the "Map" button in the devices and then click on a knob, switch or fader in Live. Modulation also allows you to have "hands off" performance of generative music by automating volume fades, if required.
 
@@ -22,19 +22,21 @@ In the case of third party plugins you can often click on the "Down arrow" besid
 
 <img src="./images/Labs.png" width="100%" />
 
-If no parameters are presented when you click this button, you may instead see a "Configure" button in the plugin container. When you click on this button and then open the plugin, whatever you click will show up as a slider in the container interface (see the images below showing the Zebralette instrument as an example).
+If no parameters are presented when you click this button, you may instead see a "Configure" button in the plugin container. When you click on this button and then open the plugin, whatever you click in the UI interface for the device or instrument will show up as a slider in the container interface (see the images below showing the Zebralette instrument as an example).
 
 <img src="./images/Zebralette_Configure.png" width="100%" />
 
-<img src="./images/Zebralette_Configured.png" width="100%" />
+This then opens the UI for the instrument or effect. Now click on various knobs, faders or elements of the instrument or effect UI and Live will capture what has been selected and make these available as items that can be modulated as a list of sliders.
 
 <img src="./images/Zebralette.png" width="100%" />
 
-This opens up huge potential for modulating pretty much anything you see in the Ableton interface.
+For example, if we clicked on the "Phase", "SyncTune" and "WaveWarp" elements in the UI for Zebralette, when we close the UI we'll see the list of these elements available now for automation or for assignment to Macro knob control.
+
+<img src="./images/Zebralette_Configured.png" width="100%" />
 
 ## LFO
 
-Low Frequency Oscillation (LFO) modulation is one of the oldest forms used in synthesisers. In Ableton Live 11 this is presented as a separate ***audio*** utility plugin (Max for Live plugin called "LFO"). Because it is an audio plugin it has to come ***after*** instruments and effects. There is another Max for Live plugin called LFO MIDI if you need it to come before instruments. LFOs are a key element of a modular synth rig. They can be and often are used to modulate pretty much anything. The LFO in Ableton Live can be used in pretty much the same way.
+Low Frequency Oscillation (LFO) modulation is one of the oldest forms used in synthesisers. In Ableton Live 11 this is presented as a separate ***audio*** utility plugin ([Max for Live plugin called "LFO"](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#lfo)). Because it is an audio plugin it has to come ***after*** instruments and effects. There is another Max for Live plugin called LFO MIDI if you need it to come before instruments. LFOs are a key element of a modular synth rig. They can be and often are used to modulate pretty much anything. The LFO in Ableton Live can be used in pretty much the same way.
 
 The Ableton LFO is a really neat tool and illustrates some features that we'll see again and again in other modulators in this section. In the top left of the first LFO here you can see the parameter that is being affected by the LFO. In the screenshot below it's changing the Filter Cutoff in the Instrument Rack to its left. I have changed the minimum and maximum value from 30% to 80% in order to avoid extreme values of filter cutoff. It's often a good idea to tailor the range of values that the LFO is working across as often you want to avoid the extremes. In the bottom left of the device you'll see the Rate at which the LFO is cycling. In this example it's going to go through a full cycle (of the Sine wave) every 6 bars. If you click on the box with three horizontal lines in the top right of the LFO it will open a page (as seen in the second LFO) where you can assign other parameters to be affected by the same LFO. Note that the second LFO here is changing the Depth of the first LFO and the Offset. This means that the first LFO doesn't just cycle predictably from minimum to maximum and back, but instead wobbles in a slightly more interesting way. So one LFO might be too predictable, but using two and using one to modulate the other can bring just enough unpredictability to keep the result interesting.
 
@@ -54,9 +56,9 @@ One trick from modular synthesis is to modulate LFOs with other LFOs, and to mod
 
 <img src="./images/Chaotic_LFOs.png" width="100%" />
 
-## MIDI Envelope
+## Envelope MIDI
 
-The MIDI Envelope device provides an envelope (shock!) that can then trigger any parameter in Ableton Live. This envelope can operate free of the tempo, with attack, decay, sustain and release in milliseconds, or it can be synced to the tempo. The envelope can also loop if required. The attack, decay and release rates can be linear (when set to 0%) or curved.
+The [Envelope MIDI device](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#envelope-midi) provides an envelope (shock!) that can then trigger any parameter in Ableton Live. Any time the channel receives a MIDI note, the envelope is triggered. This envelope can operate free of the tempo, with attack, decay, sustain and release in milliseconds, or it can be synced to the tempo. The envelope can also loop if required. The attack, decay and release rates can be linear (when set to 0%) or curved.
 
 This allows modular synthesis like control over all kinds of parameters in Live where an incoming MIDI event can trigger changes in ***anything***.
 
@@ -64,7 +66,7 @@ This allows modular synthesis like control over all kinds of parameters in Live 
 
 ## Envelope Follower
 
-The Envelope Follower device is similar to the MIDI Envelope device, but instead of being triggered by MIDI notes, it is triggered by audio. Adjust the "Gain" of the input until the orange envelope shows a decent range of modulation. By then tweaking the "Rise" and "Fall" parameters you can smooth out the signal if needed. There's also an option to delay the envelope rather than having it follow the input signal immediately.
+The (Audio Effect) [Envelope Follower](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#envelope-follower) device is similar to the MIDI Envelope device, but instead of being triggered by MIDI notes, it is triggered by audio. Adjust the "Gain" of the input until the orange envelope shows a decent range of modulation. By then tweaking the "Rise" and "Fall" parameters you can smooth out the signal if needed. There's also an option to delay the envelope rather than having it follow the input signal immediately.
 
 Then, using the usual mapping process you can choose which parameter in Live you want to modulate using this signal. This device allows you to modulate anything using an input audio signal, whether that signal is heard in the Master audio track or not.
 
@@ -74,13 +76,13 @@ The devices above (LFO, MIDI Envelope and Envelope Follower) offer modular synth
 
 ## Shaper
 
-The Shaper device allows you to draw modulation envelopes by specifying nodes across a grid then defining how the modulation should change between the nodes. In the screenshot below the nodes are "Snap"ed to the a grid of four equal divisions. The "Rate" setting defines the length of each division compared to the clock, which can be set according to musical divisions, or in Hz time.
+Like the envelope follower devices above, there is a [MIDI Shaper](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#shaper-midi) and an [Audio Shaper](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#shaper)device allows you to draw modulation envelopes by specifying nodes across a grid then defining how the modulation should change between the nodes. In the screenshot below the nodes are "Snap"ed to the a grid of four equal divisions. The "Rate" setting defines the length of each division compared to the clock, which can be set according to musical divisions, or in Hz time.
 
 <img src="./images/Shaper.png" width="100%" />
 
 ## MIDI Expression Control
 
-The Wavetable instrument in Ableton Live has a really useful Modulation Matrix where you can map incoming MIDI expression control attributes (Velocity, Modwheel, Pitchbend, etc.) to parameters of the synthesis engine. The Expression Control device extends that to ANY instrument or effect in Ableton Live. As with LFO modulation mapping, you click on the "Map" button and then click the parameter you wish to modulate. Note that the Expression Control device is a MIDI device so is used ***before*** instruments while other modulators like LFO are placed ***after*** the instrument.
+The Wavetable instrument in Ableton Live has a really useful Modulation Matrix where you can map incoming MIDI expression control attributes (Velocity, Modwheel, Pitchbend, etc.) to parameters of the synthesis engine. The [Expression Control ](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#expression-control)device extends that to ANY instrument or effect in Ableton Live. As with LFO modulation mapping, you click on the "Map" button and then click the parameter you wish to modulate. Note that the Expression Control device is a MIDI device so is used ***before*** instruments while other modulators like LFO are placed ***after*** the instrument.
 
 Expression Control allows you to see the minimum and maximum percentage of modulation, and the shape of onset / offset of that modulation - either linear or logarithmic (curved). It also allows you to specify the "Rise" and "Fall" rate of change to help smooth out the change and prevent sudden changes in parameter values. There's also a curve shaper in the top right of the device where you can tailor your own curves for the MIDI input, like compression etc.
 
@@ -106,7 +108,7 @@ It's this combination of smooth and random that makes this my preferred device f
 
 ## Dispatch
 
-Dispatch is a paid [Max for Live modulation matrix](https://maxforlive.com/library/device/7361/dispatch-global-modulation-matrix) which generates 4 different modulation processes (A, B, C and D) which can be modulated by the other processes and then allows you to sum these to another set of modulation values - I, II, III and IV. The Matrix view defines the modulation processes while the Grid view allows you to further combine the A, B, C and D modulation and map these to another 16 parameters.
+Dispatch by Cong Burn is a paid [Max for Live modulation matrix](https://maxforlive.com/library/device/7361/dispatch-global-modulation-matrix) which generates 4 different modulation processes (A, B, C and D) which can be modulated by the other processes and then allows you to sum these to another set of modulation values - I, II, III and IV. The Matrix view defines the modulation processes while the Grid view allows you to further combine the A, B, C and D modulation and map these to another 16 parameters.
 
 Dispatch is massively flexible in how you can define and combine modulation sources and types. It can also be quite intimidating at first to know what's going on. I can recommend reviewing the Cong Burn (Dispatch developer) video on the tool on Youtube: <https://youtu.be/Vlef8VON4Rw>
 

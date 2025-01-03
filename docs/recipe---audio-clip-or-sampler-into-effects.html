@@ -81,21 +81,58 @@
 <h1>
 <span class="header-section-number">21</span> Recipe - Audio clip or Sampler into effects<a class="anchor" aria-label="anchor" href="#recipe---audio-clip-or-sampler-into-effects"><i class="fas fa-link"></i></a>
 </h1>
-<p>The Sampler instrument from Ableton Live is often used to slice and dice breaks and loops, or to produce multi-sampled instruments that allow you to recreate sounds and playback across the keyboard. But in our context we’re going to use it to simply play back a longer textured sound sample and apply some modulation to the cutoff, producing a drone sound. We can then throw this through a barrage of effects - either using Return channels or via individual audio effects with the sampler output routed into each. Effectively we’re reusing an idea we’ve used before, but starting with Sampler as the audio generator. You could alternatively use the audio output from PaulStretch as the drone generator. The benefit of using Sampler is that we can add MIDI effects to (randomly) change the pitch of the sample so that it doesn’t have to be consistent from one loop to another. Other sample-based instruments like Granulator will allow you to do similar.</p>
+<p>The Sampler instrument from Ableton Live is often used to slice and dice breaks
+and loops, or to produce multi-sampled instruments that allow you to recreate
+sounds and playback across the keyboard. But in our context we’re going to use
+it to simply play back a longer textured sound sample and apply some modulation
+to the cutoff, producing a drone sound. We can then throw this through a barrage
+of effects - either using Return channels or via individual audio effects with
+the sampler output routed into each. Effectively we’re reusing an idea we’ve
+used before, but starting with Sampler as the audio generator. You could
+alternatively use the audio output from PaulStretch as the drone generator. The
+benefit of using Sampler is that we can add MIDI effects to (randomly) change
+the pitch of the sample so that it doesn’t have to be consistent from one loop
+to another. Other sample-based instruments like Granulator will allow you to do
+similar.</p>
 <ol style="list-style-type: decimal">
 <li><p>Create a track with the Sampler instrument and one clip with a single note of 8 or 16 bars.</p></li>
-<li><p>In the Sampler Filter/Global section, give the envelope a long attack (several seconds) and very long release (again, several seconds). This will allow different notes to blend rather than cut each other off.</p></li>
-<li><p>In the Sample Modulation section, create some modulation on Filter, Sample Offset and other parameters so that the sounds morph and change over time rather than staying static. You can also modulate the LFO amounts or rates in LFO2 and LFO3 so that the modulation itself isn’t static. Modulating the Sample Offset makes Sample work a little like a granulator - instead of starting at the beginning of the sample each time, the modulation picks a new position to start from. This prevents the sound from being too predictable with each new note.</p></li>
+<li><p>In the Sampler Filter/Global section, give the envelope a long attack
+(several seconds) and very long release (again, several seconds). This will
+allow different notes to blend rather than cut each other off.</p></li>
+<li><p>In the Sample Modulation section, create some modulation on Filter, Sample
+Offset and other parameters so that the sounds morph and change over time rather
+than staying static. You can also modulate the LFO amounts or rates in LFO2 and
+LFO3 so that the modulation itself isn’t static. Modulating the Sample Offset
+makes Sample work a little like a granulator - instead of starting at the
+beginning of the sample each time, the modulation picks a new position to start
+from. This prevents the sound from being too predictable with each new note.</p></li>
 </ol>
 <p><img src="images/Sampler_Drone_Global.png" width="100%"><img src="images/Sampler_Drone_Modulation.png" width="100%"></p>
 <ol start="4" style="list-style-type: decimal">
-<li>Using techniques described in <a href="tools-audio-effects.html#tools-audio-effects">16</a> and used in the <a href="recipe-audio-generator-drone.html#recipe-audio-generator-drone">18</a> set up a network of audio effects on effect sends / Return channels.</li>
+<li>Using techniques described in <a href="tools-audio-effects.html#tools-audio-effects">16</a> and used in the
+<a href="recipe-audio-generator-drone.html#recipe-audio-generator-drone">18</a> set up a network of audio effects on effect
+sends / Return channels.</li>
 </ol>
-<p>In the example below the Sampler instrument is in Channel 1 and is sending audio out to a variety of FX channels. Note that the Return channels are also routing audio around between them to further add layers of effects. You need to be a little cautious when doing this to prevent feeding audio back into an FX channel and creating a wall of harsh sound. You can see that Return A (the “Nice Reverse + Reverb” effect) is sending audio out to Return D (Spectral Resonator) and that that channel is sending audio back to Return A. This is a little dangerous, but being cautious with the send amounts and watching for signal overloading, it is possible to get away with this. Spectral Time and Spectral Resonators are interesting effects to add texture and resonance into fairly static inputs (like our drone here).</p>
+<p>In the example below the Sampler instrument is in Channel 1 and is sending audio
+out to a variety of FX channels. Note that the Return channels are also routing
+audio around between them to further add layers of effects. You need to be a
+little cautious when doing this to prevent feeding audio back into an FX channel
+and creating a wall of harsh sound. You can see that Return A (the “Nice Reverse
++ Reverb” effect) is sending audio out to Return D (Spectral Resonator) and that
+that channel is sending audio back to Return A. This is a little dangerous, but
+being cautious with the send amounts and watching for signal overloading, it is
+possible to get away with this. Spectral Time and Spectral Resonators are
+interesting effects to add texture and resonance into fairly static inputs (like
+our drone here).</p>
 <div class="inline-figure"><img src="images/Recipe-Sampler_drone.png" width="100%"></div>
 <ol start="5" style="list-style-type: decimal">
-<li><p>You can apply MIDI effects to the Sampler track to pick a new random &amp; quantised note each time the clip restarts. Unlike using an audio clip, using Sampler allows us to repitch the sound with each new note.</p></li>
-<li><p>Once you have a setup that works and produces pleasing sounds, try dropping a different pad sample into the Sampler. Doing this allows you to change up the sounds generated, as each sample will have different tones, resonances and features.</p></li>
+<li><p>You can apply MIDI effects to the Sampler track to pick a new random &amp;
+quantised note each time the clip restarts. Unlike using an audio clip, using
+Sampler allows us to repitch the sound with each new note.</p></li>
+<li><p>Once you have a setup that works and produces pleasing sounds, try dropping
+a different pad sample into the Sampler. Doing this allows you to change up the
+sounds generated, as each sample will have different tones, resonances and
+features.</p></li>
 <li><p>Press play. Sit back and relax.</p></li>
 </ol>
 <hr>
@@ -127,7 +164,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>The Lazy Producer - Making music using randomness and probability in Ableton Live</strong>" was written by Mike K Smith. It was last built on 2024-12-30.</p>
+    <p>"<strong>The Lazy Producer - Making music using randomness and probability in Ableton Live</strong>" was written by Mike K Smith. It was last built on 2025-01-03.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

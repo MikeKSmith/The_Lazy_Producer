@@ -18,7 +18,7 @@ Ableton Live Suite comes with a HUGE range of audio effects and if you add in Ma
 
 ## Hybrid Reverb
 
-The [Hybrid Reverb in Live Suite](https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#hybrid-reverb) is a really nice reverb. It has a Convolution Impulse Response (IR) section which allows you to dial up real-world reverb from a wide variety of spaces and an Algorithm section which applies reverb processing and colouration. You can blend between these or apply them in parallel and series. This in itself offers up a huge variety of sounds.
+The [Hybrid Reverb](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#hybrid-reverb) in Live Suite is a really nice reverb. It has a Convolution Impulse Response (IR) section which allows you to dial up real-world reverb from a wide variety of spaces and an Algorithm section which applies reverb processing and colouration. You can blend between these or apply them in parallel and series. This in itself offers up a huge variety of sounds. This video will help explore what can be done with the Hybrid Reverb effect <https://www.youtube.com/watch?v=yLBIOiM97Vs>.
 
 But when you dig into the Convolution IR section you'll also find options for textural processing - this applies a textural Impulse Response (IR) to the sound, so instead of a straight reverb tail, you'll get some additional texture from the IR audio file. The other thing to point out is that there is an option to have User-defined IR. This means that you can find IR audio files for different spaces online at sites like Open Air <https://www.openair.hosted.york.ac.uk> and use some additional IR files for some famous spaces, like Hamilton Mausoleum and York Minster. Obviously finding the right reverb sound for ambient music is kind of a key item. But you don't have to use just one. I like to use a long, lush reverb to help smear sound and create drones. I usually put this on a FX Return channel so I can route several tracks to it and save CPU. But you may also need a shorter reverb for other instruments to give them presence, in the way that a close mic to an instrument in one of these huge reverb spaces will capture more of the raw sound, while the gigantic reverb captures the instrument in the space itself.
 
@@ -26,7 +26,7 @@ But when you dig into the Convolution IR section you'll also find options for te
 
 ## Valhalla Supermassive
 
-Here's a third-party effect I couldn't do without. Valhalla Supermassive is a free audio effect plugin from Valhalla DSP <https://valhalladsp.com/shop/reverb/valhalla-supermassive/>. It's a staple of ambient and drone producers because a) it's free and b) it has some MASSIVE reverb algorithms (duh!). Suffice to say it does exactly what it says on the tin - massive reverbs. But what Valhalla have done rather well is to combine algorithms and delay lines so that some of its algorithms behave more like delays, while some act more like reverbs. They also have algorithms that combine both - early delay turning into massive reverb. Some have short attack, some much longer. One of my personal favourites is the "Benson Arizona" preset which will turn ANYTHING into a massive drone. Combine this with Paul Stretch, as discussed in @ref(tools-paul-stretch) and you'll have instant drones.
+Here's a third-party effect I couldn't do without. [Valhalla Supermassive](https://valhalladsp.com/shop/reverb/valhalla-supermassive/) is a free audio effect plugin from Valhalla DSP. It's a staple of ambient and drone producers because a) it's free and b) it has some MASSIVE reverb algorithms (duh!). Suffice to say it does exactly what it says on the tin - massive reverbs. But what Valhalla have done rather well is to combine algorithms and delay lines so that some of its algorithms behave more like delays, while some act more like reverbs. They also have algorithms that combine both - early delay turning into massive reverb. Some have short attack, some much longer. One of my personal favourites is the "Benson Arizona" preset which will turn ANYTHING into a massive drone. Combine this with Paul Stretch, as discussed in @ref(tools-paul-stretch) and you'll have instant drones.
 
 To be honest, all of Valhalla DSP's plugins are excellent and reasonably priced. I particularly like the Shimmer device to add shimmer and pitch shift reverb to sounds. Their Delay plugin provides a wide variety of delay types, including tape delay (complete with wobble and drive) but also usefully a reverse delay (where the original audio is played backwards in the delay). I like the latter as the delayed line comes back transformed compared to the input. Again this adds some interest to the part.
 
@@ -34,15 +34,15 @@ To be honest, all of Valhalla DSP's plugins are excellent and reasonably priced.
 
 ## Echo
 
-I tend to prefer [Live Suite's Echo effect](https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#echo) rather than delay. There is a wide range of sounds possible using it, and some built in modulations and tweaks to the sound which add character. Use of Echo as a send effect has a long legacy in dub music where the DJ or producer would send a burst of signal to the Echo and by tweaking the feedback and EQ would create long tails of echo.
+I tend to prefer [Live Suite's Echo effect](https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#echo) rather than delay. There is a wide range of sounds possible using it, and some built in modulations and tweaks to the sound which add character. Use of Echo as a send effect has a long legacy in dub music where the DJ or producer would send a burst of signal to the Echo and by tweaking the feedback and EQ would create long tails of echo. You can learn more about the Echo effect here: <https://www.youtube.com/watch?v=4LxhIE169x4>.
 
-Being a Lazy Producer, I prefer to let random processes tweak the LFO settings. I have built an audio effect rack with a trio of LFOs working on each other and then changing the feedback amount, lower and upper ranges of the EQ so that these wobble about randomly. While the timing of the Echo is fixed, we have other parameters that mean that the sound is constantly shifting in an unpredictable way. This will prevent the Echo effect from being too "samey" across the track and provide some interesting moments. It's a bit like having a pair of "robot hands" that tweak the Echo settings. You could alternatively use Dillon Bastan's Strange Mod device - \@ref(strange-mod).
+Being a Lazy Producer, I prefer to let random processes tweak the Echo settings. I have built an audio effect rack with a trio of LFOs working on each other and then changing the feedback amount, lower and upper ranges of the EQ so that these wobble about randomly. Using an instance of Dillon Bastan's Strange Mod modulator will achieve similar effect as discussed in \@ref(tools-modulators) While the timing of the Echo is fixed, we have other parameters that mean that the sound is constantly shifting in an unpredictable way. This will prevent the Echo effect from being too "samey" across the track and provide some interesting moments. It's a bit like having a pair of "robot hands" that tweak the Echo settings.
 
 <img src="images/LFO_Echo.png" width="100%" />
 
-## Distortion
+## Saturation and Distortion
 
-Distortion may seem like a weird choice for ambient music where much of the music produced is "pristine" and "delicate". But there is a whole sub-genre where gritty, distorted sounds are most definitely a thing. My favourite from Live Suite is the [Saturator plugin](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#saturator) which provides a wide range of subtle distortion and drive. While the Pedal plugin provides raw Overdrive, Distortion and Fuzz, Saturator allows you to drive the signal and dial in more subtle drive and overtones.
+Saturation may seem like a weird choice for ambient music where much of the music produced is "pristine" and "delicate". But there is a whole sub-genre where gritty, distorted sounds are most definitely a thing. My favourite from Live Suite is the [Saturator plugin](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#saturator) which provides a wide range of subtle distortion and drive. If you need more distortion than saturation then the [Pedal](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#pedal) plugin provides raw Overdrive, Distortion and Fuzz, Saturator allows you to drive the signal and dial in more subtle drive and overtones.
 
 <img src="images/Saturator_Pedal.png" width="100%" />
 
@@ -50,13 +50,17 @@ Live 12's [Roar](https://www.ableton.com/en/live-manual/12/live-audio-effect-ref
 
 <img src="images/Roar.png" width="100%" />
 
+More about Roar here: <https://www.youtube.com/watch?v=ETzf6O9-6us>
+
 ## Resonators
 
-The [Resonator plugin](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#resonators) takes an incoming signal and then resonates it by pitch-shifting additional resonators. You can dial-in the amount that the resonant frequencies are heard via gain adjustment, you can define the pitch of the resonator and whether the resonator is centred on a particular pitch. This can be useful to create drone noises and coupled with a long reverb like the Valhalla Supermassive you can create some really lush ambient beds.
+The [Resonator effect](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#resonators) takes an incoming signal and then resonates it by pitch-shifting additional resonators. You can dial-in the amount that the resonant frequencies are heard via gain adjustment, you can define the pitch of the resonator and whether the resonator is centred on a particular pitch. This can be useful to create drone noises and coupled with a long reverb like the Valhalla Supermassive you can create some really lush ambient beds.
 
 I have found that a little drive to the input signal (which boosts upper resonant frequencies of the audio) works will with resonator to make the result more pronounced.
 
 <img src="images/Resonator.png" width="100%" />
+
+More about the Resonator effect here: <https://www.youtube.com/watch?v=wSjp6nX3rYI>
 
 ## Spectral processing
 
@@ -90,7 +94,7 @@ The whole collection is worth checking out for some very interesting effects, al
 
 ### Shifter
 
-[Shifter](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#shifter) is a combination of a pitch and frequency shifter and ring modulator. It's a bit of a beast because it can be either subtle and also extremely weird depending on how much shifting you do (and what type). This video provides a nice overview of the different modes and features: <https://www.youtube.com/watch?v=IdhGroVd1aI>
+[Shifter](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#shifter) is a combination of a pitch and frequency shifter and ring modulator. It's a bit of a beast because it can be either subtle and also extremely weird depending on how much shifting you do (and what type). This video provides a nice overview of the different modes and features: <https://www.youtube.com/watch?v=uqY8K8otbp0>
 
 <img src="images/Shifter.png" width="100%" />
 
