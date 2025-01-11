@@ -22,7 +22,8 @@ An alternative approach to the same problem would be to employ "Instrument Racks
 
 
 
-<img src="./images/Routing.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Routing} 
 
 The flexibility and ease of routing audio and MIDI around in Live makes it a
 very versatile platform for creating complex signal paths, and apply different

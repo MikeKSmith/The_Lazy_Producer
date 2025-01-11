@@ -5,7 +5,7 @@ Pro - to generate the initial MIDI information which is then fed into additional
 tracks using techniques discussed in \@ref(tools-midi-tools) and
 \@ref(process-routing).
 
-```{{r, echo = FALSE}}
+```{r, echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 ```
 

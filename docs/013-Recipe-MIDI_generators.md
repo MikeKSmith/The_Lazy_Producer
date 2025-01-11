@@ -5,9 +5,7 @@ Pro - to generate the initial MIDI information which is then fed into additional
 tracks using techniques discussed in \@ref(tools-midi-tools) and
 \@ref(process-routing).
 
-```{{r, echo = FALSE}}
-knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
-```
+
 
 1.  Place the Euclidean Sequencer Pro generator in a track. Euclidean Sequencer
 Pro is a Max for Live device which can be used to generate polyrhythmic
@@ -25,11 +23,7 @@ unexpected and predictable!). We can also use modulators to shift the Rotation /
 offset of the sequences to add additional unexpectedness if that's helpful.
 
 
-``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe4_EuclideanSequencerPro.png"))
-```
-
-![](images/Recipe4_EuclideanSequencerPro.png)<!-- -->
+\includegraphics[width=1\linewidth]{images/Recipe4_EuclideanSequencerPro} 
 
 2.  We're now going to use many of the techniques previously seen in
 \@ref(recipe-midi-tools), where we take the output from the Euclidean sequencer
@@ -37,22 +31,14 @@ and then route it to a number of different synth engines while also applying
 some additional MIDI tool processing.
 
 
-``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe4_Routing.png"))
-```
-
-![](images/Recipe4_Routing.png)<!-- -->
+\includegraphics[width=1\linewidth]{images/Recipe4_Routing} 
 
 First, let's take the "raw" output from the Euclidean Sequencer and route it
 into a MIDI instrument track using a plucky Operator sound - could be a simple
 sine wave with no sustain and fairly quick decay.
 
 
-``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe4_Operator.png"))
-```
-
-![](images/Recipe4_Operator.png)<!-- -->
+\includegraphics[width=1\linewidth]{images/Recipe4_Operator} 
 
 3.  Create another MIDI instrument track where we're going to take the same
 Euclidean Sequencer Pro MIDI information, but now use the MIDI Note Echo device
@@ -63,11 +49,7 @@ turn the incoming MIDI notes into chords. We can then use these delayed and
 a pad sound from any virtual instrument.
 
 
-``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe4_Pad.png"))
-```
-
-![](images/Recipe4_Pad.png)<!-- -->
+\includegraphics[width=1\linewidth]{images/Recipe4_Pad} 
 
 4.  Create another MIDI instrument track and use the MIDI from the chord "pad"
 track we've just created as the input. Be sure to set the input to "Post FX" so
@@ -82,11 +64,7 @@ rate. You may need to tailor the amount or range of modulation to get
 Arpeggiator rates that don't swing too far between VERY quick and VERY slow.
 
 
-``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe4_Arp.png"))
-```
-
-![](images/Recipe4_Arp.png)<!-- -->
+\includegraphics[width=1\linewidth]{images/Recipe4_Arp} 
 
 5.  Feel free to continue adding additional tracks to bring texture and a
 variety of tones to your track. I've included a "choir" and textured pad tracks.

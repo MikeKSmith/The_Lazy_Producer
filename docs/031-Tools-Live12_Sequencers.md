@@ -44,7 +44,8 @@ setting in the Live set, or even set the clock from an external device. MIDI
 pitch information can be entered through the Pitch lane, or can be entered via a
 Step Sequenceer within the MIDI tab.
 
-<img src="images/Live12_SQ.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Live12_SQ} 
 
 This is a really powerful sequencer then, that can provide endless variation and
 interest from fairly simple patterns.
@@ -60,7 +61,8 @@ interesting as it allows you to specify the probability of playing an alternate
 sound (in blue in the Drum Rack graphic), so you could mix closed hi-hat (second
 from top row) with an open hi-hat sound.
 
-<img src="images/Live12_RhythmicSteps.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Live12_RhythmicSteps} 
 
 You can also reset the pattern (using the [R] or [Auto] buttons in the image
 above) so that the patterns will start back at step 1 again. The [Auto] setting
@@ -76,7 +78,8 @@ attributes of an arpeggiator and have the sequence of those attributes run in
 parallel with the pitch sequence which is governed through the Octave and Notes
 button settings or unlinked to sequence the attributes with different lengths.
 
-<img src="images/Live12_StepArp.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Live12_StepArp} 
 
 The bar to the right of the sequence allows you to specify a range in which the
 values will be randomised, so here this would affect the range of velocities

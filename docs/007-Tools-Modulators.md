@@ -20,19 +20,23 @@ In the case of third party plugins you can often click on the "Down arrow" besid
 
 
 
-<img src="./images/Labs.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Labs} 
 
 If no parameters are presented when you click this button, you may instead see a "Configure" button in the plugin container. When you click on this button and then open the plugin, whatever you click in the UI interface for the device or instrument will show up as a slider in the container interface (see the images below showing the Zebralette instrument as an example).
 
-<img src="./images/Zebralette_Configure.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Zebralette_Configure} 
 
 This then opens the UI for the instrument or effect. Now click on various knobs, faders or elements of the instrument or effect UI and Live will capture what has been selected and make these available as items that can be modulated as a list of sliders.
 
-<img src="./images/Zebralette.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Zebralette} 
 
 For example, if we clicked on the "Phase", "SyncTune" and "WaveWarp" elements in the UI for Zebralette, when we close the UI we'll see the list of these elements available now for automation or for assignment to Macro knob control.
 
-<img src="./images/Zebralette_Configured.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Zebralette_Configured} 
 
 ## LFO
 
@@ -40,7 +44,8 @@ Low Frequency Oscillation (LFO) modulation is one of the oldest forms used in sy
 
 The Ableton LFO is a really neat tool and illustrates some features that we'll see again and again in other modulators in this section. In the top left of the first LFO here you can see the parameter that is being affected by the LFO. In the screenshot below it's changing the Filter Cutoff in the Instrument Rack to its left. I have changed the minimum and maximum value from 30% to 80% in order to avoid extreme values of filter cutoff. It's often a good idea to tailor the range of values that the LFO is working across as often you want to avoid the extremes. In the bottom left of the device you'll see the Rate at which the LFO is cycling. In this example it's going to go through a full cycle (of the Sine wave) every 6 bars. If you click on the box with three horizontal lines in the top right of the LFO it will open a page (as seen in the second LFO) where you can assign other parameters to be affected by the same LFO. Note that the second LFO here is changing the Depth of the first LFO and the Offset. This means that the first LFO doesn't just cycle predictably from minimum to maximum and back, but instead wobbles in a slightly more interesting way. So one LFO might be too predictable, but using two and using one to modulate the other can bring just enough unpredictability to keep the result interesting.
 
-<img src="./images/LFO.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/LFO} 
 
 Note that under the visualization of the LFO you'll see "Jitter" and "Smooth". "Jitter" adds additional noise randomness to the generated LFO cycle. This can be useful if you want to add a little more random variation over and above the generated LFO values. The "Smooth" option can help smooth out the whole LFO cycle, including the "Jitter". These "Jitter" and "Smooth" options turn up in various other modulation devices, so it's good to know what they do.
 
@@ -54,7 +59,8 @@ A basic LFO is a useful modulator, but there are two drawbacks to the standard L
 
 One trick from modular synthesis is to modulate LFOs with other LFOs, and to modulate those LFOs by other LFOs. (It's LFOs all the way down). I was looking to create an LFO where there wasn't a perceptible pattern or period to its output. So I took a second LFO and changed the depth of the first LFO by the second. I took a third LFO and used it to change the Rate of the second LFO. I then took one of the mapping parameters from the first LFO to change the rate of the third LFO (so feeding back from first LFO back to third). What this gives me then is three LFOs which are all behaving in slightly chaotic and unpredictable ways, even using the standard Sine waveform.
 
-<img src="./images/Chaotic_LFOs.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Chaotic_LFOs} 
 
 ## Envelope MIDI
 
@@ -62,7 +68,8 @@ The [Envelope MIDI device](https://www.ableton.com/en/live-manual/11/max-for-liv
 
 This allows modular synthesis like control over all kinds of parameters in Live where an incoming MIDI event can trigger changes in ***anything***.
 
-<img src="./images/MIDI_envelope.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/MIDI_envelope} 
 
 ## Envelope Follower
 
@@ -72,13 +79,15 @@ Then, using the usual mapping process you can choose which parameter in Live you
 
 The devices above (LFO, MIDI Envelope and Envelope Follower) offer modular synthesis like control over pretty much any parameter in Ableton Live. This is one of the strengths of Ableton Live with Max for Live devices over the standard Ableton version - the level of control and the ability to control devices is really unparalleled. Don't forget that you can also get modulators to modulate each other... So an envelope can modulate the amplitude or rate of an LFO and an LFO can then modulate the envelope of another input.
 
-<img src="./images/Envelope_follower.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Envelope_follower} 
 
 ## Shaper
 
 Like the envelope follower devices above, there is a [MIDI Shaper](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#shaper-midi) and an [Audio Shaper](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#shaper)device allows you to draw modulation envelopes by specifying nodes across a grid then defining how the modulation should change between the nodes. In the screenshot below the nodes are "Snap"ed to the a grid of four equal divisions. The "Rate" setting defines the length of each division compared to the clock, which can be set according to musical divisions, or in Hz time.
 
-<img src="./images/Shaper.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Shaper} 
 
 ## MIDI Expression Control
 
@@ -90,11 +99,13 @@ The "Random" setting generates a new parameter modulation value ***with every in
 
 The "Incremental" setting is also useful in that it increments the parameter value by a nominated amount (1% in the screenshot below) with each incoming MIDI note. When it reaches the maximum, it resets to the minimum value, so is effectively a sawtooth LFO but triggered by incoming MIDI rather than periodic in time.
 
-<img src="./images/Expression_control.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Expression_control} 
 
 One thing to note is that Expression Control can assign the same MIDI control message to multiple parameters. You can click on the "down" arrow next to the MIDI control type and select a different input.
 
-<img src="./images/Expression_control_2.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Expression_control_2} 
 
 As I've said above, the combination of all of these tools are supremely powerful - so you could change envelopes with each incoming MIDI note or use that note to change an LFO setting that modulates something else. Also, be aware that the Expression Control and Envelope Follower can be used ***even if*** the MIDI or audio from the tracks are not sent to the Master audio output. OR EVEN NOT HEARD AT ALL. So you can use MIDI events to modulate items in sync with the master clock regardless of tempo.
 
@@ -104,7 +115,8 @@ As I've said above, the combination of all of these tools are supremely powerful
 
 It's this combination of smooth and random that makes this my preferred device for modulation. Slowing down the "Speed" of modulation can be useful to map to sound parameters where you want things to evolve smoothly and gradually.
 
-<img src="./images/Strange_mod.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Strange_mod} 
 
 ## Dispatch
 
@@ -114,7 +126,8 @@ Dispatch is massively flexible in how you can define and combine modulation sour
 
 The vision for Dispatch is that it can be a single modulation device that can send modulation out to parameters throughout an Ableton Live set, rather than having modulators and LFOs scattered throughout the set. If you have the intention of creating generative music where everything is modulated and curated for an extended playback, then Dispatch may be useful to control levels, panning, sends etc. in a single device.
 
-<img src="./images/Dispatch.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Dispatch} 
 
 ## Deviate
 
@@ -122,4 +135,5 @@ We've come across the free [Deviate Max for Live device from Novel Music](https:
 
 Again, it's worth reviewing [the tutorial video from Novel Music](https://www.youtube.com/watch?v=4WwKGUV2H4I) to learn about all possible features of this device.
 
-<img src="./images/Deviate_map.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Deviate_map} 

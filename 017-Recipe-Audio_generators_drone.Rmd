@@ -1,6 +1,6 @@
 # Recipe - Making a drone using some audio generators and effects {#recipe-audio-generator-drone}
 
-```{{r, echo = FALSE}}
+```{r, echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 ```
 

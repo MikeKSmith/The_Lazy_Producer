@@ -16,13 +16,15 @@ MIDI generators (as discussed in \@ref(tools-midi-generators) produce MIDI notes
 
 There's a technique in synthesis where you "ping" a resonant filter with a click or burst of noise which provides the "exciter" to generate a tone. This is relatively simple to achieve in Ableton Live using stock effects in Live Suite. We use a burst of noise from the "Vinyl Distortion" plugin which emulates the crackles and noise from a vinyl record, gate this to only allow the crackles to come through. The "Erosion" plugin accentuates the noise around this crackle and the "Auto Filter" specifies a frequency band that will pass through to the later resonators and effects.
 
-<img src="./images/Pinging_Filters.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Pinging_Filters} 
 
 Hainbach has a great video explaining the technique here: <https://www.youtube.com/watch?v=qJRXxkswXdg>. Ned Rush also routinely uses the Vinyl Distortion to ping other devices e.g. <https://www.youtube.com/watch?v=siWk44aAYeg>.
 
 In our case, instead of using feedback with filters, we can exploit Ableton Live's own resonator plugins: "Resonator", "Spectral Resonator" and "Corpus". In the image below we're using the "Spectral Resonator" to generate some pitched tones. We're feeding it notes from an external MIDI clip which uses the same note probability techniques explained previously. This then feeds into the "Resonators" plugin which provides additional pitched resonance, and the "Spectral Time" plugin which smears out this pitched resonance so that it's not a short burst of pitched information.
 
-<img src="./images/Resonators.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Resonators} 
 
 ## Tree Tone
 
@@ -32,7 +34,8 @@ This is a deceptively useful generator, as it can be used to create beautiful dr
 
 Two Easter Eggs to Tree Tone exist: The top "microphone" button on the far right allows you to route ANY audio signal through Tree Tone and excite the resonators. So Tree Tone can be used as either as a generator OR an effect (similar to the Corpus device). Below this is the "Sine" button which opens modulation dialogue where you can device two LFOs and two envelopes and then route these to parameters of the device. So you don't need to stick with a static sound, and the envelopes can be triggered by incoming MIDI information.
 
-<img src="./images/Tree_tone.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Tree_tone} 
 
 ## Harmonic Drone Generator
 
@@ -40,7 +43,8 @@ Does exactly what is says on the tin. This is a drone generator from the [Drone 
 
 Again, this is a nice generator to use as the fundamental source for a textured drone session. You can feed the output of this device through other effects to manipulate, distort, and augment sounds from it. You can also "play" the device using MIDI input. The "Glide" option gives a nice glide effect as the resonators re-pitch to the new incoming note.
 
-<img src="./images/Harmonic_Drone_Generator.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Harmonic_Drone_Generator} 
 
 ## Cellular Degradation
 
@@ -54,4 +58,5 @@ So what this gives us is a way of generating tones. You can quantize changes to 
 
 The sound the generator creates is a little odd, but through use of additional audio effects it's possible to create some interesting evolving drone textures.
 
-<img src="./images/Cellular_Degradation.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{./images/Cellular_Degradation} 

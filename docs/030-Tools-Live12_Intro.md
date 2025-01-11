@@ -29,7 +29,8 @@ clips); but you can also ***set*** the current scale for the set from clips.
 This allows you to change the scale of the set for example during live
 performance when the each song might be in a different key.
 
-<img src="images/Live12_Scale.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Live12_Scale} 
 
 But scale awareness goes beyond setting the scale for MIDI notes within a clip -
 many devices now have a "scale awareness" so that when the device adds or shifts
@@ -48,7 +49,8 @@ add MIDI Scale quantizing devices, and also changing the scale in the Current
 Scale (or through clips), the MIDI devices and instruments will automatically
 pick up whatever the new Current Scale is.
 
-<img src="images/Live12_Random_ScaleAware.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Live12_Random_ScaleAware} 
 
 So now we can chain together MIDI Devices as discussed in
 \@ref(tools-midi-tools) and used in \@ref(recipe-midi-generators) and by turning
@@ -58,7 +60,8 @@ it is now labelled "sd" scale degrees. This takes a little getting used to
 because the scale degrees are added onto the MIDI note value - so +4sd is a
 fifth above the incoming MIDI note.
 
-<img src="images/Live12_ScaleAware_MIDI_Devices.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Live12_ScaleAware_MIDI_Devices} 
 
 Scale awareness also extends to some of the Synth instruments in Live 12 - Meld
 in particular has scale awareness for some of its tone generators, where
@@ -86,15 +89,18 @@ and Euclidean generators. And because what sits behind these generators is the
 power of Max for Live, the possibilities open up for a huge range of innovative
 MIDI generation.
 
-<img src="images/Live12_MIDIGenerators.png" width="100%" />
 
-<img src="images/Live12_Max_MIDIGenerator.png" width="100%" />
+\includegraphics[width=1\linewidth]{images/Live12_MIDIGenerators} 
+
+
+\includegraphics[width=1\linewidth]{images/Live12_Max_MIDIGenerator} 
 
 In Chapter 13 we looked at MIDI Generator devices including Max for Live
 devices. But having some similar functionality here "baked into" the Live MIDI
 clip tools puts these tools at the fingertips of anyone with Live 12 Suite.
 
-<img src="images/Live12_Euclidean_Pattern.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Live12_Euclidean_Pattern} 
 
 ### MIDI Transformation
 
@@ -110,7 +116,8 @@ pattern to chords, and time warp - which can bend the timing within a bar, so
 although the bpm clock remains constant, MIDI notes in a clip can trigger with a
 more fluid timing.
 
-<img src="images/Live12_MIDI_Transformers.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Live12_MIDI_Transformers} 
 
 ## Note probability
 
@@ -126,7 +133,8 @@ or you can nominate a group of notes where the computer picks which note in the
 group will play, but you can be sure that exactly one of those notes ***will***
 be played.
 
-<img src="images/Live12_GroupNotes.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Live12_GroupNotes} 
 
 Let's give a concrete example. Imagine you want to set up an arpeggiated
 pattern, but you always want the pattern to play four notes. You always want the

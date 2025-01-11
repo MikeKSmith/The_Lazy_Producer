@@ -1,8 +1,6 @@
 # Recipe - Making a drone using some audio generators and effects {#recipe-audio-generator-drone}
 
-```{{r, echo = FALSE}}
-knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
-```
+
 
 In this recipe we'll make a simple drone track using a variety of audio generators.
 
@@ -11,11 +9,7 @@ ensure that the output is pitched and that it conforms to the C minor pentatonic
 scale. This will help integrate the sounds later.
 
 
-``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_TreeTone.png"))
-```
-
-![](images/Recipe5_TreeTone.png)<!-- -->
+\includegraphics[width=1\linewidth]{images/Recipe5_TreeTone} 
 
 2.  On another track, add a Harmonic Generator (from the Drone Lab pack). This
 is an instrument combining sine-wave drones oscillating at fixed pitches
@@ -24,11 +18,7 @@ to pitches or FM Ratio change the resulting sound, and maybe automate these via
 LFO, but for now, let's keep the drone from this to be quite static.
 
 
-``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_HarmonicGenerator.png"))
-```
-
-![](images/Recipe5_HarmonicGenerator.png)<!-- -->
+\includegraphics[width=1\linewidth]{images/Recipe5_HarmonicGenerator} 
 
 3.  Next let's add a real odd-ball: the Cellular Degradation plugin by Dillon
 Bastan. As described in \@ref(tools-audio-generators), this is a weird
@@ -41,11 +31,7 @@ We can then use its chaotic modulation processes to automate "drawing" the X and
 Y values. This should produce some very strange buzzy textures.
 
 
-``` r
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_CellularDegradation.png"))
-```
-
-![](images/Recipe5_CellularDegradation.png)<!-- -->
+\includegraphics[width=1\linewidth]{images/Recipe5_CellularDegradation} 
 
 4.  At this point I added a simple bass root note drone (on C1) using the Drift
 instrument. This helps anchor our drone.
@@ -65,11 +51,7 @@ addition or instead) might be to drive the Cellular Degradation track using a
 Saturator or distortion.
 
 
-``` r
-      knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_CellularDegradation_Resonator.png"))
-```
-
-![](images/Recipe5_CellularDegradation_Resonator.png)<!-- -->
+\includegraphics[width=1\linewidth]{images/Recipe5_CellularDegradation_Resonator} 
 
 6.  Sometimes, if using an audio generator it helps to add a compressor
 (occasionally a multiband compressor). This will reduce the peaks and can also

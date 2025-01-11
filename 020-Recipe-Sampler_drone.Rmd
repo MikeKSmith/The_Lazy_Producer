@@ -1,9 +1,9 @@
 # Recipe - Audio clip or Sampler into effects
 
 ```{r, echo = FALSE}
-knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+    knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 ```
-
+  
 The Sampler instrument from Ableton Live is often used to slice and dice breaks
 and loops, or to produce multi-sampled instruments that allow you to recreate
 sounds and playback across the keyboard. But in our context we're going to use

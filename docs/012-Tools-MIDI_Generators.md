@@ -22,7 +22,8 @@ Melodic Steps has been somewhat superseded by the newer [SQ sequencer](https://w
 
 
 
-<img src="images/Melodic_Steps.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Melodic_Steps} 
 
 ## Bouncy Notes
 
@@ -30,7 +31,8 @@ Melodic Steps has been somewhat superseded by the newer [SQ sequencer](https://w
 
 In the screenshot below I have specified that all generated notes should be quantised to D minor pentatonic. I have also chosen for notes to be generated automatically every bar (Drop setting to Auto and "1b") and last for at most 4 bars ("Lifetime"). At any one time we'll have at most 6 balls in play ("Voices"). I have also set the note "Quantize" to be eighth notes = 8n. This ensures that the note triggers will not clash with anything else going on in the sequencer that is rhythmic or on the beat. But tuning the "Speed" setting you can tailor the density of notes generated. Adding randomness on direction that the balls are travelling when they are generated "Rnd\>Dir" you can generate additional notes in the scale as the balls bounce off the sides and hit the "notes" on the bottom.
 
-<img src="images/Bouncy_notes.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Bouncy_notes} 
 
 ## Dr Chaos
 
@@ -40,7 +42,8 @@ Dr Chaos can store a number of patterns for both the note network (left) and the
 
 I like Dr Chaos because you can set up networks of notes that will give potentially nice sounding sequences, but randomness can kick in to take you somewhere else instead. It breaks you out of the typical sequencer where the sequence of notes is predictable, even if probability is intervening to stop some notes from happening every time.
 
-<img src="images/Dr_Chaos.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Dr_Chaos} 
 
 ## Euclidean Sequencer Pro
 
@@ -48,7 +51,8 @@ Euclidean sequencers are commonly found in modular rigs, where can produce inter
 
 I have used the [Euclidean Sequencer Pro](https://www.youtube.com/watch?v=orh9TtREa0w) with non-rhythmic ideas as well. Choose four notes e.g. C3, D4, G3 and A#3/ Bb3. Setting a pattern with more sparse settings for D4 and A#3 can give some interesting patterns and chords. I combined this with the Random and Scales plugins described earlier to add some variation to the generated notes.
 
-<img src="images/Euclidean_sequencer_pro.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Euclidean_sequencer_pro} 
 
 ## Less Concepts
 
@@ -64,7 +68,8 @@ The "low" and "high" settings define the range of notes that will be used in the
 
 Less Concepts is definitely a sequencer that invites exploration, trial and error. Sometimes the results are surprising, other times they fade away and you're left in silence. If you need further explanation of what's happening under the hood, I suggest you explore the notes that Dan Derks provides.
 
-<img src="images/Less_concepts.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Less_concepts} 
 
 ## Turing machines
 
@@ -74,7 +79,8 @@ In the image below the key part is the left hand end of the Max for Live [Turing
 
 The Max for Live device shown below includes additional features to map output "voltage" signals (modulation) from the Turing Machine to devices in Live, and to use the Gate information from the Turing machine to trigger devices like drum machines. These extensions to functionality are still driven by the same essential random processes and "locking in" sequences discussed above.
 
-<img src="images/Turing_Machine.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Turing_Machine} 
 
 For Live 12 Philip Meyer has developed a Max for Live [Turing Machine](https://isotonikstudios.com/product/turing-machine/?srsltid=AfmBOor_T0esjLa-jI_hMBqYTUuz_1TAYSXRbD5u_57BQk_dJ-Yr4ZTt) Generator device (<https://www.youtube.com/watch?v=fwBIVaAaWog>) that you can use to create patterns of notes. More on this in \@ref(tools-live12-sequencers).
 
@@ -84,13 +90,15 @@ For Live 12 Philip Meyer has developed a Max for Live [Turing Machine](https://i
 
 This technique is sometimes employed in modular synths if a more traditional sequencer is not being used, as all you need to drive it is a base LFO and a "sample and hold" random generator.
 
-<img src="images/MIDI_waves.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/MIDI_waves} 
 
 ## Midivolve
 
 The [Ableton Max for Live pack and device with Coldcut - Midivolve](https://www.ableton.com/en/packs/midivolve/) Pack is a paid plugin for Ableton Suite. It works by randomly adding variation to MIDI clip in the track where the plugin is placed. That variation can act on MIDI notes, velocity, duration, density (how many notes are playing) as well as being able to map two different parameters in Live. The "A" column defines which parameters experience variation on the next "Evolve!" trigger (in the screenshot below this is set to automatically evolve all parameters once the clip has played through 3 times). If the "I" column is checked then the last evolution acts as the basis for the next variation change. Note that variation amount can be specified via "Ammt" and this is separate to "Chance" of the variation happening. Chance is the probability of the value being varied / evolved ***for each note / step.*** This opens up a large number of possibilities to vary input sequences but to balance the unexpected evolution with a repeat of the evolved pattern before the next change is made i.e. let the listener get used to each chance - being predictable, if only for a finite period. Variation can be constrained through the Scale settings.
 
-<img src="images/Midivolve.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Midivolve} 
 
 ## SEEDS - Polymath and friends
 
@@ -100,7 +108,8 @@ In the screenshot below I'm using the "Sweet 16" clock module from SEEDS which p
 
 Polymath is a four track sequencer. Each track specifies notes, octaves, velocity, duration, strum, ratchet, bend (pitch bend) and mod. The sequence length is set for the track. If you look to the right the "Deviate" setting allows you to add some random probability to each element of the sequence as we discussed in \@ref(tools-modulators). This allows you to specify elements of randomness to be included, but also a "Lock" slider that allows you to lock in to a sequence that you like and "turn off" further introduction of randomness.
 
-<img src="images/Polymath.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Polymath} 
 
 Polymath has a few neat tricks up its sleeve. It allows you to set scales for each track (and in fact across ALL tracks) and you can set two different scales then use a slider to begin to introduce notes from Scale 2 in the sequence even though the majority are from Scale 1. When the slider is all the way to the right, then Scale 2 is 100% in effect.
 
@@ -108,7 +117,8 @@ One of the great strengths of Polymath and the SEEDS pack is that many of the el
 
 SEEDS also includes a very useful concept and plugin that can send output to and from various devices and clocks. The "Hub" plugin receives and sends MIDI information from one track to another. So it's possible to have generative plugins on one track which send MIDI information to a completely different track, which can then be processed independently. Similarly you can assign the output of a sequence to a "HUB" (e.g. Hub A) and then use the notes of that sequence to offset the notes in another sequence, as is shown in the image below.
 
-<img src="images/Polymath_offset.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Polymath_offset} 
 
 This technique allows you to specify two sequences (ideally one shorter than the other) and by offsetting the notes in one sequence by the notes in another sequence you get an ever evolving sequence, with some notes repeated, but some changing.
 

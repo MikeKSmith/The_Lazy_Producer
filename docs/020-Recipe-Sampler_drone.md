@@ -1,7 +1,7 @@
 # Recipe - Audio clip or Sampler into effects
 
 
-
+  
 The Sampler instrument from Ableton Live is often used to slice and dice breaks
 and loops, or to produce multi-sampled instruments that allow you to recreate
 sounds and playback across the keyboard. But in our context we're going to use
@@ -30,7 +30,9 @@ makes Sample work a little like a granulator - instead of starting at the
 beginning of the sample each time, the modulation picks a new position to start
 from. This prevents the sound from being too predictable with each new note.
 
-<img src="images/Sampler_Drone_Global.png" width="100%" /><img src="images/Sampler_Drone_Modulation.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Sampler_Drone_Global} 
+\includegraphics[width=1\linewidth]{images/Sampler_Drone_Modulation} 
 
 4.  Using techniques described in \@ref(tools-audio-effects) and used in the
 \@ref(recipe-audio-generator-drone) set up a network of audio effects on effect
@@ -48,7 +50,8 @@ possible to get away with this. Spectral Time and Spectral Resonators are
 interesting effects to add texture and resonance into fairly static inputs (like
 our drone here).
 
-<img src="images/Recipe-Sampler_drone.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/Recipe-Sampler_drone} 
 
 5.  You can apply MIDI effects to the Sampler track to pick a new random &
 quantised note each time the clip restarts. Unlike using an audio clip, using
