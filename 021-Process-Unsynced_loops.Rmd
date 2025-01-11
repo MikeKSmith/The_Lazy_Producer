@@ -81,8 +81,7 @@ circle with radius equal to the size of the square. We often see this pattern in
 nature - in the pattern of seeds or petals on a plant.
 
 ```{r, fig.cap="By Romain - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=114415511"}
-knitr::include_graphics(path = file.path(here::here(), "images", "Fibonacci_Spiral.svg"))
-
+knitr::include_graphics(path = file.path(here::here(), "images", "Fibonacci_Spiral.png"))
 ```
 
 I'm not going to pretend that it has mystical properties (it's only maths after

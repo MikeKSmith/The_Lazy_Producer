@@ -79,7 +79,7 @@ circle with radius equal to the size of the square. We often see this pattern in
 nature - in the pattern of seeds or petals on a plant.
 
 <div class="figure">
-<img src="images/Fibonacci_Spiral.svg" alt="By Romain - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=114415511" width="100%" />
+<img src="images/Fibonacci_Spiral.png" alt="By Romain - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=114415511" width="100%" />
 <p class="caption">(\#fig:unnamed-chunk-2)By Romain - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=114415511</p>
 </div>
 
