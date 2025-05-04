@@ -22,23 +22,20 @@ explore a combination of predictable and more unexpected patterns (balancing the
 unexpected and predictable!). We can also use modulators to shift the Rotation /
 offset of the sequences to add additional unexpectedness if that's helpful.
 
-
-\includegraphics[width=1\linewidth]{images/Recipe4_EuclideanSequencerPro} 
+<img src="images/Recipe4_EuclideanSequencerPro.png" width="100%" />
 
 2.  We're now going to use many of the techniques previously seen in
 \@ref(recipe-midi-tools), where we take the output from the Euclidean sequencer
 and then route it to a number of different synth engines while also applying
 some additional MIDI tool processing.
 
-
-\includegraphics[width=1\linewidth]{images/Recipe4_Routing} 
+<img src="images/Recipe4_Routing.png" width="100%" />
 
 First, let's take the "raw" output from the Euclidean Sequencer and route it
 into a MIDI instrument track using a plucky Operator sound - could be a simple
 sine wave with no sustain and fairly quick decay.
 
-
-\includegraphics[width=1\linewidth]{images/Recipe4_Operator} 
+<img src="images/Recipe4_Operator.png" width="100%" />
 
 3.  Create another MIDI instrument track where we're going to take the same
 Euclidean Sequencer Pro MIDI information, but now use the MIDI Note Echo device
@@ -48,8 +45,7 @@ turn the incoming MIDI notes into chords. We can then use these delayed and
 "smeared" MIDI chords with a pad sound. I'm using Wavetable, but you can choose
 a pad sound from any virtual instrument.
 
-
-\includegraphics[width=1\linewidth]{images/Recipe4_Pad} 
+<img src="images/Recipe4_Pad.png" width="100%" />
 
 4.  Create another MIDI instrument track and use the MIDI from the chord "pad"
 track we've just created as the input. Be sure to set the input to "Post FX" so
@@ -63,8 +59,7 @@ various settings here, including using an unsynced or "Free" running Arpeggiator
 rate. You may need to tailor the amount or range of modulation to get
 Arpeggiator rates that don't swing too far between VERY quick and VERY slow.
 
-
-\includegraphics[width=1\linewidth]{images/Recipe4_Arp} 
+<img src="images/Recipe4_Arp.png" width="100%" />
 
 5.  Feel free to continue adding additional tracks to bring texture and a
 variety of tones to your track. I've included a "choir" and textured pad tracks.

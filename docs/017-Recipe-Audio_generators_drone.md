@@ -8,8 +8,7 @@ In this recipe we'll make a simple drone track using a variety of audio generato
 ensure that the output is pitched and that it conforms to the C minor pentatonic
 scale. This will help integrate the sounds later.
 
-
-\includegraphics[width=1\linewidth]{images/Recipe5_TreeTone} 
+<img src="images/Recipe5_TreeTone.png" width="100%" />
 
 2.  On another track, add a Harmonic Generator (from the Drone Lab pack). This
 is an instrument combining sine-wave drones oscillating at fixed pitches
@@ -17,8 +16,7 @@ relative to the Root note. We can experiment later with this to see how changes
 to pitches or FM Ratio change the resulting sound, and maybe automate these via
 LFO, but for now, let's keep the drone from this to be quite static.
 
-
-\includegraphics[width=1\linewidth]{images/Recipe5_HarmonicGenerator} 
+<img src="images/Recipe5_HarmonicGenerator.png" width="100%" />
 
 3.  Next let's add a real odd-ball: the Cellular Degradation plugin by Dillon
 Bastan. As described in \@ref(tools-audio-generators), this is a weird
@@ -30,8 +28,7 @@ using another favourite Dillon Bastan plugin, the Strange Mod modulation device.
 We can then use its chaotic modulation processes to automate "drawing" the X and
 Y values. This should produce some very strange buzzy textures.
 
-
-\includegraphics[width=1\linewidth]{images/Recipe5_CellularDegradation} 
+<img src="images/Recipe5_CellularDegradation.png" width="100%" />
 
 4.  At this point I added a simple bass root note drone (on C1) using the Drift
 instrument. This helps anchor our drone.
@@ -50,8 +47,7 @@ to "tame" the weirdness, if that's what you'd prefer. Another decent option (in
 addition or instead) might be to drive the Cellular Degradation track using a
 Saturator or distortion.
 
-
-\includegraphics[width=1\linewidth]{images/Recipe5_CellularDegradation_Resonator} 
+<img src="images/Recipe5_CellularDegradation_Resonator.png" width="100%" />
 
 6.  Sometimes, if using an audio generator it helps to add a compressor
 (occasionally a multiband compressor). This will reduce the peaks and can also

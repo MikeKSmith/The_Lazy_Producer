@@ -20,15 +20,13 @@ To see the note chance, click on the MIDI clip then click on the arrow at the bo
 
 In the clip below we've set up a Hi-hat pattern of 16th notes. Note that each of them has a 75% probability of playing, and I have added a little random variation to the velocity of the hits. When we play this clip looped, the Hi-hat pattern will be different each loop and will add a little variation and interest.
 
-
-\includegraphics[width=1\linewidth]{images/Probability_Drumkit_HH} 
+<img src="images/Probability_Drumkit_HH.png" width="100%" />
 
 Likewise we can add some additional snare hits in the Kick and Snare clip. In the clip below the snare hits on the 2 and 4 of the bar are always going to be present. But the additional hits may only trigger occasionally. These also have lower velocity which gives them the feel of "ghost notes" - barely heard, but present. This will add a little spice and interest to the Kick and Snare parts.
 
 Combined with the Hi-hat part above you get a drum part that has a decent amount of variation without having to program a lot of different clips or parts.
 
-
-\includegraphics[width=1\linewidth]{images/Probability_Drumkit_KickSnare} 
+<img src="images/Probability_Drumkit_KickSnare.png" width="100%" />
 
 You can imagine employing very similar tricks in lead parts, where there is a "fixed" lead melody in the clip or loop, but additional notes that only occasionally play.
 
@@ -38,20 +36,17 @@ But the note-wise probability extends beyond drum parts.
 
 In the clip below we have a repeating pattern across the notes Bb2-G3. Notes from Bb3-C5 have lower velocity and also lower probability. When we play this clip, we'll have a repeating pattern on the lower notes, but a changing pattern on the higher notes. If you then use the velocity information to change the timbre of the note, then this will add some light and shade into the pattern.
 
-
-\includegraphics[width=1\linewidth]{images/NoteWiseProbability_Full_pattern} 
+<img src="images/NoteWiseProbability_Full_pattern.png" width="100%" />
 
 And extension to this technique is to separate the lower, repeating pattern and the higher notes (with lower velocity and lower probability) into separate clips on separate tracks:
 
 Lower part on one track:
 
-
-\includegraphics[width=1\linewidth]{images/NoteWiseProbability_Lower_notes} 
+<img src="images/NoteWiseProbability_Lower_notes.png" width="100%" />
 
 Higher part on a separate track:
 
-
-\includegraphics[width=1\linewidth]{images/NoteWiseProbability_Higher_notes} 
+<img src="images/NoteWiseProbability_Higher_notes.png" width="100%" />
 
 The advantage of splitting the parts into separate clips (and separate tracks) is that you can shorten the length of the higher note clip - here it's 15 1/16th notes long. That means with each repetition, the notes appear at different positions in the bar and so evolve against the repeating pattern. This is a key concept in balancing predictable and unexpected, as we'll discuss later \@ref(process-balance-unexpected-and-predictable).
 
@@ -61,8 +56,7 @@ By having the notes in different tracks, you can also keep the repeating pattern
 
 In \@ref(recipe-changing-chords), I have suggested using probability on chords. If you add 8 MIDI notes in a chord and specify 50% probability for all of them, then Ableton is going to (effectively) toss a coin for each note. In the real world, when we toss a coin 8 times, we don't always get 4 heads and 4 tails. Sometimes we get 3 heads, 5 tails (or vice versa), and occasionally outcomes like 2 heads, 6 tails. Imagine if in the coin toss, heads means that Ableton plays the note. Then the number of notes that gets played will vary each time the chord is played - sometimes it will be 3, sometimes 6 etc. This means that you can specify as many notes as you like, and tune the probability until you get something that you like the sound of, depending on whether you want more or fewer notes in the resulting chord. It also means that careful choice of notes from the scale within the chord allows you to sometimes get rich, complex chords, sometimes chord inversions.
 
-
-\includegraphics[width=1\linewidth]{images/Note-wise_probability} 
+<img src="images/Note-wise_probability.png" width="100%" />
 
 By specifying higher probability for "root notes" in the chord, you can anchor the chord to a particular scale. As a Lazy (but creative) Producer, you can also allow the tonality (which musical scale) is being implied to vary so that the chords that emerge could fit with a variety of bass root notes, perhaps supplied separately in a different track. Avoiding the third (minor / major) or seventh of the scale can make it easier to achieve this kind of fluid and ambiguous tonality.
 

@@ -18,24 +18,15 @@
 
 
 
-
-\includegraphics[width=1\linewidth]{images/Recipe1_Track1_Chord1} 
-\includegraphics[width=1\linewidth]{images/Recipe1_Track1_Chord2} 
-\includegraphics[width=1\linewidth]{images/Recipe1_Track1_Chord3} 
+<img src="images/Recipe1_Track1_Chord1.png" width="100%" /><img src="images/Recipe1_Track1_Chord2.png" width="100%" /><img src="images/Recipe1_Track1_Chord3.png" width="100%" />
 
 ***Track 2 clips***:
 
-
-\includegraphics[width=1\linewidth]{images/Recipe1_Track2_Chord1} 
-\includegraphics[width=1\linewidth]{images/Recipe1_Track2_Chord2} 
-\includegraphics[width=1\linewidth]{images/Recipe1_Track2_Chord3} 
+<img src="images/Recipe1_Track2_Chord1.png" width="100%" /><img src="images/Recipe1_Track2_Chord2.png" width="100%" /><img src="images/Recipe1_Track2_Chord3.png" width="100%" />
 
 ***Track 3 clips***:
 
-
-\includegraphics[width=1\linewidth]{images/Recipe1_Track3_Chord1} 
-\includegraphics[width=1\linewidth]{images/Recipe1_Track3_Chord2} 
-\includegraphics[width=1\linewidth]{images/Recipe1_Track3_Chord3} 
+<img src="images/Recipe1_Track3_Chord1.png" width="100%" /><img src="images/Recipe1_Track3_Chord2.png" width="100%" /><img src="images/Recipe1_Track3_Chord3.png" width="100%" />
 
 The clips shown above are *my* choice of notes, length etc. and assume that we're doing a slow moving, textured track. You can play with different choices of notes, shorter lengths of clip, more plucky sounds. Perhaps adding an arpeggiator or Note Echo to the track would help movement and retain interest (see Chapter 4 for more details on MIDI effects in Ableton Live).
 

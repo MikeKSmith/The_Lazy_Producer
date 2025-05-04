@@ -22,8 +22,7 @@ The [Hybrid Reverb](https://www.ableton.com/en/live-manual/11/live-audio-effect-
 
 But when you dig into the Convolution IR section you'll also find options for textural processing - this applies a textural Impulse Response (IR) to the sound, so instead of a straight reverb tail, you'll get some additional texture from the IR audio file. The other thing to point out is that there is an option to have User-defined IR. This means that you can find IR audio files for different spaces online at sites like Open Air <https://www.openair.hosted.york.ac.uk> and use some additional IR files for some famous spaces, like Hamilton Mausoleum and York Minster. Obviously finding the right reverb sound for ambient music is kind of a key item. But you don't have to use just one. I like to use a long, lush reverb to help smear sound and create drones. I usually put this on a FX Return channel so I can route several tracks to it and save CPU. But you may also need a shorter reverb for other instruments to give them presence, in the way that a close mic to an instrument in one of these huge reverb spaces will capture more of the raw sound, while the gigantic reverb captures the instrument in the space itself.
 
-
-\includegraphics[width=1\linewidth]{images/Hybrid_Reverb} 
+<img src="images/Hybrid_Reverb.png" width="100%" />
 
 ## Valhalla Supermassive
 
@@ -31,8 +30,7 @@ Here's a third-party effect I couldn't do without. [Valhalla Supermassive](https
 
 To be honest, all of Valhalla DSP's plugins are excellent and reasonably priced. I particularly like the Shimmer device to add shimmer and pitch shift reverb to sounds. Their Delay plugin provides a wide variety of delay types, including tape delay (complete with wobble and drive) but also usefully a reverse delay (where the original audio is played backwards in the delay). I like the latter as the delayed line comes back transformed compared to the input. Again this adds some interest to the part.
 
-
-\includegraphics[width=1\linewidth]{images/Valhalla_Supermassive} 
+<img src="images/Valhalla_Supermassive.png" width="100%" />
 
 ## Echo
 
@@ -40,20 +38,17 @@ I tend to prefer [Live Suite's Echo effect](https://www.ableton.com/en/live-manu
 
 Being a Lazy Producer, I prefer to let random processes tweak the Echo settings. I have built an audio effect rack with a trio of LFOs working on each other and then changing the feedback amount, lower and upper ranges of the EQ so that these wobble about randomly. Using an instance of Dillon Bastan's Strange Mod modulator will achieve similar effect as discussed in \@ref(tools-modulators) While the timing of the Echo is fixed, we have other parameters that mean that the sound is constantly shifting in an unpredictable way. This will prevent the Echo effect from being too "samey" across the track and provide some interesting moments. It's a bit like having a pair of "robot hands" that tweak the Echo settings.
 
-
-\includegraphics[width=1\linewidth]{images/LFO_Echo} 
+<img src="images/LFO_Echo.png" width="100%" />
 
 ## Saturation and Distortion
 
 Saturation may seem like a weird choice for ambient music where much of the music produced is "pristine" and "delicate". But there is a whole sub-genre where gritty, distorted sounds are most definitely a thing. My favourite from Live Suite is the [Saturator plugin](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#saturator) which provides a wide range of subtle distortion and drive. If you need more distortion than saturation then the [Pedal](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#pedal) plugin provides raw Overdrive, Distortion and Fuzz, Saturator allows you to drive the signal and dial in more subtle drive and overtones.
 
-
-\includegraphics[width=1\linewidth]{images/Saturator_Pedal} 
+<img src="images/Saturator_Pedal.png" width="100%" />
 
 Live 12's [Roar](https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#roar) device takes these to the next level though and provides a comprehensive set of tools for applying anything from subtle warmth to the inputs to full-blown distortion. It has a wide range of routing options, including multi-band which allows you to dial in distortion for different frequency bands. This is a device that is really worth exploring to add texture in a wide variety of ways.
 
-
-\includegraphics[width=1\linewidth]{images/Roar} 
+<img src="images/Roar.png" width="100%" />
 
 More about Roar here: <https://www.youtube.com/watch?v=ETzf6O9-6us>
 
@@ -63,8 +58,7 @@ The [Resonator effect](https://www.ableton.com/en/live-manual/11/live-audio-effe
 
 I have found that a little drive to the input signal (which boosts upper resonant frequencies of the audio) works will with resonator to make the result more pronounced.
 
-
-\includegraphics[width=1\linewidth]{images/Resonator} 
+<img src="images/Resonator.png" width="100%" />
 
 More about the Resonator effect here: <https://www.youtube.com/watch?v=wSjp6nX3rYI>
 
@@ -78,8 +72,7 @@ Ableton Live Suite includes three Spectral audio effects. Spectral processing is
 
 [Spectral Resonator](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#spectral-resonator) is a resonator which focuses on different parts of the frequency spectrum, so you can tailor the resonance quite precisely. You can have a static tone for the resonance or pass in a MIDI part to change the resonance around a MIDI part. The different resonance algorithms - Chorus, Wander and Granular all have different sounds and it's worth playing with these to see which ones fit what you're trying to achieve.
 
-
-\includegraphics[width=1\linewidth]{images/Spectral_Devices} 
+<img src="images/Spectral_Devices.png" width="100%" />
 
 Rishabh Rajan has useful YouTube videos explaining the Spectral Time (<https://www.youtube.com/watch?v=KUZLXAK8do4>) and Spectral Resonator (<https://www.youtube.com/watch?v=VAebi_brjEs>) effects.
 
@@ -91,11 +84,9 @@ The Spectral Averaging and Spectral Blurring are my two favourites from this col
 
 The key parameter in both of these plugins is the FFT size which determines the size of the sample window in which the blurring or averaging is taking place. Larger FFT sizes smear more, but take longer to fade in and out since the processing is happening over a larger window of audio. You may also find that you need to increase the gain of the output.
 
+<img src="images/Spectral_Averaging.png" width="100%" />
 
-\includegraphics[width=1\linewidth]{images/Spectral_Averaging} 
-
-
-\includegraphics[width=1\linewidth]{images/Spectral_Blurring} 
+<img src="images/Spectral_Blurring.png" width="100%" />
 
 The whole collection is worth checking out for some very interesting effects, although as you can see above the user interface is VERY bare-bones.
 
@@ -105,15 +96,13 @@ The whole collection is worth checking out for some very interesting effects, al
 
 [Shifter](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#shifter) is a combination of a pitch and frequency shifter and ring modulator. It's a bit of a beast because it can be either subtle and also extremely weird depending on how much shifting you do (and what type). This video provides a nice overview of the different modes and features: <https://www.youtube.com/watch?v=uqY8K8otbp0>
 
-
-\includegraphics[width=1\linewidth]{images/Shifter} 
+<img src="images/Shifter.png" width="100%" />
 
 ### Corpus
 
 [Corpus](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#corpus) is the audio effect companion to the Collision instrument. The input audio is used to excite a resonator - a plate, tube, membrane etc. - which then resonates. Depending on the resonator you choose you get different artefacts and results.
 
-
-\includegraphics[width=1\linewidth]{images/Corpus} 
+<img src="images/Corpus.png" width="100%" />
 
 ## FX in series vs Effects Rack vs Return channels vs Separate tracks
 
@@ -135,5 +124,4 @@ So the choice is yours. Really. Try them all out. See which one works for you in
 
 If your sound has a sharp attack, you may want to soften the send to the FX so that only the tail of the sound gets effected. Use an [Envelope Follower](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#envelope-follower) effect before the audio effect. By setting the Map to 100% lowest and 0% highest (inverting the signal) it will duck the initial part of the sound (turning the send DOWN) and then bring it back up as the audio decays. Not that in the device below I have turned up gain to accentuate the behaviour (basically to make the peak duck enough that the initial part of the audio has a low enough send amount) and I have smoothed out the Rise and Fall amounts which removes any "pumping" of the send to the Return channel effect. By setting a Delay you can also manually dial in how much or little of that initial part of the sound gets sent to the Return channel. This technique can be useful to capture and build drone sounds where you want to avoid sudden changes volume.
 
-
-\includegraphics[width=1\linewidth]{images/Envelope_Follower_Send} 
+<img src="images/Envelope_Follower_Send.png" width="100%" />

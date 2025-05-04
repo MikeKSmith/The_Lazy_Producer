@@ -24,8 +24,7 @@ relative change around the chosen value.
 
 ## Live 12 - LFO shapes and modulation
 
-
-\includegraphics[width=1\linewidth]{images/Live12_LFO_Glider} 
+<img src="images/Live12_LFO_Glider.png" width="100%" />
 
 In the screenshot above, the LFO is changing the value of the mapped parameter
 by 50% relative to its current value.
@@ -41,8 +40,7 @@ with a faster rate of change. Personally I favour these "random but smooth"
 changing LFOs, as the previous "sample and hold" random LFO was a bit too
 "steppy" for my liking.
 
-
-\includegraphics[width=1\linewidth]{images/LFO_Stray} 
+<img src="images/LFO_Stray.png" width="100%" />
 
 There are a couple of additional options in the Live12 LFO - Shape and Steps.
 The Shape amount allows you to alter the shape of the LFO waveform, skewing (in
@@ -53,8 +51,7 @@ shapes. Steps essentially "bit reduces" the waveform, and introduces more
 stepped forms. This might be useful in conjunction with the beat synced mode
 where changed in modulation amounts could occur on 8th or 16th note divisions.
 
-
-\includegraphics[width=1\linewidth]{images/Live12_LFO_shape_steps} 
+<img src="images/Live12_LFO_shape_steps.png" width="100%" />
 
 You can apply LFO modulation directly to parameters of an instrument, effect
 etc. but one useful trick is to then group the device(s) and map a Macro knob to
@@ -74,8 +71,7 @@ mapped parameter and not just remote control it. This means that we can specify
 an amount of modulation on the mapped parameter for the expression to control,
 but the parameter itself can be tweaked by hand to set its level.
 
-
-\includegraphics[width=1\linewidth]{images/Expression_Control_Live12} 
+<img src="images/Expression_Control_Live12.png" width="100%" />
 
 ## Live 12 - Shaper
 
@@ -84,5 +80,4 @@ features the modulation capabilities, similar to LFO and MIDI Expression Control
 above. However in Live 12 there are some additional capabilities for specifying
 whether the Shaper modulation loops, is a One Shot or is triggered Manually.
 
-
-\includegraphics[width=1\linewidth]{images/Live12_Shaper} 
+<img src="images/Live12_Shaper.png" width="100%" />

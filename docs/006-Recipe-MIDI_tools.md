@@ -25,8 +25,7 @@ to 50% and the "maximum" to 0% and the rate is set to 1/4 quarter notes so that
 each beat, the Shaper ducks the gain to produce a pumping "sidechain compressor"
 like effect.
 
-
-\includegraphics[width=1\linewidth]{images/Recipe2_MODULATION_Shaper-gain} 
+<img src="images/Recipe2_MODULATION_Shaper-gain.png" width="100%" />
 
 5.  The second Wavetable instrument "Wavetable pre-compressor" is taking the
 output from the Wavetable instrument but set to "Pre-FX" - before the ducking
@@ -34,13 +33,11 @@ gain reduction is applied. The audio from this track goes ***only*** to the
 Return FX, so essentially we get a nice pad sound, but we never hear the dry
 sound.
 
-
-\includegraphics[width=1\linewidth]{images/Recipe2_MIDI-and-audio-routing} 
+<img src="images/Recipe2_MIDI-and-audio-routing.png" width="100%" />
 
 6.  In your tracks, you can add MIDI plugins to alter the incoming chord. For example:
 
-    
-    \includegraphics[width=1\linewidth]{images/Recipe2_MIDI_fx} 
+    <img src="images/Recipe2_MIDI_fx.png" width="100%" />
 
 You can employ all kinds of MIDI FX here. In this example I have grouped these
 FX into a MIDI Effect Rack and I'm using Macros to allow me to switch on and
@@ -84,23 +81,20 @@ actually Grouped tracks. Let's recreate that now. Create a new MIDI track called
 "Note length" and another called "Arp". In each of these tracks, set the MIDI
 input to Track one (the single note C3 track) and set Monitor to "In".
 
-
-\includegraphics[width=1\linewidth]{images/Recipe2_MIDI_manipulation} 
+<img src="images/Recipe2_MIDI_manipulation.png" width="100%" />
 
 In the "Note Length" track, add a MIDI Note Length MIDI effect. This will be
 used to take the output from Track 1 "MIDI Note" and stretch out the MIDI notes
 to last a nominated number of seconds.
 
-
-\includegraphics[width=1\linewidth]{images/Recipe2_MIDI_NoteLength} 
+<img src="images/Recipe2_MIDI_NoteLength.png" width="100%" />
 
 In the "Arp" track we're going to add an Arpeggiator plugin (surprise!) but also
 another MIDI "Note Length" effect with which we can tweak the note length of the
 output from the Arpeggiator to suite taste, and a Velocity plugin to add a
 little variation to the velocity of the output MIDI notes.
 
-
-\includegraphics[width=1\linewidth]{images/Recipe2_MIDI_Arp} 
+<img src="images/Recipe2_MIDI_Arp.png" width="100%" />
 
 Tweaking the Length and Gate settings of "Note Length" will allow us to alter
 the sound of what is generated from the "Arpeggiator" plugin - note that the
@@ -128,16 +122,14 @@ various MIDI incoming signals to ***ANY*** parameter in Live, including controls
 of other plugins. In the example below we've mapped various parameters to
 controls in the Operator instrument just for illustration.
 
-
-\includegraphics[width=1\linewidth]{images/Expression_control} 
+<img src="images/Expression_control.png" width="100%" />
 
 Sure, instruments like Operator and Wavetable have the ability to vary many
 different parameters using MIDI information, but notice how each of the MIDI
 parameters on the left hand side has a drop-down menu option. Let's look at what
 we can do...
 
-
-\includegraphics[width=1\linewidth]{images/Expression_control_2} 
+<img src="images/Expression_control_2.png" width="100%" />
 
 There's a wide variety of incoming MIDI inputs which can then be used to map to
 plugin controls, as well as a "random" input which will select a new value for

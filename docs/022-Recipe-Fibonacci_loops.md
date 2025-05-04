@@ -21,8 +21,7 @@ but obviously these will repeat much more slowly.
 You might like to use a combination of kit sounds and melodic sounds. You can
 choose notes from a scale or from a chord e.g. C, Eb, G, Bb, D.
 
-
-\includegraphics[width=1\linewidth]{images/Fibonacci_Polymeters} 
+<img src="images/Fibonacci_Polymeters.png" width="100%" />
 
 3\. You can add modulation for the sounds, add randomness in velocity of the
 notes to prevent them from becoming too "samey" or you could add the occasional
@@ -32,8 +31,7 @@ random / quantised pitch shift.
 additional tone shaping and granular delay to the grouped tracks which breathes
 life into the results and prevents them from becoming too stale.
 
-
-\includegraphics[width=1\linewidth]{images/Fibonacci_FX} 
+<img src="images/Fibonacci_FX.png" width="100%" />
 
 5\. Given this basic set up you could apply many of the concepts and ideas
 presented in earlier chapters to further use MIDI in other instruments e.g.

@@ -13,7 +13,7 @@ can later release the track.
 
 ## Key idea {.unnumbered}
 
-I find it useful to separate MIDI tracks that *generate* or *transform* MIDI
+I find it useful to separate MIDI tracks that *generate* and *transform* MIDI
 information from instrument tracks that receive that MIDI information and
 generate sound. The idea is to capture the generated and transformed MIDI for
 later processing. It can then be copied into the instrument track and "bounced
@@ -35,7 +35,34 @@ going to want to apply a little order to the chaos. And in fact, even in the
 creation process taking a little time to plan ahead can open up some new avenues
 for generating, transforming and routing.
 
-## MIDI Generators
+## Random processes are random
+
+If you have used any randomness within processes (and if you haven't why haven't
+you been paying attention up to this point?) then what you'll find is that each
+time you re-open and play the Live set, you ***should*** get a slightly 
+different sounding result. It may not be ***radically*** different, but it is 
+likely to be different enough, that when it comes to mixing before committing to
+a version of the piece, you find some parts that are thinner than expected, or 
+some where there are peaks of volume or resonance that become problematic for 
+mixing.
+
+In that case, it makes sense to try to capture or "render" the MIDI, instrument
+and sound design choices so that you can mix and tweak to get towards a 
+consistent output. 
+
+In extreme cases you may find, as you capture the output of the random processes
+that you don't like the output. In that case you might want to refine these 
+random processes - maybe make them slightly ***less*** random - or tweak 
+settings to try to avoid extreme changes in sound design through reducing 
+modulation levels. But the other option, to be honest is to throw that version
+away and re-render and re-capture the output to see if the random processes 
+spit out something better next time. Don't feel you have to be precious about 
+the output of some random process. There are many more versions of something 
+readily available.
+
+## How to set up Live sets - my experience
+
+### MIDI Generators
 
 I like to have separate tracks for MIDI generators. These are the "starting
 point" of a process. They will be generating MIDI notes through random
@@ -45,7 +72,7 @@ generated MIDI notes into several transformation chains. This will lead to a
 more coherent result since different transformation chains ingest a consistent
 set of generated MIDI input notes.
 
-## MIDI Transformer tracks
+### MIDI Transformer tracks
 
 These tracks will take the MIDI generator process outputs and apply MIDI effects
 and transformations to add additional MIDI notes, information, modulation etc.
@@ -54,7 +81,7 @@ you do that, then you can route the MIDI from this track ***AFTER*** (MIDI) FX
 into another track for further transformation, MIDI effects or to another
 instrument.
 
-## Capturing the MIDI
+### Capturing the MIDI
 
 To capture the random processes from the generation and transformation steps,
 you should create new MIDI tracks that "listen" to the output of the generation
@@ -64,18 +91,20 @@ audio from another track straight through to the effects or instruments on that
 track. Having separate "capturing" MIDI tracks allows you to pick up the
 generated and/or transformed MIDI when you record. This is a good thing to be
 able to "tidy up" or "garden" the generated MIDI information on the road to
-release.
+release. Don't feel you ***have*** to keep the MIDI output from these processes
+unchanged. It's just MIDI. Feel free to cut, move, edit, splice until you get
+something that you prefer.
 
 If you record only into tracks where there is MIDI effects and instruments then
-the transformed MIDI is never captured - only the ***generated*** MIDI. This may
-not be a problem *per se* but when you render out the final audio, you are at
-the mercy of Live's internal random processes and you'll be crossing your
+the ***transformed*** MIDI is never captured - only the original generated MIDI.
+This may not be a problem *per se* but when you render out the final audio, you
+are at the mercy of Live's internal random processes and you'll be crossing your
 fingers that either the result is ***the same*** as you heard previously (if
 Live replays the randomness in the same way each time) or potentially different
 (perhaps if you reopen the set in a later version of Live).
 
-If you capture the (generated ***and*** transformed MIDI) in a separate track,
-then you can use this track as the input for tracks with virtual instruments /
+If you capture the generated ***and*** transformed MIDI in separate tracks,
+then you can use these tracks as the input for tracks with virtual instruments /
 plugins in them. Where these tracks might have had MIDI Monitor set to "In" you
 can now switch that back to "Auto" so that the captured MIDI is used directly as
 the input for that instrument.
@@ -85,7 +114,66 @@ off the generators and MIDI effects in those tracks. This will ensure that it's
 only the captured MIDI that is being used to drive the virtual instruments and
 plugins.
 
-## Modulation on track volume - use the Utility device to modulate GAIN
+
+
+In the screenshot below I have captured the Follow Action chord sequence, and 
+have added some MIDI effects - Arpeggiator, Pitch and Velocity, before 
+routing these into the LABS virtual instrument. Since the MIDI effects here 
+don't involve randomness, it's safe to keep these "inline" with the virtual
+instrument. If I had used randomness, then it might make more sense to have a
+separate MIDI track that captures the output of those transformations before
+sending into the virtual instrument.
+
+<img src="images/Workflow1_MIDI.png" width="100%" />
+
+### Rendering / bouncing down to audio
+
+In the screenshot below I've rendered the MIDI part and virtual instrument to 
+an audio file. This then will "bake in" any MIDI transformation - in this case
+the arpeggiator, pitch shift up an octave, and the velocity curve. Note that I 
+render or "bounce" the output to a new track, leaving the original in place.
+This allows me to come back later and tweak the original settings or re-render 
+without having to undo many actions.
+
+Since the MIDI input clips with Follow Actions have probability on each note
+(see Recipe 1 - Changing Chords for more information) then there's a chance that
+one or two of the generated MIDI chords will have only two notes (down to the
+probability choices). By rendering and listening back, I can assess whether I 
+think the "choices" made through probability work with what else is going on or
+not. Perhaps there's enough going on when the "thin" chord stack happens that 
+it's essentially hidden in the mix. If I really don't like the result, I can
+re-render the audio.
+
+### Group tracks to tidy your Live set
+
+With all of these tracks floating about it can be tricky to keep track of what
+track does what in your Live set. Live's ability to group tracks is a really
+useful feature. It's ***your*** choice how you group them... You can group MIDI
+generation and transformation tracks - the individual tracks will still send
+MIDI output to wherever they are routed - as this allows you to "fold away" the
+generation and transformation processes when it comes to capturing and
+committing for release (assuming you have captured the MIDI as described above
+and copied it into the tracks with virtual instruments / plugins).
+
+Another really useful way to use Groups here is to Group the MIDI + virtual 
+instrument and rendered audio together, then apply creative and mixing effects
+at the Group level rather than on individual tracks.
+
+When I render down the MIDI + virtual instruments, I tend to render without
+creative and mixing effects as I often need to tweak these later, and it's 
+often problematic if I've committed to certain choices early in the process and
+baked this into the resulting audio. Instead what I have been doing is to
+Group the MIDI + virtual instrument track and moving the effects to the Group
+level (including modulation on Gain - see below) so that the rendered audio
+is purely MIDI + virtual instrument. This leaves space for me to tweak the 
+creative and mixing effects later when I'm trying to tidy up the overall mix.
+
+In the screenshot below you'll see that on the Group for "Piano" I've got a 
+compressor, EQ, Soothe dynamic EQ and Utility plugins (for automating gain).
+
+<img src="images/Workflow2_Group.png" width="100%" />
+
+### Modulation on track volume - use the Utility device to modulate GAIN
 
 If you have gone completely down the rabbit hole of random modulation of your
 track volumes, it may have been tempting to modulate the Mixer Volume so that
@@ -97,13 +185,10 @@ on the mixer to change the ***overall*** level of a track ***relative*** to the
 others. This is a good tip for audio production generally - automate your track
 Gain, not your Mixer Volume.
 
-## Group tracks to tidy your Live set
+### Turn off what you're not using
 
-With all of these tracks floating about it can be tricky to keep track of what
-track does what in your Live set. Live's ability to group tracks is a really
-useful feature. It's ***your*** choice how you group them... You can group MIDI
-generation and transformation tracks - the individual tracks will still send
-MIDI output to wherever they are routed - as this allows you to "fold away" the
-generation and transformation processes when it comes to capturing and
-committing for release (assuming you have captured the MIDI as described above
-and copied it into the tracks with virtual instruments / plugins).
+Having done these steps - Grouping, moving effects and rendering MIDI + virtual
+instruments I can now "switch off" the virtual instrument channel and save some
+CPU (as I've done in the screenshot below).
+
+<img src="images/Workflow3_Rendered.png" width="100%" />
