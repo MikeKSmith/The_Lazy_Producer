@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  title: "The Lazy Producer"
+  page-navigation: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+    search: true
+  sidebar:
+    style: "floating"
+    contents: /*
+    
+format:
+  html:
+    theme: cosmo
+    toc: true
+    
+lightbox: true
+embed-resources: true
