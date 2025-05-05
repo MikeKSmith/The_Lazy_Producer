@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./006-Recipe-MIDI_tools.html" rel="next">
+<link href="./004-Tools-MIDI_tools.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -39,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -102,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./005-Process-Routing.html">Process - Routing MIDI and Audio</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -146,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./005-Process-Routing.html" class="sidebar-item-text sidebar-link">
+  <a href="./005-Process-Routing.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Process - Routing MIDI and Audio</span></a>
   </div>
 </li>
@@ -298,23 +303,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
-  <ul class="collapse">
-  <li><a href="#you-shouldnt-read-this-book" id="toc-you-shouldnt-read-this-book" class="nav-link" data-scroll-target="#you-shouldnt-read-this-book">You shouldn’t read this book</a></li>
-  <li><a href="#but-if-you-do-read-this-book-what-should-you-expect" id="toc-but-if-you-do-read-this-book-what-should-you-expect" class="nav-link" data-scroll-target="#but-if-you-do-read-this-book-what-should-you-expect">But if you DO read this book, what should you expect?</a></li>
-  <li><a href="#what-do-you-mean-lazy-producer" id="toc-what-do-you-mean-lazy-producer" class="nav-link" data-scroll-target="#what-do-you-mean-lazy-producer">What do you mean, “Lazy Producer”?</a></li>
-  <li><a href="#lorem-ipsum" id="toc-lorem-ipsum" class="nav-link" data-scroll-target="#lorem-ipsum">Lorem Ipsum</a></li>
-  <li><a href="#reduce-reuse-recycle" id="toc-reduce-reuse-recycle" class="nav-link" data-scroll-target="#reduce-reuse-recycle">Reduce, reuse, recycle</a></li>
-  <li><a href="#what-will-i-need-to-be-able-to-use-the-ideas-in-this-book" id="toc-what-will-i-need-to-be-able-to-use-the-ideas-in-this-book" class="nav-link" data-scroll-target="#what-will-i-need-to-be-able-to-use-the-ideas-in-this-book">What will I need to be able to use the ideas in this book?</a></li>
-  <li><a href="#why-ableton" id="toc-why-ableton" class="nav-link" data-scroll-target="#why-ableton">Why Ableton?</a></li>
-  <li><a href="#structure-of-this-book" id="toc-structure-of-this-book" class="nav-link" data-scroll-target="#structure-of-this-book">Structure of this book</a>
-  <ul class="collapse">
-  <li><a href="#recipes" id="toc-recipes" class="nav-link" data-scroll-target="#recipes">Recipes</a></li>
-  <li><a href="#process" id="toc-process" class="nav-link" data-scroll-target="#process">Process</a></li>
-  <li><a href="#tools-and-plugins" id="toc-tools-and-plugins" class="nav-link" data-scroll-target="#tools-and-plugins">Tools and plugins</a></li>
-  </ul></li>
-  <li><a href="#who-am-i" id="toc-who-am-i" class="nav-link" data-scroll-target="#who-am-i">Who am I?</a></li>
-  </ul></li>
+  <li><a href="#process-routing" id="toc-process-routing" class="nav-link active" data-scroll-target="#process-routing">Process - Routing MIDI and Audio</a></li>
   </ul>
 </nav>
     </div>
@@ -324,83 +313,42 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<section id="you-shouldnt-read-this-book" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="you-shouldnt-read-this-book">You shouldn’t read this book</h2>
-<p>If you’re looking for a guide to creating tracks from start to finish in a DAW then this is not that book.</p>
-<p>If you’re looking for a description of recording a band or producing genres outside of electronic or ambient music, this is not that book.</p>
-<p>If you’re looking for an in-depth guide to Ableton Live Suite, <a href="https://www.ableton.com/en/manual/welcome-to-live/">then you should read the manual</a>. I’m assuming you know your way around Ableton Live.</p>
-<p>If you are looking for generic tips on creating music I wholeheartedly recommend reading “Making Music: 74 Creative Strategies for Electronic Music Producers” by Dennis DeSantis<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. This is a great book and will help you get through difficulties starting, continuing and finishing your compositions.</p>
-<p>I also recommend Loopop’s “In-complete book of electronic music tips and tricks” available when you sign up as a Patron (<a href="https://www.patreon.com/loopop" class="uri">https://www.patreon.com/loopop</a>). His book contains an assortment of tips and tricks for making music including ideas for generative music.</p>
-</section>
-<section id="but-if-you-do-read-this-book-what-should-you-expect" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="but-if-you-do-read-this-book-what-should-you-expect">But if you DO read this book, what should you expect?</h2>
-<p>But if you’re looking for some ways to generate fresh ideas to get you started and make some nice sounds that you could later build up into finished tracks, then this <strong><em>IS</em></strong> that book. What I’m going to try to present here is a collection of “starter ideas” or recipes for you to follow. I’ll also talk a bit about some specific tools and plugins you might use, and touch on some general processes that I use in turning the techniques here into ambient, textural and generative music.</p>
-</section>
-<section id="what-do-you-mean-lazy-producer" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="what-do-you-mean-lazy-producer">What do you mean, “Lazy Producer”?</h2>
-<p>Most professional musicians, music creators and producers I know are very hard working. They spend a LOT of time crafting a tune, song or mix with care and attention to making the final track as good as it can be. These individuals are most definitely, categorically NOT lazy.</p>
-<p>The typical Ableton Live set I see from most electronic music producers has a huge number of tracks, precision edits, detailed automation, fills, transitions, risers, “ear-candy”. It’s a technicolor riot of clips. In stark contrast, my typical Live set for a track may have around 12 tracks. I use randomness, probability and automation to make things change from one bar or section to another. I start tracks largely by letting the computer make choices by finding the “best” settings in the randomness and probability parameters or “garden” the generated random MIDI and audio to create a little more order. I am a Lazy Producer.</p>
-<p>I will use the shorthand “Lazy Producer” in this book meaning that the techniques described will get you started on tracks, but are probably not finished tracks in themselves. However, if you’re a REALLY Lazy Producer, they might be. I have been known to do this.</p>
-</section>
-<section id="lorem-ipsum" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="lorem-ipsum">Lorem Ipsum</h2>
-<p>There’s a technique used in developing web pages and other documents where you can create placeholder text and images to fill space while you concentrate on layout, functionality of the page, the user experience and so on. This placeholder text is nonsense and is not there to be read by anyone, but it needs to take up the right amount of space and have the appearance of genuine content. It’s not enough to mash on the keyboard and write “<em>reotiuyerwlgkjdfi ughweriugt hoierug oeriubgioeruhoicr evhgieur hoieruhgoiuewrhgiuerhg coireuh voerwiugh oewrihg oiwru gh</em>” because that doesn’t have the right breakdown of syllables, spaces, sentences. Also, as the developer of the page you don’t want to have to take time to write anything to fill the space. As a consequence, developers rely on Lorem Ipsum text generators like the one at <a href="https://www.lipsum.com" class="uri">https://www.lipsum.com</a>, to generate paragraphs of text. Here’s an example of a paragraph generated from the site mentioned.</p>
-<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius gravida tortor nec dapibus. Donec at viverra dui, sed imperdiet ante. Integer ut dapibus leo. Quisque elementum tristique malesuada. Praesent venenatis elit eget mauris porta, in facilisis arcu aliquam. Phasellus ac leo tempus, pretium felis sit amet, sagittis nibh. Curabitur fermentum et dui in porttitor. Nulla et porta enim. Curabitur bibendum odio nisl, quis placerat lacus sodales quis. Vestibulum ut mollis urna. Mauris nec quam sit amet justo pretium aliquet.</em></p>
-<p>Many of the techniques I’m describing in this book are like Lorem Ipsum but for music. You can use them to generate content that is a placeholder in a production while you work on sound design, or to create musical or rhythm ideas that you can bounce off in the creation of new parts. Then when the new idea is created it will be safe to delete the placeholder content and retain the good bits.</p>
-<p>As a Lazy Producer, I often wind up keeping the Lorem Ipsum music if it sounds good.</p>
-</section>
-<section id="reduce-reuse-recycle" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="reduce-reuse-recycle">Reduce, reuse, recycle</h2>
-<p>It’s natural as producers to keep an eye on developers producing sample packs, plugins and hardware and wondering if <strong><em>THIS</em></strong> product is going to make a difference to my next track. What I’d like to propose is that YOU can produce sample packs that work for YOU and the style of music you make much better than a third party developer. So while you work through the techniques in this book, save the results and save the clips (Ableton’s Live Clips) to your User Library, organising by type or feature, so that when you next need a new part or track starter, you can dip into this library and recycle what you have already prepared.</p>
-<p>As a Lazy Producer I reuse MIDI parts that sound good across MANY tracks. This doesn’t necessarily mean that many parts play the EXACT same MIDI part, but there are things that can be done with the same MIDI part that recycle it - making changes, but keeping parts of the original. I will demonstrate techniques for doing that in subsequent chapters.</p>
-</section>
-<section id="what-will-i-need-to-be-able-to-use-the-ideas-in-this-book" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="what-will-i-need-to-be-able-to-use-the-ideas-in-this-book">What will I need to be able to use the ideas in this book?</h2>
-<p>You will get most out of this book if you have Ableton Live Suite (from v11 onwards). Some of the ideas could be translated to other DAWs, but there are some features like note-wise probability which I’m not sure how to replicate in other DAWs.</p>
-<p>Many of the tools and plugins discussed use Max For Live, which comes bundled with Ableton Suite. If you <strong><em>don’t</em></strong> have Ableton Suite, then you can purchase Max For Live separately from ableton.com. You <strong><em>don’t</em></strong> have to purchase the full Max license from Cycling 74 to use Max For Live.</p>
-<p>I’m not assuming that you know how to program with Max For Live - you only need to be aware that plugins we’re talking about are programmed with that platform, so it needs to be available on your computer.</p>
-</section>
-<section id="why-ableton" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="why-ableton">Why Ableton?</h2>
-<p>I am a long time Ableton user (since Live 4). As I write this guide, I am using Live 12.1. I have a strong belief that Ableton Suite can be used much like a modular synthesiser - with the combination of audio and MIDI routing within Live, coupled with Max For Live devices, this amazing DAW can do so much. In fact, as you read through the chapters of the book you’ll see how many of the tools, plugins and methods we’ll talk about mimic what you would see and how you might use them for generative music in a modular synthesiser rack.</p>
-</section>
-<section id="structure-of-this-book" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="structure-of-this-book">Structure of this book</h2>
-<p>If you flick through the book you’ll see different types of chapter.</p>
-<section id="recipes" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="recipes">Recipes</h3>
-<p>Recipes chapters introduce a set of instructions that you can follow to create your own music using randomness and probability i.e.&nbsp;generative music. If you’re a Lazy Producer like me then you can use these recipes to generate ideas and sounds that you can then use to start your own process of creating a track. If you’re a lazy reader too, then you can skip straight to these chapters and follow the recipe. If you’re a creatively Lazy Producer then you can tweak the recipes or combine them with other recipes to make your own creations. That’s OK.</p>
-</section>
-<section id="process" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="process">Process</h3>
-<p>Process chapters talk about general ideas that can be applied within Ableton Live or potentially to other DAWs or music making processes. I’ll try to steer clear of specific discussion of tools or plugins in these chapters.</p>
-</section>
-<section id="tools-and-plugins" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="tools-and-plugins">Tools and plugins</h3>
-<p>The chapters for geeks and musicians with Gear Acquisition Syndrome (GAS). If you want to get really nerdy or think about acquiring new plugins then these are the chapters for you. If you have already purchased Ableton Live then you have already invested a large amount on music making equipment. My goal here is not to persuade you to part with significant additional amounts of cash, but some of the plugins have an associated, although modest, cost.</p>
-</section>
-</section>
-<section id="who-am-i" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="who-am-i">Who am I?</h2>
-<p>My name is Mike K Smith. I trained as a statistician and work as a data scientist in the pharmaceutical industry. I identify as a professional geek. Since making ambient music is a passion for me and doesn’t have to pay the bills, I have the luxury of being a “Lazy Producer”.</p>
-<p>I make ambient, textural and sometimes generative music mostly using Ableton Live. I have released 2 albums collaborating with other musicians - where they prepared starter audio “stems” of tracks which I then augmented and created finished tracks. I have also produced an album of drone and textural music under my own name.</p>
-<p>You can find my music here:</p>
-<p><a href="https://mikeksmith.bandcamp.com" class="uri">https://mikeksmith.bandcamp.com</a></p>
-<p><a href="https://soundcloud.com/mikeksmith" class="uri">https://soundcloud.com/mikeksmith</a></p>
+<section id="process-routing" class="level1">
+<h1>Process - Routing MIDI and Audio</h1>
+<p>In the spirit of “The Lazy Producer” I like to reuse MIDI and Audio inputs across many tracks, often adding MIDI effects (as discussed) or audio effects. The benefit of this is that the tracks which reuse the same input are related to the original in pitch but with different timbre if they use different synth sounds, or have different audio effects applied. In Ableton Live it’s trivial to route one track (either MIDI or audio) into another - either through “pushing” the output of a track to another or specifying that a track takes the output of another as “input” and then monitoring that input.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Reusing MIDI or audio tracks across many channels ensures that the different tracks are related in their input source, even if additional MIDI or audio effects are applied. This provides a level of coherence between sounds and tracks, the “predictable” in our balance between unexpected and predictable. This helps the listener hear the sounds as coming from the same “family” even if the actual sounds in each track are different. Exploiting this, it’s possible to layer up tracks that are pretty much guaranteed to work well together, while exploiting different sound sources, timbres, even pitches (if using MIDI input) or resonances (if using Audio input).</p>
+</div>
+</div>
+<p>In Ableton Live <a href="https://www.ableton.com/en/live-manual/11/routing-and-i-o/#routing-and-io">we have a couple of ways to either “push” or “pull” MIDI or audio from one track into another</a>. In the image below, MIDI received by Track 1 is “pushed” (via MIDI To choices) to Track 2 which contains an instance of Operator. The second box below the MIDI Track specifies that the MIDI is to be sent to the input of the first MIDI device in this track - the Operator instrument in this case. You don’t <strong><em>have</em></strong> to have this specified, but in this case it means that the Monitor setting in Track 2 can be left on “Auto”. You can also route the input to a specific device in an instrument rack. You can use this approach to send MIDI from multiple MIDI tracks to <strong><em>the same device</em></strong>. For example if you have separate MIDI patterns for Kick, Snare and High-hat these can be sent to the same instrument track containing a Drum Rack. This can be useful if you want to apply MIDI effects, randomness, follow-actions or modulation to the high-hat but not the kick.</p>
+<p>The third track (MIDI) here is “pulling” the MIDI from Track 1. Note that the Monitor is set to “In” so that it “listens” for the MIDI being sent. In this case I can add a MIDI device like Note Length to “stretch” the incoming MIDI and then apply an Arpeggiator to that to produce new moving parts that are related to the sequence in Track 1, but different.</p>
+<p>The fourth track (Audio) here is “pulling” the audio from Track 3 (Wavetable). Similar to Track 3, it needs the Monitor set to “In” to “listen” for the audio output. In this track we’re also showing the various options for where to grab audio - it can be “Pre FX”, “Post FX” or “Post Mixer”. “Pre FX” means that the audio is grabbed by the track before it goes through any audio processing on the input track. So you can apply different effects to the same raw audio source - some on Track 3 and some via Track 4. “Post FX” means that it grabs audio after effects have been applied. “Post Mixer” means that track volumes and panning are applied prior to grabbing the audio. “Post Mixer” might be handy if you wish to control levels from only one track.</p>
+<p>In MIDI tracks the “Pre FX” and “Post FX” apply to MIDI effects as well, so you can grab MIDI inputs either before MIDI effects are applied, or afterwards. Since Ableton’s track routing works this way consistently, it’s possible to add intermediate MIDI tracks with no instruments, but “listening” to the MIDI output at a particular state (“Pre” or “Post” FX on the source track) and then have additional tracks that exploit the intermediate track. This flexibility and ease of routing is a massive bonus for Ableton. It’s possible to reuse inputs across multiple tracks in multiple ways to do a huge range with them. In particular I use this technique to build texture, especially in “drone” tracks where I can apply different resonators, textural effects to audio inputs from the same source and then blend these across tracks.</p>
+<p>An alternative approach to the same problem would be to employ “Instrument Racks” or “Effect Racks” in one track. However, the benefit from the approach above is that each track can then use Return track sends to apply effects. It also makes live performance somewhat easier since you can quickly see the levels of each track and control these via a MIDI controller device like Ableton Push.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Routing.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Routing.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The flexibility and ease of routing audio and MIDI around in Live makes it a very versatile platform for creating complex signal paths, and apply different effects and modulation at a variety of points both before the MIDI information is used by an instrument, and after the audio is creating via the instrument and effects.</p>
 
 
 </section>
-</section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>DeSantis, D.&nbsp;<em>Making Music: 74 Creative Strategies for Electronic Music Producers</em>. Ableton AG, 2015.&nbsp;<a href="https://cdn-resources.ableton.com/resources/uploads/makingmusic/MakingMusic_DennisDeSantis.pdf" class="uri">https://cdn-resources.ableton.com/resources/uploads/makingmusic/MakingMusic_DennisDeSantis.pdf</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -788,7 +736,44 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./004-Tools-MIDI_tools.html" class="pagination-link  aria-label=" tools="" -="" midi="" tools:="" chords="" and="" added="" notes"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Tools - MIDI tools: chords and added notes</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./006-Recipe-MIDI_tools.html" class="pagination-link" aria-label="Recipe - Doing more with less using MIDI tools and plugins">
+        <span class="nav-page-text">Recipe - Doing more with less using MIDI tools and plugins</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","descPosition":"bottom","loop":false});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 

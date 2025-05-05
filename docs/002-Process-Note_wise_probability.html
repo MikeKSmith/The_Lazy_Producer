@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./003-Process-Follow_Actions.html" rel="next">
+<link href="./001-Recipe-Changing_Chords.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -39,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -102,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./002-Process-Note_wise_probability.html">Process - Note-wise probability</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -128,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./002-Process-Note_wise_probability.html" class="sidebar-item-text sidebar-link">
+  <a href="./002-Process-Note_wise_probability.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Process - Note-wise probability</span></a>
   </div>
 </li>
@@ -298,22 +303,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
+  <li><a href="#process-note-wise-probability" id="toc-process-note-wise-probability" class="nav-link active" data-scroll-target="#process-note-wise-probability">Process - Note-wise probability</a>
   <ul class="collapse">
-  <li><a href="#you-shouldnt-read-this-book" id="toc-you-shouldnt-read-this-book" class="nav-link" data-scroll-target="#you-shouldnt-read-this-book">You shouldn’t read this book</a></li>
-  <li><a href="#but-if-you-do-read-this-book-what-should-you-expect" id="toc-but-if-you-do-read-this-book-what-should-you-expect" class="nav-link" data-scroll-target="#but-if-you-do-read-this-book-what-should-you-expect">But if you DO read this book, what should you expect?</a></li>
-  <li><a href="#what-do-you-mean-lazy-producer" id="toc-what-do-you-mean-lazy-producer" class="nav-link" data-scroll-target="#what-do-you-mean-lazy-producer">What do you mean, “Lazy Producer”?</a></li>
-  <li><a href="#lorem-ipsum" id="toc-lorem-ipsum" class="nav-link" data-scroll-target="#lorem-ipsum">Lorem Ipsum</a></li>
-  <li><a href="#reduce-reuse-recycle" id="toc-reduce-reuse-recycle" class="nav-link" data-scroll-target="#reduce-reuse-recycle">Reduce, reuse, recycle</a></li>
-  <li><a href="#what-will-i-need-to-be-able-to-use-the-ideas-in-this-book" id="toc-what-will-i-need-to-be-able-to-use-the-ideas-in-this-book" class="nav-link" data-scroll-target="#what-will-i-need-to-be-able-to-use-the-ideas-in-this-book">What will I need to be able to use the ideas in this book?</a></li>
-  <li><a href="#why-ableton" id="toc-why-ableton" class="nav-link" data-scroll-target="#why-ableton">Why Ableton?</a></li>
-  <li><a href="#structure-of-this-book" id="toc-structure-of-this-book" class="nav-link" data-scroll-target="#structure-of-this-book">Structure of this book</a>
-  <ul class="collapse">
-  <li><a href="#recipes" id="toc-recipes" class="nav-link" data-scroll-target="#recipes">Recipes</a></li>
-  <li><a href="#process" id="toc-process" class="nav-link" data-scroll-target="#process">Process</a></li>
-  <li><a href="#tools-and-plugins" id="toc-tools-and-plugins" class="nav-link" data-scroll-target="#tools-and-plugins">Tools and plugins</a></li>
-  </ul></li>
-  <li><a href="#who-am-i" id="toc-who-am-i" class="nav-link" data-scroll-target="#who-am-i">Who am I?</a></li>
+  <li><a href="#drum-parts" id="toc-drum-parts" class="nav-link" data-scroll-target="#drum-parts">Drum parts</a></li>
+  <li><a href="#lead-parts" id="toc-lead-parts" class="nav-link" data-scroll-target="#lead-parts">Lead parts</a></li>
+  <li><a href="#chord-parts" id="toc-chord-parts" class="nav-link" data-scroll-target="#chord-parts">Chord parts</a></li>
+  <li><a href="#live-12---grouped-notes" id="toc-live-12---grouped-notes" class="nav-link" data-scroll-target="#live-12---grouped-notes">Live 12 - Grouped notes</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -324,83 +319,110 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<section id="you-shouldnt-read-this-book" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="you-shouldnt-read-this-book">You shouldn’t read this book</h2>
-<p>If you’re looking for a guide to creating tracks from start to finish in a DAW then this is not that book.</p>
-<p>If you’re looking for a description of recording a band or producing genres outside of electronic or ambient music, this is not that book.</p>
-<p>If you’re looking for an in-depth guide to Ableton Live Suite, <a href="https://www.ableton.com/en/manual/welcome-to-live/">then you should read the manual</a>. I’m assuming you know your way around Ableton Live.</p>
-<p>If you are looking for generic tips on creating music I wholeheartedly recommend reading “Making Music: 74 Creative Strategies for Electronic Music Producers” by Dennis DeSantis<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. This is a great book and will help you get through difficulties starting, continuing and finishing your compositions.</p>
-<p>I also recommend Loopop’s “In-complete book of electronic music tips and tricks” available when you sign up as a Patron (<a href="https://www.patreon.com/loopop" class="uri">https://www.patreon.com/loopop</a>). His book contains an assortment of tips and tricks for making music including ideas for generative music.</p>
+<section id="process-note-wise-probability" class="level1">
+<h1>Process - Note-wise probability</h1>
+<p><a href="https://www.ableton.com/en/live-manual/11/welcome-to-live/#welcome-to-live">Ableton Live 11</a> brought us the ability to specify not just the velocity of each note in a MIDI clip, but the probability that that note would play. This is a game changer for the Lazy Producer. Adding variation to MIDI parts is now much easier if you define the lower probability for “fill” notes and higher probability for notes that you want to “anchor” in the clip. Lower probability means that each note is <strong><em>less</em></strong> likely to play, while higher probability means that each note is <strong><em>more</em></strong> likely to play. A probability of 100% means that the note will <strong><em>ALWAYS</em></strong> play.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using probability with MIDI notes means that we can create patterns where there are some notes that will definitely play, but some other notes where with each cycle of a loop, there is a chance that the note will play and some chance the note will not play. Using probability moves us away from static and predictable loops into a territory where there is an element of surprise and variation with each loop cycle.</p>
+</div>
+</div>
+<section id="drum-parts" class="level3">
+<h3 class="anchored" data-anchor-id="drum-parts">Drum parts</h3>
+<p>One clear use of this is in drum parts. You can program the core drum part that is constant throughout the clip or song, but then add passing notes, “fills” with lower probability. Or reduce the probability on high-hat parts, shakers, claps, lower velocity snare or kick parts so that these only sound once in a while. With this, it’s possible to specify a clip where core elements happen every time, but the “fills” and extra sounds only happen occasionally. Unfortunately, it isn’t possible to specify exactly <strong><em>when</em></strong> those notes will or won’t play, just probability. So it’s not possible to specify “Play once, then miss for the next 3 bars” (as is possible with Elektron hardware sequencers).</p>
+<p>To see the note chance, click on the MIDI clip then click on the arrow at the bottom of the piano-roll to show velocity. To see the chance / note probability, click on the button below the velocity.</p>
+<p>In the clip below we’ve set up a Hi-hat pattern of 16th notes. Note that each of them has a 75% probability of playing, and I have added a little random variation to the velocity of the hits. When we play this clip looped, the Hi-hat pattern will be different each loop and will add a little variation and interest.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Probability_Drumkit_HH.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Probability_Drumkit_HH.png" class="img-fluid figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Likewise we can add some additional snare hits in the Kick and Snare clip. In the clip below the snare hits on the 2 and 4 of the bar are always going to be present. But the additional hits may only trigger occasionally. These also have lower velocity which gives them the feel of “ghost notes” - barely heard, but present. This will add a little spice and interest to the Kick and Snare parts.</p>
+<p>Combined with the Hi-hat part above you get a drum part that has a decent amount of variation without having to program a lot of different clips or parts.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Probability_Drumkit_KickSnare.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Probability_Drumkit_KickSnare.png" class="img-fluid figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>You can imagine employing very similar tricks in lead parts, where there is a “fixed” lead melody in the clip or loop, but additional notes that only occasionally play.</p>
+<p>But the note-wise probability extends beyond drum parts.</p>
 </section>
-<section id="but-if-you-do-read-this-book-what-should-you-expect" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="but-if-you-do-read-this-book-what-should-you-expect">But if you DO read this book, what should you expect?</h2>
-<p>But if you’re looking for some ways to generate fresh ideas to get you started and make some nice sounds that you could later build up into finished tracks, then this <strong><em>IS</em></strong> that book. What I’m going to try to present here is a collection of “starter ideas” or recipes for you to follow. I’ll also talk a bit about some specific tools and plugins you might use, and touch on some general processes that I use in turning the techniques here into ambient, textural and generative music.</p>
+<section id="lead-parts" class="level3">
+<h3 class="anchored" data-anchor-id="lead-parts">Lead parts</h3>
+<p>In the clip below we have a repeating pattern across the notes Bb2-G3. Notes from Bb3-C5 have lower velocity and also lower probability. When we play this clip, we’ll have a repeating pattern on the lower notes, but a changing pattern on the higher notes. If you then use the velocity information to change the timbre of the note, then this will add some light and shade into the pattern.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/NoteWiseProbability_Full_pattern.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/NoteWiseProbability_Full_pattern.png" class="img-fluid figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>And extension to this technique is to separate the lower, repeating pattern and the higher notes (with lower velocity and lower probability) into separate clips on separate tracks:</p>
+<p>Lower part on one track:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/NoteWiseProbability_Lower_notes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/NoteWiseProbability_Lower_notes.png" class="img-fluid figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Higher part on a separate track:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/NoteWiseProbability_Higher_notes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/NoteWiseProbability_Higher_notes.png" class="img-fluid figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The advantage of splitting the parts into separate clips (and separate tracks) is that you can shorten the length of the higher note clip - here it’s 15 1/16th notes long. That means with each repetition, the notes appear at different positions in the bar and so evolve against the repeating pattern. This is a key concept in balancing predictable and unexpected, as we’ll discuss later @ref(process-balance-unexpected-and-predictable).</p>
+<p>By having the notes in different tracks, you can also keep the repeating pattern “dry” and apply delay or echo to the upper part. You could also opt to modulate or vary the timbre and sound of either track to keep the repeating part interesting.</p>
 </section>
-<section id="what-do-you-mean-lazy-producer" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="what-do-you-mean-lazy-producer">What do you mean, “Lazy Producer”?</h2>
-<p>Most professional musicians, music creators and producers I know are very hard working. They spend a LOT of time crafting a tune, song or mix with care and attention to making the final track as good as it can be. These individuals are most definitely, categorically NOT lazy.</p>
-<p>The typical Ableton Live set I see from most electronic music producers has a huge number of tracks, precision edits, detailed automation, fills, transitions, risers, “ear-candy”. It’s a technicolor riot of clips. In stark contrast, my typical Live set for a track may have around 12 tracks. I use randomness, probability and automation to make things change from one bar or section to another. I start tracks largely by letting the computer make choices by finding the “best” settings in the randomness and probability parameters or “garden” the generated random MIDI and audio to create a little more order. I am a Lazy Producer.</p>
-<p>I will use the shorthand “Lazy Producer” in this book meaning that the techniques described will get you started on tracks, but are probably not finished tracks in themselves. However, if you’re a REALLY Lazy Producer, they might be. I have been known to do this.</p>
+<section id="chord-parts" class="level3">
+<h3 class="anchored" data-anchor-id="chord-parts">Chord parts</h3>
+<p>In @ref(recipe-changing-chords), I have suggested using probability on chords. If you add 8 MIDI notes in a chord and specify 50% probability for all of them, then Ableton is going to (effectively) toss a coin for each note. In the real world, when we toss a coin 8 times, we don’t always get 4 heads and 4 tails. Sometimes we get 3 heads, 5 tails (or vice versa), and occasionally outcomes like 2 heads, 6 tails. Imagine if in the coin toss, heads means that Ableton plays the note. Then the number of notes that gets played will vary each time the chord is played - sometimes it will be 3, sometimes 6 etc. This means that you can specify as many notes as you like, and tune the probability until you get something that you like the sound of, depending on whether you want more or fewer notes in the resulting chord. It also means that careful choice of notes from the scale within the chord allows you to sometimes get rich, complex chords, sometimes chord inversions.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Note-wise_probability.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Note-wise_probability.png" class="img-fluid figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>By specifying higher probability for “root notes” in the chord, you can anchor the chord to a particular scale. As a Lazy (but creative) Producer, you can also allow the tonality (which musical scale) is being implied to vary so that the chords that emerge could fit with a variety of bass root notes, perhaps supplied separately in a different track. Avoiding the third (minor / major) or seventh of the scale can make it easier to achieve this kind of fluid and ambiguous tonality.</p>
+<p>In that same recipe, I have applied this idea across tracks as well. Using the same MIDI chord idea across all tracks, but then changing clip lengths within tracks (so each clip within a track has a different length) and between tracks (so that adjacent clips in a scene have different lengths) and then coupling this with Follow Actions as described in @ref(process-follow-actions) to progress through the clips, means that the chord patterns change more subtly and gradually than having block changes in tonality and scale. Including note-wise probability within clips also means that the next time the clip plays you get a slightly different result. Again, balancing something predictable - chords with a sequence of tonality / predictable root notes - with the unpredictable - exactly what notes are being played from the chord and that occasionally the chords could work in both keys - means that the listener takes longer to get bored with the sequence.</p>
 </section>
-<section id="lorem-ipsum" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="lorem-ipsum">Lorem Ipsum</h2>
-<p>There’s a technique used in developing web pages and other documents where you can create placeholder text and images to fill space while you concentrate on layout, functionality of the page, the user experience and so on. This placeholder text is nonsense and is not there to be read by anyone, but it needs to take up the right amount of space and have the appearance of genuine content. It’s not enough to mash on the keyboard and write “<em>reotiuyerwlgkjdfi ughweriugt hoierug oeriubgioeruhoicr evhgieur hoieruhgoiuewrhgiuerhg coireuh voerwiugh oewrihg oiwru gh</em>” because that doesn’t have the right breakdown of syllables, spaces, sentences. Also, as the developer of the page you don’t want to have to take time to write anything to fill the space. As a consequence, developers rely on Lorem Ipsum text generators like the one at <a href="https://www.lipsum.com" class="uri">https://www.lipsum.com</a>, to generate paragraphs of text. Here’s an example of a paragraph generated from the site mentioned.</p>
-<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius gravida tortor nec dapibus. Donec at viverra dui, sed imperdiet ante. Integer ut dapibus leo. Quisque elementum tristique malesuada. Praesent venenatis elit eget mauris porta, in facilisis arcu aliquam. Phasellus ac leo tempus, pretium felis sit amet, sagittis nibh. Curabitur fermentum et dui in porttitor. Nulla et porta enim. Curabitur bibendum odio nisl, quis placerat lacus sodales quis. Vestibulum ut mollis urna. Mauris nec quam sit amet justo pretium aliquet.</em></p>
-<p>Many of the techniques I’m describing in this book are like Lorem Ipsum but for music. You can use them to generate content that is a placeholder in a production while you work on sound design, or to create musical or rhythm ideas that you can bounce off in the creation of new parts. Then when the new idea is created it will be safe to delete the placeholder content and retain the good bits.</p>
-<p>As a Lazy Producer, I often wind up keeping the Lorem Ipsum music if it sounds good.</p>
-</section>
-<section id="reduce-reuse-recycle" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="reduce-reuse-recycle">Reduce, reuse, recycle</h2>
-<p>It’s natural as producers to keep an eye on developers producing sample packs, plugins and hardware and wondering if <strong><em>THIS</em></strong> product is going to make a difference to my next track. What I’d like to propose is that YOU can produce sample packs that work for YOU and the style of music you make much better than a third party developer. So while you work through the techniques in this book, save the results and save the clips (Ableton’s Live Clips) to your User Library, organising by type or feature, so that when you next need a new part or track starter, you can dip into this library and recycle what you have already prepared.</p>
-<p>As a Lazy Producer I reuse MIDI parts that sound good across MANY tracks. This doesn’t necessarily mean that many parts play the EXACT same MIDI part, but there are things that can be done with the same MIDI part that recycle it - making changes, but keeping parts of the original. I will demonstrate techniques for doing that in subsequent chapters.</p>
-</section>
-<section id="what-will-i-need-to-be-able-to-use-the-ideas-in-this-book" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="what-will-i-need-to-be-able-to-use-the-ideas-in-this-book">What will I need to be able to use the ideas in this book?</h2>
-<p>You will get most out of this book if you have Ableton Live Suite (from v11 onwards). Some of the ideas could be translated to other DAWs, but there are some features like note-wise probability which I’m not sure how to replicate in other DAWs.</p>
-<p>Many of the tools and plugins discussed use Max For Live, which comes bundled with Ableton Suite. If you <strong><em>don’t</em></strong> have Ableton Suite, then you can purchase Max For Live separately from ableton.com. You <strong><em>don’t</em></strong> have to purchase the full Max license from Cycling 74 to use Max For Live.</p>
-<p>I’m not assuming that you know how to program with Max For Live - you only need to be aware that plugins we’re talking about are programmed with that platform, so it needs to be available on your computer.</p>
-</section>
-<section id="why-ableton" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="why-ableton">Why Ableton?</h2>
-<p>I am a long time Ableton user (since Live 4). As I write this guide, I am using Live 12.1. I have a strong belief that Ableton Suite can be used much like a modular synthesiser - with the combination of audio and MIDI routing within Live, coupled with Max For Live devices, this amazing DAW can do so much. In fact, as you read through the chapters of the book you’ll see how many of the tools, plugins and methods we’ll talk about mimic what you would see and how you might use them for generative music in a modular synthesiser rack.</p>
-</section>
-<section id="structure-of-this-book" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="structure-of-this-book">Structure of this book</h2>
-<p>If you flick through the book you’ll see different types of chapter.</p>
-<section id="recipes" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="recipes">Recipes</h3>
-<p>Recipes chapters introduce a set of instructions that you can follow to create your own music using randomness and probability i.e.&nbsp;generative music. If you’re a Lazy Producer like me then you can use these recipes to generate ideas and sounds that you can then use to start your own process of creating a track. If you’re a lazy reader too, then you can skip straight to these chapters and follow the recipe. If you’re a creatively Lazy Producer then you can tweak the recipes or combine them with other recipes to make your own creations. That’s OK.</p>
-</section>
-<section id="process" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="process">Process</h3>
-<p>Process chapters talk about general ideas that can be applied within Ableton Live or potentially to other DAWs or music making processes. I’ll try to steer clear of specific discussion of tools or plugins in these chapters.</p>
-</section>
-<section id="tools-and-plugins" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="tools-and-plugins">Tools and plugins</h3>
-<p>The chapters for geeks and musicians with Gear Acquisition Syndrome (GAS). If you want to get really nerdy or think about acquiring new plugins then these are the chapters for you. If you have already purchased Ableton Live then you have already invested a large amount on music making equipment. My goal here is not to persuade you to part with significant additional amounts of cash, but some of the plugins have an associated, although modest, cost.</p>
-</section>
-</section>
-<section id="who-am-i" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="who-am-i">Who am I?</h2>
-<p>My name is Mike K Smith. I trained as a statistician and work as a data scientist in the pharmaceutical industry. I identify as a professional geek. Since making ambient music is a passion for me and doesn’t have to pay the bills, I have the luxury of being a “Lazy Producer”.</p>
-<p>I make ambient, textural and sometimes generative music mostly using Ableton Live. I have released 2 albums collaborating with other musicians - where they prepared starter audio “stems” of tracks which I then augmented and created finished tracks. I have also produced an album of drone and textural music under my own name.</p>
-<p>You can find my music here:</p>
-<p><a href="https://mikeksmith.bandcamp.com" class="uri">https://mikeksmith.bandcamp.com</a></p>
-<p><a href="https://soundcloud.com/mikeksmith" class="uri">https://soundcloud.com/mikeksmith</a></p>
+<section id="live-12---grouped-notes" class="level3">
+<h3 class="anchored" data-anchor-id="live-12---grouped-notes">Live 12 - Grouped notes</h3>
+<p>Ableton Live 12 brought the ability to group MIDI notes and then define whether <strong><em>all</em></strong> of the notes in that group will play or only <strong><em>one</em></strong> note within the group. This can apply to notes in a chord, or notes in a sequence - basically any of the notes that you define to be within the group. This can be useful as it means that within the group you can define that <strong><em>exactly one</em></strong> of the notes will play, or that <strong><em>all</em></strong> of the grouped notes will play, which is slightly more deterministic (rules based) than the probability approaches above. Having said that, you can also apply probability to the group, so that with say 50% probability, all of the grouped notes will play - allowing you to write a specific set of “fill” notes in a drum part that will play with a given probability. You can also set probability along with the “play one” group rule. We’ll look at some concrete examples in @ref(tools-live12-overview).</p>
 
 
 </section>
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>DeSantis, D.&nbsp;<em>Making Music: 74 Creative Strategies for Electronic Music Producers</em>. Ableton AG, 2015.&nbsp;<a href="https://cdn-resources.ableton.com/resources/uploads/makingmusic/MakingMusic_DennisDeSantis.pdf" class="uri">https://cdn-resources.ableton.com/resources/uploads/makingmusic/MakingMusic_DennisDeSantis.pdf</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -788,7 +810,44 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./001-Recipe-Changing_Chords.html" class="pagination-link  aria-label=" recipe="" -="" changing="" chords"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Recipe - Changing chords</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./003-Process-Follow_Actions.html" class="pagination-link" aria-label="Process - Follow Actions">
+        <span class="nav-page-text">Process - Follow Actions</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":false,"openEffect":"zoom","descPosition":"bottom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 

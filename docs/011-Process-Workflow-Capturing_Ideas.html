@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./012-Tools-MIDI_Generators.html" rel="next">
+<link href="./010-Recipe-Balance_random_and_predictable.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -39,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -102,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./011-Process-Workflow-Capturing_Ideas.html">Process - Workflow: capturing generative ideas</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -182,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./011-Process-Workflow-Capturing_Ideas.html" class="sidebar-item-text sidebar-link">
+  <a href="./011-Process-Workflow-Capturing_Ideas.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Process - Workflow: capturing generative ideas</span></a>
   </div>
 </li>
@@ -298,22 +303,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
+  <li><a href="#process-workflow" id="toc-process-workflow" class="nav-link active" data-scroll-target="#process-workflow">Process - Workflow: capturing generative ideas</a>
   <ul class="collapse">
-  <li><a href="#you-shouldnt-read-this-book" id="toc-you-shouldnt-read-this-book" class="nav-link" data-scroll-target="#you-shouldnt-read-this-book">You shouldn’t read this book</a></li>
-  <li><a href="#but-if-you-do-read-this-book-what-should-you-expect" id="toc-but-if-you-do-read-this-book-what-should-you-expect" class="nav-link" data-scroll-target="#but-if-you-do-read-this-book-what-should-you-expect">But if you DO read this book, what should you expect?</a></li>
-  <li><a href="#what-do-you-mean-lazy-producer" id="toc-what-do-you-mean-lazy-producer" class="nav-link" data-scroll-target="#what-do-you-mean-lazy-producer">What do you mean, “Lazy Producer”?</a></li>
-  <li><a href="#lorem-ipsum" id="toc-lorem-ipsum" class="nav-link" data-scroll-target="#lorem-ipsum">Lorem Ipsum</a></li>
-  <li><a href="#reduce-reuse-recycle" id="toc-reduce-reuse-recycle" class="nav-link" data-scroll-target="#reduce-reuse-recycle">Reduce, reuse, recycle</a></li>
-  <li><a href="#what-will-i-need-to-be-able-to-use-the-ideas-in-this-book" id="toc-what-will-i-need-to-be-able-to-use-the-ideas-in-this-book" class="nav-link" data-scroll-target="#what-will-i-need-to-be-able-to-use-the-ideas-in-this-book">What will I need to be able to use the ideas in this book?</a></li>
-  <li><a href="#why-ableton" id="toc-why-ableton" class="nav-link" data-scroll-target="#why-ableton">Why Ableton?</a></li>
-  <li><a href="#structure-of-this-book" id="toc-structure-of-this-book" class="nav-link" data-scroll-target="#structure-of-this-book">Structure of this book</a>
+  <li><a href="#in-the-beginning" id="toc-in-the-beginning" class="nav-link" data-scroll-target="#in-the-beginning">In the beginning</a></li>
+  <li><a href="#random-processes-are-random" id="toc-random-processes-are-random" class="nav-link" data-scroll-target="#random-processes-are-random">Random processes are random</a></li>
+  <li><a href="#how-to-set-up-live-sets---my-experience" id="toc-how-to-set-up-live-sets---my-experience" class="nav-link" data-scroll-target="#how-to-set-up-live-sets---my-experience">How to set up Live sets - my experience</a>
   <ul class="collapse">
-  <li><a href="#recipes" id="toc-recipes" class="nav-link" data-scroll-target="#recipes">Recipes</a></li>
-  <li><a href="#process" id="toc-process" class="nav-link" data-scroll-target="#process">Process</a></li>
-  <li><a href="#tools-and-plugins" id="toc-tools-and-plugins" class="nav-link" data-scroll-target="#tools-and-plugins">Tools and plugins</a></li>
+  <li><a href="#midi-generators" id="toc-midi-generators" class="nav-link" data-scroll-target="#midi-generators">MIDI Generators</a></li>
+  <li><a href="#midi-transformer-tracks" id="toc-midi-transformer-tracks" class="nav-link" data-scroll-target="#midi-transformer-tracks">MIDI Transformer tracks</a></li>
+  <li><a href="#capturing-the-midi" id="toc-capturing-the-midi" class="nav-link" data-scroll-target="#capturing-the-midi">Capturing the MIDI</a></li>
+  <li><a href="#rendering-bouncing-down-to-audio" id="toc-rendering-bouncing-down-to-audio" class="nav-link" data-scroll-target="#rendering-bouncing-down-to-audio">Rendering / bouncing down to audio</a></li>
+  <li><a href="#group-tracks-to-tidy-your-live-set" id="toc-group-tracks-to-tidy-your-live-set" class="nav-link" data-scroll-target="#group-tracks-to-tidy-your-live-set">Group tracks to tidy your Live set</a></li>
+  <li><a href="#modulation-on-track-volume---use-the-utility-device-to-modulate-gain" id="toc-modulation-on-track-volume---use-the-utility-device-to-modulate-gain" class="nav-link" data-scroll-target="#modulation-on-track-volume---use-the-utility-device-to-modulate-gain">Modulation on track volume - use the Utility device to modulate GAIN</a></li>
+  <li><a href="#turn-off-what-youre-not-using" id="toc-turn-off-what-youre-not-using" class="nav-link" data-scroll-target="#turn-off-what-youre-not-using">Turn off what you’re not using</a></li>
   </ul></li>
-  <li><a href="#who-am-i" id="toc-who-am-i" class="nav-link" data-scroll-target="#who-am-i">Who am I?</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -324,83 +327,103 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<section id="you-shouldnt-read-this-book" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="you-shouldnt-read-this-book">You shouldn’t read this book</h2>
-<p>If you’re looking for a guide to creating tracks from start to finish in a DAW then this is not that book.</p>
-<p>If you’re looking for a description of recording a band or producing genres outside of electronic or ambient music, this is not that book.</p>
-<p>If you’re looking for an in-depth guide to Ableton Live Suite, <a href="https://www.ableton.com/en/manual/welcome-to-live/">then you should read the manual</a>. I’m assuming you know your way around Ableton Live.</p>
-<p>If you are looking for generic tips on creating music I wholeheartedly recommend reading “Making Music: 74 Creative Strategies for Electronic Music Producers” by Dennis DeSantis<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. This is a great book and will help you get through difficulties starting, continuing and finishing your compositions.</p>
-<p>I also recommend Loopop’s “In-complete book of electronic music tips and tricks” available when you sign up as a Patron (<a href="https://www.patreon.com/loopop" class="uri">https://www.patreon.com/loopop</a>). His book contains an assortment of tips and tricks for making music including ideas for generative music.</p>
+<section id="process-workflow" class="level1">
+<h1>Process - Workflow: capturing generative ideas</h1>
+<p>Setting up an Ableton Live set with lots of MIDI generators, MIDI manipulation and transformation, using that generated MIDI to create a nice collage of sounds that shifts and changes over time is very satisfying. From a performance perspective, once set up, you can press play and let it do its thing. But what if you want to commit the state of the system to share with others. That involves capturing the generated MIDI, modulations and generated audio. This chapter will discuss how you might go about capturing the processes so that you can later release the track.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I find it useful to separate MIDI tracks that <em>generate</em> and <em>transform</em> MIDI information from instrument tracks that receive that MIDI information and generate sound. The idea is to capture the generated and transformed MIDI for later processing. It can then be copied into the instrument track and “bounced down” or rendered with the instrument track to capture the sound. In this process don’t worry about having more tracks than you think necessary. This will give more flexibility and options in the capturing process. There is quite a large difference between Live sets for performance and Live sets for capturing and committing the performance for release.</p>
+</div>
+</div>
+<section id="in-the-beginning" class="level2">
+<h2 class="anchored" data-anchor-id="in-the-beginning">In the beginning</h2>
+<p>When you first start creating Live sets for generative music, the important thing is to have fun with the process. So throw MIDI devices into chains, see what happens, refine and reapply. Route MIDI from one place to another, add more MIDI transformations. Go wild. Play. Inevitably though, at some point, you’re going to want to apply a little order to the chaos. And in fact, even in the creation process taking a little time to plan ahead can open up some new avenues for generating, transforming and routing.</p>
 </section>
-<section id="but-if-you-do-read-this-book-what-should-you-expect" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="but-if-you-do-read-this-book-what-should-you-expect">But if you DO read this book, what should you expect?</h2>
-<p>But if you’re looking for some ways to generate fresh ideas to get you started and make some nice sounds that you could later build up into finished tracks, then this <strong><em>IS</em></strong> that book. What I’m going to try to present here is a collection of “starter ideas” or recipes for you to follow. I’ll also talk a bit about some specific tools and plugins you might use, and touch on some general processes that I use in turning the techniques here into ambient, textural and generative music.</p>
+<section id="random-processes-are-random" class="level2">
+<h2 class="anchored" data-anchor-id="random-processes-are-random">Random processes are random</h2>
+<p>If you have used any randomness within processes (and if you haven’t why haven’t you been paying attention up to this point?) then what you’ll find is that each time you re-open and play the Live set, you <strong><em>should</em></strong> get a slightly different sounding result. It may not be <strong><em>radically</em></strong> different, but it is likely to be different enough, that when it comes to mixing before committing to a version of the piece, you find some parts that are thinner than expected, or some where there are peaks of volume or resonance that become problematic for mixing.</p>
+<p>In that case, it makes sense to try to capture or “render” the MIDI, instrument and sound design choices so that you can mix and tweak to get towards a consistent output.</p>
+<p>In extreme cases you may find, as you capture the output of the random processes that you don’t like the output. In that case you might want to refine these random processes - maybe make them slightly <strong><em>less</em></strong> random - or tweak settings to try to avoid extreme changes in sound design through reducing modulation levels. But the other option, to be honest is to throw that version away and re-render and re-capture the output to see if the random processes spit out something better next time. Don’t feel you have to be precious about the output of some random process. There are many more versions of something readily available.</p>
 </section>
-<section id="what-do-you-mean-lazy-producer" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="what-do-you-mean-lazy-producer">What do you mean, “Lazy Producer”?</h2>
-<p>Most professional musicians, music creators and producers I know are very hard working. They spend a LOT of time crafting a tune, song or mix with care and attention to making the final track as good as it can be. These individuals are most definitely, categorically NOT lazy.</p>
-<p>The typical Ableton Live set I see from most electronic music producers has a huge number of tracks, precision edits, detailed automation, fills, transitions, risers, “ear-candy”. It’s a technicolor riot of clips. In stark contrast, my typical Live set for a track may have around 12 tracks. I use randomness, probability and automation to make things change from one bar or section to another. I start tracks largely by letting the computer make choices by finding the “best” settings in the randomness and probability parameters or “garden” the generated random MIDI and audio to create a little more order. I am a Lazy Producer.</p>
-<p>I will use the shorthand “Lazy Producer” in this book meaning that the techniques described will get you started on tracks, but are probably not finished tracks in themselves. However, if you’re a REALLY Lazy Producer, they might be. I have been known to do this.</p>
+<section id="how-to-set-up-live-sets---my-experience" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-set-up-live-sets---my-experience">How to set up Live sets - my experience</h2>
+<section id="midi-generators" class="level3">
+<h3 class="anchored" data-anchor-id="midi-generators">MIDI Generators</h3>
+<p>I like to have separate tracks for MIDI generators. These are the “starting point” of a process. They will be generating MIDI notes through random processes, patterns or Follow Actions. I like to keep the generators separate from the transformation MIDI tracks, because you may want to send the <strong><em>same</em></strong> generated MIDI notes into several transformation chains. This will lead to a more coherent result since different transformation chains ingest a consistent set of generated MIDI input notes.</p>
 </section>
-<section id="lorem-ipsum" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="lorem-ipsum">Lorem Ipsum</h2>
-<p>There’s a technique used in developing web pages and other documents where you can create placeholder text and images to fill space while you concentrate on layout, functionality of the page, the user experience and so on. This placeholder text is nonsense and is not there to be read by anyone, but it needs to take up the right amount of space and have the appearance of genuine content. It’s not enough to mash on the keyboard and write “<em>reotiuyerwlgkjdfi ughweriugt hoierug oeriubgioeruhoicr evhgieur hoieruhgoiuewrhgiuerhg coireuh voerwiugh oewrihg oiwru gh</em>” because that doesn’t have the right breakdown of syllables, spaces, sentences. Also, as the developer of the page you don’t want to have to take time to write anything to fill the space. As a consequence, developers rely on Lorem Ipsum text generators like the one at <a href="https://www.lipsum.com" class="uri">https://www.lipsum.com</a>, to generate paragraphs of text. Here’s an example of a paragraph generated from the site mentioned.</p>
-<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius gravida tortor nec dapibus. Donec at viverra dui, sed imperdiet ante. Integer ut dapibus leo. Quisque elementum tristique malesuada. Praesent venenatis elit eget mauris porta, in facilisis arcu aliquam. Phasellus ac leo tempus, pretium felis sit amet, sagittis nibh. Curabitur fermentum et dui in porttitor. Nulla et porta enim. Curabitur bibendum odio nisl, quis placerat lacus sodales quis. Vestibulum ut mollis urna. Mauris nec quam sit amet justo pretium aliquet.</em></p>
-<p>Many of the techniques I’m describing in this book are like Lorem Ipsum but for music. You can use them to generate content that is a placeholder in a production while you work on sound design, or to create musical or rhythm ideas that you can bounce off in the creation of new parts. Then when the new idea is created it will be safe to delete the placeholder content and retain the good bits.</p>
-<p>As a Lazy Producer, I often wind up keeping the Lorem Ipsum music if it sounds good.</p>
+<section id="midi-transformer-tracks" class="level3">
+<h3 class="anchored" data-anchor-id="midi-transformer-tracks">MIDI Transformer tracks</h3>
+<p>These tracks will take the MIDI generator process outputs and apply MIDI effects and transformations to add additional MIDI notes, information, modulation etc. You could have a virtual instrument / sound generator plugin in this track. If you do that, then you can route the MIDI from this track <strong><em>AFTER</em></strong> (MIDI) FX into another track for further transformation, MIDI effects or to another instrument.</p>
 </section>
-<section id="reduce-reuse-recycle" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="reduce-reuse-recycle">Reduce, reuse, recycle</h2>
-<p>It’s natural as producers to keep an eye on developers producing sample packs, plugins and hardware and wondering if <strong><em>THIS</em></strong> product is going to make a difference to my next track. What I’d like to propose is that YOU can produce sample packs that work for YOU and the style of music you make much better than a third party developer. So while you work through the techniques in this book, save the results and save the clips (Ableton’s Live Clips) to your User Library, organising by type or feature, so that when you next need a new part or track starter, you can dip into this library and recycle what you have already prepared.</p>
-<p>As a Lazy Producer I reuse MIDI parts that sound good across MANY tracks. This doesn’t necessarily mean that many parts play the EXACT same MIDI part, but there are things that can be done with the same MIDI part that recycle it - making changes, but keeping parts of the original. I will demonstrate techniques for doing that in subsequent chapters.</p>
+<section id="capturing-the-midi" class="level3">
+<h3 class="anchored" data-anchor-id="capturing-the-midi">Capturing the MIDI</h3>
+<p>To capture the random processes from the generation and transformation steps, you should create new MIDI tracks that “listen” to the output of the generation and transformation tracks. In my Live sets I typically have a lot of tracks where the Monitor is set to “In” or “listening” mode. That passes the incoming audio from another track straight through to the effects or instruments on that track. Having separate “capturing” MIDI tracks allows you to pick up the generated and/or transformed MIDI when you record. This is a good thing to be able to “tidy up” or “garden” the generated MIDI information on the road to release. Don’t feel you <strong><em>have</em></strong> to keep the MIDI output from these processes unchanged. It’s just MIDI. Feel free to cut, move, edit, splice until you get something that you prefer.</p>
+<p>If you record only into tracks where there is MIDI effects and instruments then the <strong><em>transformed</em></strong> MIDI is never captured - only the original generated MIDI. This may not be a problem <em>per se</em> but when you render out the final audio, you are at the mercy of Live’s internal random processes and you’ll be crossing your fingers that either the result is <strong><em>the same</em></strong> as you heard previously (if Live replays the randomness in the same way each time) or potentially different (perhaps if you reopen the set in a later version of Live).</p>
+<p>If you capture the generated <strong><em>and</em></strong> transformed MIDI in separate tracks, then you can use these tracks as the input for tracks with virtual instruments / plugins in them. Where these tracks might have had MIDI Monitor set to “In” you can now switch that back to “Auto” so that the captured MIDI is used directly as the input for that instrument.</p>
+<p>Once you have captured the generated and transformed MIDI it’s safe to switch off the generators and MIDI effects in those tracks. This will ensure that it’s only the captured MIDI that is being used to drive the virtual instruments and plugins.</p>
+<p>In the screenshot below I have captured the Follow Action chord sequence, and have added some MIDI effects - Arpeggiator, Pitch and Velocity, before routing these into the LABS virtual instrument. Since the MIDI effects here don’t involve randomness, it’s safe to keep these “inline” with the virtual instrument. If I had used randomness, then it might make more sense to have a separate MIDI track that captures the output of those transformations before sending into the virtual instrument.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Workflow1_MIDI.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Workflow1_MIDI.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="what-will-i-need-to-be-able-to-use-the-ideas-in-this-book" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="what-will-i-need-to-be-able-to-use-the-ideas-in-this-book">What will I need to be able to use the ideas in this book?</h2>
-<p>You will get most out of this book if you have Ableton Live Suite (from v11 onwards). Some of the ideas could be translated to other DAWs, but there are some features like note-wise probability which I’m not sure how to replicate in other DAWs.</p>
-<p>Many of the tools and plugins discussed use Max For Live, which comes bundled with Ableton Suite. If you <strong><em>don’t</em></strong> have Ableton Suite, then you can purchase Max For Live separately from ableton.com. You <strong><em>don’t</em></strong> have to purchase the full Max license from Cycling 74 to use Max For Live.</p>
-<p>I’m not assuming that you know how to program with Max For Live - you only need to be aware that plugins we’re talking about are programmed with that platform, so it needs to be available on your computer.</p>
+<section id="rendering-bouncing-down-to-audio" class="level3">
+<h3 class="anchored" data-anchor-id="rendering-bouncing-down-to-audio">Rendering / bouncing down to audio</h3>
+<p>In the screenshot below I’ve rendered the MIDI part and virtual instrument to an audio file. This then will “bake in” any MIDI transformation - in this case the arpeggiator, pitch shift up an octave, and the velocity curve. Note that I render or “bounce” the output to a new track, leaving the original in place. This allows me to come back later and tweak the original settings or re-render without having to undo many actions.</p>
+<p>Since the MIDI input clips with Follow Actions have probability on each note (see Recipe 1 - Changing Chords for more information) then there’s a chance that one or two of the generated MIDI chords will have only two notes (down to the probability choices). By rendering and listening back, I can assess whether I think the “choices” made through probability work with what else is going on or not. Perhaps there’s enough going on when the “thin” chord stack happens that it’s essentially hidden in the mix. If I really don’t like the result, I can re-render the audio.</p>
 </section>
-<section id="why-ableton" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="why-ableton">Why Ableton?</h2>
-<p>I am a long time Ableton user (since Live 4). As I write this guide, I am using Live 12.1. I have a strong belief that Ableton Suite can be used much like a modular synthesiser - with the combination of audio and MIDI routing within Live, coupled with Max For Live devices, this amazing DAW can do so much. In fact, as you read through the chapters of the book you’ll see how many of the tools, plugins and methods we’ll talk about mimic what you would see and how you might use them for generative music in a modular synthesiser rack.</p>
+<section id="group-tracks-to-tidy-your-live-set" class="level3">
+<h3 class="anchored" data-anchor-id="group-tracks-to-tidy-your-live-set">Group tracks to tidy your Live set</h3>
+<p>With all of these tracks floating about it can be tricky to keep track of what track does what in your Live set. Live’s ability to group tracks is a really useful feature. It’s <strong><em>your</em></strong> choice how you group them… You can group MIDI generation and transformation tracks - the individual tracks will still send MIDI output to wherever they are routed - as this allows you to “fold away” the generation and transformation processes when it comes to capturing and committing for release (assuming you have captured the MIDI as described above and copied it into the tracks with virtual instruments / plugins).</p>
+<p>Another really useful way to use Groups here is to Group the MIDI + virtual instrument and rendered audio together, then apply creative and mixing effects at the Group level rather than on individual tracks.</p>
+<p>When I render down the MIDI + virtual instruments, I tend to render without creative and mixing effects as I often need to tweak these later, and it’s often problematic if I’ve committed to certain choices early in the process and baked this into the resulting audio. Instead what I have been doing is to Group the MIDI + virtual instrument track and moving the effects to the Group level (including modulation on Gain - see below) so that the rendered audio is purely MIDI + virtual instrument. This leaves space for me to tweak the creative and mixing effects later when I’m trying to tidy up the overall mix.</p>
+<p>In the screenshot below you’ll see that on the Group for “Piano” I’ve got a compressor, EQ, Soothe dynamic EQ and Utility plugins (for automating gain).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Workflow2_Group.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Workflow2_Group.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="structure-of-this-book" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="structure-of-this-book">Structure of this book</h2>
-<p>If you flick through the book you’ll see different types of chapter.</p>
-<section id="recipes" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="recipes">Recipes</h3>
-<p>Recipes chapters introduce a set of instructions that you can follow to create your own music using randomness and probability i.e.&nbsp;generative music. If you’re a Lazy Producer like me then you can use these recipes to generate ideas and sounds that you can then use to start your own process of creating a track. If you’re a lazy reader too, then you can skip straight to these chapters and follow the recipe. If you’re a creatively Lazy Producer then you can tweak the recipes or combine them with other recipes to make your own creations. That’s OK.</p>
+<section id="modulation-on-track-volume---use-the-utility-device-to-modulate-gain" class="level3">
+<h3 class="anchored" data-anchor-id="modulation-on-track-volume---use-the-utility-device-to-modulate-gain">Modulation on track volume - use the Utility device to modulate GAIN</h3>
+<p>If you have gone completely down the rabbit hole of random modulation of your track volumes, it may have been tempting to modulate the Mixer Volume so that tracks fade in and out in a random way. But let me caution <strong><em>against</em></strong> doing this. This technique is fine for performance, but when it comes to capturing and committing a generative track, the better solution is to modulate the Gain of a Utility plugin. Modulating gain allows you to separately alter the Volume slider on the mixer to change the <strong><em>overall</em></strong> level of a track <strong><em>relative</em></strong> to the others. This is a good tip for audio production generally - automate your track Gain, not your Mixer Volume.</p>
 </section>
-<section id="process" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="process">Process</h3>
-<p>Process chapters talk about general ideas that can be applied within Ableton Live or potentially to other DAWs or music making processes. I’ll try to steer clear of specific discussion of tools or plugins in these chapters.</p>
-</section>
-<section id="tools-and-plugins" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="tools-and-plugins">Tools and plugins</h3>
-<p>The chapters for geeks and musicians with Gear Acquisition Syndrome (GAS). If you want to get really nerdy or think about acquiring new plugins then these are the chapters for you. If you have already purchased Ableton Live then you have already invested a large amount on music making equipment. My goal here is not to persuade you to part with significant additional amounts of cash, but some of the plugins have an associated, although modest, cost.</p>
-</section>
-</section>
-<section id="who-am-i" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="who-am-i">Who am I?</h2>
-<p>My name is Mike K Smith. I trained as a statistician and work as a data scientist in the pharmaceutical industry. I identify as a professional geek. Since making ambient music is a passion for me and doesn’t have to pay the bills, I have the luxury of being a “Lazy Producer”.</p>
-<p>I make ambient, textural and sometimes generative music mostly using Ableton Live. I have released 2 albums collaborating with other musicians - where they prepared starter audio “stems” of tracks which I then augmented and created finished tracks. I have also produced an album of drone and textural music under my own name.</p>
-<p>You can find my music here:</p>
-<p><a href="https://mikeksmith.bandcamp.com" class="uri">https://mikeksmith.bandcamp.com</a></p>
-<p><a href="https://soundcloud.com/mikeksmith" class="uri">https://soundcloud.com/mikeksmith</a></p>
+<section id="turn-off-what-youre-not-using" class="level3">
+<h3 class="anchored" data-anchor-id="turn-off-what-youre-not-using">Turn off what you’re not using</h3>
+<p>Having done these steps - Grouping, moving effects and rendering MIDI + virtual instruments I can now “switch off” the virtual instrument channel and save some CPU (as I’ve done in the screenshot below).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Workflow3_Rendered.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Workflow3_Rendered.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 </section>
 </section>
+</section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>DeSantis, D.&nbsp;<em>Making Music: 74 Creative Strategies for Electronic Music Producers</em>. Ableton AG, 2015.&nbsp;<a href="https://cdn-resources.ableton.com/resources/uploads/makingmusic/MakingMusic_DennisDeSantis.pdf" class="uri">https://cdn-resources.ableton.com/resources/uploads/makingmusic/MakingMusic_DennisDeSantis.pdf</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -788,7 +811,44 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./010-Recipe-Balance_random_and_predictable.html" class="pagination-link  aria-label=" recipe="" -="" balancing="" the="" unexpected="" and="" predictable"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Recipe - Balancing the unexpected and the predictable</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./012-Tools-MIDI_Generators.html" class="pagination-link" aria-label="Tools - MIDI Generators">
+        <span class="nav-page-text">Tools - MIDI Generators</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":false});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 

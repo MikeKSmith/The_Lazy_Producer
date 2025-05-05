@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./031-Tools-Live12_Sequencers.html" rel="next">
+<link href="./022-Recipe-Fibonacci_loops.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -39,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -102,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./030-Tools-Live12_Intro.html">Tools - Live 12 Overview: MIDI and compositional tools</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -254,7 +259,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./030-Tools-Live12_Intro.html" class="sidebar-item-text sidebar-link">
+  <a href="./030-Tools-Live12_Intro.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Tools - Live 12 Overview: MIDI and compositional tools</span></a>
   </div>
 </li>
@@ -298,22 +303,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
+  <li><a href="#tools-live12-overview" id="toc-tools-live12-overview" class="nav-link active" data-scroll-target="#tools-live12-overview">Tools - Live 12 Overview: MIDI and compositional tools</a>
   <ul class="collapse">
-  <li><a href="#you-shouldnt-read-this-book" id="toc-you-shouldnt-read-this-book" class="nav-link" data-scroll-target="#you-shouldnt-read-this-book">You shouldn’t read this book</a></li>
-  <li><a href="#but-if-you-do-read-this-book-what-should-you-expect" id="toc-but-if-you-do-read-this-book-what-should-you-expect" class="nav-link" data-scroll-target="#but-if-you-do-read-this-book-what-should-you-expect">But if you DO read this book, what should you expect?</a></li>
-  <li><a href="#what-do-you-mean-lazy-producer" id="toc-what-do-you-mean-lazy-producer" class="nav-link" data-scroll-target="#what-do-you-mean-lazy-producer">What do you mean, “Lazy Producer”?</a></li>
-  <li><a href="#lorem-ipsum" id="toc-lorem-ipsum" class="nav-link" data-scroll-target="#lorem-ipsum">Lorem Ipsum</a></li>
-  <li><a href="#reduce-reuse-recycle" id="toc-reduce-reuse-recycle" class="nav-link" data-scroll-target="#reduce-reuse-recycle">Reduce, reuse, recycle</a></li>
-  <li><a href="#what-will-i-need-to-be-able-to-use-the-ideas-in-this-book" id="toc-what-will-i-need-to-be-able-to-use-the-ideas-in-this-book" class="nav-link" data-scroll-target="#what-will-i-need-to-be-able-to-use-the-ideas-in-this-book">What will I need to be able to use the ideas in this book?</a></li>
-  <li><a href="#why-ableton" id="toc-why-ableton" class="nav-link" data-scroll-target="#why-ableton">Why Ableton?</a></li>
-  <li><a href="#structure-of-this-book" id="toc-structure-of-this-book" class="nav-link" data-scroll-target="#structure-of-this-book">Structure of this book</a>
+  <li><a href="#scale-awareness" id="toc-scale-awareness" class="nav-link" data-scroll-target="#scale-awareness">Scale awareness</a></li>
+  <li><a href="#compositional-tools" id="toc-compositional-tools" class="nav-link" data-scroll-target="#compositional-tools">Compositional tools</a>
   <ul class="collapse">
-  <li><a href="#recipes" id="toc-recipes" class="nav-link" data-scroll-target="#recipes">Recipes</a></li>
-  <li><a href="#process" id="toc-process" class="nav-link" data-scroll-target="#process">Process</a></li>
-  <li><a href="#tools-and-plugins" id="toc-tools-and-plugins" class="nav-link" data-scroll-target="#tools-and-plugins">Tools and plugins</a></li>
+  <li><a href="#midi-generation" id="toc-midi-generation" class="nav-link" data-scroll-target="#midi-generation">MIDI Generation</a></li>
+  <li><a href="#midi-transformation" id="toc-midi-transformation" class="nav-link" data-scroll-target="#midi-transformation">MIDI Transformation</a></li>
   </ul></li>
-  <li><a href="#who-am-i" id="toc-who-am-i" class="nav-link" data-scroll-target="#who-am-i">Who am I?</a></li>
+  <li><a href="#note-probability" id="toc-note-probability" class="nav-link" data-scroll-target="#note-probability">Note probability</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -324,83 +322,125 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<section id="you-shouldnt-read-this-book" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="you-shouldnt-read-this-book">You shouldn’t read this book</h2>
-<p>If you’re looking for a guide to creating tracks from start to finish in a DAW then this is not that book.</p>
-<p>If you’re looking for a description of recording a band or producing genres outside of electronic or ambient music, this is not that book.</p>
-<p>If you’re looking for an in-depth guide to Ableton Live Suite, <a href="https://www.ableton.com/en/manual/welcome-to-live/">then you should read the manual</a>. I’m assuming you know your way around Ableton Live.</p>
-<p>If you are looking for generic tips on creating music I wholeheartedly recommend reading “Making Music: 74 Creative Strategies for Electronic Music Producers” by Dennis DeSantis<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. This is a great book and will help you get through difficulties starting, continuing and finishing your compositions.</p>
-<p>I also recommend Loopop’s “In-complete book of electronic music tips and tricks” available when you sign up as a Patron (<a href="https://www.patreon.com/loopop" class="uri">https://www.patreon.com/loopop</a>). His book contains an assortment of tips and tricks for making music including ideas for generative music.</p>
+<section id="tools-live12-overview" class="level1">
+<h1>Tools - Live 12 Overview: MIDI and compositional tools</h1>
+<p>During the process of writing this book, Ableton released Live 12. With Live 12 there are a whole host of improvements and additions which make the life of someone making generative music a whole lot easier. In this chapter we’ll look at the new compositional and MIDI tools. In the next chapter we’ll look at new sequencer tools. In subsequent chapters we’ll look at some specific Transformer and Generator tools.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Live 12 contains a number of tools and new features which enhance how we can make generative music using Ableton Live. Some of these are enhancements to existing functionality, but there are many places where there are brand new features which could be used to create generative music, or provide idea generators for composition.</p>
+</div>
+</div>
+<section id="scale-awareness" class="level2">
+<h2 class="anchored" data-anchor-id="scale-awareness">Scale awareness</h2>
+<p>Live 12 now has a feature where the scale can be defined at the Set level, which then sets the scale for each new clip (or can change the scale of existing clips); but you can also <strong><em>set</em></strong> the current scale for the set from clips. This allows you to change the scale of the set for example during live performance when the each song might be in a different key.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Live12_Scale.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Live12_Scale.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>But scale awareness goes beyond setting the scale for MIDI notes within a clip - many devices now have a “scale awareness” so that when the device adds or shifts notes, it does so within the context of the scale. In the screenshot above you can see that the purple “Scale Mode” button is ON (b# button). This means that clips and devices will use the scale shown as the default. Note that this <strong><em>isn’t</em></strong> a Global Scale which overrides scale settings in clips, but rather an indication of the <strong><em>CURRENT</em></strong> scale being used. See <a href="https://help.ableton.com/hc/en-us/articles/11425083250972-Keys-and-Scales-in-Live-12-FAQ" class="uri">https://help.ableton.com/hc/en-us/articles/11425083250972-Keys-and-Scales-in-Live-12-FAQ</a></p>
+<p>In the “Random” MIDI device below, again the purple “Scale Mode” or Scale Awareness button is lit, meaning that random pitch shift will be in the context of the Current Scale setting, so shifting up or down scale degrees, rather than semitones. This is a boon for the Lazy Producer because now they won’t need to add MIDI Scale quantizing devices, and also changing the scale in the Current Scale (or through clips), the MIDI devices and instruments will automatically pick up whatever the new Current Scale is.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Live12_Random_ScaleAware.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Live12_Random_ScaleAware.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>So now we can chain together MIDI Devices as discussed in @ref(tools-midi-tools) and used in @ref(recipe-midi-generators) and by turning on Scale Awareness we’ll pick up whatever the Current Scale setting is. Note in the Chord and Arpeggiator devices that instead of “st” semitones for shifting, it is now labelled “sd” scale degrees. This takes a little getting used to because the scale degrees are added onto the MIDI note value - so +4sd is a fifth above the incoming MIDI note.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Live12_ScaleAware_MIDI_Devices.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Live12_ScaleAware_MIDI_Devices.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Scale awareness also extends to some of the Synth instruments in Live 12 - Meld in particular has scale awareness for some of its tone generators, where changing the macro knob for that generator adds harmonic content that is in tune with the Global Scale.</p>
+<p>Note that MIDI clips set Current Scale, so if you wish to change the Current Scale, it’s worth checking that <strong><em>ALL</em></strong> MIDI clips within a scene or all MIDI clips playing have the same scale setting. See <a href="https://help.ableton.com/hc/en-us/articles/11425083250972-Keys-and-Scales-in-Live-12-FAQ" class="uri">https://help.ableton.com/hc/en-us/articles/11425083250972-Keys-and-Scales-in-Live-12-FAQ</a></p>
 </section>
-<section id="but-if-you-do-read-this-book-what-should-you-expect" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="but-if-you-do-read-this-book-what-should-you-expect">But if you DO read this book, what should you expect?</h2>
-<p>But if you’re looking for some ways to generate fresh ideas to get you started and make some nice sounds that you could later build up into finished tracks, then this <strong><em>IS</em></strong> that book. What I’m going to try to present here is a collection of “starter ideas” or recipes for you to follow. I’ll also talk a bit about some specific tools and plugins you might use, and touch on some general processes that I use in turning the techniques here into ambient, textural and generative music.</p>
+<section id="compositional-tools" class="level2">
+<h2 class="anchored" data-anchor-id="compositional-tools">Compositional tools</h2>
+<section id="midi-generation" class="level3">
+<h3 class="anchored" data-anchor-id="midi-generation">MIDI Generation</h3>
+<p>Live 12 now comes with two new features built into MIDI clip creation: MIDI Generation and MIDI Transformation. MIDI Generation does what the name suggests - provides a range of different methods for generating new MIDI parts: rhythm - which creates sequences of MIDI notes by specifying the density of notes within a certain number of steps and then allowing you to choose permutations of these, stacks - which defines chords, seeds - which generates one or more “voices” of completely random notes (but these could conform to the clip scale setting) within the clip, shape - which generates notes by drawing in a pattern or shape, and Euclidean generators. And because what sits behind these generators is the power of Max for Live, the possibilities open up for a huge range of innovative MIDI generation.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Live12_MIDIGenerators.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Live12_MIDIGenerators.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Live12_Max_MIDIGenerator.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/Live12_Max_MIDIGenerator.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>In Chapter 13 we looked at MIDI Generator devices including Max for Live devices. But having some similar functionality here “baked into” the Live MIDI clip tools puts these tools at the fingertips of anyone with Live 12 Suite.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Live12_Euclidean_Pattern.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Live12_Euclidean_Pattern.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="what-do-you-mean-lazy-producer" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="what-do-you-mean-lazy-producer">What do you mean, “Lazy Producer”?</h2>
-<p>Most professional musicians, music creators and producers I know are very hard working. They spend a LOT of time crafting a tune, song or mix with care and attention to making the final track as good as it can be. These individuals are most definitely, categorically NOT lazy.</p>
-<p>The typical Ableton Live set I see from most electronic music producers has a huge number of tracks, precision edits, detailed automation, fills, transitions, risers, “ear-candy”. It’s a technicolor riot of clips. In stark contrast, my typical Live set for a track may have around 12 tracks. I use randomness, probability and automation to make things change from one bar or section to another. I start tracks largely by letting the computer make choices by finding the “best” settings in the randomness and probability parameters or “garden” the generated random MIDI and audio to create a little more order. I am a Lazy Producer.</p>
-<p>I will use the shorthand “Lazy Producer” in this book meaning that the techniques described will get you started on tracks, but are probably not finished tracks in themselves. However, if you’re a REALLY Lazy Producer, they might be. I have been known to do this.</p>
-</section>
-<section id="lorem-ipsum" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="lorem-ipsum">Lorem Ipsum</h2>
-<p>There’s a technique used in developing web pages and other documents where you can create placeholder text and images to fill space while you concentrate on layout, functionality of the page, the user experience and so on. This placeholder text is nonsense and is not there to be read by anyone, but it needs to take up the right amount of space and have the appearance of genuine content. It’s not enough to mash on the keyboard and write “<em>reotiuyerwlgkjdfi ughweriugt hoierug oeriubgioeruhoicr evhgieur hoieruhgoiuewrhgiuerhg coireuh voerwiugh oewrihg oiwru gh</em>” because that doesn’t have the right breakdown of syllables, spaces, sentences. Also, as the developer of the page you don’t want to have to take time to write anything to fill the space. As a consequence, developers rely on Lorem Ipsum text generators like the one at <a href="https://www.lipsum.com" class="uri">https://www.lipsum.com</a>, to generate paragraphs of text. Here’s an example of a paragraph generated from the site mentioned.</p>
-<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius gravida tortor nec dapibus. Donec at viverra dui, sed imperdiet ante. Integer ut dapibus leo. Quisque elementum tristique malesuada. Praesent venenatis elit eget mauris porta, in facilisis arcu aliquam. Phasellus ac leo tempus, pretium felis sit amet, sagittis nibh. Curabitur fermentum et dui in porttitor. Nulla et porta enim. Curabitur bibendum odio nisl, quis placerat lacus sodales quis. Vestibulum ut mollis urna. Mauris nec quam sit amet justo pretium aliquet.</em></p>
-<p>Many of the techniques I’m describing in this book are like Lorem Ipsum but for music. You can use them to generate content that is a placeholder in a production while you work on sound design, or to create musical or rhythm ideas that you can bounce off in the creation of new parts. Then when the new idea is created it will be safe to delete the placeholder content and retain the good bits.</p>
-<p>As a Lazy Producer, I often wind up keeping the Lorem Ipsum music if it sounds good.</p>
-</section>
-<section id="reduce-reuse-recycle" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="reduce-reuse-recycle">Reduce, reuse, recycle</h2>
-<p>It’s natural as producers to keep an eye on developers producing sample packs, plugins and hardware and wondering if <strong><em>THIS</em></strong> product is going to make a difference to my next track. What I’d like to propose is that YOU can produce sample packs that work for YOU and the style of music you make much better than a third party developer. So while you work through the techniques in this book, save the results and save the clips (Ableton’s Live Clips) to your User Library, organising by type or feature, so that when you next need a new part or track starter, you can dip into this library and recycle what you have already prepared.</p>
-<p>As a Lazy Producer I reuse MIDI parts that sound good across MANY tracks. This doesn’t necessarily mean that many parts play the EXACT same MIDI part, but there are things that can be done with the same MIDI part that recycle it - making changes, but keeping parts of the original. I will demonstrate techniques for doing that in subsequent chapters.</p>
-</section>
-<section id="what-will-i-need-to-be-able-to-use-the-ideas-in-this-book" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="what-will-i-need-to-be-able-to-use-the-ideas-in-this-book">What will I need to be able to use the ideas in this book?</h2>
-<p>You will get most out of this book if you have Ableton Live Suite (from v11 onwards). Some of the ideas could be translated to other DAWs, but there are some features like note-wise probability which I’m not sure how to replicate in other DAWs.</p>
-<p>Many of the tools and plugins discussed use Max For Live, which comes bundled with Ableton Suite. If you <strong><em>don’t</em></strong> have Ableton Suite, then you can purchase Max For Live separately from ableton.com. You <strong><em>don’t</em></strong> have to purchase the full Max license from Cycling 74 to use Max For Live.</p>
-<p>I’m not assuming that you know how to program with Max For Live - you only need to be aware that plugins we’re talking about are programmed with that platform, so it needs to be available on your computer.</p>
-</section>
-<section id="why-ableton" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="why-ableton">Why Ableton?</h2>
-<p>I am a long time Ableton user (since Live 4). As I write this guide, I am using Live 12.1. I have a strong belief that Ableton Suite can be used much like a modular synthesiser - with the combination of audio and MIDI routing within Live, coupled with Max For Live devices, this amazing DAW can do so much. In fact, as you read through the chapters of the book you’ll see how many of the tools, plugins and methods we’ll talk about mimic what you would see and how you might use them for generative music in a modular synthesiser rack.</p>
-</section>
-<section id="structure-of-this-book" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="structure-of-this-book">Structure of this book</h2>
-<p>If you flick through the book you’ll see different types of chapter.</p>
-<section id="recipes" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="recipes">Recipes</h3>
-<p>Recipes chapters introduce a set of instructions that you can follow to create your own music using randomness and probability i.e.&nbsp;generative music. If you’re a Lazy Producer like me then you can use these recipes to generate ideas and sounds that you can then use to start your own process of creating a track. If you’re a lazy reader too, then you can skip straight to these chapters and follow the recipe. If you’re a creatively Lazy Producer then you can tweak the recipes or combine them with other recipes to make your own creations. That’s OK.</p>
-</section>
-<section id="process" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="process">Process</h3>
-<p>Process chapters talk about general ideas that can be applied within Ableton Live or potentially to other DAWs or music making processes. I’ll try to steer clear of specific discussion of tools or plugins in these chapters.</p>
-</section>
-<section id="tools-and-plugins" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="tools-and-plugins">Tools and plugins</h3>
-<p>The chapters for geeks and musicians with Gear Acquisition Syndrome (GAS). If you want to get really nerdy or think about acquiring new plugins then these are the chapters for you. If you have already purchased Ableton Live then you have already invested a large amount on music making equipment. My goal here is not to persuade you to part with significant additional amounts of cash, but some of the plugins have an associated, although modest, cost.</p>
+<section id="midi-transformation" class="level3">
+<h3 class="anchored" data-anchor-id="midi-transformation">MIDI Transformation</h3>
+<p>The MIDI Transformation tools includes tools to arpeggiate the notes within the clip, connect - connecting existing notes in the clip with passing tones, ornament - adding additional short notes before the main note, like a flam in drum terms, or mordent in classical notation, quantize - here applying quantisation non-destructively, i.e.&nbsp;you can see the effect of the amount of quantisation on the MIDI notes, recombine - which lets you select notes and then permute these (rotate the order, mirror, shuffle), span - which allows you to change the note lengths by various means, strum - which applies a rhythmic strum pattern to chords, and time warp - which can bend the timing within a bar, so although the bpm clock remains constant, MIDI notes in a clip can trigger with a more fluid timing.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Live12_MIDI_Transformers.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/Live12_MIDI_Transformers.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
-<section id="who-am-i" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="who-am-i">Who am I?</h2>
-<p>My name is Mike K Smith. I trained as a statistician and work as a data scientist in the pharmaceutical industry. I identify as a professional geek. Since making ambient music is a passion for me and doesn’t have to pay the bills, I have the luxury of being a “Lazy Producer”.</p>
-<p>I make ambient, textural and sometimes generative music mostly using Ableton Live. I have released 2 albums collaborating with other musicians - where they prepared starter audio “stems” of tracks which I then augmented and created finished tracks. I have also produced an album of drone and textural music under my own name.</p>
-<p>You can find my music here:</p>
-<p><a href="https://mikeksmith.bandcamp.com" class="uri">https://mikeksmith.bandcamp.com</a></p>
-<p><a href="https://soundcloud.com/mikeksmith" class="uri">https://soundcloud.com/mikeksmith</a></p>
+<section id="note-probability" class="level2">
+<h2 class="anchored" data-anchor-id="note-probability">Note probability</h2>
+<p>In @ref(process-note-wise-probability), we looked at Notewise probability - where we can set the probability for each note in a sequence, so we can generate ever changing patterns even from fairly short sequences of MIDI notes. Live 12 has another fantastic feature where we can <strong><em>group</em></strong> notes together and either select to play <strong><em>all</em></strong> notes in the group and adjust the probability of that group of notes, or group notes and select to play <strong><em>only one</em></strong> of the notes in that group. What this means for the Lazy Producer is that you can specify chords that when triggered play all of the notes (probability acts on the <strong><em>chord</em></strong>) or you can nominate a group of notes where the computer picks which note in the group will play, but you can be sure that exactly one of those notes <strong><em>will</em></strong> be played.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Live12_GroupNotes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/Live12_GroupNotes.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Let’s give a concrete example. Imagine you want to set up an arpeggiated pattern, but you always want the pattern to play four notes. You always want the root note of chord and the fifth of the scale to play, but you want the other two notes in the pattern to vary each time the chord is played. Well you would group the root and fifth and select “Play All”, while you could group the other notes in the chord and select “Play One”. This will maintain a steady pattern and predictable notes (root and fifth of the scale) while other notes provide some randomness and interest. Note that these actions on the grouped notes (Play One, Play All) also follow whatever is set for the probability setting for those notes / groups. So you can have a group of notes with “Play One” but that one note will only happen 50% of the time. This opens up enormous flexibility in generating note patterns or sequences with a LOT of variation.</p>
 
 
 </section>
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>DeSantis, D.&nbsp;<em>Making Music: 74 Creative Strategies for Electronic Music Producers</em>. Ableton AG, 2015.&nbsp;<a href="https://cdn-resources.ableton.com/resources/uploads/makingmusic/MakingMusic_DennisDeSantis.pdf" class="uri">https://cdn-resources.ableton.com/resources/uploads/makingmusic/MakingMusic_DennisDeSantis.pdf</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -788,7 +828,44 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./022-Recipe-Fibonacci_loops.html" class="pagination-link  aria-label=" recipe="" -="" using="" the="" fibonacci="" sequence="" to="" create="" loops="" (after="" divkid)"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Recipe - Using the Fibonacci sequence to create loops (after DivKid)</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./031-Tools-Live12_Sequencers.html" class="pagination-link" aria-label="Tools - Live 12 Sequencers">
+        <span class="nav-page-text">Tools - Live 12 Sequencers</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":false,"closeEffect":"zoom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 
