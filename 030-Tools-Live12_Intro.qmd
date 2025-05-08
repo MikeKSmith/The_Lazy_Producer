@@ -57,7 +57,10 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Random_
 ```
 
 So now we can chain together MIDI Devices as discussed in
-\@ref(tools-midi-tools) and used in \@ref(recipe-midi-generators) and by turning
+[Tools - MIDI tools](004-Tools-MIDI_tools.qmd)
+ and used in 
+ [Recipe - Doing more with less using MIDI tools and plugins](006-Recipe-MIDI_tools.qmd)
+ and by turning
 on Scale Awareness we'll pick up whatever the Current Scale setting is. Note in
 the Chord and Arpeggiator devices that instead of "st" semitones for shifting,
 it is now labelled "sd" scale degrees. This takes a little getting used to
@@ -130,7 +133,9 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDI_Tr
 
 ## Note probability
 
-In \@ref(process-note-wise-probability), we looked at Notewise probability -
+In 
+[Process - Note-wise probability](002-Process-Note_wise_probability.qmd)
+, we looked at Notewise probability -
 where we can set the probability for each note in a sequence, so we can generate
 ever changing patterns even from fairly short sequences of MIDI notes. Live 12
 has another fantastic feature where we can ***group*** notes together and either

@@ -1,4 +1,4 @@
-# Process - Routing MIDI and Audio {#process-routing}
+# Process - Routing MIDI and Audio
 
 In the spirit of "The Lazy Producer" I like to reuse MIDI and Audio inputs across many tracks, often adding MIDI effects (as discussed) or audio effects. The benefit of this is that the tracks which reuse the same input are related to the original in pitch but with different timbre if they use different synth sounds, or have different audio effects applied. In Ableton Live it's trivial to route one track (either MIDI or audio) into another - either through "pushing" the output of a track to another or specifying that a track takes the output of another as "input" and then monitoring that input.
 

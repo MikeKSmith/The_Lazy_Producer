@@ -121,7 +121,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
+  <a href="./000-Preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What do we mean “Generative” music?</span></a>
   </div>
 </li>
@@ -272,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./032-Tools-Live12_Modulation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tools - Live 12: Modulation</span></a>
+ <span class="menu-text">Tools - Live 12 Modulation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -361,7 +367,7 @@ Key idea
 </div>
 </div>
 </div>
-<p>So now we can chain together MIDI Devices as discussed in @ref(tools-midi-tools) and used in @ref(recipe-midi-generators) and by turning on Scale Awareness we’ll pick up whatever the Current Scale setting is. Note in the Chord and Arpeggiator devices that instead of “st” semitones for shifting, it is now labelled “sd” scale degrees. This takes a little getting used to because the scale degrees are added onto the MIDI note value - so +4sd is a fifth above the incoming MIDI note.</p>
+<p>So now we can chain together MIDI Devices as discussed in <a href="./004-Tools-MIDI_tools.html">Tools - MIDI tools</a> and used in <a href="./006-Recipe-MIDI_tools.html">Recipe - Doing more with less using MIDI tools and plugins</a> and by turning on Scale Awareness we’ll pick up whatever the Current Scale setting is. Note in the Chord and Arpeggiator devices that instead of “st” semitones for shifting, it is now labelled “sd” scale degrees. This takes a little getting used to because the scale degrees are added onto the MIDI note value - so +4sd is a fifth above the incoming MIDI note.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -424,7 +430,7 @@ Key idea
 </section>
 <section id="note-probability" class="level2">
 <h2 class="anchored" data-anchor-id="note-probability">Note probability</h2>
-<p>In @ref(process-note-wise-probability), we looked at Notewise probability - where we can set the probability for each note in a sequence, so we can generate ever changing patterns even from fairly short sequences of MIDI notes. Live 12 has another fantastic feature where we can <strong><em>group</em></strong> notes together and either select to play <strong><em>all</em></strong> notes in the group and adjust the probability of that group of notes, or group notes and select to play <strong><em>only one</em></strong> of the notes in that group. What this means for the Lazy Producer is that you can specify chords that when triggered play all of the notes (probability acts on the <strong><em>chord</em></strong>) or you can nominate a group of notes where the computer picks which note in the group will play, but you can be sure that exactly one of those notes <strong><em>will</em></strong> be played.</p>
+<p>In <a href="./002-Process-Note_wise_probability.html">Process - Note-wise probability</a> , we looked at Notewise probability - where we can set the probability for each note in a sequence, so we can generate ever changing patterns even from fairly short sequences of MIDI notes. Live 12 has another fantastic feature where we can <strong><em>group</em></strong> notes together and either select to play <strong><em>all</em></strong> notes in the group and adjust the probability of that group of notes, or group notes and select to play <strong><em>only one</em></strong> of the notes in that group. What this means for the Lazy Producer is that you can specify chords that when triggered play all of the notes (probability acts on the <strong><em>chord</em></strong>) or you can nominate a group of notes where the computer picks which note in the group will play, but you can be sure that exactly one of those notes <strong><em>will</em></strong> be played.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -841,7 +847,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":false,"closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

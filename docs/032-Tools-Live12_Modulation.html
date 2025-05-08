@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./032-Tools-Live12_Modulation.html">Tools - Live 12: Modulation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./032-Tools-Live12_Modulation.html">Tools - Live 12 Modulation</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -121,7 +121,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
+  <a href="./000-Preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What do we mean “Generative” music?</span></a>
   </div>
 </li>
@@ -272,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./032-Tools-Live12_Modulation.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Tools - Live 12: Modulation</span></a>
+ <span class="menu-text">Tools - Live 12 Modulation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -303,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tools-live12-modulation" id="toc-tools-live12-modulation" class="nav-link active" data-scroll-target="#tools-live12-modulation">Tools - Live 12: Modulation</a>
+  <li><a href="#tools---live-12-modulation" id="toc-tools---live-12-modulation" class="nav-link active" data-scroll-target="#tools---live-12-modulation">Tools - Live 12 Modulation</a>
   <ul class="collapse">
   <li><a href="#live-12---lfo-shapes-and-modulation" id="toc-live-12---lfo-shapes-and-modulation" class="nav-link" data-scroll-target="#live-12---lfo-shapes-and-modulation">Live 12 - LFO shapes and modulation</a></li>
   <li><a href="#live-12---midi-expression-control" id="toc-live-12---midi-expression-control" class="nav-link" data-scroll-target="#live-12---midi-expression-control">Live 12 - MIDI Expression Control</a></li>
@@ -318,8 +324,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="tools-live12-modulation" class="level1">
-<h1>Tools - Live 12: Modulation</h1>
+<section id="tools---live-12-modulation" class="level1">
+<h1>Tools - Live 12 Modulation</h1>
 <p>Live 12 has now introduced the concept of parameter <strong><em>modulation</em></strong> through devices like the LFO effect, and others. Modulation (instead of <strong><em>control</em></strong>) opens up new possibilities for the Lazy Producer.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -346,7 +352,7 @@ Key idea
 </div>
 </div>
 <p>In the screenshot above, the LFO is changing the value of the mapped parameter by 50% relative to its current value.</p>
-<p>Also, note the new LFO “Glider” type in Live 12. This gives a really useful random, but smooth change in values. Previously to get a smooth but random LFO, you had to chain LFOs together and cross-modulate the amount or rates (as discussed in Chapter @ref(lfo-trio—a-chaotic-lfo). “Glider” Waveform makes that much easier.</p>
+<p>Also, note the new LFO “Glider” type in Live 12. This gives a really useful random, but smooth change in values. Previously to get a smooth but random LFO, you had to chain LFOs together and cross-modulate the amount or rates (as discussed in <a href="./007-Tools-Modulators.html">Tools - Modulators</a> . “Glider” Waveform makes that much easier.</p>
 <p>Another LFO Waveform - “Stray” - gives similar random but smooth changes, but with a faster rate of change. Personally I favour these “random but smooth” changing LFOs, as the previous “sample and hold” random LFO was a bit too “steppy” for my liking.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -800,7 +806,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":false,"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","selector":".lightbox","loop":false,"closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

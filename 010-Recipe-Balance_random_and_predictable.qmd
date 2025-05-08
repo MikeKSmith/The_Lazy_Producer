@@ -1,4 +1,4 @@
-# Recipe - Balancing the unexpected and the predictable {#recipe-balancing-unexpected-predictable}
+# Recipe - Balancing the unexpected and the predictable
 
 ```{r}
 #| echo: false
@@ -30,7 +30,9 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Recipe3_Piano_
 
 -   Lower the probability of the notes in the second part (for example somewhere between 50% and 80%) - so that each time the loop plays you get a different set of notes. With lower probability you can choose to have more notes per clip, as they result will be more varied.
 
--   Add MIDI effects like Random and Scale to this part (see chapter 6 - MIDI Tools: chords and added notes) to add some variation on the notes being played. This means that each time the loop repeats you will hear a different set of notes. On its own, this would be "too much randomness". But because this sits alongside a predictable repeating part, it will sound more grounded.
+-   Add MIDI effects like Random and Scale to this part (see 
+[Tools - MIDI tools](004-Tools-MIDI_tools.qmd)
+) to add some variation on the notes being played. This means that each time the loop repeats you will hear a different set of notes. On its own, this would be "too much randomness". But because this sits alongside a predictable repeating part, it will sound more grounded.
 
 ```{r}
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe3_Piano_Random_MIDIFX.png"))

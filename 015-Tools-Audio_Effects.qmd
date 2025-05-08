@@ -1,11 +1,11 @@
-# Tools - Creative use of audio effects {#tools-audio-effects}
+# Tools - Creative use of audio effects
 
 ```{r}
 #| echo: FALSE
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-It ***is possible*** to create generative tracks that do not use reverb and delay. But to be honest, it isn't done often. In the preface to this book I said about ambient music: "Take any sound, drown it in reverb and delay... JOB DONE". You can, and I'd argue you ***should*** do better than that. Creative use of audio effects can accentuate harmonics and do interesting things with those; provide some grit, noise or warble; take a rather plain sound and use modulation and effects to twist it until it forms something much more interesting and evolving. All this BEFORE drowning it in reverb and delay.
+It ***is possible*** to create generative tracks that do not use reverb and delay (https://soundcloud.com/mikeksmith/dryjanuary). But to be honest, it isn't done often. In the preface to this book I said about ambient music: "Take any sound, drown it in reverb and delay... JOB DONE". You can, and I'd argue you ***should*** do better than that. Creative use of audio effects can accentuate harmonics and do interesting things with those; provide some grit, noise or warble; take a rather plain sound and use modulation and effects to twist it until it forms something much more interesting and evolving. All this BEFORE drowning it in reverb and delay.
 
 ::: callout-tip
 ## Key idea
@@ -30,7 +30,9 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Hybrid_Reverb.
 
 ## Valhalla Supermassive
 
-Here's a third-party effect I couldn't do without. [Valhalla Supermassive](https://valhalladsp.com/shop/reverb/valhalla-supermassive/) is a free audio effect plugin from Valhalla DSP. It's a staple of ambient and drone producers because a) it's free and b) it has some MASSIVE reverb algorithms (duh!). Suffice to say it does exactly what it says on the tin - massive reverbs. But what Valhalla have done rather well is to combine algorithms and delay lines so that some of its algorithms behave more like delays, while some act more like reverbs. They also have algorithms that combine both - early delay turning into massive reverb. Some have short attack, some much longer. One of my personal favourites is the "Benson Arizona" preset which will turn ANYTHING into a massive drone. Combine this with Paul Stretch, as discussed in @ref(tools-paul-stretch) and you'll have instant drones.
+Here's a third-party effect I couldn't do without. [Valhalla Supermassive](https://valhalladsp.com/shop/reverb/valhalla-supermassive/) is a free audio effect plugin from Valhalla DSP. It's a staple of ambient and drone producers because a) it's free and b) it has some MASSIVE reverb algorithms (duh!). Suffice to say it does exactly what it says on the tin - massive reverbs. But what Valhalla have done rather well is to combine algorithms and delay lines so that some of its algorithms behave more like delays, while some act more like reverbs. They also have algorithms that combine both - early delay turning into massive reverb. Some have short attack, some much longer. One of my personal favourites is the "Benson Arizona" preset which will turn ANYTHING into a massive drone. Combine this with Paul Stretch, as discussed in 
+[Tools - Extreme audio stretching with PaulStretch](016-Tools-PaulStretch.qmd)
+and you'll have instant drones.
 
 To be honest, all of Valhalla DSP's plugins are excellent and reasonably priced. I particularly like the Shimmer device to add shimmer and pitch shift reverb to sounds. Their Delay plugin provides a wide variety of delay types, including tape delay (complete with wobble and drive) but also usefully a reverse delay (where the original audio is played backwards in the delay). I like the latter as the delayed line comes back transformed compared to the input. Again this adds some interest to the part.
 
@@ -42,7 +44,9 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Valhalla_Super
 
 I tend to prefer [Live Suite's Echo effect](https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#echo) rather than delay. There is a wide range of sounds possible using it, and some built in modulations and tweaks to the sound which add character. Use of Echo as a send effect has a long legacy in dub music where the DJ or producer would send a burst of signal to the Echo and by tweaking the feedback and EQ would create long tails of echo. You can learn more about the Echo effect here: <https://www.youtube.com/watch?v=4LxhIE169x4>.
 
-Being a Lazy Producer, I prefer to let random processes tweak the Echo settings. I have built an audio effect rack with a trio of LFOs working on each other and then changing the feedback amount, lower and upper ranges of the EQ so that these wobble about randomly. Using an instance of Dillon Bastan's Strange Mod modulator will achieve similar effect as discussed in \@ref(tools-modulators) While the timing of the Echo is fixed, we have other parameters that mean that the sound is constantly shifting in an unpredictable way. This will prevent the Echo effect from being too "samey" across the track and provide some interesting moments. It's a bit like having a pair of "robot hands" that tweak the Echo settings.
+Being a Lazy Producer, I prefer to let random processes tweak the Echo settings. I have built an audio effect rack with a trio of LFOs working on each other and then changing the feedback amount, lower and upper ranges of the EQ so that these wobble about randomly. Using an instance of Dillon Bastan's Strange Mod modulator will achieve similar effect as discussed in 
+[Tools - Modulators](007-Tools-Modulators.qmd)
+ While the timing of the Echo is fixed, we have other parameters that mean that the sound is constantly shifting in an unpredictable way. This will prevent the Echo effect from being too "samey" across the track and provide some interesting moments. It's a bit like having a pair of "robot hands" that tweak the Echo settings.
 
 ```{r}
 knitr::include_graphics(path = file.path(here::here(), "images", "LFO_Echo.png"))

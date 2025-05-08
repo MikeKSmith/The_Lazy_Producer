@@ -1,4 +1,4 @@
-# Tools - MIDI tools: chords and added notes {#tools-midi-tools}
+# Tools - MIDI tools: chords and added notes
 
 There are many [MIDI tools and devices](https://www.ableton.com/en/live-manual/11/live-midi-effect-reference/#live-midi-effect-reference) within Ableton Live that will help manipulate MIDI notes - shifting pitch, adding random pitch deviation, applying arpeggiation (cycling through notes in a chord), adding additional notes to an incoming note to make a chord, changing the length of the played MIDI note, as well as manipulating incoming MIDI control messages - using the modulation wheel to control expression, changing velocity, modulating other devices based on velocity, MPE and other control messages.
 
@@ -61,7 +61,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Cascading_note
 
 ## Deviate
 
-The free [Deviate Max for Live plugin from Novel Music](https://www.novelmusic.org/m4l/deviate) can add variation to incoming MIDI notes. The "TRIGGER" section defines how often the deviation or variation will occur - so it is possible to balance the unexpected with the predictable, or keep things the same before introducing randomness. One important aspect of Deviate is that it has a memory, so if you like the random pattern generated, you can "lock" this by moving the "LOCK" slider to the right. This means it acts a bit like the Turing Machine devices used in modular synthesis rigs. Deviate has two sides - MIDI, which we'll cover here and MOD which we'll cover in the section \@ref(tools-modulators).
+The free [Deviate Max for Live plugin from Novel Music](https://www.novelmusic.org/m4l/deviate) can add variation to incoming MIDI notes. The "TRIGGER" section defines how often the deviation or variation will occur - so it is possible to balance the unexpected with the predictable, or keep things the same before introducing randomness. One important aspect of Deviate is that it has a memory, so if you like the random pattern generated, you can "lock" this by moving the "LOCK" slider to the right. This means it acts a bit like the Turing Machine devices used in modular synthesis rigs. Deviate has two sides - MIDI, which we'll cover here and MOD which we'll cover in the section .
 
 The "TRIGGER" section is worth spending a little time to understand. It determines how many MIDI notes will pass before the deviation is triggered. So if set to "1" then every note triggers a new deviation. If set to 8 then every 8 notes the deviation settings may be triggered, but then these deviation settings persist for the next 7 notes. The probability to the right (below set to 100%) means that the deviation will be triggered every time, but if lower than 100% then that probability determines whether ***any*** deviation will occur. So if you set 8 notes, with 100% probability then the Octave deviation may trigger 18% of the time, but if it does then notes will sound either an octave up (or down) for the next 7 notes.
 

@@ -1,10 +1,4 @@
----
-editor: 
-  markdown: 
-    wrap: 72
----
-
-# Process - Unsynced loops {#process-unsynced-loops}
+# Process - Unsynced loops
 
 ```{r}
 #| echo: FALSE

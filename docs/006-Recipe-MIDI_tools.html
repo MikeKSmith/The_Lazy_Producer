@@ -121,7 +121,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
+  <a href="./000-Preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What do we mean “Generative” music?</span></a>
   </div>
 </li>
@@ -272,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./032-Tools-Live12_Modulation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tools - Live 12: Modulation</span></a>
+ <span class="menu-text">Tools - Live 12 Modulation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -303,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#recipe-midi-tools" id="toc-recipe-midi-tools" class="nav-link active" data-scroll-target="#recipe-midi-tools">Recipe - Doing more with less using MIDI tools and plugins</a></li>
+  <li><a href="#recipe---doing-more-with-less-using-midi-tools-and-plugins" id="toc-recipe---doing-more-with-less-using-midi-tools-and-plugins" class="nav-link active" data-scroll-target="#recipe---doing-more-with-less-using-midi-tools-and-plugins">Recipe - Doing more with less using MIDI tools and plugins</a></li>
   </ul>
 </nav>
     </div>
@@ -313,9 +319,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="recipe-midi-tools" class="level1">
+<section id="recipe---doing-more-with-less-using-midi-tools-and-plugins" class="level1">
 <h1>Recipe - Doing more with less using MIDI tools and plugins</h1>
-<p>In this recipe we’ll use the simplest MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in . This recipe also uses MIDI and audio routing in Live quite extensively, so it’s worth reviewing the content in @ref(process-routing). We’re also going to use modulation devices covered in @ref(tools-modulators).</p>
+<p>In this recipe we’ll use the simplest MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in . This recipe also uses MIDI and audio routing in Live quite extensively, so it’s worth reviewing the content in <a href="./005-Process-Routing.html">Process - Routing MIDI and Audio</a> . We’re also going to use modulation devices covered in <a href="./007-Tools-Modulators.html">Tools - Modulators</a> .</p>
 <ol type="1">
 <li><p>Create a MIDI track but do not add an instrument to that track. This is going to be the “generator” for our track.</p></li>
 <li><p>Within this track, add a single MIDI clip with C3 notes for one bar. Name this the “Generator” track (CTRL+R to rename).</p></li>
@@ -838,7 +844,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","loop":false,"descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","loop":false,"openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

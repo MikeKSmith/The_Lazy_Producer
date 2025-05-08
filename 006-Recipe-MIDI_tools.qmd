@@ -1,4 +1,4 @@
-# Recipe - Doing more with less using MIDI tools and plugins {#recipe-midi-tools}
+# Recipe - Doing more with less using MIDI tools and plugins
 
 ```{r}
 #| echo: FALSE
@@ -8,8 +8,12 @@ knitr::opts_chunk$set(echo = FALSE)
 In this recipe we'll use the simplest MIDI generator, in this case a single MIDI
 note, with MIDI effects and routing to create a track - these are covered in .
 This recipe also uses MIDI and audio routing in Live quite extensively, so it's
-worth reviewing the content in \@ref(process-routing). We're also going to use
-modulation devices covered in \@ref(tools-modulators).
+worth reviewing the content in 
+[Process - Routing MIDI and Audio](005-Process-Routing.qmd)
+. We're also going to use
+modulation devices covered in 
+[Tools - Modulators](007-Tools-Modulators.qmd)
+.
 
 1.  Create a MIDI track but do not add an instrument to that track. This is
 going to be the "generator" for our track.

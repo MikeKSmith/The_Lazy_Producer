@@ -18,7 +18,9 @@ catching your ear.
 
 ## The Problem
 
-We defined "generative" music in \@ref(definition-generative). There we defined
+We defined "generative" music in 
+[What do we mean "Generative" music?](0000-Defintion-Generative.qmd)
+. There we defined
 it as "music (that) should be able to go on indefinitely, with enough going on
 to make it interesting, but without anything particularly "sticking out" to
 catch the listener's ear". When we use random processes to generate notes,

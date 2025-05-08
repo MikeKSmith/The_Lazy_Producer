@@ -1,6 +1,8 @@
-# Tools - Modulators {#tools-modulators}
+# Tools - Modulators
 
-The MIDI tools discussed in \@ref(tools-midi-tools) are useful to transform,
+The MIDI tools discussed in 
+[Tools - MIDI tools](004-Tools-MIDI_tools.qmd)
+are useful to transform,
 augment and add notes to existing MIDI sequences, but we can also automate
 changing the value of pretty much ***anything*** in Live via modulation. [Max
 for Live provides a variety of modulation
@@ -155,7 +157,9 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Dispatch.png")
 
 ## Deviate
 
-We've come across the free [Deviate Max for Live device from Novel Music](https://www.novelmusic.org/m4l/deviate) in @ref(tools-midi-tools), but it also offers random modulation control on parameters. You can dial up randomness at various levels in Deviate, and also control the amount of randomness which is very useful in generative music. But it also has a key feature - the ability to monitor parameter deviations in its "MEMORY" and then "Lock" in patterns if you find something you like - this mirrors functionality in Turing Machine modules that exist in the modular synthesis world.
+We've come across the free [Deviate Max for Live device from Novel Music](https://www.novelmusic.org/m4l/deviate) in 
+[Tools - MIDI tools](004-Tools-MIDI_tools.qmd)
+, but it also offers random modulation control on parameters. You can dial up randomness at various levels in Deviate, and also control the amount of randomness which is very useful in generative music. But it also has a key feature - the ability to monitor parameter deviations in its "MEMORY" and then "Lock" in patterns if you find something you like - this mirrors functionality in Turing Machine modules that exist in the modular synthesis world.
 
 Again, it's worth reviewing [the tutorial video from Novel Music](https://www.youtube.com/watch?v=4WwKGUV2H4I) to learn about all possible features of this device.
 

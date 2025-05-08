@@ -1,4 +1,4 @@
-# Tools - Extreme audio stretching with PaulStretch {#tools-paul-stretch}
+# Tools - Extreme audio stretching with PaulStretch
 
 ```{r}
 #| echo: FALSE
@@ -58,6 +58,8 @@ A more sonically pleasing hyper stretch took the Windows 95 startup noise and st
 htmltools::includeHTML(path = file.path(here::here(), "HTML","Windows95_stretched.html"))
 ```
 
-Another possibility is to use audio from other generative processes as the input to the stretching process. For example, try taking the process for \@ref(recipe-changing-chords) but make the clip lengths short - say 3-9 beats long - and use that as the input to the stretching process. Since the chords are designed to change incrementally using that recipe, it should work quite well as the input to this stretching, smearing out the chord changes even more and making them implicit rather than explicit. Taking something random, then stretching and smearing is a way to create something potentially more sonically interesting.
+Another possibility is to use audio from other generative processes as the input to the stretching process. For example, try taking the process for 
+[Recipe - Changing chords](001-Recipe-Changing_Chords.qmd)
+ but make the clip lengths short - say 3-9 beats long - and use that as the input to the stretching process. Since the chords are designed to change incrementally using that recipe, it should work quite well as the input to this stretching, smearing out the chord changes even more and making them implicit rather than explicit. Taking something random, then stretching and smearing is a way to create something potentially more sonically interesting.
 
 I'm not guaranteeing that throwing any old nonsense through PaulXStretch will suddenly make it sound amazing, but it's sometimes worth a shot to see what the results will sound like. These can then be used as ambient "beds" or foundations for other sounds, textures and production on top.

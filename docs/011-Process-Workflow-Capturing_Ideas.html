@@ -121,7 +121,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
+  <a href="./000-Preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What do we mean “Generative” music?</span></a>
   </div>
 </li>
@@ -272,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./032-Tools-Live12_Modulation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tools - Live 12: Modulation</span></a>
+ <span class="menu-text">Tools - Live 12 Modulation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -303,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#process-workflow" id="toc-process-workflow" class="nav-link active" data-scroll-target="#process-workflow">Process - Workflow: capturing generative ideas</a>
+  <li><a href="#process---workflow-capturing-generative-ideas" id="toc-process---workflow-capturing-generative-ideas" class="nav-link active" data-scroll-target="#process---workflow-capturing-generative-ideas">Process - Workflow: capturing generative ideas</a>
   <ul class="collapse">
   <li><a href="#in-the-beginning" id="toc-in-the-beginning" class="nav-link" data-scroll-target="#in-the-beginning">In the beginning</a></li>
   <li><a href="#random-processes-are-random" id="toc-random-processes-are-random" class="nav-link" data-scroll-target="#random-processes-are-random">Random processes are random</a></li>
@@ -327,7 +333,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="process-workflow" class="level1">
+<section id="process---workflow-capturing-generative-ideas" class="level1">
 <h1>Process - Workflow: capturing generative ideas</h1>
 <p>Setting up an Ableton Live set with lots of MIDI generators, MIDI manipulation and transformation, using that generated MIDI to create a nice collage of sounds that shifts and changes over time is very satisfying. From a performance perspective, once set up, you can press play and let it do its thing. But what if you want to commit the state of the system to share with others. That involves capturing the generated MIDI, modulations and generated audio. This chapter will discuss how you might go about capturing the processes so that you can later release the track.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -357,7 +363,7 @@ Key idea
 <h2 class="anchored" data-anchor-id="how-to-set-up-live-sets---my-experience">How to set up Live sets - my experience</h2>
 <section id="midi-generators" class="level3">
 <h3 class="anchored" data-anchor-id="midi-generators">MIDI Generators</h3>
-<p>I like to have separate tracks for MIDI generators. These are the “starting point” of a process. They will be generating MIDI notes through random processes, patterns or Follow Actions. I like to keep the generators separate from the transformation MIDI tracks, because you may want to send the <strong><em>same</em></strong> generated MIDI notes into several transformation chains. This will lead to a more coherent result since different transformation chains ingest a consistent set of generated MIDI input notes.</p>
+<p>I like to have separate tracks for MIDI generators. These are the “starting point” of a process. They will be generating MIDI notes through random processes, patterns or <a href="./003-Process-Follow_Actions.html">Follow Actions</a> . I like to keep the generators separate from the transformation MIDI tracks, because you may want to send the <strong><em>same</em></strong> generated MIDI notes into several transformation chains. This will lead to a more coherent result since different transformation chains ingest a consistent set of generated MIDI input notes.</p>
 </section>
 <section id="midi-transformer-tracks" class="level3">
 <h3 class="anchored" data-anchor-id="midi-transformer-tracks">MIDI Transformer tracks</h3>
@@ -383,7 +389,7 @@ Key idea
 <section id="rendering-bouncing-down-to-audio" class="level3">
 <h3 class="anchored" data-anchor-id="rendering-bouncing-down-to-audio">Rendering / bouncing down to audio</h3>
 <p>In the screenshot below I’ve rendered the MIDI part and virtual instrument to an audio file. This then will “bake in” any MIDI transformation - in this case the arpeggiator, pitch shift up an octave, and the velocity curve. Note that I render or “bounce” the output to a new track, leaving the original in place. This allows me to come back later and tweak the original settings or re-render without having to undo many actions.</p>
-<p>Since the MIDI input clips with Follow Actions have probability on each note (see Recipe 1 - Changing Chords for more information) then there’s a chance that one or two of the generated MIDI chords will have only two notes (down to the probability choices). By rendering and listening back, I can assess whether I think the “choices” made through probability work with what else is going on or not. Perhaps there’s enough going on when the “thin” chord stack happens that it’s essentially hidden in the mix. If I really don’t like the result, I can re-render the audio.</p>
+<p>Since the MIDI input clips with Follow Actions have probability on each note (see <a href="./001-Recipe-Changing_Chords.html">Recipe - Changing chords</a> for more information) then there’s a chance that one or two of the generated MIDI chords will have only two notes (down to the probability choices). By rendering and listening back, I can assess whether I think the “choices” made through probability work with what else is going on or not. Perhaps there’s enough going on when the “thin” chord stack happens that it’s essentially hidden in the mix. If I really don’t like the result, I can re-render the audio.</p>
 </section>
 <section id="group-tracks-to-tidy-your-live-set" class="level3">
 <h3 class="anchored" data-anchor-id="group-tracks-to-tidy-your-live-set">Group tracks to tidy your Live set</h3>
@@ -824,7 +830,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

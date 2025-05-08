@@ -1,4 +1,4 @@
-# Process - Balancing the unexpected and the predictable {#process-balance-unexpected-and-predictable}
+# Process - Balancing the unexpected and the predictable
 
 In generative music, we're likely to be using some probability to govern when to
 trigger certain events, to select clips, to change some aspect of the sounds
@@ -34,7 +34,9 @@ listening.
 ::: 
 
 ## Evolving changes
-In the "Changing Chords" recipe the clips across and within tracks had different
+In 
+[Recipe - Changing chords](001-Recipe-Changing_Chords.qmd)
+the clips across and within tracks had different
 lengths, and the note-wise probability led to different chords with each
 triggering of the clips. This meant that chords evolved slowly, with changes
 being gradual rather than all at once. The longer clip length gives the listener
@@ -104,7 +106,8 @@ for what is going on around that.
 
 ## Repeat yourself
 
-If you look at the Follow Action dialogue box in [Process - Follow Actions]
+If you look at the Follow Action dialogue box in 
+[Process - Follow Actions](003-Process-Follow_Actions.qmd)
 you'll see that it allows you to specify a number of repeats before taking the
 next action. You can exploit this feature to build in repetition before
 evolution. Playing the clip 4 times, say, before moving on. This works for

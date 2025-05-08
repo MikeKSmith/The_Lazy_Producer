@@ -1,10 +1,4 @@
----
-editor: 
-  markdown: 
-    wrap: 72
----
-
-# Process - Using Field Recordings {#process-using-field-recordings}
+# Process - Using Field Recordings
 
 > Computer goes "Bleep bloop bleep bleep bloopity bloop. Whoosh. Bleep
 > bleep... BRRRRR...."
@@ -32,7 +26,9 @@ mental picture to go with the more abstract or generative ideas.
 
 Field recordings of natural, human sounds provide that balance between
 something familiar, predictable and natural with random bleeps and
-bloops. In @ref(process-balance-unexpected-and-predictable) we discussed
+bloops. In 
+[Process - Balancing the unexpected and the predictable](009-Process-Balance_unexpected_and_predictable.qmd)
+ we discussed
 providing musical balance to the randomness. In this chapter we're
 talking about providing field recordings to provide that balance.
 

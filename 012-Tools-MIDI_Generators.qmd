@@ -1,11 +1,15 @@
-# Tools - MIDI Generators {#tools-midi-generators}
+# Tools - MIDI Generators
 
-The MIDI tools discussed in \@ref(tools-midi-tools) are useful to transform, augment and add notes to existing MIDI sequences, but we also need to generate those sequences in the first place. Ableton Live Suite and Max for Live plugins offer a few options to generate sequences of notes.
+The MIDI tools discussed in 
+[Tools - MIDI tools](004-Tools-MIDI_tools.qmd)
+are useful to transform, augment and add notes to existing MIDI sequences, but we also need to generate those sequences in the first place. Ableton Live Suite and Max for Live plugins offer a few options to generate sequences of notes.
 
 ::: callout-tip
 ## Key idea
 
-You can play or program in sequences to be used as the basis for generative music, and we did exactly this for \@ref(recipe-changing-chords). But to create melodic or note sequences you may also wish to use a MIDI note generator like those discussed below. All of these devices will create MIDI note sequences - all of them can use random probability to generate note sequences that constantly change or evolve. As we have discussed in the section \@ref(process-balance-unexpected-and-predictable) too much randomness can be difficult for the listener to engage with. Fortunately, most of these plugins allow you to tailor the amount of randomness or to slowly evolve.
+You can play or program in sequences to be used as the basis for generative music, and we did exactly this for [Recipe - Changing chords](001-Recipe-Changing_Chords.qmd)
+. But to create melodic or note sequences you may also wish to use a MIDI note generator like those discussed below. All of these devices will create MIDI note sequences - all of them can use random probability to generate note sequences that constantly change or evolve. As we have discussed in the section [Process - Balancing the unexpected and the predictable](009-Process-Balance_unexpected_and_predictable.qmd)
+ too much randomness can be difficult for the listener to engage with. Fortunately, most of these plugins allow you to tailor the amount of randomness or to slowly evolve.
 
 If you ever thought that DAW sequencers were too limited compared to modular synthesiser setups, I challenge you to review the tools below (and others available via Max for Live) and find holes in functionality. (But don't email me to argue, find them and let me know. Submit an Issue to tell me that there's a different sequencer that I haven't talked about!)
 
@@ -17,7 +21,9 @@ In Ableton Live 11 Suite, there are many plugins that will generate note sequenc
 
 [Melodic Steps](https://www.youtube.com/watch?v=ev2GgU1D8jw) (Max for Live sequencer in the [Creative Extensions pack](https://www.ableton.com/en/packs/creative-extensions/)) is a sequencer that disentangles note pitch, octave, length, velocity and probability. This allows you to sequence these attributes separately. You can define the length of each sequence separately, so you can have all sequences with the same length for predictable MIDI sequences, or change the length of one or more to produce more elaborate patterns. Having sequences that are even numbers of steps will bring you back to repetition faster than having sequences that are prime sequences (remember common factors from your elementary arithmetic lessons?). Note that each lane has the option to "roll the dice" and add randomness, either a little (score 2 dice) or a lot (score 5 dice). Also, note that the "Playback" setting can choose to play back at twice the speed or half the speed.
 
-Melodic Steps has been somewhat superseded by the newer [SQ sequencer](https://www.youtube.com/watch?v=1obXGz-Zfa8) from the [Live 12 Sequencer Pack](https://www.ableton.com/en/packs/sequencers). See \@ref(tools-live12-sequencers).
+Melodic Steps has been somewhat superseded by the newer [SQ sequencer](https://www.youtube.com/watch?v=1obXGz-Zfa8) from the [Live 12 Sequencer Pack](https://www.ableton.com/en/packs/sequencers). See 
+[Tools - Live 12 Sequencers](031-Tools-Live12_Sequencers.qmd)
+.
 
 ```{r}
 #| echo: false

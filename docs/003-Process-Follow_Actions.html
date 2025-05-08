@@ -121,7 +121,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
+  <a href="./000-Preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What do we mean “Generative” music?</span></a>
   </div>
 </li>
@@ -272,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./032-Tools-Live12_Modulation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tools - Live 12: Modulation</span></a>
+ <span class="menu-text">Tools - Live 12 Modulation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -303,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#process-follow-actions" id="toc-process-follow-actions" class="nav-link active" data-scroll-target="#process-follow-actions">Process - Follow Actions</a>
+  <li><a href="#process---follow-actions" id="toc-process---follow-actions" class="nav-link active" data-scroll-target="#process---follow-actions">Process - Follow Actions</a>
   <ul class="collapse">
   <li><a href="#follow-actions" id="toc-follow-actions" class="nav-link" data-scroll-target="#follow-actions">Follow ACTIONS</a></li>
   <li><a href="#follow-actions-1" id="toc-follow-actions-1" class="nav-link" data-scroll-target="#follow-actions-1">FOLLOW Actions</a></li>
@@ -319,7 +325,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="process-follow-actions" class="level1">
+<section id="process---follow-actions" class="level1">
 <h1>Process - Follow Actions</h1>
 <p>Ableton has had <a href="https://www.ableton.com/en/live-manual/11/launching-clips/#follow-actions">“Follow Actions”</a> within Session View clips for a <strong><em>long</em></strong> time. Follow Actions allow you to perform a variety of actions at the end of a clip or after a given number of bars and beats. Follow actions are generally used where there are a number of clips within a track, allow the performer or Lazy Producer to automate moving from one clip to another. This allows you to determine a sequence of events - moving from one clip to another or playing the clip again, etc. There are a number of really useful uses for follow actions for live performance, but it also has incredible uses for making generative music. Follow Actions help govern the amount of variability in our generative sequences - whether there is a definite sequence of events that happen predictably, or whether there is an element of chance introduced.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -368,7 +374,7 @@ Key idea
 </section>
 <section id="follow-action-probabilities" class="level2">
 <h2 class="anchored" data-anchor-id="follow-action-probabilities">Follow Action probabilities</h2>
-<p>By default Live will perform the specified follow action with 100% probability i.e.&nbsp;it’s guaranteed to happen. But there is a second option where the action is performed with a given probability, and with 100% minus that probability it will perform a different action (probabilities MUST add to 100%). For example, it could do action 1 with 70% probability and action 2 with 30% probability. Like the coin-flipping in Note-wise probability that we talked about in the previous chapter @ref(process-note-wise-probability), here we have a <strong><em>biased</em></strong> coin, determining what happens next. With 50% - 50% Ableton flips the coin and chooses which action to take next. With 70% - 30% the left-hand action will happen more, but there’s still a chance of the right-hand action happening.</p>
+<p>By default Live will perform the specified follow action with 100% probability i.e.&nbsp;it’s guaranteed to happen. But there is a second option where the action is performed with a given probability, and with 100% minus that probability it will perform a different action (probabilities MUST add to 100%). For example, it could do action 1 with 70% probability and action 2 with 30% probability. Like the coin-flipping in Note-wise probability that we talked about in the previous chapter <a href="./002-Process-Note_wise_probability.html">Process - Note-wise probability</a> , here we have a <strong><em>biased</em></strong> coin, determining what happens next. With 50% - 50% Ableton flips the coin and chooses which action to take next. With 70% - 30% the left-hand action will happen more, but there’s still a chance of the right-hand action happening.</p>
 <p>The automation and probability here allows a HUGE range of possible journeys through a sequence of clips. If you introduce a 50% Play Next probability on the clips in the Changing Chords recipe, then it will stretch out the changes across clips as some of them will loop and continue playing the same chord for longer.</p>
 </section>
 <section id="a-random-walk" class="level2">
@@ -782,7 +788,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

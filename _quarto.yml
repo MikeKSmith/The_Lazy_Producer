@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: docs
   
+execute:
+  enabled: true
+  
 website:
   title: "The Lazy Producer"
   page-navigation: true

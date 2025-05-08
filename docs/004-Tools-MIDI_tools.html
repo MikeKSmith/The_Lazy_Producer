@@ -121,7 +121,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
+  <a href="./000-Preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What do we mean “Generative” music?</span></a>
   </div>
 </li>
@@ -272,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./032-Tools-Live12_Modulation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tools - Live 12: Modulation</span></a>
+ <span class="menu-text">Tools - Live 12 Modulation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -303,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tools-midi-tools" id="toc-tools-midi-tools" class="nav-link active" data-scroll-target="#tools-midi-tools">Tools - MIDI tools: chords and added notes</a>
+  <li><a href="#tools---midi-tools-chords-and-added-notes" id="toc-tools---midi-tools-chords-and-added-notes" class="nav-link active" data-scroll-target="#tools---midi-tools-chords-and-added-notes">Tools - MIDI tools: chords and added notes</a>
   <ul class="collapse">
   <li><a href="#abletons-note-echo-plugin" id="toc-abletons-note-echo-plugin" class="nav-link" data-scroll-target="#abletons-note-echo-plugin">Ableton’s Note Echo plugin</a></li>
   <li><a href="#abletons-random-plugin" id="toc-abletons-random-plugin" class="nav-link" data-scroll-target="#abletons-random-plugin">Ableton’s Random plugin</a></li>
@@ -324,7 +330,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="tools-midi-tools" class="level1">
+<section id="tools---midi-tools-chords-and-added-notes" class="level1">
 <h1>Tools - MIDI tools: chords and added notes</h1>
 <p>There are many <a href="https://www.ableton.com/en/live-manual/11/live-midi-effect-reference/#live-midi-effect-reference">MIDI tools and devices</a> within Ableton Live that will help manipulate MIDI notes - shifting pitch, adding random pitch deviation, applying arpeggiation (cycling through notes in a chord), adding additional notes to an incoming note to make a chord, changing the length of the played MIDI note, as well as manipulating incoming MIDI control messages - using the modulation wheel to control expression, changing velocity, modulating other devices based on velocity, MPE and other control messages.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -417,7 +423,7 @@ Key idea
 </section>
 <section id="deviate" class="level2">
 <h2 class="anchored" data-anchor-id="deviate">Deviate</h2>
-<p>The free <a href="https://www.novelmusic.org/m4l/deviate">Deviate Max for Live plugin from Novel Music</a> can add variation to incoming MIDI notes. The “TRIGGER” section defines how often the deviation or variation will occur - so it is possible to balance the unexpected with the predictable, or keep things the same before introducing randomness. One important aspect of Deviate is that it has a memory, so if you like the random pattern generated, you can “lock” this by moving the “LOCK” slider to the right. This means it acts a bit like the Turing Machine devices used in modular synthesis rigs. Deviate has two sides - MIDI, which we’ll cover here and MOD which we’ll cover in the section @ref(tools-modulators).</p>
+<p>The free <a href="https://www.novelmusic.org/m4l/deviate">Deviate Max for Live plugin from Novel Music</a> can add variation to incoming MIDI notes. The “TRIGGER” section defines how often the deviation or variation will occur - so it is possible to balance the unexpected with the predictable, or keep things the same before introducing randomness. One important aspect of Deviate is that it has a memory, so if you like the random pattern generated, you can “lock” this by moving the “LOCK” slider to the right. This means it acts a bit like the Turing Machine devices used in modular synthesis rigs. Deviate has two sides - MIDI, which we’ll cover here and MOD which we’ll cover in the section .</p>
 <p>The “TRIGGER” section is worth spending a little time to understand. It determines how many MIDI notes will pass before the deviation is triggered. So if set to “1” then every note triggers a new deviation. If set to 8 then every 8 notes the deviation settings may be triggered, but then these deviation settings persist for the next 7 notes. The probability to the right (below set to 100%) means that the deviation will be triggered every time, but if lower than 100% then that probability determines whether <strong><em>any</em></strong> deviation will occur. So if you set 8 notes, with 100% probability then the Octave deviation may trigger 18% of the time, but if it does then notes will sound either an octave up (or down) for the next 7 notes.</p>
 <p>The “MEMORY” section works along side the “LOCK” switch. Deviate can “listen” to a sequence of MIDI notes of the nominated length (here 8 notes) and will keep track of what deviations were applied in that 8 note sequence. If you like what you’re hearing you can “LOCK” the deviation settings in by sliding the “LOCK slider to the right. As you bring the”LOCK” slider back to the left it will start to reintroduce new deviations while retaining the memory of the locked settings. With the “LOCK” slider all the way to the left, the “TRIGGER” and Deviate settings are applied according to the “TRIGGER” settings. Deviate can also learn how many notes are in a MIDI clip if you click on the “L” button next to “MEMORY”. The memory sequence can be divided by 2 or multiplied by 2 using the adjacent buttons.</p>
 <p>It is worth reviewing <a href="https://youtu.be/4WwKGUV2H4I">the YouTube tutorial for this device</a> as it can do <strong><em>a lot</em></strong>.</p>
@@ -876,7 +882,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -1,4 +1,4 @@
-# Recipe - Using the Fibonacci sequence to create loops (after DivKid) {#recipe-fibonacci}
+# Recipe - Using the Fibonacci sequence to create loops (after DivKid)
 
 ```{r}
 #| echo: FALSE

@@ -121,7 +121,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
+  <a href="./000-Preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What do we mean “Generative” music?</span></a>
   </div>
 </li>
@@ -272,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./032-Tools-Live12_Modulation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tools - Live 12: Modulation</span></a>
+ <span class="menu-text">Tools - Live 12 Modulation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -303,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#process-note-wise-probability" id="toc-process-note-wise-probability" class="nav-link active" data-scroll-target="#process-note-wise-probability">Process - Note-wise probability</a>
+  <li><a href="#process---note-wise-probability" id="toc-process---note-wise-probability" class="nav-link active" data-scroll-target="#process---note-wise-probability">Process - Note-wise probability</a>
   <ul class="collapse">
   <li><a href="#drum-parts" id="toc-drum-parts" class="nav-link" data-scroll-target="#drum-parts">Drum parts</a></li>
   <li><a href="#lead-parts" id="toc-lead-parts" class="nav-link" data-scroll-target="#lead-parts">Lead parts</a></li>
@@ -319,7 +325,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="process-note-wise-probability" class="level1">
+<section id="process---note-wise-probability" class="level1">
 <h1>Process - Note-wise probability</h1>
 <p><a href="https://www.ableton.com/en/live-manual/11/welcome-to-live/#welcome-to-live">Ableton Live 11</a> brought us the ability to specify not just the velocity of each note in a MIDI clip, but the probability that that note would play. This is a game changer for the Lazy Producer. Adding variation to MIDI parts is now much easier if you define the lower probability for “fill” notes and higher probability for notes that you want to “anchor” in the clip. Lower probability means that each note is <strong><em>less</em></strong> likely to play, while higher probability means that each note is <strong><em>more</em></strong> likely to play. A probability of 100% means that the note will <strong><em>ALWAYS</em></strong> play.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -396,12 +402,12 @@ Key idea
 </div>
 </div>
 </div>
-<p>The advantage of splitting the parts into separate clips (and separate tracks) is that you can shorten the length of the higher note clip - here it’s 15 1/16th notes long. That means with each repetition, the notes appear at different positions in the bar and so evolve against the repeating pattern. This is a key concept in balancing predictable and unexpected, as we’ll discuss later @ref(process-balance-unexpected-and-predictable).</p>
+<p>The advantage of splitting the parts into separate clips (and separate tracks) is that you can shorten the length of the higher note clip - here it’s 15 1/16th notes long. That means with each repetition, the notes appear at different positions in the bar and so evolve against the repeating pattern. This is a key concept in balancing predictable and unexpected, as we’ll discuss later in <a href="./009-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a></p>
 <p>By having the notes in different tracks, you can also keep the repeating pattern “dry” and apply delay or echo to the upper part. You could also opt to modulate or vary the timbre and sound of either track to keep the repeating part interesting.</p>
 </section>
 <section id="chord-parts" class="level3">
 <h3 class="anchored" data-anchor-id="chord-parts">Chord parts</h3>
-<p>In @ref(recipe-changing-chords), I have suggested using probability on chords. If you add 8 MIDI notes in a chord and specify 50% probability for all of them, then Ableton is going to (effectively) toss a coin for each note. In the real world, when we toss a coin 8 times, we don’t always get 4 heads and 4 tails. Sometimes we get 3 heads, 5 tails (or vice versa), and occasionally outcomes like 2 heads, 6 tails. Imagine if in the coin toss, heads means that Ableton plays the note. Then the number of notes that gets played will vary each time the chord is played - sometimes it will be 3, sometimes 6 etc. This means that you can specify as many notes as you like, and tune the probability until you get something that you like the sound of, depending on whether you want more or fewer notes in the resulting chord. It also means that careful choice of notes from the scale within the chord allows you to sometimes get rich, complex chords, sometimes chord inversions.</p>
+<p>In <a href="./001-Recipe-Changing_Chords.html">Recipe - Changing chords</a> , I have suggested using probability on the notes within chords. If you add 8 MIDI notes in a chord and specify 50% probability for all of them, then Ableton is going to (effectively) toss a coin for each note. In the real world, when we toss a coin 8 times, we don’t always get 4 heads and 4 tails. Sometimes we get 3 heads, 5 tails (or vice versa), and occasionally outcomes like 2 heads, 6 tails. Imagine if in the coin toss, heads means that Ableton plays the note. Then the number of notes that gets played will vary each time the chord is played - sometimes it will be 3, sometimes 6 etc. This means that you can specify as many notes as you like, and tune the probability until you get something that you like the sound of, depending on whether you want more or fewer notes in the resulting chord. It also means that careful choice of notes from the scale within the chord allows you to sometimes get rich, complex chords, sometimes chord inversions.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -411,12 +417,12 @@ Key idea
 </div>
 </div>
 </div>
-<p>By specifying higher probability for “root notes” in the chord, you can anchor the chord to a particular scale. As a Lazy (but creative) Producer, you can also allow the tonality (which musical scale) is being implied to vary so that the chords that emerge could fit with a variety of bass root notes, perhaps supplied separately in a different track. Avoiding the third (minor / major) or seventh of the scale can make it easier to achieve this kind of fluid and ambiguous tonality.</p>
-<p>In that same recipe, I have applied this idea across tracks as well. Using the same MIDI chord idea across all tracks, but then changing clip lengths within tracks (so each clip within a track has a different length) and between tracks (so that adjacent clips in a scene have different lengths) and then coupling this with Follow Actions as described in @ref(process-follow-actions) to progress through the clips, means that the chord patterns change more subtly and gradually than having block changes in tonality and scale. Including note-wise probability within clips also means that the next time the clip plays you get a slightly different result. Again, balancing something predictable - chords with a sequence of tonality / predictable root notes - with the unpredictable - exactly what notes are being played from the chord and that occasionally the chords could work in both keys - means that the listener takes longer to get bored with the sequence.</p>
+<p>By specifying higher probability for “root notes” in the chord, you can anchor the chord to a particular scale. As a Lazy (but creative) Producer, you can also allow the tonality (which musical scale) is being implied to vary so that the chords that emerge could fit with a variety of bass root notes, perhaps supplied separately in a different track. Avoiding the third (minor / major) or seventh of the scale can make it easier to achieve this kind of fluid and ambiguous tonality. For more discussion on scales and note choices see <a href="./018-Process-Scales.html">Process - Using scales</a></p>
+<p>In that same recipe, I have applied this idea across tracks as well. Using the same MIDI chord idea across all tracks, but then changing clip lengths within tracks (so each clip within a track has a different length) and between tracks (so that adjacent clips in a scene have different lengths) and then coupling this with Follow Actions as described in <a href="./003-Process-Follow_Actions.html">Process - Follow Actions</a> to progress through the clips, means that the chord patterns change more subtly and gradually than having block changes in tonality and scale. Including note-wise probability within clips also means that the next time the clip plays you get a slightly different result. Again, balancing something predictable - chords with a sequence of tonality / predictable root notes - with the unpredictable - exactly what notes are being played from the chord and that occasionally the chords could work in both keys - means that the listener takes longer to get bored with the sequence.</p>
 </section>
 <section id="live-12---grouped-notes" class="level3">
 <h3 class="anchored" data-anchor-id="live-12---grouped-notes">Live 12 - Grouped notes</h3>
-<p>Ableton Live 12 brought the ability to group MIDI notes and then define whether <strong><em>all</em></strong> of the notes in that group will play or only <strong><em>one</em></strong> note within the group. This can apply to notes in a chord, or notes in a sequence - basically any of the notes that you define to be within the group. This can be useful as it means that within the group you can define that <strong><em>exactly one</em></strong> of the notes will play, or that <strong><em>all</em></strong> of the grouped notes will play, which is slightly more deterministic (rules based) than the probability approaches above. Having said that, you can also apply probability to the group, so that with say 50% probability, all of the grouped notes will play - allowing you to write a specific set of “fill” notes in a drum part that will play with a given probability. You can also set probability along with the “play one” group rule. We’ll look at some concrete examples in @ref(tools-live12-overview).</p>
+<p>Ableton Live 12 brought the ability to group MIDI notes and then define whether <strong><em>all</em></strong> of the notes in that group will play or only <strong><em>one</em></strong> note within the group. This can apply to notes in a chord, or notes in a sequence - basically any of the notes that you define to be within the group. This can be useful as it means that within the group you can define that <strong><em>exactly one</em></strong> of the notes will play, or that <strong><em>all</em></strong> of the grouped notes will play, which is slightly more deterministic (rules based) than the probability approaches above. Having said that, you can also apply probability to the group, so that with say 50% probability, all of the grouped notes will play - allowing you to write a specific set of “fill” notes in a drum part that will play with a given probability. You can also set probability along with the “play one” group rule. We’ll look at some concrete examples in <a href="./030-Tools-Live12_Intro.html">Tools - Live12 Overview</a>.</p>
 
 
 </section>
@@ -823,7 +829,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":false,"openEffect":"zoom","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","loop":false,"selector":".lightbox","closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

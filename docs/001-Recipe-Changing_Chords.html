@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./002-Process-Note_wise_probability.html" rel="next">
-<link href="./000-Defintion-Generative.html" rel="prev">
+<link href="./0000-Defintion-Generative.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -121,7 +121,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
+  <a href="./000-Preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What do we mean “Generative” music?</span></a>
   </div>
 </li>
@@ -272,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./032-Tools-Live12_Modulation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tools - Live 12: Modulation</span></a>
+ <span class="menu-text">Tools - Live 12 Modulation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -303,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#recipe-changing-chords" id="toc-recipe-changing-chords" class="nav-link active" data-scroll-target="#recipe-changing-chords">Recipe - Changing chords</a></li>
+  <li><a href="#recipe---changing-chords" id="toc-recipe---changing-chords" class="nav-link active" data-scroll-target="#recipe---changing-chords">Recipe - Changing chords</a></li>
   </ul>
 </nav>
     </div>
@@ -313,17 +319,28 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="recipe-changing-chords" class="level1">
+<section id="recipe---changing-chords" class="level1">
 <h1>Recipe - Changing chords</h1>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What we’re trying to achieve here is to have clips launching out of phase with each other i.e.&nbsp;they don’t all change at the same time. The clips also use probability on the chord notes, so that each time the clip plays we hear a slightly different selection of notes. Across the clips we’re going to try to imply slightly different chords or tonal centres by changing the “root” of the chord in each clip. The combination of these elements should make a shifting pattern of chords and textures.</p>
+</div>
+</div>
 <ol type="1">
-<li><p>Create three MIDI tracks, each with a virtual synth instrument. For this example we’re going to use long chords, so I’d recommend a pad sound. One thing that works quite well is to mix sounds with rhythmic elements, that evolve or where there is modulation to vary the sound over time.</p></li>
+<li><p>Create three MIDI tracks, each with a virtual synth instrument. For this example we’re going to use long chords, so I’d recommend a pad or arpeggiated sound. One thing that works quite well is to mix sounds with rhythmic elements, sounds that evolve or where there is modulation to vary the sound over time.</p></li>
 <li><p>Make three MIDI clips in each track.</p></li>
-<li><p>Prepare a MIDI clip with 8 to 10 notes within the scale of C major, G major, F major in each clip within the tracks. Avoiding the 3rd of the scale will make the chords tonally “ambiguous”, and avoiding (major) 7ths will help the sounds produced blend between tracks and clips (see the chapter on @ref(process-scales) for more discussion of scales in generative music). Use the Scale button in the MIDI clip to only show notes within the scale. The chords suggested are arbitrary, but the recipe will work best if you use scales or chord intervals that are “next door” to each other in the cycle of 5ths - <a href="https://en.wikipedia.org/wiki/Circle_of_fifths" class="uri">https://en.wikipedia.org/wiki/Circle_of_fifths</a>). See the screenshots below for a visual representation of what I mean.</p></li>
-<li><p>Use random note probability on notes in the chord. Set the root notes of each clip to 75% probability, and set other notes at about 50-60% probability so that each time the clip triggers, the note choice / chord is different. This will mean that sometimes the chord will have 4 notes, but it could vary between 2 and 7… (in fact it could vary between none and 8, but the the extremes are very unlikely). Having higher probability on the root notes favours these notes within the chord, but if that probability is slightly less than 100% then you’ll not ALWAYS get that anchoring from the root note.</p></li>
+<li><p>Prepare a MIDI clip with 8 to 10 notes in key (whatever scale you wish) in each clip within the tracks. Avoiding the 3rd of the scale will make the chords tonally “ambiguous”, and avoiding (major) 7ths will help the sounds produced blend between tracks and clips (see the chapter on Scales <a href="./018-Process-Scales.html">Process - Using scales</a> for more discussion of scales in generative music). Use the Scale button in the MIDI clip to only show notes within the scale. The chords suggested are arbitrary, but the recipe will work best if you use scales or chord intervals that are “next door” to each other in the cycle of 5ths - <a href="https://en.wikipedia.org/wiki/Circle_of_fifths" class="uri">https://en.wikipedia.org/wiki/Circle_of_fifths</a>. See the screenshots below for a visual representation of what I mean.</p></li>
+<li><p>Use random note probability on notes in the chord (see <a href="./002-Process-Note_wise_probability.html">Process - Note-wise probability</a> ). Set the root notes of each clip to 75% probability, and set other notes at about 50-60% probability so that each time the clip triggers, the note choice / chord is different. This will mean that sometimes the chord will have 4 notes, but it could vary between 2 and 7… (in fact it could vary between none and 8, but the the extremes are very unlikely). Having higher probability on the root notes favours these notes within the chord, but if that probability is slightly less than 100% then you’ll not ALWAYS get that anchoring from the root note.</p></li>
 <li><p>Make sure that the clip lengths vary between tracks (all notes within the clip have the same length). So clip1 in track 1 could have 16 bars length; clip 1 in track 2 could be 13 bars; clip 1 in track 3 could have 10 bars length etc. The important thing is not the clip length, but the fact that they vary <strong><em>across</em></strong> tracks.</p></li>
-<li><p>ALSO, vary clip lengths between scenes <strong><em>within</em></strong> tracks. So a track that has 16 bars in clip 1, maybe has 14 bars in clip 2 and 12 bars in clip 3. Similarly, the exact length is unimportant. The important thing is that the clip lengths vary both within tracks and between tracks. AVOID having the same clip lengths in the same scenes.<br>
-<br>
-Following the advice above you should wind up with something like this in the first three clip slots of the three tracks:</p></li>
+<li><p>ALSO, vary clip lengths between scenes <strong><em>within</em></strong> tracks. So a track that has 16 bars in clip 1, maybe has 14 bars in clip 2 and 12 bars in clip 3. Similarly, the exact length is unimportant. The important thing is that the clip lengths vary both within tracks and between tracks. AVOID having the same clip lengths in the same scenes.&nbsp;&nbsp;Following the advice above you should wind up with something like this in the first three clip slots of the three tracks:</p></li>
 </ol>
 <p><strong><em>Track 1 clips</em></strong>:</p>
 <div class="cell">
@@ -397,15 +414,16 @@ Following the advice above you should wind up with something like this in the fi
 </div>
 </div>
 </div>
-<p>The clips shown above are <em>my</em> choice of notes, length etc. and assume that we’re doing a slow moving, textured track. You can play with different choices of notes, shorter lengths of clip, more plucky sounds. Perhaps adding an arpeggiator or Note Echo to the track would help movement and retain interest (see Chapter 4 for more details on MIDI effects in Ableton Live).</p>
+<p>The clips shown above are <em>my</em> choice of notes, length etc. and assume that we’re doing a slow moving, textured track. You can play with different choices of notes, shorter lengths of clip, more plucky sounds. Perhaps adding an Arpeggiator or Note Echo to the track would help movement and retain interest (see <a href="./004-Tools-MIDI_tools.html">Tools - MIDI tools</a> for more details on MIDI effects in Ableton Live).</p>
 <ol start="7" type="1">
-<li><p>Set up Follow Actions (see the following chapter @ref(process-follow-actions) to progress to Next clip at end of each clip with 80% probability, with the other action set to “Play again” with 20% probability. When you launch the scene, each clip will play to the end of the clip, but because individual note probability within each of the stacked chords is set to 50-60%, the chord will sound different each time it plays. Also, the randomness we’re using for note probability also means that the same chord clip in each track is also likely to sound different. The 80-20% split of next action - “Play again” or “Next” - will mean that some tracks may progress to the next chord while some will play the same clip again.</p>
-<p>If the clips are short, then a 50-50% split of next action chance might be more appropriate. In this case because the clips are long we want to force movement onwards. With shorter clips then we might favour repetition so that the listener isn’t bombarded with changes every few beats (see Chapter 9 for a discussion of balancing repetition with unexpected elements).</p></li>
-<li><p>Choose sounds for each track that complement each other. Could be pads, arpeggios, textures etc. Arpeggios and sounds that evolve are particularly useful in this recipe. You can automate parameters within clips as well to introduce additional movement in the sound. An important point is that the sound shouldn’t be too static.</p></li>
-<li><p>Press play. Sit back and relax.</p></li>
+<li>Set up Follow Actions (see the following chapter <a href="./003-Process-Follow_Actions.html">Process - Follow Actions</a> ) to progress to Next clip at end of each clip with 80% probability, with the other action set to “Play again” with 20% probability. When you launch the scene, each clip will play to the end of the clip, but because individual note probability within each of the stacked chords is set to 50-60%, the chord will sound different each time it plays. Also, the randomness we’re using for note probability also means that the same chord clip in each track is also likely to sound different. The 80-20% split of next action - “Play again” or “Next” - will mean that some tracks may progress to the next chord while some will play the same clip again.</li>
 </ol>
-<hr>
-<p>You can hear one instance of this track here: <a href="https://soundcloud.com/mikeksmith/followactions_chords_and_arp/s-CKzkRoOEWrr?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&amp;si=e1846c9235ff47ad9ae0fa0cd5d52708&amp;utm_source=clipboard&amp;utm_medium=text&amp;utm_campaign=social_sharing" class="uri">https://soundcloud.com/mikeksmith/followactions_chords_and_arp/s-CKzkRoOEWrr</a></p>
+<p>If the clips are short, then a 50-50% split of next action chance might be more appropriate. In this case because the clips are long we want to force movement onwards. With shorter clips then we might favour repetition so that the listener isn’t bombarded with changes every few beats (see <a href="./009-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a> for a discussion of balancing repetition with unexpected elements).</p>
+<ol start="8" type="1">
+<li><p>Choose sounds for each track that complement each other. Could be pads, arpeggios, textures etc. Arpeggios and sounds that evolve are particularly useful in this recipe. You can automate parameters within clips as well to introduce additional movement in the sound. An important point is that the sound shouldn’t be too static.</p></li>
+<li><p>Press play. Sit back and relax.</p>
+<p>You can hear one instance of this track here: <a href="https://soundcloud.com/mikeksmith/followactions_chords_and_arp/s-CKzkRoOEWrr?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&amp;si=e1846c9235ff47ad9ae0fa0cd5d52708&amp;utm_source=clipboard&amp;utm_medium=text&amp;utm_campaign=social_sharing" class="uri">https://soundcloud.com/mikeksmith/followactions_chords_and_arp/s-CKzkRoOEWrr</a></p></li>
+</ol>
 <iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1985525371%3Fsecret_token%3Ds-CKzkRoOEWrr&amp;color=%23ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mikeksmith" title="MikeKSmith" target="_blank" style="color: #cccccc; text-decoration: none;">MikeKSmith</a> · <a href="https://soundcloud.com/mikeksmith/followactions_chords_and_arp/s-CKzkRoOEWrr" title="1_FollowActions_Chords_and_Arp" target="_blank" style="color: #cccccc; text-decoration: none;">1_FollowActions_Chords_and_Arp</a></div>
 <p>(I say “one instance” because this is generative and uses probability. So the next time I render the track it could well sound different. Similar, but different.)</p>
 
@@ -802,7 +820,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./000-Defintion-Generative.html" class="pagination-link  aria-label=" what="" do="" we="" mean="" &quot;generative&quot;="" music?"="">
+      <a href="./0000-Defintion-Generative.html" class="pagination-link  aria-label=" what="" do="" we="" mean="" &quot;generative&quot;="" music?"="">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">What do we mean “Generative” music?</span>
       </a>          
   </div>
@@ -813,7 +831,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","loop":false,"descPosition":"bottom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

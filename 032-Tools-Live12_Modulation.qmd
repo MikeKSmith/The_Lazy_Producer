@@ -1,4 +1,4 @@
-# Tools - Live 12: Modulation {#tools-live12-modulation}
+# Tools - Live 12 Modulation
 
 Live 12 has now introduced the concept of parameter ***modulation*** through
 devices like the LFO effect, and others. Modulation (instead of ***control***)
@@ -36,7 +36,9 @@ by 50% relative to its current value.
 Also, note the new LFO "Glider" type in Live 12. This gives a really useful
 random, but smooth change in values. Previously to get a smooth but random LFO,
 you had to chain LFOs together and cross-modulate the amount or rates (as
-discussed in Chapter \@ref(lfo-trio---a-chaotic-lfo). "Glider" Waveform makes
+discussed in 
+[Tools - Modulators](007-Tools-Modulators.qmd)
+. "Glider" Waveform makes
 that much easier.
 
 Another LFO Waveform - "Stray" - gives similar random but smooth changes, but

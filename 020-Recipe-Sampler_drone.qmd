@@ -13,7 +13,9 @@ to the cutoff, producing a drone sound. We can then throw this through a barrage
 of effects - either using Return channels or via individual audio effects with
 the sampler output routed into each. Effectively we're reusing an idea we've
 used before, but starting with Sampler as the audio generator. You could
-alternatively use the audio output from PaulStretch as the drone generator. The
+alternatively use the audio output from 
+[PaulStretch](016-Tools-PaulStretch.qmd)
+as the drone generator. The
 benefit of using Sampler is that we can add MIDI effects to (randomly) change
 the pitch of the sample so that it doesn't have to be consistent from one loop
 to another. Other sample-based instruments like Granulator will allow you to do
@@ -38,8 +40,11 @@ from. This prevents the sound from being too predictable with each new note.
     knitr::include_graphics(path = file.path(here::here(), "images", "Sampler_Drone_Modulation.png"))
 ```
 
-4.  Using techniques described in \@ref(tools-audio-effects) and used in the
-\@ref(recipe-audio-generator-drone) set up a network of audio effects on effect
+4.  Using techniques described in 
+[Tools - Creative use of audio effects](015-Tools-Audio_Effects.qmd)
+ and used in the
+[Recipe - Making a drone using some audio generators and effects](017-Recipe-Audio_generators_drone.qmd)
+ set up a network of audio effects on effect
 sends / Return channels.
 
 In the example below the Sampler instrument is in Channel 1 and is sending audio
