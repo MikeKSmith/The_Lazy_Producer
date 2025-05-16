@@ -16,7 +16,9 @@ I find it useful to separate MIDI tracks that *generate* and *transform* MIDI
 information from instrument tracks that receive that MIDI information and
 generate sound. The idea is to capture the generated and transformed MIDI for
 later processing. It can then be copied into the instrument track and "bounced
-down" or rendered with the instrument track to capture the sound. In this
+down" or rendered with the instrument track to capture the sound. I then group
+all of the tracks (MIDI generator and MIDI devices, instrument track with
+captured MIDI, bounced down audio) and apply mix FX at the Group level. In this
 process don't worry about having more tracks than you think necessary. This will
 give more flexibility and options in the capturing process. There is quite a
 large difference between Live sets for performance and Live sets for capturing
@@ -56,8 +58,8 @@ settings to try to avoid extreme changes in sound design through reducing
 modulation levels. But the other option, to be honest is to throw that version
 away and re-render and re-capture the output to see if the random processes 
 spit out something better next time. Don't feel you have to be precious about 
-the output of some random process. There are many more versions of something 
-readily available.
+the output of some random process. There are many more versions of the random 
+processes readily available.
 
 ## How to set up Live sets - my experience
 

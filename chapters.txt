@@ -24,3 +24,4 @@
 [Tools - Live12 Overview](030-Tools-Live12_Intro.qmd)
 [Tools - Live 12 Sequencers](031-Tools-Live12_Sequencers.qmd)
 [Tools - Live 12 Modulation](032-Tools-Live12_Modulation.qmd)
+[Tools - Live 12 MIDI Generation and Transformation](033-Tools-Live12_MIDI_Generation_Transformation.qmd)

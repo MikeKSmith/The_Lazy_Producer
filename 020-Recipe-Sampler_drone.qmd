@@ -18,7 +18,7 @@ alternatively use the audio output from
 as the drone generator. The
 benefit of using Sampler is that we can add MIDI effects to (randomly) change
 the pitch of the sample so that it doesn't have to be consistent from one loop
-to another. Other sample-based instruments like Granulator will allow you to do
+to another. Other sample-based instruments like the Max for Live Granulator will allow you to do
 similar.
 
 1.  Create a track with the Sampler instrument and one clip with a single note of 8 or 16 bars.
@@ -55,7 +55,9 @@ and creating a wall of harsh sound. You can see that Return A (the "Nice Reverse
 + Reverb" effect) is sending audio out to Return D (Spectral Resonator) and that
 that channel is sending audio back to Return A. This is a little dangerous, but
 being cautious with the send amounts and watching for signal overloading, it is
-possible to get away with this. Spectral Time and Spectral Resonators are
+possible to get away with this. Adding a Limiter to the Return or Main channels would prevent runaway sound feedback causing physical damage to ears or speakers.
+
+Spectral Time and Spectral Resonators are
 interesting effects to add texture and resonance into fairly static inputs (like
 our drone here).
 

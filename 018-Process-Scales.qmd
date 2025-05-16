@@ -5,7 +5,7 @@ As discussed in
 , scale quantisation is a widely
 used tool to harness the random note values from MIDI Generators. It
 provides *just enough* quantising to turn something unlistenable into
-something that's still random, but within a context of something that's
+something that's still random, but perhaps
 more listenable. The problem is that even within a defined scale, there
 are sometimes notes that will irritate the listener if they happen too
 often - for example in the C Major scale, the note B - one semitone
@@ -27,6 +27,7 @@ centre of the music isn't locked in or ***obvious***, which allows you
 to imply a change of key through a root note change, without having to
 change the scale for the generated (or quantised) MIDI. I'll call this
 being tonally ambiguous.
+  
 :::
 
 ## Pentatonics - Minor and Major
@@ -60,6 +61,16 @@ Below are the notes and scale tones of the C pentatonic scales:
 
 If you pick any 3 out of either of these scales then you get nice triads
 from their respective (non-pentatonic) scales.
+
+## Hirajoshi
+
+The Hirajoshi scale is a scale derived from Japanese shamisen music and the tuning of the koto instrument. It is a pentatonic scale, but with some interesting properties that distinguish it from the more frequently used versions above. It has the minor 3rd in it, which gives it a slightly melancholic feel, but also the minor 6th - C - G# (opening two notes from the theme from Star Trek).
+
+|                        |     |     |     |     |     |
+|------------------------|:---:|:---:|:---:|:---:|:---:|
+| C Hirajoshi            |  C  |  D  |  D# |  G  |  G# |
+| Scale tones            |  1  |  2  |  m3 |  5  |  m6 |
+
 
 ## Modes
 
@@ -142,11 +153,10 @@ or bass note for the chord would imply one key / mode or another.
 
 ## Other scales & traditions
 
-In Western music we have a view of what collections of notes and pitches
-sound "nice" and "harmonious". Of course, there is a huge world of
-scales in the world across a huge range of musical traditions. In this
-chapter I've only focussed on typical scales from this Western
-Tradition. With Ableton's Scale plugins and scale awareness you might
-well find others where generative methods would give interesting
-results. Within the DAW, experimenting with these scales is only a click
-away...
+In Western music we have a view of what collections of notes and pitches sound
+"nice" or "harmonious" and, to our ears, what "works" and what "doesn't". Of
+course, there is a huge world of scales in the world across a huge range of
+musical traditions. In this chapter I've only focussed on some example scales.
+With Ableton's Scale plugins and scale awareness you
+might well find others where generative methods would give interesting results.
+Within the DAW, experimenting with these scales is only a click away...

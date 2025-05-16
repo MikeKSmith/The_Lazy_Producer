@@ -18,14 +18,16 @@ To see the Follow Actions for a clip, click on the "Launch" item to expand the s
 
 ```{r}
 #| echo: FALSE
-knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r}
-knitr::include_graphics(path = "./images/Launch_Follow-Actions.png")
+knitr::include_graphics(path = file.path(here::here(), "images", "Launch_Follow-Actions.png"))
 ```
 
-There are many different possible actions with the Follow Action. These are mostly self-explanatory but there are a few subtleties that are worth pointing out. As we point out above, Ableton needs to have contiguous sets of clips within a track to enable Follow Actions. The "First" and "Last" options above refer to ***the first and last clips within that contiguous set***, not necessarily the first and last within the track. The "Any" option randomly jumps to any of the clips within the contiguous set, including the current clip. "Other" randomly jumps to a different clip within the set. "Any" can be useful when you want to allow a repeat of the currently playing clip, while "Other" is more useful to force a jump to a different clip. "Jump" allows you to nominate a specific clip to jump to. "No Action" can be used as a "catch all" default action. With "No Action" in the alternative (right hand) Action, you can automate Ableton moving to a different clip after a certain number of bars and beats, but if this option is not taken then the clip continues playing to the end of the clip.
+There are many different possible actions with the Follow Action. These are mostly self-explanatory but there are a few subtleties that are worth pointing out. As we point out above, Ableton needs to have contiguous sets of clips within a track to enable Follow Actions. The "First" and "Last" options above refer to ***the first and last clips within that contiguous set***, not necessarily the first and last within the track. 
+
+The "Any" option randomly jumps to any of the clips within the contiguous set, including the current clip. "Other" randomly jumps to a different clip within the set. "Any" can be useful when you want to allow a repeat of the currently playing clip, while "Other" is more useful to force a jump to a different clip. "Jump" allows you to nominate a specific clip to jump to. "No Action" can be used as a "catch all" default action. With "No Action" in the alternative (right hand) Action, you can automate Ableton moving to a different clip after a certain number of bars and beats, but if this option is not taken then the clip continues playing to the end of the clip.
 
 ## FOLLOW Actions
 
@@ -33,7 +35,7 @@ In previous versions of Ableton Live, Follow Actions were set up so that the use
 
 ```{r}
 #| fig.alt: "Ableton Live default Launch and Follow Action dialogue"
-knitr::include_graphics(path = "./images/Launch_Follow-Actions_Linked.png")
+knitr::include_graphics(path = file.path(here::here(), "images", "Launch_Follow-Actions_Linked.png"))
 ```
 
 There is also the option to play the clip a number of times before applying the Follow Action. This helps us balance between the familiar and newness - hearing something repeated helps reduce the randomness and uncertainty of constantly introducing new things. While repeating one part or track you can introduce something new with a different part or track.

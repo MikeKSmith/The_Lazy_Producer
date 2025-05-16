@@ -18,15 +18,14 @@ catching your ear.
 
 ## The Problem
 
-We defined "generative" music in 
-[What do we mean "Generative" music?](0000-Defintion-Generative.qmd)
-. There we defined
-it as "music (that) should be able to go on indefinitely, with enough going on
-to make it interesting, but without anything particularly "sticking out" to
-catch the listener's ear". When we use random processes to generate notes,
-modulate parameters, change the timbre and qualities of sounds, there's a danger
-that this randomness will produce sounds that ***do*** "catch the listener's
-ear", or more than that ***grate*** the listener's ear.
+We defined "generative" music in [What do we mean "Generative"
+music?](0000-Defintion-Generative.qmd) . We defined it as "music (that) should
+be able to go on indefinitely, with enough going on to make it interesting, but
+without anything particularly "sticking out" to catch the listener's ear". When
+we use random processes to generate notes, modulate parameters, change the
+timbre and qualities of sounds, there's a danger that this randomness will
+produce sounds that ***do*** "catch the listener's ear", or more than that -
+***grate*** the listener's ear.
 
 ## The Taste Test
 

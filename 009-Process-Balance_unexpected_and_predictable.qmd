@@ -80,7 +80,7 @@ wonkiness.
 ## Deliberate use of repeating patterns - ostinato and predictable rhythmic parts
 
 As well as "gardening" the random processes and quantising the randomness, we
-can introduce deliberatly repeating patterns to help hook the listener into a
+can introduce deliberately repeating patterns to help hook the listener into a
 pattern to contextualise the randomness. Ostinato lines are musical phrases that
 repeat over and over (and over) throughout a piece of music. Pachabel's Cannon
 features a repeating line in the bass instruments (continuo part) which repeats
@@ -125,3 +125,35 @@ different aspects of Ableton plugins and instruments. The act of changing
 something non-destructively i.e. not permanently is called modulation.
 Modulation tools can be used to gradually change timbres, relative volumes and
 many other sound attributes.
+
+## ***YOU*** define the parts, the computer picks the order
+
+Again, using Follow Actions,
+[Process - Follow Actions](003-Process-Follow_Actions.qmd)
+you can write a collection of motifs and ideas that you like, or rhythmic parts,
+or chord changes but then use the randomness of the Follow Action to dictate
+which part is played next. Combining this with one or more of the ideas above
+can give you something where the written parts have a familiar structure and are
+not random with a process that could produce generative music that could last an
+arbitrary amount of time.
+
+## Contextualising randomness using humans
+
+Combinations of the ideas above could give you a framework for generative 
+music piece or performance. If you are skilled in improvisation then it might
+also become the "second performer" for you to improvise against, with your
+performance adding the "human touch" and balancing and contextualising what is
+played by the generative system. So if a motif is played, maybe you echo that
+motif. Or you could play a chord sequence to drive movement against a random 
+backdrop. Or you could play rhythmic or drum parts again contextualising the 
+random processes.
+
+## Play with the "1" - mess with the listener's perception
+
+In Anna Meredith's track "Nautilus" the drummer joins the track about halfway through. When he does, it ***COMPLETELY*** throws me off and makes me rethink what I had perceived for the entire first half of the track, because the "1" downbeat in the bar is suddenly redefined in an unambiguous way and you realise that actually what you ***thought*** was the "1" was actually an off-beat. It's very disconcerting. In fact, the beauty of that track is that pretty much the whole way through you're never quite certain where you are in the bar.
+
+So what can The Lazy Producer do to similarly mess with the listener's perspective? Well, one way is to use poly-rhythms or poly-meters to slice the bar into different and competing rhythmic parts. If your arpeggiated part is playing "in three" consistently, but the kick on the drum part is playing "in four" consistently, then if that kick doesn't come in immediately, then the listener will gravitate to where the "1" is for the bassline, but will then have to readjust when the kick enters. 
+
+Tonally you might be able to do similar things - your chords and arpeggios may suggest one tonal centre, but that gets redefined when the bass comes in. 
+
+All of these ideas talk about anchoring perception and then playing with that through alternative contexts. You can choose whether that happens subtly or overtly.

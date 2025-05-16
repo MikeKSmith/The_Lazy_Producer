@@ -1,0 +1,41 @@
+# Tools - Live 12 MIDI Generation and Transformation
+
+During the process of writing this book, Ableton released Live 12. With Live 12 there are a whole host of improvements and additions which make the life of someone making generative music a whole lot easier. In this chapter we'll look at the new compositional and MIDI tools. In the next chapter we'll look at new sequencer tools. In subsequent chapters we'll look at updates to modulation, and some specific Transformer and Generator tools.
+
+```{r}
+#| echo: FALSE
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+::: callout-tip
+## Key idea
+
+Live 12 contains a number of tools and new features which enhance how we can make generative music using Ableton Live. Some of these are enhancements to existing functionality, but there are many places where there are brand new features which could be used to create generative music, or provide idea generators for composition.
+:::
+
+
+## MIDI Generation
+
+Live 12 now comes with two new features built into MIDI clip creation: MIDI Generation and MIDI Transformation. MIDI Generation does what the name suggests - provides a range of different methods for generating new MIDI parts: rhythm - which creates sequences of MIDI notes by specifying the density of notes within a certain number of steps and then allowing you to choose permutations of these, stacks - which defines chords, seeds - which generates one or more "voices" of completely random notes (but these could conform to the clip scale setting) within the clip, shape - which generates notes by drawing in a pattern or shape, and Euclidean generators. And because what sits behind these generators is the power of Max for Live, the possibilities open up for a huge range of innovative MIDI generation.
+
+```{r}
+knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDIGenerators.png"))
+```
+
+```{r}
+knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Max_MIDIGenerator.png"))
+```
+
+In Chapter 13 we looked at MIDI Generator devices including Max for Live devices. But having some similar functionality here "baked into" the Live MIDI clip tools puts these tools at the fingertips of anyone with Live 12 Suite.
+
+```{r}
+knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Euclidean_Pattern.png"))
+```
+
+## MIDI Transformation
+
+The MIDI Transformation tools includes tools to arpeggiate the notes within the clip, connect - connecting existing notes in the clip with passing tones, ornament - adding additional short notes before the main note, like a flam in drum terms, or mordent in classical notation, quantize - here applying quantisation non-destructively, i.e. you can see the effect of the amount of quantisation on the MIDI notes, recombine - which lets you select notes and then permute these (rotate the order, mirror, shuffle), span - which allows you to change the note lengths by various means, strum - which applies a rhythmic strum pattern to chords, and time warp - which can bend the timing within a bar, so although the bpm clock remains constant, MIDI notes in a clip can trigger with a more fluid timing.
+
+```{r}
+knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDI_Transformers.png"))
+```

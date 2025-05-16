@@ -20,6 +20,7 @@ generative and more random aspects of the music. The sound of a stream,
 birds, rain, wind, people talking in a street and cars passing, even the
 hum or mechanical clicks of machinery can help the listener create a
 mental picture to go with the more abstract or generative ideas.
+  
 :::
 
 ## Balancing the natural and the (unnatural) randomness
@@ -30,7 +31,7 @@ bloops. In
 [Process - Balancing the unexpected and the predictable](009-Process-Balance_unexpected_and_predictable.qmd)
  we discussed
 providing musical balance to the randomness. In this chapter we're
-talking about providing field recordings to provide that balance.
+talking about using field recordings to provide that balance.
 
 ## Natural and urban sounds
 
@@ -41,6 +42,24 @@ water. By describing it to you now, I'm sure you have a mental picture
 you can use urban sounds (street sounds), sounds from the house,
 mechanical noises - basically anything that listeners might be familiar
 with.
+
+## Randomness does occur in "natural" sounds
+
+The sound of a wind-chime is often thought of as soothing. The wind gently 
+causing the chimes to sound, little waves of air that cause the chimes to gently
+ripple, with the chimes tuned to pitches that work well 
+together... Sounds a lot like some of the techniques we've been talking about,
+right?
+
+The sound of birds singing in the forest, with the odd chirp of a squirrel or 
+the steady rasp of a frog. Nobody is telling them when to make sounds. It's all
+pretty much random. So why (again!) is it that our brains think of these sounds 
+as soothing? 
+
+I think the trick here is that we have context for the randomness. When we hear
+those sounds we know how they occur and where. But this underlines (at least for
+me) how adding context or something relateable to our compositions can help the
+listener engage better.
 
 ## Recording noises
 
@@ -59,7 +78,8 @@ noises might be necessary.
 
 Many producers create field recording sound packs, and some of these are
 sold through places like Bandcamp. Searching for "Field Recordings"
-should allow you to find these.
+should allow you to find these. Please do check licensing terms and conditions
+before you reuse these in your own compositions though!
 
 ## Using the samples
 

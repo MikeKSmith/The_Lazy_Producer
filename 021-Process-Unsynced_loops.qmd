@@ -38,7 +38,7 @@ Steve Reich and other minimalist composers worked with musical phrases
 that each performer played a number of times. Sometimes the number of
 repetitions was at the discretion of the performer, sometimes governed
 by the number of times the performer could play it in one breath,
-sometimes the composer worked with actual tape loops. The concept is
+sometimes the composer worked with actual tape loops of different lengths. The concept is
 that while each part is repeated, the repeated parts move out of phase
 with each other and so create new sounds, rhythms and harmonies. No two
 performances would be the same, since the number of repetitions isn't
@@ -52,6 +52,9 @@ cycle round. But if we make the loops unequal lengths then it'll take
 longer for those ideas to sync up. And if the loop lengths are not
 even - break out of the 2, 4, 8, 16 bar patterns - then it'll take
 longer for them to repeat.
+
+We actually used loops of different lengths in 
+[Recipe - Changing chords](001-Recipe-Changing_Chords.qmd).
 
 ## I'm in my prime
 
@@ -71,7 +74,7 @@ with very little chance of repetition.
 
 ## Fibonacci and the Golden Ratio
 
-So primes are nice for preventing repetition in the grand scheme of
+Primes are nice for preventing repetition in the grand scheme of
 things, but there are other options. Again, back to early maths and you
 might remember Fibonacci sequence where each number is the sum of the
 previous two numbers, starting with 0 and 1. So the first ten numbers
@@ -80,7 +83,7 @@ numbers in there (2, 3, 5, 13) but also some even numbers (8, 34).
 
 If you take the Fibonacci sequence and layout squares with their sides
 the length of the Fibonacci number, you get what is known as the "Golden
-Ratio" where the sizes of the squares are grow in relation to the ratio
+Ratio" where the sizes of the squares grow in relation to the ratio
 of the previous two parts. There is a familiar pattern also if you
 connect arcs - quarter of a circle with radius equal to the size of the
 square. We often see this pattern in nature - in the pattern of seeds or
@@ -101,3 +104,9 @@ Suffice to say, it's worth playing with some of these ideas to break out
 of the predictable loop and make something that perhaps could retain
 interest for a long period. In our next Recipe section we're going to
 tap into this idea.
+
+## Let's ROTATE
+
+In discussion of Euclidean Sequencers in 
+[Tools - MIDI Generators](012-Tools-MIDI_Generators.qmd) 
+we talked about how you can rotate a sequence so that it doesn't start at 12 o'clock position (or on the first beat of the sequence).  The same is true of loops. To break out of the predictable sequence you could choose to jump the loop start point to a different position. Sometimes small things like this will unveil new ideas, new rhythms which may be sufficient to keep interest.

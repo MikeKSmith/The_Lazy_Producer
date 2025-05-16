@@ -33,7 +33,7 @@ notes to prevent them from becoming too "samey" or you could add the occasional
 random / quantised pitch shift.
 
 4\. In his example set, DivKid has used plucky Operator with Sine tones but with
-additional tone shaping and granular delay to the grouped tracks which breathes
+additional tone shaping, sound design and granular delay to the grouped tracks which breathes
 life into the results and prevents them from becoming too stale.
 
 ```{r}

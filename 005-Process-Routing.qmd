@@ -13,9 +13,9 @@ In Ableton Live [we have a couple of ways to either "push" or "pull" MIDI or aud
 
 The third track (MIDI) here is "pulling" the MIDI from Track 1. Note that the Monitor is set to "In" so that it "listens" for the MIDI being sent. In this case I can add a MIDI device like Note Length to "stretch" the incoming MIDI and then apply an Arpeggiator to that to produce new moving parts that are related to the sequence in Track 1, but different.
 
-The fourth track (Audio) here is "pulling" the audio from Track 3 (Wavetable). Similar to Track 3, it needs the Monitor set to "In" to "listen" for the audio output. In this track we're also showing the various options for where to grab audio - it can be "Pre FX", "Post FX" or "Post Mixer". "Pre FX" means that the audio is grabbed by the track before it goes through any audio processing on the input track. So you can apply different effects to the same raw audio source - some on Track 3 and some via Track 4. "Post FX" means that it grabs audio after effects have been applied. "Post Mixer" means that track volumes and panning are applied prior to grabbing the audio. "Post Mixer" might be handy if you wish to control levels from only one track.
+The fourth track (Audio) here is "pulling" the audio from Track 3 (Wavetable). Similar to Track 3, it needs the Monitor set to "In" to "listen" for the audio output. In this track we're also showing the various options for where to grab audio - it can be "Pre FX", "Post FX" or "Post Mixer". "Pre FX" means that the audio is grabbed by the track before it goes through any audio processing on the input track. This means you can apply different effects to the same raw audio source - some on Track 3 and some via Track 4. "Post FX" means that it grabs audio after effects have been applied. "Post Mixer" means that track volumes and panning are applied prior to grabbing the audio. "Post Mixer" might be handy if you wish to control levels from only one track.
 
-In MIDI tracks the "Pre FX" and "Post FX" apply to MIDI effects as well, so you can grab MIDI inputs either before MIDI effects are applied, or afterwards. Since Ableton's track routing works this way consistently, it's possible to add intermediate MIDI tracks with no instruments, but "listening" to the MIDI output at a particular state ("Pre" or "Post" FX on the source track) and then have additional tracks that exploit the intermediate track. This flexibility and ease of routing is a massive bonus for Ableton. It's possible to reuse inputs across multiple tracks in multiple ways to do a huge range with them. In particular I use this technique to build texture, especially in "drone" tracks where I can apply different resonators, textural effects to audio inputs from the same source and then blend these across tracks.
+In MIDI tracks the "Pre FX" and "Post FX" apply to MIDI effects as well, so you can grab MIDI inputs either before MIDI effects are applied, or afterwards. Since Ableton's track routing works this way consistently, it's possible to add intermediate MIDI tracks with no instruments, but "listening" to the MIDI output at a particular state ("Pre" or "Post" FX on the source track) and then have additional tracks that exploit the intermediate track. This flexibility and ease of routing is a massive bonus for The Lazy Producer. It's possible to reuse inputs across multiple tracks in multiple ways to do a huge range with them. In particular I use this technique to build texture, especially in "drone" tracks where I can apply different resonators, textural effects to audio inputs from the same source and then blend these across tracks.
 
 An alternative approach to the same problem would be to employ "Instrument Racks" or "Effect Racks" in one track. However, the benefit from the approach above is that each track can then use Return track sends to apply effects. It also makes live performance somewhat easier since you can quickly see the levels of each track and control these via a MIDI controller device like Ableton Push.
 
@@ -27,6 +27,20 @@ knitr::opts_chunk$set(echo = FALSE)
 ```{r}
 knitr::include_graphics(path = file.path(here::here(), "images", "Routing.png"))
 ```
+
+## Splitting MIDI for a single instrument across tracks
+
+As we discussed in 
+[Process - Note-wise probability](002-Process-Note_wise_probability.qmd)
+it's possible to use multiple MIDI tracks that send MIDI to a single instrument.
+This might be useful to split repeating and random parts, so that you can apply
+MIDI effects to the "random" part while keeping the repeating part static.
+
+A similar technique might be used to have distinct MIDI parts for a Drum Rack,
+so you can keep certain parts "locked in" and repeating, while other parts have
+additional MIDI processing and add flavour to the part. Even within that framework
+you could have a repeating kick and snare part, but add additional snare fills,
+flams or lower velocity random hits to add variation and spice to the snare part.
 
 The flexibility and ease of routing audio and MIDI around in Live makes it a
 very versatile platform for creating complex signal paths, and apply different

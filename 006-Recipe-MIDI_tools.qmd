@@ -6,7 +6,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 In this recipe we'll use the simplest MIDI generator, in this case a single MIDI
-note, with MIDI effects and routing to create a track - these are covered in .
+note, with MIDI effects and routing to create a track - these are covered in 
+[Tools - MIDI tools](004-Tools-MIDI_tools.qmd)
+.
 This recipe also uses MIDI and audio routing in Live quite extensively, so it's
 worth reviewing the content in 
 [Process - Routing MIDI and Audio](005-Process-Routing.qmd)
@@ -56,10 +58,10 @@ You can employ all kinds of MIDI FX here. In this example I have grouped these
 FX into a MIDI Effect Rack and I'm using Macros to allow me to switch on and
 change various FX parameters from a single set of 8 knobs.
   
-The "Random" effect is going to add (or subtract) semitone shift to the incoming
-note. Remember that our generator is a single C3 note for one bar. We then
-quantise this randomness to the C minor pentatonic scale using the "Scale"
-plugin.
+The "Random" effect is going to add (or subtract) up to 12 semitones shift to
+the incoming note. Remember that our generator is a single C3 note for one bar.
+We then quantise this randomness to the C minor pentatonic scale using the
+"Scale" plugin.
   
 Then we have two distinct "Note Echo" plugins which are going to echo the
 incoming note at 5 beats and 8 beats delay. Each plugin has the "Thru" setting
