@@ -283,6 +283,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tools - Live 12 MIDI Generation and Transformation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Chapters.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapters</span></a>
   </div>
@@ -309,7 +315,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tools-live12-overview" id="toc-tools-live12-overview" class="nav-link active" data-scroll-target="#tools-live12-overview">Tools - Live 12 Overview: MIDI and compositional tools</a>
+  <li><a href="#tools---live-12-overview-midi-and-compositional-tools" id="toc-tools---live-12-overview-midi-and-compositional-tools" class="nav-link active" data-scroll-target="#tools---live-12-overview-midi-and-compositional-tools">Tools - Live 12 Overview: MIDI and compositional tools</a>
   <ul class="collapse">
   <li><a href="#scale-awareness" id="toc-scale-awareness" class="nav-link" data-scroll-target="#scale-awareness">Scale awareness</a></li>
   <li><a href="#compositional-tools" id="toc-compositional-tools" class="nav-link" data-scroll-target="#compositional-tools">Compositional tools</a>
@@ -328,9 +334,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="tools-live12-overview" class="level1">
+<section id="tools---live-12-overview-midi-and-compositional-tools" class="level1">
 <h1>Tools - Live 12 Overview: MIDI and compositional tools</h1>
-<p>During the process of writing this book, Ableton released Live 12. With Live 12 there are a whole host of improvements and additions which make the life of someone making generative music a whole lot easier. In this chapter we’ll look at the new compositional and MIDI tools. In the next chapter we’ll look at new sequencer tools. In subsequent chapters we’ll look at some specific Transformer and Generator tools.</p>
+<p>During the process of writing this book, Ableton released Live 12. With Live 12 there are a whole host of improvements and additions which make the life of someone making generative music a whole lot easier. In this chapter we’ll look at the new compositional and MIDI tools. In the next chapter we’ll look at new sequencer tools. In subsequent chapters we’ll look at updates to modulation, and some specific Transformer and Generator tools.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -346,7 +352,8 @@ Key idea
 </div>
 <section id="scale-awareness" class="level2">
 <h2 class="anchored" data-anchor-id="scale-awareness">Scale awareness</h2>
-<p>Live 12 now has a feature where the scale can be defined at the Set level, which then sets the scale for each new clip (or can change the scale of existing clips); but you can also <strong><em>set</em></strong> the current scale for the set from clips. This allows you to change the scale of the set for example during live performance when the each song might be in a different key.</p>
+<p>Live 12 now has a feature where certain MIDI devices, audio effects and instruments are “Scale Aware” so that when you dial in pitch related changes, these will respect the current scale for the Set. The “Current Scale” is set either when you create a new Live Project, in which case new clips inherit the current scale setting, or the clips in a Scene can define the current scale for that scene. For individual song projects, this works very well. If you have a combination of scales defined across a Project - for example in live performance - it pays to be a little careful to ensure that MIDI clips within scenes do have scales defined in order to change the Current Scale setting between scenes. Proceed with a little caution in live performance is my advice!</p>
+<p>The purple b# button means that the Current Scale setting is being honoured by the MIDI effect, audio effect or instrument.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -356,8 +363,8 @@ Key idea
 </div>
 </div>
 </div>
-<p>But scale awareness goes beyond setting the scale for MIDI notes within a clip - many devices now have a “scale awareness” so that when the device adds or shifts notes, it does so within the context of the scale. In the screenshot above you can see that the purple “Scale Mode” button is ON (b# button). This means that clips and devices will use the scale shown as the default. Note that this <strong><em>isn’t</em></strong> a Global Scale which overrides scale settings in clips, but rather an indication of the <strong><em>CURRENT</em></strong> scale being used. See <a href="https://help.ableton.com/hc/en-us/articles/11425083250972-Keys-and-Scales-in-Live-12-FAQ" class="uri">https://help.ableton.com/hc/en-us/articles/11425083250972-Keys-and-Scales-in-Live-12-FAQ</a></p>
-<p>In the “Random” MIDI device below, again the purple “Scale Mode” or Scale Awareness button is lit, meaning that random pitch shift will be in the context of the Current Scale setting, so shifting up or down scale degrees, rather than semitones. This is a boon for the Lazy Producer because now they won’t need to add MIDI Scale quantizing devices, and also changing the scale in the Current Scale (or through clips), the MIDI devices and instruments will automatically pick up whatever the new Current Scale is.</p>
+<p>For more on Current Scale settings see <a href="https://help.ableton.com/hc/en-us/articles/11425083250972-Keys-and-Scales-in-Live-12-FAQ" class="uri">https://help.ableton.com/hc/en-us/articles/11425083250972-Keys-and-Scales-in-Live-12-FAQ</a></p>
+<p>In the “Random” MIDI device below, the purple “Scale Mode” or Scale Awareness button is lit, meaning that random pitch shift will be in the context of the Current Scale setting, so shifting up or down scale degrees, rather than semitones. This is a boon for the Lazy Producer because now you won’t need to add MIDI Scale quantizing devices, and also changing the scale in the Current Scale (or through clips), the MIDI devices and instruments will automatically pick up whatever the new Current Scale is.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -378,7 +385,19 @@ Key idea
 </div>
 </div>
 <p>Scale awareness also extends to some of the Synth instruments in Live 12 - Meld in particular has scale awareness for some of its tone generators, where changing the macro knob for that generator adds harmonic content that is in tune with the Global Scale.</p>
-<p>Note that MIDI clips set Current Scale, so if you wish to change the Current Scale, it’s worth checking that <strong><em>ALL</em></strong> MIDI clips within a scene or all MIDI clips playing have the same scale setting. See <a href="https://help.ableton.com/hc/en-us/articles/11425083250972-Keys-and-Scales-in-Live-12-FAQ" class="uri">https://help.ableton.com/hc/en-us/articles/11425083250972-Keys-and-Scales-in-Live-12-FAQ</a></p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Continue to use Scale Device in live performance!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I would continue to use the Scale MIDI Device for live performance just as a fall back to be certain sure that you don’t unexpectedly have one clip that’s playing G minor, while the Current Scale thinks its C major.</p>
+</div>
+</div>
 </section>
 <section id="compositional-tools" class="level2">
 <h2 class="anchored" data-anchor-id="compositional-tools">Compositional tools</h2>
@@ -426,6 +445,7 @@ Key idea
 </div>
 </div>
 </div>
+<p>We’ll look at MIDI Generation and Transformation tools a little more in <a href="./033-Tools-Live12_MIDI_Generation_Transformation.html">Tools - Live 12 MIDI Generation and Transformation</a>.</p>
 </section>
 </section>
 <section id="note-probability" class="level2">
@@ -847,7 +867,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","loop":false});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

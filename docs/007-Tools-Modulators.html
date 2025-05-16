@@ -283,6 +283,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tools - Live 12 MIDI Generation and Transformation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Chapters.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapters</span></a>
   </div>
@@ -344,7 +350,7 @@ Key idea
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Modulation keeps sounds interesting. In @ref(process-balance-unexpected-and-predictable) we discuss how repetition balances randomness. This also applies to the sounds you use in your track. Modulation of synth sounds through LFOs and other means is available within Ableton Live instruments, often with some very creative ways of achieving that - such as the Wavetable instrument’s modulation matrix. But sometimes you want to apply modulation to a parameter where an LFO is not immediately available for example to the macro knob of an Instrument or Effect Rack.</p>
+<p>Modulation keeps sounds interesting. In <a href="./009-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a> we discuss how repetition balances randomness. This also applies to the sounds you use in your track. Modulation of synth sounds through LFOs and other means is available within Ableton Live instruments, often with some very creative ways of achieving that - such as the Wavetable instrument’s modulation matrix. But sometimes you want to apply modulation to a parameter where an LFO is not immediately available for example to the macro knob of an Instrument or Effect Rack.</p>
 <p>Having options where the modulation isn’t obviously cyclical also helps as it adds to the “unpredictable” and helps engage listener’s attention for longer. You could use LFOs with different cycle lengths (in bars or different rates in Hz) or you could use LFOs which are not periodic but which “wander”.</p>
 <p>One strength of Ableton Live’s modulation devices (and Max for Live modulation devices) is that you can map modulation to pretty much anything that you can tweak by hand. Yes, even tempo. You can assign the parameter that is being modulated simply by click on the “Map” button in the devices and then click on a knob, switch or fader in Live. Modulation also allows you to have “hands off” performance of generative music by automating volume fades, if required.</p>
 </div>
@@ -497,7 +503,7 @@ Key idea
 </section>
 <section id="strange-mod" class="level2">
 <h2 class="anchored" data-anchor-id="strange-mod">Strange Mod</h2>
-<p><a href="https://maxforlive.com/library/device/6872/strange-mod">Dillon Baston’s paid Max for Live plugin “Strange Mod”</a>is my “go to” modulation device. It uses chaotic processes - strange attractors - and evaluates the X, Y, and Z three dimensional attributes of a particle within the chaotic system, generating three distinct modulation values (like LFO outputs) which can then be mapped to any parameter as we’ve seen above with other modulators. The change in the three different modulation values is random / chaotic but because they are mapping the three dimensions of the particle moving in the chaotic system, they do not “jump” to new values. Also the three dimensions are somewhat related - the X value does not jump values, but neither do the Y and Z values. They may change quickly, but if they do happen smoothly. Note that the “Map” button here allows you to map each modulation value - X, Y and Z - to any parameter in Live, but also each individual value (say X) can also be mapped to 7 other parameters, as with the LFO device. That means that a single Strange Mod device could map out to 24 different parameters. There are 11 different strange attractor algorithms to choose from, and you can randomise the starting point of the process to generate new paths of random modulation. The “R” button ensures that the process is reset each time you start Ableton’s transport control (press play). This ensures that your random, chaotic process is at least somewhat repeatable! The “Var” setting scales variability in the process - more means that there’s more chaos, while lower values mean less chaos.</p>
+<p>For a long time, <a href="https://maxforlive.com/library/device/6872/strange-mod">Dillon Baston’s paid Max for Live plugin “Strange Mod”</a> was my “go to” modulation device. It uses chaotic processes - strange attractors - and evaluates the X, Y, and Z three dimensional attributes of a particle within the chaotic system, generating three distinct modulation values (like LFO outputs) which can then be mapped to any parameter as we’ve seen above with other modulators. The change in the three different modulation values is random / chaotic but because they are mapping the three dimensions of the particle moving in the chaotic system, they do not “jump” to new values. Also the three dimensions are somewhat related - the X value does not jump values, but neither do the Y and Z values. They may change quickly, but if they do this happens smoothly. Note that the “Map” button here allows you to map each modulation value - X, Y and Z - to any parameter in Live, but also each individual value (say X) can also be mapped to 7 other parameters, as with the LFO device. That means that a single Strange Mod device could map out to 24 different parameters. There are 11 different strange attractor algorithms to choose from, and you can randomise the starting point of the process to generate new paths of random modulation. The “R” button ensures that the process is reset each time you start Ableton’s transport control (press play). This ensures that your random, chaotic process is at least somewhat repeatable! The “Var” setting scales variability in the process - more means that there’s more chaos, while lower values mean less chaos.</p>
 <p>It’s this combination of smooth and random that makes this my preferred device for modulation. Slowing down the “Speed” of modulation can be useful to map to sound parameters where you want things to evolve smoothly and gradually.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -943,7 +949,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":false,"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"selector":".lightbox","openEffect":"zoom","descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

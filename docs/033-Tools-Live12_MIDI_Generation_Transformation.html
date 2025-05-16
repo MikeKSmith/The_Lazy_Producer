@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./032-Tools-Live12_Modulation.html" rel="next">
-<link href="./030-Tools-Live12_Intro.html" rel="prev">
+<link href="./Chapters.html" rel="next">
+<link href="./032-Tools-Live12_Modulation.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./031-Tools-Live12_Sequencers.html">Tools - Live 12 Sequencers</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./033-Tools-Live12_MIDI_Generation_Transformation.html">Tools - Live 12 MIDI Generation and Transformation</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -271,7 +271,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./031-Tools-Live12_Sequencers.html" class="sidebar-item-text sidebar-link active">
+  <a href="./031-Tools-Live12_Sequencers.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tools - Live 12 Sequencers</span></a>
   </div>
 </li>
@@ -283,7 +283,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link">
+  <a href="./033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Tools - Live 12 MIDI Generation and Transformation</span></a>
   </div>
 </li>
@@ -315,11 +315,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tools---live-12-sequencers" id="toc-tools---live-12-sequencers" class="nav-link active" data-scroll-target="#tools---live-12-sequencers">Tools - Live 12 Sequencers</a>
+  <li><a href="#tools---live-12-midi-generation-and-transformation" id="toc-tools---live-12-midi-generation-and-transformation" class="nav-link active" data-scroll-target="#tools---live-12-midi-generation-and-transformation">Tools - Live 12 MIDI Generation and Transformation</a>
   <ul class="collapse">
-  <li><a href="#sq" id="toc-sq" class="nav-link" data-scroll-target="#sq">SQ</a></li>
-  <li><a href="#rhythmic-steps" id="toc-rhythmic-steps" class="nav-link" data-scroll-target="#rhythmic-steps">Rhythmic Steps</a></li>
-  <li><a href="#step-arp" id="toc-step-arp" class="nav-link" data-scroll-target="#step-arp">Step Arp</a></li>
+  <li><a href="#midi-generation" id="toc-midi-generation" class="nav-link" data-scroll-target="#midi-generation">MIDI Generation</a></li>
+  <li><a href="#midi-transformation" id="toc-midi-transformation" class="nav-link" data-scroll-target="#midi-transformation">MIDI Transformation</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -330,9 +329,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="tools---live-12-sequencers" class="level1">
-<h1>Tools - Live 12 Sequencers</h1>
-<p>Live Suite has had Max for Live sequencer devices for some time, but with Live 12.1 some of those have now been included in a new Sequencers pack. The sequencers in this pack allow you to specify a pattern of notes, octaves, velocities, probabilities, and many other attributes and sequence these in ways that are much more like modular system sequencers, where pattern lengths may differ from number of beats in a bar, or where you can randomise aspects on the fly.</p>
+<section id="tools---live-12-midi-generation-and-transformation" class="level1">
+<h1>Tools - Live 12 MIDI Generation and Transformation</h1>
+<p>During the process of writing this book, Ableton released Live 12. With Live 12 there are a whole host of improvements and additions which make the life of someone making generative music a whole lot easier. In this chapter we’ll look at the new compositional and MIDI tools. In the next chapter we’ll look at new sequencer tools. In subsequent chapters we’ll look at updates to modulation, and some specific Transformer and Generator tools.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -343,50 +342,53 @@ Key idea
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Why put sequencers in a DAW (which is essentially a sequencer)? Well, because then you can specify notes you want to play, but have these play in a nonlinear way, or not follow the overall time signature of your Live set. It opens up possibilities of playing chosen notes but vary the order these are played resulting in patterns that vary but in very interesting, evolving and generative ways.</p>
+<p>Live 12 contains a number of tools and new features which enhance how we can make generative music using Ableton Live. Some of these are enhancements to existing functionality, but there are many places where there are brand new features which could be used to create generative music, or provide idea generators for composition.</p>
 </div>
 </div>
-<section id="sq" class="level2">
-<h2 class="anchored" data-anchor-id="sq">SQ</h2>
-<p>The SQ sequencer offers a HUGE range of tweakability to specify note pitch, octave, velocity, length, time-shift, ratchet and condition and have the sequence of values for each of these run alongside the pitch sequence or operate with a different sequence length to each other. So for example you could specify a pitch sequence, then have the note velocities change and rotate with a shorter sequence length to add some variety. Click on the “link” icons to the right of the note attributes (e.g.&nbsp;Velocity) to unlink the sequence for that attribute from the pitch sequence length. Clicking on the “dice” icon will randomise values. The “Length” attribute defines the length of the sequence, while the “Dir” setting defines the sequence play order - the sequences also don’t need to run forward, but can run in reverse, ping-pong back and forth (running forward then backward then forward), in a “snake” pattern or randomly. You can have the sequence be scale aware so that notes respect the Global Scale setting. You can change the starting note of the sequence by playing a different MIDI note. You can set the clock for the sequence to run at a different rate to the Global BPM setting in the Live set, or even set the clock from an external device. MIDI pitch information can be entered through the Pitch lane, or can be entered via a Step Sequenceer within the MIDI tab.</p>
+<section id="midi-generation" class="level2">
+<h2 class="anchored" data-anchor-id="midi-generation">MIDI Generation</h2>
+<p>Live 12 now comes with two new features built into MIDI clip creation: MIDI Generation and MIDI Transformation. MIDI Generation does what the name suggests - provides a range of different methods for generating new MIDI parts: rhythm - which creates sequences of MIDI notes by specifying the density of notes within a certain number of steps and then allowing you to choose permutations of these, stacks - which defines chords, seeds - which generates one or more “voices” of completely random notes (but these could conform to the clip scale setting) within the clip, shape - which generates notes by drawing in a pattern or shape, and Euclidean generators. And because what sits behind these generators is the power of Max for Live, the possibilities open up for a huge range of innovative MIDI generation.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Live12_SQ.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Live12_SQ.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Live12_MIDIGenerators.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Live12_MIDIGenerators.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
 </div>
-<p>This is a really powerful sequencer then, that can provide endless variation and interest from fairly simple patterns.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Live12_Max_MIDIGenerator.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Live12_Max_MIDIGenerator.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>In Chapter 13 we looked at MIDI Generator devices including Max for Live devices. But having some similar functionality here “baked into” the Live MIDI clip tools puts these tools at the fingertips of anyone with Live 12 Suite.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Live12_Euclidean_Pattern.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Live12_Euclidean_Pattern.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="rhythmic-steps" class="level2">
-<h2 class="anchored" data-anchor-id="rhythmic-steps">Rhythmic Steps</h2>
-<p>Rhythmic Steps is quite similar in some ways to the SQ sequencer, in that we can define the sequence of certain attributes - chance, velocity, MPE slide, and roll - and vary the sequence length of each of these if we wish. Rhythmic Steps is set up to work with Drum Racks (you can see which note is going to be played from the Drum Rack in the left hand side graphic). The “Alt” attribute is interesting as it allows you to specify the probability of playing an alternate sound (in blue in the Drum Rack graphic), so you could mix closed hi-hat (second from top row) with an open hi-hat sound.</p>
+<section id="midi-transformation" class="level2">
+<h2 class="anchored" data-anchor-id="midi-transformation">MIDI Transformation</h2>
+<p>The MIDI Transformation tools includes tools to arpeggiate the notes within the clip, connect - connecting existing notes in the clip with passing tones, ornament - adding additional short notes before the main note, like a flam in drum terms, or mordent in classical notation, quantize - here applying quantisation non-destructively, i.e.&nbsp;you can see the effect of the amount of quantisation on the MIDI notes, recombine - which lets you select notes and then permute these (rotate the order, mirror, shuffle), span - which allows you to change the note lengths by various means, strum - which applies a rhythmic strum pattern to chords, and time warp - which can bend the timing within a bar, so although the bpm clock remains constant, MIDI notes in a clip can trigger with a more fluid timing.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Live12_RhythmicSteps.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Live12_RhythmicSteps.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Live12_MIDI_Transformers.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Live12_MIDI_Transformers.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
 </div>
-<p>You can also reset the pattern (using the [R] or [Auto] buttons in the image above) so that the patterns will start back at step 1 again. The [Auto] setting allows you to specify a number of bars after which the reset will happen if you don’t want to manually trigger this. The icon to the left of the [R] reset button shows how the Rhythm Sequencer can be used directly from Ableton’s Push controller.</p>
-</section>
-<section id="step-arp" class="level2">
-<h2 class="anchored" data-anchor-id="step-arp">Step Arp</h2>
-<p>Much like the above sequencers, Step Arp allows you to tweak and sequence the attributes of an arpeggiator and have the sequence of those attributes run in parallel with the pitch sequence which is governed through the Octave and Notes button settings or unlinked to sequence the attributes with different lengths.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><a href="images/Live12_StepArp.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Live12_StepArp.png" class="img-fluid figure-img"></a></p>
-</figure>
-</div>
-</div>
-</div>
-<p>The bar to the right of the sequence allows you to specify a range in which the values will be randomised, so here this would affect the range of velocities that would be randomised.</p>
 
 
 </section>
@@ -782,18 +784,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a 12="" href="./030-Tools-Live12_Intro.html" class="pagination-link  aria-label=" tools="" -="" live="" overview:="" midi="" and="" compositional="" tools"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Tools - Live 12 Overview: MIDI and compositional tools</span>
+      <a 12="" href="./032-Tools-Live12_Modulation.html" class="pagination-link  aria-label=" tools="" -="" live="" modulation"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Tools - Live 12 Modulation</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./032-Tools-Live12_Modulation.html" class="pagination-link" aria-label="Tools - Live 12 Modulation">
-        <span class="nav-page-text">Tools - Live 12 Modulation</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Chapters.html" class="pagination-link" aria-label="Chapters">
+        <span class="nav-page-text">Chapters</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","loop":false,"closeEffect":"zoom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":false,"descPosition":"bottom","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

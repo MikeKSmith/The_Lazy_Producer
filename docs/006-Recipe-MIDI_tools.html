@@ -283,6 +283,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tools - Live 12 MIDI Generation and Transformation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Chapters.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapters</span></a>
   </div>
@@ -321,7 +327,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="recipe---doing-more-with-less-using-midi-tools-and-plugins" class="level1">
 <h1>Recipe - Doing more with less using MIDI tools and plugins</h1>
-<p>In this recipe we’ll use the simplest MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in . This recipe also uses MIDI and audio routing in Live quite extensively, so it’s worth reviewing the content in <a href="./005-Process-Routing.html">Process - Routing MIDI and Audio</a> . We’re also going to use modulation devices covered in <a href="./007-Tools-Modulators.html">Tools - Modulators</a> .</p>
+<p>In this recipe we’ll use the simplest MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in <a href="./004-Tools-MIDI_tools.html">Tools - MIDI tools</a> . This recipe also uses MIDI and audio routing in Live quite extensively, so it’s worth reviewing the content in <a href="./005-Process-Routing.html">Process - Routing MIDI and Audio</a> . We’re also going to use modulation devices covered in <a href="./007-Tools-Modulators.html">Tools - Modulators</a> .</p>
 <ol type="1">
 <li><p>Create a MIDI track but do not add an instrument to that track. This is going to be the “generator” for our track.</p></li>
 <li><p>Within this track, add a single MIDI clip with C3 notes for one bar. Name this the “Generator” track (CTRL+R to rename).</p></li>
@@ -362,7 +368,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>You can employ all kinds of MIDI FX here. In this example I have grouped these FX into a MIDI Effect Rack and I’m using Macros to allow me to switch on and change various FX parameters from a single set of 8 knobs.</p>
-<p>The “Random” effect is going to add (or subtract) semitone shift to the incoming note. Remember that our generator is a single C3 note for one bar. We then quantise this randomness to the C minor pentatonic scale using the “Scale” plugin.</p>
+<p>The “Random” effect is going to add (or subtract) up to 12 semitones shift to the incoming note. Remember that our generator is a single C3 note for one bar. We then quantise this randomness to the C minor pentatonic scale using the “Scale” plugin.</p>
 <p>Then we have two distinct “Note Echo” plugins which are going to echo the incoming note at 5 beats and 8 beats delay. Each plugin has the “Thru” setting switched on so we’ll hear the original note and its delay. You can experiment with setting this to “Mute” to mute the incoming note, and just play the delayed version. The device on/off switch on the top left of the device is mapped to a macro knob which allows me to switch these devices on and off with a knob or button on my MIDI controller.</p>
 <p>The second “Random” plugin adds more randomness to the original note, and all of the delayed / echo output MIDI notes. This allows me to add a little more variation to the output by turning up the “Chance” setting on this device. Note that the “Choices” knob is also mapped to a macro knob, so I can dial up more or less variation.</p>
 <p>A third “Note Echo” has a 3 beat delay with a Pitch shift up 7 semitones but with very low Feedback setting so that the pitching up fades quickly. Again, device on/off is mapped to a controller knob or button to allow me to turn this on and off.</p>
@@ -844,7 +850,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","loop":false,"openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":false,"openEffect":"zoom","descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

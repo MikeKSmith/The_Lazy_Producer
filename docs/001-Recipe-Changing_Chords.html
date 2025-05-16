@@ -283,6 +283,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tools - Live 12 MIDI Generation and Transformation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Chapters.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapters</span></a>
   </div>
@@ -338,9 +344,9 @@ Key idea
 <li><p>Create three MIDI tracks, each with a virtual synth instrument. For this example we’re going to use long chords, so I’d recommend a pad or arpeggiated sound. One thing that works quite well is to mix sounds with rhythmic elements, sounds that evolve or where there is modulation to vary the sound over time.</p></li>
 <li><p>Make three MIDI clips in each track.</p></li>
 <li><p>Prepare a MIDI clip with 8 to 10 notes in key (whatever scale you wish) in each clip within the tracks. Avoiding the 3rd of the scale will make the chords tonally “ambiguous”, and avoiding (major) 7ths will help the sounds produced blend between tracks and clips (see the chapter on Scales <a href="./018-Process-Scales.html">Process - Using scales</a> for more discussion of scales in generative music). Use the Scale button in the MIDI clip to only show notes within the scale. The chords suggested are arbitrary, but the recipe will work best if you use scales or chord intervals that are “next door” to each other in the cycle of 5ths - <a href="https://en.wikipedia.org/wiki/Circle_of_fifths" class="uri">https://en.wikipedia.org/wiki/Circle_of_fifths</a>. See the screenshots below for a visual representation of what I mean.</p></li>
-<li><p>Use random note probability on notes in the chord (see <a href="./002-Process-Note_wise_probability.html">Process - Note-wise probability</a> ). Set the root notes of each clip to 75% probability, and set other notes at about 50-60% probability so that each time the clip triggers, the note choice / chord is different. This will mean that sometimes the chord will have 4 notes, but it could vary between 2 and 7… (in fact it could vary between none and 8, but the the extremes are very unlikely). Having higher probability on the root notes favours these notes within the chord, but if that probability is slightly less than 100% then you’ll not ALWAYS get that anchoring from the root note.</p></li>
+<li><p>Use random note probability on notes in the chord (see <a href="./002-Process-Note_wise_probability.html">Process - Note-wise probability</a> ). Set the root notes of each clip to 75% probability, and set other notes at about 50-60% probability so that each time the clip triggers, the note choice / chord is different. This will mean that sometimes the chord will have 4 notes, but it could vary between 1 and 7… (in fact it could vary between none and 8, but the the extremes are very unlikely). Having higher probability on the root notes favours these notes within the chord, but if that probability is slightly less than 100% then you’ll not ALWAYS get that anchoring from the root note.</p></li>
 <li><p>Make sure that the clip lengths vary between tracks (all notes within the clip have the same length). So clip1 in track 1 could have 16 bars length; clip 1 in track 2 could be 13 bars; clip 1 in track 3 could have 10 bars length etc. The important thing is not the clip length, but the fact that they vary <strong><em>across</em></strong> tracks.</p></li>
-<li><p>ALSO, vary clip lengths between scenes <strong><em>within</em></strong> tracks. So a track that has 16 bars in clip 1, maybe has 14 bars in clip 2 and 12 bars in clip 3. Similarly, the exact length is unimportant. The important thing is that the clip lengths vary both within tracks and between tracks. AVOID having the same clip lengths in the same scenes.&nbsp;&nbsp;Following the advice above you should wind up with something like this in the first three clip slots of the three tracks:</p></li>
+<li><p>ALSO, vary clip lengths between scenes <strong><em>within</em></strong> tracks. So a track that has 16 bars in clip 1, maybe has 14 bars in clip 2 and 12 bars in clip 3. Similarly, the exact length is unimportant. The important thing is that the clip lengths vary both within tracks and between tracks. AVOID having the same clip lengths in the same scenes.&nbsp;Following the advice above you should wind up with something like this in the first three clip slots of the three tracks:</p></li>
 </ol>
 <p><strong><em>Track 1 clips</em></strong>:</p>
 <div class="cell">
@@ -416,11 +422,11 @@ Key idea
 </div>
 <p>The clips shown above are <em>my</em> choice of notes, length etc. and assume that we’re doing a slow moving, textured track. You can play with different choices of notes, shorter lengths of clip, more plucky sounds. Perhaps adding an Arpeggiator or Note Echo to the track would help movement and retain interest (see <a href="./004-Tools-MIDI_tools.html">Tools - MIDI tools</a> for more details on MIDI effects in Ableton Live).</p>
 <ol start="7" type="1">
-<li>Set up Follow Actions (see the following chapter <a href="./003-Process-Follow_Actions.html">Process - Follow Actions</a> ) to progress to Next clip at end of each clip with 80% probability, with the other action set to “Play again” with 20% probability. When you launch the scene, each clip will play to the end of the clip, but because individual note probability within each of the stacked chords is set to 50-60%, the chord will sound different each time it plays. Also, the randomness we’re using for note probability also means that the same chord clip in each track is also likely to sound different. The 80-20% split of next action - “Play again” or “Next” - will mean that some tracks may progress to the next chord while some will play the same clip again.</li>
+<li>Set up Follow Actions (see the following chapter <a href="./003-Process-Follow_Actions.html">Process - Follow Actions</a> ) to progress to Next clip at end of each clip with 80% probability, with the other action set to “Play again” with 20% probability. When you launch the scene, each clip will play to the end of the clip, but because individual note probability within each of the stacked chords is set to 50-60%, the chord will sound different each time it plays. Also, the randomness we’re using for note probability means that the same chord clip in each track is also likely to sound different. The 80-20% split of next action - “Play again” or “Next” - will mean that some tracks may progress to the next chord while some will play the same clip again.</li>
 </ol>
 <p>If the clips are short, then a 50-50% split of next action chance might be more appropriate. In this case because the clips are long we want to force movement onwards. With shorter clips then we might favour repetition so that the listener isn’t bombarded with changes every few beats (see <a href="./009-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a> for a discussion of balancing repetition with unexpected elements).</p>
 <ol start="8" type="1">
-<li><p>Choose sounds for each track that complement each other. Could be pads, arpeggios, textures etc. Arpeggios and sounds that evolve are particularly useful in this recipe. You can automate parameters within clips as well to introduce additional movement in the sound. An important point is that the sound shouldn’t be too static.</p></li>
+<li><p>Choose sounds for each track that complement each other. You can automate parameters within clips as well to introduce additional movement in the sound. An important point is that the sound shouldn’t be too static.</p></li>
 <li><p>Press play. Sit back and relax.</p>
 <p>You can hear one instance of this track here: <a href="https://soundcloud.com/mikeksmith/followactions_chords_and_arp/s-CKzkRoOEWrr?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&amp;si=e1846c9235ff47ad9ae0fa0cd5d52708&amp;utm_source=clipboard&amp;utm_medium=text&amp;utm_campaign=social_sharing" class="uri">https://soundcloud.com/mikeksmith/followactions_chords_and_arp/s-CKzkRoOEWrr</a></p></li>
 </ol>
@@ -831,7 +837,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","descPosition":"bottom","loop":false,"closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

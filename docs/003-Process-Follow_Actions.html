@@ -283,6 +283,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tools - Live 12 MIDI Generation and Transformation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Chapters.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapters</span></a>
   </div>
@@ -350,12 +356,13 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="./images/Launch_Follow-Actions.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./images/Launch_Follow-Actions.png" class="img-fluid figure-img" style="width:100.0%"></a></p>
+<p><a href="images/Launch_Follow-Actions.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Launch_Follow-Actions.png" class="img-fluid figure-img"></a></p>
 </figure>
 </div>
 </div>
 </div>
-<p>There are many different possible actions with the Follow Action. These are mostly self-explanatory but there are a few subtleties that are worth pointing out. As we point out above, Ableton needs to have contiguous sets of clips within a track to enable Follow Actions. The “First” and “Last” options above refer to <strong><em>the first and last clips within that contiguous set</em></strong>, not necessarily the first and last within the track. The “Any” option randomly jumps to any of the clips within the contiguous set, including the current clip. “Other” randomly jumps to a different clip within the set. “Any” can be useful when you want to allow a repeat of the currently playing clip, while “Other” is more useful to force a jump to a different clip. “Jump” allows you to nominate a specific clip to jump to. “No Action” can be used as a “catch all” default action. With “No Action” in the alternative (right hand) Action, you can automate Ableton moving to a different clip after a certain number of bars and beats, but if this option is not taken then the clip continues playing to the end of the clip.</p>
+<p>There are many different possible actions with the Follow Action. These are mostly self-explanatory but there are a few subtleties that are worth pointing out. As we point out above, Ableton needs to have contiguous sets of clips within a track to enable Follow Actions. The “First” and “Last” options above refer to <strong><em>the first and last clips within that contiguous set</em></strong>, not necessarily the first and last within the track.</p>
+<p>The “Any” option randomly jumps to any of the clips within the contiguous set, including the current clip. “Other” randomly jumps to a different clip within the set. “Any” can be useful when you want to allow a repeat of the currently playing clip, while “Other” is more useful to force a jump to a different clip. “Jump” allows you to nominate a specific clip to jump to. “No Action” can be used as a “catch all” default action. With “No Action” in the alternative (right hand) Action, you can automate Ableton moving to a different clip after a certain number of bars and beats, but if this option is not taken then the clip continues playing to the end of the clip.</p>
 </section>
 <section id="follow-actions-1" class="level2">
 <h2 class="anchored" data-anchor-id="follow-actions-1">FOLLOW Actions</h2>
@@ -364,7 +371,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="./images/Launch_Follow-Actions_Linked.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="./images/Launch_Follow-Actions_Linked.png" class="img-fluid figure-img" style="width:100.0%" alt="Ableton Live default Launch and Follow Action dialogue"></a></p>
+<p><a href="images/Launch_Follow-Actions_Linked.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Launch_Follow-Actions_Linked.png" class="img-fluid figure-img" alt="Ableton Live default Launch and Follow Action dialogue"></a></p>
 </figure>
 </div>
 </div>
@@ -788,7 +795,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

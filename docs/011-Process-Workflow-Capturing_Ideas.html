@@ -283,6 +283,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tools - Live 12 MIDI Generation and Transformation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Chapters.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Chapters</span></a>
   </div>
@@ -346,7 +352,7 @@ Key idea
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>I find it useful to separate MIDI tracks that <em>generate</em> and <em>transform</em> MIDI information from instrument tracks that receive that MIDI information and generate sound. The idea is to capture the generated and transformed MIDI for later processing. It can then be copied into the instrument track and “bounced down” or rendered with the instrument track to capture the sound. In this process don’t worry about having more tracks than you think necessary. This will give more flexibility and options in the capturing process. There is quite a large difference between Live sets for performance and Live sets for capturing and committing the performance for release.</p>
+<p>I find it useful to separate MIDI tracks that <em>generate</em> and <em>transform</em> MIDI information from instrument tracks that receive that MIDI information and generate sound. The idea is to capture the generated and transformed MIDI for later processing. It can then be copied into the instrument track and “bounced down” or rendered with the instrument track to capture the sound. I then group all of the tracks (MIDI generator and MIDI devices, instrument track with captured MIDI, bounced down audio) and apply mix FX at the Group level. In this process don’t worry about having more tracks than you think necessary. This will give more flexibility and options in the capturing process. There is quite a large difference between Live sets for performance and Live sets for capturing and committing the performance for release.</p>
 </div>
 </div>
 <section id="in-the-beginning" class="level2">
@@ -357,7 +363,7 @@ Key idea
 <h2 class="anchored" data-anchor-id="random-processes-are-random">Random processes are random</h2>
 <p>If you have used any randomness within processes (and if you haven’t why haven’t you been paying attention up to this point?) then what you’ll find is that each time you re-open and play the Live set, you <strong><em>should</em></strong> get a slightly different sounding result. It may not be <strong><em>radically</em></strong> different, but it is likely to be different enough, that when it comes to mixing before committing to a version of the piece, you find some parts that are thinner than expected, or some where there are peaks of volume or resonance that become problematic for mixing.</p>
 <p>In that case, it makes sense to try to capture or “render” the MIDI, instrument and sound design choices so that you can mix and tweak to get towards a consistent output.</p>
-<p>In extreme cases you may find, as you capture the output of the random processes that you don’t like the output. In that case you might want to refine these random processes - maybe make them slightly <strong><em>less</em></strong> random - or tweak settings to try to avoid extreme changes in sound design through reducing modulation levels. But the other option, to be honest is to throw that version away and re-render and re-capture the output to see if the random processes spit out something better next time. Don’t feel you have to be precious about the output of some random process. There are many more versions of something readily available.</p>
+<p>In extreme cases you may find, as you capture the output of the random processes that you don’t like the output. In that case you might want to refine these random processes - maybe make them slightly <strong><em>less</em></strong> random - or tweak settings to try to avoid extreme changes in sound design through reducing modulation levels. But the other option, to be honest is to throw that version away and re-render and re-capture the output to see if the random processes spit out something better next time. Don’t feel you have to be precious about the output of some random process. There are many more versions of the random processes readily available.</p>
 </section>
 <section id="how-to-set-up-live-sets---my-experience" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-set-up-live-sets---my-experience">How to set up Live sets - my experience</h2>
@@ -830,7 +836,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","loop":false,"selector":".lightbox","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
