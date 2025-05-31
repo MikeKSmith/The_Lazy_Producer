@@ -325,6 +325,13 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#midi-generation" id="toc-midi-generation" class="nav-link" data-scroll-target="#midi-generation">MIDI Generation</a></li>
   <li><a href="#midi-transformation" id="toc-midi-transformation" class="nav-link" data-scroll-target="#midi-transformation">MIDI Transformation</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#extensions" id="toc-extensions" class="nav-link" data-scroll-target="#extensions">Extensions</a>
+  <ul class="collapse">
+  <li><a href="#generator---mdd-snake" id="toc-generator---mdd-snake" class="nav-link" data-scroll-target="#generator---mdd-snake">Generator - MDD Snake</a></li>
+  <li><a href="#generator---turing-machine" id="toc-generator---turing-machine" class="nav-link" data-scroll-target="#generator---turing-machine">Generator - Turing Machine</a></li>
+  <li><a href="#transformer---develop" id="toc-transformer---develop" class="nav-link" data-scroll-target="#transformer---develop">Transformer - Develop</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -395,8 +402,60 @@ Key idea
 </div>
 </div>
 </div>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<p>The limitation of these Generator and Transformation devices as they stand is that their processes apply to a MIDI clip and cannot be triggered remotely in performance or through clip automation. So while it’s possible to randomly generate MIDI sequences, melodies, etc. the typical use for this is at the time of MIDI clip generation. It <em>is</em> possible to regenerate for a clip, but it would be tricky to do this during a live performance. So these tools might be thought of as tools to get started and generate ideas, rather than tools for generative performance.</p>
+</section>
+<section id="extensions" class="level2">
+<h2 class="anchored" data-anchor-id="extensions">Extensions</h2>
+<p>Since these Generator and Transformer devices support Max for Live devices, it has opened up the doors for many developers to create really interesting new Generator and Transformer devices. One developer of note is Philip Meyer - https://meyer-devices.com - who has a collection of devices that enhance, evolve and augment the built-in Ableton Generator and Transformer devices.</p>
+<p>The beauty of Max for Live with Ableton Live Suite is the ability to create these kind of extensions and tools that integrate so well with Live’s own internal devices.</p>
+<section id="generator---mdd-snake" class="level3">
+<h3 class="anchored" data-anchor-id="generator---mdd-snake">Generator - MDD Snake</h3>
+<p>In <a href="./012-Tools-MIDI_Generators.html">Tools - MIDI Generators</a> we mentioned the MDD Snake Max for Live MIDI generator (https://maxforlive.com/library/device/10422/mdd-snake-midi-generator) . This is a great sequencer modelled after the Make Noise René modular sequencer. The device gives you a four by four grid of notes, gates and velocities and it cycles through each of these in a given pattern. The default plays each row before moving on to the next row. But you can also choose to play through the notes column by column, in diagonals, and a variety of other patterns. Each pattern can play through forward, backward, cycle forward and back etc.</p>
+<p>The beauty of this little generator is that it decouples note pitch from gate (whether the note plays or not). So you can generate patterns of notes / pitches separately from the pattern of whether the note plays which avoids the machine gun pattern of constant 8th or 16th notes.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/MIDI_Generator_MDDSnake.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/MIDI_Generator_MDDSnake.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>There’s an interview with Maxime Dangles, create of the MDD Snake device here: https://www.ableton.com/en/blog/maxime-dangles-unlikely-connections/.</p>
+</section>
+<section id="generator---turing-machine" class="level3">
+<h3 class="anchored" data-anchor-id="generator---turing-machine">Generator - Turing Machine</h3>
+<p>We’ve also discussed the Turing Machine in <a href="./012-Tools-MIDI_Generators.html">Tools - MIDI Generators</a>. Turing Machines create random sequences of notes and this MIDI Generator Max for Live device by Philip Meyer is essentially a little Turing Machine that will create a clip full of notes for you. Because the Turing Machine produces random note patterns, it’s worth experimenting and generating a few patterns until you find one that works in context. Philip Meyer explains the device in more detail in this video: https://youtu.be/_LpA66peATg?si=-KgyOTrVt_sbTgv6&amp;t=2191.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/MIDI_Generator_TuringMachine.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/MIDI_Generator_TuringMachine.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="transformer---develop" class="level3">
+<h3 class="anchored" data-anchor-id="transformer---develop">Transformer - Develop</h3>
+<p>Philip Meyer has also created Transformer Max for Live devices, and one example is the Develop tool, which takes a phrase and then over a set number of generations (copies) it can include more notes with each generation (or Degrade to eliminate notes) through muting notes in the pattern. In the screenshot below notice how in the first repeat of the pattern, about 50% of the notes are muted, and then as the pattern repeats, more notes are unmuted until the final repeat has all notes playing.</p>
+<p>The Deterministic mode mutes notes in the pattern while a Probabilistic mode reduces probability over generations. In Probabilistic mode you can also set a percentage (euclidean pattern) to specify which notes in the pattern have lower probability. This a really creative tool to introduce variation in note patterns so that they evolve rather than change suddenly.</p>
+<p>Again, Philip presents the tool in this video: https://youtu.be/_LpA66peATg?si=pOATIb8VZp7j3eub&amp;t=2915</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/MIDI_Transformer_Develop.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/MIDI_Transformer_Develop.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
 
 
+</section>
 </section>
 </section>
 
@@ -801,7 +860,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":false,"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","openEffect":"zoom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

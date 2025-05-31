@@ -24,6 +24,18 @@ relative change around the chosen value.
 
 ::: 
 
+## Remote control or modulate?
+
+Next to the "Map" button in the new Live 12 LFO is the choice to Remote control 
+a parameter which means that the LFO will take control of the parameter and 
+change it according to the settings in the LFO device; or Modulate the parameter
+leaving you to change the parameter value but with the LFO changing the value 
+from where it is currently set. The modulation can be "unipolar" meaning that 
+the values will go up *or* down (but not both up *and* down) or "bipolar" 
+meaning that the modulation will go up *and* down by the set amount. To set the 
+LFO to modulate downwards, click on the "+" or "±" button next to "Mod" and then
+click and drag the % value box until it shows negative numbers.
+
 ## Live 12 - LFO shapes and modulation
 
 ```{r}
@@ -50,7 +62,7 @@ changing LFOs, as the previous "sample and hold" random LFO was a bit too
 knitr::include_graphics(path = file.path(here::here(), "images", "LFO_Stray.png"))
 ```
 
-There are a couple of additional options in the Live12 LFO - Shape and Steps.
+There are a couple of additional options in the Live 12 LFO - Shape and Steps.
 The Shape amount allows you to alter the shape of the LFO waveform, skewing (in
 Triangle waveform), flattening the peaks (in Sine waveform) and other ways of
 altering the overall shape of the waveform. This could be useful when you want a

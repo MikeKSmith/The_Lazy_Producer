@@ -323,6 +323,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#tools---live-12-modulation" id="toc-tools---live-12-modulation" class="nav-link active" data-scroll-target="#tools---live-12-modulation">Tools - Live 12 Modulation</a>
   <ul class="collapse">
+  <li><a href="#remote-control-or-modulate" id="toc-remote-control-or-modulate" class="nav-link" data-scroll-target="#remote-control-or-modulate">Remote control or modulate?</a></li>
   <li><a href="#live-12---lfo-shapes-and-modulation" id="toc-live-12---lfo-shapes-and-modulation" class="nav-link" data-scroll-target="#live-12---lfo-shapes-and-modulation">Live 12 - LFO shapes and modulation</a></li>
   <li><a href="#live-12---midi-expression-control" id="toc-live-12---midi-expression-control" class="nav-link" data-scroll-target="#live-12---midi-expression-control">Live 12 - MIDI Expression Control</a></li>
   <li><a href="#live-12---shaper" id="toc-live-12---shaper" class="nav-link" data-scroll-target="#live-12---shaper">Live 12 - Shaper</a></li>
@@ -352,6 +353,10 @@ Key idea
 <p>Previous versions of Live Suite allowed you to change values of parameters through the (Max for Live) LFO device. In Live 12 this feature has been extended by allowing you to <strong><em>modulate</em></strong> a parameter by a given amount through the LFO. What this means in practice is that you can continue to change the value of the whatever parameter you are modulating, but the LFO will apply additional changes to that parameter relative to its current position. Previously, when the LFO controlled the parameter, you gave up complete control over that parameter to the LFO device, but now you can continue to make changes, while the LFO adds a relative change around the chosen value.</p>
 </div>
 </div>
+<section id="remote-control-or-modulate" class="level2">
+<h2 class="anchored" data-anchor-id="remote-control-or-modulate">Remote control or modulate?</h2>
+<p>Next to the “Map” button in the new Live 12 LFO is the choice to Remote control a parameter which means that the LFO will take control of the parameter and change it according to the settings in the LFO device; or Modulate the parameter leaving you to change the parameter value but with the LFO changing the value from where it is currently set. The modulation can be “unipolar” meaning that the values will go up <em>or</em> down (but not both up <em>and</em> down) or “bipolar” meaning that the modulation will go up <em>and</em> down by the set amount. To set the LFO to modulate downwards, click on the “+” or “±” button next to “Mod” and then click and drag the % value box until it shows negative numbers.</p>
+</section>
 <section id="live-12---lfo-shapes-and-modulation" class="level2">
 <h2 class="anchored" data-anchor-id="live-12---lfo-shapes-and-modulation">Live 12 - LFO shapes and modulation</h2>
 <div class="cell">
@@ -375,7 +380,7 @@ Key idea
 </div>
 </div>
 </div>
-<p>There are a couple of additional options in the Live12 LFO - Shape and Steps. The Shape amount allows you to alter the shape of the LFO waveform, skewing (in Triangle waveform), flattening the peaks (in Sine waveform) and other ways of altering the overall shape of the waveform. This could be useful when you want a periodic shape, but don’t the modulation to stick to traditional waveform shapes. Steps essentially “bit reduces” the waveform, and introduces more stepped forms. This might be useful in conjunction with the beat synced mode where changed in modulation amounts could occur on 8th or 16th note divisions.</p>
+<p>There are a couple of additional options in the Live 12 LFO - Shape and Steps. The Shape amount allows you to alter the shape of the LFO waveform, skewing (in Triangle waveform), flattening the peaks (in Sine waveform) and other ways of altering the overall shape of the waveform. This could be useful when you want a periodic shape, but don’t the modulation to stick to traditional waveform shapes. Steps essentially “bit reduces” the waveform, and introduces more stepped forms. This might be useful in conjunction with the beat synced mode where changed in modulation amounts could occur on 8th or 16th note divisions.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -818,7 +823,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":false,"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

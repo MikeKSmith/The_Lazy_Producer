@@ -150,4 +150,4 @@ Each track can run to a different clock, so it's possible to set up four differe
 
 Tom Glendinning / ELPHNT is keeping a curated list of Max for Live plugins he uses in his music which includes some excellent sequencers. If I haven't touched on your favourite Max for Live sequencer here, you should [check out Tom's list](https://elphnt.io/max-for-live-curated/) and review what he's presenting.
 
-For example the MDD\_\_\_\_\_SNAKE device is based on the Make Noise Renee modular sequencer. Tom has provided a [very helpful introduction here](https://www.youtube.com/watch?v=v2_mdrz9XrU).
+For example the MDD\_\_\_\_\_SNAKE device is based on the Make Noise René modular sequencer. Tom has provided a [very helpful introduction here](https://www.youtube.com/watch?v=v2_mdrz9XrU).
