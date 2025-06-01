@@ -23,6 +23,16 @@ possibilities of playing chosen notes but vary the order these are played
 resulting in patterns that vary but in very interesting, evolving and generative
 ways.
 
+One limitation of MIDI is that it defines both the note on and note off
+information as well as the pitch. In the modular synthesizer world, pitch 
+sequence and gate (whether the note occurs or not) sequence can be compleetely
+independent, and most interestingly can run at different rates or have different
+lengths to create permutations of patterns. The sequencers in this pack offer
+a little bit of the modular experience within Live - where pitch, velocity, 
+octave and other attributes can have different sequence lengths. In order to 
+get the "gate" sequence with MIDI you can set the velocity to zero to specify that 
+a given note should not sound.
+
 ::: 
 
 ## SQ
@@ -45,6 +55,10 @@ can set the clock for the sequence to run at a different rate to the Global BPM
 setting in the Live set, or even set the clock from an external device. MIDI
 pitch information can be entered through the Pitch lane, or can be entered via a
 Step Sequenceer within the MIDI tab.
+
+Note (as above in the Key Idea) that setting velocity to zero will stop the 
+MIDI note from sounding, so if you would like to have a "gate" sequence, then
+you can specify notes which notes not to trigger.
 
 ```{r}
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_SQ.png"))

@@ -11,6 +11,10 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Key idea
 
 Live 12 contains a number of tools and new features which enhance how we can make generative music using Ableton Live. Some of these are enhancements to existing functionality, but there are many places where there are brand new features which could be used to create generative music, or provide idea generators for composition.
+
+In particular note that you can Generate, commit to a pattern, then Transform the MIDI multiple times. This allows you to "stack" Transformations - for example, generating a pattern, then using Transform to change pitch, commit changes, then use a different Transform tool to change velocity, then use Transform again to change other elements, such as note division or the placement of notes in the clip.
+
+Exploration of the combination of Generation and Transformation is encouraged to get the most out of these tools. You shouldn't view them as single tools that have to do everything in one go. Often the layering of Transformations will give the most interesting results.
 :::
 
 
@@ -39,6 +43,10 @@ The MIDI Transformation tools includes tools to arpeggiate the notes within the 
 ```{r}
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDI_Transformers.png"))
 ```
+
+Some of these Transformations will give really interesting results on pitched instruments, while others might be more suited to unpitched or rhythmic parts. It's worth exploring to see how they apply in different contexts.
+
+Because the tools apply to creating and transforming MIDI in clips, they are really useful in the initial stage of production and composition where you want help to create something new. They can also help you create variations of existing clips, taking one good idea and evolving it into something completely different.
 
 ## Limitations
 
@@ -74,9 +82,15 @@ We've also discussed the Turing Machine in  [Tools - MIDI Generators](012-Tools-
 knitr::include_graphics(path = file.path(here::here(), "images", "MIDI_Generator_TuringMachine.png"))
 ```
 
+## Philip Meyer MIDI Tools
+
+Philip Meyer has created a number of Generator and Transformer MIDI tools which are available via his website: https://meyer-devices.com. In the video linked above, Philip demonstrates each of these and it's worth reviewing the content of that video to both understand how the devices work, but also to see how he Generates, then Transforms clips. 
+
+
+
 ### Transformer - Develop
 
-Philip Meyer has also created Transformer Max for Live devices, and one example is the Develop tool, which takes a phrase and then over a set number of generations (copies) it can include more notes with each generation (or Degrade to eliminate notes) through muting notes in the pattern. In the screenshot below notice how in the first repeat of the pattern, about 50% of the notes are muted, and then as the pattern repeats, more notes are unmuted until the final repeat has all notes playing.
+The Develop tool, which takes a phrase and then over a set number of generations (copies) it can include more notes with each generation (or Degrade to eliminate notes) through muting notes in the pattern. In the screenshot below notice how in the first repeat of the pattern, about 50% of the notes are muted, and then as the pattern repeats, more notes are unmuted until the final repeat has all notes playing.
 
 The Deterministic mode mutes notes in the pattern while a Probabilistic mode reduces probability over generations. In Probabilistic mode you can also set a percentage (euclidean pattern) to specify which notes in the pattern have lower probability. This a really creative tool to introduce variation in note patterns so that they evolve rather than change suddenly.
 

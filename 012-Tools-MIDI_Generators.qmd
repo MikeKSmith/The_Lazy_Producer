@@ -116,6 +116,8 @@ The [Ableton Max for Live pack and device with Coldcut - Midivolve](https://www.
 knitr::include_graphics(path = file.path(here::here(),"images", "Midivolve.png"))
 ```
 
+The Mididvolve pack also comes with some very interesting presets curated by Coldcut that provide some interesting examples of what can be done with the tool.
+
 ## SEEDS - Polymath and friends
 
 [Seeds from Novel Music](https://www.novelmusic.org/m4l/seeds) is actually a collection of sequencing plugins that offer modular synthesiser style control over clocks, note sequences, scales, and much more. This is a paid pack of Max for Live devices, but if you are interested in a collection of tools for modular style sequencing with Ableton Live there is a HUGE amount of potential in this pack. In fact, I can't do justice to the full set of features available, and I can only recommend that interested users look into the [tutorial videos prepared by Novel Music to describe their functionality](https://youtube.com/playlist?list=PLjyWHWk9AS6MMpgD88K4U6TICgEjjClFR).
