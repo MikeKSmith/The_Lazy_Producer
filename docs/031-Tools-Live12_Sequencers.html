@@ -350,11 +350,13 @@ Key idea
 </div>
 <div class="callout-body-container callout-body">
 <p>Why put sequencers in a DAW (which is essentially a sequencer)? Well, because then you can specify notes you want to play, but have these play in a nonlinear way, or not follow the overall time signature of your Live set. It opens up possibilities of playing chosen notes but vary the order these are played resulting in patterns that vary but in very interesting, evolving and generative ways.</p>
+<p>One limitation of MIDI is that it defines both the note on and note off information as well as the pitch. In the modular synthesizer world, pitch sequence and gate (whether the note occurs or not) sequence can be compleetely independent, and most interestingly can run at different rates or have different lengths to create permutations of patterns. The sequencers in this pack offer a little bit of the modular experience within Live - where pitch, velocity, octave and other attributes can have different sequence lengths. In order to get the “gate” sequence with MIDI you can set the velocity to zero to specify that a given note should not sound.</p>
 </div>
 </div>
 <section id="sq" class="level2">
 <h2 class="anchored" data-anchor-id="sq">SQ</h2>
 <p>The SQ sequencer offers a HUGE range of tweakability to specify note pitch, octave, velocity, length, time-shift, ratchet and condition and have the sequence of values for each of these run alongside the pitch sequence or operate with a different sequence length to each other. So for example you could specify a pitch sequence, then have the note velocities change and rotate with a shorter sequence length to add some variety. Click on the “link” icons to the right of the note attributes (e.g.&nbsp;Velocity) to unlink the sequence for that attribute from the pitch sequence length. Clicking on the “dice” icon will randomise values. The “Length” attribute defines the length of the sequence, while the “Dir” setting defines the sequence play order - the sequences also don’t need to run forward, but can run in reverse, ping-pong back and forth (running forward then backward then forward), in a “snake” pattern or randomly. You can have the sequence be scale aware so that notes respect the Global Scale setting. You can change the starting note of the sequence by playing a different MIDI note. You can set the clock for the sequence to run at a different rate to the Global BPM setting in the Live set, or even set the clock from an external device. MIDI pitch information can be entered through the Pitch lane, or can be entered via a Step Sequenceer within the MIDI tab.</p>
+<p>Note (as above in the Key Idea) that setting velocity to zero will stop the MIDI note from sounding, so if you would like to have a “gate” sequence, then you can specify notes which notes not to trigger.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -799,7 +801,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
