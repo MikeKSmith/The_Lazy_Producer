@@ -1,9 +1,7 @@
-# The Lazy Producer - Starter ideas for generative music {.unnumbered}
+This version of the book is 0.991
 
-by Mike K Smith
+Rendered on 2025-05-31
 
-This version of the book is 0.990
+Cover image by Danielle Navarro (https://djnavarro.net)
 
-Rendered on 2025-05-16.
-
-[![Image by Danielle Navarro - https://djnavarro.net](images/Album_Cover.png){fig-alt="Album cover for Mike K Smith's album \"The Lazy Producer\". The cover shows a generative art image created by Danielle Navarro which has two concentric circles white on indigo and black with many white slashes and whispers. The image has four quadrants. Near the centre are three V-shapes" fig-align="center"}](https://mikeksmith.bandcamp.com)
+MikeKSmith's music can be found on Bandcamp at https://mikeksmith.bandcamp.com

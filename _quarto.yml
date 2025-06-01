@@ -1,25 +1,50 @@
 project:
-  type: website
-  output-dir: docs
+  type: book
+  output-dir: pdf
   
 execute:
   enabled: true
   
-website:
-  title: "The Lazy Producer"
-  page-navigation: true
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-    search: true
-  sidebar:
-    style: "floating"
-    contents: /*
-    
+book:
+  title: "The Lazy Producer - Starter ideas for generative music"
+  author: "Mike K smith"
+  date: "2025-05-31"
+  chapters:
+    - index.qmd
+    - 000-Preface.qmd
+    - 0000-Defintion-Generative.qmd
+    - 001-Recipe-Changing_Chords.qmd
+    - 002-Process-Note_wise_probability.qmd
+    - 003-Process-Follow_Actions.qmd
+    - 004-Tools-MIDI_tools.qmd
+    - 005-Process-Routing.qmd
+    - 006-Recipe-MIDI_tools.qmd
+    - 007-Tools-Modulators.qmd
+    - 008-Process-Tuning_Parameters.qmd
+    - 009-Process-Balance_unexpected_and_predictable.qmd
+    - 010-Recipe-Balance_random_and_predictable.qmd
+    - 011-Process-Workflow-Capturing_Ideas.qmd
+    - 012-Tools-MIDI_Generators.qmd
+    - 013-Recipe-MIDI_generators.qmd
+    - 014-Tools-Audio_Generators.qmd
+    - 015-Tools-Audio_Effects.qmd
+    - 016-Tools-PaulStretch.qmd
+    - 017-Recipe-Audio_generators_drone.qmd
+    - 018-Process-Scales.qmd
+    - 019-Process-Using_Field_Recordings.qmd
+    - 020-Recipe-Sampler_drone.qmd
+    - 021-Process-Unsynced_loops.qmd
+    - 022-Recipe-Fibonacci_loops.qmd
+    - 030-Tools-Live12_Intro.qmd
+    - 031-Tools-Live12_Sequencers.qmd
+    - 032-Tools-Live12_Modulation.qmd
+    - 033-Tools-Live12_MIDI_Generation_Transformation.qmd
+
 format:
-  html:
-    theme: cosmo
+  pdf:
+    documentclass: scrbook
     toc: true
-    
-lightbox: true
+    toc-depth: 2
+    toc-title: Chapters
+    number-sections: true
+    colorlinks: true
