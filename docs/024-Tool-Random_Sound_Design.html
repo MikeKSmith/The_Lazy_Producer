@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./001-Recipe-Changing_Chords.html" rel="next">
-<link href="./000-Preface.html" rel="prev">
+<link href="./030-Tools-Live12_Intro.html" rel="next">
+<link href="./023-Process-Your_Unpredictable_Bandmate.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./0000-Defintion-Generative.html">What do we mean “Generative” music?</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./024-Tool-Random_Sound_Design.html">Tool - Random sound design with Instrument Racks</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -124,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./0000-Defintion-Generative.html" class="sidebar-item-text sidebar-link active">
+  <a href="./0000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What do we mean “Generative” music?</span></a>
   </div>
 </li>
@@ -268,7 +271,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link">
+  <a href="./024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Tool - Random sound design with Instrument Racks</span></a>
   </div>
 </li>
@@ -324,9 +327,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-do-we-mean-generative-music" id="toc-what-do-we-mean-generative-music" class="nav-link active" data-scroll-target="#what-do-we-mean-generative-music">What do we mean “Generative” music?</a>
+  <li><a href="#tool---random-sound-design-with-instrument-racks" id="toc-tool---random-sound-design-with-instrument-racks" class="nav-link active" data-scroll-target="#tool---random-sound-design-with-instrument-racks">Tool - Random sound design with Instrument Racks</a>
   <ul class="collapse">
-  <li><a href="#generative" id="toc-generative" class="nav-link" data-scroll-target="#generative">Generative:</a></li>
+  <li><a href="#first---group-define-macro-parameters-and-ranges" id="toc-first---group-define-macro-parameters-and-ranges" class="nav-link" data-scroll-target="#first---group-define-macro-parameters-and-ranges">First - Group, define Macro parameters and ranges</a></li>
+  <li><a href="#randomize-for-new-sounds-and-capture-with-variations." id="toc-randomize-for-new-sounds-and-capture-with-variations." class="nav-link" data-scroll-target="#randomize-for-new-sounds-and-capture-with-variations.">Randomize for new sounds and capture with Variations.</a></li>
+  <li><a href="#tools---elphnts-gen-pack" id="toc-tools---elphnts-gen-pack" class="nav-link" data-scroll-target="#tools---elphnts-gen-pack">Tools - ELPHNT’s GEN Pack</a></li>
+  <li><a href="#tools---misty-jones-fm-genie" id="toc-tools---misty-jones-fm-genie" class="nav-link" data-scroll-target="#tools---misty-jones-fm-genie">Tools - Misty Jone’s FM Genie</a></li>
+  <li><a href="#curate-the-macro-settings" id="toc-curate-the-macro-settings" class="nav-link" data-scroll-target="#curate-the-macro-settings">Curate the macro settings</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -337,11 +344,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="what-do-we-mean-generative-music" class="level1">
-<h1>What do we mean “Generative” music?</h1>
-<section id="generative" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="generative">Generative:</h2>
-<p>“Generative” music is where, following some trigger event such as pressing “play” or playing a note, or initiating some voltage (in modular synthesis rack), the music follows some rules, algorithms or uses probability to generate or evolve the musical ideas (notes, rhythms, timbres) for an arbitrary amount of time. In some cases the generative algorithms work <strong><em>with</em></strong> the performer, reacting to their input. In other cases the performer may intervene with the algorithms to tweak, adjust or change direction.</p>
+<section id="tool---random-sound-design-with-instrument-racks" class="level1">
+<h1>Tool - Random sound design with Instrument Racks</h1>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -352,14 +356,93 @@ Key idea
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Generative music means (to me) that the music should be able to go on indefinitely, evolving over time rather than being simply repetitive.</p>
-<p>In the context of generative <strong><em>ambient</em></strong> music, it should have enough going on to make it interesting, but without anything particularly “sticking out” to catch the listener’s ear.</p>
+<p>Using the ideas presented in <a href="./008-Process-Tuning_Parameters.html">Process - Tuning Parameters</a> we can create Instrument Racks and Effect Racks where a single click of the Randomize button will generate new sounds, new effects that we might never think to program from scratch. Ableton Live Racks (when you Group an instrument) allow you to randomise the macro controls. You can select certain macro knobs to exclude from randomisation and through the Macro mapping control you can specify ranges of values for the macro knobs - which in turn will define the range of values in which to randomise. By curating the macro ranges and device settings you can create an almost infinite set of new sounds and effects simply by pressing the Rand button.</p>
 </div>
 </div>
-<p>Some generative algorithms take parts that the performer plays and augments this with additional harmony, chords or (counter) melodies. An example of this is <a href="https://www.youtube.com/watch?v=ktxkEBT5CB0">Olafur Arnalds’ and Halldór Eldjárn’s Stratus algorithm for performer pianos</a> where MIDI triggers generate sequences of associated notes, chords and “ripples” in a separate instrument or player piano.</p>
-<p>Other generative music involves complex algorithms, probability triggers and modulations to create ever-changing sounds, sequences, rhythms. <a href="https://www.youtube.com/watch?v=uNz1XfVfJak">Often these are programmed via modular synth rigs</a> using LFOs, sequencers, quantizers, harmonic generators, bernoulli (probability) gates, Turing machines (random note and sequence generators).</p>
-<p>It’s your choice what you do with these generative parts - either shorter, reactive sequences or long infinitely varying sequences. Through modulation and automation it’s possible to create music where the sounds evolve, appear, disappear, blend or create dissonance. In this book we’ll try to present some ideas that will help get you started on this journey. I recommend that you try out the ideas in practice. Let the sequences play. Sit with them a while and let what you hear guide what to try next…If you like what you hear, save it. If you like parts of what you hear, save those as little self-contained ideas for use in other tracks. If you don’t like what you hear, then try replacing one or more parts and repeat the process of listening and refining. You can take the generative parts together to form a completely generative piece of music, or you can take only one element and build a track around that. Or you can take a snippet of one idea and use that as a kernel for new sound design, resampling it or reusing it in a completely structured and arranged piece of music.</p>
-<p>This is a playground of choices - some <strong><em>you</em></strong> can make, and then some that are made within the generative processes.</p>
+<section id="first---group-define-macro-parameters-and-ranges" class="level2">
+<h2 class="anchored" data-anchor-id="first---group-define-macro-parameters-and-ranges">First - Group, define Macro parameters and ranges</h2>
+<p>For this example, let’s take a Drift preset - I’m taking one called Faded Keys from the Ableton Live Suite Core Library. I find it useful to start from a preset that I already like - for example a pluck, bass, pad or whatever sound I’m aiming for, and then tweak from there rather than start from a completely blank slate. If the instrument / preset is NOT in an Instrument Rack: right click on the device header (blue banner) and select “Group”:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Drift_Instrument.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Drift_Instrument.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Then the device will be placed into an Instrument or Effect Rack ready for you to assign parameters to the macro knobs:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Drift_Instrument_Rack_blank.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Drift_Instrument_Rack_blank.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Returning to the Faded Keys preset for Drift:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Drift_Instrument_FadedKeys.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Drift_Instrument_FadedKeys.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Notice the “Rand” button in the top right of the device. This will randomise all macro knobs. BUT before we do so, let’s click on the “Map” button to look at the range of values for each macro and perhaps tweak some settings before we start randomising.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Drift_Instrument_Rack_MacroRange.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Drift_Instrument_Rack_MacroRange.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>What we want to do here is to define ranges of values that will keep the sound within reasonable limits for its type - so for plucky keys we don’t want the attack to go from 0 - 60 seconds! Instead let’s bring that down to something more reasonable like 0-100ms.</p>
+<p>Here are my choices, your choices may be different…</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Drift_Instrument_Rack_MacroRange2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/Drift_Instrument_Rack_MacroRange2.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>In fact, it might make more sense for some parameters to be excluded from randomisation - for example you don’t really want the Volume to be randomly chosen! Similarly you might decide to exclude the Attack macro from randomization so that you’ll always get a nice snappy keys attack.</p>
+<p>You do this by right clicking on the Macro Knob in the Instrument Rack and selecting “Exclude from Randomization”.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Drift_Instrument_Rack_Exclude.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Drift_Instrument_Rack_Exclude.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>You might have to iterate between tweaking ranges of values, hitting Rand to randomize again, see what you get and tweak some more.</p>
+</section>
+<section id="randomize-for-new-sounds-and-capture-with-variations." class="level2">
+<h2 class="anchored" data-anchor-id="randomize-for-new-sounds-and-capture-with-variations.">Randomize for new sounds and capture with Variations.</h2>
+<p>Now you can hit the Rand button and see what you get. Hopefully you’ll get something that’s still a pluck, keys, pad, bass sound but is a variation on the original preset.</p>
+<p>In the screenshot above, notice how the “Camera” button on the left is lit. This is a really good idea while you’re randomizing because you’ll want to capture a nice sound as macro Variation if you stumble on something you like. With the Macro Variations open (where it says “Dark”, “Wavey” etc.) click on “New” if you want to store something that you like the sound of.</p>
+<p>This is a great way to create variations on a theme of presets you like. Also, you can generate as many of them as you like.</p>
+</section>
+<section id="tools---elphnts-gen-pack" class="level2">
+<h2 class="anchored" data-anchor-id="tools---elphnts-gen-pack">Tools - ELPHNT’s GEN Pack</h2>
+<p>Ableton Certified Trainer Tom Glendinning, also known as ELPHNT, has produced a series of Instrument and Effect Racks specifically designed along these lines. In the Gen devices he has set up macro ranges so that each time you press Rand you’ll get a new sound conforming to types like “Pluck”, “Pad”, “Bass” and “Arp”. https://elphnt.io/store/gen/ . https://www.youtube.com/watch?v=90Mpt-FPBFE</p>
+</section>
+<section id="tools---misty-jones-fm-genie" class="level2">
+<h2 class="anchored" data-anchor-id="tools---misty-jones-fm-genie">Tools - Misty Jone’s FM Genie</h2>
+<p>Similarly, Misty Jones has developed a similar Instrument and Effect Rack, focussing on FM synthesis using Operator. It’s available here: https://mistyjones.gumroad.com. A video explanation is here: https://www.youtube.com/watch?v=mALgi1NDcFg</p>
+<p>What GEN and Genie do is not proprietary - I’ve just shown you how. But what Tom offers through his pack is a curated set of macro settings so that each press of Rand brings new, useable sounds within a sensible range.</p>
+</section>
+<section id="curate-the-macro-settings" class="level2">
+<h2 class="anchored" data-anchor-id="curate-the-macro-settings">Curate the macro settings</h2>
+<p>The key point there is curation. Simply hitting the Rand button could give you something wonderful or something completely unuseable. But by setting up the Instrument or Effect Rack well in the first place, then applying some trial and error and careful curation you can get an instrument preset (in the Instrument Rack) that could give you an almost limitless choice of sounds at the touch of one button.</p>
 
 
 </section>
@@ -755,17 +838,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./000-Preface.html" class="pagination-link  aria-label=" preface"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="./023-Process-Your_Unpredictable_Bandmate.html" class="pagination-link  aria-label=" process="" -="" your="" unpredictable="" bandmate"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Process - Your Unpredictable Bandmate</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./001-Recipe-Changing_Chords.html" class="pagination-link" aria-label="Recipe - Changing chords">
-        <span class="nav-page-text">Recipe - Changing chords</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./030-Tools-Live12_Intro.html" class="pagination-link" aria-label="Tools - Live 12 Overview: MIDI and compositional tools">
+        <span class="nav-page-text">Tools - Live 12 Overview: MIDI and compositional tools</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","loop":false,"closeEffect":"zoom","descPosition":"bottom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 
