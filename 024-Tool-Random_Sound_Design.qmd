@@ -8,10 +8,8 @@ knitr::opts_chunk$set(echo = FALSE)
 ::: callout-tip
 ## Key idea
 
-Using the ideas presented in [Process - Tuning Parameters](008-Process-Tuning_Parameters.qmd)
-we can create Instrument Racks and Effect Racks where a single click of the Randomize button will generate new sounds, new effects that we might never think to program from scratch. Ableton Live Racks (when you Group an instrument) allow you to randomise the macro controls. You can select certain macro knobs to exclude from randomisation and through the Macro mapping control you can specify ranges of values for the macro knobs - which in turn will define the range of values in which to randomise. By curating the macro ranges and device settings you can create an almost infinite set of new sounds and effects simply by pressing the Rand button. 
-
-::: 
+Using the ideas presented in [Process - Tuning Parameters](008-Process-Tuning_Parameters.qmd) we can create Instrument Racks and Effect Racks where a single click of the Randomize button will generate new sounds, new effects that we might never think to program from scratch. Ableton Live Racks (when you Group an instrument) allow you to randomise the macro controls. You can select certain macro knobs to exclude from randomisation and through the Macro mapping control you can specify ranges of values for the macro knobs - which in turn will define the range of values in which to randomise. By curating the macro ranges and device settings you can create an almost infinite set of new sounds and effects simply by pressing the Rand button.
+:::
 
 ## First - Group, define Macro parameters and ranges
 
@@ -39,7 +37,7 @@ Notice the "Rand" button in the top right of the device. This will randomise all
 knitr::include_graphics(path = file.path(here::here(), "images", "Drift_Instrument_Rack_MacroRange.png"))
 ```
 
-What we want to do here is to define ranges of values that will keep the sound within reasonable limits for its type - so for plucky keys we don't want the attack to go from 0 - 60 seconds! Instead let's bring that down to something more reasonable like 0-100ms. 
+What we want to do here is to define ranges of values that will keep the sound within reasonable limits for its type - so for plucky keys we don't want the attack to go from 0 - 60 seconds! Instead let's bring that down to something more reasonable like 0-100ms.
 
 Here are my choices, your choices may be different...
 
@@ -54,25 +52,26 @@ You do this by right clicking on the Macro Knob in the Instrument Rack and selec
 ```{r}
 knitr::include_graphics(path = file.path(here::here(), "images", "Drift_Instrument_Rack_Exclude.png"))
 ```
+
 You might have to iterate between tweaking ranges of values, hitting Rand to randomize again, see what you get and tweak some more.
 
 ## Randomize for new sounds and capture with Variations.
 
-Now you can hit the Rand button and see what you get. Hopefully you'll get something that's still a pluck, keys, pad, bass sound but is a variation on the original preset. 
+Now you can hit the Rand button and see what you get. Hopefully you'll get something that's still a pluck, keys, pad, bass sound but is a variation on the original preset.
 
 In the screenshot above, notice how the "Camera" button on the left is lit. This is a really good idea while you're randomizing because you'll want to capture a nice sound as macro Variation if you stumble on something you like. With the Macro Variations open (where it says "Dark", "Wavey" etc.) click on "New" if you want to store something that you like the sound of.
 
-This is a great way to create variations on a theme of presets you like. Also, you can generate as many of them as you like. 
+This is a great way to create variations on a theme of presets you like. Also, you can generate as many of them as you like.
 
 ## Tools - ELPHNT's GEN Pack
 
-Ableton Certified Trainer Tom Glendinning, also known as ELPHNT, has produced a series of Instrument and Effect Racks specifically designed along these lines. In the Gen devices he has set up macro ranges so that each time you press Rand you'll get a new sound conforming to types like "Pluck", "Pad", "Bass" and "Arp". https://elphnt.io/store/gen/ . https://www.youtube.com/watch?v=90Mpt-FPBFE
+Ableton Certified Trainer Tom Glendinning, also known as ELPHNT, has produced a series of Instrument and Effect Racks specifically designed along these lines. In the Gen devices he has set up macro ranges so that each time you press Rand you'll get a new sound conforming to types like "Pluck", "Pad", "Bass" and "Arp". <https://elphnt.io/store/gen/> . <https://www.youtube.com/watch?v=90Mpt-FPBFE>
 
 ## Tools - Misty Jone's FM Genie
 
-Similarly, Misty Jones has developed a similar Instrument and Effect Rack, focussing on FM synthesis using Operator. It's available here: https://mistyjones.gumroad.com. A video explanation is here: https://www.youtube.com/watch?v=mALgi1NDcFg
+Similarly, Misty Jones has developed a similar Instrument and Effect Rack, focussing on FM synthesis using Operator. It's available here: <https://mistyjones.gumroad.com>. A video explanation is here: <https://www.youtube.com/watch?v=mALgi1NDcFg>
 
-What GEN and Genie do is not proprietary - I've just shown you how. But what Tom offers through his pack is a curated set of macro settings so that each press of Rand brings new, useable sounds within a sensible range. 
+What GEN and Genie do is not proprietary - I've just shown you how. But what Tom offers through his pack is a curated set of macro settings so that each press of Rand brings new, useable sounds within a sensible range.
 
 ## Curate the macro settings
 

@@ -433,11 +433,11 @@ Key idea
 </section>
 <section id="tools---elphnts-gen-pack" class="level2">
 <h2 class="anchored" data-anchor-id="tools---elphnts-gen-pack">Tools - ELPHNT’s GEN Pack</h2>
-<p>Ableton Certified Trainer Tom Glendinning, also known as ELPHNT, has produced a series of Instrument and Effect Racks specifically designed along these lines. In the Gen devices he has set up macro ranges so that each time you press Rand you’ll get a new sound conforming to types like “Pluck”, “Pad”, “Bass” and “Arp”. https://elphnt.io/store/gen/ . https://www.youtube.com/watch?v=90Mpt-FPBFE</p>
+<p>Ableton Certified Trainer Tom Glendinning, also known as ELPHNT, has produced a series of Instrument and Effect Racks specifically designed along these lines. In the Gen devices he has set up macro ranges so that each time you press Rand you’ll get a new sound conforming to types like “Pluck”, “Pad”, “Bass” and “Arp”. <a href="https://elphnt.io/store/gen/" class="uri">https://elphnt.io/store/gen/</a> . <a href="https://www.youtube.com/watch?v=90Mpt-FPBFE" class="uri">https://www.youtube.com/watch?v=90Mpt-FPBFE</a></p>
 </section>
 <section id="tools---misty-jones-fm-genie" class="level2">
 <h2 class="anchored" data-anchor-id="tools---misty-jones-fm-genie">Tools - Misty Jone’s FM Genie</h2>
-<p>Similarly, Misty Jones has developed a similar Instrument and Effect Rack, focussing on FM synthesis using Operator. It’s available here: https://mistyjones.gumroad.com. A video explanation is here: https://www.youtube.com/watch?v=mALgi1NDcFg</p>
+<p>Similarly, Misty Jones has developed a similar Instrument and Effect Rack, focussing on FM synthesis using Operator. It’s available here: <a href="https://mistyjones.gumroad.com" class="uri">https://mistyjones.gumroad.com</a>. A video explanation is here: <a href="https://www.youtube.com/watch?v=mALgi1NDcFg" class="uri">https://www.youtube.com/watch?v=mALgi1NDcFg</a></p>
 <p>What GEN and Genie do is not proprietary - I’ve just shown you how. But what Tom offers through his pack is a curated set of macro settings so that each press of Rand brings new, useable sounds within a sensible range.</p>
 </section>
 <section id="curate-the-macro-settings" class="level2">
@@ -528,6 +528,26 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -849,7 +869,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","loop":false,"closeEffect":"zoom","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"selector":".lightbox","openEffect":"zoom","descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
