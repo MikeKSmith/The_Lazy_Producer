@@ -59,7 +59,7 @@ You might have to iterate between tweaking ranges of values, hitting Rand to ran
 
 Now you can hit the Rand button and see what you get. Hopefully you'll get something that's still a pluck, keys, pad, bass sound but is a variation on the original preset.
 
-In the screenshot above, notice how the "Camera" button on the left is lit. This is a really good idea while you're randomizing because you'll want to capture a nice sound as macro Variation if you stumble on something you like. With the Macro Variations open (where it says "Dark", "Wavey" etc.) click on "New" if you want to store something that you like the sound of.
+In the screenshot above, notice how the "Camera" button on the left is lit. This is a really good idea while you're randomizing because you'll want to capture a nice sound as Macro Variation if you stumble on something you like. With the Macro Variations open (where it says "Dark", "Wavey" etc.) click on "New" if you want to store something that you like the sound of.
 
 This is a great way to create variations on a theme of presets you like. Also, you can generate as many of them as you like.
 
@@ -71,7 +71,7 @@ Ableton Certified Trainer Tom Glendinning, also known as ELPHNT, has produced a 
 
 Similarly, Misty Jones has developed a similar Instrument and Effect Rack, focussing on FM synthesis using Operator. It's available here: <https://mistyjones.gumroad.com>. A video explanation is here: <https://www.youtube.com/watch?v=mALgi1NDcFg>
 
-What GEN and Genie do is not proprietary - I've just shown you how. But what Tom offers through his pack is a curated set of macro settings so that each press of Rand brings new, useable sounds within a sensible range.
+What GEN and Genie do is not proprietary - I've just shown you how. But what Tom and Misty offer through their packs are curated sets of macro settings so that each press of Rand brings new, useable sounds within a sensible range.
 
 ## Curate the macro settings
 
