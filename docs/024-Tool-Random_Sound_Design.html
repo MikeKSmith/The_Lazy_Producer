@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./010-Recipe-Balance_random_and_predictable.html" rel="next">
-<link href="./008-Process-Tuning_Parameters.html" rel="prev">
+<link href="./030-Tools-Live12_Intro.html" rel="next">
+<link href="./023-Process-Your_Unpredictable_Bandmate.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./009-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./024-Tool-Random_Sound_Design.html">Tool - Random sound design with Instrument Racks</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -178,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./009-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link active">
+  <a href="./009-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Process - Balancing the unexpected and the predictable</span></a>
   </div>
 </li>
@@ -268,7 +271,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link">
+  <a href="./024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Tool - Random sound design with Instrument Racks</span></a>
   </div>
 </li>
@@ -324,15 +327,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#process---balancing-the-unexpected-and-the-predictable" id="toc-process---balancing-the-unexpected-and-the-predictable" class="nav-link active" data-scroll-target="#process---balancing-the-unexpected-and-the-predictable">Process - Balancing the unexpected and the predictable</a>
+  <li><a href="#tool---random-sound-design-with-instrument-racks" id="toc-tool---random-sound-design-with-instrument-racks" class="nav-link active" data-scroll-target="#tool---random-sound-design-with-instrument-racks">Tool - Random sound design with Instrument Racks</a>
   <ul class="collapse">
-  <li><a href="#evolving-changes" id="toc-evolving-changes" class="nav-link" data-scroll-target="#evolving-changes">Evolving changes</a></li>
-  <li><a href="#taming-randomness---gardening-the-random-processes" id="toc-taming-randomness---gardening-the-random-processes" class="nav-link" data-scroll-target="#taming-randomness---gardening-the-random-processes">Taming randomness - gardening the random processes</a></li>
-  <li><a href="#deliberate-use-of-repeating-patterns---ostinato-and-predictable-rhythmic-parts" id="toc-deliberate-use-of-repeating-patterns---ostinato-and-predictable-rhythmic-parts" class="nav-link" data-scroll-target="#deliberate-use-of-repeating-patterns---ostinato-and-predictable-rhythmic-parts">Deliberate use of repeating patterns - ostinato and predictable rhythmic parts</a></li>
-  <li><a href="#repeat-yourself" id="toc-repeat-yourself" class="nav-link" data-scroll-target="#repeat-yourself">Repeat yourself</a></li>
-  <li><a href="#you-define-the-parts-the-computer-picks-the-order" id="toc-you-define-the-parts-the-computer-picks-the-order" class="nav-link" data-scroll-target="#you-define-the-parts-the-computer-picks-the-order"><strong><em>YOU</em></strong> define the parts, the computer picks the order</a></li>
-  <li><a href="#contextualising-randomness-using-humans" id="toc-contextualising-randomness-using-humans" class="nav-link" data-scroll-target="#contextualising-randomness-using-humans">Contextualising randomness using humans</a></li>
-  <li><a href="#play-with-the-1---mess-with-the-listeners-perception" id="toc-play-with-the-1---mess-with-the-listeners-perception" class="nav-link" data-scroll-target="#play-with-the-1---mess-with-the-listeners-perception">Play with the “1” - mess with the listener’s perception</a></li>
+  <li><a href="#first---group-define-macro-parameters-and-ranges" id="toc-first---group-define-macro-parameters-and-ranges" class="nav-link" data-scroll-target="#first---group-define-macro-parameters-and-ranges">First - Group, define Macro parameters and ranges</a></li>
+  <li><a href="#randomize-for-new-sounds-and-capture-with-variations." id="toc-randomize-for-new-sounds-and-capture-with-variations." class="nav-link" data-scroll-target="#randomize-for-new-sounds-and-capture-with-variations.">Randomize for new sounds and capture with Variations.</a></li>
+  <li><a href="#tools---elphnts-gen-pack" id="toc-tools---elphnts-gen-pack" class="nav-link" data-scroll-target="#tools---elphnts-gen-pack">Tools - ELPHNT’s GEN Pack</a></li>
+  <li><a href="#tools---misty-jones-fm-genie" id="toc-tools---misty-jones-fm-genie" class="nav-link" data-scroll-target="#tools---misty-jones-fm-genie">Tools - Misty Jone’s FM Genie</a></li>
+  <li><a href="#curate-the-macro-settings" id="toc-curate-the-macro-settings" class="nav-link" data-scroll-target="#curate-the-macro-settings">Curate the macro settings</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -343,10 +344,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="process---balancing-the-unexpected-and-the-predictable" class="level1">
-<h1>Process - Balancing the unexpected and the predictable</h1>
-<p>In generative music, we’re likely to be using some probability to govern when to trigger certain events, to select clips, to change some aspect of the sounds being generated. The problem with probability is that it generates randomness and in general music composed by humans is not random. Too much randomness can lead to listener fatigue because the “humanity” of the composition or performance is reduced and it’s easy to feel detached from the music.</p>
-<p>A counterbalance to randomness is repetition. “If you play a wrong note once it’s a mistake. Play it twice and it’s jazz.” as the old saying goes. If your random processes come up with a sequence of notes or rhythms which is played once then it’s hard to wrap your ears around it and understand it. But if you play that same sequence more than twice then the listener has a chance to “tune in” to what’s going on and contextualise it.</p>
+<section id="tool---random-sound-design-with-instrument-racks" class="level1">
+<h1>Tool - Random sound design with Instrument Racks</h1>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -357,46 +356,93 @@ Key idea
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Balance things that change, which are unexpected to the listener, with things that stay the same and are predictable for the listener.</p>
-<p>There are many aspects of musical ideas and sounds that can change - rhythm, timbre, tonality, texture, timing. If all of these are changing all the time it quickly becomes overwhelming. Sudden changes will “stick out” in a way that’s typically undesirable for generative music. Evolving changes are preferred as it’s possible to “hide” these so that the listener only realises something has changed over an extended period.</p>
-<p>Finding the balance between things that change and things that stay the same is important for creating generative music that will bear repeated (or prolonged) listening.</p>
+<p>Using the ideas presented in <a href="./008-Process-Tuning_Parameters.html">Process - Tuning Parameters</a> we can create Instrument Racks and Effect Racks where a single click of the Randomize button will generate new sounds, new effects that we might never think to program from scratch. Ableton Live Racks (when you Group an instrument) allow you to randomise the macro controls. You can select certain macro knobs to exclude from randomisation and through the Macro mapping control you can specify ranges of values for the macro knobs - which in turn will define the range of values in which to randomise. By curating the macro ranges and device settings you can create an almost infinite set of new sounds and effects simply by pressing the Rand button.</p>
 </div>
 </div>
-<section id="evolving-changes" class="level2">
-<h2 class="anchored" data-anchor-id="evolving-changes">Evolving changes</h2>
-<p>In <a href="./001-Recipe-Changing_Chords.html">Recipe - Changing chords</a> the clips across and within tracks had different lengths, and the note-wise probability led to different chords with each triggering of the clips. This meant that chords evolved slowly, with changes being gradual rather than all at once. The longer clip length gives the listener time to acclimatise to a particular chord before it changes and gradual, evolving change means that the listener can pick out which part has changed and then settle in to that change, before the next change happens. What we have seen in this first recipe is how to evolve chords and notes. We could also change other attributes of the sounds or rhythms and in other recipes we’ll look into modulation - changing timbre and texture of the sound - and changing rhythms.</p>
+<section id="first---group-define-macro-parameters-and-ranges" class="level2">
+<h2 class="anchored" data-anchor-id="first---group-define-macro-parameters-and-ranges">First - Group, define Macro parameters and ranges</h2>
+<p>For this example, let’s take a Drift preset - I’m taking one called Faded Keys from the Ableton Live Suite Core Library. I find it useful to start from a preset that I already like - for example a pluck, bass, pad or whatever sound I’m aiming for, and then tweak from there rather than start from a completely blank slate. If the instrument / preset is NOT in an Instrument Rack: right click on the device header (blue banner) and select “Group”:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Drift_Instrument.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Drift_Instrument.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Then the device will be placed into an Instrument or Effect Rack ready for you to assign parameters to the macro knobs:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Drift_Instrument_Rack_blank.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Drift_Instrument_Rack_blank.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Returning to the Faded Keys preset for Drift:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Drift_Instrument_FadedKeys.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Drift_Instrument_FadedKeys.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Notice the “Rand” button in the top right of the device. This will randomise all macro knobs. BUT before we do so, let’s click on the “Map” button to look at the range of values for each macro and perhaps tweak some settings before we start randomising.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Drift_Instrument_Rack_MacroRange.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Drift_Instrument_Rack_MacroRange.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>What we want to do here is to define ranges of values that will keep the sound within reasonable limits for its type - so for plucky keys we don’t want the attack to go from 0 - 60 seconds! Instead let’s bring that down to something more reasonable like 0-100ms.</p>
+<p>Here are my choices, your choices may be different…</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Drift_Instrument_Rack_MacroRange2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/Drift_Instrument_Rack_MacroRange2.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>In fact, it might make more sense for some parameters to be excluded from randomisation - for example you don’t really want the Volume to be randomly chosen! Similarly you might decide to exclude the Attack macro from randomization so that you’ll always get a nice snappy keys attack.</p>
+<p>You do this by right clicking on the Macro Knob in the Instrument Rack and selecting “Exclude from Randomization”.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Drift_Instrument_Rack_Exclude.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Drift_Instrument_Rack_Exclude.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>You might have to iterate between tweaking ranges of values, hitting Rand to randomize again, see what you get and tweak some more.</p>
 </section>
-<section id="taming-randomness---gardening-the-random-processes" class="level2">
-<h2 class="anchored" data-anchor-id="taming-randomness---gardening-the-random-processes">Taming randomness - gardening the random processes</h2>
-<p>In the Western music tradition we have many familiar tropes - chord patterns, melodic harmony, rhythmic patterns - that helps those familiar with those constructs to feel “comfortable” with music that follows those tropes. Almost by definition, probabilistic and randomness in generative music is likely to break some or all of those rules. This quickly becomes “too much” for the listener if <strong><em>everything</em></strong> is random.</p>
-<p>The key to making music that is generative and pleasant to listen to is to balance unexpected and predictable elements. These could be the notes that are happening, the texture or character of the sound (high-pitched, lower pitched), the volume of tracks, rhythmic patterns. I refer to this process as “gardening” the random processes - taming things that are unruly, messy, too unpredictable or random. You can change the number of repeats of a random process before it changes, or you can rein in the range of a random LFO (or dynamically change the range with another LFO). We can also apply constraints that limit the randomness of note pitches or rhythms, quantising so that it’s within the bounds of what we recognise. These constraints - using scale quantisers or rhythmic quantisers - are not necessarily crutches, but rather just guard-rails that help stop what we’re producing stray into areas that would “catch the ear” of the listener. Of course, it’s completely possible to play with those constraints in order to deliberately play with this listener’s expectations.</p>
-<p>What’s important to me is the balance of the unexpected with the predictable. Carpet weavers will often “disguise” mistakes in a pattern by repeating them and weaving them into the pattern so that they become a feature, rather than a mistake. Similarly, repetition and weaving of “wonky” beats into a pattern of music can bring them back to something more predictable - contextualising the wonkiness.</p>
+<section id="randomize-for-new-sounds-and-capture-with-variations." class="level2">
+<h2 class="anchored" data-anchor-id="randomize-for-new-sounds-and-capture-with-variations.">Randomize for new sounds and capture with Variations.</h2>
+<p>Now you can hit the Rand button and see what you get. Hopefully you’ll get something that’s still a pluck, keys, pad, bass sound but is a variation on the original preset.</p>
+<p>In the screenshot above, notice how the “Camera” button on the left is lit. This is a really good idea while you’re randomizing because you’ll want to capture a nice sound as Macro Variation if you stumble on something you like. With the Macro Variations open (where it says “Dark”, “Wavey” etc.) click on “New” if you want to store something that you like the sound of.</p>
+<p>This is a great way to create variations on a theme of presets you like. Also, you can generate as many of them as you like.</p>
 </section>
-<section id="deliberate-use-of-repeating-patterns---ostinato-and-predictable-rhythmic-parts" class="level2">
-<h2 class="anchored" data-anchor-id="deliberate-use-of-repeating-patterns---ostinato-and-predictable-rhythmic-parts">Deliberate use of repeating patterns - ostinato and predictable rhythmic parts</h2>
-<p>As well as “gardening” the random processes and quantising the randomness, we can introduce deliberately repeating patterns to help hook the listener into a pattern to contextualise the randomness. Ostinato lines are musical phrases that repeat over and over (and over) throughout a piece of music. Pachabel’s Cannon features a repeating line in the bass instruments (continuo part) which repeats throughout. Over this the upper strings play variations on a theme (pattern with variations). The bass-line in this music never changes - it’s there to provide a “ground” theme above which we can weave other parts. Ostinato parts don’t <strong><em>have</em></strong> to be the bass part though, they can be higher parts which are predictable and unchanging. Since they are unchanging throughout, it <strong><em>could</em></strong> make them boring, but we can play with things like changing the key centre underneath them, or implying new key and chord structures above them (for bass parts). If the ostinato line is a single voice, it’s easier to recontextualise these notes than repeating chord patterns, which may get tiring to listen to.</p>
-<p>The same concept can be used in rhythmic parts - using a 4/4 kick drum part (notes on 1, 2, 3, 4 of the bar) can provide an anchoring for the listener, allowing you to use much more complex rhythms around this. Even if this kick part isn’t very loud or prominent, it can provide enough anchoring for you to layer other “kick” sounds around it to play with rhythms. You can alternatively (also?) use a common snare part with snare hits on 2 and 4 of the bar but have a much more fluid and random kick part. Adding something predictable in one part allows the listener to “hook in” to what’s static and provides enough context for what is going on around that.</p>
+<section id="tools---elphnts-gen-pack" class="level2">
+<h2 class="anchored" data-anchor-id="tools---elphnts-gen-pack">Tools - ELPHNT’s GEN Pack</h2>
+<p>Ableton Certified Trainer Tom Glendinning, also known as ELPHNT, has produced a series of Instrument and Effect Racks specifically designed along these lines. In the Gen devices he has set up macro ranges so that each time you press Rand you’ll get a new sound conforming to types like “Pluck”, “Pad”, “Bass” and “Arp”. <a href="https://elphnt.io/store/gen/" class="uri">https://elphnt.io/store/gen/</a> . <a href="https://www.youtube.com/watch?v=90Mpt-FPBFE" class="uri">https://www.youtube.com/watch?v=90Mpt-FPBFE</a></p>
 </section>
-<section id="repeat-yourself" class="level2">
-<h2 class="anchored" data-anchor-id="repeat-yourself">Repeat yourself</h2>
-<p>If you look at the Follow Action dialogue box in <a href="./003-Process-Follow_Actions.html">Process - Follow Actions</a> you’ll see that it allows you to specify a number of repeats before taking the next action. You can exploit this feature to build in repetition before evolution. Playing the clip 4 times, say, before moving on. This works for shorter clip lengths or for rhythmic patterns, but you may want to avoid this for longer clips.</p>
-<p>You could build an ostinato pattern within a clip and variations or evolutions of that pattern and then use the Follow Actions to gradually move through those evolutions, balancing repetition with gradual evolution. This would break the strict “ostinato repeating all the way through” but may allow you to balance predictability with the unexpected.</p>
-<p>In future chapters we’ll be looking at tools and techniques for changing different aspects of Ableton plugins and instruments. The act of changing something non-destructively i.e.&nbsp;not permanently is called modulation. Modulation tools can be used to gradually change timbres, relative volumes and many other sound attributes.</p>
+<section id="tools---misty-jones-fm-genie" class="level2">
+<h2 class="anchored" data-anchor-id="tools---misty-jones-fm-genie">Tools - Misty Jone’s FM Genie</h2>
+<p>Similarly, Misty Jones has developed a similar Instrument and Effect Rack, focussing on FM synthesis using Operator. It’s available here: <a href="https://mistyjones.gumroad.com" class="uri">https://mistyjones.gumroad.com</a>. A video explanation is here: <a href="https://www.youtube.com/watch?v=mALgi1NDcFg" class="uri">https://www.youtube.com/watch?v=mALgi1NDcFg</a></p>
+<p>What GEN and Genie do is not proprietary - I’ve just shown you how. But what Tom and Misty offer through their packs are curated sets of macro settings so that each press of Rand brings new, useable sounds within a sensible range.</p>
 </section>
-<section id="you-define-the-parts-the-computer-picks-the-order" class="level2">
-<h2 class="anchored" data-anchor-id="you-define-the-parts-the-computer-picks-the-order"><strong><em>YOU</em></strong> define the parts, the computer picks the order</h2>
-<p>Again, using Follow Actions, <a href="./003-Process-Follow_Actions.html">Process - Follow Actions</a> you can write a collection of motifs and ideas that you like, or rhythmic parts, or chord changes but then use the randomness of the Follow Action to dictate which part is played next. Combining this with one or more of the ideas above can give you something where the written parts have a familiar structure and are not random with a process that could produce generative music that could last an arbitrary amount of time.</p>
-</section>
-<section id="contextualising-randomness-using-humans" class="level2">
-<h2 class="anchored" data-anchor-id="contextualising-randomness-using-humans">Contextualising randomness using humans</h2>
-<p>Combinations of the ideas above could give you a framework for generative music piece or performance. If you are skilled in improvisation then it might also become the “second performer” for you to improvise against, with your performance adding the “human touch” and balancing and contextualising what is played by the generative system. So if a motif is played, maybe you echo that motif. Or you could play a chord sequence to drive movement against a random backdrop. Or you could play rhythmic or drum parts again contextualising the random processes.</p>
-</section>
-<section id="play-with-the-1---mess-with-the-listeners-perception" class="level2">
-<h2 class="anchored" data-anchor-id="play-with-the-1---mess-with-the-listeners-perception">Play with the “1” - mess with the listener’s perception</h2>
-<p>In Anna Meredith’s track “Nautilus” the drummer joins the track about halfway through. When he does, it <strong><em>COMPLETELY</em></strong> throws me off and makes me rethink what I had perceived for the entire first half of the track, because the “1” downbeat in the bar is suddenly redefined in an unambiguous way and you realise that actually what you <strong><em>thought</em></strong> was the “1” was actually an off-beat. It’s very disconcerting. In fact, the beauty of that track is that pretty much the whole way through you’re never quite certain where you are in the bar.</p>
-<p>So what can The Lazy Producer do to similarly mess with the listener’s perspective? Well, one way is to use poly-rhythms or poly-meters to slice the bar into different and competing rhythmic parts. If your arpeggiated part is playing “in three” consistently, but the kick on the drum part is playing “in four” consistently, then if that kick doesn’t come in immediately, then the listener will gravitate to where the “1” is for the bassline, but will then have to readjust when the kick enters.</p>
-<p>Tonally you might be able to do similar things - your chords and arpeggios may suggest one tonal centre, but that gets redefined when the bass comes in.</p>
-<p>All of these ideas talk about anchoring perception and then playing with that through alternative contexts. You can choose whether that happens subtly or overtly.</p>
+<section id="curate-the-macro-settings" class="level2">
+<h2 class="anchored" data-anchor-id="curate-the-macro-settings">Curate the macro settings</h2>
+<p>The key point there is curation. Simply hitting the Rand button could give you something wonderful or something completely unuseable. But by setting up the Instrument or Effect Rack well in the first place, then applying some trial and error and careful curation you can get an instrument preset (in the Instrument Rack) that could give you an almost limitless choice of sounds at the touch of one button.</p>
 
 
 </section>
@@ -812,17 +858,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./008-Process-Tuning_Parameters.html" class="pagination-link  aria-label=" process="" -="" tuning="" parameters"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Process - Tuning Parameters</span>
+      <a href="./023-Process-Your_Unpredictable_Bandmate.html" class="pagination-link  aria-label=" process="" -="" your="" unpredictable="" bandmate"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Process - Your Unpredictable Bandmate</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./010-Recipe-Balance_random_and_predictable.html" class="pagination-link" aria-label="Recipe - Balancing the unexpected and the predictable">
-        <span class="nav-page-text">Recipe - Balancing the unexpected and the predictable</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./030-Tools-Live12_Intro.html" class="pagination-link" aria-label="Tools - Live 12 Overview: MIDI and compositional tools">
+        <span class="nav-page-text">Tools - Live 12 Overview: MIDI and compositional tools</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","loop":false,"selector":".lightbox","closeEffect":"zoom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 

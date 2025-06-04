@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./031-Tools-Live12_Sequencers.html" rel="next">
-<link href="./023-Process-Your_Unpredictable_Bandmate.html" rel="prev">
+<link href="./024-Tool-Random_Sound_Design.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -267,6 +267,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./023-Process-Your_Unpredictable_Bandmate.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Process - Your Unpredictable Bandmate</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tool - Random sound design with Instrument Racks</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -552,6 +558,26 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -862,8 +888,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./023-Process-Your_Unpredictable_Bandmate.html" class="pagination-link  aria-label=" process="" -="" your="" unpredictable="" bandmate"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Process - Your Unpredictable Bandmate</span>
+      <a href="./024-Tool-Random_Sound_Design.html" class="pagination-link  aria-label=" tool="" -="" random="" sound="" design="" with="" instrument="" racks"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Tool - Random sound design with Instrument Racks</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
@@ -873,7 +899,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

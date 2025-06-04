@@ -271,6 +271,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tool - Random sound design with Instrument Racks</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./030-Tools-Live12_Intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tools - Live 12 Overview: MIDI and compositional tools</span></a>
   </div>
@@ -330,6 +336,9 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#generator---mdd-snake" id="toc-generator---mdd-snake" class="nav-link" data-scroll-target="#generator---mdd-snake">Generator - MDD Snake</a></li>
   <li><a href="#generator---turing-machine" id="toc-generator---turing-machine" class="nav-link" data-scroll-target="#generator---turing-machine">Generator - Turing Machine</a></li>
+  </ul></li>
+  <li><a href="#philip-meyer-midi-tools" id="toc-philip-meyer-midi-tools" class="nav-link" data-scroll-target="#philip-meyer-midi-tools">Philip Meyer MIDI Tools</a>
+  <ul class="collapse">
   <li><a href="#transformer---develop" id="toc-transformer---develop" class="nav-link" data-scroll-target="#transformer---develop">Transformer - Develop</a></li>
   </ul></li>
   </ul></li>
@@ -356,6 +365,8 @@ Key idea
 </div>
 <div class="callout-body-container callout-body">
 <p>Live 12 contains a number of tools and new features which enhance how we can make generative music using Ableton Live. Some of these are enhancements to existing functionality, but there are many places where there are brand new features which could be used to create generative music, or provide idea generators for composition.</p>
+<p>In particular note that you can Generate, commit to a pattern, then Transform the MIDI multiple times. This allows you to “stack” Transformations - for example, generating a pattern, then using Transform to change pitch, commit changes, then use a different Transform tool to change velocity, then use Transform again to change other elements, such as note division or the placement of notes in the clip.</p>
+<p>Exploration of the combination of Generation and Transformation is encouraged to get the most out of these tools. You shouldn’t view them as single tools that have to do everything in one go. Often the layering of Transformations will give the most interesting results.</p>
 </div>
 </div>
 <section id="midi-generation" class="level2">
@@ -402,6 +413,8 @@ Key idea
 </div>
 </div>
 </div>
+<p>Some of these Transformations will give really interesting results on pitched instruments, while others might be more suited to unpitched or rhythmic parts. It’s worth exploring to see how they apply in different contexts.</p>
+<p>Because the tools apply to creating and transforming MIDI in clips, they are really useful in the initial stage of production and composition where you want help to create something new. They can also help you create variations of existing clips, taking one good idea and evolving it into something completely different.</p>
 </section>
 <section id="limitations" class="level2">
 <h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
@@ -439,9 +452,13 @@ Key idea
 </div>
 </div>
 </section>
+</section>
+<section id="philip-meyer-midi-tools" class="level2">
+<h2 class="anchored" data-anchor-id="philip-meyer-midi-tools">Philip Meyer MIDI Tools</h2>
+<p>Philip Meyer has created a number of Generator and Transformer MIDI tools which are available via his website: https://meyer-devices.com. In the video linked above, Philip demonstrates each of these and it’s worth reviewing the content of that video to both understand how the devices work, but also to see how he Generates, then Transforms clips.</p>
 <section id="transformer---develop" class="level3">
 <h3 class="anchored" data-anchor-id="transformer---develop">Transformer - Develop</h3>
-<p>Philip Meyer has also created Transformer Max for Live devices, and one example is the Develop tool, which takes a phrase and then over a set number of generations (copies) it can include more notes with each generation (or Degrade to eliminate notes) through muting notes in the pattern. In the screenshot below notice how in the first repeat of the pattern, about 50% of the notes are muted, and then as the pattern repeats, more notes are unmuted until the final repeat has all notes playing.</p>
+<p>The Develop tool, which takes a phrase and then over a set number of generations (copies) it can include more notes with each generation (or Degrade to eliminate notes) through muting notes in the pattern. In the screenshot below notice how in the first repeat of the pattern, about 50% of the notes are muted, and then as the pattern repeats, more notes are unmuted until the final repeat has all notes playing.</p>
 <p>The Deterministic mode mutes notes in the pattern while a Probabilistic mode reduces probability over generations. In Probabilistic mode you can also set a percentage (euclidean pattern) to specify which notes in the pattern have lower probability. This a really creative tool to introduce variation in note patterns so that they evolve rather than change suddenly.</p>
 <p>Again, Philip presents the tool in this video: https://youtu.be/_LpA66peATg?si=pOATIb8VZp7j3eub&amp;t=2915</p>
 <div class="cell">
@@ -539,6 +556,26 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -860,7 +897,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","openEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"loop":false,"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
