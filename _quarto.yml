@@ -7,8 +7,9 @@ execute:
   
 book:
   title: "The Lazy Producer - Starter ideas for generative music"
-  author: "Mike K smith"
-  date: "2025-05-31"
+  author: "Mike K Smith"
+  date: last-modified
+  date-format: iso
   chapters:
     - index.qmd
     - 000-Preface.qmd
@@ -48,3 +49,4 @@ format:
     toc-title: Chapters
     number-sections: true
     colorlinks: true
+    default-image-extension: tex

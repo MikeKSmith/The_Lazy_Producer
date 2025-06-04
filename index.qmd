@@ -1,7 +1,12 @@
-This version of the book is 0.991
+#  {.unnumbered}
 
-Rendered on 2025-05-31
+```{r}
+#| echo: false
+#| fig-alt: "A generative art piece for the album cover of The Lazy Producer. On a black or dark blue background there are concentric circles of a blueish white. The inner circle is filled with ghostly trails of lines and hints that there is an underlying geometric shape being plotted. Four quadrants are faintly present. The geometric shape is a heart, but it is not possible to distinguish this clearly. The image as a whole looks somewhat like an x-ray."
+knitr::include_graphics(path = file.path(here::here(), "images", "Album_Cover.png"))
+```
 
 Cover image by Danielle Navarro (https://djnavarro.net)
+Image used by agreement with the artist.
 
 MikeKSmith's music can be found on Bandcamp at https://mikeksmith.bandcamp.com
