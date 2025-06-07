@@ -33,6 +33,7 @@ The plugin also features various options to tweak the output of the stretched au
 You *can* use PaulXStretch as a plugin, but you can also use it as a standalone application. This would allow you to import, stretch, and then export the stretched file ready to import into your DAW as standalone audio. The latter is probably preferable in many cases - audition the file and stretching in the context of your tune, then commit and export to file.
 
 ```{r}
+#| fig-alt: "The image shows the PaulXStretch plugin. At the top of the device are record, rewind, play/pause, loop and freeze buttons. Below that is the main volume slider. Below that various parameters have sliders. The parameters include Stretch amount, FFT size, Number of harmonics, Frequency shift, Pitch shift, High and Low filters. A chain of buttons allow you to turn on and off various processes used in stretching and effecting the audio."
 knitr::include_graphics(path = file.path(here::here(), "images", "paulxstretch_screenshot.png"))
 ```
 

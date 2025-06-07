@@ -22,6 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r}
+#| fig-alt: "Image shows the Clip properties in Ableton Live particularly focussing on the Follow Action options which include No Action, Stop, Play Again, Previous, Next, First, Last, Any and Other."
 knitr::include_graphics(path = file.path(here::here(), "images", "Launch_Follow-Actions.png"))
 ```
 
@@ -34,7 +35,7 @@ The "Any" option randomly jumps to any of the clips within the contiguous set, i
 In previous versions of Ableton Live, Follow Actions were set up so that the user had to specify a number of bars, beats and subdivisions before the action would happen. This leads to a lot of mental arithmetic to determine how many bars and beats AFTER the clip starts to make the jump. Fortunately now from Live 11 the default is to apply the Follow Action at the end of the clip, as long as the "Linked" button is active.
 
 ```{r}
-#| fig.alt: "Ableton Live default Launch and Follow Action dialogue"
+#| fig.alt: "Image shows the Launch properties in Ableton Live. Of interest is the fact that the Linked button is lit to indicate that the Follow Action will happen at the end of the current clip."
 knitr::include_graphics(path = file.path(here::here(), "images", "Launch_Follow-Actions_Linked.png"))
 ```
 

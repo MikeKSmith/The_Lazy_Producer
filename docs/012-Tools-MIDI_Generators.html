@@ -374,7 +374,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Melodic_Steps.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Melodic_Steps.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Melodic_Steps.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Melodic_Steps.png" class="img-fluid figure-img" alt="The image shows the Melodic Steps device from the Creative Extensions pack. It has sequencing lanes for Octave, Transpose, Length, Velocity and Chance. Within each lane there are sequences of different lengths e.g. 5, 7, 8, 15 and 11 respectively. Each lane has the option to randomise or permute. Scale and root note can be set. Playback can run at half time or double time."></a></p>
 </figure>
 </div>
 </div>
@@ -388,7 +388,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Bouncy_notes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Bouncy_notes.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Bouncy_notes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Bouncy_notes.png" class="img-fluid figure-img" alt="The image shows the Bouncy Notes MIDI generator from the Ableton Inspired by Nature pack. Coloured balls bounce in the centre panel and in this case the notes that the bounce on are quantised to a minor pentatonic scale. The note range is set to C2 for a range of 23 notes. 6 voices are being triggered by bouncing balls which are quantised to release every bar. Speed, Gravity and Mass can be set, as can the direction and height that balls are dropped from."></a></p>
 </figure>
 </div>
 </div>
@@ -403,7 +403,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Dr_Chaos.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Dr_Chaos.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Dr_Chaos.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Dr_Chaos.png" class="img-fluid figure-img" alt="The image shows The Dr. Chaos MIDI generator device from the Ableton Probability Pack. On the left panel there are bars shown the scale degrees and a slider for the amount of chaos. On the right panel there are sliders for root note, octave, velocity and note length, as well as amount of chaos. In the middle are eight notes corresponding to the scale degress selected in the left panel. Lines connect notes showing the network of connections that are possible between notes."></a></p>
 </figure>
 </div>
 </div>
@@ -417,7 +417,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Euclidean_sequencer_pro.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Euclidean_sequencer_pro.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Euclidean_sequencer_pro.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Euclidean_sequencer_pro.png" class="img-fluid figure-img" alt="The image shows the Max for Live Euclidean Sequencer Pro MIDI Generator device. There are four lanes of note definition: on the left the Euclidean sequence is defined through the number of steps, events and rotation. On the right the note choice, duration, speed of rotation and swing amounts are defined. In the centre of the device is a graphical representation of the four sequences layed out as events and steps around concentric circles. Clock-face hands rotate around the circles triggering notes when the hands pass the events in each circle."></a></p>
 </figure>
 </div>
 </div>
@@ -430,14 +430,14 @@ Key idea
 <p><em>less concepts is rooted in the idea that complexity is just a shit-ton of simplicity, chained together. at its core, less concepts holds 65,536 possible combinations of notes which can be gated, offset, and manipulated to create minimal sequences for improvisation. small changes to a single parameter can bring sweeping or subtle changes.</em> &gt; &gt; <em>seek. think. discover. - Linus Schrab</em></p>
 </blockquote>
 <p>Suffice to say that it generates sequences or bursts of MIDI notes that can be used in generative music. That it’s available as a free Max for Live device is down to the generosity and genius of <a href="https://dndrks.bandcamp.com">the musician</a> and <a href="https://github.com/dndrks">developer Dan Derks.</a> There’s a PDF manual available here: <a href="https://llllllll.co/uploads/short-url/q2iJjgbV5JhVNoytmVAuOkVS9f1.pdf" class="uri">https://llllllll.co/uploads/short-url/q2iJjgbV5JhVNoytmVAuOkVS9f1.pdf</a> and an accompanying video about the device here: <a href="https://player.vimeo.com/video/408048241" class="uri">https://player.vimeo.com/video/408048241</a>. I think it’s best to watch the video about the device, then look at the manual. And I recommend reviewing both, at least a little before you jump in to use the device. Otherwise you might not understand the impact of the different “Rule” values, or what the “Seed” does.</p>
-<p>Less Concepts produces MIDI sequences that are less “random” and slightly more melodic. The key items to focus on here are the “Rule” setting, which in the screenshot below is 30, and the “Seed” setting which is 46. Different rules provide different rhythmic / melodic results and the “Seed” setting results in slightly different variations of that rule. For a given Rule and Seed you will always get predictable results, so if you use Less Concepts and fix the starting Rule and Seed you can always guarantee the same result. But one trick I’ve played with is to use a random LFO to vary the seed every 4 bars (or more) to balance unexpected and predictable, as we’ve discussed before.</p>
+<p>Less Concepts produces MIDI sequences that are less “random” and slightly more melodic. The key items to focus on here are the “Rule” setting, which in the screenshot below is 30, and the “Seed” setting which is 46. Different rules provide different rhythmic / melodic results and the “Seed” setting results in slightly different variations of that rule. For a given Rule and Seed you will always get predictable results, so if you use Less Concepts and fix the starting Rule and Seed you can always guarantee the same result. But one trick I’ve played with is to use a random LFO to vary the seed every 4 bars (or more) to balance unexpected and predictable, as we’ve discussed before. If you need further explanation of what’s happening under the hood, I suggest you explore the notes that Dan Derks provides.</p>
 <p>The “low” and “high” settings define the range of notes that will be used in the sequence.</p>
-<p>Less Concepts is definitely a sequencer that invites exploration, trial and error. Sometimes the results are surprising, other times they fade away and you’re left in silence. If you need further explanation of what’s happening under the hood, I suggest you explore the notes that Dan Derks provides.</p>
+<p>Less Concepts is definitely a sequencer that invites exploration, trial and error. Sometimes the results are surprising, other times they fade away and you’re left in silence. In many ways it’s hard to predict what kind of sequence you will get from Less Concepts and since it can be unpredictable I would suggest that if you find a sequence you like, then I fully recommend capturing (recording) that sequence and looping it, rather than relying on Less Concepts to keep repeating it indefinitely.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Less_concepts.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/Less_concepts.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Less_concepts.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/Less_concepts.png" class="img-fluid figure-img" alt="The image shows the Max for Live Less Concepts MIDI Generator device. There are selecors for scale and clock division. Low and High note ranges within the scale are defined. There is a dial for Rule and value boxes for rule and seed values. In the middle are two rows of zeros and ones depicting the note sequence for the rule."></a></p>
 </figure>
 </div>
 </div>
@@ -452,7 +452,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Turing_Machine.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Turing_Machine.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Turing_Machine.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Turing_Machine.png" class="img-fluid figure-img" alt="The image shows the Max for Live Turing Machine MIDI Generator device. On the left of the device is a dial which shows Random at 12 noon position, Lock on the extreme right of the dial range and Lock times two on the extreme left of the dial. There is a length selector, a clock division selector and a velocity selector. Finally a range of MIDI notes can be selected and the image shows a range from A2 to A5. In the middle are Volts and Pulses sections mimicing the functionality of the original modular device."></a></p>
 </figure>
 </div>
 </div>
@@ -467,7 +467,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/MIDI_waves.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/MIDI_waves.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/MIDI_waves.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/MIDI_waves.png" class="img-fluid figure-img" alt="The image shows the Midi Waves MIDI Generator device by Ned Rush and Isotonik Studios. The main feature of the device is a representation of a piano keyboard where a range of notes defines the upper and lower note range used in the device. There are four tabs marked Pitch, Velocity, Duration and Gate. In the image the Pitch tab is showing. There are two main areas defining LFO modulation with buttons and a dial are used to define whether the LFO is free running or synced, what frequency the LFO is running at. On the left there is a window showing a red LFO and the blue sample and hold pattern. On the right is a frequency modulating LFO which can affect the main Pitch LFO through the FM amount dial."></a></p>
 </figure>
 </div>
 </div>
@@ -480,7 +480,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Midivolve.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/Midivolve.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Midivolve.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/Midivolve.png" class="img-fluid figure-img" alt="The image shows the Midivolve MIDI generator device from the Midivolve by Coldcut Ableton pack. In the centre of the device is a representation of the incoming or generated MIDI pattern. With a light blue bar moving across this clip. There are tabs for Pitch, Velocity, Duration, Map1 and Map2. On the far left are Mode and Scale tabs where the scale can be set. The Mode defines how the device interprets the MIDI ntoes. On the right are the parameters of the MIDI notes that will evolve through the random processes, how much the randomness will affect the parameter and the chance of this happening. Check boxes show that all parameters are being affected. There are other check boxes for inheriting (cumulatively evolving) the parameters. In this case these are not selected. Patterns or parameters can be nudged. Along the bottom of the device there are buttons to evolve the pattern, or to automatically evolve after a nominated number of bars, in this case 3 bars.You can apply clock division selections, swing, fill, sync, reverse, double and half time etc. There is also an option to export the clip or reset the pattern."></a></p>
 </figure>
 </div>
 </div>
@@ -496,7 +496,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Polymath.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="images/Polymath.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Polymath.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="images/Polymath.png" class="img-fluid figure-img" alt="The image shows The Sweet 16 clock and Polymath MIDI sequencer devices from Novel Music. Sweet 16 features four distinct clocks which can run at different divisions, repeat, etc. The clocks are assigned letter values so that they can be used in different ways in the Polymath sequencer. As with other Novel Music devices there is a slider marked Lock which allows you to introduce additional variation in the sequencer or lock to the current pattern. The Polymath sequencer shows a long (32 by 12) grid. White notes are placed into the sequence. A Red bar denotes the current place in the sequence. Clock inputs to drive the sequencer are on the left hand side. In the middle panel there are dials for selecting the pitch offset of the sequence. A slider under this selects whether the scale one or scale two notes are quantising the pattern. Below this buttons enable which of the four incoming clocks are moving the sequence forward. There are tabs for Notes, Octave, Velocity, Duration, Strum, Ratchets, Bend and Mod. There are Deviate controls on the far right."></a></p>
 </figure>
 </div>
 </div>
@@ -508,7 +508,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Polymath_offset.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="images/Polymath_offset.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Polymath_offset.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="images/Polymath_offset.png" class="img-fluid figure-img" alt="The image shows the same Sweet 16 and Polymath devices. Sequence II is offsetting the pitch of Sequence I in this instance."></a></p>
 </figure>
 </div>
 </div>
@@ -947,7 +947,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","loop":false,"descPosition":"bottom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom","loop":false,"openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

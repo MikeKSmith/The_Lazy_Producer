@@ -61,6 +61,7 @@ MIDI note from sounding, so if you would like to have a "gate" sequence, then
 you can specify notes which notes not to trigger.
 
 ```{r}
+#| fig-alt: "The image shows the SQ sequencer from the Ableton Live 12 Sequencer pack. On the left are settings for Clock and a dropdown to set this as Internal, MIDI or Transport. In the Time tab there is a dial for setting BPM or clock division and an option to set the Swing amount. The main panel in the center has an eight step sequencer, a dropdown to specify direction of the sequence, start and end points and the number of steps can be set to 8 or sixteen. Sliders in the sequence define parameters such as note Pitch, Octave, Velocity, Length and on the second page Time Shift, Ratchet and Condition. A numeric table shows the value of each of these parameters for each step. To the right on the bottom is the ablity to scramble or permute the steps, set the same value for each step or randomise the values. There is a chain icon which allows you to have different sequence lengths for each parameter and length value boxes to define the length. You can also change play direction of each sequence. In the top right there is the option to set the scale and a scale awareness button."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_SQ.png"))
 ```
 
@@ -79,6 +80,7 @@ sound (in blue in the Drum Rack graphic), so you could mix closed hi-hat (second
 from top row) with an open hi-hat sound.
 
 ```{r}
+#| fig-alt: "The image shows the Rhythmic Steps device from the Sequencers pack in Ableton Live 12. The sequencer has four lanes and vertical bar sliders set parameters such as Chance, Alternate note, Velocity, Slide, Roll or ratchet. To the left of the sliders for each lane there is a four by four grid corresponding to the pads of a Drum Rack device. There is one square coloured yellow and another coloured blue. The blue square is the alternate pad which will be triggered. To the right of each lane are buttons to randomise values, a value box for defining the length of the sequence. There's an X button to clear the sequence, a chain icon to unlock sequence lengths and a Mute button."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_RhythmicSteps.png"))
 ```
 
@@ -97,6 +99,7 @@ parallel with the pitch sequence which is governed through the Octave and Notes
 button settings or unlinked to sequence the attributes with different lengths.
 
 ```{r}
+#| fig-alt: "The image shows the Step Arp device from the Sequencers pack in Ableton Live 12. The device has a Division dial to set the pace of the arpeggiator on the left, a sync button to lock to the host tempo. The main panel of the device has vertical sliders to set values like Velocity, Length, Chance, Ratchet, Transpose and the ability to map modulation amounts to a parameter. Buttons next to Chance, Ratchet and Transpose allow you to switch these sequences off. A slider to the right of the device defines the range of values that can be randomised for each parameter. Along the top are options for setting the Octaves of the arpeggiator, arp direction, Note order, and a Hold button. The device has a scale awareness button."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_StepArp.png"))
 ```
 

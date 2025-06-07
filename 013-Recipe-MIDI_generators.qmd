@@ -29,7 +29,8 @@ unexpected and predictable!). We can also use modulators to shift the Rotation /
 offset of the sequences to add additional unexpectedness if that's helpful.
 
 ```{r}
-    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe4_EuclideanSequencerPro.png"))
+#| fig-alt: "The image shows a Euclidean Sequencer Pro MIDI Generator device followed by a Random note device and finally a MIDI Scale device quantising notes to the Mixolydian mode."
+knitr::include_graphics(path = file.path(here::here(), "images", "Recipe4_EuclideanSequencerPro.png"))
 ```
 
 2.  We're now going to use many of the techniques previously seen in
@@ -39,6 +40,7 @@ and then route it to a number of different synth engines while also applying
 some additional MIDI tool processing.
 
 ```{r}
+#| fig-alt: "The image shows six tracks starting with the Euclidean Generator track described above. The output from this track is routed into two other MIDI tracks."
     knitr::include_graphics(path = file.path(here::here(), "images", "Recipe4_Routing.png"))
 ```
 
@@ -47,6 +49,7 @@ into a MIDI instrument track using a plucky Operator sound - could be a simple
 sine wave with no sustain and fairly quick decay.
 
 ```{r}
+#| fig-alt: "The image shows a Velocity device in front an Operator instrument. The Operator synth has a short plucky sound."
     knitr::include_graphics(path = file.path(here::here(), "images", "Recipe4_Operator.png"))
 ```
 
@@ -59,6 +62,7 @@ turn the incoming MIDI notes into chords. We can then use these delayed and
 a pad sound from any virtual instrument.
 
 ```{r}
+#| fig-alt: "The image shows a Note Echo device which is set to repeat notes after 16 beats, but suppressing the original MIDI input. A Note Length device then lengthens each note to 1.9 seconds before these notes are fed into a Wavetable instrument. This is set to play a resonant pad sound."
     knitr::include_graphics(path = file.path(here::here(), "images", "Recipe4_Pad.png"))
 ```
 
@@ -75,6 +79,7 @@ rate. You may need to tailor the amount or range of modulation to get
 Arpeggiator rates that don't swing too far between VERY quick and VERY slow.
 
 ```{r}
+#| fig-alt: "The image shows an Apreggiator device in front of an Operator instrument. Operator is set to a longer pluck sound decaying over 2 seconds."
     knitr::include_graphics(path = file.path(here::here(), "images", "Recipe4_Arp.png"))
 ```
 

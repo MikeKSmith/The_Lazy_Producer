@@ -36,6 +36,7 @@ beginning of the sample each time, the modulation picks a new position to start
 from. This prevents the sound from being too predictable with each new note.
 
 ```{r}
+#| fig-alt: "Two images showing the Sampler instrument. In front of the Sampler are the Random, Scale and Note Length MIDI devices. The Sampler has a notch filter applied and the frequency of this is being modulated by the LFO. The filter has a slow attack (2 miliseconds), slow delay (10 seconds), slow release (2 seconds). The Envelope of the VCA has slow attack (5 seconds), long release (19 seconds) and maximum sustain level. In the second image we see that LFO 1 - triangle - is modulating Filter and Pan while LFO 2 - Sine - is modulating the amount that LFO 1 is affecting the Pan and Filter. Both LFOs are very slow. LFO 3 which is a Sample and Hold type is modulating the Sample Offset - the starting point of the sample and LFO 2 Amount."
     knitr::include_graphics(path = file.path(here::here(), "images", "Sampler_Drone_Global.png"))
     knitr::include_graphics(path = file.path(here::here(), "images", "Sampler_Drone_Modulation.png"))
 ```
@@ -62,6 +63,7 @@ interesting effects to add texture and resonance into fairly static inputs (like
 our drone here).
 
 ```{r}
+#| fig-alt: "The image shows the tracks of the Ableton set. As discussed in the text the Sample audio is being routed to various Return channels which in turn are being routed between each other to create a complex audio effect chain."
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe-Sampler_drone.png"))
 ```
 

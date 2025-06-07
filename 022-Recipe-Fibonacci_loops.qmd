@@ -25,6 +25,7 @@ You might like to use a combination of kit sounds and melodic sounds. You can
 choose notes from a scale or from a chord e.g. C, Eb, G, Bb, D.
 
 ```{r}
+#| fig-alt: "The image shows an Ableton Live set where each track has a single MIDI note clip, but each clip has lengths defined by the Fibonacci Series."
 knitr::include_graphics(path = file.path(here::here(), "images", "Fibonacci_Polymeters.png"))
 ```
 
@@ -37,6 +38,7 @@ additional tone shaping, sound design and granular delay to the grouped tracks w
 life into the results and prevents them from becoming too stale.
 
 ```{r}
+#| fig-alt: "The image shows the effect chain which comprises of Phaser, Saturator, Shifter, Corpus, Grain Delay, Erosion and Multiband compressor in OTT preset."
 knitr::include_graphics(path = file.path(here::here(), "images", "Fibonacci_FX.png"))
 ```
 

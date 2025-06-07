@@ -131,6 +131,7 @@ separate MIDI track that captures the output of those transformations before
 sending into the virtual instrument.
 
 ```{r}
+#| fig-alt: "The image shows an Ableton set, where the tracks are set up to generate MIDI, transform it, pass it into an instrument. The track with the instrument has captured the output of the MIDI Generation and Transformation process. A separate Audio track shows the rendered audio output of the instrument."
 knitr::include_graphics(path = file.path(here::here(),"images", "Workflow1_MIDI.png"))
 ```
 
@@ -182,6 +183,7 @@ In the screenshot below you'll see that on the Group for "Piano" I've got a
 compressor, EQ, Soothe dynamic EQ and Utility plugins (for automating gain).
 
 ```{r}
+#| fig-alt: "The image shows that the tracks assocaited with a Piano sound have been grouped together and the mixing and post-processing effects have been applied to the Group. Automation is shown for the Gain of the Utility Device."
 knitr::include_graphics(path = file.path(here::here(),"images", "Workflow2_Group.png"))
 ```
 
@@ -204,5 +206,6 @@ instruments I can now "switch off" the virtual instrument channel and save some
 CPU (as I've done in the screenshot below).
 
 ```{r}
+#| fig-alt: "The image shows that once the rendered audio is captured, you can switch off the generating and instrument tracks and retain the audio output for mixing."
 knitr::include_graphics(path = file.path(here::here(),"images", "Workflow3_Rendered.png"))
 ```

@@ -12,6 +12,7 @@ ensure that the output is pitched and that it conforms to the C minor pentatonic
 scale. This will help integrate the sounds later.
 
 ```{r}
+#| fig-alt: "The image shows the Tree Tone device, as described in the Audio Generator chapter."
     knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_TreeTone.png"))
 ```
 
@@ -22,6 +23,7 @@ to pitches or FM Ratio change the resulting sound, and maybe automate these via
 LFO, but for now, let's keep the drone from this to be quite static.
 
 ```{r}
+#| fig-alt: "The image shows the Harmonic Drone Generator device, as described in the Audio Generator chapter."
     knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_HarmonicGenerator.png"))
 ```
 
@@ -38,6 +40,7 @@ We can then use its chaotic modulation processes to automate "drawing" the X and
 Y values. This should produce some very strange buzzy textures.
 
 ```{r}
+#| fig-alt: "The image shows the Cellular Degradation and Strange Mod devices, as described in the Audio Generator chapter."
     knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_CellularDegradation.png"))
 ```
 
@@ -59,6 +62,7 @@ addition or instead) might be to drive the Cellular Degradation track using a
 Saturator or distortion.
 
 ```{r}
+#| fig-alt: "The image shows the Cellular Degradation and Resonator devices."
       knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_CellularDegradation_Resonator.png"))
 ```
 

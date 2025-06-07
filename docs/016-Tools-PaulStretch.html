@@ -377,7 +377,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/paulxstretch_screenshot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/paulxstretch_screenshot.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/paulxstretch_screenshot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/paulxstretch_screenshot.png" class="img-fluid figure-img" alt="The image shows the PaulXStretch plugin. At the top of the device are record, rewind, play/pause, loop and freeze buttons. Below that is the main volume slider. Below that various parameters have sliders. The parameters include Stretch amount, FFT size, Number of harmonics, Frequency shift, Pitch shift, High and Low filters. A chain of buttons allow you to turn on and off various processes used in stretching and effecting the audio."></a></p>
 </figure>
 </div>
 </div>
@@ -820,7 +820,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"descPosition":"bottom","closeEffect":"zoom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -25,6 +25,7 @@ The [Hybrid Reverb](https://www.ableton.com/en/live-manual/11/live-audio-effect-
 But when you dig into the Convolution IR section you'll also find options for textural processing - this applies a textural Impulse Response (IR) to the sound, so instead of a straight reverb tail, you'll get some additional texture from the IR audio file. The other thing to point out is that there is an option to have User-defined IR. This means that you can find IR audio files for different spaces online at sites like Open Air <https://www.openair.hosted.york.ac.uk> and use some additional IR files for some famous spaces, like Hamilton Mausoleum and York Minster. Obviously finding the right reverb sound for ambient music is kind of a key item. But you don't have to use just one. I like to use a long, lush reverb to help smear sound and create drones. I usually put this on a FX Return channel so I can route several tracks to it and save CPU. But you may also need a shorter reverb for other instruments to give them presence, in the way that a close mic to an instrument in one of these huge reverb spaces will capture more of the raw sound, while the gigantic reverb captures the instrument in the space itself.
 
 ```{r}
+#| fig-alt: "The image shows the Hybrid Reverb audio device. The device is dominated by the middle panel which shows the impulse response for the chosen Convolution IR reverb. There are selectors for the type of reverb and space for the IR section, also above that options to tune the attack, decay and size of the IR reverb. On the bottom right are settings for the algorithmic part of the reverb with dials for Decay, Size, Damping, and two other parameters which are context specific to the algorithm chosen. Here Shimmer reverb is chosen so Pitch and Shimmer amount are showing. A middle dial allows you to balance between the IR and Algorithm reverb and this is set to 50/50. To the right is a dial to adjust stereo image, a button for Vintage mode, a button to select Bass in Mono and a Dry/Wet dial."
 knitr::include_graphics(path = file.path(here::here(), "images", "Hybrid_Reverb.png"))
 ```
 
@@ -37,6 +38,7 @@ and you'll have instant drones.
 To be honest, all of Valhalla DSP's plugins are excellent and reasonably priced. I particularly like the Shimmer device to add shimmer, stereo width and pitch shift reverb to sounds. Their Delay plugin provides a wide variety of delay types, including tape delay (complete with wobble and drive) but also usefully a reverse delay (where the original audio is played backwards in the delay). I like the latter as the delayed line comes back transformed compared to the input. Again this adds some interest to the part.
 
 ```{r}
+#| fig-alt: "The image shows the Valhalla Supermassive device from Valhalla DSP. To the left are dials to adjust Mix and Width. Then there are two large dials controlling Delay and Warp. To the right of that are two vertically stacked dials controlling Feedback and Density. Another pair of stacked dials controls the Mod Rate and Depth. The final pair of stacked dials controls EQ settings. There are dropdown picklists below with Mode on the bottom left and Preset on the bottom right."
 knitr::include_graphics(path = file.path(here::here(), "images", "Valhalla_Supermassive.png"))
 ```
 
@@ -49,6 +51,7 @@ Being a Lazy Producer, I prefer to let random processes tweak the Echo settings.
  While the timing of the Echo is fixed, we have other parameters that mean that the sound is constantly shifting in an unpredictable way. This will prevent the Echo effect from being too "samey" across the track and provide some interesting moments. It's a bit like having a pair of "robot hands" that tweak the Echo settings.
 
 ```{r}
+#| fig-alt: "The image shows the Ableton Echo device. The left of the device sets the delay characteristics for both left and right channels. Delay times can be synced to tempo divisions as they are here, or can be set in Hz. The left and right delay lines can be locked together. Below these is a dial for Input gain and Feedback. The middle of the device shows a graphical representation of the delay with concentration half-circles representing the echos. Below this is an filter representation for high pass and low pass filters. To the right of the device are dials for Reverb amount and stacked dials for Stereo width, Output and Dry Wet. There are buttons to set the Echo mode including Stereo, Ping Pong and Mid/Side. Other tabs control the modulation settings and character of the Echo. To the right of the Echo device are three LFOs set at various rates. The left one controls the Echo Feedback amount. The other LFOs are controlling the Depth and Rate of the first LFO. The first LFO also controls the Depth of the third LFO."
 knitr::include_graphics(path = file.path(here::here(), "images", "LFO_Echo.png"))
 ```
 
@@ -57,12 +60,14 @@ knitr::include_graphics(path = file.path(here::here(), "images", "LFO_Echo.png")
 Saturation may seem like a weird choice for ambient music where much of the music produced is "pristine" and "delicate". But there is a whole sub-genre where gritty, distorted sounds are most definitely a thing. My favourite from Live Suite is the [Saturator plugin](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#saturator) which provides a wide range of subtle distortion and drive. If you need more distortion than saturation then the [Pedal](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#pedal) plugin provides raw Overdrive, Distortion and Fuzz, Saturator allows you to drive the signal and dial in more subtle drive and overtones.
 
 ```{r}
+#| fig-alt: "The image shows the Saturator device. On the top left is a Drive dial, below that buttons for DC offset, Color and a dial for Base frequency. In the middle is a graphical representation of the gain curve and how saturation is going to affect input gain. Below that is a dropdown box for the saturator type. Three dials below that adjust Frequency, Width and Depth. To the right are dials for Output gain and Dry / Wet setting. Next to the Saturator device is a Pedal device which has dials on the top row adjusting Gain percentage and Output in dB. Below that is a row of buttons to set the distortion type: Overdrive (marked OD), Distortion (marked Distort) and Fuzz. Below that are three dials adjusting Bass, Mid and Treble percentage. On the bottom row is a button for turning on Sub frequency and a Dry/Wet slider."
 knitr::include_graphics(path = file.path(here::here(), "images", "Saturator_Pedal.png"))
 ```
 
 Live 12's [Roar](https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/#roar) device takes these to the next level though and provides a comprehensive set of tools for applying anything from subtle warmth to the inputs to full-blown distortion. It has a wide range of routing options, including multi-band which allows you to dial in distortion for different frequency bands. This is a device that is really worth exploring to add texture in a wide variety of ways.
 
 ```{r}
+#| fig-alt: "The image shows the Roar device in Live 12. There are three main panels in the device. Starting on the left there is a Drive (in dB) and Tone (in %) dials including a slider to set the mid-point frequency for Tone. Below that is a dropdown box to pick the routing of audio through Roar. Here we're showing the Multi-band option, which has associated Low and High frequency value boxes to change the crossover. The middle panel depends on the Roar type setting, so here it shows tabs for Low, Mid and High frequency saturation. Each tab shows dials for Amount (in %), Bias (-/+) and Frequency (in Hz). Below the dials are two graphical representations: on the left is the saturation curve and on the right is the filter, which here is a Low pass filter. To the right is a panel devoted to Feedback mode with a dial for amount. To the right of that is a compression dial (in %) and an output dial (gain dB) and at the bottom right a Dry/Wet % slider."
 knitr::include_graphics(path = file.path(here::here(), "images", "Roar.png"))
 ```
 
@@ -75,6 +80,7 @@ The [Resonator effect](https://www.ableton.com/en/live-manual/11/live-audio-effe
 I have found that a little drive to the input signal (which boosts upper resonant frequencies of the audio) works will with resonator to make the result more pronounced.
 
 ```{r}
+#| fig-alt: "The image shows the Resonator device. The left hand panel has Filter settings including a button switch on and off, Frequency dial (in Hz) and type (low pass, high pass, band pass and band cut). In the middle panel is the resonance structure. On the left is a stack of dials for Decay and Color. To the right of that is a stack of dials for setting the root Note pitch and Gain, then Stacked dials for Pitch and Gain for four additional resonators. The top dial is the relative pitch in semitones, below that is a slider for panning and below that the Gain (in dB). To the far right are stacked dials for Width (in %), Gain (in dB) and Dry/Wet (in %)."
 knitr::include_graphics(path = file.path(here::here(), "images", "Resonator.png"))
 ```
 
@@ -91,6 +97,7 @@ Ableton Live Suite includes three Spectral audio effects. Spectral processing is
 [Spectral Resonator](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#spectral-resonator) is a resonator which focuses on different parts of the frequency spectrum, so you can tailor the resonance quite precisely. You can have a static tone for the resonance or pass in a MIDI part to change the resonance around a MIDI part. The different resonance algorithms - Chorus, Wander and Granular all have different sounds and it's worth playing with these to see which ones fit what you're trying to achieve.
 
 ```{r}
+#| fig-alt: "The image shows three Spectral devices - Spectral Blur, Spectral Resonator and Spectral Time. Spectral Blur has three dials to set the lower and upper Frequencies (Freq1 and Freq2 respectively) and a Residual dial (in %). Halo and Freeze buttons immediately to the right of that with a Halo (%) dial to the right of the buttons. Below the Halo dial is a Wet Gain slider (in dB) and a Dry/Wet dial (in %). There is a graphical representation of what the device is doing - that is, catching frequencies and prolonging their resonance."
 knitr::include_graphics(path = file.path(here::here(), "images", "Spectral_Devices.png"))
 ```
 
@@ -105,10 +112,12 @@ The Spectral Averaging and Spectral Blurring are my two favourites from this col
 The key parameter in both of these plugins is the FFT size which determines the size of the sample window in which the blurring or averaging is taking place. Larger FFT sizes smear more, but take longer to fade in and out since the processing is happening over a larger window of audio. You may also find that you need to increase the gain of the output.
 
 ```{r}
+#| fig-alt: "The image shows Michael Norris' Spectral Averaging Max for Live device. The device is very bare-bones in interface with four sliders changing the Number of frames, Brightness, Lo bin cutoff, Hi bin cutoff. Below this is the key parameter FFT Size which defines the window over which the averaging will happen. The bottom slider is for Gain."
 knitr::include_graphics(path = file.path(here::here(), "images", "Spectral_Averaging.png"))
 ```
 
 ```{r}
+#| fig-alt: "The image shows Michael Norris' Spectral Blurring Max for Live device. Like the Spectral Averaging device this is very bare bones interface. A slider at the top influences Blur amount. Below that is a Variance type dropdown. Beneath that are sliders for Blur variance, LFO rate, Lo bin cutoff and Hi bin cutoff. Like the Averaging plugin there is an FFT Size dropdown adn Gain slider."
 knitr::include_graphics(path = file.path(here::here(), "images", "Spectral_Blurring.png"))
 ```
 
@@ -121,6 +130,7 @@ The whole collection is worth checking out for some very interesting effects, al
 [Shifter](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#shifter) is a combination of a pitch and frequency shifter and ring modulator. It's a bit of a beast because it can be either subtle and also extremely weird depending on how much shifting you do (and what type). This video provides a nice overview of the different modes and features: <https://www.youtube.com/watch?v=uqY8K8otbp0>
 
 ```{r}
+#| fig-alt: "The image shows the Shifter device which is a ring modulator and pitch shifter. On the top left of the device are dials for Coarse and Spread. Coarse is measured in semitones while Spread is measured in cents. A button below the Spread dial marked Wide widens the stereo image. Sliders below these dials show Window in miliseconds and Tone in Hz. There is a delay button and a slider for note division of the delay and a Feedback dial next to that. Delay can be specified in note divisions or miliseconds. On the right of the device are Mode buttons for Pitch, Freq and Ring. Underneath this are a Drive button and slider for amount (in dB). Drive is greyed out unless Ring modulation mode is chosen. The central panel shows a visual representation of how the phase shift of the Left and Right signals are affected by settings. There is a slider for Duty cycle (in %) and Spin (also in %). Below this are settings for an LFO including a dropdown for shape, buttons for whether rate should be in note divisions or hertz, Rate dial (in Hz or note divisions) and Amount dial (in semitones since the image shows Pitch mode being selected)."
 knitr::include_graphics(path = file.path(here::here(), "images", "Shifter.png"))
 ```
 
@@ -129,6 +139,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Shifter.png"))
 [Corpus](https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/#corpus) is the audio effect companion to the Collision instrument. The input audio is used to excite a resonator - a plate, tube, membrane etc. - which then resonates. Depending on the resonator you choose you get different artefacts and results.
 
 ```{r}
+#| fig-alt: "The image shows the Corpus device which is an audio effect based on the Collision instrument. While collision has an exciter section Corpus uses the incoming audio to excite the plate, membrange or other type of resonator. On the left of the device is a representation of the resonant object. In this case that is a Membrane. Attributes like Decay, Material, Width, Position Left and Right are shown. Below this are four dials for Bright, Inharmonics, Ratio and Hit (all in percent). Next is a vertical section dealing with pitch. So there is a tuning dial (in Hz but showing the MIDI note below), below this is a fine tuning dial (in cents). Below this is a Spread slider (in %). Next is a vertical LFO section with dials for Amount (in %), a dropdown box for Shape, Rate (Hz or note divisions) and Phase (in degrees). There is checkbox at the top to switch on or off this section. The next vertical section coming right is a filter section. There is a checkbox at the top to switch on or off this section. Dials below this are for Frequency (in Hz) and Bandwidth. Finally a vertical output section with three stacked dials for Bleed (in %), Gain (in dB) and Dry Wet (in %)."
 knitr::include_graphics(path = file.path(here::here(), "images", "Corpus.png"))
 ```
 
@@ -153,5 +164,6 @@ So the choice is yours. Really. Try them all out. See which one works for you in
 If your sound has a sharp attack, you may want to soften the send to the FX so that only the tail of the sound gets effected. Use an [Envelope Follower](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#envelope-follower) effect before the audio effect. By setting the Map to 100% lowest and 0% highest (inverting the signal) it will duck the initial part of the sound (turning the send DOWN) and then bring it back up as the audio decays. Note that in the device below I have turned up gain to accentuate the behaviour (basically to make the peak duck enough that the initial part of the audio has a low enough send amount) and I have smoothed out the Rise and Fall amounts which removes any "pumping" of the send to the Return channel effect. By setting a Delay you can also manually dial in how much or little of that initial part of the sound gets sent to the Return channel. This technique can be useful to capture and build drone sounds where you want to avoid sudden changes volume.
 
 ```{r}
+#| fig-alt: "The image shows the Envelope Follower device. This device is largely taken up by a visual representation of the incoming signal which is shown using the spectrum bands, at the top of this is a modulation picker where you can select which parameter to modulate and lower and upper percentage sliders. Below the graphic are dials for Gain (in dB), Rise and Fall (in %) and Delay (in miliseconds)."
 knitr::include_graphics(path = file.path(here::here(), "images", "Envelope_Follower_Send.png"))
 ```

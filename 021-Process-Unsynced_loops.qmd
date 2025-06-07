@@ -91,6 +91,7 @@ petals on a plant.
 
 ```{r}
 #| fig-cap: "By Romain - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=114415511"
+#| fig-alt: "The image shows the fibonacci spiral."
 knitr::include_graphics(path = file.path(here::here(), "images", "Fibonacci_Spiral.png"))
 ```
 

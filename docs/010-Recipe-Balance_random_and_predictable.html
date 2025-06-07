@@ -346,21 +346,21 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Recipe3_Piano1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Recipe3_Piano1.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Recipe3_Piano1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Recipe3_Piano1.png" class="img-fluid figure-img" alt="Image shows three different MIDI clips. In each there is a simple four note pattern."></a></p>
 </figure>
 </div>
 </div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Recipe3_Piano2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Recipe3_Piano2.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Recipe3_Piano2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Recipe3_Piano2.png" class="img-fluid figure-img" alt="Image shows three different MIDI clips. In each there is a simple four note pattern."></a></p>
 </figure>
 </div>
 </div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Recipe3_Piano3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Recipe3_Piano3.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Recipe3_Piano3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Recipe3_Piano3.png" class="img-fluid figure-img" alt="Image shows three different MIDI clips. In each there is a simple four note pattern."></a></p>
 </figure>
 </div>
 </div>
@@ -372,7 +372,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Recipe3_Piano_Random.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Recipe3_Piano_Random.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Recipe3_Piano_Random.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Recipe3_Piano_Random.png" class="img-fluid figure-img" alt="Image shows a busier MIDI pattern than that shown in the image above. A syncopated patter of just under 2 complete bars is shown."></a></p>
 </figure>
 </div>
 </div>
@@ -388,7 +388,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Recipe3_Piano_Random_MIDIFX.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/Recipe3_Piano_Random_MIDIFX.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Recipe3_Piano_Random_MIDIFX.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/Recipe3_Piano_Random_MIDIFX.png" class="img-fluid figure-img" alt="Image shows a Random MIDI device and a Note Echo MIDI device. Chance is set to 40% in the Random device selecting random notes within a 5 semitone range. The Note Echo MIDI device is repeating the input MIDI notes after 5 beats. The Delay dial is set to 33.9% which will reduce the velocity of the repeated notes. Feedback is set to zero."></a></p>
 </figure>
 </div>
 </div>
@@ -404,7 +404,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Recipe3_Pads.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Recipe3_Pads.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Recipe3_Pads.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Recipe3_Pads.png" class="img-fluid figure-img" alt="The image shows four bass notes, each lasting two beats. The clip lasts two bars."></a></p>
 </figure>
 </div>
 </div>
@@ -417,7 +417,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Recipe3_DrumKit.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/Recipe3_DrumKit.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Recipe3_DrumKit.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/Recipe3_DrumKit.png" class="img-fluid figure-img" alt="The image shows a repeating pattern of 16th notes on the Closed HiHat of a drum Rack. A Kick and snare pattern is also present with the kick on first and third beats. An offbeat pattern is used for the Snare."></a></p>
 </figure>
 </div>
 </div>
@@ -429,7 +429,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Recipe3_Ableton_Set.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/Recipe3_Ableton_Set.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Recipe3_Ableton_Set.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/Recipe3_Ableton_Set.png" class="img-fluid figure-img" alt="The image shows the entire Ableton set for the Recipe. There are four tracks of MIDI. A Grand Piano instrument uses Follow actions to cycle through the initial three simper MIDI clips. A Random Piano track feeds the busier MIDI clip into the same Grand Piano patch."></a></p>
 </figure>
 </div>
 </div>
@@ -865,7 +865,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

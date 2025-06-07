@@ -23,16 +23,19 @@ Exploration of the combination of Generation and Transformation is encouraged to
 Live 12 now comes with two new features built into MIDI clip creation: MIDI Generation and MIDI Transformation. MIDI Generation does what the name suggests - provides a range of different methods for generating new MIDI parts: rhythm - which creates sequences of MIDI notes by specifying the density of notes within a certain number of steps and then allowing you to choose permutations of these, stacks - which defines chords, seeds - which generates one or more "voices" of completely random notes (but these could conform to the clip scale setting) within the clip, shape - which generates notes by drawing in a pattern or shape, and Euclidean generators. And because what sits behind these generators is the power of Max for Live, the possibilities open up for a huge range of innovative MIDI generation.
 
 ```{r}
+#| fig-alt: "The image shows the MIDI Generator choices in Ableton Live 12."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDIGenerators.png"))
 ```
 
 ```{r}
+#| fig-alt: "The image shows a blank Max for Live Generator device. A note says Build Your Generator Here."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Max_MIDIGenerator.png"))
 ```
 
 In Chapter 13 we looked at MIDI Generator devices including Max for Live devices. But having some similar functionality here "baked into" the Live MIDI clip tools puts these tools at the fingertips of anyone with Live 12 Suite.
 
 ```{r}
+#| fig-alt: "The image shows the Euclidean Generator device creating rhythmic MIDI clips across four notes."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Euclidean_Pattern.png"))
 ```
 
@@ -41,6 +44,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Euclide
 The MIDI Transformation tools includes tools to arpeggiate the notes within the clip, connect - connecting existing notes in the clip with passing tones, ornament - adding additional short notes before the main note, like a flam in drum terms, or mordent in classical notation, quantize - here applying quantisation non-destructively, i.e. you can see the effect of the amount of quantisation on the MIDI notes, recombine - which lets you select notes and then permute these (rotate the order, mirror, shuffle), span - which allows you to change the note lengths by various means, strum - which applies a rhythmic strum pattern to chords, and time warp - which can bend the timing within a bar, so although the bpm clock remains constant, MIDI notes in a clip can trigger with a more fluid timing.
 
 ```{r}
+#| fig-alt: "The image shows the MIDI Transformation devices available in Ableton Live 12."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDI_Transformers.png"))
 ```
 
@@ -68,6 +72,7 @@ we mentioned the MDD Snake Max for Live MIDI generator
 The beauty of this little generator is that it decouples note pitch from gate (whether the note plays or not). So you can generate patterns of notes / pitches separately from the pattern of whether the note plays which avoids the machine gun pattern of constant 8th or 16th notes.
 
 ```{r}
+#| fig-alt: "The image shows the MDD Snake Generator device within Ableton Live 12 MIDI Generators. This MIDI Generator has been described in the chapter on MIDI Generators."
 knitr::include_graphics(path = file.path(here::here(), "images", "MIDI_Generator_MDDSnake.png"))
 ```
 
@@ -79,6 +84,7 @@ https://www.ableton.com/en/blog/maxime-dangles-unlikely-connections/.
 We've also discussed the Turing Machine in  [Tools - MIDI Generators](012-Tools-MIDI_Generators.qmd). Turing Machines create random sequences of notes and this MIDI Generator Max for Live device by Philip Meyer is essentially a little Turing Machine that will create a clip full of notes for you. Because the Turing Machine produces random note patterns, it's worth experimenting and generating a few patterns until you find one that works in context. Philip Meyer explains the device in more detail in this video: https://youtu.be/_LpA66peATg?si=-KgyOTrVt_sbTgv6&t=2191.
 
 ```{r}
+#| fig-alt: "The image shows the Turing Machine device within Ableton Live 12 MIDI Generators. Turing Machines have been described in the chapter on MIDI Generators. Like the MIDI device, this generator has a large dial for dialing in randomness in the pattern. Three buttons allow the user to inject a 0, 1, or Random values into the sequence. A value box defines the lgnth of the sequence and there is a button to Clear the sequence. Pitch is defined at the botton of the device with sliders for 8 different pitch weights. There are stacked dials for Range and Offset."
 knitr::include_graphics(path = file.path(here::here(), "images", "MIDI_Generator_TuringMachine.png"))
 ```
 
@@ -97,5 +103,6 @@ The Deterministic mode mutes notes in the pattern while a Probabilistic mode red
 Again, Philip presents the tool in this video: https://youtu.be/_LpA66peATg?si=pOATIb8VZp7j3eub&t=2915
 
 ```{r}
+#| fig-alt: "The image shows the Develop MIDI Transformer by Philip Meyer. A MIDI clip is shown with four repetitions of a pattern and the Develop transformer is progressively unmuting notes across the four repetitions until the last repetition shows all notes unmuted."
 knitr::include_graphics(path = file.path(here::here(), "images", "MIDI_Transformer_Develop.png"))
 ```

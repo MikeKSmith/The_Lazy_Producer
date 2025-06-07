@@ -26,6 +26,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r}
+#| fig-alt: "The images show three MIDI clips. Each clip is a different length. MIDI notes are sustained throughout the length of the clips, but the length of each clip is different, ranging from 12 to 15 bars. Each clip contains different notes in the range F2-A5. Notes are chosen from F, A, C, D, G in various octaves within the range. Chance is set to approximately 70%."
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track1_Chord1.png"))
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track1_Chord2.png"))
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track1_Chord3.png"))
@@ -34,6 +35,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track1
 ***Track 2 clips***:
 
 ```{r}
+#| fig-alt: "The images show three MIDI clips. Each clip is a different length. MIDI notes are sustained throughout the length of the clips, but the length of each clip is different, ranging from 12 to 15 bars. Each clip contains different notes in the range F2-A5. Notes are chosen from F, A, C, D, G in various octaves within the range. Chance is set to approximately 70%."
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track2_Chord1.png"))
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track2_Chord2.png"))
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track2_Chord3.png"))
@@ -42,6 +44,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track2
 ***Track 3 clips***:
 
 ```{r}
+#| fig-alt: "The images show three MIDI clips. Each clip is a different length. MIDI notes are sustained throughout the length of the clips, but the length of each clip is different, ranging from 12 to 15 bars. Each clip contains different notes in the range F2-A5. Notes are chosen from F, A, C, D, G in various octaves within the range. Chance is set to approximately 70%."
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track3_Chord1.png"))
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track3_Chord2.png"))
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe1_Track3_Chord3.png"))

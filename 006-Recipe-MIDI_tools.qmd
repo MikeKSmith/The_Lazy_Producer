@@ -35,6 +35,7 @@ each beat, the Shaper ducks the gain to produce a pumping "sidechain compressor"
 like effect.
 
 ```{r}
+#| fig-alt: "Image shows the Shaper modulation device. The device has a mapping button at the top left which determines which parameter is going to be modulated. The minimum value is set to 50%, the maximum is set to 0% which means that as the modulation goes up, the parameter value will be turned down. A variety of modulation shapes are include along the bottom. There is a representation of the modulation as it repeats in the top right. Rate and depth dials are below this. In the example shown Shaper is being used to turn down the gain of a Utility device."
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MODULATION_Shaper-gain.png"))
 ```
 
@@ -45,12 +46,14 @@ Return FX, so essentially we get a nice pad sound, but we never hear the dry
 sound.
 
 ```{r}
+#| fig-alt: "Image shows the various routing paths in the Recipe 2 example and modulation of track mix volume and sends."
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI-and-audio-routing.png"))
 ```
 
 6.  In your tracks, you can add MIDI plugins to alter the incoming chord. For example:
 
 ```{r}
+#| fig-alt: "Image shows the MIDI device chain which is adding Random MIDI notes, applying a Minor pentatonic scale, using MIDI Note Echo device, another Random MIDI device, another MIDI Note Echo and a final Minor Pentatonic scale device."
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_fx.png"))
 ```
 
@@ -97,6 +100,7 @@ actually Grouped tracks. Let's recreate that now. Create a new MIDI track called
 input to Track one (the single note C3 track) and set Monitor to "In".
 
 ```{r}
+#| fig-alt: "Image shows the MIDI routing from a generator track, which is creating a single MIDI note of C3 on the first beat of every bar, being sent through Note Length and Arp tracks which are in turn transforming this initial MIDI note."
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_manipulation.png"))
 ```
 
@@ -105,6 +109,7 @@ used to take the output from Track 1 "MIDI Note" and stretch out the MIDI notes
 to last a nominated number of seconds.
 
 ```{r}
+#| fig-alt: "Image shows the MIDI Note Length device. Here the Length of the MIDI note is extended to 5 seconds."
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_NoteLength.png"))
 ```
 
@@ -114,6 +119,7 @@ output from the Arpeggiator to suite taste, and a Velocity plugin to add a
 little variation to the velocity of the output MIDI notes.
 
 ```{r}
+#| fig-alt: "Image shows the MIDI Arpeggiator device which is playing notes in the order they appear at a rate of eighth note divisions. Notes are arpeggiating up 7 semitones each time. A Note Length MIDI device comes after this which is extending the notes to 775 miliseconds. Finally a MIDI Velocity device is adding a little random velocity and driving the velocity values upwards slightly."
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_Arp.png"))
 ```
 
@@ -144,6 +150,7 @@ of other plugins. In the example below we've mapped various parameters to
 controls in the Operator instrument just for illustration.
 
 ```{r}
+#| fig-alt: "Image shows the Live 11 Expression control device. In this device various MIDI inputs like Velocity, Pitchbend and Random values are modulation parameters like filter cutoff, synthesizer release time and filter resonance."
 knitr::include_graphics(path = file.path(here::here(), "images", "Expression_control.png"))
 ```
 
@@ -153,6 +160,7 @@ parameters on the left hand side has a drop-down menu option. Let's look at what
 we can do...
 
 ```{r}
+#| fig-alt: "Image shows that the Expression control device can take a wide range of input controls, which then can modulate various parameters."
 knitr::include_graphics(path = file.path(here::here(), "images", "Expression_control_2.png"))
 ```
 

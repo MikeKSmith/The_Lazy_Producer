@@ -25,6 +25,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r}
+#| fit-alt: "Image shows the routing of MIDI notes between a generator track on the left and four other tracks. The generator track is routing MIDI to the operator instrument in track 2. Track 3 is pulling MIDI information from the generator track in position 1 so the Monitor button is switched to In. The fourth track is taking audio from the Wavetable instrument track but selecting that audio post mixer. The fifth track is recording audio from an external device, but monitor is set to off."
 knitr::include_graphics(path = file.path(here::here(), "images", "Routing.png"))
 ```
 

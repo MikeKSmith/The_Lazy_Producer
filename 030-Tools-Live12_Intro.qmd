@@ -20,6 +20,7 @@ Live 12 now has a feature where certain MIDI devices, audio effects and instrume
 The purple b# button means that the Current Scale setting is being honoured by the MIDI effect, audio effect or instrument.
 
 ```{r}
+#| fig-alt: "The image shows the Current Scale setting for the Ableton Live set. In this case it is set to C Major."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Scale.png"))
 ```
 
@@ -28,12 +29,14 @@ For more on Current Scale settings see <https://help.ableton.com/hc/en-us/articl
 In the "Random" MIDI device below, the purple "Scale Mode" or Scale Awareness button is lit, meaning that random pitch shift will be in the context of the Current Scale setting, so shifting up or down scale degrees, rather than semitones. This is a boon for the Lazy Producer because now you won't need to add MIDI Scale quantizing devices, and also changing the scale in the Current Scale (or through clips), the MIDI devices and instruments will automatically pick up whatever the new Current Scale is.
 
 ```{r}
+#| fig-alt: "The image shows the Random MIDI device which has the purple scale awareness button switched on."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Random_ScaleAware.png"))
 ```
 
 So now we can chain together MIDI Devices as discussed in [Tools - MIDI tools](004-Tools-MIDI_tools.qmd) and used in [Recipe - Doing more with less using MIDI tools and plugins](006-Recipe-MIDI_tools.qmd) and by turning on Scale Awareness we'll pick up whatever the Current Scale setting is. Note in the Chord and Arpeggiator devices that instead of "st" semitones for shifting, it is now labelled "sd" scale degrees. This takes a little getting used to because the scale degrees are added onto the MIDI note value - so +4sd is a fifth above the incoming MIDI note.
 
 ```{r}
+#| fig-alt: "The image shows the Random, Chord, Arpeggiator and Random MIDI devices. Each of these has the purple scale awareness button switched on."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_ScaleAware_MIDI_Devices.png"))
 ```
 
@@ -52,17 +55,8 @@ I would continue to use the Scale MIDI Device for live performance just as a fal
 Live 12 now comes with two new features built into MIDI clip creation: MIDI Generation and MIDI Transformation. MIDI Generation does what the name suggests - provides a range of different methods for generating new MIDI parts: rhythm - which creates sequences of MIDI notes by specifying the density of notes within a certain number of steps and then allowing you to choose permutations of these, stacks - which defines chords, seeds - which generates one or more "voices" of completely random notes (but these could conform to the clip scale setting) within the clip, shape - which generates notes by drawing in a pattern or shape, and Euclidean generators. And because what sits behind these generators is the power of Max for Live, the possibilities open up for a huge range of innovative MIDI generation.
 
 ```{r}
+#| fig-alt: "The image shows the MIDI Generator choices in Ableton Live 12."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDIGenerators.png"))
-```
-
-```{r}
-knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Max_MIDIGenerator.png"))
-```
-
-In Chapter 13 we looked at MIDI Generator devices including Max for Live devices. But having some similar functionality here "baked into" the Live MIDI clip tools puts these tools at the fingertips of anyone with Live 12 Suite.
-
-```{r}
-knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Euclidean_Pattern.png"))
 ```
 
 ### MIDI Transformation
@@ -70,6 +64,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Euclide
 The MIDI Transformation tools includes tools to arpeggiate the notes within the clip, connect - connecting existing notes in the clip with passing tones, ornament - adding additional short notes before the main note, like a flam in drum terms, or mordent in classical notation, quantize - here applying quantisation non-destructively, i.e. you can see the effect of the amount of quantisation on the MIDI notes, recombine - which lets you select notes and then permute these (rotate the order, mirror, shuffle), span - which allows you to change the note lengths by various means, strum - which applies a rhythmic strum pattern to chords, and time warp - which can bend the timing within a bar, so although the bpm clock remains constant, MIDI notes in a clip can trigger with a more fluid timing.
 
 ```{r}
+#| fig-alt: "The image shows the MIDI Transformer choices in Ableton Live 12."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDI_Transformers.png"))
 ```
 
@@ -81,6 +76,7 @@ We'll look at MIDI Generation and Transformation tools a little more in
 In [Process - Note-wise probability](002-Process-Note_wise_probability.qmd) , we looked at Notewise probability - where we can set the probability for each note in a sequence, so we can generate ever changing patterns even from fairly short sequences of MIDI notes. Live 12 has another fantastic feature where we can ***group*** notes together and either select to play ***all*** notes in the group and adjust the probability of that group of notes, or group notes and select to play ***only one*** of the notes in that group. What this means for the Lazy Producer is that you can specify chords that when triggered play all of the notes (probability acts on the ***chord***) or you can nominate a group of notes where the computer picks which note in the group will play, but you can be sure that exactly one of those notes ***will*** be played.
 
 ```{r}
+#| fig-alt: "The image shows the option in Ableton Live 12 MIDI clips to Group Notes and Play One or Play All."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_GroupNotes.png"))
 ```
 

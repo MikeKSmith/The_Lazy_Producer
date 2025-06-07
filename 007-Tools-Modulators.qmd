@@ -36,24 +36,28 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r}
+#| fig-alt: "Image shows the various parameters of a Spitfire Audio Labs plugin which is a third-party plugin."
 knitr::include_graphics(path = file.path(here::here(), "images", "Labs.png"))
 ```
 
 If no parameters are presented when you click this button, you may instead see a "Configure" button in the plugin container. When you click on this button and then open the plugin, whatever you click in the UI interface for the device or instrument will show up as a slider in the container interface (see the images below showing the Zebralette instrument as an example).
 
 ```{r}
+#| fig-alt: "Image shows the third-party Zebralette device. In order to control parameters, the user must click the Configure button"
 knitr::include_graphics(path = file.path(here::here(), "images", "Zebralette_Configure.png"))
 ```
 
 This then opens the UI for the instrument or effect. Now click on various knobs, faders or elements of the instrument or effect UI and Live will capture what has been selected and make these available as items that can be modulated as a list of sliders.
 
 ```{r}
+#| fig-alt: "Image shows the next step of the configure step above. Now the full user interface for the Zebralette instrument is shown."
 knitr::include_graphics(path = file.path(here::here(), "images", "Zebralette.png"))
 ```
 
 For example, if we clicked on the "Phase", "SyncTune" and "WaveWarp" elements in the UI for Zebralette, when we close the UI we'll see the list of these elements available now for automation or for assignment to Macro knob control.
 
 ```{r}
+#| fig-alt: "Image shows that Phase Sync tune and Wave Warp parameters have been selected from the Zebralette instrument"
 knitr::include_graphics(path = file.path(here::here(), "images", "Zebralette_Configured.png"))
 ```
 
@@ -64,6 +68,7 @@ Low Frequency Oscillation (LFO) modulation is one of the oldest forms used in sy
 The Ableton LFO is a really neat tool and illustrates some features that we'll see again and again in other modulators in this section. In the top left of the first LFO here you can see the parameter that is being affected by the LFO. In the screenshot below it's changing the Filter Cutoff in the Instrument Rack to its left. I have changed the minimum and maximum value from 30% to 80% in order to avoid extreme values of filter cutoff. It's often a good idea to tailor the range of values that the LFO is working across as often you want to avoid the extremes. In the bottom left of the device you'll see the Rate at which the LFO is cycling. In this example it's going to go through a full cycle (of the Sine wave) every 6 bars. If you click on the box with three horizontal lines in the top right of the LFO it will open a page (as seen in the second LFO) where you can assign other parameters to be affected by the same LFO. Note that the second LFO here is changing the Depth of the first LFO and the Offset. This means that the first LFO doesn't just cycle predictably from minimum to maximum and back, but instead wobbles in a slightly more interesting way. So one LFO might be too predictable, but using two and using one to modulate the other can bring just enough unpredictability to keep the result interesting.
 
 ```{r}
+#| fig-alt: "Image shows Ableton Live's LFO modulator device. The device is modulating the filter cutoff of a synth instrument with a Sine wave repeating every 6 bars. A second LFO device is modulating Depth and Offset parameters."
 knitr::include_graphics(path = file.path(here::here(), "images", "LFO.png"))
 ```
 
@@ -80,6 +85,7 @@ A basic LFO is a useful modulator, but there are two drawbacks to the standard L
 One trick from modular synthesis is to modulate LFOs with other LFOs, and to modulate those LFOs by other LFOs. (It's LFOs all the way down). I was looking to create an LFO where there wasn't a perceptible pattern or period to its output. So I took a second LFO and changed the depth of the first LFO by the second. I took a third LFO and used it to change the Rate of the second LFO. I then took one of the mapping parameters from the first LFO to change the rate of the third LFO (so feeding back from first LFO back to third). What this gives me then is three LFOs which are all behaving in slightly chaotic and unpredictable ways, even using the standard Sine waveform.
 
 ```{r}
+#| fig-alt: "Image shows three LFO devices. Each of the LFO devices is controlling different aspects of one of the other LFO devices. The resulting cross-modulation results in LFO modulation patterns that are not cyclical but more chaotic in nature."
 knitr::include_graphics(path = file.path(here::here(), "images", "Chaotic_LFOs.png"))
 ```
 
@@ -90,6 +96,7 @@ The [Envelope MIDI device](https://www.ableton.com/en/live-manual/11/max-for-liv
 This allows modular synthesis like control over all kinds of parameters in Live where an incoming MIDI event can trigger changes in ***anything***.
 
 ```{r}
+#| fig-alt: "Image shows the Envelope MIDI device. This device is set up to follow an Attack Decay Sustain and Release pattern modulating the filter cutoff, triggered by every incoming MIDI note event."
 knitr::include_graphics(path = file.path(here::here(), "images", "MIDI_envelope.png"))
 ```
 
@@ -102,6 +109,7 @@ Then, using the usual mapping process you can choose which parameter in Live you
 The devices above (LFO, MIDI Envelope and Envelope Follower) offer modular synthesis like control over pretty much any parameter in Ableton Live. This is one of the strengths of Ableton Live with Max for Live devices over the standard Ableton version - the level of control and the ability to control devices is really unparalleled. Don't forget that you can also get modulators to modulate each other... So an envelope can modulate the amplitude or rate of an LFO and an LFO can then modulate the envelope of another input.
 
 ```{r}
+#| fig-alt: "Image shows the Envelope follower device which is listening to incoming audio and modulating the overdrive of the DS Kick drum synth device. Parameters of the Envelope Follower are set with slow rise, fall and delay so that the effect of the modulation is delayed after the initial transient."
 knitr::include_graphics(path = file.path(here::here(), "images", "Envelope_follower.png"))
 ```
 
@@ -110,6 +118,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Envelope_follo
 Like the envelope follower devices above, there is a [MIDI Shaper](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#shaper-midi) and an [Audio Shaper](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#shaper)device allows you to draw modulation envelopes by specifying nodes across a grid then defining how the modulation should change between the nodes. In the screenshot below the nodes are "Snap"ed to the a grid of four equal divisions. The "Rate" setting defines the length of each division compared to the clock, which can be set according to musical divisions, or in Hz time.
 
 ```{r}
+#| fig-alt: "Image shows the Shaper device as before. Here it is modulating a parameter of a device that is not shown on the image."
 knitr::include_graphics(path = file.path(here::here(), "images", "Shaper.png"))
 ```
 
@@ -124,12 +133,14 @@ The "Random" setting generates a new parameter modulation value ***with every in
 The "Incremental" setting is also useful in that it increments the parameter value by a nominated amount (1% in the screenshot below) with each incoming MIDI note. When it reaches the maximum, it resets to the minimum value, so is effectively a sawtooth LFO but triggered by incoming MIDI rather than periodic in time.
 
 ```{r}
+#| fig-alt: "Image shows the Live 11 Expression Control device."
 knitr::include_graphics(path = file.path(here::here(), "images", "Expression_control.png"))
 ```
 
 One thing to note is that Expression Control can assign the same MIDI control message to multiple parameters. You can click on the "down" arrow next to the MIDI control type and select a different input.
 
 ```{r}
+#| fig-alt: "Image shows the Live 11 Expression control device similar to the previous image, but this time illustrating the various input controls that can drive the modulation."
 knitr::include_graphics(path = file.path(here::here(), "images", "Expression_control_2.png"))
 ```
 
@@ -142,6 +153,7 @@ For a long time, [Dillon Baston's paid Max for Live plugin "Strange Mod"](https:
 It's this combination of smooth and random that makes this my preferred device for modulation. Slowing down the "Speed" of modulation can be useful to map to sound parameters where you want things to evolve smoothly and gradually.
 
 ```{r}
+#| fig-alt: "Image shows Dillon Bastan's Strange Mod device which uses strange attractor chaotic processes to define the position of particles in three dimension space, which provides three lanes of modulation which can be mapped to parameters in another device."
 knitr::include_graphics(path = file.path(here::here(), "images", "Strange_mod.png"))
 ```
 
@@ -154,6 +166,7 @@ Dispatch is massively flexible in how you can define and combine modulation sour
 The vision for Dispatch is that it can be a single modulation device that can send modulation out to parameters throughout an Ableton Live set, rather than having modulators and LFOs scattered throughout the set. If you have the intention of creating generative music where everything is modulated and curated for an extended playback, then Dispatch may be useful to control levels, panning, sends etc. in a single device.
 
 ```{r}
+#| fig-alt: "Image shows Cong Burn's Dispatch device which allows complex combinations of cycling LFO cycles to modulate a huge range od parameters from one device. A 4 by 4 dial grid is used to dial up or down different LFOs."
 knitr::include_graphics(path = file.path(here::here(), "images", "Dispatch.png"))
 ```
 
@@ -166,5 +179,6 @@ We've come across the free [Deviate Max for Live device from Novel Music](https:
 Again, it's worth reviewing [the tutorial video from Novel Music](https://www.youtube.com/watch?v=4WwKGUV2H4I) to learn about all possible features of this device.
 
 ```{r}
+#| fig-alt: "Image shows Novel Music Deviate device, this time showing the Mod tab where the user can define different attributes of modulation processes to modulate parameters."
 knitr::include_graphics(path = file.path(here::here(), "images", "Deviate_map.png"))
 ```

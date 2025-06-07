@@ -29,6 +29,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r}
+#| fig-alt: "The image shows the Melodic Steps device from the Creative Extensions pack. It has sequencing lanes for Octave, Transpose, Length, Velocity and Chance. Within each lane there are sequences of different lengths e.g. 5, 7, 8, 15 and 11 respectively. Each lane has the option to randomise or permute. Scale and root note can be set. Playback can run at half time or double time."
 knitr::include_graphics(path = file.path(here::here(),"images", "Melodic_Steps.png"))
 ```
 
@@ -39,6 +40,7 @@ knitr::include_graphics(path = file.path(here::here(),"images", "Melodic_Steps.p
 In the screenshot below I have specified that all generated notes should be quantised to D minor pentatonic. I have also chosen for notes to be generated automatically every bar (Drop setting to Auto and "1b") and last for at most 4 bars ("Lifetime"). At any one time we'll have at most 6 balls in play ("Voices"). I have also set the note "Quantize" to be eighth notes = 8n. This ensures that the note triggers will not clash with anything else going on in the sequencer that is rhythmic or on the beat. But tuning the "Speed" setting you can tailor the density of notes generated. Adding randomness on direction that the balls are travelling when they are generated "Rnd\>Dir" you can generate additional notes in the scale as the balls bounce off the sides and hit the "notes" on the bottom.
 
 ```{r}
+#| fig-alt: "The image shows the Bouncy Notes MIDI generator from the Ableton Inspired by Nature pack. Coloured balls bounce in the centre panel and in this case the notes that the bounce on are quantised to a minor pentatonic scale. The note range is set to C2 for a range of 23 notes. 6 voices are being triggered by bouncing balls which are quantised to release every bar. Speed, Gravity and Mass can be set, as can the direction and height that balls are dropped from."
 knitr::include_graphics(path = file.path(here::here(),"images", "Bouncy_notes.png"))
 ```
 
@@ -51,6 +53,7 @@ Dr Chaos can store a number of patterns for both the note network (left) and the
 I like Dr Chaos because you can set up networks of notes that will give potentially nice sounding sequences, but randomness can kick in to take you somewhere else instead. It breaks you out of the typical sequencer where the sequence of notes is predictable, even if probability is intervening to stop some notes from happening every time.
 
 ```{r}
+#| fig-alt: "The image shows The Dr. Chaos MIDI generator device from the Ableton Probability Pack. On the left panel there are bars shown the scale degrees and a slider for the amount of chaos. On the right panel there are sliders for root note, octave, velocity and note length, as well as amount of chaos. In the middle are eight notes corresponding to the scale degress selected in the left panel. Lines connect notes showing the network of connections that are possible between notes."
 knitr::include_graphics(path = file.path(here::here(),"images", "Dr_Chaos.png"))
 ```
 
@@ -61,6 +64,7 @@ Euclidean sequencers are commonly found in modular synth systems, and they can p
 I have used the [Euclidean Sequencer Pro](https://www.youtube.com/watch?v=orh9TtREa0w) with non-rhythmic ideas as well. Choose four notes e.g. C3, D4, G3 and A#3/ Bb3. Setting a pattern with more sparse settings for D4 and A#3 can give some interesting patterns and chords. I combined this with the Random and Scales plugins described earlier to add some variation to the generated notes.
 
 ```{r}
+#| fig-alt: "The image shows the Max for Live Euclidean Sequencer Pro MIDI Generator device. There are four lanes of note definition: on the left the Euclidean sequence is defined through the number of steps, events and rotation. On the right the note choice, duration, speed of rotation and swing amounts are defined. In the centre of the device is a graphical representation of the four sequences layed out as events and steps around concentric circles. Clock-face hands rotate around the circles triggering notes when the hands pass the events in each circle."
 knitr::include_graphics(path = file.path(here::here(),"images", "Euclidean_sequencer_pro.png"))
 ```
 
@@ -72,13 +76,14 @@ knitr::include_graphics(path = file.path(here::here(),"images", "Euclidean_seque
 
 Suffice to say that it generates sequences or bursts of MIDI notes that can be used in generative music. That it's available as a free Max for Live device is down to the generosity and genius of [the musician](https://dndrks.bandcamp.com) and [developer Dan Derks.](https://github.com/dndrks) There's a PDF manual available here: <https://llllllll.co/uploads/short-url/q2iJjgbV5JhVNoytmVAuOkVS9f1.pdf> and an accompanying video about the device here: <https://player.vimeo.com/video/408048241>. I think it's best to watch the video about the device, then look at the manual. And I recommend reviewing both, at least a little before you jump in to use the device. Otherwise you might not understand the impact of the different "Rule" values, or what the "Seed" does.
 
-Less Concepts produces MIDI sequences that are less "random" and slightly more melodic. The key items to focus on here are the "Rule" setting, which in the screenshot below is 30, and the "Seed" setting which is 46. Different rules provide different rhythmic / melodic results and the "Seed" setting results in slightly different variations of that rule. For a given Rule and Seed you will always get predictable results, so if you use Less Concepts and fix the starting Rule and Seed you can always guarantee the same result. But one trick I've played with is to use a random LFO to vary the seed every 4 bars (or more) to balance unexpected and predictable, as we've discussed before.
+Less Concepts produces MIDI sequences that are less "random" and slightly more melodic. The key items to focus on here are the "Rule" setting, which in the screenshot below is 30, and the "Seed" setting which is 46. Different rules provide different rhythmic / melodic results and the "Seed" setting results in slightly different variations of that rule. For a given Rule and Seed you will always get predictable results, so if you use Less Concepts and fix the starting Rule and Seed you can always guarantee the same result. But one trick I've played with is to use a random LFO to vary the seed every 4 bars (or more) to balance unexpected and predictable, as we've discussed before. If you need further explanation of what's happening under the hood, I suggest you explore the notes that Dan Derks provides.
 
 The "low" and "high" settings define the range of notes that will be used in the sequence.
 
-Less Concepts is definitely a sequencer that invites exploration, trial and error. Sometimes the results are surprising, other times they fade away and you're left in silence. If you need further explanation of what's happening under the hood, I suggest you explore the notes that Dan Derks provides.
+Less Concepts is definitely a sequencer that invites exploration, trial and error. Sometimes the results are surprising, other times they fade away and you're left in silence. In many ways it's hard to predict what kind of sequence you will get from Less Concepts and since it can be unpredictable I would suggest that if you find a sequence you like, then I fully recommend capturing (recording) that sequence and looping it, rather than relying on Less Concepts to keep repeating it indefinitely.
 
 ```{r}
+#| fig-alt: "The image shows the Max for Live Less Concepts MIDI Generator device. There are selecors for scale and clock division. Low and High note ranges within the scale are defined. There is a dial for Rule and value boxes for rule and seed values. In the middle are two rows of zeros and ones depicting the note sequence for the rule."
 knitr::include_graphics(file.path(here::here(), "images", "Less_concepts.png"))
 ```
 
@@ -91,6 +96,7 @@ In the image below the key part is the left hand end of the Max for Live [Turing
 The Max for Live device shown below includes additional features to map output "voltage" signals (modulation) from the Turing Machine to devices in Live, and to use the Gate information from the Turing machine to trigger devices like drum machines. These extensions to functionality are still driven by the same essential random processes and "locking in" sequences discussed above.
 
 ```{r}
+#| fig-alt: "The image shows the Max for Live Turing Machine MIDI Generator device. On the left of the device is a dial which shows Random at 12 noon position, Lock on the extreme right of the dial range and Lock times two on the extreme left of the dial. There is a length selector, a clock division selector and a velocity selector. Finally a range of MIDI notes can be selected and the image shows a range from A2 to A5. In the middle are Volts and Pulses sections mimicing the functionality of the original modular device."
 knitr::include_graphics(path = file.path(here::here(), "images", "Turing_Machine.png"))
 ```
 
@@ -105,6 +111,7 @@ For Live 12 Philip Meyer has developed a Max for Live [Turing Machine](https://i
 This technique is sometimes employed in modular synths if a more traditional sequencer is not being used, as all you need to drive it is a base LFO and a "sample and hold" random generator. In modular synths too, pitch sequencing and gate sequencing are often separate processes and it's nice to have that option here too in the MIDI Waves device.
 
 ```{r}
+#| fig-alt: "The image shows the Midi Waves MIDI Generator device by Ned Rush and Isotonik Studios. The main feature of the device is a representation of a piano keyboard where a range of notes defines the upper and lower note range used in the device. There are four tabs marked Pitch, Velocity, Duration and Gate. In the image the Pitch tab is showing. There are two main areas defining LFO modulation with buttons and a dial are used to define whether the LFO is free running or synced, what frequency the LFO is running at. On the left there is a window showing a red LFO and the blue sample and hold pattern. On the right is a frequency modulating LFO which can affect the main Pitch LFO through the FM amount dial."
 knitr::include_graphics(path = file.path(here::here(),"images", "MIDI_waves.png"))
 ```
 
@@ -113,6 +120,7 @@ knitr::include_graphics(path = file.path(here::here(),"images", "MIDI_waves.png"
 The [Ableton Max for Live pack and device with Coldcut - Midivolve](https://www.ableton.com/en/packs/midivolve/) Pack is a paid plugin for Ableton Suite. It works by randomly adding variation to a MIDI sequence within the device OR it can import a MIDI clip and then create variations using that clip as the original material. That variation can act on MIDI notes, velocity, duration, density (how many notes are playing) as well as being able to map two different parameters in Live. The "A" column defines which parameters experience variation on the next "Evolve!" trigger (in the screenshot below this is set to automatically evolve all parameters once the clip has played through 3 times). If the "I" column is checked then the last evolution acts as the basis for the next variation change. Note that variation amount can be specified via "Ammt" and this is separate to "Chance" of the variation happening. Chance is the probability of the value being varied / evolved ***for each note / step.*** This opens up a large number of possibilities to vary input sequences but to balance the unexpected evolution with a repeat of the evolved pattern before the next change is made i.e. let the listener get used to each chance - being predictable, if only for a finite period. Variation can be constrained through the Scale settings.
 
 ```{r}
+#| fig-alt: "The image shows the Midivolve MIDI generator device from the Midivolve by Coldcut Ableton pack. In the centre of the device is a representation of the incoming or generated MIDI pattern. With a light blue bar moving across this clip. There are tabs for Pitch, Velocity, Duration, Map1 and Map2. On the far left are Mode and Scale tabs where the scale can be set. The Mode defines how the device interprets the MIDI ntoes. On the right are the parameters of the MIDI notes that will evolve through the random processes, how much the randomness will affect the parameter and the chance of this happening. Check boxes show that all parameters are being affected. There are other check boxes for inheriting (cumulatively evolving) the parameters. In this case these are not selected. Patterns or parameters can be nudged. Along the bottom of the device there are buttons to evolve the pattern, or to automatically evolve after a nominated number of bars, in this case 3 bars.You can apply clock division selections, swing, fill, sync, reverse, double and half time etc. There is also an option to export the clip or reset the pattern."
 knitr::include_graphics(path = file.path(here::here(),"images", "Midivolve.png"))
 ```
 
@@ -129,6 +137,7 @@ Polymath is a four track sequencer. Each track specifies notes, octaves, velocit
 . This allows you to specify elements of randomness to be included, but also a "Lock" slider that allows you to lock in to a sequence that you like and "turn off" further introduction of randomness.
 
 ```{r}
+#| fig-alt: "The image shows The Sweet 16 clock and Polymath MIDI sequencer devices from Novel Music. Sweet 16 features four distinct clocks which can run at different divisions, repeat, etc. The clocks are assigned letter values so that they can be used in different ways in the Polymath sequencer. As with other Novel Music devices there is a slider marked Lock which allows you to introduce additional variation in the sequencer or lock to the current pattern. The Polymath sequencer shows a long (32 by 12) grid. White notes are placed into the sequence. A Red bar denotes the current place in the sequence. Clock inputs to drive the sequencer are on the left hand side. In the middle panel there are dials for selecting the pitch offset of the sequence. A slider under this selects whether the scale one or scale two notes are quantising the pattern. Below this buttons enable which of the four incoming clocks are moving the sequence forward. There are tabs for Notes, Octave, Velocity, Duration, Strum, Ratchets, Bend and Mod. There are Deviate controls on the far right."
 knitr::include_graphics(path = file.path(here::here(),"images", "Polymath.png"))
 ```
 
@@ -139,6 +148,7 @@ One of the great strengths of Polymath and the SEEDS pack is that many of the el
 SEEDS also includes a very useful concept and plugin that can send output to and from various devices and clocks. The "Hub" plugin receives and sends MIDI information from one track to another. So it's possible to have generative plugins on one track which send MIDI information to a completely different track, which can then be processed independently. Similarly you can assign the output of a sequence to a "HUB" (e.g. Hub A) and then use the notes of that sequence to offset the notes in another sequence, as is shown in the image below.
 
 ```{r}
+#| fig-alt: "The image shows the same Sweet 16 and Polymath devices. Sequence II is offsetting the pitch of Sequence I in this instance."
 knitr::include_graphics(path = file.path(here::here(),"images", "Polymath_offset.png"))
 ```
 

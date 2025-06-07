@@ -368,7 +368,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Probability_Drumkit_HH.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Probability_Drumkit_HH.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Probability_Drumkit_HH.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Probability_Drumkit_HH.png" class="img-fluid figure-img" alt="The image shows a MIDI clip of sixteen Hihat notes. Chance is set to 75%."></a></p>
 </figure>
 </div>
 </div>
@@ -379,7 +379,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Probability_Drumkit_KickSnare.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Probability_Drumkit_KickSnare.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Probability_Drumkit_KickSnare.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Probability_Drumkit_KickSnare.png" class="img-fluid figure-img" alt="The image shows a MIDI drum pattern. Some notes have chance set to 100% while some are set to lower probabilities."></a></p>
 </figure>
 </div>
 </div>
@@ -393,7 +393,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/NoteWiseProbability_Full_pattern.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/NoteWiseProbability_Full_pattern.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/NoteWiseProbability_Full_pattern.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/NoteWiseProbability_Full_pattern.png" class="img-fluid figure-img" alt="The image shows a MIDI clip with a melodic pattern. There is a lower sequence of longer notes with high velocity and a higher pitched sequence of notes with lower velocity and lower probability."></a></p>
 </figure>
 </div>
 </div>
@@ -404,7 +404,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/NoteWiseProbability_Lower_notes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/NoteWiseProbability_Lower_notes.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/NoteWiseProbability_Lower_notes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/NoteWiseProbability_Lower_notes.png" class="img-fluid figure-img" alt="The image shows the same sequence as the one above, but the higher notes are muted."></a></p>
 </figure>
 </div>
 </div>
@@ -414,7 +414,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/NoteWiseProbability_Higher_notes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/NoteWiseProbability_Higher_notes.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/NoteWiseProbability_Higher_notes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/NoteWiseProbability_Higher_notes.png" class="img-fluid figure-img" alt="The image shows the same sequence as the initial melodic pattern but this time the lower notes are muted."></a></p>
 </figure>
 </div>
 </div>
@@ -429,7 +429,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Note-wise_probability.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Note-wise_probability.png" class="img-fluid figure-img"></a></p>
+<p><a href="images/Note-wise_probability.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Note-wise_probability.png" class="img-fluid figure-img" alt="A stack of MIDI notes is shown in an Ableton Live MIDI clip. Notes range from D2 to D4. Each note lasts for at least 4 bars. Notes present are D, F, G, A, C in different octaves."></a></p>
 </figure>
 </div>
 </div>
@@ -866,7 +866,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","loop":false,"openEffect":"zoom","descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
