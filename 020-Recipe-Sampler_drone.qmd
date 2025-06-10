@@ -1,4 +1,4 @@
-# Recipe - Audio clip or Sampler into effects
+# Recipe - Audio clip or Sampler into effects {#020-Recipe-Sampler_drone}
 
 ```{r}
 #| echo: false
@@ -14,7 +14,7 @@ of effects - either using Return channels or via individual audio effects with
 the sampler output routed into each. Effectively we're reusing an idea we've
 used before, but starting with Sampler as the audio generator. You could
 alternatively use the audio output from 
-[PaulStretch](016-Tools-PaulStretch.qmd)
+[PaulStretch](#016-Tools-PaulStretch)
 as the drone generator. The
 benefit of using Sampler is that we can add MIDI effects to (randomly) change
 the pitch of the sample so that it doesn't have to be consistent from one loop
@@ -41,9 +41,9 @@ from. This prevents the sound from being too predictable with each new note.
 ```
 
 4.  Using techniques described in 
-[Tools - Creative use of audio effects](015-Tools-Audio_Effects.qmd)
+[Tools - Creative use of audio effects](#015-Tools-Audio_Effects)
  and used in the
-[Recipe - Making a drone using some audio generators and effects](017-Recipe-Audio_generators_drone.qmd)
+[Recipe - Making a drone using some audio generators and effects](#017-Recipe-Audio_generators_drone)
  set up a network of audio effects on effect
 sends / Return channels.
 

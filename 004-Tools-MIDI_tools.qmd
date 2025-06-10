@@ -1,4 +1,4 @@
-# Tools - MIDI tools: chords and added notes
+# Tools - MIDI tools: chords and added notes {#004-Tools-MIDI_tools}
 
 There are many [MIDI tools and devices](https://www.ableton.com/en/live-manual/11/live-midi-effect-reference/#live-midi-effect-reference) within Ableton Live that will help manipulate MIDI notes - shifting pitch, adding random pitch deviation, applying arpeggiation (cycling through notes in a chord), adding additional notes to an incoming note to make a chord, changing the length of the played MIDI note, as well as manipulating incoming MIDI control messages - using the modulation wheel to control expression, changing velocity, modulating other devices based on velocity, MPE and other control messages.
 
@@ -73,7 +73,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Cascading_note
 ## Probability Gate
 
 The [MightM4L (MML) Probability Gate](https://maxforlive.com/library/device/6982/mm4l-probability-gate#:~:text=Device%20Details&text=Probability%20keeps%20things%20interesting%2C%20and,that%20extra%20bit%20of%20variation.) is a Max for Live MIDI device which allows you to set a probability (in %) and it then allows that proportion of notes through the device. This can be a very useful device to use with "busy" MIDI generators like the Turing Machine (see
-[Tools - MIDI Generators](012-Tools-MIDI_Generators.qmd)
+[Tools - MIDI Generators](#012-Tools-MIDI_Generators)
 ) which are constantly generating 1/8th or 1/16th notes. Use of a probability gate "thins out" that stream of output.
 
 

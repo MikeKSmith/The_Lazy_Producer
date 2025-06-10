@@ -1,4 +1,4 @@
-# Process - Unsynced loops
+# Process - Unsynced loops {#021-Process-Unsynced_loops}
 
 ```{r}
 #| echo: FALSE
@@ -54,7 +54,7 @@ even - break out of the 2, 4, 8, 16 bar patterns - then it'll take
 longer for them to repeat.
 
 We actually used loops of different lengths in 
-[Recipe - Changing chords](001-Recipe-Changing_Chords.qmd).
+[Recipe - Changing chords](#001-Recipe-Changing_Chords).
 
 ## I'm in my prime
 
@@ -108,5 +108,5 @@ tap into this idea.
 ## Let's ROTATE
 
 In discussion of Euclidean Sequencers in 
-[Tools - MIDI Generators](012-Tools-MIDI_Generators.qmd) 
+[Tools - MIDI Generators](#012-Tools-MIDI_Generators) 
 we talked about how you can rotate a sequence so that it doesn't start at 12 o'clock position (or on the first beat of the sequence).  The same is true of loops. To break out of the predictable sequence you could choose to jump the loop start point to a different position. Sometimes small things like this will unveil new ideas, new rhythms which may be sufficient to keep interest.

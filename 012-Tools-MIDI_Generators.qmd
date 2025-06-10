@@ -1,14 +1,14 @@
-# Tools - MIDI Generators
+# Tools - MIDI Generators {#012-Tools-MIDI_Generators}
 
 The MIDI tools discussed in 
-[Tools - MIDI tools](004-Tools-MIDI_tools.qmd)
+[Tools - MIDI tools](#004-Tools-MIDI_tools)
 are useful to transform, augment and add notes to existing MIDI sequences, but we also need to generate those sequences in the first place. Ableton Live Suite and Max for Live plugins offer a few options to generate sequences of notes.
 
 ::: callout-tip
 ## Key idea
 
-You can play or program in sequences to be used as the basis for generative music, and we did exactly this for [Recipe - Changing chords](001-Recipe-Changing_Chords.qmd)
-. But to create melodic or note sequences you may also wish to use a MIDI note generator like those discussed below. All of these devices will create MIDI note sequences - all of them can use random probability to generate note sequences that constantly change or evolve. As we have discussed in the section [Process - Balancing the unexpected and the predictable](009-Process-Balance_unexpected_and_predictable.qmd)
+You can play or program in sequences to be used as the basis for generative music, and we did exactly this for [Recipe - Changing chords](#001-Recipe-Changing_Chords)
+. But to create melodic or note sequences you may also wish to use a MIDI note generator like those discussed below. All of these devices will create MIDI note sequences - all of them can use random probability to generate note sequences that constantly change or evolve. As we have discussed in the section [Process - Balancing the unexpected and the predictable](#009-Process-Balance_unexpected_and_predictable)
  too much randomness can be difficult for the listener to engage with. Fortunately, most of these plugins allow you to tailor the amount of randomness or to slowly evolve.
 
 ::: 
@@ -20,7 +20,7 @@ In Ableton Live 11 Suite, there are many plugins that will generate note sequenc
 [Melodic Steps](https://www.youtube.com/watch?v=ev2GgU1D8jw) (Max for Live sequencer in the [Creative Extensions pack](https://www.ableton.com/en/packs/creative-extensions/)) is a sequencer that disentangles note pitch, octave, length, velocity and probability. This allows you to sequence these attributes separately. You can define the length of each sequence separately, so you can have all sequences with the same length for predictable MIDI sequences, or change the length of one or more to produce more elaborate patterns. Having sequences that are even numbers of steps will bring you back to repetition faster than having sequence lengths that are based on prime numbers (remember common factors from your elementary arithmetic lessons?). Note that each lane has the option to "roll the dice" and add randomness, either a little (score 2 dice) or a lot (score 5 dice). Also, note that the "Playback" setting can choose to play back at twice the speed or half the speed.
 
 Melodic Steps has been somewhat superseded by the newer [SQ sequencer](https://www.youtube.com/watch?v=1obXGz-Zfa8) from the [Live 12 Sequencer Pack](https://www.ableton.com/en/packs/sequencers). See 
-[Tools - Live 12 Sequencers](031-Tools-Live12_Sequencers.qmd)
+[Tools - Live 12 Sequencers](#031-Tools-Live12_Sequencers)
 .
 
 ```{r}
@@ -95,7 +95,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Turing_Machine
 ```
 
 For Live 12 Philip Meyer has developed a Max for Live [Turing Machine](https://isotonikstudios.com/product/turing-machine/?srsltid=AfmBOor_T0esjLa-jI_hMBqYTUuz_1TAYSXRbD5u_57BQk_dJ-Yr4ZTt) Generator device (<https://www.youtube.com/watch?v=fwBIVaAaWog>) that you can use to create patterns of notes. More on this in 
-[Tools - Live 12 Sequencers](031-Tools-Live12_Sequencers.qmd)
+[Tools - Live 12 Sequencers](#031-Tools-Live12_Sequencers)
 .
 
 ## MIDI Waves
@@ -125,7 +125,7 @@ The Mididvolve pack also comes with some very interesting presets curated by Col
 In the screenshot below I'm using the "Sweet 16" clock module from SEEDS which provides four different clocks which can be used by Polymath. Each clock proceeds at a different pace, all driven by Ableton Live's master clock i.e. Ableton provides the "1/16th" pulse that drives the clocks. Each clock is allocated a label - here "W", "X", "Y", and "Z". This helps to identify the clock drivers in other devices. The clocks can be used individually, but they can also be combined to move the sequencer forward in interesting ways.
 
 Polymath is a four track sequencer. Each track specifies notes, octaves, velocity, duration, strum, ratchet, bend (pitch bend) and mod. The sequence length is set for the track. If you look to the right the "Deviate" setting allows you to add some random probability to each element of the sequence as we discussed in 
-[Tools - Modulators](007-Tools-Modulators.qmd)
+[Tools - Modulators](#007-Tools-Modulators)
 . This allows you to specify elements of randomness to be included, but also a "Lock" slider that allows you to lock in to a sequence that you like and "turn off" further introduction of randomness.
 
 ```{r}

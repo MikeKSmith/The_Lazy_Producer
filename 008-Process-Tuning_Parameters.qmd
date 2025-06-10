@@ -1,4 +1,4 @@
-# Process - Tuning Parameters
+# Process - Tuning Parameters {#008-Process-Tuning_Parameters}
 
 This is actually a key concept, so ***DON'T SKIP THIS BIT***. It's the
 difference between a random collection of sounds that wobble about randomly,

@@ -1,4 +1,4 @@
-# Tools - Live 12 Sequencers
+# Tools - Live 12 Sequencers {#031-Tools-Live12_Sequencers}
 
 Live Suite has had Max for Live sequencer devices for some time, but with Live
 12.1 some of those have now been included in a new Sequencers pack. The

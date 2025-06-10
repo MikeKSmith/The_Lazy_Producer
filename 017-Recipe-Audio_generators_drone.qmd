@@ -1,4 +1,4 @@
-# Recipe - Making a drone using some audio generators and effects
+# Recipe - Making a drone using some audio generators and effects {#017-Recipe-Audio_generators_drone}
 
 ```{r}
 #| echo: FALSE
@@ -27,7 +27,7 @@ LFO, but for now, let's keep the drone from this to be quite static.
 
 3.  Next let's add a real odd-ball: the Cellular Degradation plugin by Dillon
 Bastan. As described in 
-[Tools - Audio Generators](014-Tools-Audio_Generators.qmd)
+[Tools - Audio Generators](#014-Tools-Audio_Generators)
 , this is a weird
 instrument combining 5 different stereo FM oscillators, and it can make some
 VERY weird noises. That's what we're going to do here. Normally you "draw" into

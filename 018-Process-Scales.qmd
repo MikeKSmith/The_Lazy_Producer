@@ -1,7 +1,7 @@
-# Process - Using Scales
+# Process - Using Scales {#018-Process-Scales}
 
 As discussed in 
-[Tools - MIDI tools](004-Tools-MIDI_tools.qmd)
+[Tools - MIDI tools](#004-Tools-MIDI_tools)
 , scale quantisation is a widely
 used tool to harness the random note values from MIDI Generators. It
 provides *just enough* quantising to turn something unlistenable into
@@ -137,9 +137,9 @@ And my skill set.
 ## Selections of notes - chords
 
 In 
-[Recipe - Changing chords](001-Recipe-Changing_Chords.qmd)
+[Recipe - Changing chords](#001-Recipe-Changing_Chords)
  and
-[Process - Note-wise probability](002-Process-Note_wise_probability.qmd)
+[Process - Note-wise probability](#002-Process-Note_wise_probability)
  I talked about stacking notes in a
 chord and then applying probability. I mentioned that you might want to
 choose notes that would work well together, so that regardless of which

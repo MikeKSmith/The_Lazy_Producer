@@ -1,4 +1,4 @@
-# Tool - Random sound design with Instrument Racks
+# Tool - Random sound design with Instrument Racks {#024-Tool-Random_Sound_Design}
 
 ```{r}
 #| echo: FALSE
@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ::: callout-tip
 ## Key idea
 
-Using the ideas presented in [Process - Tuning Parameters](008-Process-Tuning_Parameters.qmd) we can create Instrument Racks and Effect Racks where a single click of the Randomize button will generate new sounds, new effects that we might never think to program from scratch. Ableton Live Racks (when you Group an instrument) allow you to randomise the macro controls. You can select certain macro knobs to exclude from randomisation and through the Macro mapping control you can specify ranges of values for the macro knobs - which in turn will define the range of values in which to randomise. By curating the macro ranges and device settings you can create an almost infinite set of new sounds and effects simply by pressing the Rand button.
+Using the ideas presented in [Process - Tuning Parameters](#008-Process-Tuning_Parameters) we can create Instrument Racks and Effect Racks where a single click of the Randomize button will generate new sounds, new effects that we might never think to program from scratch. Ableton Live Racks (when you Group an instrument) allow you to randomise the macro controls. You can select certain macro knobs to exclude from randomisation and through the Macro mapping control you can specify ranges of values for the macro knobs - which in turn will define the range of values in which to randomise. By curating the macro ranges and device settings you can create an almost infinite set of new sounds and effects simply by pressing the Rand button.
 :::
 
 ## First - Group, define Macro parameters and ranges

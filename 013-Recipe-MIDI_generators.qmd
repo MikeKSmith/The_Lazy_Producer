@@ -1,11 +1,11 @@
-# Recipe - Using MIDI generators
+# Recipe - Using MIDI generators {#013-Recipe-MIDI_generators}
 
 In this recipe we're going to use a MIDI generator tool - Euclidean Sequencer
 Pro - to generate the initial MIDI information which is then fed into additional
 tracks using techniques discussed in 
-[Tools - MIDI tools](004-Tools-MIDI_tools.qmd)
+[Tools - MIDI tools](#004-Tools-MIDI_tools)
  and
-[Process - Routing MIDI and Audio](005-Process-Routing.qmd)
+[Process - Routing MIDI and Audio](#005-Process-Routing)
 .
 
 ```{r}
@@ -33,7 +33,7 @@ offset of the sequences to add additional unexpectedness if that's helpful.
 ```
 
 2.  We're now going to use many of the techniques previously seen in
-[Tools - MIDI tools](004-Tools-MIDI_tools.qmd)
+[Tools - MIDI tools](#004-Tools-MIDI_tools)
 , where we take the output from the Euclidean sequencer
 and then route it to a number of different synth engines while also applying
 some additional MIDI tool processing.
@@ -84,7 +84,7 @@ Experiment with where these take the incoming MIDI information from, and how you
 can manipulate the MIDI further using a variety of MIDI transformation devices.
 
 6.  You could also experiment with other MIDI generators discussed in
-[Tools - MIDI Generators](012-Tools-MIDI_Generators.qmd)
+[Tools - MIDI Generators](#012-Tools-MIDI_Generators)
 , such as Bouncy Notes, Turing Machine, Less
 Concepts, etc. The MIDI generating tools provide the raw stream of MIDI notes,
 but the effects here are used to provide the texture around that sequence.

@@ -1,4 +1,4 @@
-# Tools - Live 12 Overview: MIDI and compositional tools
+# Tools - Live 12 Overview: MIDI and compositional tools {#030-Tools-Live12_Intro}
 
 During the process of writing this book, Ableton released Live 12. With Live 12 there are a whole host of improvements and additions which make the life of someone making generative music a whole lot easier. In this chapter we'll look at the new compositional and MIDI tools. In the next chapter we'll look at new sequencer tools. In subsequent chapters we'll look at updates to modulation, and some specific Transformer and Generator tools.
 
@@ -31,7 +31,7 @@ In the "Random" MIDI device below, the purple "Scale Mode" or Scale Awareness bu
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Random_ScaleAware.png"))
 ```
 
-So now we can chain together MIDI Devices as discussed in [Tools - MIDI tools](004-Tools-MIDI_tools.qmd) and used in [Recipe - Doing more with less using MIDI tools and plugins](006-Recipe-MIDI_tools.qmd) and by turning on Scale Awareness we'll pick up whatever the Current Scale setting is. Note in the Chord and Arpeggiator devices that instead of "st" semitones for shifting, it is now labelled "sd" scale degrees. This takes a little getting used to because the scale degrees are added onto the MIDI note value - so +4sd is a fifth above the incoming MIDI note.
+So now we can chain together MIDI Devices as discussed in [Tools - MIDI tools](#004-Tools-MIDI_tools) and used in [Recipe - Doing more with less using MIDI tools and plugins](#006-Recipe-MIDI_tools) and by turning on Scale Awareness we'll pick up whatever the Current Scale setting is. Note in the Chord and Arpeggiator devices that instead of "st" semitones for shifting, it is now labelled "sd" scale degrees. This takes a little getting used to because the scale degrees are added onto the MIDI note value - so +4sd is a fifth above the incoming MIDI note.
 
 ```{r}
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_ScaleAware_MIDI_Devices.png"))
@@ -74,11 +74,11 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDI_Tr
 ```
 
 We'll look at MIDI Generation and Transformation tools a little more in 
-[Tools - Live 12 MIDI Generation and Transformation](033-Tools-Live12_MIDI_Generation_Transformation.qmd).
+[Tools - Live 12 MIDI Generation and Transformation](#033-Tools-Live12_MIDI_Generation_Transformation).
 
 ## Note probability
 
-In [Process - Note-wise probability](002-Process-Note_wise_probability.qmd) , we looked at Notewise probability - where we can set the probability for each note in a sequence, so we can generate ever changing patterns even from fairly short sequences of MIDI notes. Live 12 has another fantastic feature where we can ***group*** notes together and either select to play ***all*** notes in the group and adjust the probability of that group of notes, or group notes and select to play ***only one*** of the notes in that group. What this means for the Lazy Producer is that you can specify chords that when triggered play all of the notes (probability acts on the ***chord***) or you can nominate a group of notes where the computer picks which note in the group will play, but you can be sure that exactly one of those notes ***will*** be played.
+In [Process - Note-wise probability](#002-Process-Note_wise_probability) , we looked at Notewise probability - where we can set the probability for each note in a sequence, so we can generate ever changing patterns even from fairly short sequences of MIDI notes. Live 12 has another fantastic feature where we can ***group*** notes together and either select to play ***all*** notes in the group and adjust the probability of that group of notes, or group notes and select to play ***only one*** of the notes in that group. What this means for the Lazy Producer is that you can specify chords that when triggered play all of the notes (probability acts on the ***chord***) or you can nominate a group of notes where the computer picks which note in the group will play, but you can be sure that exactly one of those notes ***will*** be played.
 
 ```{r}
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_GroupNotes.png"))
