@@ -330,6 +330,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#tools---audio-generators" id="toc-tools---audio-generators" class="nav-link active" data-scroll-target="#tools---audio-generators">Tools - Audio Generators</a>
   <ul class="collapse">
   <li><a href="#pinging-resonantors-resonant-filters" id="toc-pinging-resonantors-resonant-filters" class="nav-link" data-scroll-target="#pinging-resonantors-resonant-filters">Pinging resonantors / resonant filters</a></li>
+  <li><a href="#echo-noise-and-resonance." id="toc-echo-noise-and-resonance." class="nav-link" data-scroll-target="#echo-noise-and-resonance.">Echo Noise and resonance.</a></li>
   <li><a href="#tree-tone" id="toc-tree-tone" class="nav-link" data-scroll-target="#tree-tone">Tree Tone</a></li>
   <li><a href="#harmonic-drone-generator" id="toc-harmonic-drone-generator" class="nav-link" data-scroll-target="#harmonic-drone-generator">Harmonic Drone Generator</a></li>
   <li><a href="#cellular-degradation" id="toc-cellular-degradation" class="nav-link" data-scroll-target="#cellular-degradation">Cellular Degradation</a></li>
@@ -383,6 +384,19 @@ Key idea
 </div>
 </div>
 </section>
+<section id="echo-noise-and-resonance." class="level2">
+<h2 class="anchored" data-anchor-id="echo-noise-and-resonance.">Echo Noise and resonance.</h2>
+<p>The Echo device has a Noise generator in the Character tab. This generator was suggested by David Shooter (Guerilla Biscuits). With very short Echo times (approximately 30 miliseconds) and a high level of Noise within the circuit we’re trying to get the Echo to essentially self-oscillate. The Feedback governs how long the noise lasts in the system. As above we’re using Resonators here to take the noisy output from Echo and use that to “ping” the resonators. In the example below the resonators are tuned in octaves and fifths. You could alternatively use Corpus to provide a different resonance, but the same general idea applies - create a noise source and then have that excite resonators.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Echo_Noise_Generator.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Echo_Noise_Generator.png" class="img-fluid figure-img" alt="The image shows an effect rack which generates noise from the Noise Character setting in the Ableton Echo device, modulated using an LFO and then sent through a Resonator to add pitched harmonics. The Delay on the Echo uses Time rather than sync mode and the time is very short - 29ms. This should make the Echo get close to self-resonating and makes the Noise generator within the Echo almost self-oscillate The LFO affects the Morph parameter of the Noise circuit. The Resonator has the root note selected from the Macro knobs, and resonates in fifths and octaves."></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
 <section id="tree-tone" class="level2">
 <h2 class="anchored" data-anchor-id="tree-tone">Tree Tone</h2>
 <p>From the <a href="https://www.ableton.com/en/packs/inspired-nature/#?item_type=max_for_live">Inspired by Nature pack</a> by Dillon Bastan the <a href="https://www.youtube.com/watch?v=_mk7qyzEcCQ">Tree Tone</a> generator is primarily a resonant drone generator but with some additional bells and whistles. Literally. The “Tree” in the central panel has “branches” that define resonators / resonant frequencies. Thicker, longer branches have lower pitch and louder volume. Thinner branches have higher pitch but lower volume. In the image below the “Tree” has fewer large branches and so would be expected to have some lower drone sounds. The position of the branches to left or right is their position in panning. The “Noise” amount and filtering determines how much these resonators are excited by the noise. The “Wind” provides additional movement and modulation to the system - affecting volume and filtering. The “Rain” setting “pings” the resonators as with a “raindrop” (or mallet). More “Rain” and “Speed” will ping the resonators providing chimes. The “Algo/Mix” setting will affect the overall pitch of the system - lower values being warmer or darker, higher values brighter. Tuning the system will ensure that frequencies and “pings” from raindrops conform to a scale. “Inharmnic” will add some inharmonic frequencies or more “clangerous” sounds.</p>
@@ -392,7 +406,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Tree_tone.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Tree_tone.png" class="img-fluid figure-img" alt="The image shows the Tree Tone device from Ableton's Inspired by Nature pack. On the left is a panel with dials setting the audio generation processes - White noise generation with Noise level, Filter cutoff and Wind speed. Here the Filter cutoff is at approximately 2kHz and Wind speed at 50%. Below that is the pinging Rain generator. Rain is set to 100% with Speed set to 19%. The right hand panel sets the pitch information. Scale is on here and set to minor pentatonic. Root note or Tonic is set to C. Inharmonic content is set to 20%. Below that are dials for Decay, Pan and Gain. The middle panel displays a graphical representation of something looking like a root system with a main branch with smaller branches coming off it. This represents the harmonic content of the generator. Six different harmonic generators have small icons along the botton showing different branch and root systems."></a></p>
+<p><a href="images/Tree_tone.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Tree_tone.png" class="img-fluid figure-img" alt="The image shows the Tree Tone device from Ableton's Inspired by Nature pack. On the left is a panel with dials setting the audio generation processes - White noise generation with Noise level, Filter cutoff and Wind speed. Here the Filter cutoff is at approximately 2kHz and Wind speed at 50%. Below that is the pinging Rain generator. Rain is set to 100% with Speed set to 19%. The right hand panel sets the pitch information. Scale is on here and set to minor pentatonic. Root note or Tonic is set to C. Inharmonic content is set to 20%. Below that are dials for Decay, Pan and Gain. The middle panel displays a graphical representation of something looking like a root system with a main branch with smaller branches coming off it. This represents the harmonic content of the generator. Six different harmonic generators have small icons along the botton showing different branch and root systems."></a></p>
 </figure>
 </div>
 </div>
@@ -406,7 +420,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Harmonic_Drone_Generator.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Harmonic_Drone_Generator.png" class="img-fluid figure-img" alt="The image shows the Harmonic Drone Generator from the Ableton Drone Lab pack. On the left of the device is a section defining the pitch of the generator. In this case it is set to C4 with Just intonation and an FM ratio of 0.25 with amount of 27%. Then there is a Tempo dial set to 14% with density dial below set to 80%. Glide time is set to 3 seconds. In the middle are 8 generators set to different scale degrees with the option to fine tune these through adjusting an offset in Hz or through minus, equal and plus buttons. Each drone can be panned using a slider on the bottom. To the right is an overall volume dial and Suboscillator gain slider."></a></p>
+<p><a href="images/Harmonic_Drone_Generator.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/Harmonic_Drone_Generator.png" class="img-fluid figure-img" alt="The image shows the Harmonic Drone Generator from the Ableton Drone Lab pack. On the left of the device is a section defining the pitch of the generator. In this case it is set to C4 with Just intonation and an FM ratio of 0.25 with amount of 27%. Then there is a Tempo dial set to 14% with density dial below set to 80%. Glide time is set to 3 seconds. In the middle are 8 generators set to different scale degrees with the option to fine tune these through adjusting an offset in Hz or through minus, equal and plus buttons. Each drone can be panned using a slider on the bottom. To the right is an overall volume dial and Suboscillator gain slider."></a></p>
 </figure>
 </div>
 </div>
@@ -423,7 +437,7 @@ Key idea
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="images/Cellular_Degradation.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/Cellular_Degradation.png" class="img-fluid figure-img" alt="The image shows Dillon Bastan's Cellular Degradation device and his Strange Mod modulator. In Cellular Degradation there is a left panel defining generation rate in Hz or note division i.e. 32nd notes. A selector for number of voices and settings for probability of Born and Survive of each particle. Below Born are two value boxes. The left one is set to 2 the right set to 3. The Survive value boxes are set to 3 and 4. In the middle is a graphical representation of the birth and death processes generated. Each cell defines the amount of various FM synthesis parameters with ranges shown in the panel on the right. To the right of the device are options to add your own sample, pick a random sample, tune the pitch in semitones and control the stereo width. Finally in the bottom right is a Gain dial."></a></p>
+<p><a href="images/Cellular_Degradation.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Cellular_Degradation.png" class="img-fluid figure-img" alt="The image shows Dillon Bastan's Cellular Degradation device and his Strange Mod modulator. In Cellular Degradation there is a left panel defining generation rate in Hz or note division i.e. 32nd notes. A selector for number of voices and settings for probability of Born and Survive of each particle. Below Born are two value boxes. The left one is set to 2 the right set to 3. The Survive value boxes are set to 3 and 4. In the middle is a graphical representation of the birth and death processes generated. Each cell defines the amount of various FM synthesis parameters with ranges shown in the panel on the right. To the right of the device are options to add your own sample, pick a random sample, tune the pitch in semitones and control the stereo width. Finally in the bottom right is a Gain dial."></a></p>
 </figure>
 </div>
 </div>
@@ -854,7 +868,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false,"selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"loop":false,"descPosition":"bottom","selector":".lightbox","openEffect":"zoom","closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

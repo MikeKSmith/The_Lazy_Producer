@@ -2,8 +2,13 @@
 
 by Mike K Smith
 
-This version of the book is 0.990
+This version of the book is 0.993
 
-Rendered on 2025-05-16.
+```{r}
+#| echo: false
+ Date <- Sys.Date()
+```
 
-[![Image by Danielle Navarro - https://djnavarro.net](images/Album_Cover.png){fig-alt="Album cover for Mike K Smith's album \"The Lazy Producer\". The cover shows a generative art image created by Danielle Navarro which has two concentric circles white on indigo and black with many white slashes and whispers. The image has four quadrants. Near the centre are three V-shapes" fig-align="center"}](https://mikeksmith.bandcamp.com)
+Rendered on `{r} Date`.
+
+[![Image by D.J. Navarro - https://djnavarro.net](images/Album_Cover.png){fig-alt="Album cover for Mike K Smith's album \"The Lazy Producer\". The cover shows a generative art image created by Danielle Navarro which has two concentric circles white on indigo and black with many white slashes and whispers. The image has four quadrants. Near the centre are three V-shapes" fig-align="center"}](https://mikeksmith.bandcamp.com)

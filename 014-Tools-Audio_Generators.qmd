@@ -36,6 +36,15 @@ In our case, instead of using feedback with filters, we can exploit Ableton Live
 knitr::include_graphics(path = file.path(here::here(), "images", "Resonators.png"))
 ```
 
+## Echo Noise and resonance.
+
+The Echo device has a Noise generator in the Character tab. This generator was suggested by David Shooter (Guerilla Biscuits). With very short Echo times (approximately 30 miliseconds) and a high level of Noise within the circuit we're trying to get the Echo to essentially self-oscillate. The Feedback governs how long the noise lasts in the system. As above we're using Resonators here to take the noisy output from Echo and use that to "ping" the resonators. In the example below the resonators are tuned in octaves and fifths. You could alternatively use Corpus to provide a different resonance, but the same general idea applies - create a noise source and then have that excite resonators.
+
+```{r}
+#| fig-alt: "The image shows an effect rack which generates noise from the Noise Character setting in the Ableton Echo device, modulated using an LFO and then sent through a Resonator to add pitched harmonics. The Delay on the Echo uses Time rather than sync mode and the time is very short - 29ms. This should make the Echo get close to self-resonating and makes the Noise generator within the Echo almost self-oscillate The LFO affects the Morph parameter of the Noise circuit. The Resonator has the root note selected from the Macro knobs, and resonates in fifths and octaves."
+knitr::include_graphics(path = file.path(here::here(), "images", "Echo_Noise_Generator.png"))
+```
+
 ## Tree Tone
 
 From the [Inspired by Nature pack](https://www.ableton.com/en/packs/inspired-nature/#?item_type=max_for_live) by Dillon Bastan the [Tree Tone](https://www.youtube.com/watch?v=_mk7qyzEcCQ) generator is primarily a resonant drone generator but with some additional bells and whistles. Literally. The "Tree" in the central panel has "branches" that define resonators / resonant frequencies. Thicker, longer branches have lower pitch and louder volume. Thinner branches have higher pitch but lower volume. In the image below the "Tree" has fewer large branches and so would be expected to have some lower drone sounds. The position of the branches to left or right is their position in panning. The "Noise" amount and filtering determines how much these resonators are excited by the noise. The "Wind" provides additional movement and modulation to the system - affecting volume and filtering. The "Rain" setting "pings" the resonators as with a "raindrop" (or mallet). More "Rain" and "Speed" will ping the resonators providing chimes. The "Algo/Mix" setting will affect the overall pitch of the system - lower values being warmer or darker, higher values brighter. Tuning the system will ensure that frequencies and "pings" from raindrops conform to a scale. "Inharmnic" will add some inharmonic frequencies or more "clangerous" sounds.

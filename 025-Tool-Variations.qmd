@@ -1,0 +1,14 @@
+# Tool - Variations
+
+```{r}
+#| echo: FALSE
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+::: callout-tip
+## Key idea
+
+Variations are a way of capturing the state of an instrument, drum or effect rack in Ableton Live. By taking snapshots of the settings of macro knobs it becomes easy to capture the state of the rack and recall later. Tools exist that allow you to morph between variation states - with gradually changing macro states - or to use different variation states to evolve new sounds using the "parent" variation states as the starting point.
+:::
+
+## Macro Snapshot Variations
