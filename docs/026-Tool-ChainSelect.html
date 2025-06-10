@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./022-Recipe-Fibonacci_loops.html" rel="next">
-<link href="./020-Recipe-Sampler_drone.html" rel="prev">
+<link href="./030-Tools-Live12_Intro.html" rel="next">
+<link href="./025-Tool-Variations.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./021-Process-Unsynced_loops.html">Process - Unsynced loops</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./026-Tool-ChainSelect.html">Tool - Chain Select</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -253,7 +253,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./021-Process-Unsynced_loops.html" class="sidebar-item-text sidebar-link active">
+  <a href="./021-Process-Unsynced_loops.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Process - Unsynced loops</span></a>
   </div>
 </li>
@@ -283,7 +283,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./026-Tool-ChainSelect.html" class="sidebar-item-text sidebar-link">
+  <a href="./026-Tool-ChainSelect.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Tool - Chain Select</span></a>
   </div>
 </li>
@@ -339,13 +339,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#process---unsynced-loops" id="toc-process---unsynced-loops" class="nav-link active" data-scroll-target="#process---unsynced-loops">Process - Unsynced loops</a>
+  <li><a href="#tool---chain-select" id="toc-tool---chain-select" class="nav-link active" data-scroll-target="#tool---chain-select">Tool - Chain Select</a>
   <ul class="collapse">
-  <li><a href="#set-phases-to-stunning" id="toc-set-phases-to-stunning" class="nav-link" data-scroll-target="#set-phases-to-stunning">Set phases to stunning</a></li>
-  <li><a href="#easy-implementation-in-the-daw" id="toc-easy-implementation-in-the-daw" class="nav-link" data-scroll-target="#easy-implementation-in-the-daw">Easy implementation in the DAW</a></li>
-  <li><a href="#im-in-my-prime" id="toc-im-in-my-prime" class="nav-link" data-scroll-target="#im-in-my-prime">I’m in my prime</a></li>
-  <li><a href="#fibonacci-and-the-golden-ratio" id="toc-fibonacci-and-the-golden-ratio" class="nav-link" data-scroll-target="#fibonacci-and-the-golden-ratio">Fibonacci and the Golden Ratio</a></li>
-  <li><a href="#lets-rotate" id="toc-lets-rotate" class="nav-link" data-scroll-target="#lets-rotate">Let’s ROTATE</a></li>
+  <li><a href="#limitation" id="toc-limitation" class="nav-link" data-scroll-target="#limitation">Limitation</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -356,13 +352,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="process---unsynced-loops" class="level1">
-<h1>Process - Unsynced loops</h1>
-<blockquote class="blockquote">
-<p>“Around the world” - Daft Punk</p>
-</blockquote>
-<p>Everyone loves a good loop. If you get a good idea of a pattern or something that lasts 8 bars then you can let that good thing just loop around and around and around (the world). A large part of The Lazy Producer’s arsenal depends on loops and repetition - after all we’re balancing predictable and unexpected, right? But if there’s something in your brain right now that’s saying “No, 8 bar loops repeated infinitely really <strong><em>is</em></strong> the ultimate Lazy Producing…” then I’d have to agree with you. So how do we break away from the tyranny of the 8 bar loop? Arrangements? Verse-Chorus-Middle 8 structures?</p>
-<p>Before you abandon the ideas of generative music (which doesn’t really lend itself well to arrangements, verses or choruses), there’s a trick up our sleeve which is to take our loops and make one of them shorter or longer than the other.</p>
+<section id="tool---chain-select" class="level1">
+<h1>Tool - Chain Select</h1>
+<p>In <a href="./025-Tool-Variations.html">Tools - Variations</a> we looked at ways to capture different sound presets using Macro Variations. But what if you want to not just have variations <strong><em>within</em></strong> a device, but swap between completely different devices? Then you need to create a rack with multiple device chains and use different ways to select which of these chains to use. This is a handy tip for The Lazy Producer (and the non-Lazy Producer) but also The Lazy Performer. By having multiple devices in one Rack you can easily change between sounds using one Macro knob, or even just with different velocities or keyboard ranges.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -373,47 +365,26 @@ Key idea
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Making loops different lengths combines the predictable: each loop contains the same music idea each time - with the unexpected: the combination of those musical ideas each time the loop cycles creates something new and unheard.</p>
+<p>Having multiple devices in one Rack (be it Instruments, Effects, or Drums) allows you to quickly switch between sounds, or combine sounds and effects. You can layer instruments sounds, combining quick attack sounds with longer evolving sounds, or split those sounds across a MIDI keyboard with bass sounds at the lower range and lead sounds at the top of the range. You can use one Macro Knob to evolve an effect, combining and layering effects. This opens up huge flexibility to design sounds that evolve and change both in productions of generative music, but also in performance. Combining with the Macro Variation snapshots we’ve just looked at opens up the ability to have a huge range of sounds at your fingertips.</p>
 </div>
 </div>
-<section id="set-phases-to-stunning" class="level2">
-<h2 class="anchored" data-anchor-id="set-phases-to-stunning">Set phases to stunning</h2>
-<p>Steve Reich and other minimalist composers worked with musical phrases that each performer played a number of times. Sometimes the number of repetitions was at the discretion of the performer, sometimes governed by the number of times the performer could play it in one breath, sometimes the composer worked with actual tape loops of different lengths. The concept is that while each part is repeated, the repeated parts move out of phase with each other and so create new sounds, rhythms and harmonies. No two performances would be the same, since the number of repetitions isn’t fixed.</p>
-</section>
-<section id="easy-implementation-in-the-daw" class="level2">
-<h2 class="anchored" data-anchor-id="easy-implementation-in-the-daw">Easy implementation in the DAW</h2>
-<p>Creating loops within the DAW is easy. Almost <strong><em>too</em></strong> easy. But often our “default” is to make those loops the same length. So the same ideas cycle round. But if we make the loops unequal lengths then it’ll take longer for those ideas to sync up. And if the loop lengths are not even - break out of the 2, 4, 8, 16 bar patterns - then it’ll take longer for them to repeat.</p>
-<p>We actually used loops of different lengths in <a href="./001-Recipe-Changing_Chords.html">Recipe - Changing chords</a>.</p>
-</section>
-<section id="im-in-my-prime" class="level2">
-<h2 class="anchored" data-anchor-id="im-in-my-prime">I’m in my prime</h2>
-<p>If you remember back to your basic maths from school, you may remember that you can break down most numbers into their prime components: 2, 3, 5, 7, 11, 13, 17, 19 etc. What this means for us as Lazy Producers is that if your loop is a prime number of beats / bars long then it’ll take MUCH longer for those loops to sync back up. If you have a 4 bar loop and an 8 bar loop then it only takes two repetitions of the 4 bar loop before you hear the same music idea again. If you have a 3 bar loop and a 5 bar loop then it’ll take 15 repetitions before you hear the same idea again. This means then that even for two musical ideas we get a lot of variety when you combine the loops even though both loops are repeating fairly often and fairly quickly. When you combine this idea across more than two loops you can get huge amounts of varying material with very little chance of repetition.</p>
-</section>
-<section id="fibonacci-and-the-golden-ratio" class="level2">
-<h2 class="anchored" data-anchor-id="fibonacci-and-the-golden-ratio">Fibonacci and the Golden Ratio</h2>
-<p>Primes are nice for preventing repetition in the grand scheme of things, but there are other options. Again, back to early maths and you might remember Fibonacci sequence where each number is the sum of the previous two numbers, starting with 0 and 1. So the first ten numbers are: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34. Notice that there are some prime numbers in there (2, 3, 5, 13) but also some even numbers (8, 34).</p>
-<p>If you take the Fibonacci sequence and layout squares with their sides the length of the Fibonacci number, you get what is known as the “Golden Ratio” where the sizes of the squares grow in relation to the ratio of the previous two parts. There is a familiar pattern also if you connect arcs - quarter of a circle with radius equal to the size of the square. We often see this pattern in nature - in the pattern of seeds or petals on a plant.</p>
+<p>It’s worth <a href="https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks/#chain-list">learning about Instrument and Effect Racks</a> for Production and Performance. Racks take an input (MIDI or audio) and then route <strong><em>the same input</em></strong> through each of the chains in the Rack. There is a mixer stage which allows you to mix different levels of each chain to the output. For Instrument Racks the input will be MIDI, but in each chain within the Rack you can have different instruments, apply different MIDI devices before instruments etc. so that the chain can be set up to produce quite complex MIDI parts for each instrument. Similarly in Audio Effect Racks the same audio input can be sent to chains of different Audio Effect devices, and like the Instrument Racks you can mix the output levels to achieve the desired sound as output. The key feature of Racks is the ability to select which chain receives the input using a Chain Selector. The different chains within the Rack can be set up to crossfade between them, or have a hard cutover. Chain Select can also be automated or modulated within Live so that the producer can control which chain is receiving the input, and it can be assigned to a Macro knob for manual control. For Instrument Racks the Chain Select can also be assigned to messages such as Velocity - so that layers of sound can be built and controlled expressively purely by how hard the key or button is struck. It can also be assigned to Key or Note value so that different areas of the keyboard can control different sounds.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure">
-<p><a href="images/Fibonacci_Spiral.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="By Romain - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=114415511"><img src="images/Fibonacci_Spiral.png" class="img-fluid figure-img" alt="The image shows the fibonacci spiral."></a></p>
-<figcaption>By Romain - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=114415511</figcaption>
+<p><a href="images/Instrument_Rack.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Instrument_Rack.png" class="img-fluid figure-img" alt="The image shows an Instrument Rack. Three different instruments - Collision, Tension and Electric Piano are defined in separate chains. The chains occupy the range 0-127 but overlap with crossfade. The chain selector is assigned to a Macro knob."></a></p>
 </figure>
 </div>
 </div>
 </div>
-<p>I’m not going to pretend that it has mystical properties (it’s only maths after all) but the combination of primes, even and multiples in the Fibonacci sequence might be the ultimate sweet spot of combining things that occasionally repeat and things that take a long time to repeat.</p>
-<p>Suffice to say, it’s worth playing with some of these ideas to break out of the predictable loop and make something that perhaps could retain interest for a long period. In our next Recipe section we’re going to tap into this idea.</p>
-</section>
-<section id="lets-rotate" class="level2">
-<h2 class="anchored" data-anchor-id="lets-rotate">Let’s ROTATE</h2>
-<p>In discussion of Euclidean Sequencers in <a href="./012-Tools-MIDI_Generators.html">Tools - MIDI Generators</a> we talked about how you can rotate a sequence so that it doesn’t start at 12 o’clock position (or on the first beat of the sequence). The same is true of loops. To break out of the predictable sequence you could choose to jump the loop start point to a different position. Sometimes small things like this will unveil new ideas, new rhythms which may be sufficient to keep interest.</p>
+<p>For The Lazy Producer we can also assign modulation to the Chain Selector by applying an LFO to the Macro knob so that the sounds produced (for the same MIDI input) can vary either in predictable or unpredictable ways. We could alternatively control via the Expression Control MIDI device so that other MIDI messages (or randomness) can decide which sound is heard from the different chains.</p>
+<p>This brings enormous scope for different timbres and effects, even for consistent inputs (MIDI or audio). If you combine the Chain Selector Macro knob with other Macro settings you can imagine that a vast array of different sonic outcomes are possible through automation and modulation.</p>
+<section id="limitation" class="level3">
+<h3 class="anchored" data-anchor-id="limitation">Limitation</h3>
+<p>If you are a very astute Lazy Producer you might imagine (or hope!) that you could specify different MIDI generators in each chain and then use automation and randomness to pick between generated sequences, like a sequential switch in a modular synth. Unfortunately the key to what I have said before is <strong><em>inputs</em></strong>. Because Instrument Racks pass <strong><em>inputs</em></strong> through each chain, the Chain Selector will not mute the generated output sequence from chains that are not selected.</p>
 
 
-<div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-1">By Romain - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=114415511</span>
-</div>
 </section>
 </section>
 
@@ -827,18 +798,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./020-Recipe-Sampler_drone.html" class="pagination-link  aria-label=" recipe="" -="" audio="" clip="" or="" sampler="" into="" effects"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Recipe - Audio clip or Sampler into effects</span>
+      <a href="./025-Tool-Variations.html" class="pagination-link  aria-label=" tool="" -="" variations"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Tool - Variations</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./022-Recipe-Fibonacci_loops.html" class="pagination-link" aria-label="Recipe - Using the Fibonacci sequence to create loops (after DivKid)">
-        <span class="nav-page-text">Recipe - Using the Fibonacci sequence to create loops (after DivKid)</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./030-Tools-Live12_Intro.html" class="pagination-link" aria-label="Tools - Live 12 Overview: MIDI and compositional tools">
+        <span class="nav-page-text">Tools - Live 12 Overview: MIDI and compositional tools</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"openEffect":"zoom","selector":".lightbox","descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

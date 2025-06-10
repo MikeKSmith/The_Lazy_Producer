@@ -5,6 +5,8 @@
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+In [Tools - Random Sound Design](024-Tool-Random_Sound_Design.qmd) we looked at ways to generate new sounds using randomisation. We briefly mentioned how you could capture sounds you liked using Variations. In this chapter we'll look a bit more at Variations (snapshots of Macro settings) and some tools for morphing between Variations and tools for coming up with new Variations.
+
 ::: callout-tip
 ## Key idea
 
@@ -12,3 +14,36 @@ Variations are a way of capturing the state of an instrument, drum or effect rac
 :::
 
 ## Macro Snapshot Variations
+
+When you create an Instrument, MIDI, Drum or Effect Rack you can assign parameters within that rack to Macro knobs, which then allow you to change certain elements of the Rack without having to dig into individual devices within the Rack. This makes it much easier and quicker to change things - keeping controls you need to change at your fingertips while hiding complexity and things you won't need to change within their respective devices. You can have as many or as few Macro knobs as you like, and you can define ranges of control for the Macro knobs, as we saw in the previous chapter, and you can assign many parameters to a single Macro knob - for example https://brianfunk.com/blog/one-knob.
+
+If you click on the "Camera" or "Snapshot" icon on the left of the Rack, you'll open the Macro Variations view. If you then change some Macro knob settings you can click on the camera icon next to the Variation you are currently in to overwrite the settings, or you can click on the "New" button to save that Variation which then allows you to quickly recall those settings later. This is effectively your own preset within the Device.
+
+```{r}
+#| fig-alt: "The image shows Macro variations view for an Instrument Rack. There is a captured Variation called Initial and three other Variations numbered 1 to 3."
+knitr::include_graphics(path = file.path(here::here(), "images", "Macro_Variations.png"))
+```
+
+## Morphing between Variation states
+
+[Dillon Bastan has created a device called Markov Variations](https://dillonbastan.com/store/maxforlive/index.php?product=markov-variations)that allows you to randomly switch between Macro Variation snapshots and morph between settings. This changes the sounds but by morphing between them you can slowly evolve sounds from one preset to another. The device allows you to define transition probabilities between Variations - so you can define that the Initial Variation snapshot will most likely transform to Variation 1, may also transform to Variation 2 but with lower probability and will never transform to Variation 3. This creates a network of transition probabilities called a Markov Chain. \
+
+This device works best if the Macro Variation snapshots are all within the same general type of sound - plucks, arps, pads, etc. But it allows you to add variation into your generative track by making the choice of sound somewhat unpredictable.\
+
+```{r}
+#| fig-alt: "The image shows the device Markov Variations sitting to the right of an Instrument Rack with four Variations defined. In the left panel the user defines where the parent rack is that defines the Macro Variations (Left, Right, or Parent). Below this is a panel defining the transition triggers - whether manual, Auto (with probability) or Synced to a clock interval. In the middle panel is a graphical representation of the transition probability network. On the right if the Transition Chances where you can define the probabilities of moving from one state to another. Below this are sliders and number boxes to define Default variation, Bias (in %), Spray (in %), Transition Glide time (in seconds or tempo synced), and Random Glide (in %)."
+knitr::include_graphics(path = file.path(here::here(), "images", "Markov_Variations.png"))
+```
+
+## Evolving Variations
+
+[Dillon Bastan has also created a device that will create new Macro Variations based on the characteristics of "parent" Variations - Natural Selection](https://dillonbastan.com/store/maxforlive/index.php?product=natural-selection-p), allowing you to evolve sounds that are related to the "parent" Variations, but can also include some random mutations to introduce the unexpected.
+
+```{r}
+#| fig-alt: "The image shows the Natural Selection P device sitting to the right of an Instrumet Rack with four Variations defined. The device has a Collect button in the central upper banner, a drop down selector for where the Instrument Rack is situated - before, after or parent. The next dropdown defines which parameters to include in the evolution - Macros, Macros and Parameters or both Macros and Parameters. The Family Tree tab selects Variations to be used in the New Generation. These Variations are denoted by blobs of different shapes. "
+knitr::include_graphics(path = file.path(here::here(), "images", "Natural_Selection_P.png"))
+```
+
+The idea in this device is that you can select "Parent" Variations that you want the next Generation to evolve from, add chaos or mutation and then create a new generation of Variations. This approach to [Tools - Random Sound Design](024-Tool-Random_Sound_Design.qmd) is slightly less "Random" than simply clicking on the Random button in the Macro knobs area and may be more useful if you are looking for something that is "like" another Variation but not quite.
+
+[Another device in the Natural Selection devices bundle takes a similar approach but using parameters of a synthesis engine to create new sound design ideas.](https://dillonbastan.com/store/maxforlive/index.php?product=natural-selection-s)

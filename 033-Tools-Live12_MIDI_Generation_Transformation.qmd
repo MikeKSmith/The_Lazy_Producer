@@ -1,6 +1,6 @@
 # Tools - Live 12 MIDI Generation and Transformation
 
-During the process of writing this book, Ableton released Live 12. With Live 12 there are a whole host of improvements and additions which make the life of someone making generative music a whole lot easier. In this chapter we'll look at the new compositional and MIDI tools. In the next chapter we'll look at new sequencer tools. In subsequent chapters we'll look at updates to modulation, and some specific Transformer and Generator tools.
+With Live 12 Ableton introduced new tools to generate and transform MIDI within clips. We've had a brief look at these in [Tools - Live12 Overview](030-Tools-Live12_Intro.qmd). In this chapter we'll dig a bit deeper and see how they might be used to develop new ideas, or to tweak existing MIDI ideas. This goes a little beyond the concepts of "generative music" but since the tools are more generally applicable and add variation, they are worth exploring.
 
 ```{r}
 #| echo: FALSE
