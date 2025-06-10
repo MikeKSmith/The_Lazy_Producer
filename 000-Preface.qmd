@@ -81,3 +81,13 @@ You can find my music here:
 <https://mikeksmith.bandcamp.com>
 
 <https://soundcloud.com/mikeksmith>
+
+## Acknowledgements
+
+Thanks to Rachel K Collier and her KnobTwister Community (Patreons) who have asked questions, been curious, spurred me on and encouraged me to write this book in the first place.
+
+Thanks also to producers and educators like Simon Stokes, ELPHNT, Guerilla Biscuits, Eonlake, Divkid, Ned Rush, Omri Cohen, Dillon Bastan, Philip Meyer, Loopop, Seed to Stage, Side Brain, Dan Derks, Red Means Recording, Misty Jones, Andrew Huang, Oora whose tutorials, explanations and insights have inspired and influenced   many of the techniques discussed here.
+
+Thanks to Ableton and developers of Max for Live devices who provide the material with which we play and get inspired.
+
+Thanks to Libby Heeren for invaluable help in late stage wrangling of Quarto.
