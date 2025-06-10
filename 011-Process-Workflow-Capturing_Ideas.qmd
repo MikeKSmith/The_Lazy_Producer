@@ -1,4 +1,4 @@
-# Process - Workflow: capturing generative ideas
+# Process - Workflow: capturing generative ideas {#011-Process-Workflow-Capturing_Ideas}
 
 Setting up an Ableton Live set with lots of MIDI generators, MIDI manipulation
 and transformation, using that generated MIDI to create a nice collage of sounds
@@ -68,7 +68,7 @@ processes readily available.
 I like to have separate tracks for MIDI generators. These are the "starting
 point" of a process. They will be generating MIDI notes through random
 processes, patterns or 
-[Follow Actions](003-Process-Follow_Actions.qmd)
+[Follow Actions](#003-Process-Follow_Actions)
 . I like to keep the generators separate
 from the transformation MIDI tracks, because you may want to send the ***same***
 generated MIDI notes into several transformation chains. This will lead to a
@@ -145,7 +145,7 @@ without having to undo many actions.
 
 Since the MIDI input clips with Follow Actions have probability on each note
 (see 
-[Recipe - Changing chords](001-Recipe-Changing_Chords.qmd)
+[Recipe - Changing chords](#001-Recipe-Changing_Chords)
 for more information) then there's a chance that
 one or two of the generated MIDI chords will have only two notes (down to the
 probability choices). By rendering and listening back, I can assess whether I 

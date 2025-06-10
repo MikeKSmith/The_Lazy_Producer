@@ -1,7 +1,7 @@
-# Tools - Modulators
+# Tools - Modulators {#007-Tools-Modulators}
 
 The MIDI tools discussed in 
-[Tools - MIDI tools](004-Tools-MIDI_tools.qmd)
+[Tools - MIDI tools](#004-Tools-MIDI_tools)
 are useful to transform,
 augment and add notes to existing MIDI sequences, but we can also automate
 changing the value of pretty much ***anything*** in Live via modulation. [Max
@@ -15,7 +15,7 @@ the values using a mouse or controller knob.
 ## Key idea
 
 Modulation keeps sounds interesting. In 
-[Process - Balancing the unexpected and the predictable](009-Process-Balance_unexpected_and_predictable.qmd)
+[Process - Balancing the unexpected and the predictable](#009-Process-Balance_unexpected_and_predictable)
  we discuss how repetition balances randomness. This also applies to the sounds you use in your track. Modulation of synth sounds through LFOs and other means is available within Ableton Live instruments, often with some very creative ways of achieving that - such as the Wavetable instrument's modulation matrix. But sometimes you want to apply modulation to a parameter where an LFO is not immediately available for example to the macro knob of an Instrument or Effect Rack. 
 
 Having options where the modulation isn't obviously cyclical also helps as it adds to the "unpredictable" and helps engage listener's attention for longer. You could use LFOs with different cycle lengths (in bars or different rates in Hz) or you could use LFOs which are not periodic but which "wander".
@@ -160,7 +160,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Dispatch.png")
 ## Deviate
 
 We've come across the free [Deviate Max for Live device from Novel Music](https://www.novelmusic.org/m4l/deviate) in 
-[Tools - MIDI tools](004-Tools-MIDI_tools.qmd)
+[Tools - MIDI tools](#004-Tools-MIDI_tools)
 , but it also offers random modulation control on parameters. You can dial up randomness at various levels in Deviate, and also control the amount of randomness which is very useful in generative music. But it also has a key feature - the ability to monitor parameter deviations in its "MEMORY" and then "Lock" in patterns if you find something you like - this mirrors functionality in Turing Machine modules that exist in the modular synthesis world.
 
 Again, it's worth reviewing [the tutorial video from Novel Music](https://www.youtube.com/watch?v=4WwKGUV2H4I) to learn about all possible features of this device.

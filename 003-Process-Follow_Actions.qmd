@@ -1,4 +1,4 @@
-# Process - Follow Actions
+# Process - Follow Actions {#003-Process-Follow_Actions}
 
 Ableton has had ["Follow Actions"](https://www.ableton.com/en/live-manual/11/launching-clips/#follow-actions) within Session View clips for a ***long*** time. Follow Actions allow you to perform a variety of actions at the end of a clip or after a given number of bars and beats. Follow actions are generally used where there are a number of clips within a track, allow the performer or Lazy Producer to automate moving from one clip to another. This allows you to determine a sequence of events - moving from one clip to another or playing the clip again, etc. There are a number of really useful uses for follow actions for live performance, but it also has incredible uses for making generative music. Follow Actions help govern the amount of variability in our generative sequences - whether there is a definite sequence of events that happen predictably, or whether there is an element of chance introduced.
 
@@ -45,7 +45,7 @@ The Legato option is also useful. If the Follow Action is applied in one clip, a
 ## Follow Action probabilities
 
 By default Live will perform the specified follow action with 100% probability i.e. it's guaranteed to happen. But there is a second option where the action is performed with a given probability, and with 100% minus that probability it will perform a different action (probabilities MUST add to 100%). For example, it could do action 1 with 70% probability and action 2 with 30% probability. Like the coin-flipping in Note-wise probability that we talked about in the previous chapter 
-[Process - Note-wise probability](002-Process-Note_wise_probability.qmd)
+[Process - Note-wise probability](#002-Process-Note_wise_probability)
 , here we have a ***biased*** coin, determining what happens next. With 50% - 50% Ableton flips the coin and chooses which action to take next. With 70% - 30% the left-hand action will happen more, but there's still a chance of the right-hand action happening.
 
 The automation and probability here allows a HUGE range of possible journeys through a sequence of clips. If you introduce a 50% Play Next probability on the clips in the Changing Chords recipe, then it will stretch out the changes across clips as some of them will loop and continue playing the same chord for longer.

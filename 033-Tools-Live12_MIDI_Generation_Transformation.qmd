@@ -1,4 +1,4 @@
-# Tools - Live 12 MIDI Generation and Transformation
+# Tools - Live 12 MIDI Generation and Transformation {#033-Tools-Live12_MIDI_Generation_Transformation}
 
 During the process of writing this book, Ableton released Live 12. With Live 12 there are a whole host of improvements and additions which make the life of someone making generative music a whole lot easier. In this chapter we'll look at the new compositional and MIDI tools. In the next chapter we'll look at new sequencer tools. In subsequent chapters we'll look at updates to modulation, and some specific Transformer and Generator tools.
 
@@ -60,7 +60,7 @@ The beauty of Max for Live with Ableton Live Suite is the ability to create thes
 
 ### Generator - MDD Snake
 
-In [Tools - MIDI Generators](012-Tools-MIDI_Generators.qmd)
+In [Tools - MIDI Generators](#012-Tools-MIDI_Generators)
 we mentioned the MDD Snake Max for Live MIDI generator
 (https://maxforlive.com/library/device/10422/mdd-snake-midi-generator)
 . This is a great sequencer modelled after the Make Noise René modular sequencer. The device gives you a four by four grid of notes, gates and velocities and it cycles through each of these in a given pattern. The default plays each row before moving on to the next row. But you can also choose to play through the notes column by column, in diagonals, and a variety of other patterns. Each pattern can play through forward, backward, cycle forward and back etc. 
@@ -76,7 +76,7 @@ https://www.ableton.com/en/blog/maxime-dangles-unlikely-connections/.
 
 ### Generator - Turing Machine
 
-We've also discussed the Turing Machine in  [Tools - MIDI Generators](012-Tools-MIDI_Generators.qmd). Turing Machines create random sequences of notes and this MIDI Generator Max for Live device by Philip Meyer is essentially a little Turing Machine that will create a clip full of notes for you. Because the Turing Machine produces random note patterns, it's worth experimenting and generating a few patterns until you find one that works in context. Philip Meyer explains the device in more detail in this video: https://youtu.be/_LpA66peATg?si=-KgyOTrVt_sbTgv6&t=2191.
+We've also discussed the Turing Machine in  [Tools - MIDI Generators](#012-Tools-MIDI_Generators). Turing Machines create random sequences of notes and this MIDI Generator Max for Live device by Philip Meyer is essentially a little Turing Machine that will create a clip full of notes for you. Because the Turing Machine produces random note patterns, it's worth experimenting and generating a few patterns until you find one that works in context. Philip Meyer explains the device in more detail in this video: https://youtu.be/_LpA66peATg?si=-KgyOTrVt_sbTgv6&t=2191.
 
 ```{r}
 knitr::include_graphics(path = file.path(here::here(), "images", "MIDI_Generator_TuringMachine.png"))
