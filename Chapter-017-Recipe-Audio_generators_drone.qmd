@@ -1,0 +1,81 @@
+# Recipe - Making a drone using some audio generators and effects {#Chapter-017-Recipe-Audio_generators_drone}
+
+```{r}
+#| echo: FALSE
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+In this recipe we'll make a simple drone track using a variety of audio generators.
+
+1.  Start by placing a Tree Tone audio generator on a track. I have chosen to
+ensure that the output is pitched and that it conforms to the C minor pentatonic
+scale. This will help integrate the sounds later.
+
+```{r}
+    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_TreeTone.png"))
+```
+
+2.  On another track, add a Harmonic Generator (from the Drone Lab pack). This
+is an instrument combining sine-wave drones oscillating at fixed pitches
+relative to the Root note. We can experiment later with this to see how changes
+to pitches or FM Ratio change the resulting sound, and maybe automate these via
+LFO, but for now, let's keep the drone from this to be quite static.
+
+```{r}
+    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_HarmonicGenerator.png"))
+```
+
+3.  Next let's add a real odd-ball: the Cellular Degradation plugin by Dillon
+Bastan. As described in 
+[Tools - Audio Generators](#Chapter-014-Tools-Audio_Generators)
+, this is a weird
+instrument combining 5 different stereo FM oscillators, and it can make some
+VERY weird noises. That's what we're going to do here. Normally you "draw" into
+the main panel to make cells "alive" and then the cellular birth and death
+process retains these or allows them to "die". To automate that process we're
+using another favourite Dillon Bastan plugin, the Strange Mod modulation device.
+We can then use its chaotic modulation processes to automate "drawing" the X and
+Y values. This should produce some very strange buzzy textures.
+
+```{r}
+    knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_CellularDegradation.png"))
+```
+
+4.  At this point I added a simple bass root note drone (on C1) using the Drift
+instrument. This helps anchor our drone.
+
+Since we want to balance the unexpected and predictable, here the bass drone
+note, and Harmonic Generator provide the "anchor" around which we can place Tree
+Tone (as a mildy chaotic process) and the Cellular Degradation as a VERY chaotic
+process.
+
+5.  From here, feel free to add effects on Return channels (Reverb and Delay are
+good options) and / or apply resonant processing within the individual tracks -
+like adding the Resonator or Spectral Resonator plugins. Experiment. See what
+works. I found that putting a resonator on the Cellular Degradation track and
+tuning additional resonance pitches within the C minor pentatonic scale helped
+to "tame" the weirdness, if that's what you'd prefer. Another decent option (in
+addition or instead) might be to drive the Cellular Degradation track using a
+Saturator or distortion.
+
+```{r}
+      knitr::include_graphics(path = file.path(here::here(), "images", "Recipe5_CellularDegradation_Resonator.png"))
+```
+
+6.  Sometimes, if using an audio generator it helps to add a compressor
+(occasionally a multiband compressor). This will reduce the peaks and can also
+bring up some of the quieter moments (if you increase the make up gain). If
+you're using additional processing like a resonator, this is also helpful since
+it may "ping" the resonator with additional sounds, while avoiding very loud
+moments that can catch the listeners ear.
+
+7.  Press play. Sit back and relax.
+
+------------------------------------------------------------------------
+
+You can hear my version of this track here: [https://soundcloud.com/mikeksmith/5_audio_generator_drone/s-Nw7nwUKDhTg](https://soundcloud.com/mikeksmith/5_audio_generator_drone/s-Nw7nwUKDhTg?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&si=14f7efead4c14501a4eac7ae8b892aed&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing){.uri}
+
+```{r}
+#| results: asis
+htmltools::includeHTML(path = file.path(here::here(), "HTML","Recipe5-VariousAudioGenerators.html"))
+```

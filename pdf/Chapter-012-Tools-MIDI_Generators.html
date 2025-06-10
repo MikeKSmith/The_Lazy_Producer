@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>13&nbsp; Tools - MIDI Generators – The Lazy Producer - Starter ideas for generative music</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Chapter-013-Recipe-MIDI_generators.html" rel="next">
+<link href="./Chapter-011-Process-Workflow-Capturing_Ideas.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-485d01fc63b59abcd3ee1bf1e8e2748d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chapter-012-Tools-MIDI_Generators.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Tools - MIDI Generators</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">The Lazy Producer - Starter ideas for generative music</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Attribution</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-000-Preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-0000-Defintion-Generative.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What do we mean “Generative” music?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-001-Recipe-Changing_Chords.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Recipe - Changing chords</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-002-Process-Note_wise_probability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Process - Note-wise probability</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-003-Process-Follow_Actions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Process - Follow Actions</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-004-Tools-MIDI_tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Tools - MIDI tools: chords and added notes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-005-Process-Routing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Process - Routing MIDI and Audio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-007-Tools-Modulators.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Tools - Modulators</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-008-Process-Tuning_Parameters.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Process - Tuning Parameters</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-009-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Process - Balancing the unexpected and the predictable</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-010-Recipe-Balance_random_and_predictable.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Recipe - Balancing the unexpected and the predictable</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-011-Process-Workflow-Capturing_Ideas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Process - Workflow: capturing generative ideas</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-012-Tools-MIDI_Generators.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Tools - MIDI Generators</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-013-Recipe-MIDI_generators.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Recipe - Using MIDI generators</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-014-Tools-Audio_Generators.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Tools - Audio Generators</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-015-Tools-Audio_Effects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Tools - Creative use of audio effects</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-016-Tools-PaulStretch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Tools - Extreme audio stretching with PaulStretch</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-017-Recipe-Audio_generators_drone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Recipe - Making a drone using some audio generators and effects</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-018-Process-Scales.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Process - Using Scales</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-019-Process-Using_Field_Recordings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Process - Using Field Recordings</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-020-Recipe-Sampler_drone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Recipe - Audio clip or Sampler into effects</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-021-Process-Unsynced_loops.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Process - Unsynced loops</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-022-Recipe-Fibonacci_loops.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Recipe - Using the Fibonacci sequence to create loops (after DivKid)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-030-Tools-Live12_Intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Tools - Live 12 Overview: MIDI and compositional tools</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-031-Tools-Live12_Sequencers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Tools - Live 12 Sequencers</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-032-Tools-Live12_Modulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Tools - Live 12 Modulation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Tools - Live 12 MIDI Generation and Transformation</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#melodic-steps" id="toc-melodic-steps" class="nav-link active" data-scroll-target="#melodic-steps"><span class="header-section-number">13.1</span> Melodic Steps</a></li>
+  <li><a href="#bouncy-notes" id="toc-bouncy-notes" class="nav-link" data-scroll-target="#bouncy-notes"><span class="header-section-number">13.2</span> Bouncy Notes</a></li>
+  <li><a href="#dr-chaos" id="toc-dr-chaos" class="nav-link" data-scroll-target="#dr-chaos"><span class="header-section-number">13.3</span> Dr Chaos</a></li>
+  <li><a href="#euclidean-sequencer-pro" id="toc-euclidean-sequencer-pro" class="nav-link" data-scroll-target="#euclidean-sequencer-pro"><span class="header-section-number">13.4</span> Euclidean Sequencer Pro</a></li>
+  <li><a href="#less-concepts" id="toc-less-concepts" class="nav-link" data-scroll-target="#less-concepts"><span class="header-section-number">13.5</span> Less Concepts</a></li>
+  <li><a href="#turing-machines" id="toc-turing-machines" class="nav-link" data-scroll-target="#turing-machines"><span class="header-section-number">13.6</span> Turing machines</a></li>
+  <li><a href="#midi-waves" id="toc-midi-waves" class="nav-link" data-scroll-target="#midi-waves"><span class="header-section-number">13.7</span> MIDI Waves</a></li>
+  <li><a href="#midivolve" id="toc-midivolve" class="nav-link" data-scroll-target="#midivolve"><span class="header-section-number">13.8</span> Midivolve</a></li>
+  <li><a href="#seeds---polymath-and-friends" id="toc-seeds---polymath-and-friends" class="nav-link" data-scroll-target="#seeds---polymath-and-friends"><span class="header-section-number">13.9</span> SEEDS - Polymath and friends</a></li>
+  <li><a href="#others-i-havent-mentioned" id="toc-others-i-havent-mentioned" class="nav-link" data-scroll-target="#others-i-havent-mentioned"><span class="header-section-number">13.10</span> Others I haven’t mentioned</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="Chapter-012-Tools-MIDI_Generators" class="quarto-section-identifier"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Tools - MIDI Generators</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The MIDI tools discussed in <a href="Chapter-004-Tools-MIDI_tools.html">Tools - MIDI tools</a> are useful to transform, augment and add notes to existing MIDI sequences, but we also need to generate those sequences in the first place. Ableton Live Suite and Max for Live plugins offer a few options to generate sequences of notes.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can play or program in sequences to be used as the basis for generative music, and we did exactly this for <a href="Chapter-001-Recipe-Changing_Chords.html">Recipe - Changing chords</a> . But to create melodic or note sequences you may also wish to use a MIDI note generator like those discussed below. All of these devices will create MIDI note sequences - all of them can use random probability to generate note sequences that constantly change or evolve. As we have discussed in the section <a href="Chapter-009-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a> too much randomness can be difficult for the listener to engage with. Fortunately, most of these plugins allow you to tailor the amount of randomness or to slowly evolve.</p>
+</div>
+</div>
+<p>In Ableton Live 11 Suite, there are many plugins that will generate note sequences and allow you to specify per note probability. Many of these were developed before Live 11 introduced per note probability in the MIDI piano roll.</p>
+<section id="melodic-steps" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="melodic-steps"><span class="header-section-number">13.1</span> Melodic Steps</h2>
+<p><a href="https://www.youtube.com/watch?v=ev2GgU1D8jw">Melodic Steps</a> (Max for Live sequencer in the <a href="https://www.ableton.com/en/packs/creative-extensions/">Creative Extensions pack</a>) is a sequencer that disentangles note pitch, octave, length, velocity and probability. This allows you to sequence these attributes separately. You can define the length of each sequence separately, so you can have all sequences with the same length for predictable MIDI sequences, or change the length of one or more to produce more elaborate patterns. Having sequences that are even numbers of steps will bring you back to repetition faster than having sequence lengths that are based on prime numbers (remember common factors from your elementary arithmetic lessons?). Note that each lane has the option to “roll the dice” and add randomness, either a little (score 2 dice) or a lot (score 5 dice). Also, note that the “Playback” setting can choose to play back at twice the speed or half the speed.</p>
+<p>Melodic Steps has been somewhat superseded by the newer <a href="https://www.youtube.com/watch?v=1obXGz-Zfa8">SQ sequencer</a> from the <a href="https://www.ableton.com/en/packs/sequencers">Live 12 Sequencer Pack</a>. See <a href="Chapter-031-Tools-Live12_Sequencers.html">Tools - Live 12 Sequencers</a> .</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/Melodic_Steps.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="bouncy-notes" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="bouncy-notes"><span class="header-section-number">13.2</span> Bouncy Notes</h2>
+<p><a href="https://www.youtube.com/watch?v=C2hQ-WbKBhU">Bouncy Notes</a> is a device provided in the <a href="https://www.ableton.com/en/packs/inspired-nature/#?item_type=max_for_live">“Inspired by Nature” pack</a> developed by Dillon Bastan. This device gives you the ball-drop bouncy repeats triggered by incoming MIDI notes, or with a little tweaking you can get it to automatically produce balls which trigger MIDI notes on a scale, quickly or slowly, resulting in nice echoes and cascades of notes. The balls bounce on the keyboard along the bottom triggering MIDI notes. You can choose whether the balls bounce back up to trigger notes again (“Bounce” settings) and whether the balls bounce off the “walls”. Both of these will keep the balls in motion for longer. Tweaking ball speed, gravity and mass will affect how quickly (or slowly) the balls move around inside the box (“Speed” setting). Higher “Gravity” settings will mean that balls drop towards the MIDI notes more quickly. If you recall physics lessons from school, then you may remember that “Gravity” AND “Mass” affect how quickly notes fall (unless they are in a vacuum). So balls with larger mass fall more quickly under the same gravity. You can affect these via input velocity using “Vel&gt;Grav”, “Vel&gt;Mass” (and in fact “Vel&gt;Hght” and “Vel&gt;Ball”). All together this sets up some physical (pun intended) rules by which the balls move in the space and how they interact with the walls and “floor” which triggers the MIDI notes.</p>
+<p>In the screenshot below I have specified that all generated notes should be quantised to D minor pentatonic. I have also chosen for notes to be generated automatically every bar (Drop setting to Auto and “1b”) and last for at most 4 bars (“Lifetime”). At any one time we’ll have at most 6 balls in play (“Voices”). I have also set the note “Quantize” to be eighth notes = 8n. This ensures that the note triggers will not clash with anything else going on in the sequencer that is rhythmic or on the beat. But tuning the “Speed” setting you can tailor the density of notes generated. Adding randomness on direction that the balls are travelling when they are generated “Rnd&gt;Dir” you can generate additional notes in the scale as the balls bounce off the sides and hit the “notes” on the bottom.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/Bouncy_notes.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="dr-chaos" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="dr-chaos"><span class="header-section-number">13.3</span> Dr Chaos</h2>
+<p><a href="https://www.youtube.com/watch?v=ELMM0IxNVAk">“Dr Chaos”</a> is part of the <a href="https://www.ableton.com/en/packs/probability-pack/">Probability Pack by Sonic Faction</a>. This plugin allows you specify a sequence of notes across 8 steps. Notes can be quantised to notes in a scale using the drop down “Scale” setting on the far right at the bottom. The Network panel on the left dictates the order of notes. In this example, Note 1 “C” will be followed by Note 3 “F”. Note 2 “D#” will also be followed by Note 3 “F”. This sequence as defined means that when press “Play” and start the transport in Ableton then the “D#” note won’t necessarily play (since we start at Note 1 “C”). BUT in this case we have a little “Chaos” dialled in to the notes, which adds a little randomness, which might occasionally play the “D#”. Like the “Melodic Steps” sequencer above, Dr Chaos also allows you to define potential Octave, Velocity and Length of each note <strong><em>and</em></strong> add randomness to that through the “Chaos” slider. This adds some extra “spice” to the sequence. We can also specify the “Rate” of the sequence, so you can generate faster or slower sequences.</p>
+<p>Dr Chaos can store a number of patterns for both the note network (left) and the note attributes (right) so it’s possible to set up sequences that you want to use and play through these, or jump to specific combinations.</p>
+<p>I like Dr Chaos because you can set up networks of notes that will give potentially nice sounding sequences, but randomness can kick in to take you somewhere else instead. It breaks you out of the typical sequencer where the sequence of notes is predictable, even if probability is intervening to stop some notes from happening every time.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/Dr_Chaos.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="euclidean-sequencer-pro" class="level2" data-number="13.4">
+<h2 data-number="13.4" class="anchored" data-anchor-id="euclidean-sequencer-pro"><span class="header-section-number">13.4</span> Euclidean Sequencer Pro</h2>
+<p>Euclidean sequencers are commonly found in modular synth systems, and they can produce interesting polyrhythms for melodic instruments and also interesting rhythmic sequences for drum sounds. This <a href="https://maxforlive.com/library/device/7608/euclidean-sequencer-pro">Max for Live Euclidean Sequencer</a> is an implementation of that for Ableton Live. Euclidean sequencers work by defining the number of steps in one rotation of a circle, then allocating a number of events as evenly as possible around the steps in that circle. All sequences start at the twelve o’clock position unless you specify a “Rotation” amount to offset the starting point. You can also specify a “Speed” setting for each of the four sequences, nominate a note that corresponds to each sequence (especially useful when used in conjunction with a drum rack). Particularly useful for generating sequences that are rhythmically interesting.</p>
+<p>I have used the <a href="https://www.youtube.com/watch?v=orh9TtREa0w">Euclidean Sequencer Pro</a> with non-rhythmic ideas as well. Choose four notes e.g.&nbsp;C3, D4, G3 and A#3/ Bb3. Setting a pattern with more sparse settings for D4 and A#3 can give some interesting patterns and chords. I combined this with the Random and Scales plugins described earlier to add some variation to the generated notes.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/Euclidean_sequencer_pro.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="less-concepts" class="level2" data-number="13.5">
+<h2 data-number="13.5" class="anchored" data-anchor-id="less-concepts"><span class="header-section-number">13.5</span> Less Concepts</h2>
+<p><a href="https://maxforlive.com/library/device/6167/less-concepts">Less Concepts</a> is a sequencer. How it works is complicated. That it works is down to maths, permutations and combinations of cell values and adjacent cell contents.</p>
+<blockquote class="blockquote">
+<p><em>less concepts is rooted in the idea that complexity is just a shit-ton of simplicity, chained together. at its core, less concepts holds 65,536 possible combinations of notes which can be gated, offset, and manipulated to create minimal sequences for improvisation. small changes to a single parameter can bring sweeping or subtle changes.</em> &gt; &gt; <em>seek. think. discover. - Linus Schrab</em></p>
+</blockquote>
+<p>Suffice to say that it generates sequences or bursts of MIDI notes that can be used in generative music. That it’s available as a free Max for Live device is down to the generosity and genius of <a href="https://dndrks.bandcamp.com">the musician</a> and <a href="https://github.com/dndrks">developer Dan Derks.</a> There’s a PDF manual available here: <a href="https://llllllll.co/uploads/short-url/q2iJjgbV5JhVNoytmVAuOkVS9f1.pdf" class="uri">https://llllllll.co/uploads/short-url/q2iJjgbV5JhVNoytmVAuOkVS9f1.pdf</a> and an accompanying video about the device here: <a href="https://player.vimeo.com/video/408048241" class="uri">https://player.vimeo.com/video/408048241</a>. I think it’s best to watch the video about the device, then look at the manual. And I recommend reviewing both, at least a little before you jump in to use the device. Otherwise you might not understand the impact of the different “Rule” values, or what the “Seed” does.</p>
+<p>Less Concepts produces MIDI sequences that are less “random” and slightly more melodic. The key items to focus on here are the “Rule” setting, which in the screenshot below is 30, and the “Seed” setting which is 46. Different rules provide different rhythmic / melodic results and the “Seed” setting results in slightly different variations of that rule. For a given Rule and Seed you will always get predictable results, so if you use Less Concepts and fix the starting Rule and Seed you can always guarantee the same result. But one trick I’ve played with is to use a random LFO to vary the seed every 4 bars (or more) to balance unexpected and predictable, as we’ve discussed before.</p>
+<p>The “low” and “high” settings define the range of notes that will be used in the sequence.</p>
+<p>Less Concepts is definitely a sequencer that invites exploration, trial and error. Sometimes the results are surprising, other times they fade away and you’re left in silence. If you need further explanation of what’s happening under the hood, I suggest you explore the notes that Dan Derks provides.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/Less_concepts.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="turing-machines" class="level2" data-number="13.6">
+<h2 data-number="13.6" class="anchored" data-anchor-id="turing-machines"><span class="header-section-number">13.6</span> Turing machines</h2>
+<p><strong><em>How</em></strong> Turing machines work for pattern generation involves things called Shift Registers and moving zeros or ones down a line. Sound &amp; Voltage has an excellent description here: <a href="https://www.youtube.com/watch?v=va2XAdFtmeU" class="uri">https://www.youtube.com/watch?v=va2XAdFtmeU</a> if you want to dig into that and understand better. But it’s <strong><em>what</em></strong> they do that is of interest to the Lazy Producer. It’s a device that spits out random sequences of notes, until you move a dial and “lock in” a pattern. Move the dial a little way back towards the random (middle position) and the device will repeat the locked in sequence, but add occasional new notes. What’s of interest then to the Lazy Producer is the ability to move gradually from random to repeating, predictable sequence and anywhere in between allowing us to balance the unexpected with the predictable.</p>
+<p>In the image below the key part is the left hand end of the Max for Live <a href="https://maxforlive.com/library/device/5988/turing-machine">Turing Machine</a>device. If the dial is set to “Random” then we get a random sequence of notes in the given range (here between A2 and A5) based on the specified clock setting - in this case 8th notes. If we turn the dial completely to the right to “Lock” then we will lock in a repeating sequence of given length - here 8 notes. As we move the dial gradually back to the “Random” setting then we introduce a chance of random changes to the pattern, with the chance of randomness depending how close we are to the “Random” setting. What this means in practice is that we can Lock a sequence, gradually turn the dial back to allow changes to that sequence, then Lock again to “capture” that change. If we turn the dial all the way to the left then we also Lock the sequence, but the repeating sequence will be twice as long i.e.&nbsp;it will take twice as long to come back to the start of the sequence. Because what is generated is a random sequence, we might want to apply a Scale plugin to this to quantise the note outputs and conform them to a particular scale. We may also wish to use <a href="https://maxforlive.com/library/device/6982/mm4l-probability-gate">MightM4L (MML) Probability Gate</a> device to “thin out” the stream of notes from the Turing Machine.</p>
+<p>The Max for Live device shown below includes additional features to map output “voltage” signals (modulation) from the Turing Machine to devices in Live, and to use the Gate information from the Turing machine to trigger devices like drum machines. These extensions to functionality are still driven by the same essential random processes and “locking in” sequences discussed above.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/Turing_Machine.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>For Live 12 Philip Meyer has developed a Max for Live <a href="https://isotonikstudios.com/product/turing-machine/?srsltid=AfmBOor_T0esjLa-jI_hMBqYTUuz_1TAYSXRbD5u_57BQk_dJ-Yr4ZTt">Turing Machine</a> Generator device (<a href="https://www.youtube.com/watch?v=fwBIVaAaWog" class="uri">https://www.youtube.com/watch?v=fwBIVaAaWog</a>) that you can use to create patterns of notes. More on this in <a href="Chapter-031-Tools-Live12_Sequencers.html">Tools - Live 12 Sequencers</a> .</p>
+</section>
+<section id="midi-waves" class="level2" data-number="13.7">
+<h2 data-number="13.7" class="anchored" data-anchor-id="midi-waves"><span class="header-section-number">13.7</span> MIDI Waves</h2>
+<p><a href="https://isotonikstudios.com/product/midi-waves-by-ned-rush/">MIDI Waves</a> is a paid Max for Live plugin from Isotonik and <a href="https://www.youtube.com/@NedRush">Ned Rush</a> - <a href="https://www.youtube.com/watch?v=NTDBqpCu21M" class="uri">https://www.youtube.com/watch?v=NTDBqpCu21M</a>. It is a very useful MIDI sequencer based on the principle of quantising base LFO waveforms through sample and hold. The base LFO waveform (in the screenshot below it’s a Triangle wave) runs at a specified rate, either Hz or Synced to Ableton’s clock. Pitch values are sampled at a separate rate (here 16th notes) to generate ascending and descending note pitches. The rate of sample and the rate of the base LFO dictate how closely the generated pitches follow the base LFO but can sometimes result in sequences that follow arpeggio like patterns, but not quite (due to slight differences between the base LFO and the sample rate). Note that a second LFO is available to add into the base LFO as a frequency modulation (FM) and you can choose the frequency, shape and amount to be added to the base LFO. This can add more random variability in the pitch sequence generated. Note that the FM LFO is added <strong><em>before</em></strong> the blue “sampling” process. So the Sine LFO here is adding a little positive and negative to the base triangle LFO before sampling, resulting in pitch sequences that change subtly each time. Similar processes can be used to generate Velocity, Duration and Gate information. Gate in particular allows you to define the rate at which notes are generated, independent of their pitch. What can result is slight changes in the rhythms of the generated notes, right up to their being clusters of notes, rather than a steady stream.</p>
+<p>This technique is sometimes employed in modular synths if a more traditional sequencer is not being used, as all you need to drive it is a base LFO and a “sample and hold” random generator. In modular synths too, pitch sequencing and gate sequencing are often separate processes and it’s nice to have that option here too in the MIDI Waves device.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/MIDI_waves.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="midivolve" class="level2" data-number="13.8">
+<h2 data-number="13.8" class="anchored" data-anchor-id="midivolve"><span class="header-section-number">13.8</span> Midivolve</h2>
+<p>The <a href="https://www.ableton.com/en/packs/midivolve/">Ableton Max for Live pack and device with Coldcut - Midivolve</a> Pack is a paid plugin for Ableton Suite. It works by randomly adding variation to a MIDI sequence within the device OR it can import a MIDI clip and then create variations using that clip as the original material. That variation can act on MIDI notes, velocity, duration, density (how many notes are playing) as well as being able to map two different parameters in Live. The “A” column defines which parameters experience variation on the next “Evolve!” trigger (in the screenshot below this is set to automatically evolve all parameters once the clip has played through 3 times). If the “I” column is checked then the last evolution acts as the basis for the next variation change. Note that variation amount can be specified via “Ammt” and this is separate to “Chance” of the variation happening. Chance is the probability of the value being varied / evolved <strong><em>for each note / step.</em></strong> This opens up a large number of possibilities to vary input sequences but to balance the unexpected evolution with a repeat of the evolved pattern before the next change is made i.e.&nbsp;let the listener get used to each chance - being predictable, if only for a finite period. Variation can be constrained through the Scale settings.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/Midivolve.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The Mididvolve pack also comes with some very interesting presets curated by Coldcut that provide some interesting examples of what can be done with the tool.</p>
+</section>
+<section id="seeds---polymath-and-friends" class="level2" data-number="13.9">
+<h2 data-number="13.9" class="anchored" data-anchor-id="seeds---polymath-and-friends"><span class="header-section-number">13.9</span> SEEDS - Polymath and friends</h2>
+<p><a href="https://www.novelmusic.org/m4l/seeds">Seeds from Novel Music</a> is actually a collection of sequencing plugins that offer modular synthesiser style control over clocks, note sequences, scales, and much more. This is a paid pack of Max for Live devices, but if you are interested in a collection of tools for modular style sequencing with Ableton Live there is a HUGE amount of potential in this pack. In fact, I can’t do justice to the full set of features available, and I can only recommend that interested users look into the <a href="https://youtube.com/playlist?list=PLjyWHWk9AS6MMpgD88K4U6TICgEjjClFR">tutorial videos prepared by Novel Music to describe their functionality</a>.</p>
+<p>In the screenshot below I’m using the “Sweet 16” clock module from SEEDS which provides four different clocks which can be used by Polymath. Each clock proceeds at a different pace, all driven by Ableton Live’s master clock i.e.&nbsp;Ableton provides the “1/16th” pulse that drives the clocks. Each clock is allocated a label - here “W”, “X”, “Y”, and “Z”. This helps to identify the clock drivers in other devices. The clocks can be used individually, but they can also be combined to move the sequencer forward in interesting ways.</p>
+<p>Polymath is a four track sequencer. Each track specifies notes, octaves, velocity, duration, strum, ratchet, bend (pitch bend) and mod. The sequence length is set for the track. If you look to the right the “Deviate” setting allows you to add some random probability to each element of the sequence as we discussed in <a href="Chapter-007-Tools-Modulators.html">Tools - Modulators</a> . This allows you to specify elements of randomness to be included, but also a “Lock” slider that allows you to lock in to a sequence that you like and “turn off” further introduction of randomness.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/Polymath.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Polymath has a few neat tricks up its sleeve. It allows you to set scales for each track (and in fact across ALL tracks) and you can set two different scales then use a slider to begin to introduce notes from Scale 2 in the sequence even though the majority are from Scale 1. When the slider is all the way to the right, then Scale 2 is 100% in effect.</p>
+<p>One of the great strengths of Polymath and the SEEDS pack is that many of the elements are defined then used across the devices. So the Clocks we’ve discussed above can be used across devices individually or combined to give interesting rhythmic patterns.</p>
+<p>SEEDS also includes a very useful concept and plugin that can send output to and from various devices and clocks. The “Hub” plugin receives and sends MIDI information from one track to another. So it’s possible to have generative plugins on one track which send MIDI information to a completely different track, which can then be processed independently. Similarly you can assign the output of a sequence to a “HUB” (e.g.&nbsp;Hub A) and then use the notes of that sequence to offset the notes in another sequence, as is shown in the image below.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/Polymath_offset.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This technique allows you to specify two sequences (ideally one shorter than the other) and by offsetting the notes in one sequence by the notes in another sequence you get an ever evolving sequence, with some notes repeated, but some changing.</p>
+<p>The “Expand” setting adds additional notes to the sequence, always honouring the Scale set for the sequence. This can be dialed up and back so it’s possible to add additional notes and then go back to the original sequence.</p>
+<p>Each track can run to a different clock, so it’s possible to set up four different sequences that proceed at different rates. Very handy for generative music. Also, the sequences can run forward, back, forward-then-back, and randomly. So somewhere in there you should be able to find a sweet spot to generate some new ideas.</p>
+</section>
+<section id="others-i-havent-mentioned" class="level2" data-number="13.10">
+<h2 data-number="13.10" class="anchored" data-anchor-id="others-i-havent-mentioned"><span class="header-section-number">13.10</span> Others I haven’t mentioned</h2>
+<p>Tom Glendinning / ELPHNT is keeping a curated list of Max for Live plugins he uses in his music which includes some excellent sequencers. If I haven’t touched on your favourite Max for Live sequencer here, you should <a href="https://elphnt.io/max-for-live-curated/">check out Tom’s list</a> and review what he’s presenting.</p>
+<p>For example the MDD_____SNAKE device is based on the Make Noise René modular sequencer. Tom has provided a <a href="https://www.youtube.com/watch?v=v2_mdrz9XrU">very helpful introduction here</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Chapter-011-Process-Workflow-Capturing_Ideas.html" class="pagination-link" aria-label="Process - Workflow: capturing generative ideas">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Process - Workflow: capturing generative ideas</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Chapter-013-Recipe-MIDI_generators.html" class="pagination-link" aria-label="Recipe - Using MIDI generators">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Recipe - Using MIDI generators</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -12,36 +12,41 @@ book:
   date-format: iso
   chapters:
     - index.qmd # Replaced by extension's titlepage, no alt text on PDFs, so I altered your index.qmd
-    - 000-Preface.qmd
-    - 0000-Defintion-Generative.qmd
-    - 001-Recipe-Changing_Chords.qmd
-    - 002-Process-Note_wise_probability.qmd
-    - 003-Process-Follow_Actions.qmd
-    - 004-Tools-MIDI_tools.qmd
-    - 005-Process-Routing.qmd
-    - 006-Recipe-MIDI_tools.qmd
-    - 007-Tools-Modulators.qmd
-    - 008-Process-Tuning_Parameters.qmd
-    - 009-Process-Balance_unexpected_and_predictable.qmd
-    - 010-Recipe-Balance_random_and_predictable.qmd
-    - 011-Process-Workflow-Capturing_Ideas.qmd
-    - 012-Tools-MIDI_Generators.qmd
-    - 013-Recipe-MIDI_generators.qmd
-    - 014-Tools-Audio_Generators.qmd
-    - 015-Tools-Audio_Effects.qmd
-    - 016-Tools-PaulStretch.qmd
-    - 017-Recipe-Audio_generators_drone.qmd
-    - 018-Process-Scales.qmd
-    - 019-Process-Using_Field_Recordings.qmd
-    - 020-Recipe-Sampler_drone.qmd
-    - 021-Process-Unsynced_loops.qmd
-    - 022-Recipe-Fibonacci_loops.qmd
-    - 030-Tools-Live12_Intro.qmd
-    - 031-Tools-Live12_Sequencers.qmd
-    - 032-Tools-Live12_Modulation.qmd
-    - 033-Tools-Live12_MIDI_Generation_Transformation.qmd
+    - Chapter-000-Preface.qmd
+    - Chapter-0000-Defintion-Generative.qmd
+    - Chapter-001-Recipe-Changing_Chords.qmd
+    - Chapter-002-Process-Note_wise_probability.qmd
+    - Chapter-003-Process-Follow_Actions.qmd
+    - Chapter-004-Tools-MIDI_tools.qmd
+    - Chapter-005-Process-Routing.qmd
+    - Chapter-006-Recipe-MIDI_tools.qmd
+    - Chapter-007-Tools-Modulators.qmd
+    - Chapter-008-Process-Tuning_Parameters.qmd
+    - Chapter-009-Process-Balance_unexpected_and_predictable.qmd
+    - Chapter-010-Recipe-Balance_random_and_predictable.qmd
+    - Chapter-011-Process-Workflow-Capturing_Ideas.qmd
+    - Chapter-012-Tools-MIDI_Generators.qmd
+    - Chapter-013-Recipe-MIDI_generators.qmd
+    - Chapter-014-Tools-Audio_Generators.qmd
+    - Chapter-015-Tools-Audio_Effects.qmd
+    - Chapter-016-Tools-PaulStretch.qmd
+    - Chapter-017-Recipe-Audio_generators_drone.qmd
+    - Chapter-018-Process-Scales.qmd
+    - Chapter-019-Process-Using_Field_Recordings.qmd
+    - Chapter-020-Recipe-Sampler_drone.qmd
+    - Chapter-021-Process-Unsynced_loops.qmd
+    - Chapter-022-Recipe-Fibonacci_loops.qmd
+    - Chapter-030-Tools-Live12_Intro.qmd
+    - Chapter-031-Tools-Live12_Sequencers.qmd
+    - Chapter-032-Tools-Live12_Modulation.qmd
+    - Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd
 
-format:
+format: 
+  html:
+    theme: cosmo
+    toc: true
+    link-external-icon: true
+    link-external-newwindow: true
   titlepage-pdf:
     documentclass: scrbook
     classoption: ["oneside", "open=any"] # makes it not print like a left/right spaced book
