@@ -1,4 +1,4 @@
-# The Lazy Producer - Starter ideas for generative music {.unnumbered}
+# The Lazy Producer - Starter ideas for generative music {.unnumbered #index}
 
 by Mike K Smith
 
