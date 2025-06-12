@@ -5,7 +5,7 @@
 ::: {.content-visible when-format=html}
 # Attribution  {.unnumbered}
 
-This version of the book is 0.993. 
+This version of the book is 0.994. 
 
 
 ```{r}

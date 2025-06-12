@@ -80,4 +80,10 @@ You can find my music here:
 
 <https://mikeksmith.bandcamp.com>
 
-<https://soundcloud.com/mikeksmith>
+## Acknowledgements
+
+I'd like to thank Rachel K Collier and her Patreon community (The KnobTwisters) for their encouragement and for prompting me to start writing this book in the first place. 
+
+I'd also like to thank many educators, producers and musicians who have provided ideas, input and inspiration to the content in this book - ELPHNT, Eonlake, Guerilla Biscuits, Ableton, Dennis DeSantis, Simon Stokes, Yokermoon, Andrew Tasselmyer, Bad Snacks, Benn Jordan, Catalyze Music Academy, DivKid, Fors, Andrew Huang, Loopop, Misty Jones, Ned Rush, Novel Music, Omri Cohen, Philip Meyer, Red Means Recording, Seed to Stage, Steve Lawson, Ted Laderas.
+
+Particular thanks to Libby Heeren for help in sorting out Quarto issues for me in the final stages of producing the book.
