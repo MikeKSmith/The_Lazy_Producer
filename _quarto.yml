@@ -11,7 +11,7 @@ book:
   sidebar:
     style: floating
   chapters:
-    - index.qmd # Replaced by extension's titlepage, no alt text on PDFs, so I altered your index.qmd
+    - index.qmd # Replaced by extension's titlepage, no alt text on PDFs
     - Chapter-000-Preface.qmd
     - Chapter-0000-Defintion-Generative.qmd
     - Chapter-001-Recipe-Changing_Chords.qmd
@@ -44,9 +44,7 @@ book:
     - Chapter-031-Tools-Live12_Sequencers.qmd
     - Chapter-032-Tools-Live12_Modulation.qmd
     - Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd
-  
-lightbox: true
-
+    
 format: 
   html:
     theme: cosmo
@@ -55,6 +53,7 @@ format:
     link-external-icon: true
     link-external-newwindow: true
     number-sections: false  # This turns off chapter numbering to look more like your website version did
+
   titlepage-pdf:
     documentclass: scrbook
     classoption: ["oneside", "open=any"] # makes it not print like a left/right spaced book
@@ -107,4 +106,3 @@ format:
       footer-space-after: "0pt"
       logo-size: "0.25\\textwidth"
       logo-space-after: "1cm"
-      
