@@ -1,0 +1,145 @@
+# Tools - MIDI tools: chords and added notes {#Chapter-004-Tools-MIDI_tools}
+
+There are many [MIDI tools and devices](https://www.ableton.com/en/live-manual/11/live-midi-effect-reference/#live-midi-effect-reference) within Ableton Live that will help manipulate MIDI notes - shifting pitch, adding random pitch deviation, applying arpeggiation (cycling through notes in a chord), adding additional notes to an incoming note to make a chord, changing the length of the played MIDI note, as well as manipulating incoming MIDI control messages - using the modulation wheel to control expression, changing velocity, modulating other devices based on velocity, MPE and other control messages.
+
+::: callout-tip
+## Key idea
+
+Adding notes, randomly changing the pitch of notes, changing the lengths of notes and generating chords within a given scale using MIDI plugin tools can form the basis of a generative piece. Using other MIDI plugins to arpeggiate these chords and add additional notes and harmonies will produce a constantly evolving sequence of MIDI notes within the scale.
+:::
+
+## Ableton's Note Echo plugin
+
+[Ableton's Note Echo](https://www.ableton.com/en/live-manual/11/max-for-live-devices/#note-echo)plugin may at first seem a bit pointless. I mean you can take the output from an audio track and just apply a Delay or Echo to that, so why bother doing it on the MIDI side? Well, because with Note Echo it will adjust the velocity of each echoed note, and you can also pitch up or down the echos, leading to changing pitch. You can also combine Note Echo plugins to produce nice "multi-tap" delays, each with different characteristics. The echos can build up quickly if you stack these, so I tend to use them with minimal or no feedback. Combined with the Random plugin discussed below you can easily build up evolving and interesting patterns which are similar without repeating. The "Feed Delay" amount controls the amount that the velocity decays with each repeat.
+
+```{r}
+#| echo: FALSE
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+#| fit-alt: "Image shows the Note Echo MIDI device in Ableton Live. Delay time is one option, Input has Through and Mute options but Through is lit. Feed delay which governs velocity on the feedback is set to 100%. Feedback is set to 0%."
+knitr::include_graphics(path = file.path(here::here(), "images", "Note_Echo.png"))
+```
+
+## Ableton's Random plugin
+
+The [Random plugin](https://www.ableton.com/en/live-manual/11/live-midi-effect-reference/#random) changes the pitch of the incoming note within a range specified within the plugin. In the example shown below, incoming notes will be randomised to an increase in pitch up to 17 semi-tones above the original note with 50% probability (flip of a coin). The "Sign" switches allow you to define whether the random pitch change is added, subtracted or either to the incoming note. The "Mode" switch allows you to swap between randomness and incrementing, if you want the pitch to change gradually with each incoming note. The latter might be useful if using this with a sampler where different samples are associated with different MIDI notes. This would allow you to cycle through samples using this device.
+
+```{r}
+#| fit-alt: "Image shows the Random MIDI device in Ableton Live. Chance option is set to 50%. Choices option is set to 17, indicating 17 semitones. Scale option is set to 1 indicating one set of 17 semitones. Sign option is set to Add."
+knitr::include_graphics(path = file.path(here::here(), "images", "Random.png"))
+```
+
+## Ableton's Note Length plugin
+
+[Note Length](https://www.ableton.com/en/live-manual/11/live-midi-effect-reference/#note-length) is a really useful plugin to help modify the incoming MIDI and make notes longer or shorter. The "Gate" control can be used to double an incoming notes length, while the "Length" control defines the length of the resulting MIDI note in milliseconds or seconds. I use this to take incoming MIDI information and "smear" it for use with pad sounds. This is useful in generative music, because you can relate the pad chord using these smeared notes to any incoming moving MIDI part. Be aware though that long "Length" settings, it's possible to stack up MANY midi voices in a plugin. Limiting the number of voices in the plugin instrument or reducing the note length can prevent CPU overload!
+
+```{r}
+#| fit-alt: "Image shows the Note Length MIDI device in Ableton Live. Trigger option is set to Note On. Mode is set to Time. Length is set to 100 miliseconds. Gate is set to 100%. Key Scale is set to zero. Decay Time is set to 60 seconds."
+knitr::include_graphics(path = file.path(here::here(), "images", "Note_Length.png"))
+```
+
+## Ableton's Scale plugin
+
+The [Scale plugin](https://www.ableton.com/en/live-manual/11/live-midi-effect-reference/#scale) is the generative musician's friend. It takes whatever MIDI nonsense you through at it and quantises it to a given scale. ***This isn't cheating.*** Well, it kind of is, but it's a well used cheat within the modular synthesis world where quantisers have been used for a long time to ensure that control voltage (CV) signals conform to a particular scale.
+
+```{r}
+#| fit-alt: "Image shows the Scale MIDI device in Ableton Live. Base scale note is set to C. Scale is set to Minor Pentatonic. Other options are left at the default value. A grid of squares shows how input MIDI notes are mapped or quantised to output MIDI notes."
+knitr::include_graphics(path = file.path(here::here(), "images", "Scale.png"))
+```
+
+::: callout-tip
+## Note Range
+
+The MIDI Pitch and Scale devices have the option to limit the range of notes played. You can specify the Lowest MIDI note (default C-2) and the Range (default 127st) but you can also use these to limit the MIDI note range for a part and what to do with MIDI notes that fall outside the range (Block not to play, Fold to have the note folded back into the nominated range or Limit to play the upper end of the note range specified). When generating parts using techniques here, it's sometimes useful to ensure that you don't have unexpectedly very high or very low notes within a part.
+
+:::
+
+```{r}
+#| fit-alt: "Image shows the Pitch and Scale MIDI devices in Ableton Live. Pitch is set to 0 semitones, but the Lowest pitch option is set to C3 and the Range option is set to 36 semitones. Mode options is set to Block. The Scale device also has Lowest and Range options set equivalently."
+knitr::include_graphics(path = file.path(here::here(), "images", "Pitch_Scale_Range.png"))
+```
+
+## Ableton's Chord plugin
+
+Ableton's [Chord plugin](https://www.ableton.com/en/live-manual/11/live-midi-effect-reference/#chord) adds notes to incoming MIDI notes to form chords. Up to six additional tones can be added to the incoming MIDI. Each tone has its own associated velocity which can help accentuate certain parts of the chord over others. The Chord plugin adds notes to ***every*** MIDI note it receives, and in fixed intervals above or below that incoming MIDI note. So again, it may be a good idea to use the Scale plugin to ensure that the generated notes and chords fall within a desired scale.
+
+```{r}
+#| fit-alt: "Image shows the Chord MIDI device in Ableton Live 11. There are six dials showing four different changes in MIDI notes - 7 semitones, 12 semitones, 17 semitones and minus 12 semitones. "
+knitr::include_graphics(path = file.path(here::here(), "images", "Chord.png"))
+```
+
+### Live 12 Chord device
+
+In Live 12 the Chord device gets a few extra bells and whistles...
+
+```{r}
+#| fit-alt: "Image shows the Chord MIDI device in Ableton Live 12. The difference over the Live 11 version includes the ability for the device to be scale aware which changes the dial inputs from semitones to scale degrees. There is also the ability to Learn the chord from the MIDI clip input. New options are Strum, Tension, Crescendo, and Chance. "
+knitr::include_graphics(path = file.path(here::here(), "images", "Chord_Live12.png"))
+```
+Live 12's Chord device includes the ability to be scale aware, so that instead of showing semitone changes from the incoming note, we can specify scale degrees instead. The device also has the ability to Learn chords from a MIDI clip (which could then be stored later as Variations) or used in the Expressive Chords device in Live 12.2. Strum gives you the ability to strum the chord with notes delayed strumming up with positive values or strumming down with negative values. Tension will apply a curve to the MIDI on note - making the curve faster as it goes on. Crescendo applies note velocity ramp to the notes. In Live 11 the Velocity of each note could be specified, but in Live 12 we can also optionally change the Chance of each note.
+
+
+Coupling the Chord plugin with the Arpeggiator and Random plugins is a good way to make arpeggiated lines that do not repeat exactly. As with most of these MIDI plugins the order you specify them can provide interesting variations. So Chord -\> Arpeggiator -\> Random -\> Scale adds random notes into the arpeggio resulting in cascades of notes that change note to note, but within a constrained set of output notes. Random -\> Chord -\> Arpeggio -\> Scale would lead to a consistent arpeggio for the duration of the input note but could be different for each cycle of the generating MIDI loop.
+
+```{r}
+#| fit-alt: "Image shows a collection of MIDI devices in an chain, starting with Note Echo, then Chord, then Arpeggiator, then Random, another Note Echo, a Scale device and Velocity device."
+knitr::include_graphics(path = file.path(here::here(), "images", "Cascading_notes.png"))
+```
+
+## Probability Gate
+
+The [MightM4L (MML) Probability Gate](https://maxforlive.com/library/device/6982/mm4l-probability-gate#:~:text=Device%20Details&text=Probability%20keeps%20things%20interesting%2C%20and,that%20extra%20bit%20of%20variation.) is a Max for Live MIDI device which allows you to set a probability (in %) and it then allows that proportion of notes through the device. This can be a very useful device to use with "busy" MIDI generators like the Turing Machine (see
+[Tools - MIDI Generators](#Chapter-012-Tools-MIDI_Generators)
+) which are constantly generating 1/8th or 1/16th notes. Use of a probability gate "thins out" that stream of output.
+
+
+```{r}
+#| fit-alt: "Image shows the Max for Live Probability Gate MIDI device in Ableton Live 12. A central dial shows Probability set to 66%"
+knitr::include_graphics(path = file.path(here::here(), "images", "Probability_Gate.png"))
+```
+
+## Deviate
+
+The free [Deviate Max for Live plugin from Novel Music](https://www.novelmusic.org/m4l/deviate) can add variation to incoming MIDI notes. The "TRIGGER" section defines how often the deviation or variation will occur - so it is possible to balance the unexpected with the predictable, or keep things the same before introducing randomness. One important aspect of Deviate is that it has a memory, so if you like the random pattern generated, you can "lock" this by moving the "LOCK" slider to the right. This means it acts a bit like the Turing Machine devices used in modular synthesis. Deviate has two sides - MIDI, which we'll cover here and MOD which we'll cover in the section .
+
+The "TRIGGER" section is worth spending a little time to understand. It determines how many MIDI notes will pass before the deviation is triggered. So if set to "1" then every note triggers a new deviation. If set to 8 then every 8 notes the deviation settings may be triggered, but then these deviation settings persist for the next 7 notes. The probability to the right (below set to 100%) means that the deviation will be triggered every time, but if lower than 100% then that probability determines whether ***any*** deviation will occur. So if you set 8 notes, with 100% probability then the Octave deviation may trigger 18% of the time, but if it does then notes will sound either an octave up (or down) for the next 7 notes.
+
+The "MEMORY" section works along side the "LOCK" switch. Deviate can "listen" to a sequence of MIDI notes of the nominated length (here 8 notes) and will keep track of what deviations were applied in that 8 note sequence. If you like what you're hearing you can "LOCK" the deviation settings in by sliding the "LOCK slider to the right. As you bring the"LOCK" slider back to the left it will start to reintroduce new deviations while retaining the memory of the locked settings. With the "LOCK" slider all the way to the left, the "TRIGGER" and Deviate settings are applied according to the "TRIGGER" settings. Deviate can also learn how many notes are in a MIDI clip if you click on the "L" button next to "MEMORY". The memory sequence can be divided by 2 or multiplied by 2 using the adjacent buttons.
+
+It is worth reviewing [the YouTube tutorial for this device](https://youtu.be/4WwKGUV2H4I) as it can do ***a lot***.
+
+```{r}
+#| fit-alt: "Image shows the Deviate MIDI device from Novel Music software. The device has some options on the left including a slider marked Lock and a collection of random deviation options for MIDI in a box on the right. Options include Octave, Velocity, Duration, Delay, Ratchets and Bend. A tab marked Mod is hidden behind the MIDI tab. "
+knitr::include_graphics(path = file.path(here::here(), "images", "Deviate_MIDI.png"))
+```
+
+## Max for Live Tintinnabulator plugin
+
+The [Tintinnabulator](https://maxforlive.com/library/device/7569/tintinnabulator) Max for Live plugin by Milton Mermikedes is an implementation of Arvo Part's [Tintinnabulation technique](https://en.wikipedia.org/wiki/Tintinnabuli). This technique arpeggiates the original chord, and then adds additional notes / harmonies to those notes based on the nearest tone from the scale triad. So 1st position inferior C minor takes a C minor triad (C - Eb - G) and assigns a harmony to the incoming notes using the nearest chord tone 1 position lower than the incoming note (the M-Voice). Within the plugin you can specify the delay between the original notes and the additional harmonies. The good news for producers of generative music is that the choice of T-Voice position (1st Superior, 2nd Superior, 1st Inferior, 2nd Inferior) can be set to be random. This will add variety and keeps the T-Voice harmony changing. This plugin can be used on melody lines or chord inputs for a variety of different effects.
+
+```{r}
+#| fit-alt: "Image shows the Max for Live Tintinabulator MIDI device. The device has a representation of the keyboard with some notes highlighted in blue. Delay options are shown below the keyboard ranging from Now through 4th notes to Free. On the left are optiosn specifying the scale root note and key showing Major or Minor. Options for first and second position superior or inferior are also displayed."
+knitr::include_graphics(path = file.path(here::here(), "images", "Tintinnabulator.png"))
+```
+
+## Max for Live Schwartzonator plugin
+
+The Schwartzonator plugin (<https://www.ableton.com/en/packs/schwarzonator/>) combines chord generation with scale quantising. You specify what notes are "valid" for the output - quantising input to output - and then the knobs below the "piano" define the makeup of the output chord. The "add notes" knob defines how many additional notes you want to add to the input MIDI note to create a chord. "spread" spreads these out over the keyboard. "random" changes the disposition of the chord - creating chord inversions and changing the output chord when it's triggered by the input MIDI note. With "random" increased you can get ever-changing output chords for the same input notes. "dynamic" adds random velocity across the output notes. "select" allows you to automate selection of the Chord Set.
+
+Schwartzonator was designed to help musicians who did not know musical theory generate chords from single input notes and the scale or chord quantising allows the user to generate musical ideas that sound good. For the generative musician there are many things in this plugin that are appealing - the ability to turn single input notes into chords that conform to a scale or chord pattern and the ability to also add randomness to ensure that the chords are different each time they are triggered. These coupled with the MIDI tools above can help create evolving patterns that fit with an overall scale key, chord pattern etc. defined for the track.
+
+```{r}
+#| fit-alt: "Image shows the Schwarzonator MIDI device.  A keyboard is represented with some notes greyed out and others left white. Allowed notes from the set are represented in white. Source note is shown in red and notes from the chord added are shown in green. Various dials allow you to set options for which notes are added to the incoming source note."
+knitr::include_graphics(path = file.path(here::here(), "images", "Schwarzonator.png"))
+```
+
+## Max for Live Chord Generator plugin
+
+The [Nordmann Chord Generator](https://maxforlive.com/library/device/917/chord-generator) Max for Live plugin is similar to the Schwartzonator above in that it takes input MIDI notes and turns them into chords. The difference is that while the Schwartzonator works by defining notes that can be used or not in the output, the Nordmann Chord Generator assumes a little more musical theory that the user knows what adding a 6, 7, add9 means. Of course, you can listen and find out... Also not every note in a MIDI scale is going to produce output chords that are in scale if you use a "b5" chord with them. In this way, using the MIDI scale plugin after the Chord Generator may help quantise the MIDI to sound reasonable in the context of the scale, although selecting to use a "b5" chord and quantising to perfect 5th may seem counterintuitive.
+
+```{r}
+#| fit-alt: "Image shows the Max for Live Nordmann Chord Generator MIDI device. A keyboard is represented on the right, showing the original input note, and pitches of four associated notes. A dial showing disposition sits below the keyboard which includes a button marked Random. To the left are various button options to refine the chord type including major and minor, whether to include the third of the chord. Chord 6th, 7th, major 7th, add 9th, flat 5, flat ninth etc. are all present."
+knitr::include_graphics(path = file.path(here::here(), "images", "Nordmann_chord.png"))
+```

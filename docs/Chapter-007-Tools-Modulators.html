@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Tools - Modulators – The Lazy Producer</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Chapter-008-Process-Tuning_Parameters.html" rel="next">
+<link href="./Chapter-006-Recipe-MIDI_tools.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-485d01fc63b59abcd3ee1bf1e8e2748d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chapter-007-Tools-Modulators.html"><span class="chapter-title">Tools - Modulators</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">The Lazy Producer</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About the book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-000-Preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-0000-Defintion-Generative.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">What do we mean “Generative” music?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-001-Recipe-Changing_Chords.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Changing chords</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-002-Process-Note_wise_probability.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Note-wise probability</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-003-Process-Follow_Actions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Follow Actions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-004-Tools-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - MIDI tools: chords and added notes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-005-Process-Routing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Routing MIDI and Audio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-007-Tools-Modulators.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Tools - Modulators</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-008-Process-Tuning_Parameters.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Tuning Parameters</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-009-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Balancing the unexpected and the predictable</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-010-Recipe-Balance_random_and_predictable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Balancing the unexpected and the predictable</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-011-Process-Workflow-Capturing_Ideas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Workflow: capturing generative ideas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-012-Tools-MIDI_Generators.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - MIDI Generators</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-013-Recipe-MIDI_generators.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Using MIDI generators</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-014-Tools-Audio_Generators.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Audio Generators</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-015-Tools-Audio_Effects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Creative use of audio effects</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-016-Tools-PaulStretch.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Extreme audio stretching with PaulStretch</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-017-Recipe-Audio_generators_drone.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Making a drone using some audio generators and effects</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-018-Process-Scales.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Using Scales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-019-Process-Using_Field_Recordings.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Using Field Recordings</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-020-Recipe-Sampler_drone.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Audio clip or Sampler into effects</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-021-Process-Unsynced_loops.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Unsynced loops</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-022-Recipe-Fibonacci_loops.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Using the Fibonacci sequence to create loops (after DivKid)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-023-Process-Your_Unpredictable_Bandmate.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Your Unpredictable Bandmate</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Random sound design with Instrument Racks</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-025-Tool-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-026-Tool-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Chain Select</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-030-Tools-Live12_Intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Live 12 Overview: MIDI and compositional tools</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-031-Tools-Live12_Sequencers.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Live 12 Sequencers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-032-Tools-Live12_Modulation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Live 12 Modulation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Live 12 MIDI Generation and Transformation</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#modulators-in-ableton-live-general-rule-of-thumb" id="toc-modulators-in-ableton-live-general-rule-of-thumb" class="nav-link active" data-scroll-target="#modulators-in-ableton-live-general-rule-of-thumb">Modulators in Ableton Live (general rule of thumb)</a></li>
+  <li><a href="#lfo" id="toc-lfo" class="nav-link" data-scroll-target="#lfo">LFO</a></li>
+  <li><a href="#lfo-trio---a-chaotic-lfo" id="toc-lfo-trio---a-chaotic-lfo" class="nav-link" data-scroll-target="#lfo-trio---a-chaotic-lfo">LFO Trio - a chaotic LFO</a></li>
+  <li><a href="#envelope-midi" id="toc-envelope-midi" class="nav-link" data-scroll-target="#envelope-midi">Envelope MIDI</a></li>
+  <li><a href="#envelope-follower" id="toc-envelope-follower" class="nav-link" data-scroll-target="#envelope-follower">Envelope Follower</a></li>
+  <li><a href="#shaper" id="toc-shaper" class="nav-link" data-scroll-target="#shaper">Shaper</a></li>
+  <li><a href="#midi-expression-control" id="toc-midi-expression-control" class="nav-link" data-scroll-target="#midi-expression-control">MIDI Expression Control</a></li>
+  <li><a href="#strange-mod" id="toc-strange-mod" class="nav-link" data-scroll-target="#strange-mod">Strange Mod</a></li>
+  <li><a href="#dispatch" id="toc-dispatch" class="nav-link" data-scroll-target="#dispatch">Dispatch</a></li>
+  <li><a href="#deviate" id="toc-deviate" class="nav-link" data-scroll-target="#deviate">Deviate</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="Chapter-007-Tools-Modulators" class="quarto-section-identifier"><span class="chapter-title">Tools - Modulators</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The MIDI tools discussed in <a href="Chapter-004-Tools-MIDI_tools.html">Tools - MIDI tools</a> are useful to transform, augment and add notes to existing MIDI sequences, but we can also automate changing the value of pretty much <strong><em>anything</em></strong> in Live via modulation. <a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#max-for-live-audio-effects">Max for Live provides a variety of modulation devices</a> which will allow you to “map” that automation to device parameters. This will then automate changes on those device parameters without you needing to tweak the values using a mouse or controller knob.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key idea
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Modulation keeps sounds interesting. In <a href="Chapter-009-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a> we discuss how repetition balances randomness. This also applies to the sounds you use in your track. Modulation of synth sounds through LFOs and other means is available within Ableton Live instruments, often with some very creative ways of achieving that - such as the Wavetable instrument’s modulation matrix. But sometimes you want to apply modulation to a parameter where an LFO is not immediately available for example to the macro knob of an Instrument or Effect Rack.</p>
+<p>Having options where the modulation isn’t obviously cyclical also helps as it adds to the “unpredictable” and helps engage listener’s attention for longer. You could use LFOs with different cycle lengths (in bars or different rates in Hz) or you could use LFOs which are not periodic but which “wander”.</p>
+<p>One strength of Ableton Live’s modulation devices (and Max for Live modulation devices) is that you can map modulation to pretty much anything that you can tweak by hand. Yes, even tempo. You can assign the parameter that is being modulated simply by click on the “Map” button in the devices and then click on a knob, switch or fader in Live. Modulation also allows you to have “hands off” performance of generative music by automating volume fades, if required.</p>
+</div>
+</div>
+<section id="modulators-in-ableton-live-general-rule-of-thumb" class="level2">
+<h2 class="anchored" data-anchor-id="modulators-in-ableton-live-general-rule-of-thumb">Modulators in Ableton Live (general rule of thumb)</h2>
+<p>In Ableton Live, most modulators include a “Map” button that you click, then select the item that you want to modulate -e.g in the LFO device <a href="https://www.ableton.com/en/live-manual/12/max-for-live-devices/#lfo" class="uri">https://www.ableton.com/en/live-manual/12/max-for-live-devices/#lfo</a>. The beauty of this is that you map the modulation to <strong><em>the next thing you click</em></strong>. This applies to any knob, fader, slider, and even third party plugins.</p>
+<p>In the case of third party plugins you can often click on the “Down arrow” beside the plugin on/off button to expand the parameters that can be automated.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Labs.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Labs.png" class="img-fluid figure-img" alt="Image shows the various parameters of a Spitfire Audio Labs plugin which is a third-party plugin."></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>If no parameters are presented when you click this button, you may instead see a “Configure” button in the plugin container. When you click on this button and then open the plugin, whatever you click in the UI interface for the device or instrument will show up as a slider in the container interface (see the images below showing the Zebralette instrument as an example).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Zebralette_Configure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Zebralette_Configure.png" class="img-fluid figure-img" alt="Image shows the third-party Zebralette device. In order to control parameters, the user must click the Configure button"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This then opens the UI for the instrument or effect. Now click on various knobs, faders or elements of the instrument or effect UI and Live will capture what has been selected and make these available as items that can be modulated as a list of sliders.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Zebralette.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Zebralette.png" class="img-fluid figure-img" alt="Image shows the next step of the configure step above. Now the full user interface for the Zebralette instrument is shown."></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>For example, if we clicked on the “Phase”, “SyncTune” and “WaveWarp” elements in the UI for Zebralette, when we close the UI we’ll see the list of these elements available now for automation or for assignment to Macro knob control.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Zebralette_Configured.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Zebralette_Configured.png" class="img-fluid figure-img" alt="Image shows that Phase Sync tune and Wave Warp parameters have been selected from the Zebralette instrument"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="lfo" class="level2">
+<h2 class="anchored" data-anchor-id="lfo">LFO</h2>
+<p>Low Frequency Oscillation (LFO) modulation is one of the oldest forms used in synthesisers. In Ableton Live 11 this is presented as a separate <strong><em>audio</em></strong> utility plugin (<a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#lfo">Max for Live plugin called “LFO”</a>). Because it is an audio plugin it has to come <strong><em>after</em></strong> instruments and effects. There is another Max for Live plugin called LFO MIDI if you need it to come before instruments. LFOs are a key element of a modular synth rig. They can be and often are used to modulate pretty much anything. The LFO in Ableton Live can be used in pretty much the same way.</p>
+<p>The Ableton LFO is a really neat tool and illustrates some features that we’ll see again and again in other modulators in this section. In the top left of the first LFO here you can see the parameter that is being affected by the LFO. In the screenshot below it’s changing the Filter Cutoff in the Instrument Rack to its left. I have changed the minimum and maximum value from 30% to 80% in order to avoid extreme values of filter cutoff. It’s often a good idea to tailor the range of values that the LFO is working across as often you want to avoid the extremes. In the bottom left of the device you’ll see the Rate at which the LFO is cycling. In this example it’s going to go through a full cycle (of the Sine wave) every 6 bars. If you click on the box with three horizontal lines in the top right of the LFO it will open a page (as seen in the second LFO) where you can assign other parameters to be affected by the same LFO. Note that the second LFO here is changing the Depth of the first LFO and the Offset. This means that the first LFO doesn’t just cycle predictably from minimum to maximum and back, but instead wobbles in a slightly more interesting way. So one LFO might be too predictable, but using two and using one to modulate the other can bring just enough unpredictability to keep the result interesting.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/LFO.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/LFO.png" class="img-fluid figure-img" alt="Image shows Ableton Live's LFO modulator device. The device is modulating the filter cutoff of a synth instrument with a Sine wave repeating every 6 bars. A second LFO device is modulating Depth and Offset parameters."></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Note that under the visualization of the LFO you’ll see “Jitter” and “Smooth”. “Jitter” adds additional noise randomness to the generated LFO cycle. This can be useful if you want to add a little more random variation over and above the generated LFO values. The “Smooth” option can help smooth out the whole LFO cycle, including the “Jitter”. These “Jitter” and “Smooth” options turn up in various other modulation devices, so it’s good to know what they do.</p>
+<p>A basic LFO is a useful modulator, but there are two drawbacks to the standard LFO on its own:</p>
+<ol type="1">
+<li><p>Its cyclical nature. Having something modulate within a predictable cycle e.g.&nbsp;6 bars is fine, but is a little too predictable if the listener is going to be engaged with that sound over a longer period. If that cycle is part of a larger group of modulations moving at different cycle lengths then this might be less obvious.</p></li>
+<li><p>The “Random” setting is not smooth, as it is a “sample and hold” - so the value changes at the nominated cycle time and holds that value until a new value is assigned at the start of the next cycle. This means that the modulated parameter changes in a step fashion rather than smoothly. The LFO has a “Smooth” value (bottom right of the wave display) but this smoothes out with exponential curves, meaning that the value starts changing quickly at the start of the next cycle. This may still be “not quite smooth enough”.</p></li>
+</ol>
+</section>
+<section id="lfo-trio---a-chaotic-lfo" class="level2">
+<h2 class="anchored" data-anchor-id="lfo-trio---a-chaotic-lfo">LFO Trio - a chaotic LFO</h2>
+<p>One trick from modular synthesis is to modulate LFOs with other LFOs, and to modulate those LFOs by other LFOs. (It’s LFOs all the way down). I was looking to create an LFO where there wasn’t a perceptible pattern or period to its output. So I took a second LFO and changed the depth of the first LFO by the second. I took a third LFO and used it to change the Rate of the second LFO. I then took one of the mapping parameters from the first LFO to change the rate of the third LFO (so feeding back from first LFO back to third). What this gives me then is three LFOs which are all behaving in slightly chaotic and unpredictable ways, even using the standard Sine waveform.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Chaotic_LFOs.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Chaotic_LFOs.png" class="img-fluid figure-img" alt="Image shows three LFO devices. Each of the LFO devices is controlling different aspects of one of the other LFO devices. The resulting cross-modulation results in LFO modulation patterns that are not cyclical but more chaotic in nature."></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="envelope-midi" class="level2">
+<h2 class="anchored" data-anchor-id="envelope-midi">Envelope MIDI</h2>
+<p>The <a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#envelope-midi">Envelope MIDI device</a> provides an envelope (shock!) that can then trigger any parameter in Ableton Live. Any time the channel receives a MIDI note, the envelope is triggered. This envelope can operate free of the tempo, with attack, decay, sustain and release in milliseconds, or it can be synced to the tempo. The envelope can also loop if required. The attack, decay and release rates can be linear (when set to 0%) or curved.</p>
+<p>This allows modular synthesis like control over all kinds of parameters in Live where an incoming MIDI event can trigger changes in <strong><em>anything</em></strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/MIDI_envelope.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/MIDI_envelope.png" class="img-fluid figure-img" alt="Image shows the Envelope MIDI device. This device is set up to follow an Attack Decay Sustain and Release pattern modulating the filter cutoff, triggered by every incoming MIDI note event."></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="envelope-follower" class="level2">
+<h2 class="anchored" data-anchor-id="envelope-follower">Envelope Follower</h2>
+<p>The (Audio Effect) <a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#envelope-follower">Envelope Follower</a> device is similar to the MIDI Envelope device, but instead of being triggered by MIDI notes, it is triggered by audio. Adjust the “Gain” of the input until the orange envelope shows a decent range of modulation. By then tweaking the “Rise” and “Fall” parameters you can smooth out the signal if needed. There’s also an option to delay the envelope rather than having it follow the input signal immediately.</p>
+<p>Then, using the usual mapping process you can choose which parameter in Live you want to modulate using this signal. This device allows you to modulate anything using an input audio signal, whether that signal is heard in the Master audio track or not.</p>
+<p>The devices above (LFO, MIDI Envelope and Envelope Follower) offer modular synthesis like control over pretty much any parameter in Ableton Live. This is one of the strengths of Ableton Live with Max for Live devices over the standard Ableton version - the level of control and the ability to control devices is really unparalleled. Don’t forget that you can also get modulators to modulate each other… So an envelope can modulate the amplitude or rate of an LFO and an LFO can then modulate the envelope of another input.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Envelope_follower.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/Envelope_follower.png" class="img-fluid figure-img" alt="Image shows the Envelope follower device which is listening to incoming audio and modulating the overdrive of the DS Kick drum synth device. Parameters of the Envelope Follower are set with slow rise, fall and delay so that the effect of the modulation is delayed after the initial transient."></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="shaper" class="level2">
+<h2 class="anchored" data-anchor-id="shaper">Shaper</h2>
+<p>Like the envelope follower devices above, there is a <a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#shaper-midi">MIDI Shaper</a> and an <a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#shaper">Audio Shaper</a>device allows you to draw modulation envelopes by specifying nodes across a grid then defining how the modulation should change between the nodes. In the screenshot below the nodes are “Snap”ed to the a grid of four equal divisions. The “Rate” setting defines the length of each division compared to the clock, which can be set according to musical divisions, or in Hz time.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Shaper.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="images/Shaper.png" class="img-fluid figure-img" alt="Image shows the Shaper device as before. Here it is modulating a parameter of a device that is not shown on the image."></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="midi-expression-control" class="level2">
+<h2 class="anchored" data-anchor-id="midi-expression-control">MIDI Expression Control</h2>
+<p>The Wavetable instrument in Ableton Live has a really useful Modulation Matrix where you can map incoming MIDI expression control attributes (Velocity, Modwheel, Pitchbend, etc.) to parameters of the synthesis engine. The <a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#expression-control">Expression Control</a>device extends that to ANY instrument or effect in Ableton Live. As with LFO modulation mapping, you click on the “Map” button and then click the parameter you wish to modulate. Note that the Expression Control device is a MIDI device so is used <strong><em>before</em></strong> instruments while other modulators like LFO are placed <strong><em>after</em></strong> the instrument.</p>
+<p>Expression Control allows you to see the minimum and maximum percentage of modulation, and the shape of onset / offset of that modulation - either linear or logarithmic (curved). It also allows you to specify the “Rise” and “Fall” rate of change to help smooth out the change and prevent sudden changes in parameter values. There’s also a curve shaper in the top right of the device where you can tailor your own curves for the MIDI input, like compression etc.</p>
+<p>The “Random” setting generates a new parameter modulation value <strong><em>with every incoming MIDI note</em></strong>. So rather than cycling through a periodic modulation, Expression control can be used to change parameters with each note. Subtle use of this is good for changing the sound of rhythmic parts - selecting slightly different decay and filter cutoff for example.</p>
+<p>The “Incremental” setting is also useful in that it increments the parameter value by a nominated amount (1% in the screenshot below) with each incoming MIDI note. When it reaches the maximum, it resets to the minimum value, so is effectively a sawtooth LFO but triggered by incoming MIDI rather than periodic in time.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Expression_control.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="images/Expression_control.png" class="img-fluid figure-img" alt="Image shows the Live 11 Expression Control device."></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>One thing to note is that Expression Control can assign the same MIDI control message to multiple parameters. You can click on the “down” arrow next to the MIDI control type and select a different input.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Expression_control_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="images/Expression_control_2.png" class="img-fluid figure-img" alt="Image shows the Live 11 Expression control device similar to the previous image, but this time illustrating the various input controls that can drive the modulation."></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>As I’ve said above, the combination of all of these tools are supremely powerful - so you could change envelopes with each incoming MIDI note or use that note to change an LFO setting that modulates something else. Also, be aware that the Expression Control and Envelope Follower can be used <strong><em>even if</em></strong> the MIDI or audio from the tracks are not sent to the Master audio output. OR EVEN NOT HEARD AT ALL. So you can use MIDI events to modulate items in sync with the master clock regardless of tempo.</p>
+</section>
+<section id="strange-mod" class="level2">
+<h2 class="anchored" data-anchor-id="strange-mod">Strange Mod</h2>
+<p>For a long time, <a href="https://maxforlive.com/library/device/6872/strange-mod">Dillon Baston’s paid Max for Live plugin “Strange Mod”</a> was my “go to” modulation device. It uses chaotic processes - strange attractors - and evaluates the X, Y, and Z three dimensional attributes of a particle within the chaotic system, generating three distinct modulation values (like LFO outputs) which can then be mapped to any parameter as we’ve seen above with other modulators. The change in the three different modulation values is random / chaotic but because they are mapping the three dimensions of the particle moving in the chaotic system, they do not “jump” to new values. Also the three dimensions are somewhat related - the X value does not jump values, but neither do the Y and Z values. They may change quickly, but if they do this happens smoothly. Note that the “Map” button here allows you to map each modulation value - X, Y and Z - to any parameter in Live, but also each individual value (say X) can also be mapped to 7 other parameters, as with the LFO device. That means that a single Strange Mod device could map out to 24 different parameters. There are 11 different strange attractor algorithms to choose from, and you can randomise the starting point of the process to generate new paths of random modulation. The “R” button ensures that the process is reset each time you start Ableton’s transport control (press play). This ensures that your random, chaotic process is at least somewhat repeatable! The “Var” setting scales variability in the process - more means that there’s more chaos, while lower values mean less chaos.</p>
+<p>It’s this combination of smooth and random that makes this my preferred device for modulation. Slowing down the “Speed” of modulation can be useful to map to sound parameters where you want things to evolve smoothly and gradually.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Strange_mod.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="images/Strange_mod.png" class="img-fluid figure-img" alt="Image shows Dillon Bastan's Strange Mod device which uses strange attractor chaotic processes to define the position of particles in three dimension space, which provides three lanes of modulation which can be mapped to parameters in another device."></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="dispatch" class="level2">
+<h2 class="anchored" data-anchor-id="dispatch">Dispatch</h2>
+<p>Dispatch by Cong Burn is a paid <a href="https://maxforlive.com/library/device/7361/dispatch-global-modulation-matrix">Max for Live modulation matrix</a> which generates 4 different modulation processes (A, B, C and D) which can be modulated by the other processes and then allows you to sum these to another set of modulation values - I, II, III and IV. The Matrix view defines the modulation processes while the Grid view allows you to further combine the A, B, C and D modulation and map these to another 16 parameters.</p>
+<p>Dispatch is massively flexible in how you can define and combine modulation sources and types. It can also be quite intimidating at first to know what’s going on. I can recommend reviewing the Cong Burn (Dispatch developer) video on the tool on Youtube: <a href="https://youtu.be/Vlef8VON4Rw" class="uri">https://youtu.be/Vlef8VON4Rw</a></p>
+<p>The vision for Dispatch is that it can be a single modulation device that can send modulation out to parameters throughout an Ableton Live set, rather than having modulators and LFOs scattered throughout the set. If you have the intention of creating generative music where everything is modulated and curated for an extended playback, then Dispatch may be useful to control levels, panning, sends etc. in a single device.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Dispatch.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="images/Dispatch.png" class="img-fluid figure-img" alt="Image shows Cong Burn's Dispatch device which allows complex combinations of cycling LFO cycles to modulate a huge range od parameters from one device. A 4 by 4 dial grid is used to dial up or down different LFOs."></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="deviate" class="level2">
+<h2 class="anchored" data-anchor-id="deviate">Deviate</h2>
+<p>We’ve come across the free <a href="https://www.novelmusic.org/m4l/deviate">Deviate Max for Live device from Novel Music</a> in <a href="Chapter-004-Tools-MIDI_tools.html">Tools - MIDI tools</a> , but it also offers random modulation control on parameters. You can dial up randomness at various levels in Deviate, and also control the amount of randomness which is very useful in generative music. But it also has a key feature - the ability to monitor parameter deviations in its “MEMORY” and then “Lock” in patterns if you find something you like - this mirrors functionality in Turing Machine modules that exist in the modular synthesis world.</p>
+<p>Again, it’s worth reviewing <a href="https://www.youtube.com/watch?v=4WwKGUV2H4I">the tutorial video from Novel Music</a> to learn about all possible features of this device.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="images/Deviate_map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="images/Deviate_map.png" class="img-fluid figure-img" alt="Image shows Novel Music Deviate device, this time showing the Mod tab where the user can define different attributes of modulation processes to modulate parameters."></a></p>
+</figure>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Chapter-006-Recipe-MIDI_tools.html" class="pagination-link" aria-label="Recipe - Doing more with less using MIDI tools and plugins">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Chapter-008-Process-Tuning_Parameters.html" class="pagination-link" aria-label="Process - Tuning Parameters">
+        <span class="nav-page-text"><span class="chapter-title">Process - Tuning Parameters</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

@@ -1,0 +1,87 @@
+# Tools - Audio Generators {#Chapter-014-Tools-Audio_Generators}
+
+```{r}
+#| echo: false
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Create something from nothing with these audio generators. These aren't so much "instruments" - they do not need MIDI input to drive them, and will make noise as soon as you press "Play" on the Ableton transport. That's both a good thing and a bad thing - you may want to start a set with the faders down! These devices can be used to power a drone set very effectively though - just route them through additional effects and/or resonators to create some rich tones.
+
+::: callout-tip
+## Key idea
+
+MIDI generators (as discussed in 
+[Tools - MIDI Generators](#Chapter-012-Tools-MIDI_Generators)
+ produce MIDI notes which can be further processed via the MIDI plugins that we explored in 
+ [Tools - MIDI tools](#Chapter-004-Tools-MIDI_tools)
+and then played through instruments. But Ableton Live also has some sound generators that will produce sounds without the need of MIDI input or in fact ***any*** input. We just need to think a little creatively and use a generous number of Audio plugins to process the sound into the shape we would like. These sound generators are more likely to produce drones and textures than melodies, so may augment some of the tools previously discussed.
+
+::: 
+
+## Pinging resonantors / resonant filters
+
+There's a technique in synthesis where you "ping" a resonant filter with a click or burst of noise which provides the "exciter" to generate a tone. This is relatively simple to achieve in Ableton Live using stock effects in Live Suite. We use a burst of noise from the "Vinyl Distortion" plugin which emulates the crackles and noise from a vinyl record, gate this to only allow the crackles to come through. The "Erosion" plugin accentuates the noise around this crackle and the "Auto Filter" specifies a frequency band that will pass through to the later resonators and effects.
+
+```{r}
+#| fig-alt: "The image shows a collection of audio devices: Vinyl Distortion which has an upper panel showing a resonant peak around 2kHz, and a lower panel showing a high pass filter. There are dials for Volume, Density and Drive. Next is Gate which has been set with a threshold of -36dB, Return set to 0dB, fast attack, hold and release at about 10 to 15 miliseconds. Next is an Erosion device which shows a sharp peak of Noise at 4.6kHz. Utility device adds gain of 18dB. Lastly an Auto Filter device has a band-pass filter at 440Hz with resonance of 32% and drive of 18dB. Auto Filter has the LFO on with amount of 15, Rate of 0.06Hz and Spin at 50% to slowly change the sound."
+knitr::include_graphics(path = file.path(here::here(), "images", "Pinging_Filters.png"))
+```
+
+Hainbach has a great video explaining the technique here: <https://www.youtube.com/watch?v=qJRXxkswXdg>. Ned Rush also routinely uses the Vinyl Distortion to ping other devices e.g. <https://www.youtube.com/watch?v=siWk44aAYeg>.
+
+In our case, instead of using feedback with filters, we can exploit Ableton Live's own resonator plugins: "Resonator", "Spectral Resonator" and "Corpus". In the image below we're using the "Spectral Resonator" to generate some pitched tones. We're feeding it notes from an external MIDI clip which uses the same note probability techniques explained previously. This then feeds into the "Resonators" plugin which provides additional pitched resonance, and the "Spectral Time" plugin which smears out this pitched resonance so that it's not a short burst of pitched information.
+
+```{r}
+#| fig-alt: "The image shows resonator devices in Ableton Live Suite. Starting with Spectral Resonator which is set to transpose down 12 semitones, with a decay of 4 seconds and high frequency damping of 25%. The device is in Granular mode with a mod rate of 20%. It is using MIDI input from a MIDI channel to ping the resonance. Next is the Resonator device set to root note of C2 and with resonance set to +7, -5, +5 and +14 semitones. Finally is Spectral Time which is using the Freeze functionality fading in over 2.5 seconds and fading out over 1 second. Delay time is set to 1 second with feedback at 33%. Tilt is set to 240 miliseconds with spray at 400 miliseconds." 
+knitr::include_graphics(path = file.path(here::here(), "images", "Resonators.png"))
+```
+
+## Echo Noise and resonance.
+
+The Echo device has a Noise generator in the Character tab. This generator was suggested by David Shooter (Guerilla Biscuits). With very short Echo times (approximately 30 miliseconds) and a high level of Noise within the circuit we're trying to get the Echo to essentially self-oscillate. The Feedback governs how long the noise lasts in the system. As above we're using Resonators here to take the noisy output from Echo and use that to "ping" the resonators. In the example below the resonators are tuned in octaves and fifths. You could alternatively use Corpus to provide a different resonance, but the same general idea applies - create a noise source and then have that excite resonators.
+
+```{r}
+#| fig-alt: "The image shows an effect rack which generates noise from the Noise Character setting in the Ableton Echo device, modulated using an LFO and then sent through a Resonator to add pitched harmonics. The Delay on the Echo uses Time rather than sync mode and the time is very short - 29ms. This should make the Echo get close to self-resonating and makes the Noise generator within the Echo almost self-oscillate The LFO affects the Morph parameter of the Noise circuit. The Resonator has the root note selected from the Macro knobs, and resonates in fifths and octaves."
+knitr::include_graphics(path = file.path(here::here(), "images", "Echo_Noise_Generator.png"))
+```
+
+## Tree Tone
+
+From the [Inspired by Nature pack](https://www.ableton.com/en/packs/inspired-nature/#?item_type=max_for_live) by Dillon Bastan the [Tree Tone](https://www.youtube.com/watch?v=_mk7qyzEcCQ) generator is primarily a resonant drone generator but with some additional bells and whistles. Literally. The "Tree" in the central panel has "branches" that define resonators / resonant frequencies. Thicker, longer branches have lower pitch and louder volume. Thinner branches have higher pitch but lower volume. In the image below the "Tree" has fewer large branches and so would be expected to have some lower drone sounds. The position of the branches to left or right is their position in panning. The "Noise" amount and filtering determines how much these resonators are excited by the noise. The "Wind" provides additional movement and modulation to the system - affecting volume and filtering. The "Rain" setting "pings" the resonators as with a "raindrop" (or mallet). More "Rain" and "Speed" will ping the resonators providing chimes. The "Algo/Mix" setting will affect the overall pitch of the system - lower values being warmer or darker, higher values brighter. Tuning the system will ensure that frequencies and "pings" from raindrops conform to a scale. "Inharmnic" will add some inharmonic frequencies or more "clangerous" sounds.
+
+This is a deceptively useful generator, as it can be used to create beautiful drones, or you can switch off "Noise" and have just the "raindrops". Combining this with some additional resonators or effects can create an evolving, generative ambience just on its own.
+
+Two Easter Eggs to Tree Tone exist: The top "microphone" button on the far right allows you to route ANY audio signal through Tree Tone and excite the resonators. So Tree Tone can be used as either as a generator OR an effect (similar to the Corpus device). Below this is the "Sine" button which opens modulation dialogue where you can device two LFOs and two envelopes and then route these to parameters of the device. So you don't need to stick with a static sound, and the envelopes can be triggered by incoming MIDI information.
+
+```{r}
+#| fig-alt: "The image shows the Tree Tone device from Ableton's Inspired by Nature pack. On the left is a panel with dials setting the audio generation processes - White noise generation with Noise level, Filter cutoff and Wind speed. Here the Filter cutoff is at approximately 2kHz and Wind speed at 50%. Below that is the pinging Rain generator. Rain is set to 100% with Speed set to 19%. The right hand panel sets the pitch information. Scale is on here and set to minor pentatonic. Root note or Tonic is set to C. Inharmonic content is set to 20%. Below that are dials for Decay, Pan and Gain. The middle panel displays a graphical representation of something looking like a root system with a main branch with smaller branches coming off it. This represents the harmonic content of the generator. Six different harmonic generators have small icons along the botton showing different branch and root systems."
+knitr::include_graphics(path = file.path(here::here(), "images", "Tree_tone.png"))
+```
+
+## Harmonic Drone Generator
+
+Does exactly what is says on the tin. This is a drone generator from the [Drone Lab pack](https://www.ableton.com/en/packs/drone-lab/#?) in Ableton Suite. In the Harmonic Drone Generator you can set the root tone, and then the resonant frequencies of other resonators. When the button is lit orange above the resonator it will be heard. Below the resonator you can choose to add or decrease the resonant pitch (up to 10Hz either above or below). Note that resonant pitch tuning can be set to "Just" intonation or "Equal temperament". "Just" pitch divisions result in more harmonious noises, but don't necessarily correspond to tone pitches. So while "Just" will give you better sounding drones, don't be surprised if it sounds "off" compared to pitched notes from other sources...
+
+Again, this is a nice generator to use as the fundamental source for a textured drone session. You can feed the output of this device through other effects to manipulate, distort, and augment sounds from it. You can also "play" the device using MIDI input. The "Glide" option gives a nice glide effect as the resonators re-pitch to the new incoming note.
+
+```{r}
+#| fig-alt: "The image shows the Harmonic Drone Generator from the Ableton Drone Lab pack. On the left of the device is a section defining the pitch of the generator. In this case it is set to C4 with Just intonation and an FM ratio of 0.25 with amount of 27%. Then there is a Tempo dial set to 14% with density dial below set to 80%. Glide time is set to 3 seconds. In the middle are 8 generators set to different scale degrees with the option to fine tune these through adjusting an offset in Hz or through minus, equal and plus buttons. Each drone can be panned using a slider on the bottom. To the right is an overall volume dial and Suboscillator gain slider."
+knitr::include_graphics(path = file.path(here::here(), "images", "Harmonic_Drone_Generator.png"))
+```
+
+## Cellular Degradation
+
+This is a [paid plugin by Dillon Bastan](https://dillonbastan.gumroad.com/l/yyehc?layout=profile) which features six tone generating synthesis engines with a generator mechanism based on cellular growth and decay. If you're familiar with Conway's "Game of Life" then this concept might be familiar, but basically cells are generated and rules govern whether that cell will continue to survive or decay depending on the state of neighbouring cells. So if a new cell has surrounding cells which are alive, it will "survive", but if there aren't sufficient live cells neighbouring then it will decay. The "Born" rule will spawn new cells adjacent to the clicked cell
+
+The six tone generators work in L+R pairs, so there are actually 12 sets of parameters that can be affected by the cell values if the "Voices" is set to 6. Different parameters of the tone generators are shown to the right of the square display and by clicking on the row for each parameter, it will set the value for that parameter using the "Value" scaling to the bottom left of the square display. This then scales the range of possible values for each parameter which shows the offset / lowest value (left % number) and the range (right % number).
+
+I thoroughly recommend reviewing [Misty Jones' YouTube videos](https://www.youtube.com/watch?v=dM2ksxavJzI) on this plugin. She has comprehensively explored and described the various options and settings.
+
+So what this gives us is a way of generating tones. You can quantize changes to Hz or rhythmic pulses. In the screenshot below, I'm modulating the "Draw XY" left and right boxes and the "Value" box through the Strange Mod modulator (also by Dillon Bastan). This means that the Strange Mod modulation device is essentially drawing values into the square display. Outside the captured image, I'm also using another instance of Strange Mod to set values for some of the parameters.
+
+The sound the generator creates is a little odd, but through use of additional audio effects it's possible to create some interesting evolving drone textures.
+
+```{r}
+#| fig-alt: "The image shows Dillon Bastan's Cellular Degradation device and his Strange Mod modulator. In Cellular Degradation there is a left panel defining generation rate in Hz or note division i.e. 32nd notes. A selector for number of voices and settings for probability of Born and Survive of each particle. Below Born are two value boxes. The left one is set to 2 the right set to 3. The Survive value boxes are set to 3 and 4. In the middle is a graphical representation of the birth and death processes generated. Each cell defines the amount of various FM synthesis parameters with ranges shown in the panel on the right. To the right of the device are options to add your own sample, pick a random sample, tune the pitch in semitones and control the stereo width. Finally in the bottom right is a Gain dial."
+knitr::include_graphics(path = file.path(here::here(), "images", "Cellular_Degradation.png"))
+```

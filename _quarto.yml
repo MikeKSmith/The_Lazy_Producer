@@ -1,17 +1,17 @@
 project:
   type: book
-  output-dir: pdf
+  output-dir: docs
   
 execute:
   enabled: true
   
 book:
-  title: "The Lazy Producer - Starter ideas for generative music"
-  author: "Mike K Smith"
-  date: last-modified
-  date-format: iso
+  title: "The Lazy Producer"
+  author: Mike K Smith
+  sidebar:
+    style: floating
   chapters:
-    - index.qmd # Replaced by extension's titlepage, no alt text on PDFs, so I altered your index.qmd
+    - index.qmd # Replaced by extension's titlepage, no alt text on PDFs
     - Chapter-000-Preface.qmd
     - Chapter-0000-Defintion-Generative.qmd
     - Chapter-001-Recipe-Changing_Chords.qmd
@@ -36,17 +36,24 @@ book:
     - Chapter-020-Recipe-Sampler_drone.qmd
     - Chapter-021-Process-Unsynced_loops.qmd
     - Chapter-022-Recipe-Fibonacci_loops.qmd
+    - Chapter-023-Process-Your_Unpredictable_Bandmate.qmd
+    - Chapter-024-Tool-Random_Sound_Design.qmd
+    - Chapter-025-Tool-Variations.qmd
+    - Chapter-026-Tool-ChainSelect.qmd
     - Chapter-030-Tools-Live12_Intro.qmd
     - Chapter-031-Tools-Live12_Sequencers.qmd
     - Chapter-032-Tools-Live12_Modulation.qmd
     - Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd
-
+    
 format: 
   html:
     theme: cosmo
+    search: true
     toc: true
     link-external-icon: true
     link-external-newwindow: true
+    number-sections: false  # This turns off chapter numbering to look more like your website version did
+
   titlepage-pdf:
     documentclass: scrbook
     classoption: ["oneside", "open=any"] # makes it not print like a left/right spaced book
