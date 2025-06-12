@@ -1,62 +1,101 @@
 project:
-  type: website
-  output-dir: docs
+  type: book
+  output-dir: pdf
   
 execute:
   enabled: true
   
-website:
-  title: "The Lazy Producer"
-  page-navigation: true
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-    search: true
-  sidebar:
-    style: "floating"
-    contents: /*
-    chapters:
-      - index.qmd # Replaced by extension's titlepage, no alt text on PDFs, so I altered your index.qmd
-      - 000-Preface.qmd
-      - 0000-Defintion-Generative.qmd
-      - 001-Recipe-Changing_Chords.qmd
-      - 002-Process-Note_wise_probability.qmd
-      - 003-Process-Follow_Actions.qmd
-      - 004-Tools-MIDI_tools.qmd
-      - 005-Process-Routing.qmd
-      - 006-Recipe-MIDI_tools.qmd
-      - 007-Tools-Modulators.qmd
-      - 008-Process-Tuning_Parameters.qmd
-      - 009-Process-Balance_unexpected_and_predictable.qmd
-      - 010-Recipe-Balance_random_and_predictable.qmd
-      - 011-Process-Workflow-Capturing_Ideas.qmd
-      - 012-Tools-MIDI_Generators.qmd
-      - 013-Recipe-MIDI_generators.qmd
-      - 014-Tools-Audio_Generators.qmd
-      - 015-Tools-Audio_Effects.qmd
-      - 016-Tools-PaulStretch.qmd
-      - 017-Recipe-Audio_generators_drone.qmd
-      - 018-Process-Scales.qmd
-      - 019-Process-Using_Field_Recordings.qmd
-      - 020-Recipe-Sampler_drone.qmd
-      - 021-Process-Unsynced_loops.qmd
-      - 022-Recipe-Fibonacci_loops.qmd
-      - 023-Process-Your_Unpredictable_Bandmate.qmd
-      - 024-Tool-Random_Sound_Design.qmd
-      - 025-Tool-Variations.qmd
-      - 026-Tool-ChainSelect.qmd
-      - 030-Tools-Live12_Intro.qmd
-      - 031-Tools-Live12_Sequencers.qmd
-      - 032-Tools-Live12_Modulation.qmd
-      - 033-Tools-Live12_MIDI_Generation_Transformation.qmd
+book:
+  title: "The Lazy Producer - Starter ideas for generative music"
+  author: "Mike K Smith"
+  date: last-modified
+  date-format: iso
+  chapters:
+    - index.qmd # Replaced by extension's titlepage, no alt text on PDFs, so I altered your index.qmd
+    - Chapter-000-Preface.qmd
+    - Chapter-0000-Defintion-Generative.qmd
+    - Chapter-001-Recipe-Changing_Chords.qmd
+    - Chapter-002-Process-Note_wise_probability.qmd
+    - Chapter-003-Process-Follow_Actions.qmd
+    - Chapter-004-Tools-MIDI_tools.qmd
+    - Chapter-005-Process-Routing.qmd
+    - Chapter-006-Recipe-MIDI_tools.qmd
+    - Chapter-007-Tools-Modulators.qmd
+    - Chapter-008-Process-Tuning_Parameters.qmd
+    - Chapter-009-Process-Balance_unexpected_and_predictable.qmd
+    - Chapter-010-Recipe-Balance_random_and_predictable.qmd
+    - Chapter-011-Process-Workflow-Capturing_Ideas.qmd
+    - Chapter-012-Tools-MIDI_Generators.qmd
+    - Chapter-013-Recipe-MIDI_generators.qmd
+    - Chapter-014-Tools-Audio_Generators.qmd
+    - Chapter-015-Tools-Audio_Effects.qmd
+    - Chapter-016-Tools-PaulStretch.qmd
+    - Chapter-017-Recipe-Audio_generators_drone.qmd
+    - Chapter-018-Process-Scales.qmd
+    - Chapter-019-Process-Using_Field_Recordings.qmd
+    - Chapter-020-Recipe-Sampler_drone.qmd
+    - Chapter-021-Process-Unsynced_loops.qmd
+    - Chapter-022-Recipe-Fibonacci_loops.qmd
+    - Chapter-030-Tools-Live12_Intro.qmd
+    - Chapter-031-Tools-Live12_Sequencers.qmd
+    - Chapter-032-Tools-Live12_Modulation.qmd
+    - Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd
 
-    
-format:
+format: 
   html:
     theme: cosmo
     toc: true
     link-external-icon: true
     link-external-newwindow: true
-    
-lightbox: true
+  titlepage-pdf:
+    documentclass: scrbook
+    classoption: ["oneside", "open=any"] # makes it not print like a left/right spaced book
+    number-sections: true
+    toc: true
+    toc-depth: 2
+    toc-title: Chapters
+    colorlinks: true
+    # Link color customization - use whatever you like 
+    linkcolor: Green # Internal document links (e.g. section jumps)
+    urlcolor: Blue        # External links (URLs)
+    coverpage: "true"
+    titlepage: "true"
+    coverpage-bg-image: "images/Album_Cover_Padded.png" # the padded cover image I made
+    coverpage-title: "" # makes sure no title is on coverpage
+    coverpage-footer: "" # makes sure no footer is on coverpage
+    coverpage-author: "" # makes sure no author is on coverpage
+    pdf-engine: xelatex
+    keep-tex: true
+    coverpage-theme:
+      date-style: "none" # makes sure no date is on coverpage
+    default-image-extension: tex
+    geometry: "margin=1in" # Modern 1" margins on all sides
+    # mainfont: "Roboto" # I used these fonts to test, but commenting them out here
+    # monofont: "Fira Code"
+    fontsize: 12pt
+    # Let's style the title page (the page after the coverpage)
+    titlepage-title: "The Lazy Producer - Starter ideas for generative music"
+    titlepage-author: "Mike K Smith"
+    titlepage-date: "" # You lose the ability to use last-modified date, sorry
+    titlepage-logo: "images/Album_Cover_Logo.png" # Comment out if you don't want a logo
+    titlepage-geometry: ["top=1in", "bottom=1in", "right=1.25in", "left=1.25in"] # special margins for title page only
+    titlepage-theme: # Below is where I'll add the image attribution + your bandcamp
+      elements: ["\\vspace{1.0cm}", "\\titleblock", "\\authorblock", "\\vfill", "\\logoblock", "Cover image by Danielle Navarro (https://djnavarro.net)", "Image used by agreement with the artist.", "MikeKSmith's music can be found on Bandcamp at https://mikeksmith.bandcamp.com", "\\vspace{0.8cm}", "\\footerblock"]
+      page-align: "center"
+      title-style: "plain"
+      title-fontstyle: ["Huge", "textbf"]
+      title-space-after: "1.5cm"
+      subtitle-fontstyle: "LARGE"
+      # title-subtitle-space-between: "0.5cm"
+      author-style: "plain"
+      author-sep: "newline"
+      author-fontstyle: "textbf"
+      author-space-after: "2\\baselineskip"
+      # affiliation-style: "numbered-list-with-correspondence"
+      # affiliation-fontstyle: "large"
+      # affiliation-space-after: "0pt"
+      footer-style: "plain"
+      footer-fontstyle: ["Large", "textsc"]
+      footer-space-after: "0pt"
+      logo-size: "0.25\\textwidth"
+      logo-space-after: "1cm"
