@@ -7,42 +7,43 @@ execute:
   
 book:
   title: "The Lazy Producer"
+  author: Mike K Smith
   sidebar:
     style: floating
-    chapters:
-      - index.qmd # Replaced by extension's titlepage, no alt text on PDFs, so I altered your index.qmd
-      - Chapter-000-Preface.qmd
-      - Chapter-0000-Defintion-Generative.qmd
-      - Chapter-001-Recipe-Changing_Chords.qmd
-      - Chapter-002-Process-Note_wise_probability.qmd
-      - Chapter-003-Process-Follow_Actions.qmd
-      - Chapter-004-Tools-MIDI_tools.qmd
-      - Chapter-005-Process-Routing.qmd
-      - Chapter-006-Recipe-MIDI_tools.qmd
-      - Chapter-007-Tools-Modulators.qmd
-      - Chapter-008-Process-Tuning_Parameters.qmd
-      - Chapter-009-Process-Balance_unexpected_and_predictable.qmd
-      - Chapter-010-Recipe-Balance_random_and_predictable.qmd
-      - Chapter-011-Process-Workflow-Capturing_Ideas.qmd
-      - Chapter-012-Tools-MIDI_Generators.qmd
-      - Chapter-013-Recipe-MIDI_generators.qmd
-      - Chapter-014-Tools-Audio_Generators.qmd
-      - Chapter-015-Tools-Audio_Effects.qmd
-      - Chapter-016-Tools-PaulStretch.qmd
-      - Chapter-017-Recipe-Audio_generators_drone.qmd
-      - Chapter-018-Process-Scales.qmd
-      - Chapter-019-Process-Using_Field_Recordings.qmd
-      - Chapter-020-Recipe-Sampler_drone.qmd
-      - Chapter-021-Process-Unsynced_loops.qmd
-      - Chapter-022-Recipe-Fibonacci_loops.qmd
-      - Chapter-023-Process-Your_Unpredictable_Bandmate.qmd
-      - Chapter-024-Tool-Random_Sound_Design.qmd
-      - Chapter-025-Tool-Variations.qmd
-      - Chapter-026-Tool-ChainSelect.qmd
-      - Chapter-030-Tools-Live12_Intro.qmd
-      - Chapter-031-Tools-Live12_Sequencers.qmd
-      - Chapter-032-Tools-Live12_Modulation.qmd
-      - Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd
+  chapters:
+    - index.qmd # Replaced by extension's titlepage, no alt text on PDFs, so I altered your index.qmd
+    - Chapter-000-Preface.qmd
+    - Chapter-0000-Defintion-Generative.qmd
+    - Chapter-001-Recipe-Changing_Chords.qmd
+    - Chapter-002-Process-Note_wise_probability.qmd
+    - Chapter-003-Process-Follow_Actions.qmd
+    - Chapter-004-Tools-MIDI_tools.qmd
+    - Chapter-005-Process-Routing.qmd
+    - Chapter-006-Recipe-MIDI_tools.qmd
+    - Chapter-007-Tools-Modulators.qmd
+    - Chapter-008-Process-Tuning_Parameters.qmd
+    - Chapter-009-Process-Balance_unexpected_and_predictable.qmd
+    - Chapter-010-Recipe-Balance_random_and_predictable.qmd
+    - Chapter-011-Process-Workflow-Capturing_Ideas.qmd
+    - Chapter-012-Tools-MIDI_Generators.qmd
+    - Chapter-013-Recipe-MIDI_generators.qmd
+    - Chapter-014-Tools-Audio_Generators.qmd
+    - Chapter-015-Tools-Audio_Effects.qmd
+    - Chapter-016-Tools-PaulStretch.qmd
+    - Chapter-017-Recipe-Audio_generators_drone.qmd
+    - Chapter-018-Process-Scales.qmd
+    - Chapter-019-Process-Using_Field_Recordings.qmd
+    - Chapter-020-Recipe-Sampler_drone.qmd
+    - Chapter-021-Process-Unsynced_loops.qmd
+    - Chapter-022-Recipe-Fibonacci_loops.qmd
+    - Chapter-023-Process-Your_Unpredictable_Bandmate.qmd
+    - Chapter-024-Tool-Random_Sound_Design.qmd
+    - Chapter-025-Tool-Variations.qmd
+    - Chapter-026-Tool-ChainSelect.qmd
+    - Chapter-030-Tools-Live12_Intro.qmd
+    - Chapter-031-Tools-Live12_Sequencers.qmd
+    - Chapter-032-Tools-Live12_Modulation.qmd
+    - Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd
   
 lightbox: true
 
@@ -53,6 +54,7 @@ format:
     toc: true
     link-external-icon: true
     link-external-newwindow: true
+    number-sections: false  # This turns off chapter numbering to look more like your website version did
   titlepage-pdf:
     documentclass: scrbook
     classoption: ["oneside", "open=any"] # makes it not print like a left/right spaced book
