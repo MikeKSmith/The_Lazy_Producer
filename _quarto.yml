@@ -1,21 +1,14 @@
 project:
-  type: website
+  type: book
   output-dir: docs
   
 execute:
   enabled: true
   
-website:
+book:
   title: "The Lazy Producer"
-  page-navigation: true
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-    search: true
   sidebar:
-    style: "floating"
-    contents: /*
+    style: floating
     chapters:
       - index.qmd # Replaced by extension's titlepage, no alt text on PDFs, so I altered your index.qmd
       - Chapter-000-Preface.qmd
@@ -50,13 +43,66 @@ website:
       - Chapter-031-Tools-Live12_Sequencers.qmd
       - Chapter-032-Tools-Live12_Modulation.qmd
       - Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd
+  
+lightbox: true
 
-    
-format:
+format: 
   html:
     theme: cosmo
+    search: true
     toc: true
     link-external-icon: true
     link-external-newwindow: true
-    
-lightbox: true
+  titlepage-pdf:
+    documentclass: scrbook
+    classoption: ["oneside", "open=any"] # makes it not print like a left/right spaced book
+    number-sections: true
+    toc: true
+    toc-depth: 2
+    toc-title: Chapters
+    colorlinks: true
+    # Link color customization - use whatever you like 
+    linkcolor: Green # Internal document links (e.g. section jumps)
+    urlcolor: Blue        # External links (URLs)
+    coverpage: "true"
+    titlepage: "true"
+    coverpage-bg-image: "images/Album_Cover_Padded.png" # the padded cover image I made
+    coverpage-title: "" # makes sure no title is on coverpage
+    coverpage-footer: "" # makes sure no footer is on coverpage
+    coverpage-author: "" # makes sure no author is on coverpage
+    pdf-engine: xelatex
+    keep-tex: true
+    coverpage-theme:
+      date-style: "none" # makes sure no date is on coverpage
+    default-image-extension: tex
+    geometry: "margin=1in" # Modern 1" margins on all sides
+    # mainfont: "Roboto" # I used these fonts to test, but commenting them out here
+    # monofont: "Fira Code"
+    fontsize: 12pt
+    # Let's style the title page (the page after the coverpage)
+    titlepage-title: "The Lazy Producer - Starter ideas for generative music"
+    titlepage-author: "Mike K Smith"
+    titlepage-date: "" # You lose the ability to use last-modified date, sorry
+    titlepage-logo: "images/Album_Cover_Logo.png" # Comment out if you don't want a logo
+    titlepage-geometry: ["top=1in", "bottom=1in", "right=1.25in", "left=1.25in"] # special margins for title page only
+    titlepage-theme: # Below is where I'll add the image attribution + your bandcamp
+      elements: ["\\vspace{1.0cm}", "\\titleblock", "\\authorblock", "\\vfill", "\\logoblock", "Cover image by Danielle Navarro (https://djnavarro.net)", "Image used by agreement with the artist.", "MikeKSmith's music can be found on Bandcamp at https://mikeksmith.bandcamp.com", "\\vspace{0.8cm}", "\\footerblock"]
+      page-align: "center"
+      title-style: "plain"
+      title-fontstyle: ["Huge", "textbf"]
+      title-space-after: "1.5cm"
+      subtitle-fontstyle: "LARGE"
+      # title-subtitle-space-between: "0.5cm"
+      author-style: "plain"
+      author-sep: "newline"
+      author-fontstyle: "textbf"
+      author-space-after: "2\\baselineskip"
+      # affiliation-style: "numbered-list-with-correspondence"
+      # affiliation-fontstyle: "large"
+      # affiliation-space-after: "0pt"
+      footer-style: "plain"
+      footer-fontstyle: ["Large", "textsc"]
+      footer-space-after: "0pt"
+      logo-size: "0.25\\textwidth"
+      logo-space-after: "1cm"
+      
