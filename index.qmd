@@ -5,8 +5,7 @@
 ::: {.content-visible when-format=html}
 # Attribution  {.unnumbered}
 
-This version of the book is 0.994. 
-
+This version of the book is 0.995. 
 
 ```{r}
 #| echo: false
@@ -14,6 +13,7 @@ This version of the book is 0.994.
 ```
 
 Rendered on `{r} Date`.  
+::: 
 
 ::: {.content-visible when-format=html}
 [⬇️ Download PDF](The-Lazy-Producer.pdf){.button .download-pdf target="_blank"}
