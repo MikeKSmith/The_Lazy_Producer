@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Attribution</span></a>
+ <span class="menu-text">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -240,17 +240,17 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Random sound design with Instrument Racks</span></a>
+  <a href="./Chapter-024-Tools-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Random sound design with Instrument Racks</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-025-Tool-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
+  <a href="./Chapter-025-Tools-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-026-Tool-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Chain Select</span></a>
+  <a href="./Chapter-026-Tools-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Chain Select</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -271,6 +271,12 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Chapter-033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Live 12 MIDI Generation and Transformation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-999-Outro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Outro</span></a>
   </div>
 </li>
     </ul>
@@ -327,7 +333,7 @@ Key idea
 <p>The third track (MIDI) here is “pulling” the MIDI from Track 1. Note that the Monitor is set to “In” so that it “listens” for the MIDI being sent. In this case I can add a MIDI device like Note Length to “stretch” the incoming MIDI and then apply an Arpeggiator to that to produce new moving parts that are related to the sequence in Track 1, but different.</p>
 <p>The fourth track (Audio) here is “pulling” the audio from Track 3 (Wavetable). Similar to Track 3, it needs the Monitor set to “In” to “listen” for the audio output. In this track we’re also showing the various options for where to grab audio - it can be “Pre FX”, “Post FX” or “Post Mixer”. “Pre FX” means that the audio is grabbed by the track before it goes through any audio processing on the input track. This means you can apply different effects to the same raw audio source - some on Track 3 and some via Track 4. “Post FX” means that it grabs audio after effects have been applied. “Post Mixer” means that track volumes and panning are applied prior to grabbing the audio. “Post Mixer” might be handy if you wish to control levels from only one track.</p>
 <p>In MIDI tracks the “Pre FX” and “Post FX” apply to MIDI effects as well, so you can grab MIDI inputs either before MIDI effects are applied, or afterwards. Since Ableton’s track routing works this way consistently, it’s possible to add intermediate MIDI tracks with no instruments, but “listening” to the MIDI output at a particular state (“Pre” or “Post” FX on the source track) and then have additional tracks that exploit the intermediate track. This flexibility and ease of routing is a massive bonus for The Lazy Producer. It’s possible to reuse inputs across multiple tracks in multiple ways to do a huge range with them. In particular I use this technique to build texture, especially in “drone” tracks where I can apply different resonators, textural effects to audio inputs from the same source and then blend these across tracks.</p>
-<p>An alternative approach to the same problem would be to employ “Instrument Racks” or “Effect Racks” in one track. However, the benefit from the approach above is that each track can then use Return track sends to apply effects. It also makes live performance somewhat easier since you can quickly see the levels of each track and control these via a MIDI controller device like Ableton Push.</p>
+<p>An alternative approach to the same problem would be to employ “Instrument Racks” or “Effect Racks” in one track (see <a href="https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks" class="uri">https://www.ableton.com/en/live-manual/12/instrument-drum-and-effect-racks</a>). However, the benefit from the approach above is that each track can then use Return track sends to apply effects. It also makes live performance somewhat easier since you can quickly see the levels of each track and control these via a MIDI controller device like Ableton Push.</p>
 <div class="cell" data-fit-alt="Image shows the routing of MIDI notes between a generator track on the left and four other tracks. The generator track is routing MIDI to the operator instrument in track 2. Track 3 is pulling MIDI information from the generator track in position 1 so the Monitor button is switched to In. The fourth track is taking audio from the Wavetable instrument track but selecting that audio post mixer. The fifth track is recording audio from an external device, but monitor is set to off.">
 <div class="cell-output-display">
 <div>

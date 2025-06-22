@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Attribution</span></a>
+ <span class="menu-text">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -240,17 +240,17 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Random sound design with Instrument Racks</span></a>
+  <a href="./Chapter-024-Tools-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Random sound design with Instrument Racks</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-025-Tool-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
+  <a href="./Chapter-025-Tools-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-026-Tool-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Chain Select</span></a>
+  <a href="./Chapter-026-Tools-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Chain Select</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -273,6 +273,12 @@ ul.task-list li input[type="checkbox"] {
   <a href="./Chapter-033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Live 12 MIDI Generation and Transformation</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-999-Outro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Outro</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -292,6 +298,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#midi-waves" id="toc-midi-waves" class="nav-link" data-scroll-target="#midi-waves">MIDI Waves</a></li>
   <li><a href="#midivolve" id="toc-midivolve" class="nav-link" data-scroll-target="#midivolve">Midivolve</a></li>
   <li><a href="#seeds---polymath-and-friends" id="toc-seeds---polymath-and-friends" class="nav-link" data-scroll-target="#seeds---polymath-and-friends">SEEDS - Polymath and friends</a></li>
+  <li><a href="#mdd-snake" id="toc-mdd-snake" class="nav-link" data-scroll-target="#mdd-snake">MDD Snake</a></li>
   <li><a href="#others-i-havent-mentioned" id="toc-others-i-havent-mentioned" class="nav-link" data-scroll-target="#others-i-havent-mentioned">Others I haven’t mentioned</a></li>
   </ul>
 </nav>
@@ -332,7 +339,7 @@ Key idea
 <p>You can play or program in sequences to be used as the basis for generative music, and we did exactly this for <a href="Chapter-001-Recipe-Changing_Chords.html">Recipe - Changing chords</a> . But to create melodic or note sequences you may also wish to use a MIDI note generator like those discussed below. All of these devices will create MIDI note sequences - all of them can use random probability to generate note sequences that constantly change or evolve. As we have discussed in the section <a href="Chapter-009-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a> too much randomness can be difficult for the listener to engage with. Fortunately, most of these plugins allow you to tailor the amount of randomness or to slowly evolve.</p>
 </div>
 </div>
-<p>In Ableton Live 11 Suite, there are many plugins that will generate note sequences and allow you to specify per note probability. Many of these were developed before Live 11 introduced per note probability in the MIDI piano roll.</p>
+<p>In Ableton Live Suite, there are many plugins that will generate note sequences and allow you to specify per note probability. Many of these were developed before Live 11 introduced per note probability in the MIDI piano roll.</p>
 <section id="melodic-steps" class="level2">
 <h2 class="anchored" data-anchor-id="melodic-steps">Melodic Steps</h2>
 <p><a href="https://www.youtube.com/watch?v=ev2GgU1D8jw">Melodic Steps</a> (Max for Live sequencer in the <a href="https://www.ableton.com/en/packs/creative-extensions/">Creative Extensions pack</a>) is a sequencer that disentangles note pitch, octave, length, velocity and probability. This allows you to sequence these attributes separately. You can define the length of each sequence separately, so you can have all sequences with the same length for predictable MIDI sequences, or change the length of one or more to produce more elaborate patterns. Having sequences that are even numbers of steps will bring you back to repetition faster than having sequence lengths that are based on prime numbers (remember common factors from your elementary arithmetic lessons?). Note that each lane has the option to “roll the dice” and add randomness, either a little (score 2 dice) or a lot (score 5 dice). Also, note that the “Playback” setting can choose to play back at twice the speed or half the speed.</p>
@@ -363,7 +370,7 @@ Key idea
 </section>
 <section id="dr-chaos" class="level2">
 <h2 class="anchored" data-anchor-id="dr-chaos">Dr Chaos</h2>
-<p><a href="https://www.youtube.com/watch?v=ELMM0IxNVAk">“Dr Chaos”</a> is part of the <a href="https://www.ableton.com/en/packs/probability-pack/">Probability Pack by Sonic Faction</a>. This plugin allows you specify a sequence of notes across 8 steps. Notes can be quantised to notes in a scale using the drop down “Scale” setting on the far right at the bottom. The Network panel on the left dictates the order of notes. In this example, Note 1 “C” will be followed by Note 3 “F”. Note 2 “D#” will also be followed by Note 3 “F”. This sequence as defined means that when press “Play” and start the transport in Ableton then the “D#” note won’t necessarily play (since we start at Note 1 “C”). BUT in this case we have a little “Chaos” dialled in to the notes, which adds a little randomness, which might occasionally play the “D#”. Like the “Melodic Steps” sequencer above, Dr Chaos also allows you to define potential Octave, Velocity and Length of each note <strong><em>and</em></strong> add randomness to that through the “Chaos” slider. This adds some extra “spice” to the sequence. We can also specify the “Rate” of the sequence, so you can generate faster or slower sequences.</p>
+<p><a href="https://www.youtube.com/watch?v=ELMM0IxNVAk">“Dr Chaos”</a> is part of the <a href="https://www.ableton.com/en/packs/probability-pack/">Probability Pack by Sonic Faction</a>. This plugin allows you specify a sequence of notes across 8 steps. Notes can be quantised to notes in a scale using the drop down “Scale” setting on the far right at the bottom. The Network panel on the left dictates which notes follow other notes in the scale. In this example, Note 1 “C” will be followed by Note 3 “F”. Note 2 “D#” will also be followed by Note 3 “F”. This sequence as defined means that when press “Play” and start the transport in Ableton then the “D#” note won’t necessarily play (since we start at Note 1 “C”). BUT in this case we have a little “Chaos” dialled in to the notes, which adds a little randomness, which might occasionally play the “D#”. Like the “Melodic Steps” sequencer above, Dr Chaos also allows you to define potential Octave, Velocity and Length of each note <strong><em>and</em></strong> add randomness to that through the “Chaos” slider. This adds some extra “spice” to the sequence. We can also specify the “Rate” of the sequence, so you can generate faster or slower sequences.</p>
 <p>Dr Chaos can store a number of patterns for both the note network (left) and the note attributes (right) so it’s possible to set up sequences that you want to use and play through these, or jump to specific combinations.</p>
 <p>I like Dr Chaos because you can set up networks of notes that will give potentially nice sounding sequences, but randomness can kick in to take you somewhere else instead. It breaks you out of the typical sequencer where the sequence of notes is predictable, even if probability is intervening to stop some notes from happening every time.</p>
 <div class="cell">
@@ -413,7 +420,7 @@ Key idea
 <section id="turing-machines" class="level2">
 <h2 class="anchored" data-anchor-id="turing-machines">Turing machines</h2>
 <p><strong><em>How</em></strong> Turing machines work for pattern generation involves things called Shift Registers and moving zeros or ones down a line. Sound &amp; Voltage has an excellent description here: <a href="https://www.youtube.com/watch?v=va2XAdFtmeU" class="uri">https://www.youtube.com/watch?v=va2XAdFtmeU</a> if you want to dig into that and understand better. But it’s <strong><em>what</em></strong> they do that is of interest to the Lazy Producer. It’s a device that spits out random sequences of notes, until you move a dial and “lock in” a pattern. Move the dial a little way back towards the random (middle position) and the device will repeat the locked in sequence, but add occasional new notes. What’s of interest then to the Lazy Producer is the ability to move gradually from random to repeating, predictable sequence and anywhere in between allowing us to balance the unexpected with the predictable.</p>
-<p>In the image below the key part is the left hand end of the Max for Live <a href="https://maxforlive.com/library/device/5988/turing-machine">Turing Machine</a>device. If the dial is set to “Random” then we get a random sequence of notes in the given range (here between A2 and A5) based on the specified clock setting - in this case 8th notes. If we turn the dial completely to the right to “Lock” then we will lock in a repeating sequence of given length - here 8 notes. As we move the dial gradually back to the “Random” setting then we introduce a chance of random changes to the pattern, with the chance of randomness depending how close we are to the “Random” setting. What this means in practice is that we can Lock a sequence, gradually turn the dial back to allow changes to that sequence, then Lock again to “capture” that change. If we turn the dial all the way to the left then we also Lock the sequence, but the repeating sequence will be twice as long i.e.&nbsp;it will take twice as long to come back to the start of the sequence. Because what is generated is a random sequence, we might want to apply a Scale plugin to this to quantise the note outputs and conform them to a particular scale. We may also wish to use <a href="https://maxforlive.com/library/device/6982/mm4l-probability-gate">MightM4L (MML) Probability Gate</a> device to “thin out” the stream of notes from the Turing Machine.</p>
+<p>In the image below the key part is the left hand end of the Max for Live <a href="https://maxforlive.com/library/device/5988/turing-machine">Turing Machine</a> device. If the dial is set to “Random” then we get a random sequence of notes in the given range (here between A2 and A5) based on the specified clock setting - in this case 8th notes. If we turn the dial completely to the right to “Lock” then we will lock in a repeating sequence of given length - here 8 notes. As we move the dial gradually back to the “Random” setting then we introduce a chance of random changes to the pattern, with the chance of randomness depending how close we are to the “Random” setting. What this means in practice is that we can Lock a sequence, gradually turn the dial back to allow changes to that sequence, then Lock again to “capture” that change. If we turn the dial all the way to the left then we also Lock the sequence, but the repeating sequence will be twice as long i.e.&nbsp;it will take twice as long to come back to the start of the sequence. Because what is generated is a random sequence, we might want to apply a Scale plugin to this to quantise the note outputs and conform them to a particular scale. We may also wish to use <a href="https://maxforlive.com/library/device/6982/mm4l-probability-gate">MightM4L (MML) Probability Gate</a> device to “thin out” the stream of notes from the Turing Machine.</p>
 <p>The Max for Live device shown below includes additional features to map output “voltage” signals (modulation) from the Turing Machine to devices in Live, and to use the Gate information from the Turing machine to trigger devices like drum machines. These extensions to functionality are still driven by the same essential random processes and “locking in” sequences discussed above.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -470,7 +477,8 @@ Key idea
 </div>
 <p>Polymath has a few neat tricks up its sleeve. It allows you to set scales for each track (and in fact across ALL tracks) and you can set two different scales then use a slider to begin to introduce notes from Scale 2 in the sequence even though the majority are from Scale 1. When the slider is all the way to the right, then Scale 2 is 100% in effect.</p>
 <p>One of the great strengths of Polymath and the SEEDS pack is that many of the elements are defined then used across the devices. So the Clocks we’ve discussed above can be used across devices individually or combined to give interesting rhythmic patterns.</p>
-<p>SEEDS also includes a very useful concept and plugin that can send output to and from various devices and clocks. The “Hub” plugin receives and sends MIDI information from one track to another. So it’s possible to have generative plugins on one track which send MIDI information to a completely different track, which can then be processed independently. Similarly you can assign the output of a sequence to a “HUB” (e.g.&nbsp;Hub A) and then use the notes of that sequence to offset the notes in another sequence, as is shown in the image below.</p>
+<p>SEEDS also includes a very useful concept and plugin that can send output to and from various devices and clocks. The “Hub” plugin receives and sends MIDI information from one track to another. So it’s possible to have generative plugins on one track which send MIDI information to a completely different track, which can then be processed independently.</p>
+<p>Sequences are routed to different output streams, which can then be sent out to other tracks via the Hub devices, but they can also be used internally within Polymath to use the notes of a given sequence to offset the notes in another sequence, as is shown in the image below.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -484,10 +492,33 @@ Key idea
 <p>The “Expand” setting adds additional notes to the sequence, always honouring the Scale set for the sequence. This can be dialed up and back so it’s possible to add additional notes and then go back to the original sequence.</p>
 <p>Each track can run to a different clock, so it’s possible to set up four different sequences that proceed at different rates. Very handy for generative music. Also, the sequences can run forward, back, forward-then-back, and randomly. So somewhere in there you should be able to find a sweet spot to generate some new ideas.</p>
 </section>
+<section id="mdd-snake" class="level2">
+<h2 class="anchored" data-anchor-id="mdd-snake">MDD Snake</h2>
+<p>The MDD_____SNAKE device is based on the Make Noise René modular sequencer. This sequencer by default produces 16 note values as a sequence. You can choose the note range with the slider at the top of the right hand panel and randomly choose notes from that range, or dial in your own sequence of notes using the knobs. Notes can be randomised according to scales set in the lower left corner of the device. The unique thing about this sequencer is how the sequence of notes plays using different “Snake Shapes” as chosen in the middle panel. This introduces a wide range of possible patterns to play a fixed set of notes. The pattern can be played through forwards, backwards, both forwards and back, and randomly and you can choose a number of steps to play.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/MDD_Snake_Notes.png" class="img-fluid figure-img" alt="The image shows the MDD Snake Max for Live sequencer device in the Notes definition tab. It shows a four by four grid of dials on the right hand side corresponding to pitch. A slider at the top allows the user to define a range of pitches to randomise from. In the lower left corner the pitches can be quantised to different scales using the Fundamental value and Scale dropdowns. The middle panel defines the direction of the sequence and speed via dropdown selectors and number of steps value. Below that is a selector for choosing the 'Snake Shape' which determines the pattern of playback through the notes. In the image the pattern chosen zig-zags through the notes from bottom left to top right and back."></p>
+</figure>
+</div>
+</div>
+</div>
+<p>MDD Snake also allows you to specify Gates (whether the note occurs or not) and Velocities in very similar fashion. But one very interesting feature is the ability to sequence modulation from the Custom tab. This tab allows you to specify a target using the “Map” button and then sequence values for that using the same range and randomise technique used in the Note selection or by adjusting the knobs as desired. In the image below we’re sequencing the waveform of an FM operator. Note that up to three different automation or modulation sequence lanes are available.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/MDD_Snake_Other.png" class="img-fluid figure-img" alt="The image shows the MDD Snake Max for Live sequencer device in the Custom definition tab. It shows a four by four grid of dials on the right hand side corresponding to some modulated parameter which is selected via a Map modulation selector. A slider at the top allows the user to define a range of values to randomise from. The middle panel defines the direction of the sequence and speed via dropdown selectors and number of steps value. Below that is a selector for choosing the 'Snake Shape' which determines the pattern of playback through the notes. In the image the pattern chosen goes through each row of values starting left to right in the top row then right to left in the second and so on. The image shows how the modulation sequence is changing the second Oscillator shape in an Operator instrument."></p>
+</figure>
+</div>
+</div>
+</div>
+<p>ELPHNT has produced a very useful YouTube video explaining MDD Snake <a href="https://www.youtube.com/watch?v=v2_mdrz9XrU">here</a>.</p>
+</section>
 <section id="others-i-havent-mentioned" class="level2">
 <h2 class="anchored" data-anchor-id="others-i-havent-mentioned">Others I haven’t mentioned</h2>
 <p>Tom Glendinning / ELPHNT is keeping a curated list of Max for Live plugins he uses in his music which includes some excellent sequencers. If I haven’t touched on your favourite Max for Live sequencer here, you should <a href="https://elphnt.io/max-for-live-curated/">check out Tom’s list</a> and review what he’s presenting.</p>
-<p>For example the MDD_____SNAKE device is based on the Make Noise René modular sequencer. Tom has provided a <a href="https://www.youtube.com/watch?v=v2_mdrz9XrU">very helpful introduction here</a>.</p>
 
 
 </section>

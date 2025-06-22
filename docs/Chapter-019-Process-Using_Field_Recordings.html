@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -109,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Attribution</span></a>
+ <span class="menu-text">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -240,17 +274,17 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Random sound design with Instrument Racks</span></a>
+  <a href="./Chapter-024-Tools-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Random sound design with Instrument Racks</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-025-Tool-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
+  <a href="./Chapter-025-Tools-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-026-Tool-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Chain Select</span></a>
+  <a href="./Chapter-026-Tools-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Chain Select</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -273,6 +307,12 @@ ul.task-list li input[type="checkbox"] {
   <a href="./Chapter-033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Live 12 MIDI Generation and Transformation</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-999-Outro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Outro</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -288,7 +328,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#randomness-does-occur-in-natural-sounds" id="toc-randomness-does-occur-in-natural-sounds" class="nav-link" data-scroll-target="#randomness-does-occur-in-natural-sounds">Randomness does occur in “natural” sounds</a></li>
   <li><a href="#recording-noises" id="toc-recording-noises" class="nav-link" data-scroll-target="#recording-noises">Recording noises</a></li>
   <li><a href="#online-sources-for-field-recordings" id="toc-online-sources-for-field-recordings" class="nav-link" data-scroll-target="#online-sources-for-field-recordings">Online sources for field recordings</a></li>
-  <li><a href="#using-the-samples" id="toc-using-the-samples" class="nav-link" data-scroll-target="#using-the-samples">Using the samples</a></li>
+  <li><a href="#using-the-samples" id="toc-using-the-samples" class="nav-link" data-scroll-target="#using-the-samples">Using the samples</a>
+  <ul class="collapse">
+  <li><a href="#granular-processing" id="toc-granular-processing" class="nav-link" data-scroll-target="#granular-processing">Granular processing</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -356,8 +399,23 @@ Key idea
 <section id="using-the-samples" class="level2">
 <h2 class="anchored" data-anchor-id="using-the-samples">Using the samples</h2>
 <p>You can use these as is, alternatively you might want to put the sample into Ableton’s Simpler and have a MIDI note trigger the sample but with random modulation on the sample start point. This will vary the starting point of the sample with each MIDI note and allow you to effectively extend the length of the sample to an arbitrary extent.</p>
+<section id="granular-processing" class="level3">
+<h3 class="anchored" data-anchor-id="granular-processing">Granular processing</h3>
+<p>Another possibility is to use devices like Ableton’s <a href="https://roberthenke.com/technology/granulator3.html">Granulator III</a> to process the audio. This takes an audio sample, and rather than playing slices of the audio it can play many grains of the sound, either short or long. The Granulator device needs MIDI input to trigger playback, but within the device you can specify position within the audio file, speed at which the grains scan through the audio, grain size etc. The beauty of this device is that it can take relatively modest length audio samples and using some randomness and LFO provide a constantly changing audio output.</p>
+<p>Another benefit of granular processing is that you can produce audio that is <strong><em>related</em></strong> to the original audio, but processed to a point where it’s not immediately obvious what you’re hearing. The “DNA” of the original audio is present, but it is smeared, chopped and sliced in playback.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="at">path =</span> <span class="fu">file.path</span>(here<span class="sc">::</span><span class="fu">here</span>(), <span class="st">"images"</span>, <span class="st">"Granulator.png"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/Granulator.png" class="img-fluid figure-img" alt="The image shows the Granulator III device by Robert Henke. The device has a main panel show a graphical representation of the original audio waveform. Below this a number of dials allow you to specify the Position of playback, Scan rate, Grain Size and a variety of other settings. Just above the dials is a modulation lane where the values can be changed through MIDI CC or MPE control, LFO, Envelopes and so on."></p>
+</figure>
+</div>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

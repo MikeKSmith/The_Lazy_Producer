@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Attribution</span></a>
+ <span class="menu-text">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -240,17 +240,17 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Random sound design with Instrument Racks</span></a>
+  <a href="./Chapter-024-Tools-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Random sound design with Instrument Racks</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-025-Tool-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
+  <a href="./Chapter-025-Tools-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-026-Tool-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Chain Select</span></a>
+  <a href="./Chapter-026-Tools-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Chain Select</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -271,6 +271,12 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Chapter-033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Live 12 MIDI Generation and Transformation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-999-Outro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Outro</span></a>
   </div>
 </li>
     </ul>
@@ -306,7 +312,7 @@ ul.task-list li input[type="checkbox"] {
 <p>In this recipe we’ll use the simplest MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in <a href="Chapter-004-Tools-MIDI_tools.html">Tools - MIDI tools</a> . This recipe also uses MIDI and audio routing in Live quite extensively, so it’s worth reviewing the content in <a href="Chapter-005-Process-Routing.html">Process - Routing MIDI and Audio</a> . We’re also going to use modulation devices covered in <a href="Chapter-007-Tools-Modulators.html">Tools - Modulators</a> .</p>
 <ol type="1">
 <li><p>Create a MIDI track but do not add an instrument to that track. This is going to be the “generator” for our track.</p></li>
-<li><p>Within this track, add a single MIDI clip with C3 notes for one bar. Name this the “Generator” track (CTRL+R to rename).</p></li>
+<li><p>Within this track, add a single MIDI clip with a single C3 note lasting one bar. Name this the “Generator” track (CTRL+R to rename).</p></li>
 <li><p>Add MIDI tracks and assign the input for these tracks to be the “Generator” track that you have just created above. In the example below I’ve added a short, plucky sound in the Operator track, a Wavetable pad, and a track with the Electric piano sound.</p></li>
 <li><p>A Shaper modulation device is added to the Wavetable instrument track and the modulation is mapped to the Gain in a Utility device. The “minimum” is set to 50% and the “maximum” to 0% and the rate is set to 1/4 quarter notes so that each beat, the Shaper ducks the gain to produce a pumping “sidechain compressor” like effect.</p></li>
 </ol>
@@ -351,7 +357,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Finally a “Scale” device ensures that all this chaos is quantised to a C minor scale.</p>
 <p>These are just examples of what you could do, but the concept here is that the generating device can be as simple as you like - a single MIDI note lasting one bar in this case - but these devices then allow you to create a cascade of evolving MIDI note information all within the C minor pentatonic scale. Mapping to MIDI controllers allows me to dial up and back the amount of variation during the track.</p>
 <ol start="7" type="1">
-<li>In the screen shot above, you may notice that my MIDI Generator track is actually Grouped tracks. Let’s recreate that now. Create a new MIDI track called “Note length” and another called “Arp”. In each of these tracks, set the MIDI input to Track one (the single note C3 track) and set Monitor to “In”.</li>
+<li>In the screen shot for step 5, you may notice that my MIDI Note and other Generator tracks are grouped together. Let’s recreate that now. Create a new MIDI track called “Note length” and another called “Arp”. In each of these tracks, set the MIDI input to Track one (the single note C3 track) and set Monitor to “In”.</li>
 </ol>
 <div class="cell">
 <div class="cell-output-display">
@@ -372,7 +378,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>In the “Arp” track we’re going to add an Arpeggiator plugin (surprise!) but also another MIDI “Note Length” effect with which we can tweak the note length of the output from the Arpeggiator to suite taste, and a Velocity plugin to add a little variation to the velocity of the output MIDI notes.</p>
+<p>In the “Arp” track we’re going to add an Arpeggiator plugin (surprise!) but also another MIDI “Note Length” effect with which we can tweak the note length of the output from the Arpeggiator to taste, and a Velocity plugin to add a little variation to the velocity of the output MIDI notes.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>

@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Attribution</span></a>
+ <span class="menu-text">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -240,17 +240,17 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Random sound design with Instrument Racks</span></a>
+  <a href="./Chapter-024-Tools-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Random sound design with Instrument Racks</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-025-Tool-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
+  <a href="./Chapter-025-Tools-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-026-Tool-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Chain Select</span></a>
+  <a href="./Chapter-026-Tools-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Chain Select</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -271,6 +271,12 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Chapter-033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Live 12 MIDI Generation and Transformation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-999-Outro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Outro</span></a>
   </div>
 </li>
     </ul>
@@ -337,7 +343,7 @@ Key idea
 </div>
 <section id="abletons-note-echo-plugin" class="level2">
 <h2 class="anchored" data-anchor-id="abletons-note-echo-plugin">Ableton’s Note Echo plugin</h2>
-<p><a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#note-echo">Ableton’s Note Echo</a>plugin may at first seem a bit pointless. I mean you can take the output from an audio track and just apply a Delay or Echo to that, so why bother doing it on the MIDI side? Well, because with Note Echo it will adjust the velocity of each echoed note, and you can also pitch up or down the echos, leading to changing pitch. You can also combine Note Echo plugins to produce nice “multi-tap” delays, each with different characteristics. The echos can build up quickly if you stack these, so I tend to use them with minimal or no feedback. Combined with the Random plugin discussed below you can easily build up evolving and interesting patterns which are similar without repeating. The “Feed Delay” amount controls the amount that the velocity decays with each repeat.</p>
+<p><a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#note-echo">Ableton’s Note Echo</a> plugin may at first seem a bit pointless. I mean you can take the output from an audio track and just apply a Delay or Echo to that, so why bother doing it on the MIDI side? Well, because with Note Echo it will adjust the velocity of each echoed note, and you can also pitch up or down the echos, leading to changing pitch. You can also combine Note Echo plugins to produce nice “multi-tap” delays, each with different characteristics. The echos can build up quickly if you stack these, so I tend to use them with minimal or no feedback. Combined with the Random plugin discussed below you can easily build up evolving and interesting patterns which are similar without repeating. The “Feed Delay” amount controls the amount that the velocity decays with each repeat.</p>
 <div class="cell" data-fit-alt="Image shows the Note Echo MIDI device in Ableton Live. Delay time is one option, Input has Through and Mute options but Through is lit. Feed delay which governs velocity on the feedback is set to 100%. Feedback is set to 0%.">
 <div class="cell-output-display">
 <div>
@@ -396,7 +402,7 @@ Note Range
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The MIDI Pitch and Scale devices have the option to limit the range of notes played. You can specify the Lowest MIDI note (default C-2) and the Range (default 127st) but you can also use these to limit the MIDI note range for a part and what to do with MIDI notes that fall outside the range (Block not to play, Fold to have the note folded back into the nominated range or Limit to play the upper end of the note range specified). When generating parts using techniques here, it’s sometimes useful to ensure that you don’t have unexpectedly very high or very low notes within a part.</p>
+<p>The MIDI Pitch and Scale devices have the option to limit the range of notes played. You can specify the Lowest MIDI note (default C-2) and the Range (default 127st) but you can also use these to limit the MIDI note range for a part and what to do with MIDI notes that fall outside the range (‘Block’ to prevent playback, ‘Fold’ to have the note folded back into the nominated range or ‘Limit’ to play the upper end of the note range specified). When generating parts using techniques here, it’s sometimes useful to ensure that you don’t have unexpectedly very high or very low notes within a part.</p>
 </div>
 </div>
 <div class="cell" data-fit-alt="Image shows the Pitch and Scale MIDI devices in Ableton Live. Pitch is set to 0 semitones, but the Lowest pitch option is set to C3 and the Range option is set to 36 semitones. Mode options is set to Block. The Scale device also has Lowest and Range options set equivalently.">
@@ -433,7 +439,7 @@ Note Range
 </div>
 </div>
 </div>
-<p>Live 12’s Chord device includes the ability to be scale aware, so that instead of showing semitone changes from the incoming note, we can specify scale degrees instead. The device also has the ability to Learn chords from a MIDI clip (which could then be stored later as Variations) or used in the Expressive Chords device in Live 12.2. Strum gives you the ability to strum the chord with notes delayed strumming up with positive values or strumming down with negative values. Tension will apply a curve to the MIDI on note - making the curve faster as it goes on. Crescendo applies note velocity ramp to the notes. In Live 11 the Velocity of each note could be specified, but in Live 12 we can also optionally change the Chance of each note.</p>
+<p>Live 12’s Chord device includes the ability to be scale aware, so that instead of showing semitone changes from the incoming note, we can specify scale degrees instead. The device also has the ability to Learn chords from a MIDI clip which could then be stored later as Variations (see <a href="Chapter-025-Tools-Variations.html">Tools - Variations</a>) or used in the Expressive Chords device in Live 12.2. Strum gives you the ability to strum the chord with notes delayed strumming up with positive values or strumming down with negative values. Tension will apply a curve to the MIDI on note - making the curve faster as it goes on. Crescendo applies note velocity ramp to the notes. In Live 11 the Velocity of each note could be specified, but in Live 12 we can also optionally change the Chance of each note.</p>
 <p>Coupling the Chord plugin with the Arpeggiator and Random plugins is a good way to make arpeggiated lines that do not repeat exactly. As with most of these MIDI plugins the order you specify them can provide interesting variations. So Chord -&gt; Arpeggiator -&gt; Random -&gt; Scale adds random notes into the arpeggio resulting in cascades of notes that change note to note, but within a constrained set of output notes. Random -&gt; Chord -&gt; Arpeggio -&gt; Scale would lead to a consistent arpeggio for the duration of the input note but could be different for each cycle of the generating MIDI loop.</p>
 <div class="cell" data-fit-alt="Image shows a collection of MIDI devices in an chain, starting with Note Echo, then Chord, then Arpeggiator, then Random, another Note Echo, a Scale device and Velocity device.">
 <div class="cell-output-display">
@@ -461,7 +467,7 @@ Note Range
 </section>
 <section id="deviate" class="level2">
 <h2 class="anchored" data-anchor-id="deviate">Deviate</h2>
-<p>The free <a href="https://www.novelmusic.org/m4l/deviate">Deviate Max for Live plugin from Novel Music</a> can add variation to incoming MIDI notes. The “TRIGGER” section defines how often the deviation or variation will occur - so it is possible to balance the unexpected with the predictable, or keep things the same before introducing randomness. One important aspect of Deviate is that it has a memory, so if you like the random pattern generated, you can “lock” this by moving the “LOCK” slider to the right. This means it acts a bit like the Turing Machine devices used in modular synthesis. Deviate has two sides - MIDI, which we’ll cover here and MOD which we’ll cover in the section .</p>
+<p>The free <a href="https://www.novelmusic.org/m4l/deviate">Deviate Max for Live plugin from Novel Music</a> can add variation to incoming MIDI notes. The “TRIGGER” section defines how often the deviation or variation will occur - so it is possible to balance the unexpected with the predictable, or keep things the same before introducing randomness. One important aspect of Deviate is that it has a memory, so if you like the random pattern generated, you can “lock” this by moving the “LOCK” slider to the right. This means it acts a bit like the Turing Machine devices used in modular synthesis. Deviate has two sides - MIDI, which we’ll cover here and MOD which we’ll cover in the section <a href="Chapter-007-Tools-Modulators.html">Tools - Modulators</a>.</p>
 <p>The “TRIGGER” section is worth spending a little time to understand. It determines how many MIDI notes will pass before the deviation is triggered. So if set to “1” then every note triggers a new deviation. If set to 8 then every 8 notes the deviation settings may be triggered, but then these deviation settings persist for the next 7 notes. The probability to the right (below set to 100%) means that the deviation will be triggered every time, but if lower than 100% then that probability determines whether <strong><em>any</em></strong> deviation will occur. So if you set 8 notes, with 100% probability then the Octave deviation may trigger 18% of the time, but if it does then notes will sound either an octave up (or down) for the next 7 notes.</p>
 <p>The “MEMORY” section works along side the “LOCK” switch. Deviate can “listen” to a sequence of MIDI notes of the nominated length (here 8 notes) and will keep track of what deviations were applied in that 8 note sequence. If you like what you’re hearing you can “LOCK” the deviation settings in by sliding the “LOCK slider to the right. As you bring the”LOCK” slider back to the left it will start to reintroduce new deviations while retaining the memory of the locked settings. With the “LOCK” slider all the way to the left, the “TRIGGER” and Deviate settings are applied according to the “TRIGGER” settings. Deviate can also learn how many notes are in a MIDI clip if you click on the “L” button next to “MEMORY”. The memory sequence can be divided by 2 or multiplied by 2 using the adjacent buttons.</p>
 <p>It is worth reviewing <a href="https://youtu.be/4WwKGUV2H4I">the YouTube tutorial for this device</a> as it can do <strong><em>a lot</em></strong>.</p>
