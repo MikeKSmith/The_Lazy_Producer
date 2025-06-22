@@ -52,7 +52,10 @@ I would continue to use the Scale MIDI Device for live performance just as a fal
 
 ### MIDI Generation
 
-Live 12 now comes with two new features built into MIDI clip creation: MIDI Generation and MIDI Transformation. MIDI Generation does what the name suggests - provides a range of different methods for generating new MIDI parts: rhythm - which creates sequences of MIDI notes by specifying the density of notes within a certain number of steps and then allowing you to choose permutations of these, stacks - which defines chords, seeds - which generates one or more "voices" of completely random notes (but these could conform to the clip scale setting) within the clip, shape - which generates notes by drawing in a pattern or shape, and Euclidean generators. And because what sits behind these generators is the power of Max for Live, the possibilities open up for a huge range of innovative MIDI generation.
+Live 12 now comes with two new features built into MIDI clip creation: MIDI Generation and MIDI Transformation. MIDI Generation does what the name suggests - provides a range of different methods for generating new MIDI parts. There are a number of Generation options available covering rhythmic patterns, chords, melodies. We'll look at some of these in more depth in 
+[Tools - Live 12 MIDI Generation and Transformation](Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd).
+
+One key point about the Generator tools is that they are primarily design to generate new MIDI clips during music production, rather than "on the fly" during performance. Unfortunately at this point they cannot be automated.
 
 ```{r}
 #| fig-alt: "The image shows the MIDI Generator choices in Ableton Live 12."
@@ -61,15 +64,12 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDIGen
 
 ### MIDI Transformation
 
-The MIDI Transformation tools includes tools to arpeggiate the notes within the clip, connect - connecting existing notes in the clip with passing tones, ornament - adding additional short notes before the main note, like a flam in drum terms, or mordent in classical notation, quantize - here applying quantisation non-destructively, i.e. you can see the effect of the amount of quantisation on the MIDI notes, recombine - which lets you select notes and then permute these (rotate the order, mirror, shuffle), span - which allows you to change the note lengths by various means, strum - which applies a rhythmic strum pattern to chords, and time warp - which can bend the timing within a bar, so although the bpm clock remains constant, MIDI notes in a clip can trigger with a more fluid timing.
+The MIDI Transformation tools take an existing MIDI clip or region and perform actions on the MIDI information within that clip. A wide range of useful tools are provided to help permute, rearrange, interpolate and transform (shock!) MIDI. We'll look at these in more depth in [Tools - Live 12 MIDI Generation and Transformation](Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd). MIDI transformers should not be seen as "one tool to do everything" - instead you can layer transformations or apply transformations more than once to clips.
 
 ```{r}
 #| fig-alt: "The image shows the MIDI Transformer choices in Ableton Live 12."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDI_Transformers.png"))
 ```
-
-We'll look at MIDI Generation and Transformation tools a little more in 
-[Tools - Live 12 MIDI Generation and Transformation](#Chapter-033-Tools-Live12_MIDI_Generation_Transformation).
 
 ## Note probability
 

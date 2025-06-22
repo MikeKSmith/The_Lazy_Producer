@@ -37,9 +37,9 @@ book:
     - Chapter-021-Process-Unsynced_loops.qmd
     - Chapter-022-Recipe-Fibonacci_loops.qmd
     - Chapter-023-Process-Your_Unpredictable_Bandmate.qmd
-    - Chapter-024-Tool-Random_Sound_Design.qmd
-    - Chapter-025-Tool-Variations.qmd
-    - Chapter-026-Tool-ChainSelect.qmd
+    - Chapter-024-Tools-Random_Sound_Design.qmd
+    - Chapter-025-Tools-Variations.qmd
+    - Chapter-026-Tools-ChainSelect.qmd
     - Chapter-030-Tools-Live12_Intro.qmd
     - Chapter-031-Tools-Live12_Sequencers.qmd
     - Chapter-032-Tools-Live12_Modulation.qmd
@@ -67,7 +67,7 @@ format:
     urlcolor: Blue        # External links (URLs)
     coverpage: "true"
     titlepage: "true"
-    coverpage-bg-image: "images/Album_Cover_Padded.png" # the padded cover image I made
+    coverpage-bg-image: "images/Book_Cover.png" # the padded cover image I made
     coverpage-title: "" # makes sure no title is on coverpage
     coverpage-footer: "" # makes sure no footer is on coverpage
     coverpage-author: "" # makes sure no author is on coverpage

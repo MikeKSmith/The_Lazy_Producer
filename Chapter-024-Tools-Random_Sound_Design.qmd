@@ -1,4 +1,4 @@
-# Tool - Random sound design with Instrument Racks {#Chapter-024-Tool-Random_Sound_Design}
+# Tools - Random sound design with Instrument Racks {#Chapter-024-Tools-Random_Sound_Design}
 
 ```{r}
 #| echo: FALSE

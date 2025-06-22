@@ -54,9 +54,7 @@ audio around between them to further add layers of effects. You need to be a
 little cautious when doing this to prevent feeding audio back into an FX channel
 and creating a wall of harsh sound. You can see that Return A (the "Nice Reverse
 + Reverb" effect) is sending audio out to Return D (Spectral Resonator) and that
-that channel is sending audio back to Return A. This is a little dangerous, but
-being cautious with the send amounts and watching for signal overloading, it is
-possible to get away with this. Adding a Limiter to the Return or Main channels would prevent runaway sound feedback causing physical damage to ears or speakers.
+that channel is sending audio back to Return A. As we've mentioned above, using feedback to route audio signal between Return channels is a little risky as sound can sometimes build up quickly if channels are eventually routed back into themselves. Adding a Limiter to the Return or Main channels would prevent runaway sound feedback causing physical damage to ears or speakers.
 
 Spectral Time and Spectral Resonators are
 interesting effects to add texture and resonance into fairly static inputs (like
@@ -69,7 +67,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Recipe-Sampler
 
 5.  You can apply MIDI effects to the Sampler track to pick a new random &
 quantised note each time the clip restarts. Unlike using an audio clip, using
-Sampler allows us to repitch the sound with each new note.
+Sampler allows us to repitch the sound through different MIDI notes.
 
 6.  Once you have a setup that works and produces pleasing sounds, try dropping
 a different pad sample into the Sampler. Doing this allows you to change up the

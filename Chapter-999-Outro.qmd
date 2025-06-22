@@ -1,0 +1,13 @@
+# Outro {#Chapter-999-Outro .unnumbered}
+
+I hope you have enjoyed reading this book, and have found some ideas that you might be able to use in your productions or performances. The whole premise of this book was to give you some tips and tricks, some starter ideas for further exploration and I hope that you will go on to explore more and incorporate randomness and probability into your music with increased confidence.
+
+The recipes here are not intended as definitive versions of any idea, but rather some practical inspiration of what might be possible. Feel free to use them, adapt them and take techniques that resonate with you and your style of music.
+
+This book is licensed under a [Creative Commons Attribution 4.0 license](https://github.com/MikeKSmith/The_Lazy_Producer?tab=CC-BY-4.0-1-ov-file#readme). You are welcome to take any ideas from this book and use them in any way you wish. All that is required is for you to reference back to this material according to the terms of the license.
+
+An album containing my versions of recipes and ideas from this book is available on Bandcamp at <https://mikeksmith.bandcamp.com/album/the-lazy-producer>. If you purchase the album via Bandcamp you'll get a PDF copy of this book as part of the download. The book is also available via Amazon Kindle Direct Publishing both as an ebook and in paperback. If you purchase the book via Amazon, please email [thelazyproducer.book\@gmail.com](mailto:thelazyproducer.book@gmail.com?subject=YumCodeRequest) with proof of purchase and I'll send you a link to download the album for free.
+
+Ableton Live sets have been prepared and will be shared at <https://tinyurl.com/tlprecipes>.
+
+If you would like to contribute to future versions of this book, I would welcome your thoughts, corrections, extensions and ideas via the Github repository for the book. Please submit an Issue here: <https://github.com/MikeKSmith/The_Lazy_Producer/issues>. Feel free to fork the repository and contribute directly via Pull Request (if you know git). The book is written in Quarto but you can use Quarto editors like Posit's RStudio IDE to both pull the content from Github and to edit the Quarto .qmd files. I have used R to import images and provide alt-text for those images. I ask that you do the same. If you would like to contribute but do not know Quarto, then please submit your contributions using the markdown syntax and I can convert it.

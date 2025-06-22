@@ -20,7 +20,7 @@ modulation devices covered in
 1.  Create a MIDI track but do not add an instrument to that track. This is
 going to be the "generator" for our track.
 
-2.  Within this track, add a single MIDI clip with C3 notes for one bar. Name
+2.  Within this track, add a single MIDI clip with a single C3 note lasting one bar. Name
 this the "Generator" track (CTRL+R to rename).
 
 3.  Add MIDI tracks and assign the input for these tracks to be the "Generator"
@@ -94,8 +94,7 @@ evolving MIDI note information all within the C minor pentatonic scale. Mapping
 to MIDI controllers allows me to dial up and back the amount of variation during
 the track.
 
-7.  In the screen shot above, you may notice that my MIDI Generator track is
-actually Grouped tracks. Let's recreate that now. Create a new MIDI track called
+7.  In the screen shot for step 5, you may notice that my MIDI Note and other Generator tracks are grouped together. Let's recreate that now. Create a new MIDI track called
 "Note length" and another called "Arp". In each of these tracks, set the MIDI
 input to Track one (the single note C3 track) and set Monitor to "In".
 
@@ -115,7 +114,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_N
 
 In the "Arp" track we're going to add an Arpeggiator plugin (surprise!) but also
 another MIDI "Note Length" effect with which we can tweak the note length of the
-output from the Arpeggiator to suite taste, and a Velocity plugin to add a
+output from the Arpeggiator to taste, and a Velocity plugin to add a
 little variation to the velocity of the output MIDI notes.
 
 ```{r}

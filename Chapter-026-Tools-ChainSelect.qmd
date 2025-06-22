@@ -1,11 +1,11 @@
-# Tool - Chain Select {#Chapter-026-Tool-ChainSelect}
+# Tools - Chain Select {#Chapter-026-Tools-ChainSelect}
 
 ```{r}
 #| echo: FALSE
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-In [Tools - Variations](#Chapter-025-Tool-Variations) we looked at ways to capture different sound presets using Macro Variations. But what if you want to not just have variations ***within*** a device, but swap between completely different devices? Then you need to create a rack with multiple device chains and use different ways to select which of these chains to use. This is a handy tip for The Lazy Producer (and the non-Lazy Producer) but also The Lazy Performer. By having multiple devices in one Rack you can easily change between sounds using one Macro knob, or even just with different velocities or keyboard ranges.
+In [Tools - Variations](#Chapter-025-Tools-Variations) we looked at ways to capture different sound presets using Macro Variations. But what if you want to not just have variations ***within*** a device, but swap between completely different devices? Then you need to create a rack with multiple device chains and use different ways to select which of these chains to use. This is a handy tip for The Lazy Producer (and the non-Lazy Producer) but also The Lazy Performer. By having multiple devices in one Rack you can easily change between sounds using one Macro knob, or even just with different velocities or keyboard ranges.
 
 ::: callout-tip
 ## Key idea

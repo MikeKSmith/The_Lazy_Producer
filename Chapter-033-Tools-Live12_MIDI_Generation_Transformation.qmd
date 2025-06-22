@@ -17,7 +17,6 @@ In particular note that you can Generate, commit to a pattern, then Transform th
 Exploration of the combination of Generation and Transformation is encouraged to get the most out of these tools. You shouldn't view them as single tools that have to do everything in one go. Often the layering of Transformations will give the most interesting results.
 :::
 
-
 ## MIDI Generation
 
 Live 12 now comes with two new features built into MIDI clip creation: MIDI Generation and MIDI Transformation. MIDI Generation does what the name suggests - provides a range of different methods for generating new MIDI parts: rhythm - which creates sequences of MIDI notes by specifying the density of notes within a certain number of steps and then allowing you to choose permutations of these, stacks - which defines chords, seeds - which generates one or more "voices" of completely random notes (but these could conform to the clip scale setting) within the clip, shape - which generates notes by drawing in a pattern or shape, and Euclidean generators. And because what sits behind these generators is the power of Max for Live, the possibilities open up for a huge range of innovative MIDI generation.
@@ -32,7 +31,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDIGen
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Max_MIDIGenerator.png"))
 ```
 
-In Chapter 13 we looked at MIDI Generator devices including Max for Live devices. But having some similar functionality here "baked into" the Live MIDI clip tools puts these tools at the fingertips of anyone with Live 12 Suite.
+In [Tools - MIDI Generators](Chapter-012-Tools-MIDI_Generators.qmd) we looked at MIDI Generator devices including Max for Live devices. But having some similar functionality here "baked into" the Live MIDI clip tools puts these tools at the fingertips of anyone with Live 12 Suite.
 
 ```{r}
 #| fig-alt: "The image shows the Euclidean Generator device creating rhythmic MIDI clips across four notes."
@@ -58,16 +57,11 @@ The limitation of these Generator and Transformation devices as they stand is th
 
 ## Extensions
 
-Since these Generator and Transformer devices support Max for Live devices, it has opened up the doors for many developers to create really interesting new Generator and Transformer devices. One developer of note is Philip Meyer - https://meyer-devices.com - who has a collection of devices that enhance, evolve and augment the built-in Ableton Generator and Transformer devices. 
-
-The beauty of Max for Live with Ableton Live Suite is the ability to create these kind of extensions and tools that integrate so well with Live's own internal devices.
+Since these Generator and Transformer devices support Max for Live devices, it has opened up the doors for many developers to create really interesting new Generator and Transformer devices. The beauty of Max for Live with Ableton Live Suite is the ability to create these kind of extensions and tools that integrate so well with Live's own internal devices.
 
 ### Generator - MDD Snake
 
-In [Tools - MIDI Generators](#Chapter-012-Tools-MIDI_Generators)
-we mentioned the MDD Snake Max for Live MIDI generator
-(https://maxforlive.com/library/device/10422/mdd-snake-midi-generator)
-. This is a great sequencer modelled after the Make Noise René modular sequencer. The device gives you a four by four grid of notes, gates and velocities and it cycles through each of these in a given pattern. The default plays each row before moving on to the next row. But you can also choose to play through the notes column by column, in diagonals, and a variety of other patterns. Each pattern can play through forward, backward, cycle forward and back etc. 
+In [Tools - MIDI Generators](#Chapter-012-Tools-MIDI_Generators) we mentioned the MDD Snake Max for Live MIDI generator (<https://maxforlive.com/library/device/10422/mdd-snake-midi-generator>) . This is a great sequencer modelled after the Make Noise René modular sequencer. The device gives you a four by four grid of notes, gates and velocities and it cycles through each of these in a given pattern. The default plays each row before moving on to the next row. But you can also choose to play through the notes column by column, in diagonals, and a variety of other patterns. Each pattern can play through forward, backward, cycle forward and back etc.
 
 The beauty of this little generator is that it decouples note pitch from gate (whether the note plays or not). So you can generate patterns of notes / pitches separately from the pattern of whether the note plays which avoids the machine gun pattern of constant 8th or 16th notes.
 
@@ -76,12 +70,11 @@ The beauty of this little generator is that it decouples note pitch from gate (w
 knitr::include_graphics(path = file.path(here::here(), "images", "MIDI_Generator_MDDSnake.png"))
 ```
 
-There's an interview with Maxime Dangles, create of the MDD Snake device here:
-https://www.ableton.com/en/blog/maxime-dangles-unlikely-connections/.
+There's an interview with Maxime Dangles, create of the MDD Snake device here: <https://www.ableton.com/en/blog/maxime-dangles-unlikely-connections/>.
 
 ### Generator - Turing Machine
 
-We've also discussed the Turing Machine in  [Tools - MIDI Generators](#Chapter-012-Tools-MIDI_Generators). Turing Machines create random sequences of notes and this MIDI Generator Max for Live device by Philip Meyer is essentially a little Turing Machine that will create a clip full of notes for you. Because the Turing Machine produces random note patterns, it's worth experimenting and generating a few patterns until you find one that works in context. Philip Meyer explains the device in more detail in this video: https://youtu.be/_LpA66peATg?si=-KgyOTrVt_sbTgv6&t=2191.
+We've also discussed the Turing Machine in [Tools - MIDI Generators](#Chapter-012-Tools-MIDI_Generators). Turing Machines create random sequences of notes and this MIDI Generator Max for Live device by Philip Meyer is essentially a little Turing Machine that will create a clip full of notes for you. Because the Turing Machine produces random note patterns, it's worth experimenting and generating a few patterns until you find one that works in context. Philip Meyer explains the device in more detail in this video: [https://youtu.be/\_LpA66peATg?si=-KgyOTrVt_sbTgv6&t=2191](https://youtu.be/_LpA66peATg?si=-KgyOTrVt_sbTgv6&t=2191https://youtu.be/_LpA66peATg?si=-KgyOTrVt_sbTgv6&t=2191).
 
 ```{r}
 #| fig-alt: "The image shows the Turing Machine device within Ableton Live 12 MIDI Generators. Turing Machines have been described in the chapter on MIDI Generators. Like the MIDI device, this generator has a large dial for dialing in randomness in the pattern. Three buttons allow the user to inject a 0, 1, or Random values into the sequence. A value box defines the lgnth of the sequence and there is a button to Clear the sequence. Pitch is defined at the botton of the device with sliders for 8 different pitch weights. There are stacked dials for Range and Offset."
@@ -90,9 +83,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "MIDI_Generator
 
 ## Philip Meyer MIDI Tools
 
-Philip Meyer has created a number of Generator and Transformer MIDI tools which are available via his website: https://meyer-devices.com. In the video linked above, Philip demonstrates each of these and it's worth reviewing the content of that video to both understand how the devices work, but also to see how he Generates, then Transforms clips. 
-
-
+Philip Meyer has created a number of Generator and Transformer MIDI tools which are available via his website: <https://meyer-devices.com>. In the video linked above, Philip demonstrates each of these and it's worth reviewing the content of that video to both understand how the devices work, but also to see how he Generates, then Transforms clips.
 
 ### Transformer - Develop
 
@@ -100,7 +91,7 @@ The Develop tool, which takes a phrase and then over a set number of generations
 
 The Deterministic mode mutes notes in the pattern while a Probabilistic mode reduces probability over generations. In Probabilistic mode you can also set a percentage (euclidean pattern) to specify which notes in the pattern have lower probability. This a really creative tool to introduce variation in note patterns so that they evolve rather than change suddenly.
 
-Again, Philip presents the tool in this video: https://youtu.be/_LpA66peATg?si=pOATIb8VZp7j3eub&t=2915
+Again, Philip presents the tool in this video: <https://youtu.be/_LpA66peATg?si=pOATIb8VZp7j3eub&t=2915>
 
 ```{r}
 #| fig-alt: "The image shows the Develop MIDI Transformer by Philip Meyer. A MIDI clip is shown with four repetitions of a pattern and the Develop transformer is progressively unmuting notes across the four repetitions until the last repetition shows all notes unmuted."
