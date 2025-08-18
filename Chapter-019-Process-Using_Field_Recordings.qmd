@@ -6,16 +6,13 @@ editor:
 
 # Process - Using Field Recordings {#Chapter-019-Process-Using_Field_Recordings}
 
-> Computer goes "Bleep bloop bleep bleep bloopity bloop. Whoosh. Bleep
-> bleep... BRRRRR...."
+> Computer goes *"Bleep bloop bleep bleep bloopity bloop. Whoosh. Bleep
+> bleep... BRRRRR...."*
 
-If the sound sources for your generative music using synths and sound
-generators that don't involve sounds from "real world" instruments and
-you add in random and probabilistic processes then pretty quickly you
-have moved away from anything that could be described as "natural"
-sounding. How can this kind of music appeal to humans, who by their
-nature are more used to organic sounds and textures they hear day to
-day?
+If your generative music relies solely on synths and other electronic
+sources, it can quickly start to sound unnatural. How can this kind of
+music appeal to humans, who by their nature are more used to organic
+sounds and textures they hear day to day?
 
 ::: callout-tip
 ## Key idea
@@ -49,11 +46,9 @@ with.
 
 ## Randomness does occur in "natural" sounds
 
-The sound of a wind-chime is often thought of as soothing. The wind
-gently causing the chimes to sound, little waves of air that cause the
-chimes to gently ripple, with the chimes tuned to pitches that work well
-together... Sounds a lot like some of the techniques we've been talking
-about, right?
+Consider the sound of a wind chime. The wind triggers the chimes at
+random, which are tuned to a pleasant scale... Sounds a lot like the
+generative techniques we've been discussing, right?
 
 The sound of birds singing in the forest, with the odd chirp of a
 squirrel or the steady rasp of a frog. Nobody is telling them when to
@@ -109,8 +104,8 @@ output.
 Another benefit of granular processing is that you can produce audio
 that is ***related*** to the original audio, but processed to a point
 where it's not immediately obvious what you're hearing. The "DNA" of the
-original audio is present, but it is smeared, chopped and sliced in
-playback.
+original audio is still present, but it's been smeared, chopped, and
+rearranged.
 
 ```{r}
 #| fig-alt: "The image shows the Granulator III device by Robert Henke. The device has a main panel show a graphical representation of the original audio waveform. Below this a number of dials allow you to specify the Position of playback, Scan rate, Grain Size and a variety of other settings. Just above the dials is a modulation lane where the values can be changed through MIDI CC or MPE control, LFO, Envelopes and so on."

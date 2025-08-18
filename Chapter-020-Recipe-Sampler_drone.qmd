@@ -11,8 +11,7 @@ sounds and playback across the keyboard. But in our context we're going to use
 it to simply play back a longer textured sound sample and apply some modulation
 to the cutoff, producing a drone sound. We can then throw this through a barrage
 of effects - either using Return channels or via individual audio effects with
-the sampler output routed into each. Effectively we're reusing an idea we've
-used before, but starting with Sampler as the audio generator. You could
+the sampler output routed into each. We're effectively reusing an earlier idea, but this time we're starting with Sampler as our sound source. You could
 alternatively use the audio output from 
 [PaulStretch](#Chapter-016-Tools-PaulStretch)
 as the drone generator. The
@@ -23,9 +22,7 @@ similar.
 
 1.  Create a track with the Sampler instrument and one clip with a single note of 8 or 16 bars.
 
-2.  In the Sampler Filter/Global section, give the envelope a long attack
-(several seconds) and very long release (again, several seconds). This will
-allow different notes to blend rather than cut each other off.
+2.  In Sampler's Filter/Global tab, set the amplitude envelope to have a long attack and a very long release (several seconds each). This will allow the notes to blend and overlap smoothly.
 
 3.  In the Sample Modulation section, create some modulation on Filter, Sample
 Offset and other parameters so that the sounds morph and change over time rather
@@ -50,9 +47,7 @@ sends / Return channels.
 
 In the example below the Sampler instrument is in Channel 1 and is sending audio
 out to a variety of FX channels. Note that the Return channels are also routing
-audio around between them to further add layers of effects. You need to be a
-little cautious when doing this to prevent feeding audio back into an FX channel
-and creating a wall of harsh sound. You can see that Return A (the "Nice Reverse
+audio around between them to further add layers of effects. Be cautious when doing this, as creating a feedback loop between return tracks can quickly result in a harsh wall of sound. You can see that Return A (the "Nice Reverse
 + Reverb" effect) is sending audio out to Return D (Spectral Resonator) and that
 that channel is sending audio back to Return A. As we've mentioned above, using feedback to route audio signal between Return channels is a little risky as sound can sometimes build up quickly if channels are eventually routed back into themselves. Adding a Limiter to the Return or Main channels would prevent runaway sound feedback causing physical damage to ears or speakers.
 
@@ -69,8 +64,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Recipe-Sampler
 quantised note each time the clip restarts. Unlike using an audio clip, using
 Sampler allows us to repitch the sound through different MIDI notes.
 
-6.  Once you have a setup that works and produces pleasing sounds, try dropping
-a different pad sample into the Sampler. Doing this allows you to change up the
+6.  Once you have a setup that produces pleasing results, try swapping in a different pad sample. Doing this allows you to change up the
 sounds generated, as each sample will have different tones, resonances and
 features.
 

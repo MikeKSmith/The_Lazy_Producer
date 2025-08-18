@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ::: callout-tip
 ## Key idea
 
-Why put sequencers in a DAW (which is essentially a sequencer)? Well, because
+Why put a sequencer inside a DAW (which is, itself, a sequencer)? Well, because
 then you can specify notes you want to play, but have these play in a nonlinear
 way, or not follow the overall time signature of your Live set. It opens up
 possibilities of playing chosen notes but vary the order these are played
@@ -29,9 +29,7 @@ sequence and gate (whether the note occurs or not) sequence can be compleetely
 independent, and most interestingly can run at different rates or have different
 lengths to create permutations of patterns. The sequencers in this pack offer
 a little bit of the modular experience within Live - where pitch, velocity, 
-octave and other attributes can have different sequence lengths. In order to 
-get the "gate" sequence with MIDI you can set the velocity to zero to specify that 
-a given note should not sound.
+octave and other attributes can have different sequence lengths. To create a "gate" sequence with MIDI, you can simply set the velocity of certain steps to zero, which effectively silences those notes.
 
 ::: 
 
@@ -65,8 +63,7 @@ you can specify notes which notes not to trigger.
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_SQ.png"))
 ```
 
-This is a really powerful sequencer then, that can provide endless variation and
-interest from fairly simple patterns.
+This is a powerful sequencer, capable of providing endless variation and interest from even the simplest patterns.
 
 ## Rhythmic Steps
 

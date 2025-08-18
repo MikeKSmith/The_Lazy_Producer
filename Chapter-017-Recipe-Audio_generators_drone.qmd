@@ -5,7 +5,7 @@
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-In this recipe we'll make a simple drone track using a variety of audio generators.
+In this recipe, we’ll create a simple drone track using a few of the audio generators we've just discussed.
 
 1.  Start by placing a Tree Tone audio generator on a track. I have chosen to
 ensure that the output is pitched and that it conforms to the C minor pentatonic
@@ -30,9 +30,7 @@ LFO, but for now, let's keep the drone from this to be quite static.
 3.  Next let's add a real odd-ball: the Cellular Degradation plugin by Dillon
 Bastan. As described in 
 [Tools - Audio Generators](#Chapter-014-Tools-Audio_Generators)
-, this is a weird
-instrument combining 5 different stereo FM oscillators, and it can make some
-VERY weird noises. That's what we're going to do here. Normally you "draw" into
+, this is a strange instrument with five stereo FM oscillators capable of making some very weird noises, which is exactly what we're going to use it for. Normally you "draw" into
 the main panel to make cells "alive" and then the cellular birth and death
 process retains these or allows them to "die". To automate that process we're
 using another favourite Dillon Bastan plugin, the Strange Mod modulation device.
@@ -47,17 +45,14 @@ Y values. This should produce some very strange buzzy textures.
 4.  At this point I added a simple bass root note drone (on C1) using the Drift
 instrument. This helps anchor our drone.
 
-Since we want to balance the unexpected and predictable, here the bass drone
-note, and Harmonic Generator provide the "anchor" around which we can place Tree
+To balance the predictable with the unexpected, the bass drone and the Harmonic Generator will provide a stable "anchor" around which we can place Tree
 Tone (as a mildy chaotic process) and the Cellular Degradation as a VERY chaotic
 process.
 
 5.  From here, feel free to add effects on Return channels (Reverb and Delay are
 good options) and / or apply resonant processing within the individual tracks -
 like adding the Resonator or Spectral Resonator plugins. Experiment. See what
-works. I found that putting a resonator on the Cellular Degradation track and
-tuning additional resonance pitches within the C minor pentatonic scale helped
-to "tame" the weirdness, if that's what you'd prefer. Another decent option (in
+works. I found that adding a Resonator to the Cellular Degradation track, tuned to notes from the C minor pentatonic scale, helped "tame" some of its inherent weirdness. Another decent option (in
 addition or instead) might be to drive the Cellular Degradation track using a
 Saturator or distortion.
 

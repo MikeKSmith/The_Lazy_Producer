@@ -5,7 +5,7 @@
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-[PaulXStretch](https://sonosaurus.com/paulxstretch/) is a plugin that takes an audio file and stretches it to produce soundscapes and textures. This is not the type of stretching that is available in Ableton for warping audio by a few bpm to fit a different tempo, but instead is about sonic manipulation even to extreme amounts.
+[PaulXStretch](https://sonosaurus.com/paulxstretch/) s a plugin that stretches audio files to extreme lengths, transforming them into evolving soundscapes and textures. This is not the type of stretching that is available in Ableton for warping audio by a few bpm to fit a different tempo, but instead is about sonic manipulation even to extreme amounts.
 
 ::: callout-tip
 ## Key idea
@@ -16,7 +16,7 @@ Taking an audio clip that has interesting harmonic structure, chords, textures a
 
 ## Why would you want to stretch audio?
 
-Stretching here means "smearing" audio, creating a blurred texture. The recognisable features of the original clip are no longer distinguishable, and instead you get something like a "ghost" of the original. The chords and tones from the original are stretched to an extent that they turn into drones and glacially shifting harmonics.
+Stretching here means "smearing" audio, creating a blurred texture. The recognizable features of the original clip disappear, leaving behind a "ghost" of the source material. The chords and tones from the original are stretched to an extent that they turn into drones and glacially shifting harmonics.
 
 What this kind of stretching and smearing does is to give you a nice foundational element: a sound bed over which you can add other elements. Because the stretch smears out tones, it can sometimes add a slow movement of tonality rather than a sudden shift. This can be quite useful if you pick an audio source for stretching that works with the scale of the other processes in your track. It may for example allow you to imply a shift in tonality even if there's a repeating pattern (in a fixed scale) above it, much like how shifting bass notes below an ostinato line imply new harmonies.
 
@@ -30,7 +30,7 @@ The plugin also features various options to tweak the output of the stretched au
 
 ## How do I use it?
 
-You *can* use PaulXStretch as a plugin, but you can also use it as a standalone application. This would allow you to import, stretch, and then export the stretched file ready to import into your DAW as standalone audio. The latter is probably preferable in many cases - audition the file and stretching in the context of your tune, then commit and export to file.
+You *can* use PaulXStretch as a plugin, but you can also use it as a standalone application. This would allow you to import, stretch, and then export the stretched file ready to import into your DAW as standalone audio. The standalone application is often preferable: you can audition the stretched audio in the context of your track, and once you're happy, export the file to use in your project.
 
 ```{r}
 #| fig-alt: "The image shows the PaulXStretch plugin. At the top of the device are record, rewind, play/pause, loop and freeze buttons. Below that is the main volume slider. Below that various parameters have sliders. The parameters include Stretch amount, FFT size, Number of harmonics, Frequency shift, Pitch shift, High and Low filters. A chain of buttons allow you to turn on and off various processes used in stretching and effecting the audio."
@@ -45,7 +45,7 @@ This is a plugin that favours some experimentation. You could take a short, text
 
 Not all audio clips will sound good stretched. My best results in experimentation have come when there are no drums or unpitched high frequencies (cymbals or high percussion).
 
-As an experiment I once took the grindcore metal band Napalm Death's (in)famous "You Suffer" track, all 1.316 seconds of it (Guiness World Record holder for the shortest song), and stretched it out to 1 minute. The result was TERRIFYING. You can hear it here: <https://on.soundcloud.com/KXPPBRs1qdP6bSYt8>
+As an experiment, I once took the grindcore band Napalm Death’s infamous 1.3-second song, “You Suffer,” and stretched it to one minute. The result was terrifying. You can hear it here: <https://on.soundcloud.com/KXPPBRs1qdP6bSYt8>
 
 ```{r}
 #| results: asis

@@ -11,10 +11,7 @@ Everyone loves a good loop. If you get a good idea of a pattern or
 something that lasts 8 bars then you can let that good thing just loop
 around and around and around (the world). A large part of The Lazy
 Producer's arsenal depends on loops and repetition - after all we're
-balancing predictable and unexpected, right? But if there's something in
-your brain right now that's saying "No, 8 bar loops repeated infinitely
-really ***is*** the ultimate Lazy Producing..." then I'd have to agree
-with you. So how do we break away from the tyranny of the 8 bar loop?
+balancing predictable and unexpected, right? If a voice in your head is saying, “Wait, infinitely repeating 8-bar loops is the ultimate in Lazy Producing,” I’d have to agree. So how do we break away from the tyranny of the 8 bar loop?
 Arrangements? Verse-Chorus-Middle 8 structures?
 
 Before you abandon the ideas of generative music (which doesn't really
@@ -34,8 +31,7 @@ something new and unheard.
 
 ## Set phases to stunning
 
-Steve Reich and other minimalist composers worked with musical phrases
-that each performer played a number of times. Sometimes the number of
+Minimalist composers like Steve Reich often worked with musical phrases that were repeated by each performer. Sometimes the number of
 repetitions was at the discretion of the performer, sometimes governed
 by the number of times the performer could play it in one breath,
 sometimes the composer worked with actual tape loops of different lengths. The concept is
@@ -58,8 +54,8 @@ We actually used loops of different lengths in
 
 ## I'm in my prime
 
-If you remember back to your basic maths from school, you may remember
-that you can break down most numbers into their prime components: 2, 3,
+If you recall basic maths from school, you'll remember
+that you can break down most numbers into prime factors: 2, 3,
 5, 7, 11, 13, 17, 19 etc. What this means for us as Lazy Producers is
 that if your loop is a prime number of beats / bars long then it'll take
 MUCH longer for those loops to sync back up. If you have a 4 bar loop
@@ -95,9 +91,7 @@ petals on a plant.
 knitr::include_graphics(path = file.path(here::here(), "images", "Fibonacci_Spiral.png"))
 ```
 
-I'm not going to pretend that it has mystical properties (it's only
-maths after all) but the combination of primes, even and multiples in
-the Fibonacci sequence might be the ultimate sweet spot of combining
+I won't pretend it has mystical properties (it's just math, after all), but the mix of prime, even, and composite numbers in the Fibonacci sequence might be the perfect sweet spot of combining
 things that occasionally repeat and things that take a long time to
 repeat.
 

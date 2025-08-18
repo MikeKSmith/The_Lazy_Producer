@@ -1,6 +1,6 @@
 # Tools - Live 12 MIDI Generation and Transformation {#Chapter-033-Tools-Live12_MIDI_Generation_Transformation}
 
-With Live 12 Ableton introduced new tools to generate and transform MIDI within clips. We've had a brief look at these in [Tools - Live12 Overview](#Chapter-030-Tools-Live12_Intro). In this chapter we'll dig a bit deeper and see how they might be used to develop new ideas, or to tweak existing MIDI ideas. This goes a little beyond the concepts of "generative music" but since the tools are more generally applicable and add variation, they are worth exploring.
+With Live 12 Ableton introduced new tools to generate and transform MIDI within clips. We've had a brief look at these in [Tools - Live12 Overview](#Chapter-030-Tools-Live12_Intro). In this chapter we'll dig a bit deeper and see how they might be used to develop new ideas, or to tweak existing MIDI ideas. While these tools go a bit beyond pure "generative music," they are so useful for adding variation that they are worth exploring.
 
 ```{r}
 #| echo: FALSE
@@ -14,7 +14,7 @@ Live 12 contains a number of tools and new features which enhance how we can mak
 
 In particular note that you can Generate, commit to a pattern, then Transform the MIDI multiple times. This allows you to "stack" Transformations - for example, generating a pattern, then using Transform to change pitch, commit changes, then use a different Transform tool to change velocity, then use Transform again to change other elements, such as note division or the placement of notes in the clip.
 
-Exploration of the combination of Generation and Transformation is encouraged to get the most out of these tools. You shouldn't view them as single tools that have to do everything in one go. Often the layering of Transformations will give the most interesting results.
+To get the most out of these tools, I encourage you to experiment with combining multiple Generators and Transformers. You shouldn't view them as single tools that have to do everything in one go. Often the layering of Transformations will give the most interesting results.
 :::
 
 ## MIDI Generation
@@ -53,7 +53,7 @@ Because the tools apply to creating and transforming MIDI in clips, they are rea
 
 ## Limitations
 
-The limitation of these Generator and Transformation devices as they stand is that their processes apply to a MIDI clip and cannot be triggered remotely in performance or through clip automation. So while it's possible to randomly generate MIDI sequences, melodies, etc. the typical use for this is at the time of MIDI clip generation. It *is* possible to regenerate for a clip, but it would be tricky to do this during a live performance. So these tools might be thought of as tools to get started and generate ideas, rather than tools for generative performance.
+The main limitation of these tools is that they apply their changes directly to a MIDI clip; they cannot be automated or triggered remotely during a performance. So while it's possible to randomly generate MIDI sequences, melodies, etc. the typical use for this is at the time of MIDI clip generation. It *is* possible to regenerate for a clip, but it would be tricky to do this during a live performance. So these tools might be thought of as tools to get started and generate ideas, rather than tools for generative performance.
 
 ## Extensions
 
@@ -63,7 +63,7 @@ Since these Generator and Transformer devices support Max for Live devices, it h
 
 In [Tools - MIDI Generators](#Chapter-012-Tools-MIDI_Generators) we mentioned the MDD Snake Max for Live MIDI generator (<https://maxforlive.com/library/device/10422/mdd-snake-midi-generator>) . This is a great sequencer modelled after the Make Noise René modular sequencer. The device gives you a four by four grid of notes, gates and velocities and it cycles through each of these in a given pattern. The default plays each row before moving on to the next row. But you can also choose to play through the notes column by column, in diagonals, and a variety of other patterns. Each pattern can play through forward, backward, cycle forward and back etc.
 
-The beauty of this little generator is that it decouples note pitch from gate (whether the note plays or not). So you can generate patterns of notes / pitches separately from the pattern of whether the note plays which avoids the machine gun pattern of constant 8th or 16th notes.
+The beauty of this generator is that it decouples pitch from the gate (whether a note plays or not). So you can generate patterns of notes / pitches separately from the pattern of whether the note plays which avoids the machine gun pattern of constant 8th or 16th notes.
 
 ```{r}
 #| fig-alt: "The image shows the MDD Snake Generator device within Ableton Live 12 MIDI Generators. This MIDI Generator has been described in the chapter on MIDI Generators."

@@ -1,8 +1,8 @@
 # Process - Tuning Parameters {#Chapter-008-Process-Tuning_Parameters}
 
-This is actually a key concept, so ***DON'T SKIP THIS BIT***. It's the
-difference between a random collection of sounds that wobble about randomly,
-change notes randomly with very little coherence or musicality, or something
+This is a key concept, so ***DON'T SKIP THIS CHAPTER***. It makes the
+difference between a random collection of notes and sounds that wobble about
+with very little coherence or musicality and something
 that's actually listenable and identifiable as music.
 
 ::: callout-tip
@@ -29,9 +29,8 @@ produce sounds that ***do*** "catch the listener's ear", or more than that -
 
 ## The Taste Test
 
-How to avoid this? Well, as chefs prepare dishes they continually taste and
-adjust seasoning so that the end result is neither overly-seasoned nor
-under-seasoned. Basically they taste and add salt throughout the process.
+So, how do we avoid this? Think like a chef. Chefs constantly taste and 
+adjust the seasoning as they cook to ensure the final dish is perfectly balanced.
 Similarly here, I suggest that you listen at each stage and adjust the amount of
 randomness, the amount that modulation sources are changing parameters, and
 whether there's too much unexpected stuff going on, or whether the track is too
@@ -45,9 +44,8 @@ ear - but you can also note things down physically in a book or note for later.
 
 ## Waving, not droning
 
-In the same way that waves on the ocean sometimes peak together to form very
-large waves, it's possible for random processes to suddenly produce things that
-don't sound right. And like the waves on the ocean it's sometimes difficult to
+Just as waves on the ocean can align to create a single, massive wave, multiple random processes can sometimes align to produce an unwelcome sonic event.
+And like the waves on the ocean it's sometimes difficult to
 tell when this is going to happen. Also like waves on the ocean there may be 
 periods where there is a lot going on and the track sounds "busy" as well as 
 periods where there is less going on and the track sounds quiet and sparse. The
@@ -79,9 +77,7 @@ too much of one thing or the other.
 
 ## Tune the parameters
 
-The amalgamation of all of these steps is to "tune" the random and other process
-to find that sweet spot where things work together to produce something that you
-and a future listener might enjoy listening too. As mentioned above, try to do
+The goal of all these steps is to “tune” your random processes, finding that sweet spot where everything works together to produce something you and a future listener might enjoy. As mentioned above, try to do
 this throughout the process rather than just at the end. That way you can
 balance as you go and achieve something that sounds good in its entirety rather
 than a combination or collage of different ideas.

@@ -10,9 +10,8 @@ Setting up an Ableton Live set with lots of MIDI generators, MIDI
 manipulation and transformation, using that generated MIDI to create a
 nice collage of sounds that shifts and changes over time is very
 satisfying. From a performance perspective, once set up, you can press
-play and let it do its thing. But what if you want to commit the state
-of the system to share with others. That involves capturing the
-generated MIDI, modulations and generated audio. This chapter will
+play and let it do its thing. But what if you want to commit the output of this system to a final, rendered track? That involves capturing the generated MIDI and audio.
+This chapter will
 discuss how you might go about capturing the processes so that you can
 later release the track.
 
@@ -59,16 +58,13 @@ In that case, it makes sense to try to capture or "render" the MIDI,
 instrument and sound design choices so that you can mix and tweak to get
 towards a consistent output.
 
-In extreme cases you may find, as you capture the output of the random
-processes that you don't like the output. In that case you might want to
+In some cases, you might capture the output of your random processes only to find you don't like the result. In that case you might want to
 refine these random processes - maybe make them slightly ***less***
 random - or tweak settings to try to avoid extreme changes in sound
 design through reducing modulation levels. But the other option, to be
 honest is to throw that version away and re-render and re-capture the
 output to see if the random processes spit out something better next
-time. Don't feel you have to be precious about the output of some random
-process. There are many more versions of the random processes readily
-available.
+time. Don’t be precious about the output. You can always generate another version. 
 
 ## How to set up Live sets - my experience
 
@@ -108,9 +104,7 @@ feel you ***have*** to keep the MIDI output from these processes
 unchanged. It's just MIDI. Feel free to cut, move, edit, splice until
 you get something that you prefer.
 
-If you record only into tracks where there is MIDI effects and
-instruments then the ***transformed*** MIDI is never captured - only the
-original generated MIDI. This may not be a problem *per se* but when you
+If you record directly onto a track that contains MIDI effects, you will only capture the pre-effect MIDI, not the ***transformed*** output. This may not be a problem *per se* but when you
 render out the final audio, you are at the mercy of Live's internal
 random processes and you'll be crossing your fingers that either the
 result is ***the same*** as you heard previously (if Live replays the
@@ -145,6 +139,15 @@ instrument.
 ```{r}
 #| fig-alt: "The image shows an Ableton set, where the tracks are set up to generate MIDI, transform it, pass it into an instrument. The track with the instrument has captured the output of the MIDI Generation and Transformation process. A separate Audio track shows the rendered audio output of the instrument."
 knitr::include_graphics(path = file.path(here::here(),"images", "Workflow1_MIDI.png"))
+```
+  
+### SideBrain's MIDI Bounce effect
+
+Yeuda Ben-Atar, also known as SideBrain, has produced a Max for Live effect "[MIDI Bounce](https://sidebrain.net/midi-bounce/)" which captures the output of MIDI effects on tracks, rendering out the transformed MIDI into a single track and turning off the MIDI effects. This is incredibly useful here as bouncing down to MIDI can be done quickly (rather than real-time capture as I've described above).
+
+```{r}
+#| fig-alt: "The image shows Turing Machine Max for Live device, Random effect and Scale effect. These play through an instance of the Drift instrument and at the end of the device chain is Side Brain's MIDI Bounce effect. This effect has a number of options if you click on the Gear icon in the bottom right corner. Options are to set the bpm to 999bpm to speed up the capture process, the choice to remove the bounced temporary track after rendering and to delete or turn off MIDI effects in the track following bouncing."
+knitr::include_graphics(path = file.path(here::here(),"images", "SideBrain_MIDI_Bounce.png"))
 ```
 
 ### Rendering / bouncing down to audio
@@ -214,7 +217,7 @@ is to retain the original tracks with devices switched off, parts and
 audio output muted in case you need to return and tweak.
 
 In the screenshot below you'll see that on the Group for "Piano" I've
-got a compressor, EQ, Soothe dynamic EQ and Utility plugins (for
+got a compressor, EQ, Soothe dynamic EQ and Utility effects (for
 automating gain).
 
 ```{r}
@@ -227,9 +230,7 @@ knitr::include_graphics(path = file.path(here::here(),"images", "Workflow2_Group
 If you have gone completely down the rabbit hole of random modulation of
 your track volumes, it may have been tempting to modulate the Mixer
 Volume so that tracks fade in and out in a random way. But let me
-caution ***against*** doing this. This technique is fine for
-performance, but when it comes to capturing and committing a generative
-track, the better solution is to modulate the Gain of a Utility plugin.
+caution ***against*** doing this. While modulating the mixer volume is fine for live performance, a better solution for recording is to automate the Gain knob on a Utility effect instead.
 Modulating gain allows you to separately alter the Volume slider on the
 mixer to change the ***overall*** level of a track ***relative*** to the
 others. This is a good tip for audio production generally - automate

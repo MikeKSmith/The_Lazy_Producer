@@ -1,11 +1,11 @@
 # Process - Note-wise probability {#Chapter-002-Process-Note_wise_probability}
 
-[Ableton Live 11](https://www.ableton.com/en/live-manual/11/welcome-to-live/#welcome-to-live) brought us the ability to specify not just the velocity of each note in a MIDI clip, but the probability that that note would play. This is a game changer for the Lazy Producer. Adding variation to MIDI parts is now much easier if you define the lower probability for "fill" notes and higher probability for notes that you want to "anchor" in the clip. Lower probability means that each note is ***less*** likely to play, while higher probability means that each note is ***more*** likely to play. A probability of 100% means that the note will ***ALWAYS*** play.
+[Ableton Live 11](https://www.ableton.com/en/live-manual/11/welcome-to-live/#welcome-to-live) introduced the ability to set the probability that any given note in a MIDI clip will play, in addition to its velocity. This is a game changer for the Lazy Producer. Adding variation to MIDI parts is now much easier if you define the lower probability for "fill" notes and higher probability for notes that you want to "anchor" in the clip. Lower probability means that each note is ***less*** likely to play, while higher probability means that each note is ***more*** likely to play. A probability of 100% means that the note will ***ALWAYS*** play.
 
 ::: callout-tip
 ## Key idea
 
-Using probability with MIDI notes means that we can create patterns where there are some notes that will definitely play, but some other notes where with each cycle of a loop, there is a chance that the note will play and some chance the note will not play. Using probability moves us away from static and predictable loops into a territory where there is an element of surprise and variation with each loop cycle.
+Using probability with MIDI notes means that we can create patterns where there are some notes that will definitely play, but some other notes where with each cycle of a loop, there is a chance that the note will play and some chance the note will not play. Using probability takes us beyond static, predictable loops and into a territory of surprise and variation with each cycle.
 :::
 
 ```{r}
@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Drum parts
 
-One clear use of this is in drum parts. You can program the core drum part that is constant throughout the clip or song, but then add passing notes, "fills" with lower probability. Or reduce the probability on high-hat parts, shakers, claps, lower velocity snare or kick parts so that these only sound once in a while. With this, it's possible to specify a clip where core elements happen every time, but the "fills" and extra sounds only happen occasionally. Unfortunately, it isn't possible to specify exactly ***when*** those notes will or won't play, just probability, so it's not possible to specify "Play once, then miss for the next 3 bars" (as is possible with Elektron hardware sequencers).
+One clear use of this is in drum parts. You can program the core drum part that is constant throughout the clip or song, but then add passing notes, "fills" with lower probability. Or reduce the probability on high-hat parts, shakers, claps, lower velocity snare or kick parts so that these only sound once in a while. With this, it's possible to specify a clip where core elements happen every time, but the "fills" and extra sounds only happen occasionally. Unfortunately, you can only set the probability, not a specific condition like “Play once, then miss the next 3 bars” (a feature found on some hardware sequencers, like those from Elektron).
 
 To see the note chance, click on the MIDI clip then click on the arrow at the bottom of the piano-roll to show velocity. To see the chance / note probability, click on the button below the velocity.
 
@@ -89,5 +89,5 @@ to progress through the clips, means that the chord patterns change more subtly 
 
 ### Live 12 - Grouped notes
 
-Ableton Live 12 brought the ability to group MIDI notes and then define whether ***all*** of the notes in that group will play or only ***one*** note within the group. This can apply to notes in a chord, or notes in a sequence - basically any of the notes that you define to be within the group. This can be useful as it means that within the group you can define that ***exactly one*** of the notes will play, or that ***all*** of the grouped notes will play, which is slightly more deterministic (rules based) than the probability approaches above. Having said that, you can also apply probability to the group, so that with say 50% probability, all of the grouped notes will play - allowing you to write a specific set of "fill" notes in a drum part that will play with a given probability. You can also set probability along with the "play one" group rule. We'll look at some concrete examples in 
+Ableton Live 12 introduced the ability to group MIDI notes and then define whether ***all*** of the notes in that group will play or only ***one*** note within the group. This can apply to notes in a chord, or notes in a sequence - basically any of the notes that you define to be within the group. This can be useful as it means that within the group you can define that ***exactly one*** of the notes will play, or that ***all*** of the grouped notes will play, which is more deterministic (i.e., rules-based) than the purely probabilistic approaches discussed earlier. Having said that, you can also apply probability to the group, so that with say 50% probability, all of the grouped notes will play - allowing you to write a specific set of "fill" notes in a drum part that will play with a given probability. You can also set probability along with the "play one" group rule. We'll look at some concrete examples in 
 [Tools - Live12 Overview](#Chapter-030-Tools-Live12_Intro).

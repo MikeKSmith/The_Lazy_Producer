@@ -10,14 +10,14 @@ In [Tools - Random Sound Design](#Chapter-024-Tools-Random_Sound_Design) we look
 ::: callout-tip
 ## Key idea
 
-Variations are a way of capturing the state of an instrument, drum or effect rack in Ableton Live. By taking snapshots of the settings of macro knobs it becomes easy to capture the state of the rack and recall later. Tools exist that allow you to morph between variation states - with gradually changing macro states - or to use different variation states to evolve new sounds using the "parent" variation states as the starting point.
+Variations are a way of capturing the state of an instrument, drum or effect rack in Ableton Live. By taking snapshots of the settings of macro knobs it becomes easy to capture the state of the rack and recall later. Tools exist that allow you to either morph between these states—gradually changing the macro settings—or evolve entirely new sounds using existing variations as "parents."
 :::
 
 ## Macro Snapshot Variations
 
-When you create an Instrument, MIDI, Drum or Effect Rack you can assign parameters within that rack to Macro knobs, which then allow you to change certain elements of the Rack without having to dig into individual devices within the Rack. This makes it much easier and quicker to change things - keeping controls you need to change at your fingertips while hiding complexity and things you won't need to change within their respective devices. You can have as many or as few Macro knobs as you like, and you can define ranges of control for the Macro knobs, as we saw in the previous chapter, and you can assign many parameters to a single Macro knob - for example <https://brianfunk.com/blog/one-knob>.
+When you create an Instrument, MIDI, Drum or Effect Rack you can assign parameters within that rack to Macro knobs, which then allow you to change certain elements of the Rack without having to dig into individual devices within the Rack. This makes it much easier to tweak your sound, keeping the most important controls at your fingertips while hiding the underlying complexity. You can have as many or as few Macro knobs as you like, and you can define ranges of control for the Macro knobs, as we saw in the previous chapter, and you can assign many parameters to a single Macro knob - for example <https://brianfunk.com/blog/one-knob>.
 
-If you click on the "Camera" or "Snapshot" icon on the left of the Rack, you'll open the Macro Variations view. If you then change some Macro knob settings you can click on the camera icon next to the Variation you are currently in to overwrite the settings, or you can click on the "New" button to save that Variation which then allows you to quickly recall those settings later. This is effectively your own preset within the Device.
+If you click on the "Camera" or "Snapshot" icon on the left of the Rack, you'll open the Macro Variations view. If you then change some Macro knob settings you can click on the camera icon next to the Variation you are currently in to overwrite the settings, or you can click on the "New" button to save that Variation which then allows you to quickly recall those settings later. This is effectively your own preset system within a single device.
 
 ```{r}
 #| fig-alt: "The image shows Macro variations view for an Instrument Rack. There is a captured Variation called Initial and three other Variations numbered 1 to 3."

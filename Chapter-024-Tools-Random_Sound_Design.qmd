@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ::: callout-tip
 ## Key idea
 
-Using the ideas presented in [Process - Tuning Parameters](#Chapter-008-Process-Tuning_Parameters) we can create Instrument Racks and Effect Racks where a single click of the Randomize button will generate new sounds, new effects that we might never think to program from scratch. Ableton Live Racks (when you Group an instrument) allow you to randomise the macro controls. You can select certain macro knobs to exclude from randomisation and through the Macro mapping control you can specify ranges of values for the macro knobs - which in turn will define the range of values in which to randomise. By curating the macro ranges and device settings you can create an almost infinite set of new sounds and effects simply by pressing the Rand button.
+Using the ideas presented in [Process - Tuning Parameters](#Chapter-008-Process-Tuning_Parameters) we can create Instrument Racks and Effect Racks where a single click of the Randomize button will generate new sounds, new effects that we might never think to program from scratch. Ableton Live Racks (when you Group an instrument) allow you to randomise the macro controls. You can select certain macro knobs to exclude from randomisation and through the Macro mapping control you can specify ranges of values for the macro knobs - which in turn will define the range of values in which to randomise. By carefully curating the macro ranges, you can create a nearly infinite palette of new sounds and effects, all accessible with a single click of the "Rand" button.
 :::
 
 ## First - Group, define Macro parameters and ranges
@@ -59,7 +59,7 @@ You do this by right clicking on the Macro Knob in the Instrument Rack and selec
 knitr::include_graphics(path = file.path(here::here(), "images", "Drift_Instrument_Rack_Exclude.png"))
 ```
 
-You might have to iterate between tweaking ranges of values, hitting Rand to randomize again, see what you get and tweak some more.
+You might have to iterate a few times: tweak the ranges, hit "Rand," listen to the result, and then tweak some more.
 
 ## Randomize for new sounds and capture with Variations.
 
@@ -77,7 +77,7 @@ Ableton Certified Trainer Tom Glendinning, also known as ELPHNT, has produced a 
 
 Similarly, Misty Jones has developed a similar Instrument and Effect Rack, focussing on FM synthesis using Operator. It's available here: <https://mistyjones.gumroad.com>. A video explanation is here: <https://www.youtube.com/watch?v=mALgi1NDcFg>
 
-What GEN and Genie do is not proprietary - I've just shown you how. But what Tom and Misty offer through their packs are curated sets of macro settings so that each press of Rand brings new, useable sounds within a sensible range.
+The techniques used by GEN and Genie aren't proprietary. I've just shown you how to do it yourself. What Tom and Misty offer, however, are expertly curated macro settings that ensure every press of the "Rand" button yields a new, usable sound.
 
 ## Curate the macro settings
 

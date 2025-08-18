@@ -5,7 +5,7 @@
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Create something from nothing with these audio generators. These aren't so much "instruments" - they do not need MIDI input to drive them, and will make noise as soon as you press "Play" on the Ableton transport. That's both a good thing and a bad thing - you may want to start a set with the faders down! These devices can be used to power a drone set very effectively though - just route them through additional effects and/or resonators to create some rich tones.
+These audio generators let you create sound from nothing. Unlike typical instruments, they don't need MIDI input to work; they start making noise as soon as you press "Play." That's both a good thing and a bad thing - you may want to start a set with the faders down! These devices can be used to power a drone set very effectively though - just route them through additional effects and/or resonators to create some rich tones.
 
 ::: callout-tip
 ## Key idea
@@ -22,7 +22,7 @@ There's a technique in synthesis where you "ping" a resonant filter with a click
 knitr::include_graphics(path = file.path(here::here(), "images", "Pinging_Filters.png"))
 ```
 
-Hainbach has a great video explaining the technique here: <https://www.youtube.com/watch?v=qJRXxkswXdg>. Ned Rush also routinely uses the Vinyl Distortion to ping other devices e.g. <https://www.youtube.com/watch?v=siWk44aAYeg>.
+The producer Hainbach has [a great video explaining this technique](https://www.youtube.com/watch?v=qJRXxkswXdg) and Ned Rush also routinely uses Vinyl Distortion to "ping" other devices. [Ned Rush also routinely uses the Vinyl Distortion to ping other devices](https://www.youtube.com/watch?v=siWk44aAYeg).
 
 In our case, instead of using feedback with filters, we can exploit Ableton Live's own resonator plugins: "Resonator", "Spectral Resonator" and "Corpus". In the image below we're using the "Spectral Resonator" to generate some pitched tones. We're feeding it notes from an external MIDI clip which uses the same note probability techniques explained previously. This then feeds into the "Resonators" plugin which provides additional pitched resonance, and the "Spectral Time" plugin which smears out this pitched resonance so that it's not a short burst of pitched information.
 
@@ -46,7 +46,7 @@ From the [Inspired by Nature pack](https://www.ableton.com/en/packs/inspired-nat
 
 This is a deceptively useful generator, as it can be used to create beautiful drones, or you can switch off "Noise" and have just the "raindrops". Combining this with some additional resonators or effects can create an evolving, generative ambience just on its own.
 
-Two Easter Eggs to Tree Tone exist: The top "microphone" button on the far right allows you to route ANY audio signal through Tree Tone and excite the resonators. So Tree Tone can be used as either as a generator OR an effect (similar to the Corpus device). Below this is the "Sine" button which opens modulation dialogue where you can device two LFOs and two envelopes and then route these to parameters of the device. So you don't need to stick with a static sound, and the envelopes can be triggered by incoming MIDI information.
+Tree Tone has two "Easter eggs": first, the microphone button on the far right lets you route any external audio signal through the device to excite its resonators. So Tree Tone can be used as either as a generator OR an effect (similar to the Corpus device). Below this is the "Sine" button which opens modulation dialogue where you can device two LFOs and two envelopes and then route these to parameters of the device. So you don't need to stick with a static sound, and the envelopes can be triggered by incoming MIDI information.
 
 ```{r}
 #| fig-alt: "The image shows the Tree Tone device from Ableton's Inspired by Nature pack. On the left is a panel with dials setting the audio generation processes - White noise generation with Noise level, Filter cutoff and Wind speed. Here the Filter cutoff is at approximately 2kHz and Wind speed at 50%. Below that is the pinging Rain generator. Rain is set to 100% with Speed set to 19%. The right hand panel sets the pitch information. Scale is on here and set to minor pentatonic. Root note or Tonic is set to C. Inharmonic content is set to 20%. Below that are dials for Decay, Pan and Gain. The middle panel displays a graphical representation of something looking like a root system with a main branch with smaller branches coming off it. This represents the harmonic content of the generator. Six different harmonic generators have small icons along the botton showing different branch and root systems."
@@ -70,7 +70,7 @@ This is a [paid plugin by Dillon Bastan](https://dillonbastan.gumroad.com/l/yyeh
 
 The six tone generators work in L+R pairs, so there are actually 12 sets of parameters that can be affected by the cell values if the "Voices" is set to 6. Different parameters of the tone generators are shown to the right of the square display and by clicking on the row for each parameter, it will set the value for that parameter using the "Value" scaling to the bottom left of the square display. This then scales the range of possible values for each parameter which shows the offset / lowest value (left % number) and the range (right % number).
 
-I thoroughly recommend reviewing [Misty Jones' YouTube videos](https://www.youtube.com/watch?v=dM2ksxavJzI) on this plugin. She has comprehensively explored and described the various options and settings.
+I thoroughly recommend [Misty Jones’ YouTube videos](https://www.youtube.com/watch?v=dM2ksxavJzI) on this plugin, where she comprehensively explores and explains its various options and settings.
 
 So what this gives us is a way of generating tones. You can quantize changes to Hz or rhythmic pulses. In the screenshot below, I'm modulating the "Draw XY" left and right boxes and the "Value" box through the Strange Mod modulator (also by Dillon Bastan). This means that the Strange Mod modulation device is essentially drawing values into the square display. Outside the captured image, I'm also using another instance of Strange Mod to set values for some of the parameters.
 

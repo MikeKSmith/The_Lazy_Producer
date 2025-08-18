@@ -3,9 +3,7 @@
 In generative music, we're likely to be using some probability to govern when to
 trigger certain events, to select clips, to change some aspect of the sounds
 being generated. The problem with probability is that it generates randomness
-and in general music composed by humans is not random. Too much randomness can
-lead to listener fatigue because the "humanity" of the composition or
-performance is reduced and it's easy to feel detached from the music.
+and in general music composed by humans is not random. Too much randomness can lead to listener fatigue; when the "humanity" is gone, it's easy to feel detached from the music.
 
 A counterbalance to randomness is repetition. "If you play a wrong note once
 it's a mistake. Play it twice and it's jazz." as the old saying goes. If your
@@ -20,9 +18,8 @@ in" to what's going on and contextualise it.
 Balance things that change, which are unexpected to the listener, with things
 that stay the same and are predictable for the listener.
 
-There are many aspects of musical ideas and sounds that can change - rhythm,
-timbre, tonality, texture, timing. If all of these are changing all the time it
-quickly becomes overwhelming. Sudden changes will "stick out" in a way that's
+Many aspects of a musical idea can change: rhythm, timbre, tonality, texture, and timing. If everything changes all at once, the result can be overwhelming.
+Sudden changes will "stick out" in a way that's
 typically undesirable for generative music. Evolving changes are preferred as
 it's possible to "hide" these so that the listener only realises something has
 changed over an extended period.
@@ -71,9 +68,8 @@ course, it's completely possible to play with those constraints in order to
 deliberately play with this listener's expectations.
 
 What's important to me is the balance of the unexpected with the predictable.
-Carpet weavers will often "disguise" mistakes in a pattern by repeating them and
-weaving them into the pattern so that they become a feature, rather than a
-mistake. Similarly, repetition and weaving of "wonky" beats into a pattern of
+Traditional carpet weavers often disguise a mistake by intentionally repeating it, weaving it into the design until it becomes a feature rather than a flaw.
+Similarly, repetition and weaving of "wonky" beats into a pattern of
 music can bring them back to something more predictable - contextualising the
 wonkiness.
 
@@ -151,7 +147,7 @@ random processes.
 
 In Anna Meredith's track "Nautilus" the drummer joins the track about halfway through. When he does, it ***COMPLETELY*** throws me off and makes me rethink what I had perceived for the entire first half of the track, because the "1" downbeat in the bar is suddenly redefined in an unambiguous way and you realise that actually what you ***thought*** was the "1" was actually an off-beat. It's very disconcerting. In fact, the beauty of that track is that pretty much the whole way through you're never quite certain where you are in the bar.
 
-So what can The Lazy Producer do to similarly mess with the listener's perspective? Well, one way is to use poly-rhythms or poly-meters to slice the bar into different and competing rhythmic parts. If your arpeggiated part is playing "in three" consistently, but the kick on the drum part is playing "in four" consistently, then if that kick doesn't come in immediately, then the listener will gravitate to where the "1" is for the arpeggiated part, but will then have to readjust when the kick enters. 
+So how can we, as Lazy Producers, similarly play with the listener's perspective? Well, one way is to use poly-rhythms or poly-meters to slice the bar into different and competing rhythmic parts. If your arpeggiated part is playing "in three" consistently, but the kick on the drum part is playing "in four" consistently, then if that kick doesn't come in immediately, then the listener will gravitate to where the "1" is for the arpeggiated part, but will then have to readjust when the kick enters. 
 
 Tonally you might be able to do similar things - your chords and arpeggios may suggest one tonal centre, but that gets redefined when the bass comes in. 
 

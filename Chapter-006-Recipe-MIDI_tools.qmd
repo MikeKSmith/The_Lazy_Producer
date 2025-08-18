@@ -1,19 +1,17 @@
-# Recipe - Doing more with less using MIDI tools and plugins {#Chapter-006-Recipe-MIDI_tools}
+# Recipe - Doing more with less using MIDI effects {#Chapter-006-Recipe-MIDI_tools}
 
 ```{r}
 #| echo: FALSE
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-In this recipe we'll use the simplest MIDI generator, in this case a single MIDI
-note, with MIDI effects and routing to create a track - these are covered in 
-[Tools - MIDI tools](#Chapter-004-Tools-MIDI_tools)
+In this recipe we'll use the simplest possible MIDI source, a single MIDI
+note, and process it with MIDI effects and routing to create an entire track from one note. 
+We're going to use MIDI effects [Tools - MIDI tools](#Chapter-004-Tools-MIDI_tools)
 .
-This recipe also uses MIDI and audio routing in Live quite extensively, so it's
-worth reviewing the content in 
+And we're going to be using MIDI and audio routing which is covered in 
 [Process - Routing MIDI and Audio](#Chapter-005-Process-Routing)
-. We're also going to use
-modulation devices covered in 
+. We will also use modulation in sound design to keep the listener engaged - 
 [Tools - Modulators](#Chapter-007-Tools-Modulators)
 .
 
@@ -28,8 +26,7 @@ track that you have just created above. In the example below I've added a short,
 plucky sound in the Operator track, a Wavetable pad, and a track with the
 Electric piano sound.
 
-4.  A Shaper modulation device is added to the Wavetable instrument track and
-the modulation is mapped to the Gain in a Utility device. The "minimum" is set
+4.  I've added a Shaper to the Wavetable track and mapped its output to the Gain knob on a Utility device. The "minimum" is set
 to 50% and the "maximum" to 0% and the rate is set to 1/4 quarter notes so that
 each beat, the Shaper ducks the gain to produce a pumping "sidechain compressor"
 like effect.
@@ -39,42 +36,38 @@ like effect.
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MODULATION_Shaper-gain.png"))
 ```
 
-5.  The second Wavetable instrument "Wavetable pre-compressor" is taking the
-output from the Wavetable instrument but set to "Pre-FX" - before the ducking
-gain reduction is applied. The audio from this track goes ***only*** to the
-Return FX, so essentially we get a nice pad sound, but we never hear the dry
-sound.
+5.  The second Wavetable track, named “Wavetable pre-compressor,” pulls its audio from the main Wavetable track before the ducking effect ("Pre-FX"). This track's output is set to "Sends-Only," so we only hear its processed signal through the return effects, never the dry sound.
 
 ```{r}
 #| fig-alt: "Image shows the various routing paths in the Recipe 2 example and modulation of track mix volume and sends."
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI-and-audio-routing.png"))
 ```
 
-6.  In your tracks, you can add MIDI plugins to alter the incoming chord. For example:
+6.  In your tracks, you can add MIDI effects to alter the incoming chord. For example:
 
 ```{r}
 #| fig-alt: "Image shows the MIDI device chain which is adding Random MIDI notes, applying a Minor pentatonic scale, using MIDI Note Echo device, another Random MIDI device, another MIDI Note Echo and a final Minor Pentatonic scale device."
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_fx.png"))
 ```
 
-You can employ all kinds of MIDI FX here. In this example I have grouped these
-FX into a MIDI Effect Rack and I'm using Macros to allow me to switch on and
-change various FX parameters from a single set of 8 knobs.
+You can employ all kinds of MIDI effects here. In this example I have grouped these
+effects into a MIDI Effect Rack and I'm using Macros to allow me to switch on and
+change various effect parameters from a single set of 8 knobs.
   
 The "Random" effect is going to add (or subtract) up to 12 semitones shift to
 the incoming note. Remember that our generator is a single C3 note for one bar.
 We then quantise this randomness to the C minor pentatonic scale using the
-"Scale" plugin.
+"Scale" effect.
   
-Then we have two distinct "Note Echo" plugins which are going to echo the
-incoming note at 5 beats and 8 beats delay. Each plugin has the "Thru" setting
+Then we have two distinct "Note Echo" effects which are going to echo the
+incoming note at 5 beats and 8 beats delay. Each effect has the "Thru" setting
 switched on so we'll hear the original note and its delay. You can experiment
 with setting this to "Mute" to mute the incoming note, and just play the delayed
 version. The device on/off switch on the top left of the device is mapped to a
 macro knob which allows me to switch these devices on and off with a knob or
 button on my MIDI controller.
   
-The second "Random" plugin adds more randomness to the original note, and all of
+The second "Random" effect adds more randomness to the original note, and all of
 the delayed / echo output MIDI notes. This allows me to add a little more
 variation to the output by turning up the "Chance" setting on this device. Note
 that the "Choices" knob is also mapped to a macro knob, so I can dial up more or
@@ -112,9 +105,9 @@ to last a nominated number of seconds.
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_NoteLength.png"))
 ```
 
-In the "Arp" track we're going to add an Arpeggiator plugin (surprise!) but also
+In the "Arp" track we're going to add an Arpeggiator effect (surprise!) but also
 another MIDI "Note Length" effect with which we can tweak the note length of the
-output from the Arpeggiator to taste, and a Velocity plugin to add a
+output from the Arpeggiator to taste, and a Velocity effect to add a
 little variation to the velocity of the output MIDI notes.
 
 ```{r}
@@ -123,7 +116,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Recipe2_MIDI_A
 ```
 
 Tweaking the Length and Gate settings of "Note Length" will allow us to alter
-the sound of what is generated from the "Arpeggiator" plugin - note that the
+the sound of what is generated from the "Arpeggiator" effect - note that the
 Gate setting in the "Arpeggiator" does this as well, but we could potentially
 map these parameters to a MIDI controller if we wanted to vary the arpeggiator
 sound coming from this track.
@@ -142,10 +135,7 @@ the controller to fade up and down the volume of each of the instrument tracks
 to allow me to shape the overall emerging track so that all sounds aren't
 playing all the time.
 
-8.  We have mostly been looking at MIDI ***NOTE*** plugins here. But there's a
-much overlooked MIDI plugin called "Expression control" which allows you to map
-various MIDI incoming signals to ***ANY*** parameter in Live, including controls
-of other plugins. In the example below we've mapped various parameters to
+8.  We have mostly been looking at MIDI ***NOTE*** effects here. There’s also a much-overlooked MIDI device called “Expression Control” which allows you to map incoming MIDI data (like velocity or pitch bend) to almost any parameter in Live, including controls
 controls in the Operator instrument just for illustration.
 
 ```{r}
@@ -164,11 +154,11 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Expression_con
 ```
 
 There's a wide variety of incoming MIDI inputs which can then be used to map to
-plugin controls, as well as a "random" input which will select a new value for
+effect controls, as well as a "random" input which will select a new value for
 every MIDI input note, and "incremental" which will increment values for every
 MIDI input note.
   
-Also note that the plugin allows you to specify Min and Max levels for each of
+Also note that the effect allows you to specify Min and Max levels for each of
 these - for example the Random input is mapped to Tone in Operator, but the
 range is limited between 55% and 75% of the values. This kind of constraint can
 add nice variations in timbre for each note without it sounding too jarring.
@@ -177,14 +167,14 @@ Using MIDI "Expression Control" can be useful to modify a variety of parameters
 in Ableton including some that aren't easily mapped within an instrument.
 
 9.  The basic concept in this recipe - and one that I use frequently - is to
-take one MIDI part and make the most of it. Using MIDI plugins like this can
+take one MIDI part and make the most of it. Using MIDI effects like this can
 ensure that the resulting sounds are ***related*** to the input, without having
 to be ***exactly*** the same. Anything you can do to delay, alter, spread out,
 harmonise and alter the incoming MIDI will add interest to the part. Using these
 MIDI parts with different instrument parts / sounds and audio effects will add
 variety and interest.
   
-Because I'm using lots of MIDI "Note Echo" plugins here, the generating input
+Because I'm using lots of MIDI "Note Echo" effects here, the generating input
 needs to relatively simple - here just a single MIDI note that lasts one bar. If
 the generating MIDI clip was more busy then I'm sure this would descend into a
 mess fairly quickly. But the principle extends to other kinds of inputs if you

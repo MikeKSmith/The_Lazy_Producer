@@ -12,10 +12,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Using probability, randomness and modulation to create generative parts or ideas
 can create parts that inspire new ideas or can accompany you, the producer, in
-ways that are less likely to stray into tropes and well-trodden paths. You can
-view these generative parts as almost like an unpredictable bandmate, who
-occasionally throws in an unexpected chord change, or an interesting phrase or
-drum fill that maybe you weren't expecting. Being able to react to those
+ways that are less likely to stray into tropes and well-trodden paths. You can think of these generative parts as an unpredictable bandmate. One who occasionally throws in an unexpected chord change, an interesting phrase, or a drum fill you weren't expecting. Being able to react to those
 unexpected moments can help inspire you in new directions, keeping you and the
 listener engaged.
 
@@ -23,8 +20,7 @@ listener engaged.
 
 ## Unpredictable in a good way
 
-When I say "your unpredictable bandmate" I'm not meaning like a person who shows
-up late, or forgets that gig is on... More like a bandmate who is inspiring and
+When I say "unpredictable bandmate," I don't mean someone who shows up late or forgets about the gig. More like a bandmate who is inspiring and
 occasionally plays an interesting phrase or takes the melody or harmony somewhere 
 new. The beauty of playing with others is that you never know what they're going
 to do, and being able to react to that, play along and improvise to that new 
@@ -45,8 +41,8 @@ So, like writing a melody, picking chord changes that inspire and rhythmic parts
 
 ## Unpredictable like improvisation
 
-The art of improvisation is about reacting to what you hear others playing. This does ***NOT*** mean you enter into it unprepared. In fact, the better the preparation, the better the improvisation. So you can set up your randomness and probability to generate phrases, fills, weird rhythms, change chords, throw in some interesting notes in melodies. But maybe the best way to work with that is to improvise alongside it. If you're able. 
+Improvisation is the art of reacting to what you hear others playing, but that doesn't mean you go into it unprepared. In fact, the better the preparation, the better the improvisation. So you can set up your randomness and probability to generate phrases, fills, weird rhythms, change chords, throw in some interesting notes in melodies. But maybe the best way to work with that is to improvise alongside it. If you're able. 
 
 ## Unpredictable shouldn't mean unpleasant.
 
-Don't forget that ***you*** are in control of your unpredictable bandmate. If you don't like what you're hearing, change it. Try again. Bin it. Sack them and find a replacement. Genuinely... Don't feel obliged to follow any rule of "I ***must*** use this idea...". It may not work for you in this context. But it might in the next.
+Don't forget that ***you*** are in control of your unpredictable bandmate. If you don't like what you're hearing, change it. Try again. Bin it. Sack them and find a replacement. Seriously, don't feel obliged to stick with an idea just because the system generated it. It may not work for you in this context. But it might in the next.
