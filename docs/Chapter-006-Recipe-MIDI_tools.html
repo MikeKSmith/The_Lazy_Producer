@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Lazy Producer - Recipe - Doing more with less using MIDI tools and plugins</title>
+<title>The Lazy Producer - Recipe - Doing more with less using MIDI effects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chapter-006-Recipe-MIDI_tools.html"><span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Chapter-006-Recipe-MIDI_tools.html"><span class="chapter-title">Recipe - Doing more with less using MIDI effects</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></a>
+  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Recipe - Doing more with less using MIDI effects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -292,7 +292,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="Chapter-006-Recipe-MIDI_tools" class="quarto-section-identifier"><span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></span></h1>
+<h1 class="title"><span id="Chapter-006-Recipe-MIDI_tools" class="quarto-section-identifier"><span class="chapter-title">Recipe - Doing more with less using MIDI effects</span></span></h1>
 </div>
 
 
@@ -309,12 +309,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In this recipe we’ll use the simplest MIDI generator, in this case a single MIDI note, with MIDI effects and routing to create a track - these are covered in <a href="Chapter-004-Tools-MIDI_tools.html">Tools - MIDI tools</a> . This recipe also uses MIDI and audio routing in Live quite extensively, so it’s worth reviewing the content in <a href="Chapter-005-Process-Routing.html">Process - Routing MIDI and Audio</a> . We’re also going to use modulation devices covered in <a href="Chapter-007-Tools-Modulators.html">Tools - Modulators</a> .</p>
+<p>In this recipe we’ll use the simplest possible MIDI source, a single MIDI note, and process it with MIDI effects and routing to create an entire track from one note. We’re going to use MIDI effects <a href="Chapter-004-Tools-MIDI_tools.html">Tools - MIDI tools</a> . And we’re going to be using MIDI and audio routing which is covered in <a href="Chapter-005-Process-Routing.html">Process - Routing MIDI and Audio</a> . We will also use modulation in sound design to keep the listener engaged - <a href="Chapter-007-Tools-Modulators.html">Tools - Modulators</a> .</p>
 <ol type="1">
 <li><p>Create a MIDI track but do not add an instrument to that track. This is going to be the “generator” for our track.</p></li>
 <li><p>Within this track, add a single MIDI clip with a single C3 note lasting one bar. Name this the “Generator” track (CTRL+R to rename).</p></li>
 <li><p>Add MIDI tracks and assign the input for these tracks to be the “Generator” track that you have just created above. In the example below I’ve added a short, plucky sound in the Operator track, a Wavetable pad, and a track with the Electric piano sound.</p></li>
-<li><p>A Shaper modulation device is added to the Wavetable instrument track and the modulation is mapped to the Gain in a Utility device. The “minimum” is set to 50% and the “maximum” to 0% and the rate is set to 1/4 quarter notes so that each beat, the Shaper ducks the gain to produce a pumping “sidechain compressor” like effect.</p></li>
+<li><p>I’ve added a Shaper to the Wavetable track and mapped its output to the Gain knob on a Utility device. The “minimum” is set to 50% and the “maximum” to 0% and the rate is set to 1/4 quarter notes so that each beat, the Shaper ducks the gain to produce a pumping “sidechain compressor” like effect.</p></li>
 </ol>
 <div class="cell">
 <div class="cell-output-display">
@@ -326,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <ol start="5" type="1">
-<li>The second Wavetable instrument “Wavetable pre-compressor” is taking the output from the Wavetable instrument but set to “Pre-FX” - before the ducking gain reduction is applied. The audio from this track goes <strong><em>only</em></strong> to the Return FX, so essentially we get a nice pad sound, but we never hear the dry sound.</li>
+<li>The second Wavetable track, named “Wavetable pre-compressor,” pulls its audio from the main Wavetable track before the ducking effect (“Pre-FX”). This track’s output is set to “Sends-Only,” so we only hear its processed signal through the return effects, never the dry sound.</li>
 </ol>
 <div class="cell">
 <div class="cell-output-display">
@@ -338,7 +338,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <ol start="6" type="1">
-<li>In your tracks, you can add MIDI plugins to alter the incoming chord. For example:</li>
+<li>In your tracks, you can add MIDI effects to alter the incoming chord. For example:</li>
 </ol>
 <div class="cell">
 <div class="cell-output-display">
@@ -349,10 +349,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>You can employ all kinds of MIDI FX here. In this example I have grouped these FX into a MIDI Effect Rack and I’m using Macros to allow me to switch on and change various FX parameters from a single set of 8 knobs.</p>
-<p>The “Random” effect is going to add (or subtract) up to 12 semitones shift to the incoming note. Remember that our generator is a single C3 note for one bar. We then quantise this randomness to the C minor pentatonic scale using the “Scale” plugin.</p>
-<p>Then we have two distinct “Note Echo” plugins which are going to echo the incoming note at 5 beats and 8 beats delay. Each plugin has the “Thru” setting switched on so we’ll hear the original note and its delay. You can experiment with setting this to “Mute” to mute the incoming note, and just play the delayed version. The device on/off switch on the top left of the device is mapped to a macro knob which allows me to switch these devices on and off with a knob or button on my MIDI controller.</p>
-<p>The second “Random” plugin adds more randomness to the original note, and all of the delayed / echo output MIDI notes. This allows me to add a little more variation to the output by turning up the “Chance” setting on this device. Note that the “Choices” knob is also mapped to a macro knob, so I can dial up more or less variation.</p>
+<p>You can employ all kinds of MIDI effects here. In this example I have grouped these effects into a MIDI Effect Rack and I’m using Macros to allow me to switch on and change various effect parameters from a single set of 8 knobs.</p>
+<p>The “Random” effect is going to add (or subtract) up to 12 semitones shift to the incoming note. Remember that our generator is a single C3 note for one bar. We then quantise this randomness to the C minor pentatonic scale using the “Scale” effect.</p>
+<p>Then we have two distinct “Note Echo” effects which are going to echo the incoming note at 5 beats and 8 beats delay. Each effect has the “Thru” setting switched on so we’ll hear the original note and its delay. You can experiment with setting this to “Mute” to mute the incoming note, and just play the delayed version. The device on/off switch on the top left of the device is mapped to a macro knob which allows me to switch these devices on and off with a knob or button on my MIDI controller.</p>
+<p>The second “Random” effect adds more randomness to the original note, and all of the delayed / echo output MIDI notes. This allows me to add a little more variation to the output by turning up the “Chance” setting on this device. Note that the “Choices” knob is also mapped to a macro knob, so I can dial up more or less variation.</p>
 <p>A third “Note Echo” has a 3 beat delay with a Pitch shift up 7 semitones but with very low Feedback setting so that the pitching up fades quickly. Again, device on/off is mapped to a controller knob or button to allow me to turn this on and off.</p>
 <p>Finally a “Scale” device ensures that all this chaos is quantised to a C minor scale.</p>
 <p>These are just examples of what you could do, but the concept here is that the generating device can be as simple as you like - a single MIDI note lasting one bar in this case - but these devices then allow you to create a cascade of evolving MIDI note information all within the C minor pentatonic scale. Mapping to MIDI controllers allows me to dial up and back the amount of variation during the track.</p>
@@ -378,7 +378,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>In the “Arp” track we’re going to add an Arpeggiator plugin (surprise!) but also another MIDI “Note Length” effect with which we can tweak the note length of the output from the Arpeggiator to taste, and a Velocity plugin to add a little variation to the velocity of the output MIDI notes.</p>
+<p>In the “Arp” track we’re going to add an Arpeggiator effect (surprise!) but also another MIDI “Note Length” effect with which we can tweak the note length of the output from the Arpeggiator to taste, and a Velocity effect to add a little variation to the velocity of the output MIDI notes.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -388,11 +388,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>Tweaking the Length and Gate settings of “Note Length” will allow us to alter the sound of what is generated from the “Arpeggiator” plugin - note that the Gate setting in the “Arpeggiator” does this as well, but we could potentially map these parameters to a MIDI controller if we wanted to vary the arpeggiator sound coming from this track.</p>
+<p>Tweaking the Length and Gate settings of “Note Length” will allow us to alter the sound of what is generated from the “Arpeggiator” effect - note that the Gate setting in the “Arpeggiator” does this as well, but we could potentially map these parameters to a MIDI controller if we wanted to vary the arpeggiator sound coming from this track.</p>
 <p>From the MIDI routing screen capture above you can see that we send the MIDI output from the “Note Length” track to the input of the Wavetable pad sound (to give us a nice long chords to play with in Wavetable) while the output of the “Arp” track is being sent to the Electric Piano sound.</p>
 <p>In performance of this track, I use a MIDI Controller to change settings of the MIDI Effect Rack in the MIDI note track, which essentially is using me (the human in charge) to dictate HOW MUCH generative randomness happens, but the MIDI effects in the “Note Length” and “Arp” tracks ingest this chaos and make some things happen downstream across a variety of instruments and sounds. I then use the controller to fade up and down the volume of each of the instrument tracks to allow me to shape the overall emerging track so that all sounds aren’t playing all the time.</p>
 <ol start="8" type="1">
-<li>We have mostly been looking at MIDI <strong><em>NOTE</em></strong> plugins here. But there’s a much overlooked MIDI plugin called “Expression control” which allows you to map various MIDI incoming signals to <strong><em>ANY</em></strong> parameter in Live, including controls of other plugins. In the example below we’ve mapped various parameters to controls in the Operator instrument just for illustration.</li>
+<li>We have mostly been looking at MIDI <strong><em>NOTE</em></strong> effects here. There’s also a much-overlooked MIDI device called “Expression Control” which allows you to map incoming MIDI data (like velocity or pitch bend) to almost any parameter in Live, including controls controls in the Operator instrument just for illustration.</li>
 </ol>
 <div class="cell">
 <div class="cell-output-display">
@@ -413,13 +413,13 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>There’s a wide variety of incoming MIDI inputs which can then be used to map to plugin controls, as well as a “random” input which will select a new value for every MIDI input note, and “incremental” which will increment values for every MIDI input note.</p>
-<p>Also note that the plugin allows you to specify Min and Max levels for each of these - for example the Random input is mapped to Tone in Operator, but the range is limited between 55% and 75% of the values. This kind of constraint can add nice variations in timbre for each note without it sounding too jarring.</p>
+<p>There’s a wide variety of incoming MIDI inputs which can then be used to map to effect controls, as well as a “random” input which will select a new value for every MIDI input note, and “incremental” which will increment values for every MIDI input note.</p>
+<p>Also note that the effect allows you to specify Min and Max levels for each of these - for example the Random input is mapped to Tone in Operator, but the range is limited between 55% and 75% of the values. This kind of constraint can add nice variations in timbre for each note without it sounding too jarring.</p>
 <p>Using MIDI “Expression Control” can be useful to modify a variety of parameters in Ableton including some that aren’t easily mapped within an instrument.</p>
 <ol start="9" type="1">
-<li>The basic concept in this recipe - and one that I use frequently - is to take one MIDI part and make the most of it. Using MIDI plugins like this can ensure that the resulting sounds are <strong><em>related</em></strong> to the input, without having to be <strong><em>exactly</em></strong> the same. Anything you can do to delay, alter, spread out, harmonise and alter the incoming MIDI will add interest to the part. Using these MIDI parts with different instrument parts / sounds and audio effects will add variety and interest.</li>
+<li>The basic concept in this recipe - and one that I use frequently - is to take one MIDI part and make the most of it. Using MIDI effects like this can ensure that the resulting sounds are <strong><em>related</em></strong> to the input, without having to be <strong><em>exactly</em></strong> the same. Anything you can do to delay, alter, spread out, harmonise and alter the incoming MIDI will add interest to the part. Using these MIDI parts with different instrument parts / sounds and audio effects will add variety and interest.</li>
 </ol>
-<p>Because I’m using lots of MIDI “Note Echo” plugins here, the generating input needs to relatively simple - here just a single MIDI note that lasts one bar. If the generating MIDI clip was more busy then I’m sure this would descend into a mess fairly quickly. But the principle extends to other kinds of inputs if you pick and choose the MIDI effects that you apply to it.</p>
+<p>Because I’m using lots of MIDI “Note Echo” effects here, the generating input needs to relatively simple - here just a single MIDI note that lasts one bar. If the generating MIDI clip was more busy then I’m sure this would descend into a mess fairly quickly. But the principle extends to other kinds of inputs if you pick and choose the MIDI effects that you apply to it.</p>
 <p>The benefit of this approach is that because MIDI effects are altering the inputs, all of the MIDI tracks generated are related to each other and cohesive in their sound, without being THE SAME. This is a key attribute, because we can then use these MIDI tracks across different instruments with different timbres.</p>
 <ol start="10" type="1">
 <li>Press play. Sit back and relax.</li>

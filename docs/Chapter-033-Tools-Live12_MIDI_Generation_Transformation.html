@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></a>
+  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI effects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -326,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>With Live 12 Ableton introduced new tools to generate and transform MIDI within clips. We’ve had a brief look at these in <a href="Chapter-030-Tools-Live12_Intro.html">Tools - Live12 Overview</a>. In this chapter we’ll dig a bit deeper and see how they might be used to develop new ideas, or to tweak existing MIDI ideas. This goes a little beyond the concepts of “generative music” but since the tools are more generally applicable and add variation, they are worth exploring.</p>
+<p>With Live 12 Ableton introduced new tools to generate and transform MIDI within clips. We’ve had a brief look at these in <a href="Chapter-030-Tools-Live12_Intro.html">Tools - Live12 Overview</a>. In this chapter we’ll dig a bit deeper and see how they might be used to develop new ideas, or to tweak existing MIDI ideas. While these tools go a bit beyond pure “generative music,” they are so useful for adding variation that they are worth exploring.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -339,7 +339,7 @@ Key idea
 <div class="callout-body-container callout-body">
 <p>Live 12 contains a number of tools and new features which enhance how we can make generative music using Ableton Live. Some of these are enhancements to existing functionality, but there are many places where there are brand new features which could be used to create generative music, or provide idea generators for composition.</p>
 <p>In particular note that you can Generate, commit to a pattern, then Transform the MIDI multiple times. This allows you to “stack” Transformations - for example, generating a pattern, then using Transform to change pitch, commit changes, then use a different Transform tool to change velocity, then use Transform again to change other elements, such as note division or the placement of notes in the clip.</p>
-<p>Exploration of the combination of Generation and Transformation is encouraged to get the most out of these tools. You shouldn’t view them as single tools that have to do everything in one go. Often the layering of Transformations will give the most interesting results.</p>
+<p>To get the most out of these tools, I encourage you to experiment with combining multiple Generators and Transformers. You shouldn’t view them as single tools that have to do everything in one go. Often the layering of Transformations will give the most interesting results.</p>
 </div>
 </div>
 <section id="midi-generation" class="level2">
@@ -391,7 +391,7 @@ Key idea
 </section>
 <section id="limitations" class="level2">
 <h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
-<p>The limitation of these Generator and Transformation devices as they stand is that their processes apply to a MIDI clip and cannot be triggered remotely in performance or through clip automation. So while it’s possible to randomly generate MIDI sequences, melodies, etc. the typical use for this is at the time of MIDI clip generation. It <em>is</em> possible to regenerate for a clip, but it would be tricky to do this during a live performance. So these tools might be thought of as tools to get started and generate ideas, rather than tools for generative performance.</p>
+<p>The main limitation of these tools is that they apply their changes directly to a MIDI clip; they cannot be automated or triggered remotely during a performance. So while it’s possible to randomly generate MIDI sequences, melodies, etc. the typical use for this is at the time of MIDI clip generation. It <em>is</em> possible to regenerate for a clip, but it would be tricky to do this during a live performance. So these tools might be thought of as tools to get started and generate ideas, rather than tools for generative performance.</p>
 </section>
 <section id="extensions" class="level2">
 <h2 class="anchored" data-anchor-id="extensions">Extensions</h2>
@@ -399,7 +399,7 @@ Key idea
 <section id="generator---mdd-snake" class="level3">
 <h3 class="anchored" data-anchor-id="generator---mdd-snake">Generator - MDD Snake</h3>
 <p>In <a href="Chapter-012-Tools-MIDI_Generators.html">Tools - MIDI Generators</a> we mentioned the MDD Snake Max for Live MIDI generator (<a href="https://maxforlive.com/library/device/10422/mdd-snake-midi-generator" class="uri">https://maxforlive.com/library/device/10422/mdd-snake-midi-generator</a>) . This is a great sequencer modelled after the Make Noise René modular sequencer. The device gives you a four by four grid of notes, gates and velocities and it cycles through each of these in a given pattern. The default plays each row before moving on to the next row. But you can also choose to play through the notes column by column, in diagonals, and a variety of other patterns. Each pattern can play through forward, backward, cycle forward and back etc.</p>
-<p>The beauty of this little generator is that it decouples note pitch from gate (whether the note plays or not). So you can generate patterns of notes / pitches separately from the pattern of whether the note plays which avoids the machine gun pattern of constant 8th or 16th notes.</p>
+<p>The beauty of this generator is that it decouples pitch from the gate (whether a note plays or not). So you can generate patterns of notes / pitches separately from the pattern of whether the note plays which avoids the machine gun pattern of constant 8th or 16th notes.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>

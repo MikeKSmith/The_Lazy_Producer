@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></a>
+  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI effects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -321,7 +321,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>During the process of writing this book, Ableton released Live 12. With Live 12 there are a whole host of improvements and additions which make the life of someone making generative music a whole lot easier. In this chapter we’ll look at the new compositional and MIDI tools. In the next chapter we’ll look at new sequencer tools. In subsequent chapters we’ll look at updates to modulation, and some specific Transformer and Generator tools.</p>
+<p>During the process of writing this book, Ableton released Live 12. Live 12 introduced a host of improvements and additions that make life much easier for anyone creating generative music. In this chapter we’ll look at the new compositional and MIDI tools. In the next chapter we’ll look at new sequencer tools. In subsequent chapters we’ll look at updates to modulation, and some specific Transformer and Generator tools.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -337,7 +337,7 @@ Key idea
 </div>
 <section id="scale-awareness" class="level2">
 <h2 class="anchored" data-anchor-id="scale-awareness">Scale awareness</h2>
-<p>Live 12 now has a feature where certain MIDI devices, audio effects and instruments are “Scale Aware” so that when you dial in pitch related changes, these will respect the current scale for the Set. The “Current Scale” is set either when you create a new Live Project, in which case new clips inherit the current scale setting, or the clips in a Scene can define the current scale for that scene. For individual song projects, this works very well. If you have a combination of scales defined across a Project - for example in live performance - it pays to be a little careful to ensure that MIDI clips within scenes do have scales defined in order to change the Current Scale setting between scenes. Proceed with a little caution in live performance is my advice!</p>
+<p>Live 12 now has a feature where certain MIDI devices, audio effects and instruments are “Scale Aware” so that when you dial in pitch related changes, these will respect the current scale for the Set. The “Current Scale” is set either when you create a new Live Project, in which case new clips inherit the current scale setting, or the clips in a Scene can define the current scale for that scene. For individual song projects, this works very well. If you’re using multiple scales in a single project (for a live set, for example), it pays to be careful. Ensure that the clips in each scene have the correct scale assigned to them to properly trigger changes to the Current Scale. Proceed with a little caution in live performance is my advice!</p>
 <p>The purple b# button means that the Current Scale setting is being honoured by the MIDI effect, audio effect or instrument.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -389,7 +389,7 @@ Continue to use Scale Device in live performance!
 <section id="midi-generation" class="level3">
 <h3 class="anchored" data-anchor-id="midi-generation">MIDI Generation</h3>
 <p>Live 12 now comes with two new features built into MIDI clip creation: MIDI Generation and MIDI Transformation. MIDI Generation does what the name suggests - provides a range of different methods for generating new MIDI parts. There are a number of Generation options available covering rhythmic patterns, chords, melodies. We’ll look at some of these in more depth in <a href="./Chapter-033-Tools-Live12_MIDI_Generation_Transformation.html">Tools - Live 12 MIDI Generation and Transformation</a>.</p>
-<p>One key point about the Generator tools is that they are primarily design to generate new MIDI clips during music production, rather than “on the fly” during performance. Unfortunately at this point they cannot be automated.</p>
+<p>One key point is that these Generator tools are designed for creating new MIDI clips during production, not for “on-the-fly” generation during a performance. Unfortunately at this point they cannot be automated.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -416,7 +416,7 @@ Continue to use Scale Device in live performance!
 </section>
 <section id="note-probability" class="level2">
 <h2 class="anchored" data-anchor-id="note-probability">Note probability</h2>
-<p>In <a href="Chapter-002-Process-Note_wise_probability.html">Process - Note-wise probability</a> , we looked at Notewise probability - where we can set the probability for each note in a sequence, so we can generate ever changing patterns even from fairly short sequences of MIDI notes. Live 12 has another fantastic feature where we can <strong><em>group</em></strong> notes together and either select to play <strong><em>all</em></strong> notes in the group and adjust the probability of that group of notes, or group notes and select to play <strong><em>only one</em></strong> of the notes in that group. What this means for the Lazy Producer is that you can specify chords that when triggered play all of the notes (probability acts on the <strong><em>chord</em></strong>) or you can nominate a group of notes where the computer picks which note in the group will play, but you can be sure that exactly one of those notes <strong><em>will</em></strong> be played.</p>
+<p>In <a href="Chapter-002-Process-Note_wise_probability.html">Process - Note-wise probability</a> , we looked at Notewise probability - where we can set the probability for each note in a sequence, so we can generate ever changing patterns even from fairly short sequences of MIDI notes. Live 12 has another fantastic feature where we can <strong><em>group</em></strong> notes together and either select to play <strong><em>all</em></strong> notes in the group and adjust the probability of that group of notes, or group notes and select to play <strong><em>only one</em></strong> of the notes in that group. What this means for the Lazy Producer is that you can specify chords that when triggered play all of the notes (probability acts on the <strong><em>chord</em></strong>) or you can nominate a group of notes where the computer picks which note in the group will play, but you can ensure that <strong><em>exactly one</em></strong> of those notes will be played.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>

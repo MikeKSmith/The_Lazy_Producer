@@ -184,7 +184,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></a>
+  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI effects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -358,9 +358,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <blockquote class="blockquote">
-<p>Computer goes “Bleep bloop bleep bleep bloopity bloop. Whoosh. Bleep bleep… BRRRRR….”</p>
+<p>Computer goes <em>“Bleep bloop bleep bleep bloopity bloop. Whoosh. Bleep bleep… BRRRRR….”</em></p>
 </blockquote>
-<p>If the sound sources for your generative music using synths and sound generators that don’t involve sounds from “real world” instruments and you add in random and probabilistic processes then pretty quickly you have moved away from anything that could be described as “natural” sounding. How can this kind of music appeal to humans, who by their nature are more used to organic sounds and textures they hear day to day?</p>
+<p>If your generative music relies solely on synths and other electronic sources, it can quickly start to sound unnatural. How can this kind of music appeal to humans, who by their nature are more used to organic sounds and textures they hear day to day?</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -384,7 +384,7 @@ Key idea
 </section>
 <section id="randomness-does-occur-in-natural-sounds" class="level2">
 <h2 class="anchored" data-anchor-id="randomness-does-occur-in-natural-sounds">Randomness does occur in “natural” sounds</h2>
-<p>The sound of a wind-chime is often thought of as soothing. The wind gently causing the chimes to sound, little waves of air that cause the chimes to gently ripple, with the chimes tuned to pitches that work well together… Sounds a lot like some of the techniques we’ve been talking about, right?</p>
+<p>Consider the sound of a wind chime. The wind triggers the chimes at random, which are tuned to a pleasant scale… Sounds a lot like the generative techniques we’ve been discussing, right?</p>
 <p>The sound of birds singing in the forest, with the odd chirp of a squirrel or the steady rasp of a frog. Nobody is telling them when to make sounds. It’s all pretty much random. So why (again!) is it that our brains think of these sounds as soothing?</p>
 <p>I think the trick here is that we have context for the randomness. When we hear those sounds we know how they occur and where. But this underlines (at least for me) how adding context or something relateable to our compositions can help the listener engage better.</p>
 </section>
@@ -402,7 +402,7 @@ Key idea
 <section id="granular-processing" class="level3">
 <h3 class="anchored" data-anchor-id="granular-processing">Granular processing</h3>
 <p>Another possibility is to use devices like Ableton’s <a href="https://roberthenke.com/technology/granulator3.html">Granulator III</a> to process the audio. This takes an audio sample, and rather than playing slices of the audio it can play many grains of the sound, either short or long. The Granulator device needs MIDI input to trigger playback, but within the device you can specify position within the audio file, speed at which the grains scan through the audio, grain size etc. The beauty of this device is that it can take relatively modest length audio samples and using some randomness and LFO provide a constantly changing audio output.</p>
-<p>Another benefit of granular processing is that you can produce audio that is <strong><em>related</em></strong> to the original audio, but processed to a point where it’s not immediately obvious what you’re hearing. The “DNA” of the original audio is present, but it is smeared, chopped and sliced in playback.</p>
+<p>Another benefit of granular processing is that you can produce audio that is <strong><em>related</em></strong> to the original audio, but processed to a point where it’s not immediately obvious what you’re hearing. The “DNA” of the original audio is still present, but it’s been smeared, chopped, and rearranged.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="at">path =</span> <span class="fu">file.path</span>(here<span class="sc">::</span><span class="fu">here</span>(), <span class="st">"images"</span>, <span class="st">"Granulator.png"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">

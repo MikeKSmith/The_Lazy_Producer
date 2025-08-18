@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></a>
+  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI effects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -319,7 +319,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Create something from nothing with these audio generators. These aren’t so much “instruments” - they do not need MIDI input to drive them, and will make noise as soon as you press “Play” on the Ableton transport. That’s both a good thing and a bad thing - you may want to start a set with the faders down! These devices can be used to power a drone set very effectively though - just route them through additional effects and/or resonators to create some rich tones.</p>
+<p>These audio generators let you create sound from nothing. Unlike typical instruments, they don’t need MIDI input to work; they start making noise as soon as you press “Play.” That’s both a good thing and a bad thing - you may want to start a set with the faders down! These devices can be used to power a drone set very effectively though - just route them through additional effects and/or resonators to create some rich tones.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -345,7 +345,7 @@ Key idea
 </div>
 </div>
 </div>
-<p>Hainbach has a great video explaining the technique here: <a href="https://www.youtube.com/watch?v=qJRXxkswXdg" class="uri">https://www.youtube.com/watch?v=qJRXxkswXdg</a>. Ned Rush also routinely uses the Vinyl Distortion to ping other devices e.g.&nbsp;<a href="https://www.youtube.com/watch?v=siWk44aAYeg" class="uri">https://www.youtube.com/watch?v=siWk44aAYeg</a>.</p>
+<p>The producer Hainbach has <a href="https://www.youtube.com/watch?v=qJRXxkswXdg">a great video explaining this technique</a> and Ned Rush also routinely uses Vinyl Distortion to “ping” other devices. <a href="https://www.youtube.com/watch?v=siWk44aAYeg">Ned Rush also routinely uses the Vinyl Distortion to ping other devices</a>.</p>
 <p>In our case, instead of using feedback with filters, we can exploit Ableton Live’s own resonator plugins: “Resonator”, “Spectral Resonator” and “Corpus”. In the image below we’re using the “Spectral Resonator” to generate some pitched tones. We’re feeding it notes from an external MIDI clip which uses the same note probability techniques explained previously. This then feeds into the “Resonators” plugin which provides additional pitched resonance, and the “Spectral Time” plugin which smears out this pitched resonance so that it’s not a short burst of pitched information.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -374,7 +374,7 @@ Key idea
 <h2 class="anchored" data-anchor-id="tree-tone">Tree Tone</h2>
 <p>From the <a href="https://www.ableton.com/en/packs/inspired-nature/#?item_type=max_for_live">Inspired by Nature pack</a> by Dillon Bastan the <a href="https://www.youtube.com/watch?v=_mk7qyzEcCQ">Tree Tone</a> generator is primarily a resonant drone generator but with some additional bells and whistles. Literally. The “Tree” in the central panel has “branches” that define resonators / resonant frequencies. Thicker, longer branches have lower pitch and louder volume. Thinner branches have higher pitch but lower volume. In the image below the “Tree” has fewer large branches and so would be expected to have some lower drone sounds. The position of the branches to left or right is their position in panning. The “Noise” amount and filtering determines how much these resonators are excited by the noise. The “Wind” provides additional movement and modulation to the system - affecting volume and filtering. The “Rain” setting “pings” the resonators as with a “raindrop” (or mallet). More “Rain” and “Speed” will ping the resonators providing chimes. The “Algo/Mix” setting will affect the overall pitch of the system - lower values being warmer or darker, higher values brighter. Tuning the system will ensure that frequencies and “pings” from raindrops conform to a scale. “Inharmnic” will add some inharmonic frequencies or more “clangerous” sounds.</p>
 <p>This is a deceptively useful generator, as it can be used to create beautiful drones, or you can switch off “Noise” and have just the “raindrops”. Combining this with some additional resonators or effects can create an evolving, generative ambience just on its own.</p>
-<p>Two Easter Eggs to Tree Tone exist: The top “microphone” button on the far right allows you to route ANY audio signal through Tree Tone and excite the resonators. So Tree Tone can be used as either as a generator OR an effect (similar to the Corpus device). Below this is the “Sine” button which opens modulation dialogue where you can device two LFOs and two envelopes and then route these to parameters of the device. So you don’t need to stick with a static sound, and the envelopes can be triggered by incoming MIDI information.</p>
+<p>Tree Tone has two “Easter eggs”: first, the microphone button on the far right lets you route any external audio signal through the device to excite its resonators. So Tree Tone can be used as either as a generator OR an effect (similar to the Corpus device). Below this is the “Sine” button which opens modulation dialogue where you can device two LFOs and two envelopes and then route these to parameters of the device. So you don’t need to stick with a static sound, and the envelopes can be triggered by incoming MIDI information.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -403,7 +403,7 @@ Key idea
 <h2 class="anchored" data-anchor-id="cellular-degradation">Cellular Degradation</h2>
 <p>This is a <a href="https://dillonbastan.gumroad.com/l/yyehc?layout=profile">paid plugin by Dillon Bastan</a> which features six tone generating synthesis engines with a generator mechanism based on cellular growth and decay. If you’re familiar with Conway’s “Game of Life” then this concept might be familiar, but basically cells are generated and rules govern whether that cell will continue to survive or decay depending on the state of neighbouring cells. So if a new cell has surrounding cells which are alive, it will “survive”, but if there aren’t sufficient live cells neighbouring then it will decay. The “Born” rule will spawn new cells adjacent to the clicked cell</p>
 <p>The six tone generators work in L+R pairs, so there are actually 12 sets of parameters that can be affected by the cell values if the “Voices” is set to 6. Different parameters of the tone generators are shown to the right of the square display and by clicking on the row for each parameter, it will set the value for that parameter using the “Value” scaling to the bottom left of the square display. This then scales the range of possible values for each parameter which shows the offset / lowest value (left % number) and the range (right % number).</p>
-<p>I thoroughly recommend reviewing <a href="https://www.youtube.com/watch?v=dM2ksxavJzI">Misty Jones’ YouTube videos</a> on this plugin. She has comprehensively explored and described the various options and settings.</p>
+<p>I thoroughly recommend <a href="https://www.youtube.com/watch?v=dM2ksxavJzI">Misty Jones’ YouTube videos</a> on this plugin, where she comprehensively explores and explains its various options and settings.</p>
 <p>So what this gives us is a way of generating tones. You can quantize changes to Hz or rhythmic pulses. In the screenshot below, I’m modulating the “Draw XY” left and right boxes and the “Value” box through the Strange Mod modulator (also by Dillon Bastan). This means that the Strange Mod modulation device is essentially drawing values into the square display. Outside the captured image, I’m also using another instance of Strange Mod to set values for some of the parameters.</p>
 <p>The sound the generator creates is a little odd, but through use of additional audio effects it’s possible to create some interesting evolving drone textures.</p>
 <div class="cell">

@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></a>
+  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI effects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -326,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The MIDI tools discussed in <a href="Chapter-004-Tools-MIDI_tools.html">Tools - MIDI tools</a> are useful to transform, augment and add notes to existing MIDI sequences, but we can also automate changing the value of pretty much <strong><em>anything</em></strong> in Live via modulation. <a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#max-for-live-audio-effects">Max for Live provides a variety of modulation devices</a> which will allow you to “map” that automation to device parameters. This will then automate changes on those device parameters without you needing to tweak the values using a mouse or controller knob.</p>
+<p>The MIDI tools and effects discussed in <a href="Chapter-004-Tools-MIDI_tools.html">Tools - MIDI tools</a> are useful to transform, augment and add notes to existing MIDI sequences, but we can also automate changing the value of pretty much <strong><em>anything</em></strong> in Live via modulation. <a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#max-for-live-audio-effects">Max for Live provides a variety of modulation devices</a> which will allow you to “map” that automation to device parameters. This will then automate changes on those device parameters without you needing to tweak the values using a mouse or controller knob.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -339,7 +339,7 @@ Key idea
 <div class="callout-body-container callout-body">
 <p>Modulation keeps sounds interesting. In <a href="Chapter-009-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a> we discuss how repetition balances randomness. This also applies to the sounds you use in your track. Modulation of synth sounds through LFOs and other means is available within Ableton Live instruments, often with some very creative ways of achieving that - such as the Wavetable instrument’s modulation matrix. But sometimes you want to apply modulation to a parameter where an LFO is not immediately available for example to the macro knob of an Instrument or Effect Rack.</p>
 <p>Having options where the modulation isn’t obviously cyclical also helps as it adds to the “unpredictable” and helps engage listener’s attention for longer. You could use LFOs with different cycle lengths (in bars or different rates in Hz) or you could use LFOs which are not periodic but which “wander”.</p>
-<p>One strength of Ableton Live’s modulation devices (and Max for Live modulation devices) is that you can map modulation to pretty much anything that you can tweak by hand. Yes, even tempo. You can assign the parameter that is being modulated simply by click on the “Map” button in the devices and then click on a knob, switch or fader in Live. Modulation also allows you to have “hands off” performance of generative music by automating volume fades, if required.</p>
+<p>A key strength of Ableton’s modulation devices is their flexibility: you can map a modulator to almost any parameter you can click with a mouse, even the master tempo. You can assign the parameter that is being modulated simply by click on the “Map” button in the devices and then click on a knob, switch or fader in Live. Modulation also allows you to have “hands off” performance of generative music by automating volume fades, if required.</p>
 </div>
 </div>
 <section id="modulators-in-ableton-live-general-rule-of-thumb" class="level2">
@@ -355,7 +355,7 @@ Key idea
 </div>
 </div>
 </div>
-<p>If no parameters are presented when you click this button, you may instead see a “Configure” button in the plugin container. When you click on this button and then open the plugin, whatever you click in the UI interface for the device or instrument will show up as a slider in the container interface (see the images below showing the Zebralette instrument as an example).</p>
+<p>If no parameters appear, you’ll likely see a “Configure” button in the device’s title bar instead. When you click on this button and then open the plugin, whatever you click in the UI interface for the device or instrument will show up as a slider in the container interface (see the images below showing the Zebralette instrument as an example).</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -388,7 +388,7 @@ Key idea
 </section>
 <section id="lfo" class="level2">
 <h2 class="anchored" data-anchor-id="lfo">LFO</h2>
-<p>Low Frequency Oscillation (LFO) modulation is one of the oldest forms used in synthesisers. In Ableton Live 11 this is presented as a separate <strong><em>audio</em></strong> utility plugin (<a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#lfo">Max for Live plugin called “LFO”</a>). Because it is an audio plugin it has to come <strong><em>after</em></strong> instruments and effects. There is another Max for Live plugin called LFO MIDI if you need it to come before instruments. LFOs are a key element of a modular synth rig and can be used to modulate pretty much anything. The LFO in Ableton Live can be used in pretty much the same way.</p>
+<p>Low Frequency Oscillation (LFO) modulation is one of the oldest forms used in synthesisers. In Ableton Live 11 this is presented as a separate <strong><em>audio</em></strong> utility effect (<a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#lfo">Max for Live effect called “LFO”</a>). Because it is an audio effect it has to come <strong><em>after</em></strong> instruments and effects. There is another Max for Live effect called LFO MIDI if you need it to come before instruments. LFOs are a key element of a modular synth rig and can be used to modulate pretty much anything. The LFO in Ableton Live can be used in pretty much the same way.</p>
 <p>The Ableton LFO is a really neat tool and illustrates some features that we’ll see again and again in other modulators in this section. In the top left of the first LFO here you can see the parameter that is being affected by the LFO. In the screenshot below it’s changing the Filter Cutoff in the Instrument Rack to its left. I have changed the minimum and maximum value from 30% to 80% in order to avoid extreme values of filter cutoff. It’s often a good idea to tailor the range of values that the LFO is working across as often you want to avoid the extremes. In the bottom left of the device you’ll see the Rate at which the LFO is cycling. In this example it’s going to go through a full cycle (of the Sine wave) every 6 bars. If you click on the box with three horizontal lines in the top right of the LFO it will open a page (as seen in the second LFO) where you can assign other parameters to be affected by the same LFO. Note that the second LFO here is changing the Depth of the first LFO and the Offset. This means that the first LFO doesn’t just cycle predictably from minimum to maximum and back, but instead wobbles in a slightly more interesting way. So one LFO might be too predictable, but using two and using one to modulate the other can bring just enough unpredictability to keep the result interesting.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -407,7 +407,7 @@ Key idea
 </ol>
 <section id="lfo-cross-modulation" class="level3">
 <h3 class="anchored" data-anchor-id="lfo-cross-modulation">LFO cross-modulation</h3>
-<p>One trick from modular synthesis is to modulate LFOs with other LFOs. In the screenshot of the LFOs above, I was looking to create an LFO where there wasn’t a perceptible pattern or period to its output. So I took a second LFO and changed the Depth and Offset parameters of the first LFO by the second. You can extend this to include other LFOs and have them cross-modulate and feedback into each other, creating unpredictable and non-cycling behaviour. In my music, I prefer this slightly chaotic (but slow and smooth) modulation process. Below is an example where I’m using three LFOs with cross-modulation and feedback. The first LFO feeds back and modulates the third LFO Rate parameter.</p>
+<p>One trick from modular synthesis is to modulate LFOs with other LFOs. In the screenshot of the LFOs above, I was looking to create an LFO where there wasn’t a perceptible pattern or period to its output. I took a second LFO and changed the Depth and Offset parameters of the first LFO by the second. You can extend this to include other LFOs and have them cross-modulate and feedback into each other, creating unpredictable and non-cycling behaviour. In my music, I prefer this slightly chaotic (but slow and smooth) modulation process. Below is an example where I’m using three LFOs with cross-modulation and feedback. The first LFO feeds back and modulates the third LFO Rate parameter.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -464,8 +464,8 @@ Key idea
 <section id="midi-expression-control" class="level2">
 <h2 class="anchored" data-anchor-id="midi-expression-control">MIDI Expression Control</h2>
 <p>The Wavetable instrument in Ableton Live has a really useful Modulation Matrix where you can map incoming MIDI expression control attributes (Velocity, Modwheel, Pitchbend, etc.) to parameters of the synthesis engine. The <a href="https://www.ableton.com/en/live-manual/11/max-for-live-devices/#expression-control">Expression Control</a> device extends that to ANY instrument or effect in Ableton Live. As with LFO modulation mapping, you click on the “Map” button and then click the parameter you wish to modulate. Note that the Expression Control device is a MIDI device so is used <strong><em>before</em></strong> instruments while other modulators like LFO are placed <strong><em>after</em></strong> the instrument.</p>
-<p>Expression Control allows you to see the minimum and maximum percentage of modulation, and the shape of onset / offset of that modulation - either linear or logarithmic (curved). It also allows you to specify the “Rise” and “Fall” rate of change to help smooth out the change and prevent sudden changes in parameter values. There’s also a curve shaper in the top right of the device where you can tailor your own curves for the MIDI input, like compression etc.</p>
-<p>The “Random” setting generates a new parameter modulation value <strong><em>with every incoming MIDI note</em></strong>. So rather than cycling through a periodic modulation, Expression control can be used to change parameters with each note. Subtle use of this is good for changing the sound of rhythmic parts - selecting slightly different decay and filter cutoff for example.</p>
+<p>Expression Control allows you to see the minimum and maximum percentage of modulation, and the shape of onset / offset of that modulation - either linear or logarithmic (curved). It also allows you to specify the “Rise” and “Fall” rate of change to help smooth out the change and prevent sudden changes in parameter values. There is also a curve shaper in the top right of the device where you can tailor your own curves for the MIDI input, like compression etc.</p>
+<p>The “Random” setting generates a new modulation value for the mapped parameter <strong><em>with every incoming MIDI note</em></strong>. So rather than cycling through a periodic modulation, Expression control can be used to change parameters with each note. Subtle use of this is good for changing the sound of rhythmic parts - selecting slightly different decay and filter cutoff for example.</p>
 <p>The “Incremental” setting is also useful in that it increments the parameter value by a nominated amount (1% in the screenshot below) with each incoming MIDI note. When it reaches the maximum, it resets to the minimum value, so is effectively a sawtooth LFO but triggered by incoming MIDI rather than periodic in time.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -486,11 +486,11 @@ Key idea
 </div>
 </div>
 </div>
-<p>As I’ve said above, the combination of all of these tools are supremely powerful - so you could change envelopes with each incoming MIDI note or use that note to change an LFO setting that modulates something else. Also, be aware that the Expression Control and Envelope Follower can be used <strong><em>even if</em></strong> the MIDI or audio from the tracks are not sent to the Master audio output. OR EVEN NOT HEARD AT ALL. So you can use MIDI events to modulate items in sync with the master clock regardless of tempo.</p>
+<p>As I have said above, the combination of all of these tools are supremely powerful - so you could change envelopes with each incoming MIDI note or use that note to change an LFO setting that modulates something else. Also, be aware that the Expression Control and Envelope Follower can be used <strong><em>even if</em></strong> the MIDI or audio from the tracks are not sent to the Master audio output. OR EVEN NOT HEARD AT ALL. So you can use MIDI events to modulate items in sync with the master clock regardless of tempo.</p>
 </section>
 <section id="strange-mod" class="level2">
 <h2 class="anchored" data-anchor-id="strange-mod">Strange Mod</h2>
-<p>For a long time <a href="https://maxforlive.com/library/device/6872/strange-mod">Dillon Baston’s paid Max for Live plugin “Strange Mod”</a> was my “go to” modulation device because I wanted random but smooth modulation that wasn’t cyclical. As we’ll see in <a href="#Chapter-032-Tools-Live12_Modulation.qmd">Tools - Live 12 Modulation</a> Ableton Live 12 now has ‘Glider’ and ‘Stray’ settings for the stock LFO modulator device which offers that random but smooth modulation. Strange Mod still has an attraction (excuse the pun) because the three modulation outputs are linked, as we’ll discuss below.</p>
+<p>For a long time <a href="https://maxforlive.com/library/device/6872/strange-mod">Dillon Baston’s paid Max for Live effect “Strange Mod”</a> was my “go to” modulation device because I wanted random but smooth modulation that wasn’t cyclical. As we’ll see in <a href="#Chapter-032-Tools-Live12_Modulation.qmd">Tools - Live 12 Modulation</a> Ableton Live 12 now has ‘Glider’ and ‘Stray’ settings for the stock LFO modulator device which offers that random but smooth modulation. Strange Mod still has an attraction (excuse the pun) because the three modulation outputs are linked, as we’ll discuss below.</p>
 <p>Strange Mod uses chaotic processes - strange attractors - and evaluates the X, Y, and Z three dimensional attributes of a particle within the chaotic system, generating three distinct modulation values (like LFO outputs) which can then be mapped to any parameter as we’ve seen above with other modulators. The change in the three different modulation values is random / chaotic but because they are mapping the three dimensions of the particle moving in the chaotic system, they do not “jump” to new values. Also the three dimensions are somewhat related - the X value does not jump values, but neither do the Y and Z values. They may change quickly, but if they do this happens smoothly. Note that the “Map” button here allows you to map each modulation value - X, Y and Z - to any parameter in Live, but also each individual value (say X) can also be mapped to 7 other parameters, as with the LFO device. That means that a single Strange Mod device could map out to 24 different parameters. There are 11 different strange attractor algorithms to choose from, and you can randomise the starting point of the process to generate new paths of random modulation. The “R” button ensures that the process is reset each time you start Ableton’s transport control (press play). This ensures that your random, chaotic process is at least somewhat repeatable! The “Var” setting scales variability in the process - more means that there’s more chaos, while lower values mean less chaos.</p>
 <p>It’s this combination of smooth and random that makes this my preferred device for modulation. Slowing down the “Speed” of modulation can be useful to map to sound parameters where you want things to evolve smoothly and gradually.</p>
 <div class="cell">
@@ -521,7 +521,6 @@ Key idea
 <section id="deviate" class="level2">
 <h2 class="anchored" data-anchor-id="deviate">Deviate</h2>
 <p>We’ve come across the free <a href="https://www.novelmusic.org/m4l/deviate">Deviate Max for Live device from Novel Music</a> in <a href="Chapter-004-Tools-MIDI_tools.html">Tools - MIDI tools</a> , but it also offers random modulation control on parameters. You can dial up randomness at various levels in Deviate, and also control the amount of randomness which is very useful in generative music. But it also has a key feature - the ability to monitor parameter deviations in its “MEMORY” and then “Lock” in patterns if you find something you like - this mirrors functionality in Turing Machine modules that exist in the modular synthesis world.</p>
-<p>Again, it’s worth reviewing <a href="https://www.youtube.com/watch?v=4WwKGUV2H4I">the tutorial video from Novel Music</a> to learn about all possible features of this device.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -531,6 +530,7 @@ Key idea
 </div>
 </div>
 </div>
+<p>Again, it’s worth reviewing <a href="https://www.youtube.com/watch?v=4WwKGUV2H4I">the tutorial video from Novel Music</a> to learn about all possible features of this device.</p>
 
 
 </section>
@@ -945,8 +945,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Chapter-006-Recipe-MIDI_tools.html" class="pagination-link  aria-label=" &lt;span="" -="" doing="" more="" with="" less="" using="" midi="" tools="" and="" plugins&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></span>
+      <a href="./Chapter-006-Recipe-MIDI_tools.html" class="pagination-link  aria-label=" &lt;span="" -="" doing="" more="" with="" less="" using="" midi="" effects&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Recipe - Doing more with less using MIDI effects</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
