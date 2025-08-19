@@ -337,7 +337,8 @@ Key idea
 </div>
 <section id="scale-awareness" class="level2">
 <h2 class="anchored" data-anchor-id="scale-awareness">Scale awareness</h2>
-<p>Live 12 now has a feature where certain MIDI devices, audio effects and instruments are “Scale Aware” so that when you dial in pitch related changes, these will respect the current scale for the Set. The “Current Scale” is set either when you create a new Live Project, in which case new clips inherit the current scale setting, or the clips in a Scene can define the current scale for that scene. For individual song projects, this works very well. If you’re using multiple scales in a single project (for a live set, for example), it pays to be careful. Ensure that the clips in each scene have the correct scale assigned to them to properly trigger changes to the Current Scale. Proceed with a little caution in live performance is my advice!</p>
+<p>Live 12’s scale options let you set any clip to a scale of your choice, and through “Scale Awareness” this scale can be applied to many of Live’s audio and MIDI effects and instruments. This can do clever things like ensuring that Random MIDI effect notes are within scale, that the Resonator resonances conform to the current scale choice, and that harmonic Tone controls in Meld produce harmonics within the chosen scale.</p>
+<p>The “Current Scale” is set either when you create a new Live Project, in which case new clips inherit the current scale setting, or the clips in a Scene can define the current scale for that scene. For individual song projects, this works very well. If you’re using multiple scales in a single project (for a live set, for example), it pays to be careful. Ensure that the clips in each scene have the correct scale assigned to them to properly trigger changes to the Current Scale. Proceed with a little caution in live performance is my advice!</p>
 <p>The purple b# button means that the Current Scale setting is being honoured by the MIDI effect, audio effect or instrument.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -359,7 +360,7 @@ Key idea
 </div>
 </div>
 </div>
-<p>So now we can chain together MIDI Devices as discussed in <a href="Chapter-004-Tools-MIDI_tools.html">Tools - MIDI tools</a> and used in <a href="Chapter-006-Recipe-MIDI_tools.html">Recipe - Doing more with less using MIDI tools and plugins</a> and by turning on Scale Awareness we’ll pick up whatever the Current Scale setting is. Note in the Chord and Arpeggiator devices that instead of “st” semitones for shifting, it is now labelled “sd” scale degrees. This takes a little getting used to because the scale degrees are added onto the MIDI note value - so +4sd is a fifth above the incoming MIDI note.</p>
+<p>So now we can chain together MIDI Devices as discussed in <a href="Chapter-004-Tools-MIDI_tools.html">Tools - MIDI tools</a> and used in <a href="Chapter-006-Recipe-MIDI_tools.html">Recipe - Doing more with less using MIDI tools and effects</a> and by turning on Scale Awareness we’ll pick up whatever the Current Scale setting is. Note in the Chord and Arpeggiator devices that instead of “st” semitones for shifting, it is now labelled “sd” scale degrees. This takes a little getting used to because the scale degrees are added onto the MIDI note value - so +4sd is a fifth above the incoming MIDI note.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>

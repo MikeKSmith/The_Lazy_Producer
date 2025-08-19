@@ -31,8 +31,10 @@ something new and unheard.
 
 ## Set phases to stunning
 
-Minimalist composers like Steve Reich often worked with musical phrases that were repeated by each performer. Sometimes the number of
-repetitions was at the discretion of the performer, sometimes governed
+Minimalist composers like Steve Reich often worked with musical phrases that were repeated by each performer. By having phrases that were slightly different lengths, they would gradually go out of sync, but then wind up aligned at a different point in the phrase. This method coined the term "phasing" composition.
+
+Sometimes the number of repetitions of each phrase was at the discretion of the 
+performer, sometimes governed
 by the number of times the performer could play it in one breath,
 sometimes the composer worked with actual tape loops of different lengths. The concept is
 that while each part is repeated, the repeated parts move out of phase

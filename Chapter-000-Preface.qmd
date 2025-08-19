@@ -18,7 +18,7 @@ I also recommend Loopop's "In-complete book of electronic music tips and tricks"
 
 But if you're looking for ways to spark fresh ideas and create interesting sounds to build into finished tracks, you've come to the right place.
 
-What I'm going to try to present here is a collection of "starter ideas" or recipes for you to follow. I'll also talk a bit about some specific tools and plugins you might use, and touch on some general processes that I use in turning the techniques here into ambient, textural and generative music.
+What I'm going to try to present here is a collection of "starter ideas" or recipes for you to follow. I'll also talk a bit about some specific tools and effects you might use, and touch on some general processes that I use in turning the techniques here into ambient, textural and generative music.
 
 ## What do you mean, "Lazy Producer"? {.unnumbered}
 
@@ -48,13 +48,13 @@ As a Lazy Producer I reuse MIDI parts that sound good across MANY tracks. This d
 
 To get the most out of this book, you'll need Ableton Live Suite (version 11 or newer). Some of the ideas could be translated to other DAWs, but there are some features like note-wise probability which I'm not sure how to replicate in other DAWs.
 
-Many of the tools and plugins discussed use Max For Live, which comes bundled with Ableton Suite. If you ***don't*** have Ableton Suite, then you can purchase Max For Live separately from ableton.com. You ***don't*** have to purchase the full Max license from Cycling 74 to use Max For Live.
+Many of the tools and effects discussed use Max For Live, which comes bundled with Ableton Suite. If you ***don't*** have Ableton Suite, then you can purchase Max For Live separately from ableton.com. You ***don't*** have to purchase the full Max license from Cycling 74 to use Max For Live.
 
-I'm not assuming that you know how to program with Max For Live - you only need to be aware that plugins we're talking about are programmed with that platform, so it needs to be available on your computer.
+I'm not assuming that you know how to program with Max For Live - you only need to be aware that devices and effects we're talking about are programmed with that platform, so it needs to be available on your computer.
 
 ## Why Ableton? {.unnumbered}
 
-I am a long time Ableton user (since Live 4). As I write this guide, I am using Live 12.2. I have a strong belief that Ableton Suite can be used much like a modular synthesiser - with the combination of audio and MIDI routing within Live, coupled with Max For Live devices, this amazing DAW can do so much. In fact, as you read through the chapters of the book you'll see how many of the tools, plugins and methods we'll talk about mimic what you would see and how you might use them for generative music in a modular synthesiser rack.
+I am a long time Ableton user (since Live 4). As I write this guide, I am using Live 12.2. I have a strong belief that Ableton Suite can be used much like a modular synthesiser - with the combination of audio and MIDI routing within Live, coupled with Max For Live devices, this amazing DAW can do so much. In fact, as you read through the chapters of the book you'll see how many of the tools, effects and methods we'll talk about mimic what you would see and how you might use them for generative music in a modular synthesiser rack.
 
 ## Structure of this book {.unnumbered}
 
@@ -66,11 +66,11 @@ Recipes chapters introduce a set of instructions that you can follow to create y
 
 ### Process {.unnumbered}
 
-Process chapters talk about general ideas that can be applied within Ableton Live or potentially to other DAWs or music making processes. I'll try to steer clear of specific discussion of tools or plugins in these chapters.
+Process chapters talk about general ideas that can be applied within Ableton Live or potentially to other DAWs or music making processes. I'll try to steer clear of specific discussion of tools or effects in these chapters.
 
-### Tools and plugins {.unnumbered}
+### Tools and effects {.unnumbered}
 
-These are the chapters for the geeks and musicians among us with Gear Acquisition Syndrome (GAS). If you want to get really nerdy or think about acquiring new plugins then these are the chapters for you. If you have already purchased Ableton Live then you have already invested a large amount on music making equipment. My goal here is ***not*** to persuade you to part with significant additional amounts of cash, but some of the plugins have an associated, although modest, cost.
+These are the chapters for the geeks and musicians among us with Gear Acquisition Syndrome (GAS). If you want to get really nerdy or think about acquiring new devices then these are the chapters for you. If you have already purchased Ableton Live then you have already invested a large amount on music making equipment. My goal here is ***not*** to persuade you to part with significant additional amounts of cash, but some of the devices have an associated, although modest, cost.
 
 ## Who am I? {.unnumbered}
 

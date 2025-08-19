@@ -4,7 +4,7 @@
 [Process - Follow Actions](003-Process-Follow_Actions.qmd)
 [Tools - MIDI tools](004-Tools-MIDI_tools.qmd)
 [Process - Routing MIDI and Audio](005-Process-Routing.qmd)
-[Recipe - Doing more with less using MIDI tools and plugins](006-Recipe-MIDI_tools.qmd)
+[Recipe - Doing more with less using MIDI tools and effects](006-Recipe-MIDI_tools.qmd)
 [Tools - Modulators](007-Tools-Modulators.qmd)
 [Process - Tuning Parameters](008-Process-Tuning_Parameters.qmd)
 [Process - Balancing the unexpected and the predictable](009-Process-Balance_unexpected_and_predictable.qmd)

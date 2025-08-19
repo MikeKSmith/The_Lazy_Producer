@@ -84,8 +84,8 @@ MIDI input notes.
 
 These tracks will take the MIDI generator process outputs and apply MIDI
 effects and transformations to add additional MIDI notes, information,
-modulation etc. You could have a virtual instrument / sound generator
-plugin in this track. If you do that, then you can route the MIDI from
+modulation etc. You could have a instrument / sound generator
+device in this track. If you do that, then you can route the MIDI from
 this track ***AFTER*** (MIDI) FX into another track for further
 transformation, MIDI effects or to another instrument.
 
@@ -113,14 +113,14 @@ if you reopen the set in a later version of Live).
 
 If you capture the generated ***and*** transformed MIDI in separate
 tracks, then you can use these tracks as the input for tracks with
-virtual instruments / plugins in them. Where these tracks might have had
+instruments / MIDI effects in them. Where these tracks might have had
 MIDI Monitor set to "In" you can now switch that back to "Auto" so that
 the captured MIDI is used directly as the input for that instrument.
 
 Once you have captured the generated and transformed MIDI it's safe to
 switch off the generators and MIDI effects in those tracks. This will
 ensure that it's only the captured MIDI that is being used to drive the
-virtual instruments and plugins.
+instruments.
 
 ```{r}
 #| echo: false
@@ -129,9 +129,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 In the screenshot below I have captured the Follow Action chord
 sequence, and have added some MIDI effects - Arpeggiator, Pitch and
-Velocity, before routing these into the LABS virtual instrument. Since
+Velocity, before routing these into the LABS instrument. Since
 the MIDI effects here don't involve randomness, it's safe to keep these
-"inline" with the virtual instrument. If I had used randomness, then it
+"inline" with the instrument. If I had used randomness, then it
 might make more sense to have a separate MIDI track that captures the
 output of those transformations before sending into the virtual
 instrument.
@@ -187,26 +187,26 @@ tracks will still send MIDI output to wherever they are routed - as this
 allows you to "fold away" the generation and transformation processes
 when it comes to capturing and committing for release (assuming you have
 captured the MIDI as described above and copied it into the tracks with
-virtual instruments / plugins).
+ instruments).
 
 Another really useful way to use Groups here is to Group the MIDI +
-virtual instrument and rendered audio together, then apply creative and
+instrument and rendered audio together, then apply creative and
 mixing effects at the Group level rather than on individual tracks.
 
-When I render down the MIDI + virtual instruments, one idea is to render
+When I render down the MIDI + instruments, one idea is to render
 without creative and mixing effects as I often need to tweak these
 later, and it's problematic if I've committed to certain choices early
 in the process and baked this into the resulting audio. Instead what I
-have been doing is to Group the MIDI + virtual instrument track and
+have been doing is to Group the MIDI + instrument track and
 moving the effects to the Group level (including automation on Gain -
 see below) so that the rendered audio in each track is purely MIDI +
-virtual instrument. This leaves space for me to tweak the creative and
+instrument. This leaves space for me to tweak the creative and
 mixing effects later when I'm trying to tidy up the overall mix. You
-could also alternatively route the audio from the virtual instrument
+could also alternatively route the audio from the instrument
 through a new track containing creative effects and leave the Group
 level effects for purely mixing effects like compressor, EQ, frequency
 shaping, gain etc. This would allow you to tweak the creative effects
-and render down to audio at each stage - virtual instrument output, then
+and render down to audio at each stage - instrument output, then
 instrument plus effects.
 
 A disadvantage of having effects on the Group level is that you cannot
@@ -239,7 +239,7 @@ your track Gain, not your Mixer Volume.
 ### Turn off what you're not using
 
 Having done these steps - Grouping, moving effects and rendering MIDI +
-virtual instruments I can now "switch off" the virtual instrument
+instruments I can now "switch off" the instrument
 channel and save some CPU (as I've done in the screenshot below).
 
 ```{r}

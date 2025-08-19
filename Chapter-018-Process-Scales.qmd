@@ -151,6 +151,6 @@ In Western music we have a view of what collections of notes and pitches sound
 "nice" or "harmonious" and, to our ears, what "works" and what "doesn't". Of
 course, there is a huge world of scales in the world across a huge range of
 musical traditions. In this chapter I've only focussed on some example scales.
-With Ableton's Scale plugins and scale awareness you
+With Ableton's Scale MIDI effect and scale awareness you
 might well find others where generative methods would give interesting results.
 Within the DAW, experimenting with these scales is only a click away...
