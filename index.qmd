@@ -3,7 +3,7 @@
 ::: {.content-visible when-format=html}
 #  {.unnumbered}
 
-This version of the book is 0.998. 
+This version of the book is 1.00. 
 
 ```{r}
 #| echo: false
