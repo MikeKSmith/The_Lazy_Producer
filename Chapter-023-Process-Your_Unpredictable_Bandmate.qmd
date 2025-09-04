@@ -14,7 +14,7 @@ Using probability, randomness and modulation to create generative parts or ideas
 can create parts that inspire new ideas or can accompany you, the producer, in
 ways that are less likely to stray into tropes and well-trodden paths. You can think of these generative parts as an unpredictable bandmate. One who occasionally throws in an unexpected chord change, an interesting phrase, or a drum fill you weren't expecting. Being able to react to those
 unexpected moments can help inspire you in new directions, keeping you and the
-listener engaged.
+listener engaged. They can be used as "song starters" which provide a moment of inspiration to get you away from the blank page towards a new idea. These ideas don't ***have*** to be kept in the final production, that's your choice as The Lazy Producer...
 
 ::: 
 
@@ -35,7 +35,7 @@ and inspiring rather than chaotic.
 ## Unpredictable in a predictable way.
 
 Again, we don't want a virtual bandmate to suddenly change key, tempo or pulse so it's important to constrain the amount of probability and randomness to something that sounds good to you and use scale quantisers, pre-written phrases (but where which specific one is going to play is somewhat random) and modulation that breathes movement and life into parts without being too random (see 
-[Process - Balancing the unexpected and the predictable](Chapter-009-Process-Balance_unexpected_and_predictable.qmd)
+[Process - Balancing the unexpected and the predictable](#Chapter-008-Process-Balance_unexpected_and_predictable)
 ). 
 So, like writing a melody, picking chord changes that inspire and rhythmic parts that provide energy and drive, you The non-Lazy Producer should be listening carefully and diailing in your unpredictable parts to provide ***just the right amount*** of uncertainty.
 

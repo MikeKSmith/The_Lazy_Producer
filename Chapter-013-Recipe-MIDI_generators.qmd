@@ -1,17 +1,21 @@
 # Recipe - Using MIDI generators {#Chapter-013-Recipe-MIDI_generators}
 
-In this recipe, we’ll use a MIDI generator—in this case, Euclidean Sequencer Pro—to create the initial MIDI pattern, which we'll then feed into other tracks for further processing. We'll be using some techniques from 
+::: callout-tip
+## Key idea
+
+In this recipe, we’ll use a MIDI generator—in this case, [Euclidean Sequencer Pro](https://maxforlive.com/library/device/7608/euclidean-sequencer-pro) to create the initial MIDI pattern, which we'll then feed into other tracks for further processing. We'll be using some techniques from 
 [Tools - MIDI tools](#Chapter-004-Tools-MIDI_tools)
  and also
 [Process - Routing MIDI and Audio](#Chapter-005-Process-Routing)
-.
+
+::: 
 
 ```{r}
 #| echo: false
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-1.  Place the Euclidean Sequencer Pro generator in a track. Euclidean Sequencer
+1.  Place the Euclidean Sequencer Pro generator in a track. As discussed in [Tools - MIDI Generators](#Chapter-012-Tools-MIDI_Generators) Euclidean Sequencer
 Pro is a Max for Live device which can be used to generate polyrhythmic
 sequences of notes, and is typically used for rhythmic patterns and because of
 this, by default, it only outputs four different notes. Since we're aiming for more melodic results, we'll add Random and Scale devices after it to generate a wider range of pitches.
@@ -40,8 +44,7 @@ some additional MIDI tool processing.
     knitr::include_graphics(path = file.path(here::here(), "images", "Recipe4_Routing.png"))
 ```
 
-First, let's take the "raw" output from the Euclidean Sequencer and route it
-into a MIDI instrument track using a plucky Operator sound - could be a simple
+First, let's take the output from the Euclidean Sequencer in Track 1 (our MIDI Generator) and route it into a MIDI instrument track using a plucky Operator sound - could be a simple
 sine wave with no sustain and fairly quick decay.
 
 ```{r}
@@ -51,11 +54,10 @@ sine wave with no sustain and fairly quick decay.
 
 3.  Create another MIDI instrument track where we're going to take the same
 Euclidean Sequencer Pro MIDI information, but now use the MIDI Note Echo device
-to delay the input by an amount (I'm using 16 16ths = 1 bar). The key thing is
-to MUTE the original MIDI information. Also add a Note Length MIDI device to
-turn the incoming MIDI notes into chords. We can then use these delayed and
+to delay the input by an amount (I'm using 16 16ths = 1 bar). Here we are Muting the original MIDI information. Add a Note Length MIDI device to
+turn the incoming MIDI notes into chords. Muting the incoming MIDI in the Note Echo effect means that we only retain the delayed notes, which avoids a build up of notes and clashes with the incoming MIDI and the delayed MIDI information. We can then use these delayed and
 "smeared" MIDI chords with a pad sound. I'm using Wavetable, but you can choose
-a pad sound from any virtual instrument.
+any pad sound.
 
 ```{r}
 #| fig-alt: "The image shows a Note Echo device which is set to repeat notes after 16 beats, but suppressing the original MIDI input. A Note Length device then lengthens each note to 1.9 seconds before these notes are fed into a Wavetable instrument. This is set to play a resonant pad sound."
@@ -63,8 +65,7 @@ a pad sound from any virtual instrument.
 ```
 
 4.  Next, create another instrument track and set its MIDI input to the "pad" track we just created. Be sure to set the input to "Post FX" so
-that it will apply the MIDI device effects to transform the MIDI ***before***
-routing it into the new track. In this track, we'll add an Arpeggiator MIDI
+that we ***add*** and transform the MIDI output in our new track. In this track, we'll add an Arpeggiator MIDI
 device. We can use a bell like tone for this track. I'm going to use Operator
 again, with some modulation applied to the second modulating oscillator (which
 will then vary the tone of the main Sine wave carrier oscillator). I'm also
@@ -89,7 +90,7 @@ can manipulate the MIDI further using a variety of MIDI transformation devices.
 Concepts, etc. The MIDI generating tools provide the raw stream of MIDI notes,
 but the effects here are used to provide the texture around that sequence.
 
-7.  Press play. Sit back and relax.
+7.  Press play. Listen to what you hear, and refine settings if necessary.
 
 ------------------------------------------------------------------------
 

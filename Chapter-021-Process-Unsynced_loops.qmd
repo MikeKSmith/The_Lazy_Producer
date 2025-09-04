@@ -54,6 +54,15 @@ longer for them to repeat.
 We actually used loops of different lengths in 
 [Recipe - Changing chords](#Chapter-001-Recipe-Changing_Chords).
 
+## Don't stop at notes
+
+Another form of unsynced loop is where the modulation of a sound doesn't vary over the length of the MIDI note loop, but has a different loop length. You can achieve this in Live by clicking on the Envelopes tab. In the image below we are modulating the Tone setting in the Operator instrument. The modulation loop has been set to "Unlinked" which allows us to draw modulation with a different loop length than the MIDI note clip length. Here the MIDI note clip is one bar but the modulation extends over 4 bars. By unlinking you can create additional variation in the sound of your loops and instruments quite easily.
+
+```{r}
+#| fig-alt: "The image shows a clip Envelopes tab where modulation on the Tone setting in the Operator instrument has been modulated. The modulation has been set to 'Unlinked' which allows us to draw modulation with a different loop length than the MIDI note clip length. Here the MIDI note clip is one bar but the modulation extends over 4 bars."
+knitr::include_graphics(path = file.path(here::here(), "images", "Unlinked_Modulation.png"))
+```
+
 ## I'm in my prime
 
 If you recall basic maths from school, you'll remember

@@ -160,12 +160,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-008-Process-Tuning_Parameters.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Tuning Parameters</span></a>
+  <a href="./Chapter-008-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Balancing the unexpected and the predictable</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-009-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Balancing the unexpected and the predictable</span></a>
+  <a href="./Chapter-009-Process-Tuning_Parameters.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Tuning Parameters</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -297,6 +297,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#dorian-mode" id="toc-dorian-mode" class="nav-link" data-scroll-target="#dorian-mode">Dorian mode</a></li>
   </ul></li>
   <li><a href="#there-are-no-wrong-notes-only-context" id="toc-there-are-no-wrong-notes-only-context" class="nav-link" data-scroll-target="#there-are-no-wrong-notes-only-context">There are no “wrong” notes, only context</a></li>
+  <li><a href="#context-provided-via-the-bass-instrument" id="toc-context-provided-via-the-bass-instrument" class="nav-link" data-scroll-target="#context-provided-via-the-bass-instrument">Context provided via the bass instrument</a></li>
   <li><a href="#selections-of-notes---chords" id="toc-selections-of-notes---chords" class="nav-link" data-scroll-target="#selections-of-notes---chords">Selections of notes - chords</a></li>
   <li><a href="#other-scales-traditions" id="toc-other-scales-traditions" class="nav-link" data-scroll-target="#other-scales-traditions">Other scales &amp; traditions</a></li>
   </ul>
@@ -335,12 +336,12 @@ Key idea
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Finding a few useful scales that work well in a generative context is a good idea. This is largely a matter of taste, and potentially just trial and error to see what you like, but there are a few guiding principles that might help inform your choice. Choosing scales or eliminating <em>awkward</em> notes from a scale can also help make music where the tonal centre of the music isn’t locked in or <strong><em>obvious</em></strong>, which allows you to imply a change of key through a root note change, without having to change the scale for the generated (or quantised) MIDI. I’ll call this being tonally ambiguous.</p>
+<p>Finding a few useful scales that work well in a generative context is a good idea. This is largely a matter of taste, and potentially just trial and error to see what you like, but there are a few guiding principles that might help inform your choice. Choosing scales or eliminating <em>awkward</em> notes from a scale can also help make music where the tonal centre of the music isn’t locked in or <strong><em>obvious</em></strong>, which allows you to imply a change of key through a root note change in a bass instrument, without having to change the scale for the generated (or quantised) MIDI.</p>
 </div>
 </div>
 <section id="pentatonics---minor-and-major" class="level2">
 <h2 class="anchored" data-anchor-id="pentatonics---minor-and-major">Pentatonics - Minor and Major</h2>
-<p>You know how you can play only the black keys on a piano, and no matter what you do, it somehow sounds good? That’s because you are playing a pentatonic scale. Many guitarists will scoff at players who riff away on a pentatonic scale, because it is seen as being somehow a “cheat” and avoids having to learn more complex scales. modes and harmonies. But for our generative purposes, <strong><em>pentatonic scales are your absolute number 1 pick</em></strong>. You can combine any number of generative processes working within a pentatonic scale and they will fit together like hand in glove.</p>
+<p>You know how you can play only the black keys on a piano, and no matter what you do, it somehow sounds good? That’s because you are playing a pentatonic scale. Many “serious musicians” will scoff at players who riff away on a pentatonic scale, because it is seen as being somehow a “cheat” and avoids having to learn more complex scales. modes and harmonies. But for most generative purposes, <strong><em>pentatonic scales are your absolute number 1 safest pick</em></strong>. You can combine any number of generative processes working within a pentatonic scale and they will fit together like hand in glove.</p>
 <p>Below are the notes and scale tones of the C pentatonic scales:</p>
 <table class="table">
 <tbody>
@@ -406,16 +407,16 @@ Key idea
 </section>
 <section id="hirajoshi" class="level2">
 <h2 class="anchored" data-anchor-id="hirajoshi">Hirajoshi</h2>
-<p>The Hirajoshi scale is a scale derived from Japanese shamisen music and the tuning of the koto instrument. It is a pentatonic scale, but with some interesting properties that distinguish it from the more frequently used versions above. It has the minor 3rd in it, which gives it a slightly melancholic feel, but also the minor 6th - C - G# (opening two notes from the theme from Star Trek).</p>
+<p>The Hirajoshi scale is a scale derived from Japanese shamisen music and the tuning of the koto instrument. It is a pentatonic scale, but with some interesting properties that distinguish it from the more frequently used versions above. It has the minor 3rd in it, which gives it a slightly melancholic feel, but also the minor 6th - C - Ab (opening two notes from the theme from Star Trek).</p>
 <table class="table">
 <tbody>
 <tr class="odd">
 <td>C Hirajoshi</td>
 <td style="text-align: center;">C</td>
 <td style="text-align: center;">D</td>
-<td style="text-align: center;">D#</td>
+<td style="text-align: center;">Eb</td>
 <td style="text-align: center;">G</td>
-<td style="text-align: center;">G#</td>
+<td style="text-align: center;">Ab</td>
 </tr>
 <tr class="even">
 <td>Scale tones</td>
@@ -513,6 +514,10 @@ Key idea
 <h2 class="anchored" data-anchor-id="there-are-no-wrong-notes-only-context">There are no “wrong” notes, only context</h2>
 <p>To paraphrase an old saying “Play a note once and it might be wrong. Play it twice and it’s jazz…”. There is certainly a truth that there are truly no “wrong notes” - whatever note you play you can add additional notes around or resolve it to a point that it will work within the context. When you compose or play with others, you can work on the context or resolve these problematic notes towards something more comfortable. This tension and release is a great feature of many tunes. But in generative music, we can’t guarantee our system will provide that context or resolve a dissonant note to something more pleasant.</p>
 <p>If you are using generative processes to create something to play along with - where <strong><em>you</em></strong> can provide the context and resolution, then go ahead and try out other scales. In fact, this might be a really good musical challenge… But this is a little beyond the scope of this book. And my skill set.</p>
+</section>
+<section id="context-provided-via-the-bass-instrument" class="level2">
+<h2 class="anchored" data-anchor-id="context-provided-via-the-bass-instrument">Context provided via the bass instrument</h2>
+<p>Often you will find that the bass notes you program or play against the generative chords and parts in the higher register will be sufficient to provide a solid anchor and context. For this reason I tend not to use random note processes in the bass parts, and in fact in many cases this might be the only part in a composition that I actually “play”.</p>
 </section>
 <section id="selections-of-notes---chords" class="level2">
 <h2 class="anchored" data-anchor-id="selections-of-notes---chords">Selections of notes - chords</h2>

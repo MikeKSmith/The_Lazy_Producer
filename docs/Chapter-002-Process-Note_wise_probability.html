@@ -160,12 +160,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-008-Process-Tuning_Parameters.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Tuning Parameters</span></a>
+  <a href="./Chapter-008-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Balancing the unexpected and the predictable</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-009-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Balancing the unexpected and the predictable</span></a>
+  <a href="./Chapter-009-Process-Tuning_Parameters.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Tuning Parameters</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -329,12 +329,12 @@ Key idea
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Using probability with MIDI notes means that we can create patterns where there are some notes that will definitely play, but some other notes where with each cycle of a loop, there is a chance that the note will play and some chance the note will not play. Using probability takes us beyond static, predictable loops and into a territory of surprise and variation with each cycle.</p>
+<p>Using probability with MIDI notes means there is a chance that the note will play and some chance the note will not play. Using probability takes us beyond static, predictable loops and into a territory of surprise and variation with each cycle.</p>
 </div>
 </div>
 <section id="drum-parts" class="level3">
 <h3 class="anchored" data-anchor-id="drum-parts">Drum parts</h3>
-<p>One clear use of this is in drum parts. You can program the core drum part that is constant throughout the clip or song, but then add passing notes, “fills” with lower probability. Or reduce the probability on high-hat parts, shakers, claps, lower velocity snare or kick parts so that these only sound once in a while. With this, it’s possible to specify a clip where core elements happen every time, but the “fills” and extra sounds only happen occasionally. Unfortunately, you can only set the probability, not a specific condition like “Play once, then miss the next 3 bars” (a feature found on some hardware sequencers, like those from Elektron).</p>
+<p>One clear use of this is in drum parts. You can program the core drum part that is constant throughout the clip or song, but then have additional notes that only occasionally play because these have lower probability. One use of this is to specify “fills” or flams. When playing with a live drummer it would be odd if they played only the core beat absolutely unchanged throughout the song. Usually they will add notes and flourishes to add character to the beat and to express themselves. You can achieve something like this through these lower probability (and often lower velocity) notes in drum parts. Unfortunately, you can only set the probability, not a specific condition like “Play once, then miss the next 3 bars” (a feature found on some hardware sequencers, like those from Elektron).</p>
 <p>To see the note chance, click on the MIDI clip then click on the arrow at the bottom of the piano-roll to show velocity. To see the chance / note probability, click on the button below the velocity.</p>
 <p>In the clip below we’ve set up a Hi-hat pattern of 16th notes. Note that each of them has a 75% probability of playing, and I have added a little random variation to the velocity of the hits. When we play this clip looped, the Hi-hat pattern will be different each loop and will add a little variation and interest.</p>
 <div class="cell">
@@ -361,7 +361,7 @@ Key idea
 </section>
 <section id="lead-parts" class="level3">
 <h3 class="anchored" data-anchor-id="lead-parts">Lead parts</h3>
-<p>In the clip below we have a repeating pattern across the notes Bb2-G3. Notes from Bb3-C5 have lower velocity and also lower probability. When we play this clip, we’ll have a repeating pattern on the lower notes, but a changing pattern on the higher notes. If you then use the velocity information to change the timbre of the note, then this will add some light and shade into the pattern. This can often be very effective when playing monophonic synth parts, where only one note can play at a time. The higher notes will force lower notes to stop playing which will mean that the lower repeating pattern is never exactly the same each time. Adding a little glide to the sound will also give a little “swoop” as the pitch changes.</p>
+<p>In the clip below we have a repeating pattern across the notes C3-C4. Notes from F4-D5 have lower velocity and also lower probability. When we play this clip, we’ll have a repeating pattern on the lower notes, but a changing pattern on the higher notes. If you then use the velocity information to change the timbre of the note, then this will add some light and shade into the pattern. This can often be very effective when playing monophonic synth parts, where only one note can play at a time. The higher notes will force lower notes to stop playing which will mean that the lower repeating pattern is never exactly the same each time. Adding a little glide to the sound will also give a little “swoop” as the pitch changes.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -392,8 +392,9 @@ Key idea
 </div>
 </div>
 </div>
-<p>The advantage of splitting the parts into separate clips (and separate tracks) is that you can shorten the length of the higher note <strong><em>clip</em></strong> - here it’s 15 1/16th notes long. That means with each repetition, the notes appear at different positions in the bar and so evolve against the repeating pattern. This is a key concept in balancing predictable and unexpected, as we’ll discuss later in <a href="Chapter-009-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a></p>
-<p>By having the notes in different tracks, you can also keep the repeating pattern “dry” and apply delay or echo to the upper part. You could also opt to modulate or vary the timbre and sound of either track to keep the repeating part interesting.</p>
+<p>The advantage of splitting the parts into separate clips (and separate tracks) is that you can shorten the length of the higher note <strong><em>clip</em></strong> - here it’s 15 1/16th notes long. That means with each repetition, the notes appear at different positions in the bar and so evolve against the repeating pattern. This is a key concept in balancing predictable and unexpected, as we’ll discuss later in <a href="Chapter-008-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a>.</p>
+<p>Note that we can route the output of each MIDI track to the same instrument (using the same MIDI channel for external gear). By having some sound design settings in the instrument react to velocity input e.g.&nbsp;filter cutoff we can make the one instrument sound like two, with the two parts interleaving and weaving in an out. sAlternatively, having the notes in different tracks, you can keep the repeating pattern “dry” and apply delay or echo to the upper part.</p>
+<p>In Live 12 the new MIDI Generation and Transformation tools allow us to generate and transform (SHOCK!) MIDI notes in a clip to generate patterns of notes, to adjust velocity, timing and other attributes. We’ll discuss these more in <a href="Chapter-033-Tools-Live12_MIDI_Generation_Transformation.html">Tools - Live 12 MIDI Generation and Transformation</a> but these tools might be helpful in creating interesting clips.</p>
 </section>
 <section id="chord-parts" class="level3">
 <h3 class="anchored" data-anchor-id="chord-parts">Chord parts</h3>

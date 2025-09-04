@@ -2,7 +2,7 @@
 
 ## Generative {.unnumbered}
 
-Generative music is music (largely) created by a system, rather than played by a human. After a trigger event—like pressing 'play,' hitting a note, or sending a voltage in a modular synth—the system follows a set of rules, algorithms, or probabilities to generate and evolve musical ideas (notes, rhythms, timbres) for an indefinite amount of time. In some cases the generative algorithms work ***with*** the performer, reacting to their input. In other cases the performer may intervene with the algorithms to tweak, adjust or change direction.
+Generative music is music (largely) created by a system, rather than played by a human. After a trigger event—like pressing 'play,' hitting a note, or sending a voltage in a modular synth—the system follows a set of rules, algorithms, or probabilities to generate and evolve musical ideas (notes, rhythms, timbres). In some cases the generative algorithms work ***with*** the performer, reacting to their input. In other cases the performer may intervene with the algorithms to tweak, adjust or change direction.
 
 ::: callout-tip
 ## Key idea

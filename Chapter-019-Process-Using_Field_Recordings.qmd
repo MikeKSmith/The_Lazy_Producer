@@ -30,7 +30,7 @@ mental picture to go with the more abstract or generative ideas.
 Field recordings of natural, human sounds provide that balance between
 something familiar, predictable and natural with random bleeps and
 bloops. In [Process - Balancing the unexpected and the
-predictable](#Chapter-009-Process-Balance_unexpected_and_predictable) we
+predictable](#Chapter-008-Process-Balance_unexpected_and_predictable) we
 discussed providing musical balance to the randomness. In this chapter
 we're talking about using field recordings to provide that balance.
 
@@ -108,6 +108,7 @@ original audio is still present, but it's been smeared, chopped, and
 rearranged.
 
 ```{r}
+#| echo: false
 #| fig-alt: "The image shows the Granulator III device by Robert Henke. The device has a main panel show a graphical representation of the original audio waveform. Below this a number of dials allow you to specify the Position of playback, Scan rate, Grain Size and a variety of other settings. Just above the dials is a modulation lane where the values can be changed through MIDI CC or MPE control, LFO, Envelopes and so on."
 knitr::include_graphics(path = file.path(here::here(), "images", "Granulator.png"))
 ```

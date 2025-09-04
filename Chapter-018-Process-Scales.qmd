@@ -22,20 +22,19 @@ and error to see what you like, but there are a few guiding principles
 that might help inform your choice. Choosing scales or eliminating
 *awkward* notes from a scale can also help make music where the tonal
 centre of the music isn't locked in or ***obvious***, which allows you
-to imply a change of key through a root note change, without having to
-change the scale for the generated (or quantised) MIDI. I'll call this
-being tonally ambiguous.
+to imply a change of key through a root note change in a bass instrument, without having to
+change the scale for the generated (or quantised) MIDI.
   
 :::
 
 ## Pentatonics - Minor and Major
 
 You know how you can play only the black keys on a piano, and no matter what you do, it somehow sounds good? That's
-because you are playing a pentatonic scale. Many guitarists will scoff
+because you are playing a pentatonic scale. Many "serious musicians" will scoff
 at players who riff away on a pentatonic scale, because it is seen as
 being somehow a "cheat" and avoids having to learn more complex scales.
-modes and harmonies. But for our generative purposes, ***pentatonic
-scales are your absolute number 1 pick***. You can combine any number of
+modes and harmonies. But for most generative purposes, ***pentatonic
+scales are your absolute number 1 safest pick***. You can combine any number of
 generative processes working within a pentatonic scale and they will fit
 together like hand in glove.
 
@@ -61,11 +60,11 @@ from their respective (non-pentatonic) scales.
 
 ## Hirajoshi
 
-The Hirajoshi scale is a scale derived from Japanese shamisen music and the tuning of the koto instrument. It is a pentatonic scale, but with some interesting properties that distinguish it from the more frequently used versions above. It has the minor 3rd in it, which gives it a slightly melancholic feel, but also the minor 6th - C - G# (opening two notes from the theme from Star Trek).
+The Hirajoshi scale is a scale derived from Japanese shamisen music and the tuning of the koto instrument. It is a pentatonic scale, but with some interesting properties that distinguish it from the more frequently used versions above. It has the minor 3rd in it, which gives it a slightly melancholic feel, but also the minor 6th - C - Ab (opening two notes from the theme from Star Trek).
 
 |                        |     |     |     |     |     |
 |------------------------|:---:|:---:|:---:|:---:|:---:|
-| C Hirajoshi            |  C  |  D  |  D# |  G  |  G# |
+| C Hirajoshi            |  C  |  D  |  Eb |  G  |  Ab |
 | Scale tones            |  1  |  2  |  m3 |  5  |  m6 |
 
 
@@ -127,6 +126,10 @@ with - where ***you*** can provide the context and resolution, then go
 ahead and try out other scales. In fact, this might be a really good
 musical challenge... But this is a little beyond the scope of this book.
 And my skill set.
+
+## Context provided via the bass instrument
+
+Often you will find that the bass notes you program or play against the generative chords and parts in the higher register will be sufficient to provide a solid anchor and context. For this reason I tend not to use random note processes in the bass parts, and in fact in many cases this might be the only part in a composition that I actually "play".
 
 ## Selections of notes - chords
 

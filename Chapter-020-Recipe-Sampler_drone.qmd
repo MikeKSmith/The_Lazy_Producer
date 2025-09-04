@@ -47,9 +47,9 @@ sends / Return channels.
 
 In the example below the Sampler instrument is in Channel 1 and is sending audio
 out to a variety of FX channels. Note that the Return channels are also routing
-audio around between them to further add layers of effects. Be cautious when doing this, as creating a feedback loop between return tracks can quickly result in a harsh wall of sound. You can see that Return A (the "Nice Reverse
+audio around between them to further add layers of effects. You can see that Return A (the "Nice Reverse
 + Reverb" effect) is sending audio out to Return D (Spectral Resonator) and that
-that channel is sending audio back to Return A. As we've mentioned above, using feedback to route audio signal between Return channels is a little risky as sound can sometimes build up quickly if channels are eventually routed back into themselves. Adding a Limiter to the Return or Main channels would prevent runaway sound feedback causing physical damage to ears or speakers.
+that channel is sending audio back to Return A. Using feedback to route audio signal between Return channels is a little risky as sound can sometimes build up quickly if channels are eventually routed back into themselves. Adding a Limiter to the Return or Main channels would prevent runaway sound feedback causing physical damage to ears or speakers.
 
 Spectral Time and Spectral Resonators are
 interesting effects to add texture and resonance into fairly static inputs (like
@@ -68,7 +68,7 @@ Sampler allows us to repitch the sound through different MIDI notes.
 sounds generated, as each sample will have different tones, resonances and
 features.
 
-7.  Press play. Sit back and relax.
+7.  Press play. Listen to what you hear, and refine settings if necessary.
 
 ------------------------------------------------------------------------
 

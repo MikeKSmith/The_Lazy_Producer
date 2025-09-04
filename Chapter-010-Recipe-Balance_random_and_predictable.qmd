@@ -80,7 +80,7 @@ completely predictable.
 knitr::include_graphics(path = file.path(here::here(), "images", "Recipe3_Ableton_Set.png"))
 ```
 
-9.  Press play. Sit back and relax.
+9.  Press play. Listen to what you hear, and refine settings if necessary.
 
 ------------------------------------------------------------------------
 

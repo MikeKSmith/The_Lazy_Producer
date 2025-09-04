@@ -31,7 +31,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDIGen
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Max_MIDIGenerator.png"))
 ```
 
-In [Tools - MIDI Generators](Chapter-012-Tools-MIDI_Generators.qmd) we looked at MIDI Generator devices including Max for Live devices. But having some similar functionality here "baked into" the Live MIDI clip tools puts these tools at the fingertips of anyone with Live 12 Suite.
+In [Tools - MIDI Generators](#Chapter-012-Tools-MIDI_Generators) we looked at MIDI Generator devices including Max for Live devices. But having some similar functionality here "baked into" the Live MIDI clip tools puts these tools at the fingertips of anyone with Live 12 Suite.
 
 ```{r}
 #| fig-alt: "The image shows the Euclidean Generator device creating rhythmic MIDI clips across four notes."
@@ -85,9 +85,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "MIDI_Generator
 
 Philip Meyer has created a number of Generator and Transformer MIDI tools which are available via his website: <https://meyer-devices.com>. In the video linked above, Philip demonstrates each of these and it's worth reviewing the content of that video to both understand how the devices work, but also to see how he Generates, then Transforms clips.
 
-### Transformer - Develop
-
-The Develop tool, which takes a phrase and then over a set number of generations (copies) it can include more notes with each generation (or Degrade to eliminate notes) through muting notes in the pattern. In the screenshot below notice how in the first repeat of the pattern, about 50% of the notes are muted, and then as the pattern repeats, more notes are unmuted until the final repeat has all notes playing.
+One example is the Develop tool, which takes a phrase and then over a set number of generations (copies) it can include more notes with each generation (or Degrade to eliminate notes) through muting notes in the pattern. In the screenshot below notice how in the first repeat of the pattern, about 50% of the notes are muted, and then as the pattern repeats, more notes are unmuted until the final repeat has all notes playing.
 
 The Deterministic mode mutes notes in the pattern while a Probabilistic mode reduces probability over generations. In Probabilistic mode you can also set a percentage (euclidean pattern) to specify which notes in the pattern have lower probability. This a really creative tool to introduce variation in note patterns so that they evolve rather than change suddenly.
 

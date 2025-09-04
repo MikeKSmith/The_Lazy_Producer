@@ -72,8 +72,7 @@ time. Don’t be precious about the output. You can always generate another vers
 
 I like to have separate tracks for MIDI generators. These are the
 "starting point" of a process. They will be generating MIDI notes
-through random processes, patterns or [Follow
-Actions](#Chapter-003-Process-Follow_Actions) . I like to keep the
+through random processes, patterns or [Follow Actions](#Chapter-003-Process-Follow_Actions). I like to keep the
 generators separate from the transformation MIDI tracks, because you may
 want to send the ***same*** generated MIDI notes into several
 transformation chains. This will lead to a more coherent result since
@@ -106,10 +105,7 @@ you get something that you prefer.
 
 If you record directly onto a track that contains MIDI effects, you will only capture the pre-effect MIDI, not the ***transformed*** output. This may not be a problem *per se* but when you
 render out the final audio, you are at the mercy of Live's internal
-random processes and you'll be crossing your fingers that either the
-result is ***the same*** as you heard previously (if Live replays the
-randomness in the same way each time) or potentially different (perhaps
-if you reopen the set in a later version of Live).
+random processes.
 
 If you capture the generated ***and*** transformed MIDI in separate
 tracks, then you can use these tracks as the input for tracks with
@@ -171,12 +167,6 @@ enough going on when the "thin" chord stack happens that it's
 essentially hidden in the mix. If I really don't like the result, I can
 re-render the audio.
 
-If you want to be ***sure*** what chords are used, then you should
-capture the output of the chord and probability process(es) by capturing
-the output of the MIDI processes, as discussed above and then use this
-captured MIDI track as the input to downstream processes like the
-arpeggiator, pitch-shift and velocity devices.
-
 ### Group tracks to tidy your Live set
 
 With all of these tracks floating about it can be tricky to keep track
@@ -209,12 +199,9 @@ shaping, gain etc. This would allow you to tweak the creative effects
 and render down to audio at each stage - instrument output, then
 instrument plus effects.
 
-A disadvantage of having effects on the Group level is that you cannot
-render the Group output through "Freeze and Flatten". Committing the
-audio by rendering allows you to free up processor power, so sometimes
-it's beneficial to do this rendering process as you go. The safety net
-is to retain the original tracks with devices switched off, parts and
-audio output muted in case you need to return and tweak.
+Committing the audio by rendering allows you to free up processor power, so
+sometimes it's beneficial to do this rendering process as you go. The safety net is to retain the original tracks with devices switched off, parts and audio
+output muted in case you need to return and tweak.
 
 In the screenshot below you'll see that on the Group for "Piano" I've
 got a compressor, EQ, Soothe dynamic EQ and Utility effects (for

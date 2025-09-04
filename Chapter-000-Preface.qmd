@@ -54,7 +54,7 @@ I'm not assuming that you know how to program with Max For Live - you only need 
 
 ## Why Ableton? {.unnumbered}
 
-I am a long time Ableton user (since Live 4). As I write this guide, I am using Live 12.2. I have a strong belief that Ableton Suite can be used much like a modular synthesiser - with the combination of audio and MIDI routing within Live, coupled with Max For Live devices, this amazing DAW can do so much. In fact, as you read through the chapters of the book you'll see how many of the tools, effects and methods we'll talk about mimic what you would see and how you might use them for generative music in a modular synthesiser rack.
+I am a long time Ableton user (since Live 4). As I write this guide, I am using Live 12.2. I have a strong belief that Ableton Suite can be used much like a modular synthesiser - with the combination of audio and MIDI routing within Live, coupled with Max For Live devices, this amazing DAW can do so much.
 
 ## Structure of this book {.unnumbered}
 
@@ -70,7 +70,7 @@ Process chapters talk about general ideas that can be applied within Ableton Liv
 
 ### Tools and effects {.unnumbered}
 
-These are the chapters for the geeks and musicians among us with Gear Acquisition Syndrome (GAS). If you want to get really nerdy or think about acquiring new devices then these are the chapters for you. If you have already purchased Ableton Live then you have already invested a large amount on music making equipment. My goal here is ***not*** to persuade you to part with significant additional amounts of cash, but some of the devices have an associated, although modest, cost.
+These are the chapters for the geeks and musicians among us with Gear Acquisition Syndrome (GAS). If you want to get really nerdy then these are the chapters for you. If you have already purchased Ableton Live Suite then you have already invested a large amount of money on music making equipment. My goal here is ***not*** to persuade you to part with significant additional amounts of cash, but some of the devices have an associated, although modest, cost.
 
 ## Who am I? {.unnumbered}
 
@@ -88,6 +88,6 @@ I'd like to thank Rachel K Collier and her Patreon community (The KnobTwisters) 
 
 I'd also like to thank many educators, producers and musicians who have provided ideas, input and inspiration to the content in this book - ELPHNT, Eonlake, Guerilla Biscuits, Ableton, Dennis DeSantis, Simon Stokes & Subsine Academy, Yokermoon, kale, Steve Lawson (solobasssteve), Andrew Tasselmyer, Bad Snacks, Benn Jordan, Catalyze Music Academy, DivKid, Fors, Andrew Huang, Loopop, Misty Jones, Ned Rush, Novel Music, Omri Cohen, Philip Meyer, Red Means Recording, Seed to Stage, Ted Laderas.
 
-Thanks to Yokermoon, kale, Subotix and owel awl for help in proof-reading the book.
+Thanks to Subotix for help in proof-reading the book.
 
 Particular thanks to Libby Heeren for help in sorting out technical Quarto issues for me in the final stages of producing the book.

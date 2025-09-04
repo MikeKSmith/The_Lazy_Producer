@@ -55,7 +55,7 @@ I would continue to use the Scale MIDI Device for live performance just as a fal
 ### MIDI Generation
 
 Live 12 now comes with two new features built into MIDI clip creation: MIDI Generation and MIDI Transformation. MIDI Generation does what the name suggests - provides a range of different methods for generating new MIDI parts. There are a number of Generation options available covering rhythmic patterns, chords, melodies. We'll look at some of these in more depth in 
-[Tools - Live 12 MIDI Generation and Transformation](Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd).
+[Tools - Live 12 MIDI Generation and Transformation](#Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd).
 
 One key point is that these Generator tools are designed for creating new MIDI clips during production, not for "on-the-fly" generation during a performance. Unfortunately at this point they cannot be automated.
 
@@ -66,7 +66,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDIGen
 
 ### MIDI Transformation
 
-The MIDI Transformation tools take an existing MIDI clip or region and perform actions on the MIDI information within that clip. A wide range of useful tools are provided to help permute, rearrange, interpolate and transform (shock!) MIDI. We'll look at these in more depth in [Tools - Live 12 MIDI Generation and Transformation](Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd). MIDI transformers should not be seen as "one tool to do everything" - instead you can layer transformations or apply transformations more than once to clips.
+The MIDI Transformation tools take an existing MIDI clip or region and perform actions on the MIDI information within that clip. A wide range of useful tools are provided to help permute, rearrange, interpolate and transform (shock!) MIDI. We'll look at these in more depth in [Tools - Live 12 MIDI Generation and Transformation](#Chapter-033-Tools-Live12_MIDI_Generation_Transformation). MIDI transformers should not be seen as "one tool to do everything" - instead you can layer transformations or apply transformations more than once to clips.
 
 ```{r}
 #| fig-alt: "The image shows the MIDI Transformer choices in Ableton Live 12."

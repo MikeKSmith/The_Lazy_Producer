@@ -47,10 +47,10 @@ track containing a Drum Rack. This can be useful if you want to apply
 MIDI effects, randomness, Follow Actions or modulation to the high-hat
 but not the kick.
 
-The third track (MIDI) here is "pulling" the MIDI from Track 1. Note
-that the Monitor is set to "In" so that it "listens" for the MIDI being
-sent. In this case I can add a MIDI device like Note Length to "stretch"
-the incoming MIDI and then apply an Arpeggiator to that to produce new
+The third MIDI track here is "pulling" the MIDI from Track 1. Note that
+the Monitor is set to "In" so that it "listens" for the MIDI being sent.
+In this case I can add a MIDI device like Note Length to "stretch" the
+incoming MIDI and then apply an Arpeggiator to that to produce new
 moving parts that are related to the sequence in Track 1, but different.
 
 The fourth track (Audio) here is "pulling" the audio from Track 3
@@ -65,6 +65,11 @@ audio after effects have been applied. "Post Mixer" means that track
 volumes and panning are applied prior to grabbing the audio. "Post
 Mixer" might be handy if you wish to control levels from only one track.
 
+You can also route audio from tracks into other audio tracks in order to
+create submix tracks. Typically I use Grouped tracks to achieve
+something like this, but submix for different track types - pads, drums,
+bass etc. might help in mixdown.
+
 In MIDI tracks the "Pre FX" and "Post FX" apply to MIDI effects as well,
 so you can grab MIDI inputs either before MIDI effects are applied, or
 afterwards. Since Ableton's track routing works this way consistently,
@@ -76,7 +81,7 @@ bonus for The Lazy Producer. It's possible to reuse inputs across
 multiple tracks in multiple ways to do a huge range with them. In
 particular I use this technique to build texture, especially in "drone"
 tracks where I can apply different resonators, textural effects to audio
-inputs from the same source and then blend these across tracks.
+inputs from the same source.
 
 While you could achieve a similar result using Instrument or Effect
 Racks on a single track (see

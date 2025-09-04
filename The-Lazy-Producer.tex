@@ -55,46 +55,6 @@
   \let\oldsubparagraph\subparagraph
   \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{241,243,245}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
-\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
-\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
@@ -584,10 +544,7 @@ I am a long time Ableton user (since Live 4). As I write this guide, I
 am using Live 12.2. I have a strong belief that Ableton Suite can be
 used much like a modular synthesiser - with the combination of audio and
 MIDI routing within Live, coupled with Max For Live devices, this
-amazing DAW can do so much. In fact, as you read through the chapters of
-the book you'll see how many of the tools, effects and methods we'll
-talk about mimic what you would see and how you might use them for
-generative music in a modular synthesiser rack.
+amazing DAW can do so much.
 
 \section*{Structure of this book}\label{structure-of-this-book}
 \addcontentsline{toc}{section}{Structure of this book}
@@ -624,13 +581,12 @@ these chapters.
 \addcontentsline{toc}{subsection}{Tools and effects}
 
 These are the chapters for the geeks and musicians among us with Gear
-Acquisition Syndrome (GAS). If you want to get really nerdy or think
-about acquiring new devices then these are the chapters for you. If you
-have already purchased Ableton Live then you have already invested a
-large amount on music making equipment. My goal here is
-\textbf{\emph{not}} to persuade you to part with significant additional
-amounts of cash, but some of the devices have an associated, although
-modest, cost.
+Acquisition Syndrome (GAS). If you want to get really nerdy then these
+are the chapters for you. If you have already purchased Ableton Live
+Suite then you have already invested a large amount of money on music
+making equipment. My goal here is \textbf{\emph{not}} to persuade you to
+part with significant additional amounts of cash, but some of the
+devices have an associated, although modest, cost.
 
 \section*{Who am I?}\label{who-am-i}
 \addcontentsline{toc}{section}{Who am I?}
@@ -670,8 +626,7 @@ Music Academy, DivKid, Fors, Andrew Huang, Loopop, Misty Jones, Ned
 Rush, Novel Music, Omri Cohen, Philip Meyer, Red Means Recording, Seed
 to Stage, Ted Laderas.
 
-Thanks to Yokermoon, kale, Subotix and owel awl for help in
-proof-reading the book.
+Thanks to Subotix for help in proof-reading the book.
 
 Particular thanks to Libby Heeren for help in sorting out technical
 Quarto issues for me in the final stages of producing the book.
@@ -690,12 +645,12 @@ Generative music is music (largely) created by a system, rather than
 played by a human. After a trigger event---like pressing `play,' hitting
 a note, or sending a voltage in a modular synth---the system follows a
 set of rules, algorithms, or probabilities to generate and evolve
-musical ideas (notes, rhythms, timbres) for an indefinite amount of
-time. In some cases the generative algorithms work \textbf{\emph{with}}
-the performer, reacting to their input. In other cases the performer may
-intervene with the algorithms to tweak, adjust or change direction.
+musical ideas (notes, rhythms, timbres). In some cases the generative
+algorithms work \textbf{\emph{with}} the performer, reacting to their
+input. In other cases the performer may intervene with the algorithms to
+tweak, adjust or change direction.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Generative music means (to me) that the music should be able to go on
 indefinitely, evolving over time rather than being simply repetitive.
@@ -746,7 +701,7 @@ then some that are made within the generative processes.
 \chapter{Recipe - Changing
 chords}\label{Chapter-001-Recipe-Changing_Chords}
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 The goal here is to have clips launch out of phase with each other,
 meaning they don't all change at the same time. The clips also use
@@ -763,9 +718,9 @@ creates a shifting pattern of chords and textures.
 \item
   Create three MIDI tracks, each with a virtual synth instrument. For
   this example we're going to use long chords, so I'd recommend a pad or
-  arpeggiated sound. One thing that works quite well is to mix sounds
-  with rhythmic elements, sounds that evolve or where there is
-  modulation to vary the sound over time.
+  arpeggiated sound. One thing that works quite well is to use
+  instrument sounds with rhythmic elements, sounds that evolve or where
+  there is modulation to vary the sound over time.
 \item
   Make three MIDI clips in each track.
 \item
@@ -784,8 +739,8 @@ creates a shifting pattern of chords and textures.
 \item
   Use random note probability on notes in the chord (see
   \hyperref[Chapter-002-Process-Note_wise_probability]{Process -
-  Note-wise probability} ). Set the root notes of each clip to 75\%
-  probability, and set other notes at about 50-60\% probability so that
+  Note-wise probability} ). Set the root notes of each clip to 100\%
+  probability, and set other notes at about 60-80\% probability so that
   each time the clip triggers, the note choice / chord is different.
   This means that while the chord might sometimes have 4 notes, it could
   vary anywhere from 1 to 7 (technically even 0 or 8, though those
@@ -793,12 +748,22 @@ creates a shifting pattern of chords and textures.
   notes favours these notes within the chord, but if that probability is
   slightly less than 100\% then you'll not ALWAYS get that anchoring
   from the root note.
+\end{enumerate}
+
+(Because the notes in the clip could come from a variety of chords, you
+can use a bass track to imply a shifting tonality by anchoring root
+notes of chords, not necessarily the ``root'' note set through 100\%
+probability in the MIDI notes specified).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
 \item
   Make sure that the clip lengths vary between tracks (all notes within
-  the clip have the same length). So clip1 in track 1 could have 16 bars
-  length; clip 1 in track 2 could be 13 bars; clip 1 in track 3 could
-  have 10 bars length etc. The exact clip length isn't important; what
-  matters is that they vary across tracks.
+  the clip have the same length). So clip 1 in track 1 could have 16
+  bars length; clip 1 in track 2 could be 13 bars; clip 1 in track 3
+  could have 10 bars length etc. The exact clip length isn't important;
+  what matters is that they vary across tracks.
 \item
   ALSO, vary clip lengths between scenes \textbf{\emph{within}} tracks.
   So a track that has 16 bars in clip 1, maybe has 14 bars in clip 2 and
@@ -840,6 +805,13 @@ the track would help movement and retain interest (see
 \hyperref[Chapter-004-Tools-MIDI_tools]{Tools - MIDI tools} for more
 details on MIDI effects in Ableton Live).
 
+Another option would be to write short melodic phrases and
+counter-melodies in clips and then have the Follow Actions choose which
+to play. This could then produce a wide range of interesting movement
+across the tracks. We'll look at this in slightly more detail in
+\hyperref[Chapter-010-Recipe-Balance_random_and_predictable]{Recipe -
+Balancing the unexpected and the predictable}.
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{6}
@@ -851,7 +823,7 @@ details on MIDI effects in Ableton Live).
   probability, with the other action set to ``Play again'' with 20\%
   probability. When you launch the scene, each clip will play to the end
   of the clip, but because individual note probability within each of
-  the stacked chords is set to 50-60\%, the chord will sound different
+  the stacked chords is set to 60-80\%, the chord will sound different
   each time it plays. Also, the randomness we're using for note
   probability means that the same chord clip in each track is also
   likely to sound different. The 80-20\% split of next action - ``Play
@@ -860,13 +832,12 @@ details on MIDI effects in Ableton Live).
 \end{enumerate}
 
 If the clips are short, then a 50-50\% split of next action chance might
-be more appropriate. In this case because the clips are long we want to
-force movement onwards. With shorter clips then we might favour
-repetition so that the listener isn't bombarded with changes every few
-beats (see
-\hyperref[Chapter-009-Process-Balance_unexpected_and_predictable]{Process
+be more appropriate. With shorter clips then we might favour repetition
+so that the listener isn't bombarded with changes every few beats (see
+\hyperref[Chapter-008-Process-Balance_unexpected_and_predictable]{Process
 - Balancing the unexpected and the predictable} for a discussion of
-balancing repetition with unexpected elements).
+balancing repetition with unexpected elements). In this case because the
+clips are long we want to force movement onwards.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -877,7 +848,7 @@ balancing repetition with unexpected elements).
   movement in the sound. An important point is that the sound shouldn't
   be too static.
 \item
-  Press play. Sit back and relax.
+  Press play. Listen to what you hear, and refine settings if necessary.
 \end{enumerate}
 
 You can hear an example of what this sounds like here\ldots{}
@@ -904,11 +875,9 @@ likely to play, while higher probability means that each note is
 \textbf{\emph{more}} likely to play. A probability of 100\% means that
 the note will \textbf{\emph{ALWAYS}} play.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
-Using probability with MIDI notes means that we can create patterns
-where there are some notes that will definitely play, but some other
-notes where with each cycle of a loop, there is a chance that the note
+Using probability with MIDI notes means there is a chance that the note
 will play and some chance the note will not play. Using probability
 takes us beyond static, predictable loops and into a territory of
 surprise and variation with each cycle.
@@ -918,15 +887,17 @@ surprise and variation with each cycle.
 \subsection{Drum parts}\label{drum-parts}
 
 One clear use of this is in drum parts. You can program the core drum
-part that is constant throughout the clip or song, but then add passing
-notes, ``fills'' with lower probability. Or reduce the probability on
-high-hat parts, shakers, claps, lower velocity snare or kick parts so
-that these only sound once in a while. With this, it's possible to
-specify a clip where core elements happen every time, but the ``fills''
-and extra sounds only happen occasionally. Unfortunately, you can only
-set the probability, not a specific condition like ``Play once, then
-miss the next 3 bars'' (a feature found on some hardware sequencers,
-like those from Elektron).
+part that is constant throughout the clip or song, but then have
+additional notes that only occasionally play because these have lower
+probability. One use of this is to specify ``fills'' or flams. When
+playing with a live drummer it would be odd if they played only the core
+beat absolutely unchanged throughout the song. Usually they will add
+notes and flourishes to add character to the beat and to express
+themselves. You can achieve something like this through these lower
+probability (and often lower velocity) notes in drum parts.
+Unfortunately, you can only set the probability, not a specific
+condition like ``Play once, then miss the next 3 bars'' (a feature found
+on some hardware sequencers, like those from Elektron).
 
 To see the note chance, click on the MIDI clip then click on the arrow
 at the bottom of the piano-roll to show velocity. To see the chance /
@@ -957,10 +928,10 @@ But the note-wise probability extends beyond drum parts.
 
 \subsection{Lead parts}\label{lead-parts}
 
-In the clip below we have a repeating pattern across the notes Bb2-G3.
-Notes from Bb3-C5 have lower velocity and also lower probability. When
-we play this clip, we'll have a repeating pattern on the lower notes,
-but a changing pattern on the higher notes. If you then use the velocity
+In the clip below we have a repeating pattern across the notes C3-C4.
+Notes from F4-D5 have lower velocity and also lower probability. When we
+play this clip, we'll have a repeating pattern on the lower notes, but a
+changing pattern on the higher notes. If you then use the velocity
 information to change the timbre of the note, then this will add some
 light and shade into the pattern. This can often be very effective when
 playing monophonic synth parts, where only one note can play at a time.
@@ -990,13 +961,24 @@ tracks) is that you can shorten the length of the higher note
 each repetition, the notes appear at different positions in the bar and
 so evolve against the repeating pattern. This is a key concept in
 balancing predictable and unexpected, as we'll discuss later in
-\hyperref[Chapter-009-Process-Balance_unexpected_and_predictable]{Process
-- Balancing the unexpected and the predictable}
+\hyperref[Chapter-008-Process-Balance_unexpected_and_predictable]{Process
+- Balancing the unexpected and the predictable}.
 
-By having the notes in different tracks, you can also keep the repeating
-pattern ``dry'' and apply delay or echo to the upper part. You could
-also opt to modulate or vary the timbre and sound of either track to
-keep the repeating part interesting.
+Note that we can route the output of each MIDI track to the same
+instrument (using the same MIDI channel for external gear). By having
+some sound design settings in the instrument react to velocity input
+e.g.~filter cutoff we can make the one instrument sound like two, with
+the two parts interleaving and weaving in an out. sAlternatively, having
+the notes in different tracks, you can keep the repeating pattern
+``dry'' and apply delay or echo to the upper part.
+
+In Live 12 the new MIDI Generation and Transformation tools allow us to
+generate and transform (SHOCK!) MIDI notes in a clip to generate
+patterns of notes, to adjust velocity, timing and other attributes.
+We'll discuss these more in
+\hyperref[Chapter-033-Tools-Live12_MIDI_Generation_Transformation]{Tools
+- Live 12 MIDI Generation and Transformation} but these tools might be
+helpful in creating interesting clips.
 
 \subsection{Chord parts}\label{chord-parts}
 
@@ -1073,27 +1055,35 @@ Actions''} within Session View clips for a \textbf{\emph{long}} time.
 Follow Actions allow you to perform a variety of actions at the end of a
 clip or after a given number of bars and beats. Follow Actions allow a
 performer (or a Lazy Producer) to automate the transition from one clip
-to another within a track. This allows you to determine a sequence of
-events - moving from one clip to another or playing the clip again, etc.
+to another within a track or between Scenes. This allows you to
+determine a sequence of events - moving from one clip to another or
+playing the clip again, etc. This is incredibly useful for live
+performance where you might want certain actions to occur if left
+untouched, but allow the flexibility to skip to a section of a song as
+needed. I discussed this in a workshop presentation to Rachel K
+Collier's Discord community here: https://youtu.be/JhTweWbyJP8\&t=25.
+
 While Follow Actions are incredibly useful for live performance they
 also have incredible uses for making generative music. Follow Actions
 help govern the amount of variability in our generative sequences -
 whether there is a definite sequence of events that happen predictably,
 or whether there is an element of chance introduced.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Follow Actions allow the Ableton user to automate moving from one clip
 in a track to another. This automation can happen at the end of the clip
 or after a given number of bars and beats. In order to use Follow
 Actions, the clips in the track have to be contiguous - that is, no gaps
-between the set of clips.
+between the set of clips. The Follow Actions will \textbf{\emph{only}}
+apply to this set of contiguous clips - any clips outside that set of
+clips, even in the same track, will not be affected by the Follow
+Actions.
 
-Even if the notes inside a (MIDI or Audio) clip are fixed, Follow
-Actions can be used to move from one clip to another. This allows the
-Lazy Producer (or Lazy Performer!) to set up clips that contain
-pre-composed riffs, rhythmic patterns, melodic lines, chords etc. and
-then get Ableton to help sequence these in interesting ways.
+This allows the Lazy Producer (or Lazy Performer!) to set up clips that
+contain pre-composed riffs, rhythmic patterns, melodic lines, chords
+etc. and then have the Follow Action rules and probability govern what
+is actually played.
 
 Clips can also contain nothing at all. And these empty clips can have
 different lengths. So if you need space between melodic phrases, you can
@@ -1151,17 +1141,17 @@ uncertainty of constantly introducing new things. While repeating one
 part or track you can introduce something new with a different part or
 track.
 
-The Legato option is also useful. If the Follow Action is applied in one
-clip, and if Legato is active, then the clip that is triggered next will
-take over the play position from whatever clip was previously playing
-(where Follow Action was applied). This can be useful for applying
-different endings to clips (the equivalent to fills in drum / rhythmic
-parts). That is, you can play 3 bars of one clip, then use the fourth
-bar of some other clip to provide the ending of that clip, then apply a
-Follow Action to go back to the first clip, on to a different clip or
-loop around to the beginning of the currently playing clip. This allows
-us to set up automation that introduces musical ideas, rather than
-changing clips together, or only at the end of clips.
+The Legato option is also useful. If the Legato button is actived, then
+the clip that is triggered next will take over the play position from
+whatever clip was previously playing (where Follow Action was applied).
+This can be useful for applying different endings to clips (the
+equivalent to fills in drum / rhythmic parts). That is, you can play 3
+bars of one clip, then use the fourth bar of some other clip to provide
+the ending of that clip, then apply a Follow Action to go back to the
+first clip, on to a different clip or loop around to the beginning of
+the currently playing clip. This allows us to set up automation that
+introduces musical ideas, rather than changing clips together, or only
+at the end of clips.
 
 \section{Follow Action probabilities}\label{follow-action-probabilities}
 
@@ -1217,13 +1207,17 @@ incoming MIDI control messages - using the modulation wheel to control
 expression, changing velocity, modulating other devices based on
 velocity, MPE and other control messages.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Adding notes, randomly changing the pitch of notes, changing the lengths
 of notes and generating chords within a given scale using MIDI effect
 tools can form the basis of a generative piece. Using other MIDI effects
-to arpeggiate these chords and add additional notes and harmonies will
+to arpeggiate these chords or to add additional notes and harmonies will
 produce a constantly evolving sequence of MIDI notes within the scale.
+
+MIDI effects can also use and be applied to MIDI note velocity, MPE
+messages (pitch, slide, pressure, note off velocity) which extends the
+palette of using MIDI way beyond just notes.
 
 \end{tcolorbox}
 
@@ -1241,7 +1235,9 @@ stack these, so I tend to use them with minimal or no feedback. Combined
 with the Random effect discussed below you can easily build up evolving
 and interesting patterns which are similar without repeating. The ``Feed
 Delay'' amount controls the amount that the velocity decays with each
-repeat.
+repeat. There's also a Mute button which will mute the original incoming
+MIDI note, and just provide the echo of that MIDI note. You could then
+apply a different tone or audio effect to the muted, echoed notes.
 
 \includegraphics{images/Note_Echo.png}
 
@@ -1263,13 +1259,25 @@ to cycle through samples using this device.
 
 \includegraphics{images/Random.png}
 
+The Random device isn't just useful for pitched instruments. In the
+example above 17 semi-tones might seem an awful lot to randomly change
+pitch. But you can also use Random in a sliced beat so that here we're
+saying pick any of the slices over the next 17 slices. This might add
+some nice glitchiness to a sliced beat.
+
+It could also be used to select different samples within Sampler, where
+samples are arranged over keys or key ranges. By using Random you could
+randomly select a different sample, giving a ``round robin'' effect
+(where each time the key is pressed a slightly different sample is
+played).
+
 \section{Ableton's Note Length MIDI
 effect}\label{abletons-note-length-midi-effect}
 
 \href{https://www.ableton.com/en/live-manual/11/live-midi-effect-reference/\#note-length}{Note
 Length} is a really useful MIDI effect to help modify the incoming MIDI
 and make notes longer or shorter. The ``Gate'' control can be used to
-double an incoming notes length, while the ``Length'' control defines
+double an incoming note's length, while the ``Length'' control defines
 the length of the resulting MIDI note in milliseconds or seconds. I use
 this to take incoming MIDI information and ``smear'' it for use with pad
 sounds. This is useful in generative music, because you can relate the
@@ -1293,7 +1301,7 @@ conform to a particular scale.
 
 \includegraphics{images/Scale.png}
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Note Range}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Note Range}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 The MIDI Pitch and Scale devices have the option to limit the range of
 notes played. You can specify the Lowest MIDI note (default C-2) and the
@@ -1374,13 +1382,16 @@ The free \href{https://www.novelmusic.org/m4l/deviate}{Deviate Max for
 Live MIDI effect from Novel Music} can add variation to incoming MIDI
 notes. The ``TRIGGER'' section defines how often the deviation or
 variation will occur - so it is possible to balance the unexpected with
-the predictable, or keep things the same before introducing randomness.
-One important aspect of Deviate is that it has a memory, so if you like
-the random pattern generated, you can ``lock'' this by moving the
-``LOCK'' slider to the right. This means it acts a bit like the Turing
-Machine device used in modular synthesis. Deviate has two sides - MIDI,
-which we'll cover here and MOD which we'll cover in the section
-\hyperref[Chapter-007-Tools-Modulators]{Tools - Modulators}.
+the predictable - see
+\hyperref[Chapter-008-Process-Balance_unexpected_and_predictable]{Process
+- Balancing the unexpected and the predictable} - or keep things the
+same before introducing randomness. One important aspect of Deviate is
+that it has a memory, so if you like the random pattern generated, you
+can ``lock'' this by moving the ``LOCK'' slider to the right. This means
+it acts a bit like the Turing Machine device used in modular synthesis.
+Deviate has two sides - MIDI, which we'll cover here and MOD which we'll
+cover in the section \hyperref[Chapter-007-Tools-Modulators]{Tools -
+Modulators}.
 
 The ``TRIGGER'' section is worth spending a little time to understand.
 It determines how many MIDI notes will pass before the deviation is
@@ -1415,12 +1426,9 @@ tutorial for this device} as it can do \textbf{\emph{a lot}}.
 \section{Max for Live Tintinnabulator MIDI
 effect}\label{max-for-live-tintinnabulator-midi-effect}
 
-a Max for Live MIDI effect by Milton Mermikedes,
-
 The
 \href{https://maxforlive.com/library/device/7569/tintinnabulator}{Tintinnabulator}
 Max for Live MIDI effect by Milton Mermikedes implements Arvo Pärt's
-Tintinnabuli technique
 \href{https://en.wikipedia.org/wiki/Tintinnabuli}{Tintinnabulation
 technique}. This technique arpeggiates the original chord, and then adds
 additional notes / harmonies to those notes based on the nearest tone
@@ -1501,7 +1509,7 @@ Ableton Live, it's easy to route one track into another. You can either
 ``push'' the output of a source track to a destination or have the
 destination track ``pull'' the input from the source.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Reusing MIDI or audio tracks across many channels ensures that the
 different tracks are related in their input source, even if additional
@@ -1533,7 +1541,7 @@ these can be sent to the same instrument track containing a Drum Rack.
 This can be useful if you want to apply MIDI effects, randomness, Follow
 Actions or modulation to the high-hat but not the kick.
 
-The third track (MIDI) here is ``pulling'' the MIDI from Track 1. Note
+The third MIDI track here is ``pulling'' the MIDI from Track 1. Note
 that the Monitor is set to ``In'' so that it ``listens'' for the MIDI
 being sent. In this case I can add a MIDI device like Note Length to
 ``stretch'' the incoming MIDI and then apply an Arpeggiator to that to
@@ -1553,6 +1561,11 @@ track volumes and panning are applied prior to grabbing the audio.
 ``Post Mixer'' might be handy if you wish to control levels from only
 one track.
 
+You can also route audio from tracks into other audio tracks in order to
+create submix tracks. Typically I use Grouped tracks to achieve
+something like this, but submix for different track types - pads, drums,
+bass etc. might help in mixdown.
+
 In MIDI tracks the ``Pre FX'' and ``Post FX'' apply to MIDI effects as
 well, so you can grab MIDI inputs either before MIDI effects are
 applied, or afterwards. Since Ableton's track routing works this way
@@ -1564,8 +1577,7 @@ routing is a massive bonus for The Lazy Producer. It's possible to reuse
 inputs across multiple tracks in multiple ways to do a huge range with
 them. In particular I use this technique to build texture, especially in
 ``drone'' tracks where I can apply different resonators, textural
-effects to audio inputs from the same source and then blend these across
-tracks.
+effects to audio inputs from the same source.
 
 While you could achieve a similar result using Instrument or Effect
 Racks on a single track (see
@@ -1605,28 +1617,82 @@ audio is creating via the instrument and effects.
 \chapter{Recipe - Doing more with less using MIDI
 effects}\label{Chapter-006-Recipe-MIDI_tools}
 
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
+
 In this recipe we'll use the simplest possible MIDI source, a single
 MIDI note, and process it with MIDI effects and routing to create an
 entire track from one note. We're going to use MIDI effects
-\hyperref[Chapter-004-Tools-MIDI_tools]{Tools - MIDI tools} . And we're
+\hyperref[Chapter-004-Tools-MIDI_tools]{Tools - MIDI tools} . We're also
 going to be using MIDI and audio routing which is covered in
 \hyperref[Chapter-005-Process-Routing]{Process - Routing MIDI and Audio}
 . We will also use modulation in sound design to keep the listener
 engaged - \hyperref[Chapter-007-Tools-Modulators]{Tools - Modulators} .
 
+We're going to have a single MIDI generator track, and then additional
+tracks with MIDI Effects to process the inputs. We're going to route the
+output of these processed MIDI tracks into various instruments.
+
+You may need to try various sounds and jump between tweaking the MIDI
+processing and the sound design in the instruments in order to get the
+sound you want.
+
+\end{tcolorbox}
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Create a MIDI track but do not add an instrument to that track. This
-  is going to be the ``generator'' for our track.
+  Create a MIDI track. This is going to be the ``generator'' for our
+  track. We're not going to add an instrument to this track.
 \item
-  Within this track, add a single MIDI clip with a single C3 note
-  lasting one bar. Name this the ``Generator'' track (CTRL+R to rename).
+  Create a single MIDI clip with a single C3 note lasting one bar. Name
+  this the ``Generator'' track (CTRL+R to rename).
 \item
-  Add MIDI tracks and assign the input for these tracks to be the
-  ``Generator'' track that you have just created above. In the example
-  below I've added a short, plucky sound in the Operator track, a
-  Wavetable pad, and a track with the Electric piano sound.
+  Create a new MIDI track called ``Note length'' and another called
+  ``Arp''. In each of these tracks, set the MIDI input to the Generator
+  Track (the single note C3 track) and set Monitor to ``In''.
+\end{enumerate}
+
+\includegraphics{images/Recipe2_MIDI_manipulation.png}
+
+In the ``Note Length'' track, add a MIDI Note Length MIDI effect. This
+will be used to take the output from the Operator track and stretch out
+the MIDI notes to last a nominated number of seconds.
+
+\includegraphics{images/Recipe2_MIDI_NoteLength.png}
+
+In the ``Arp'' track we're going to add an Arpeggiator effect
+(surprise!) but also another MIDI ``Note Length'' effect with which we
+can tweak the note length of the output from the Arpeggiator to taste,
+and a Velocity effect to add a little variation to the velocity of the
+output MIDI notes.
+
+\includegraphics{images/Recipe2_MIDI_Arp.png}
+
+Tweaking the Length and Gate settings of ``Note Length'' will allow us
+to alter the sound of what is generated from the ``Arpeggiator'' effect
+- note that the Gate setting in the ``Arpeggiator'' does this as well,
+but we could potentially map these parameters to a MIDI controller if we
+wanted to vary the arpeggiator sound coming from this track.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Now let's go on to the instruments and sound design.
+\end{enumerate}
+
+\includegraphics{images/Recipe2_MIDI-and-audio-routing.png}
+
+I have an Operator track with a short, plucky sound. A Wavetable
+instrument provides a pad sound. An Electric instrument provides an
+electric piano sound. Finally there's a Bass track providing anchoring
+bass notes to the track.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
 \item
   I've added a Shaper to the Wavetable track and mapped its output to
   the Gain knob on a Utility device. The ``minimum'' is set to 50\% and
@@ -1639,25 +1705,16 @@ engaged - \hyperref[Chapter-007-Tools-Modulators]{Tools - Modulators} .
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
-\tightlist
+\setcounter{enumi}{5}
 \item
   The second Wavetable track, named ``Wavetable pre-compressor,'' pulls
   its audio from the main Wavetable track before the ducking effect
   (``Pre-FX''). This track's output is set to ``Sends-Only,'' so we only
   hear its processed signal through the return effects, never the dry
   sound.
-\end{enumerate}
-
-\includegraphics{images/Recipe2_MIDI-and-audio-routing.png}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{5}
-\tightlist
 \item
-  In your tracks, you can add MIDI effects to alter the incoming chord.
-  For example:
+  On the Operator track I've added additional MIDI Effects to transform
+  the incoming single MIDI note to create movement and interest.
 \end{enumerate}
 
 \includegraphics{images/Recipe2_MIDI_fx.png}
@@ -1704,43 +1761,15 @@ and back the amount of variation during the track.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{6}
+\setcounter{enumi}{7}
 \tightlist
 \item
-  In the screen shot for step 5, you may notice that my MIDI Note and
-  other Generator tracks are grouped together. Let's recreate that now.
-  Create a new MIDI track called ``Note length'' and another called
-  ``Arp''. In each of these tracks, set the MIDI input to Track one (the
-  single note C3 track) and set Monitor to ``In''.
+  Note that I'm routing the output from the Operator track with all the
+  MIDI Effects into the Note Length MIDI track, and the output of that
+  becomes the input of the Arp MIDI track. By routing the MIDI
+  information around like this we ensure that the MIDI information is
+  linked and related giving a more consistent sound.
 \end{enumerate}
-
-\includegraphics{images/Recipe2_MIDI_manipulation.png}
-
-In the ``Note Length'' track, add a MIDI Note Length MIDI effect. This
-will be used to take the output from Track 1 ``MIDI Note'' and stretch
-out the MIDI notes to last a nominated number of seconds.
-
-\includegraphics{images/Recipe2_MIDI_NoteLength.png}
-
-In the ``Arp'' track we're going to add an Arpeggiator effect
-(surprise!) but also another MIDI ``Note Length'' effect with which we
-can tweak the note length of the output from the Arpeggiator to taste,
-and a Velocity effect to add a little variation to the velocity of the
-output MIDI notes.
-
-\includegraphics{images/Recipe2_MIDI_Arp.png}
-
-Tweaking the Length and Gate settings of ``Note Length'' will allow us
-to alter the sound of what is generated from the ``Arpeggiator'' effect
-- note that the Gate setting in the ``Arpeggiator'' does this as well,
-but we could potentially map these parameters to a MIDI controller if we
-wanted to vary the arpeggiator sound coming from this track.
-
-From the MIDI routing screen capture above you can see that we send the
-MIDI output from the ``Note Length'' track to the input of the Wavetable
-pad sound (to give us a nice long chords to play with in Wavetable)
-while the output of the ``Arp'' track is being sent to the Electric
-Piano sound.
 
 In performance of this track, I use a MIDI Controller to change settings
 of the MIDI Effect Rack in the MIDI note track, which essentially is
@@ -1754,14 +1783,14 @@ the time.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{7}
+\setcounter{enumi}{8}
 \tightlist
 \item
   We have mostly been looking at MIDI \textbf{\emph{NOTE}} effects here.
   There's also a much-overlooked MIDI device called ``Expression
   Control'' which allows you to map incoming MIDI data (like velocity or
-  pitch bend) to almost any parameter in Live, including controls
-  controls in the Operator instrument just for illustration.
+  pitch bend) to almost any parameter in Live, including controls in the
+  Operator instrument just for illustration.
 \end{enumerate}
 
 \includegraphics{images/Expression_control.png}
@@ -1790,7 +1819,7 @@ instrument.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{8}
+\setcounter{enumi}{9}
 \tightlist
 \item
   The basic concept in this recipe - and one that I use frequently - is
@@ -1803,25 +1832,17 @@ instrument.
   add variety and interest.
 \end{enumerate}
 
-Because I'm using lots of MIDI ``Note Echo'' effects here, the
-generating input needs to relatively simple - here just a single MIDI
-note that lasts one bar. If the generating MIDI clip was more busy then
-I'm sure this would descend into a mess fairly quickly. But the
-principle extends to other kinds of inputs if you pick and choose the
-MIDI effects that you apply to it.
-
-The benefit of this approach is that because MIDI effects are altering
-the inputs, all of the MIDI tracks generated are related to each other
-and cohesive in their sound, without being THE SAME. This is a key
-attribute, because we can then use these MIDI tracks across different
-instruments with different timbres.
+It \textbf{\emph{might}} be better here to put the MIDI Effects from the
+Operator track onto the MIDI Generator track. This would then separate
+MIDI generation, effect and transform processes from the instrument and
+sound-design aspects.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{9}
+\setcounter{enumi}{10}
 \tightlist
 \item
-  Press play. Sit back and relax.
+  Press play. Listen to what you hear, and refine settings if necessary.
 \end{enumerate}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
@@ -1844,10 +1865,10 @@ to ``map'' that automation to device parameters. This will then automate
 changes on those device parameters without you needing to tweak the
 values using a mouse or controller knob.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Modulation keeps sounds interesting. In
-\hyperref[Chapter-009-Process-Balance_unexpected_and_predictable]{Process
+\hyperref[Chapter-008-Process-Balance_unexpected_and_predictable]{Process
 - Balancing the unexpected and the predictable} we discuss how
 repetition balances randomness. This also applies to the sounds you use
 in your track. Modulation of synth sounds through LFOs and other means
@@ -1865,10 +1886,10 @@ periodic but which ``wander''.
 
 A key strength of Ableton's modulation devices is their flexibility: you
 can map a modulator to almost any parameter you can click with a mouse,
-even the master tempo. You can assign the parameter that is being
-modulated simply by click on the ``Map'' button in the devices and then
-click on a knob, switch or fader in Live. Modulation also allows you to
-have ``hands off'' performance of generative music by automating volume
+even the tempo. You can assign the parameter that is being modulated
+simply by click on the ``Map'' button in the devices and then click on a
+knob, switch or fader in Live. Modulation also allows you to have
+``hands off'' performance of generative music by automating volume
 fades, if required.
 
 \end{tcolorbox}
@@ -1884,15 +1905,15 @@ The beauty of this is that you map the modulation to \textbf{\emph{the
 next thing you click}}. This applies to any knob, fader, slider, and
 even third party plugins.
 
-In the case of third party plugins you can often click on the ``Down
-arrow'' beside the plugin on/off button to expand the parameters that
-can be automated.
+In the case of third party effects and devices you can often click on
+the ``Down arrow'' beside the device on/off button to expand the
+parameters that can be automated.
 
 \includegraphics{images/Labs.png}
 
 If no parameters appear, you'll likely see a ``Configure'' button in the
 device's title bar instead. When you click on this button and then open
-the plugin, whatever you click in the UI interface for the device or
+the device, whatever you click in the UI interface for the device or
 instrument will show up as a slider in the container interface (see the
 images below showing the Zebralette instrument as an example).
 
@@ -1921,9 +1942,9 @@ used in synthesisers. In Ableton Live 11 this is presented as a separate
 for Live effect called ``LFO''}). Because it is an audio effect it has
 to come \textbf{\emph{after}} instruments and effects. There is another
 Max for Live MIDI effect called LFO MIDI if you need it to come before
-instruments. LFOs are a key element of a modular synth rig and can be
-used to modulate pretty much anything. The LFO in Ableton Live can be
-used in pretty much the same way.
+instruments or audio effects. LFOs are a key element of a modular synth
+rig and can be used to modulate pretty much anything. The LFO in Ableton
+Live can be used in pretty much the same way.
 
 The Ableton LFO effect is a really neat tool and illustrates some
 features that we'll see again and again in other modulators in this
@@ -1977,8 +1998,8 @@ standard LFO on its own:
   This may still be ``not quite smooth enough''.
 \end{enumerate}
 
-We'll see in \href{032-Tools-Live12_Modulation.qmd}{Tools - Live 12
-Modulation} that the LFO in Live version 12 has some additional LFO
+We'll see in \hyperref[Chapter-032-Tools-Live12_Modulation]{Tools - Live
+12 Modulation} that the LFO in Live version 12 has some additional LFO
 patterns and settings which get around the issue of cyclical modulation
 patterns.
 
@@ -2001,13 +2022,13 @@ and modulates the third LFO Rate parameter.
 
 The
 \href{https://www.ableton.com/en/live-manual/11/max-for-live-devices/\#envelope-midi}{Envelope
-MIDI device} an ADSR device (Attack, Decay, Sustain, Release) that you
-can use to control any Live parameter. Any time the device receives a
-MIDI note, the envelope is triggered. This envelope can operate free of
-the tempo, with attack, decay, sustain and release in milliseconds, or
-it can be synced to the tempo. The envelope can also loop if required.
-The attack, decay and release rates can be linear (when set to 0\%) or
-curved.
+MIDI device} is an ADSR device (Attack, Decay, Sustain, Release) that
+you can use to control any Live parameter. Any time the device receives
+a MIDI note, the envelope is triggered. This envelope can operate free
+of the tempo, with attack, decay, sustain and release in milliseconds,
+or it can be synced to the tempo. The envelope can also loop if
+required. The attack, decay and release rates can be linear (when set to
+0\%) or curved.
 
 This allows modular synthesis like control over all kinds of parameters
 in Live where an incoming MIDI event can trigger changes in
@@ -2033,7 +2054,7 @@ signal immediately.
 Then, using the usual mapping process you can choose which parameter in
 Live you want to modulate using this signal. This device allows you to
 modulate anything using an input audio signal, whether that signal is
-heard in the Master audio track or not.
+heard in the Main audio track or not.
 
 The devices above (LFO, MIDI Envelope and Envelope Follower) offer
 modular synthesis like control over pretty much any parameter in Ableton
@@ -2042,7 +2063,8 @@ devices over the standard Ableton version - the level of control and the
 ability to control devices is really unparalleled. Don't forget that you
 can also get modulators to modulate each other\ldots{} So an envelope
 can modulate the amplitude or rate of an LFO and an LFO can then
-modulate the envelope of another input.
+modulate the envelope of another input. You can also get modulators to
+act on parameters of other tracks.
 
 \includegraphics{images/Envelope_follower.png}
 
@@ -2063,10 +2085,10 @@ according to musical divisions, or in Hz time.
 
 \section{MIDI Expression Control}\label{midi-expression-control}
 
-The Wavetable instrument in Ableton Live has a really useful Modulation
-Matrix where you can map incoming MIDI expression control attributes
-(Velocity, Modwheel, Pitchbend, etc.) to parameters of the synthesis
-engine. The
+The Wavetable instrument in Ableton Live has a really useful MIDI
+Modulation Matrix where you can map incoming MIDI expression control
+attributes (Velocity, Modwheel, Pitchbend, etc.) to parameters of the
+synthesis engine. The
 \href{https://www.ableton.com/en/live-manual/11/max-for-live-devices/\#expression-control}{Expression
 Control} device extends that to ANY instrument or effect in Ableton
 Live. As with LFO modulation mapping, you click on the ``Map'' button
@@ -2081,7 +2103,9 @@ either linear or logarithmic (curved). It also allows you to specify the
 ``Rise'' and ``Fall'' rate of change to help smooth out the change and
 prevent sudden changes in parameter values. There is also a curve shaper
 in the top right of the device where you can tailor your own curves for
-the MIDI input, like compression etc.
+the MIDI input so that the expression control acts more significantly at
+lower levels of input, or at higher levels of input (slow curves versus
+fast curves).
 
 The ``Random'' setting generates a new modulation value for the mapped
 parameter \textbf{\emph{with every incoming MIDI note}}. So rather than
@@ -2109,9 +2133,13 @@ supremely powerful - so you could change envelopes with each incoming
 MIDI note or use that note to change an LFO setting that modulates
 something else. Also, be aware that the Expression Control and Envelope
 Follower can be used \textbf{\emph{even if}} the MIDI or audio from the
-tracks are not sent to the Master audio output. OR EVEN NOT HEARD AT
-ALL. So you can use MIDI events to modulate items in sync with the
-master clock regardless of tempo.
+tracks are not sent to the Main audio output. OR EVEN NOT HEARD AT ALL.
+So you can use MIDI events to modulate items in sync with the clock
+regardless of tempo.
+
+Because modulation can be mapped across tracks, you could use ``dummy
+tracks'' and clips to ``listen'' for MIDI and control changes which then
+modulate parameters and values in a completely different track.
 
 \section{Strange Mod}\label{strange-mod}
 
@@ -2120,7 +2148,7 @@ For a long time
 Baston's paid Max for Live effect ``Strange Mod''} was my ``go to''
 modulation device because I wanted random but smooth modulation that
 wasn't cyclical. As we'll see in
-\hyperref[Chapter-032-Tools-Live12_Modulation.qmd]{Tools - Live 12
+\hyperref[Chapter-032-Tools-Live12_Modulation]{Tools - Live 12
 Modulation} Ableton Live 12 now has `Glider' and `Stray' settings for
 the stock LFO modulator device which offers that random but smooth
 modulation. Strange Mod still has an attraction (excuse the pun) because
@@ -2205,105 +2233,8 @@ from Novel Music} to learn about all possible features of this device.
 
 \bookmarksetup{startatroot}
 
-\chapter{Process - Tuning
-Parameters}\label{Chapter-008-Process-Tuning_Parameters}
-
-This is a key concept, so \textbf{\emph{DON'T SKIP THIS CHAPTER}}. It
-makes the difference between a random collection of notes and sounds
-that wobble about with very little coherence or musicality and something
-that's actually listenable and identifiable as music.
-
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
-
-As with the advice to balance unexpected and predictable, the advice
-here is to listen to the results of the generative processes and apply
-your musical ear whether you feel it passes the test of being pleasant
-to listen to for extended periods without any particular sound, pitch,
-volume or other modulated parameter catching your ear.
-
-\end{tcolorbox}
-
-\section{The Problem}\label{the-problem}
-
-We defined ``generative'' music in
-\href{Chapter-0000-Defintion-Generative.qmd}{What do we mean
-``Generative'' music?} . We defined it as ``music (that) should be able
-to go on indefinitely, with enough going on to make it interesting, but
-without anything particularly''sticking out'' to catch the listener's
-ear''. When we use random processes to generate notes, modulate
-parameters, change the timbre and qualities of sounds, there's a danger
-that this randomness will produce sounds that \textbf{\emph{do}} ``catch
-the listener's ear'', or more than that - \textbf{\emph{grate}} the
-listener's ear.
-
-\section{The Taste Test}\label{the-taste-test}
-
-So, how do we avoid this? Think like a chef. Chefs constantly taste and
-adjust the seasoning as they cook to ensure the final dish is perfectly
-balanced. Similarly here, I suggest that you listen at each stage and
-adjust the amount of randomness, the amount that modulation sources are
-changing parameters, and whether there's too much unexpected stuff going
-on, or whether the track is too static and doesn't change enough. While
-listening I find it best to try step away from the Ableton Live session,
-or minimise the Live screen so that you can concentrate on
-\emph{listening} and not on what's happening within the Live set. Some
-producers listen to their mixes from another room, or with the volume
-level low, to see if anything ``pops out'' in the mix. I like listening
-to my generative music while walking the dog. I make a mental note of
-anything that catches my ear - but you can also note things down
-physically in a book or note for later.
-
-\section{Waving, not droning}\label{waving-not-droning}
-
-Just as waves on the ocean can align to create a single, massive wave,
-multiple random processes can sometimes align to produce an unwelcome
-sonic event. And like the waves on the ocean it's sometimes difficult to
-tell when this is going to happen. Also like waves on the ocean there
-may be periods where there is a lot going on and the track sounds
-``busy'' as well as periods where there is less going on and the track
-sounds quiet and sparse. The trick is to try to adjust modulation
-settings so there aren't too many ``chaotic'' periods nor periods where
-the track is static.
-
-Consider changing the range that the modulation applies - making the
-modulation more subtle - or changing the period of the random process.
-If your LFOs are sine or triangle waves that have even number period
-(maximum effect every 2, 4 or 8 bars) then eventually all of these will
-reach their peak (or trough) together - after 8 bars - and this will
-keep happening every 8 bars. Instead if the LFO period is a (large
-enough) prime number then the peak or trough will take much longer to
-happen and may never repeat exactly the same. Small amounts of
-modulations and uneven (and to be honest longer) modulation periods will
-keep the movement happening in the music without it becoming
-predictable. You can always use a modulation source to change the period
-or amount of another modulation source.
-
-\section{\texorpdfstring{Be random, but not \textbf{\emph{too}}
-random}{Be random, but not too random}}\label{be-random-but-not-too-random}
-
-Constraining randomness can be done up front in modulation - you can
-change the upper and lower limits of the modulation - and you can apply
-constraints to MIDI notes via Scale quantisation, you can have sequences
-that evolve randomly and so over time transform themselves but in a way
-that isn't jarring. All of these are ways to keep the randomness in
-check. As with the Taste Test (described above) you should check in with
-what you're producing at each step to try to keep unexpected and
-predictable in balance. This should keep your tracks from being too much
-of one thing or the other.
-
-\section{Tune the parameters}\label{tune-the-parameters}
-
-The goal of all these steps is to ``tune'' your random processes,
-finding that sweet spot where everything works together to produce
-something you and a future listener might enjoy. As mentioned above, try
-to do this throughout the process rather than just at the end. That way
-you can balance as you go and achieve something that sounds good in its
-entirety rather than a combination or collage of different ideas.
-
-\bookmarksetup{startatroot}
-
 \chapter{Process - Balancing the unexpected and the
-predictable}\label{Chapter-009-Process-Balance_unexpected_and_predictable}
+predictable}\label{Chapter-008-Process-Balance_unexpected_and_predictable}
 
 In generative music, we're likely to be using some probability to govern
 when to trigger certain events, to select clips, to change some aspect
@@ -2320,7 +2251,7 @@ and understand it. But if you play that same sequence more than twice
 then the listener has a chance to ``tune in'' to what's going on and
 contextualise it.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Balance things that change, which are unexpected to the listener, with
 things that stay the same and are predictable for the listener.
@@ -2349,9 +2280,7 @@ listener time to acclimatise to a particular chord before it changes and
 gradual, evolving change means that the listener can pick out which part
 has changed and then settle in to that change, before the next change
 happens. What we have seen in this first recipe is how to evolve chords
-and notes. We could also change other attributes of the sounds or
-rhythms and in other recipes we'll look into modulation - changing
-timbre and texture of the sound - and changing rhythms.
+and notes.
 
 \section{Taming randomness - gardening the random
 processes}\label{taming-randomness---gardening-the-random-processes}
@@ -2438,13 +2367,6 @@ evolution. This would break the strict ``ostinato repeating all the way
 through'' but may allow you to balance predictability with the
 unexpected.
 
-In \href{Chapter-007-Tools-Modulators.qmd}{Tools - Modulators} we looked
-at tools and techniques for changing parameters of Ableton and third
-party devices. The act of changing something non-destructively i.e.~not
-permanently is called modulation. Modulation tools can be used to
-gradually change timbres, relative volumes and many other sound
-attributes.
-
 \section{\texorpdfstring{\textbf{\emph{YOU}} define the parts, the
 computer picks the
 order}{YOU define the parts, the computer picks the order}}\label{you-define-the-parts-the-computer-picks-the-order}
@@ -2467,7 +2389,7 @@ improvisation then it might also become the ``unpredictable bandmate''
 for you to improvise against, with your performance adding the ``human
 touch'' and balancing and contextualising what is played by the
 generative system. See
-\href{Chapter-023-Process-Your_Unpredictable_Bandmate.qmd}{Process -
+\hyperref[Chapter-023-Process-Your_Unpredictable_Bandmate]{Process -
 Your Unpredictable Bandmate} for more on that idea. So if a motif is
 played, maybe you echo that motif. Or you could play a chord sequence to
 drive movement against a random backdrop. Or you could play rhythmic or
@@ -2502,6 +2424,105 @@ bass comes in.
 All of these ideas talk about anchoring perception and then playing with
 that through alternative contexts. You can choose whether that happens
 subtly or overtly.
+
+\bookmarksetup{startatroot}
+
+\chapter{Process - Tuning
+Parameters}\label{Chapter-009-Process-Tuning_Parameters}
+
+This is a key concept, so \textbf{\emph{DON'T SKIP THIS CHAPTER}}. It
+makes the difference between a random collection of notes and sounds
+that wobble about with very little coherence or musicality and something
+that's actually listenable and identifiable as music.
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
+
+As with the advice to
+\hyperref[Chapter-008-Process-Balance_unexpected_and_predictable]{balance
+unexpected and predictable}, the advice here is to listen to the results
+of the generative processes and apply your musical ear whether you feel
+it passes the test of being pleasant to listen to for extended periods
+without any particular sound, pitch, volume or other modulated parameter
+catching your ear.
+
+\end{tcolorbox}
+
+\section{The Problem}\label{the-problem}
+
+We defined ``generative'' music in
+\hyperref[0000-Defintion-Generative]{What do we mean ``Generative''
+music?} . We defined it as ``music (that) should be able to go on
+indefinitely, with enough going on to make it interesting, but without
+anything particularly''sticking out'' to catch the listener's ear''.
+When we use random processes to generate notes, modulate parameters,
+change the timbre and qualities of sounds, there's a danger that this
+randomness will produce sounds that \textbf{\emph{do}} ``catch the
+listener's ear'', or worse than that - \textbf{\emph{grate}} the
+listener's ear.
+
+\section{The Taste Test}\label{the-taste-test}
+
+So, how do we avoid this? Think like a chef. Chefs constantly taste and
+adjust the seasoning as they cook to ensure the final dish is perfectly
+balanced. Similarly here, I suggest that you listen at each stage and
+adjust the amount of randomness, the amount that modulation sources are
+changing parameters, and whether there's too much unexpected stuff going
+on, or whether the track is too static and doesn't change enough. While
+listening I find it best to try step away from the Ableton Live session,
+or minimise the Live screen so that you can concentrate on
+\emph{listening} and not on what's happening within the Live set. Some
+producers listen to their mixes from another room, or with the volume
+level low, to see if anything ``pops out'' in the mix. I like listening
+to my generative music while walking the dog. I make a mental note of
+anything that catches my ear - but you can also note things down
+physically in a book or note for later.
+
+\section{Waving, not droning}\label{waving-not-droning}
+
+Just as waves on the ocean can align to create a single, massive wave,
+multiple random processes can sometimes align to produce an unwelcome
+sonic event. And like the waves on the ocean it's sometimes difficult to
+tell when this is going to happen. Also like waves on the ocean there
+may be periods where there is a lot going on and the track sounds
+``busy'' as well as periods where there is less going on and the track
+sounds quiet and sparse. The trick is to try to adjust modulation
+settings so there aren't too many ``chaotic'' periods nor periods where
+the track is static.
+
+Consider changing the range that the modulation applies - making the
+modulation more subtle - or changing the period of the random process.
+If your LFOs are sine or triangle waves that have even number period
+(maximum effect every 2, 4 or 8 bars) then eventually all of these will
+reach their peak (or trough) together - after 8 bars - and this will
+keep happening every 8 bars. Instead if the LFO period is a (large
+enough) prime number then the peak or trough will take much longer to
+happen and may never repeat exactly the same. Small amounts of
+modulations and uneven (and to be honest longer) modulation periods will
+keep the movement happening in the music without it becoming
+predictable. You can always use a modulation source to change the period
+or amount of another modulation source.
+
+\section{\texorpdfstring{Be random, but not \textbf{\emph{too}}
+random}{Be random, but not too random}}\label{be-random-but-not-too-random}
+
+Constraining randomness can be done up front in modulation - you can
+change the upper and lower limits of the modulation - and you can apply
+constraints to MIDI notes via Scale quantisation, you can have sequences
+that evolve randomly and so over time transform themselves but in a way
+that isn't jarring. All of these are ways to keep the randomness in
+check. As with the Taste Test (described above) you should check in with
+what you're producing at each step to try to keep unexpected and
+predictable in balance. This should keep your tracks from being too much
+of one thing or the other.
+
+\section{Tune the parameters}\label{tune-the-parameters}
+
+The goal of all these steps is to ``tune'' your random processes,
+finding that sweet spot where everything works together to produce
+something you and a future listener might enjoy. As mentioned above, try
+to do this throughout the process rather than just at the end. That way
+you can balance as you go and achieve something that sounds good in its
+entirety rather than a combination or collage of different ideas.
 
 \bookmarksetup{startatroot}
 
@@ -2632,7 +2653,7 @@ predictable}\label{Chapter-010-Recipe-Balance_random_and_predictable}
 \setcounter{enumi}{8}
 \tightlist
 \item
-  Press play. Sit back and relax.
+  Press play. Listen to what you hear, and refine settings if necessary.
 \end{enumerate}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
@@ -2654,7 +2675,7 @@ of this system to a final, rendered track? That involves capturing the
 generated MIDI and audio. This chapter will discuss how you might go
 about capturing the processes so that you can later release the track.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 I find it useful to separate MIDI tracks that \emph{generate} and
 \emph{transform} MIDI information from instrument tracks that receive
@@ -2716,8 +2737,8 @@ experience}\label{how-to-set-up-live-sets---my-experience}
 I like to have separate tracks for MIDI generators. These are the
 ``starting point'' of a process. They will be generating MIDI notes
 through random processes, patterns or
-\hyperref[Chapter-003-Process-Follow_Actions]{Follow Actions} . I like
-to keep the generators separate from the transformation MIDI tracks,
+\hyperref[Chapter-003-Process-Follow_Actions]{Follow Actions}. I like to
+keep the generators separate from the transformation MIDI tracks,
 because you may want to send the \textbf{\emph{same}} generated MIDI
 notes into several transformation chains. This will lead to a more
 coherent result since different transformation chains ingest a
@@ -2751,10 +2772,7 @@ If you record directly onto a track that contains MIDI effects, you will
 only capture the pre-effect MIDI, not the \textbf{\emph{transformed}}
 output. This may not be a problem \emph{per se} but when you render out
 the final audio, you are at the mercy of Live's internal random
-processes and you'll be crossing your fingers that either the result is
-\textbf{\emph{the same}} as you heard previously (if Live replays the
-randomness in the same way each time) or potentially different (perhaps
-if you reopen the set in a later version of Live).
+processes.
 
 If you capture the generated \textbf{\emph{and}} transformed MIDI in
 separate tracks, then you can use these tracks as the input for tracks
@@ -2811,12 +2829,6 @@ else is going on or not. Perhaps there's enough going on when the
 ``thin'' chord stack happens that it's essentially hidden in the mix. If
 I really don't like the result, I can re-render the audio.
 
-If you want to be \textbf{\emph{sure}} what chords are used, then you
-should capture the output of the chord and probability process(es) by
-capturing the output of the MIDI processes, as discussed above and then
-use this captured MIDI track as the input to downstream processes like
-the arpeggiator, pitch-shift and velocity devices.
-
 \subsection{Group tracks to tidy your Live
 set}\label{group-tracks-to-tidy-your-live-set}
 
@@ -2849,12 +2861,10 @@ effects like compressor, EQ, frequency shaping, gain etc. This would
 allow you to tweak the creative effects and render down to audio at each
 stage - instrument output, then instrument plus effects.
 
-A disadvantage of having effects on the Group level is that you cannot
-render the Group output through ``Freeze and Flatten''. Committing the
-audio by rendering allows you to free up processor power, so sometimes
-it's beneficial to do this rendering process as you go. The safety net
-is to retain the original tracks with devices switched off, parts and
-audio output muted in case you need to return and tweak.
+Committing the audio by rendering allows you to free up processor power,
+so sometimes it's beneficial to do this rendering process as you go. The
+safety net is to retain the original tracks with devices switched off,
+parts and audio output muted in case you need to return and tweak.
 
 In the screenshot below you'll see that on the Group for ``Piano'' I've
 got a compressor, EQ, Soothe dynamic EQ and Utility effects (for
@@ -2898,7 +2908,7 @@ also need to generate those sequences in the first place. Ableton Live
 Suite and Max for Live effects and devices offer a few options to
 generate sequences of notes.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 You can play or program in sequences to be used as the basis for
 generative music, and we did exactly this for
@@ -2908,7 +2918,7 @@ want to use a dedicated MIDI generator like the ones discussed below.
 All of these devices will create MIDI note sequences - all of them can
 use random probability to generate note sequences that constantly change
 or evolve. As we have discussed in the section
-\hyperref[Chapter-009-Process-Balance_unexpected_and_predictable]{Process
+\hyperref[Chapter-008-Process-Balance_unexpected_and_predictable]{Process
 - Balancing the unexpected and the predictable} too much randomness can
 be difficult for the listener to engage with. Fortunately, most of these
 effects allow you to tailor the amount of randomness or to slowly
@@ -3135,15 +3145,13 @@ dial completely to the right to ``Lock'' then we will lock in a
 repeating sequence of given length - here 8 notes. As we move the dial
 gradually back to the ``Random'' setting then we introduce a chance of
 random changes to the pattern, with the chance of randomness depending
-how close we are to the ``Random'' setting. What this means in practice
-is that we can Lock a sequence, gradually turn the dial back to allow
-changes to that sequence, then Lock again to ``capture'' that change. If
-we turn the dial all the way to the left then we also Lock the sequence,
-but the repeating sequence will be twice as long i.e.~it will take twice
-as long to come back to the start of the sequence. Because what is
-generated is a random sequence, we might want to apply a Scale MIDI
-effect to this to quantise the note outputs and conform them to a
-particular scale. We may also wish to use
+how close we are to the ``Random'' setting. If we turn the dial all the
+way to the left then we also Lock the sequence, but the repeating
+sequence will be twice as long i.e.~it will take twice as long to come
+back to the start of the sequence. Because what is generated is a random
+sequence, we might want to apply a Scale MIDI effect to this to quantise
+the note outputs and conform them to a particular scale. We may also
+wish to use
 \href{https://maxforlive.com/library/device/6982/mm4l-probability-gate}{MightM4L
 (MML) Probability Gate} device to ``thin out'' the stream of notes from
 the Turing Machine.
@@ -3175,23 +3183,25 @@ MIDI sequencer based on the principle of quantising base LFO waveforms
 through sample and hold. The base LFO waveform (in the screenshot below
 it's a Triangle wave) runs at a specified rate, either Hz or Synced to
 Ableton's clock. Pitch values are sampled at a separate rate (here 16th
-notes) to generate ascending and descending note pitches. The rate of
-sample and the rate of the base LFO dictate how closely the generated
-pitches follow the base LFO but can sometimes result in sequences that
-follow arpeggio like patterns, but not quite (due to slight differences
-between the base LFO and the sample rate). Note that a second LFO is
-available to add into the base LFO as a frequency modulation (FM) and
-you can choose the frequency, shape and amount to be added to the base
-LFO. This can add more random variability in the pitch sequence
-generated. Note that the FM LFO is added \textbf{\emph{before}} the blue
-``sampling'' process. So the Sine LFO here is adding a little positive
-and negative to the base triangle LFO before sampling, resulting in
-pitch sequences that change subtly each time. Similar processes can be
-used to generate Velocity, Duration and Gate information. Gate in
-particular allows you to define the rate at which notes are generated,
-independent of their pitch. What can result is slight changes in the
-rhythms of the generated notes, right up to their being clusters of
-notes, rather than a steady stream.
+notes) to generate ascending and descending note pitches. In the
+screenshot below notice that there is a coloured bar above the piano
+keyboard defining the \textbf{range} of notes in use. The rate of sample
+and the rate of the base LFO dictate how closely the generated pitches
+follow the base LFO but can sometimes result in sequences that follow
+arpeggio like patterns, but not quite (due to slight differences between
+the base LFO and the sample rate). Note that a second LFO is available
+to add into the base LFO as a frequency modulation (FM) and you can
+choose the frequency, shape and amount to be added to the base LFO. This
+can add more random variability in the pitch sequence generated. Note
+that the FM LFO is added \textbf{\emph{before}} the blue ``sampling''
+process. So the Sine LFO here is adding a little positive and negative
+to the base triangle LFO before sampling, resulting in pitch sequences
+that change subtly each time. Similar processes can be used to generate
+Velocity, Duration and Gate information. Gate in particular allows you
+to define the rate at which notes are generated, independent of their
+pitch. What can result is slight changes in the rhythms of the generated
+notes, right up to their being clusters of notes, rather than a steady
+stream.
 
 This technique is sometimes employed in modular synths if a more
 traditional sequencer is not being used, as all you need to drive it is
@@ -3213,12 +3223,12 @@ playing) as well as being able to map two different parameters in Live.
 The ``A'' column defines which parameters experience variation on the
 next ``Evolve!'' trigger (in the screenshot below this is set to
 automatically evolve all parameters once the clip has played through 3
-times). If the ``I'' column is checked then the last evolution acts as
-the basis for the next variation change. Note that variation amount can
-be specified via ``Ammt'' and this is separate to ``Chance'' of the
-variation happening. Chance is the probability of the value being varied
-/ evolved \textbf{\emph{for each note / step.}} This opens up a large
-number of possibilities to vary input sequences but to balance the
+times). If the ``I'' (Inherit) column is checked then the last evolution
+acts as the basis for the next variation change. Note that variation
+amount can be specified via ``Amnt'' and this is separate to ``Chance''
+of the variation happening. Chance is the probability of the value being
+varied / evolved \textbf{\emph{for each note / step.}} This opens up a
+large number of possibilities to vary input sequences but to balance the
 unexpected evolution with a repeat of the evolved pattern before the
 next change is made i.e.~let the listener get used to each chance -
 being predictable, if only for a finite period. Variation can be
@@ -3247,11 +3257,11 @@ videos prepared by Novel Music to describe their functionality}.
 In the screenshot below I'm using the ``Sweet 16'' clock module from
 SEEDS which provides four different clocks which can be used by
 Polymath. Each clock proceeds at a different pace, all driven by Ableton
-Live's master clock i.e.~Ableton provides the ``1/16th'' pulse that
-drives the clocks. Each clock is allocated a label - here ``W'', ``X'',
-``Y'', and ``Z''. This helps to identify the clock drivers in other
-devices. The clocks can be used individually, but they can also be
-combined to move the sequencer forward in interesting ways.
+Live's clock i.e.~Ableton provides the ``1/16th'' pulse that drives the
+clocks. Each clock is allocated a label - here ``W'', ``X'', ``Y'', and
+``Z''. This helps to identify the clock drivers in other devices. The
+clocks can be used individually, but they can also be combined to move
+the sequencer forward in interesting ways.
 
 Polymath is a four track sequencer. Each track specifies notes, octaves,
 velocity, duration, strum, ratchet, bend (pitch bend) and mod. The
@@ -3270,11 +3280,6 @@ scales for each track (and in fact across ALL tracks) and you can set
 two different scales then use a slider to begin to introduce notes from
 Scale 2 in the sequence even though the majority are from Scale 1. When
 the slider is all the way to the right, then Scale 2 is 100\% in effect.
-
-One of the great strengths of Polymath and the SEEDS pack is that many
-of the elements are defined then used across the devices. So the Clocks
-we've discussed above can be used across devices individually or
-combined to give interesting rhythmic patterns.
 
 SEEDS also includes a very useful concept and MIDI effect that can send
 output to and from various devices and clocks. The ``Hub'' effect
@@ -3351,24 +3356,30 @@ list} and review what he's presenting.
 \chapter{Recipe - Using MIDI
 generators}\label{Chapter-013-Recipe-MIDI_generators}
 
-In this recipe, we'll use a MIDI generator---in this case, Euclidean
-Sequencer Pro---to create the initial MIDI pattern, which we'll then
-feed into other tracks for further processing. We'll be using some
-techniques from \hyperref[Chapter-004-Tools-MIDI_tools]{Tools - MIDI
-tools} and also \hyperref[Chapter-005-Process-Routing]{Process - Routing
-MIDI and Audio} .
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
+
+In this recipe, we'll use a MIDI generator---in this case,
+\href{https://maxforlive.com/library/device/7608/euclidean-sequencer-pro}{Euclidean
+Sequencer Pro} to create the initial MIDI pattern, which we'll then feed
+into other tracks for further processing. We'll be using some techniques
+from \hyperref[Chapter-004-Tools-MIDI_tools]{Tools - MIDI tools} and
+also \hyperref[Chapter-005-Process-Routing]{Process - Routing MIDI and
+Audio}
+
+\end{tcolorbox}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Place the Euclidean Sequencer Pro generator in a track. Euclidean
-  Sequencer Pro is a Max for Live device which can be used to generate
-  polyrhythmic sequences of notes, and is typically used for rhythmic
-  patterns and because of this, by default, it only outputs four
-  different notes. Since we're aiming for more melodic results, we'll
-  add Random and Scale devices after it to generate a wider range of
-  pitches.
+  Place the Euclidean Sequencer Pro generator in a track. As discussed
+  in \hyperref[Chapter-012-Tools-MIDI_Generators]{Tools - MIDI
+  Generators} Euclidean Sequencer Pro is a Max for Live device which can
+  be used to generate polyrhythmic sequences of notes, and is typically
+  used for rhythmic patterns and because of this, by default, it only
+  outputs four different notes. Since we're aiming for more melodic
+  results, we'll add Random and Scale devices after it to generate a
+  wider range of pitches.
 \end{enumerate}
 
 Feel free to set up the Euclidean Sequencer Pro device to generate a
@@ -3396,9 +3407,10 @@ of the sequences to add additional unexpectedness if that's helpful.
 
 \includegraphics{images/Recipe4_Routing.png}
 
-First, let's take the ``raw'' output from the Euclidean Sequencer and
-route it into a MIDI instrument track using a plucky Operator sound -
-could be a simple sine wave with no sustain and fairly quick decay.
+First, let's take the output from the Euclidean Sequencer in Track 1
+(our MIDI Generator) and route it into a MIDI instrument track using a
+plucky Operator sound - could be a simple sine wave with no sustain and
+fairly quick decay.
 
 \includegraphics{images/Recipe4_Operator.png}
 
@@ -3410,11 +3422,13 @@ could be a simple sine wave with no sustain and fairly quick decay.
   Create another MIDI instrument track where we're going to take the
   same Euclidean Sequencer Pro MIDI information, but now use the MIDI
   Note Echo device to delay the input by an amount (I'm using 16 16ths =
-  1 bar). The key thing is to MUTE the original MIDI information. Also
-  add a Note Length MIDI device to turn the incoming MIDI notes into
-  chords. We can then use these delayed and ``smeared'' MIDI chords with
-  a pad sound. I'm using Wavetable, but you can choose a pad sound from
-  any virtual instrument.
+  1 bar). Here we are Muting the original MIDI information. Add a Note
+  Length MIDI device to turn the incoming MIDI notes into chords. Muting
+  the incoming MIDI in the Note Echo effect means that we only retain
+  the delayed notes, which avoids a build up of notes and clashes with
+  the incoming MIDI and the delayed MIDI information. We can then use
+  these delayed and ``smeared'' MIDI chords with a pad sound. I'm using
+  Wavetable, but you can choose any pad sound.
 \end{enumerate}
 
 \includegraphics{images/Recipe4_Pad.png}
@@ -3426,17 +3440,16 @@ could be a simple sine wave with no sustain and fairly quick decay.
 \item
   Next, create another instrument track and set its MIDI input to the
   ``pad'' track we just created. Be sure to set the input to ``Post FX''
-  so that it will apply the MIDI device effects to transform the MIDI
-  \textbf{\emph{before}} routing it into the new track. In this track,
-  we'll add an Arpeggiator MIDI device. We can use a bell like tone for
-  this track. I'm going to use Operator again, with some modulation
-  applied to the second modulating oscillator (which will then vary the
-  tone of the main Sine wave carrier oscillator). I'm also going to
-  apply modulation to the rate of the Arpeggiator device. You can try
-  out various settings here, including using an unsynced or ``Free''
-  running Arpeggiator rate. You may need to tailor the amount or range
-  of modulation to get Arpeggiator rates that don't swing too far
-  between VERY quick and VERY slow.
+  so that we \textbf{\emph{add}} and transform the MIDI output in our
+  new track. In this track, we'll add an Arpeggiator MIDI device. We can
+  use a bell like tone for this track. I'm going to use Operator again,
+  with some modulation applied to the second modulating oscillator
+  (which will then vary the tone of the main Sine wave carrier
+  oscillator). I'm also going to apply modulation to the rate of the
+  Arpeggiator device. You can try out various settings here, including
+  using an unsynced or ``Free'' running Arpeggiator rate. You may need
+  to tailor the amount or range of modulation to get Arpeggiator rates
+  that don't swing too far between VERY quick and VERY slow.
 \end{enumerate}
 
 \includegraphics{images/Recipe4_Arp.png}
@@ -3457,7 +3470,7 @@ could be a simple sine wave with no sustain and fairly quick decay.
   generating tools provide the raw stream of MIDI notes, but the effects
   here are used to provide the texture around that sequence.
 \item
-  Press play. Sit back and relax.
+  Press play. Listen to what you hear, and refine settings if necessary.
 \end{enumerate}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
@@ -3477,7 +3490,7 @@ as soon as you press ``Play.'' That's both a good thing and a bad thing
 used to power a drone set very effectively though - just route them
 through additional effects and/or resonators to create some rich tones.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 MIDI generators (as discussed in
 \hyperref[Chapter-012-Tools-MIDI_Generators]{Tools - MIDI Generators}
@@ -3489,7 +3502,7 @@ input or in fact \textbf{\emph{any}} input. We just need to think a
 little creatively and use a generous number of Audio effects to process
 the sound into the shape we would like. These sound generators are more
 likely to produce drones and textures than melodies, so may augment some
-of the tools previously discussed.
+of the tools and techniques previously discussed.
 
 \end{tcolorbox}
 
@@ -3529,7 +3542,7 @@ short burst of pitched information.
 
 \section{Echo Noise and resonance.}\label{echo-noise-and-resonance.}
 
-The Echo device has a Noise generator in the Character tab. This
+The Echo effect has a Noise generator in the Character tab. This
 generator was suggested by
 \href{https://guerrillabiscuits.bandcamp.com}{Guerilla Biscuits} (Dave
 Shooter). With very short Echo times (approximately 30 miliseconds) and
@@ -3659,10 +3672,9 @@ effects}\label{Chapter-015-Tools-Audio_Effects}
 Creative use of audio effects can accentuate harmonics and do
 interesting things with those; provide some grit, noise or warble; take
 a rather plain sound and use modulation and effects to twist it until it
-forms something much more interesting and evolving. All this BEFORE you
-even think about drowning it in reverb and delay.
+forms something much more interesting and evolving.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Audio effects and automation together can take sounds and keep them
 interesting and evolving in ways that go beyond ``static'' application
@@ -3679,13 +3691,13 @@ keep the sounds interesting.
 Ableton Live Suite comes with a HUGE range of audio effects and if you
 add in Max for Live effects there are almost too many audio-manglers out
 there to list or talk about in this chapter. While there are a few
-third-party audio effect plugins that are worth a mention, and which I
-use a LOT in my productions, you can get a LONG way with just the stock
-Ableton Live Suite audio effects. The benefit of third party plugins is
+third-party audio effects that are worth a mention, and which I use a
+LOT in my productions, you can get a LONG way with just the stock
+Ableton Live Suite audio effects. The benefit of third party effects is
 where they offer something that the Live effects cannot. I'll talk about
-some of these below. But let's start looking at a few key plugins which
-are likely to be useful for generative music (and in particular for
-generative, ambient music which I create).
+some of these below. We're going to focus here on creative effects that
+I use frequently in the music I make (in the ambient electronic genre)
+rather than mixing and mastering effects.
 
 \section{Hybrid Reverb}\label{hybrid-reverb}
 
@@ -3697,8 +3709,8 @@ allows you to dial up reverb spaces from a wide variety of sources, both
 real and imagined; and the digital reverb section in the Algorithm
 section applies additional digital reverb algorithms and textures. You
 can blend between these or apply them in parallel and series. This in
-itself offers up a huge variety of sounds. This video will help explore
-what can be done with the Hybrid Reverb effect
+itself offers up a huge variety of sounds. This video from Ableton will
+help explore what can be done with the Hybrid Reverb effect
 \url{https://www.youtube.com/watch?v=yLBIOiM97Vs}.
 
 In the Convolution IR section, you'll also find options for textural
@@ -3726,11 +3738,10 @@ space itself.
 
 Here's a third-party effect I couldn't do without.
 \href{https://valhalladsp.com/shop/reverb/valhalla-supermassive/}{Valhalla
-Supermassive} is a free audio effect plugin from Valhalla DSP. It's a
-staple of ambient and drone producers because a) it's free and b) it has
-some MASSIVE reverb algorithms (duh!). Suffice to say it does exactly
-what it says on the tin - massive reverbs. But what Valhalla have done
-rather well is to combine algorithms and delay lines so that some of its
+Supermassive} is a free audio effect from Valhalla DSP. It's a staple of
+ambient and drone producers because a) it's free and b) it has some
+MASSIVE reverb algorithms (duh!). But what Valhalla have done rather
+well is to combine algorithms and delay lines so that some of its
 algorithms behave more like delays, while some act more like reverbs.
 They also have algorithms that combine both - early delay turning into
 massive reverb. Some have short attack, some much longer. One of my
@@ -3739,7 +3750,7 @@ ANYTHING into a massive drone. Combine this with Paul Stretch, as
 discussed in \hyperref[Chapter-016-Tools-PaulStretch]{Tools - Extreme
 audio stretching with PaulStretch} and you'll have instant drones.
 
-To be honest, all of Valhalla DSP's plugins are excellent and reasonably
+To be honest, all of Valhalla DSP's effects are excellent and reasonably
 priced. I particularly like the Shimmer device to add shimmer, stereo
 width and pitch shift reverb to sounds. Their Delay plugin provides a
 wide variety of delay types, including tape delay (complete with wobble
@@ -3763,17 +3774,18 @@ tails of echo. You can learn more about the Echo effect here:
 \url{https://www.youtube.com/watch?v=4LxhIE169x4}.
 
 As a Lazy Producer, I prefer to let random processes tweak the Echo
-settings for me. Minor addition for I have built an audio effect rack
-with a trio of LFOs working on each other and then changing the feedback
-amount, lower and upper ranges of the EQ so that these wobble about
-randomly. Using an instance of Dillon Bastan's Strange Mod modulator
-will achieve similar effect as discussed in
-\hyperref[Chapter-007-Tools-Modulators]{Tools - Modulators} While the
-timing of the Echo is fixed, we have other parameters that mean that the
-sound is constantly shifting in an unpredictable way. This will prevent
-the Echo effect from being too ``samey'' across the track and provide
-some interesting moments. It's a bit like having a pair of ``robot
-hands'' that tweak the Echo settings.
+settings for me. I have built an audio effect rack with a trio of LFOs
+working on each other and then changing the feedback amount, lower and
+upper ranges of the EQ so that these wobble about randomly. Using an
+instance of Dillon Bastan's Strange Mod modulator will achieve similar
+effect as discussed in \hyperref[Chapter-007-Tools-Modulators]{Tools -
+Modulators}.
+
+While the timing of the Echo is fixed, we have other parameters that
+mean that the sound is constantly shifting in an unpredictable way. This
+will prevent the Echo effect from being too ``samey'' across the track
+and provide some interesting moments. It's a bit like having a pair of
+``robot hands'' that tweak the Echo settings.
 
 \includegraphics{images/LFO_Echo.png}
 
@@ -3835,6 +3847,21 @@ effects according to frequency (low to high) and loudness.
 
 \subsection{Ableton Spectral effects}\label{ableton-spectral-effects}
 
+\href{https://www.ableton.com/en/packs/creative-extensions/}{Spectral
+Blur} is from the Creative Extensions pack. It can act a little like the
+Freeze option from Spectral Time (see below) but to be honest, I prefer
+the Michael Norris Spectral Blurring and Spectral Averaging effects
+discussed below, and Valhalla DSP's Supermassive, as discussed above.
+
+\href{https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/\#spectral-resonator}{Spectral
+Resonator} is a resonator which focuses on different parts of the
+frequency spectrum, so you can tailor the resonance quite precisely. You
+can have a static tone for the resonance or pass in a MIDI part to
+change the resonance around a MIDI part. The different resonance
+algorithms - Chorus, Wander and Granular all have different sounds and
+it's worth playing with these to see which ones fit what you're trying
+to achieve.
+
 \href{https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/\#spectral-time}{Spectral
 Time} which can be either apply a freezing algorithm to catch and hold
 incoming audio, or delay which applies delay and frequency shifting. The
@@ -3846,15 +3873,6 @@ long fade in and fade out times allows you to catch and smear incoming
 audio which may be useful as part of a performance to join between two
 tracks or two sections of a mix.
 
-\href{https://www.ableton.com/en/live-manual/11/live-audio-effect-reference/\#spectral-resonator}{Spectral
-Resonator} is a resonator which focuses on different parts of the
-frequency spectrum, so you can tailor the resonance quite precisely. You
-can have a static tone for the resonance or pass in a MIDI part to
-change the resonance around a MIDI part. The different resonance
-algorithms - Chorus, Wander and Granular all have different sounds and
-it's worth playing with these to see which ones fit what you're trying
-to achieve.
-
 \includegraphics{images/Spectral_Devices.png}
 
 Rishabh Rajan has useful YouTube videos explaining the Spectral Time
@@ -3864,8 +3882,8 @@ Resonator (\url{https://www.youtube.com/watch?v=VAebi_brjEs}) effects.
 \subsection{Michael Norris Soundmagic Spectral
 collection}\label{michael-norris-soundmagic-spectral-collection}
 
-Michael Norris has created some fantastic spectral plugin effects which
-can be downloaded here:
+Michael Norris has created some fantastic spectral effects which can be
+downloaded here:
 \url{https://www.michaelnorris.info/software/soundmagic-spectral} as
 donation-ware.
 
@@ -3876,7 +3894,7 @@ texture. Applying these to the an audio clip or to a PaulStretch
 stretched audio will apply even more smearing and blurring to create
 fantastic drone textures.
 
-The key parameter in both of these plugins is the FFT size which
+The key parameter in both of these effects is the FFT size which
 determines the size of the sample window in which the blurring or
 averaging is taking place. Larger FFT sizes smear more, but take longer
 to fade in and out since the processing is happening over a larger
@@ -3951,10 +3969,7 @@ Using the output of one track as the input for another and then applying
 effects is a little like employing a traditional submix channel. This
 can be useful if you want to keep the ``raw'' track in the mix
 \emph{and} apply effects separately, but it also allows you to pass the
-result of \textbf{\emph{that}} track on into another track. So at any
-stage you can split out the audio, apply effects, route any of that
-signal to Return channels, then ingest the effected track into a further
-track for yet more processing.
+result of \textbf{\emph{that}} track on into another track.
 
 So the choice is yours. Really. Try them all out. See which one works
 for you in a given situation. I don't mean that you should
@@ -3967,17 +3982,20 @@ effect}\label{use-an-envelope-with-your-effect}
 If your sound has a sharp attack, you may want to soften the send to the
 FX so that only the tail of the sound gets effected. Use an
 \href{https://www.ableton.com/en/live-manual/11/max-for-live-devices/\#envelope-follower}{Envelope
-Follower} effect before the audio effect. By setting the Map to 100\%
-lowest and 0\% highest (inverting the signal) it will duck the initial
-part of the sound (turning the send DOWN) and then bring it back up as
-the audio decays. Note that in the device below I have turned up gain to
-accentuate the behaviour (basically to make the peak duck enough that
-the initial part of the audio has a low enough send amount) and I have
-smoothed out the Rise and Fall amounts which removes any ``pumping'' of
-the send to the Return channel effect. By setting a Delay you can also
-manually dial in how much or little of that initial part of the sound
-gets sent to the Return channel. This technique can be useful to capture
-and build drone sounds where you want to avoid sudden changes volume.
+Follower} effect before the audio effect and map the modulation of the
+Envelope Follower to the Dry/Wet setting of the effect (or the Track
+Send amount if you're modulating the send to a Return effect channel).
+By setting the Map to 100\% lowest and 0\% highest (inverting the
+signal) it will duck the initial part of the sound (turning the send
+DOWN) and then bring it back up as the audio decays. Note that in the
+device below I have turned up gain to accentuate the behaviour
+(basically to make the peak duck enough that the initial part of the
+audio has a low enough send amount) and I have smoothed out the Rise and
+Fall amounts which removes any ``pumping'' of the send to the Return
+channel effect. By setting a Delay you can also manually dial in how
+much or little of that initial part of the sound gets sent to the Return
+channel. This technique can be useful to capture and build drone sounds
+where you want to avoid sudden changes in volume.
 
 \includegraphics{images/Envelope_Follower_Send.png}
 
@@ -3987,13 +4005,13 @@ and build drone sounds where you want to avoid sudden changes volume.
 PaulStretch}\label{Chapter-016-Tools-PaulStretch}
 
 \href{https://sonosaurus.com/paulxstretch/}{PaulXStretch} is a third
-party audio effect plugin that stretches audio files to extreme lengths,
+party audio effect that stretches audio files to extreme lengths,
 transforming them into evolving soundscapes and textures. This is not
 the type of stretching that is available in Ableton for warping audio by
 a few bpm to fit a different tempo, but instead is about sonic
 manipulation even to extreme amounts.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Taking an audio clip that has interesting harmonic structure, chords,
 textures and stretching it out using PaulXStretch can give you instant
@@ -4031,8 +4049,8 @@ ostinato line imply new harmonies.
 PaulXStretch takes an audio file and can stretch it to a pretty
 arbitrary amount (maximum is over 1000x). This allows you to take very
 short audio clips as input and stretch them out to create soundscapes of
-pretty much any size. So if you take the 5 second Windows Startup sound,
-you can stretch this 60x to create a five minute soundscape.
+pretty much any size. So if you take a 5 second sound, you can stretch
+this 60x to create a five minute soundscape.
 
 Some audio stretching algorithms, such as those used by default in
 Ableton to stretch audio, introduce artefacts and granulations once the
@@ -4041,18 +4059,18 @@ PaulXStretch also applies some (spectral) smoothing to create textures
 that are free of glitches - the sound is smeared evenly in the sonic
 palette.
 
-The plugin also features various options to tweak the output of the
+The effect also features various options to tweak the output of the
 stretched audio, including filters, the ability enhance resonant
 frequencies, pitch shift and more.
 
 \section{How do I use it?}\label{how-do-i-use-it}
 
-You \emph{can} use PaulXStretch as a plugin, but you can also use it as
-a standalone application. This would allow you to import, stretch, and
-then export the stretched file ready to import into your DAW as
-standalone audio. The standalone application is often preferable: you
-can audition the stretched audio in the context of your track, and once
-you're happy, export the file to use in your project.
+You \emph{can} use PaulXStretch as an effect on a track, but you can
+also use it as a standalone application. This would allow you to import,
+stretch, and then export the stretched file ready to import into your
+DAW as standalone audio. The standalone application is often preferable:
+you can audition the stretched audio in the context of your track, and
+once you're happy, export the file to use in your project.
 
 \includegraphics{images/paulxstretch_screenshot.png}
 
@@ -4062,7 +4080,7 @@ do, including explaining many of the settings in the interface:
 
 \section{What should I use it for?}\label{what-should-i-use-it-for}
 
-This is a plugin that favours some experimentation. You could take a
+This is an effect that favours some experimentation. You could take a
 short, textural clip that you like and then stretch this out to see how
 the textures react to extreme stretching. Note that if the input clip
 features some prominent harmonics or frequencies, these will be
@@ -4228,7 +4246,7 @@ often played in passing on the way back to the root note C. But with a
 random note generator, that B might pop up too often for comfort,
 without resolving to C. So what do we do? Avoid Major scales?
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Finding a few useful scales that work well in a generative context is a
 good idea. This is largely a matter of taste, and potentially just trial
@@ -4236,9 +4254,9 @@ and error to see what you like, but there are a few guiding principles
 that might help inform your choice. Choosing scales or eliminating
 \emph{awkward} notes from a scale can also help make music where the
 tonal centre of the music isn't locked in or \textbf{\emph{obvious}},
-which allows you to imply a change of key through a root note change,
-without having to change the scale for the generated (or quantised)
-MIDI. I'll call this being tonally ambiguous.
+which allows you to imply a change of key through a root note change in
+a bass instrument, without having to change the scale for the generated
+(or quantised) MIDI.
 
 \end{tcolorbox}
 
@@ -4247,13 +4265,13 @@ Major}\label{pentatonics---minor-and-major}
 
 You know how you can play only the black keys on a piano, and no matter
 what you do, it somehow sounds good? That's because you are playing a
-pentatonic scale. Many guitarists will scoff at players who riff away on
-a pentatonic scale, because it is seen as being somehow a ``cheat'' and
-avoids having to learn more complex scales. modes and harmonies. But for
-our generative purposes, \textbf{\emph{pentatonic scales are your
-absolute number 1 pick}}. You can combine any number of generative
-processes working within a pentatonic scale and they will fit together
-like hand in glove.
+pentatonic scale. Many ``serious musicians'' will scoff at players who
+riff away on a pentatonic scale, because it is seen as being somehow a
+``cheat'' and avoids having to learn more complex scales. modes and
+harmonies. But for most generative purposes, \textbf{\emph{pentatonic
+scales are your absolute number 1 safest pick}}. You can combine any
+number of generative processes working within a pentatonic scale and
+they will fit together like hand in glove.
 
 Below are the notes and scale tones of the C pentatonic scales:
 
@@ -4293,7 +4311,7 @@ The Hirajoshi scale is a scale derived from Japanese shamisen music and
 the tuning of the koto instrument. It is a pentatonic scale, but with
 some interesting properties that distinguish it from the more frequently
 used versions above. It has the minor 3rd in it, which gives it a
-slightly melancholic feel, but also the minor 6th - C - G\# (opening two
+slightly melancholic feel, but also the minor 6th - C - Ab (opening two
 notes from the theme from Star Trek).
 
 \begin{longtable}[]{@{}lccccc@{}}
@@ -4301,7 +4319,7 @@ notes from the theme from Star Trek).
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-C Hirajoshi & C & D & D\# & G & G\# \\
+C Hirajoshi & C & D & Eb & G & Ab \\
 Scale tones & 1 & 2 & m3 & 5 & m6 \\
 \end{longtable}
 
@@ -4375,6 +4393,15 @@ then go ahead and try out other scales. In fact, this might be a really
 good musical challenge\ldots{} But this is a little beyond the scope of
 this book. And my skill set.
 
+\section{Context provided via the bass
+instrument}\label{context-provided-via-the-bass-instrument}
+
+Often you will find that the bass notes you program or play against the
+generative chords and parts in the higher register will be sufficient to
+provide a solid anchor and context. For this reason I tend not to use
+random note processes in the bass parts, and in fact in many cases this
+might be the only part in a composition that I actually ``play''.
+
 \section{Selections of notes -
 chords}\label{selections-of-notes---chords}
 
@@ -4417,7 +4444,7 @@ sources, it can quickly start to sound unnatural. How can this kind of
 music appeal to humans, who by their nature are more used to organic
 sounds and textures they hear day to day?
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Field recordings of nature, or sounds that humans might hear day to day
 add back in context that might help listeners feel more engaged with the
@@ -4434,7 +4461,7 @@ randomness}\label{balancing-the-natural-and-the-unnatural-randomness}
 Field recordings of natural, human sounds provide that balance between
 something familiar, predictable and natural with random bleeps and
 bloops. In
-\hyperref[Chapter-009-Process-Balance_unexpected_and_predictable]{Process
+\hyperref[Chapter-008-Process-Balance_unexpected_and_predictable]{Process
 - Balancing the unexpected and the predictable} we discussed providing
 musical balance to the randomness. In this chapter we're talking about
 using field recordings to provide that balance.
@@ -4514,12 +4541,6 @@ a point where it's not immediately obvious what you're hearing. The
 ``DNA'' of the original audio is still present, but it's been smeared,
 chopped, and rearranged.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{include\_graphics}\NormalTok{(}\AttributeTok{path =} \FunctionTok{file.path}\NormalTok{(here}\SpecialCharTok{::}\FunctionTok{here}\NormalTok{(), }\StringTok{"images"}\NormalTok{, }\StringTok{"Granulator.png"}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
-
 \includegraphics{images/Granulator.png}
 
 \bookmarksetup{startatroot}
@@ -4583,16 +4604,14 @@ like the Max for Live Granulator will allow you to do similar.
 In the example below the Sampler instrument is in Channel 1 and is
 sending audio out to a variety of FX channels. Note that the Return
 channels are also routing audio around between them to further add
-layers of effects. Be cautious when doing this, as creating a feedback
-loop between return tracks can quickly result in a harsh wall of sound.
-You can see that Return A (the ``Nice Reverse + Reverb'' effect) is
-sending audio out to Return D (Spectral Resonator) and that that channel
-is sending audio back to Return A. As we've mentioned above, using
-feedback to route audio signal between Return channels is a little risky
-as sound can sometimes build up quickly if channels are eventually
-routed back into themselves. Adding a Limiter to the Return or Main
-channels would prevent runaway sound feedback causing physical damage to
-ears or speakers.
+layers of effects. You can see that Return A (the ``Nice Reverse +
+Reverb'' effect) is sending audio out to Return D (Spectral Resonator)
+and that that channel is sending audio back to Return A. Using feedback
+to route audio signal between Return channels is a little risky as sound
+can sometimes build up quickly if channels are eventually routed back
+into themselves. Adding a Limiter to the Return or Main channels would
+prevent runaway sound feedback causing physical damage to ears or
+speakers.
 
 Spectral Time and Spectral Resonators are interesting effects to add
 texture and resonance into fairly static inputs (like our drone here).
@@ -4613,7 +4632,7 @@ texture and resonance into fairly static inputs (like our drone here).
   generated, as each sample will have different tones, resonances and
   features.
 \item
-  Press play. Sit back and relax.
+  Press play. Listen to what you hear, and refine settings if necessary.
 \end{enumerate}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
@@ -4644,7 +4663,7 @@ lend itself well to arrangements, verses or choruses), there's a trick
 up our sleeve which is to take our loops and make one of them shorter or
 longer than the other.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Making loops different lengths combines the predictable: each loop
 contains the same music idea each time - with the unexpected: the
@@ -4682,6 +4701,20 @@ take longer for them to repeat.
 
 We actually used loops of different lengths in
 \hyperref[Chapter-001-Recipe-Changing_Chords]{Recipe - Changing chords}.
+
+\section{Don't stop at notes}\label{dont-stop-at-notes}
+
+Another form of unsynced loop is where the modulation of a sound doesn't
+vary over the length of the MIDI note loop, but has a different loop
+length. You can achieve this in Live by clicking on the Envelopes tab.
+In the image below we are modulating the Tone setting in the Operator
+instrument. The modulation loop has been set to ``Unlinked'' which
+allows us to draw modulation with a different loop length than the MIDI
+note clip length. Here the MIDI note clip is one bar but the modulation
+extends over 4 bars. By unlinking you can create additional variation in
+the sound of your loops and instruments quite easily.
+
+\includegraphics{images/Unlinked_Modulation.png}
 
 \section{I'm in my prime}\label{im-in-my-prime}
 
@@ -4791,7 +4824,8 @@ ideas presented in earlier chapters to further use MIDI in other
 instruments e.g. pads, or take the resulting audio and process it
 further.
 
-6. Press play. Sit back and relax.
+6. Press play. Listen to what you hear, and refine settings if
+necessary.
 
 Here is DivKid's version of this recipe:
 \url{https://www.instagram.com/reel/C2ID25WqB0l/}
@@ -4801,7 +4835,7 @@ Here is DivKid's version of this recipe:
 \chapter{Process - Your Unpredictable
 Bandmate}\label{Chapter-023-Process-Your_Unpredictable_Bandmate}
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Using probability, randomness and modulation to create generative parts
 or ideas can create parts that inspire new ideas or can accompany you,
@@ -4811,6 +4845,10 @@ unpredictable bandmate. One who occasionally throws in an unexpected
 chord change, an interesting phrase, or a drum fill you weren't
 expecting. Being able to react to those unexpected moments can help
 inspire you in new directions, keeping you and the listener engaged.
+They can be used as ``song starters'' which provide a moment of
+inspiration to get you away from the blank page towards a new idea.
+These ideas don't \textbf{\emph{have}} to be kept in the final
+production, that's your choice as The Lazy Producer\ldots{}
 
 \end{tcolorbox}
 
@@ -4838,7 +4876,7 @@ randomness to something that sounds good to you and use scale
 quantisers, pre-written phrases (but where which specific one is going
 to play is somewhat random) and modulation that breathes movement and
 life into parts without being too random (see
-\href{Chapter-009-Process-Balance_unexpected_and_predictable.qmd}{Process
+\hyperref[Chapter-008-Process-Balance_unexpected_and_predictable]{Process
 - Balancing the unexpected and the predictable} ). So, like writing a
 melody, picking chord changes that inspire and rhythmic parts that
 provide energy and drive, you The non-Lazy Producer should be listening
@@ -4871,10 +4909,10 @@ the next.
 \chapter{Tools - Random sound design with Instrument
 Racks}\label{Chapter-024-Tools-Random_Sound_Design}
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Using the ideas presented in
-\hyperref[Chapter-008-Process-Tuning_Parameters]{Process - Tuning
+\hyperref[Chapter-009-Process-Tuning_Parameters]{Process - Tuning
 Parameters} we can create Instrument Racks and Effect Racks where a
 single click of the Randomize button will generate new sounds, new
 effects that we might never think to program from scratch. Ableton Live
@@ -5000,7 +5038,7 @@ Variations. In this chapter we'll look a bit more at Variations
 (snapshots of Macro settings) and some tools for morphing between
 Variations and tools for coming up with new Variations.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Variations are a way of capturing the state of an instrument, drum or
 effect rack in Ableton Live. By taking snapshots of the settings of
@@ -5094,7 +5132,7 @@ having multiple devices in one Rack you can easily change between sounds
 using one Macro knob, or even just with different velocities or keyboard
 ranges.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Having multiple devices in one Rack (be it Instruments, Effects, or
 Drums) allows you to quickly switch between sounds, or combine sounds
@@ -5172,7 +5210,7 @@ at the new compositional and MIDI tools. In the next chapter we'll look
 at new sequencer tools. In subsequent chapters we'll look at updates to
 modulation, and some specific Transformer and Generator tools.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Live 12 contains a number of tools and new features which enhance how we
 can make generative music using Ableton Live. Some of these are
@@ -5237,7 +5275,7 @@ Scale awareness also extends to some of the Synth instruments in Live 12
 generators, where changing the macro knob for that generator adds
 harmonic content that is in tune with the Global Scale.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{Continue to use Scale Device in live performance!}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-caution-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-caution-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{Continue to use Scale Device in live performance!}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-caution-color!10!white, bottomrule=.15mm, colframe=quarto-callout-caution-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 I would continue to use the Scale MIDI Device for live performance just
 as a fall back to be certain sure that you don't unexpectedly have one
@@ -5255,7 +5293,7 @@ name suggests - provides a range of different methods for generating new
 MIDI parts. There are a number of Generation options available covering
 rhythmic patterns, chords, melodies. We'll look at some of these in more
 depth in
-\href{Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd}{Tools
+\hyperref[Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd]{Tools
 - Live 12 MIDI Generation and Transformation}.
 
 One key point is that these Generator tools are designed for creating
@@ -5271,7 +5309,7 @@ The MIDI Transformation tools take an existing MIDI clip or region and
 perform actions on the MIDI information within that clip. A wide range
 of useful tools are provided to help permute, rearrange, interpolate and
 transform (shock!) MIDI. We'll look at these in more depth in
-\href{Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd}{Tools
+\hyperref[Chapter-033-Tools-Live12_MIDI_Generation_Transformation]{Tools
 - Live 12 MIDI Generation and Transformation}. MIDI transformers should
 not be seen as ``one tool to do everything'' - instead you can layer
 transformations or apply transformations more than once to clips.
@@ -5324,7 +5362,7 @@ sequence these in ways that are much more like modular system
 sequencers, where pattern lengths may differ from number of beats in a
 bar, or where you can randomise aspects on the fly.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Why put a sequencer inside a DAW (which is, itself, a sequencer)? Well,
 because then you can specify notes you want to play, but have these play
@@ -5336,7 +5374,7 @@ interesting, evolving and generative ways.
 One limitation of MIDI is that it defines both the note on and note off
 information as well as the pitch. In the modular synthesizer world,
 pitch sequence and gate (whether the note occurs or not) sequence can be
-compleetely independent, and most interestingly can run at different
+completely independent, and most interestingly can run at different
 rates or have different lengths to create permutations of patterns. The
 sequencers in this pack offer a little bit of the modular experience
 within Live - where pitch, velocity, octave and other attributes can
@@ -5367,7 +5405,7 @@ of the sequence by playing a different MIDI note. You can set the clock
 for the sequence to run at a different rate to the Global BPM setting in
 the Live set, or even set the clock from an external device. MIDI pitch
 information can be entered through the Pitch lane, or can be entered via
-a Step Sequenceer within the MIDI tab.
+a Step Sequencer within the MIDI tab.
 
 Note (as above in the Key Idea) that setting velocity to zero will stop
 the MIDI note from sounding, so if you would like to have a ``gate''
@@ -5423,7 +5461,7 @@ Live 12 has now introduced the concept of parameter
 Modulation (instead of \textbf{\emph{control}}) opens up new
 possibilities for the Lazy Producer.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Previous versions of Live Suite allowed you to change values of
 parameters through the (Max for Live) LFO device. In Live 12 this
@@ -5532,7 +5570,7 @@ develop new ideas, or to tweak existing MIDI ideas. While these tools go
 a bit beyond pure ``generative music,'' they are so useful for adding
 variation that they are worth exploring.
 
-\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, toptitle=1mm, breakable, arc=.35mm, rightrule=.15mm, colbacktitle=quarto-callout-tip-color!10!white, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, bottomtitle=1mm, colback=white, bottomrule=.15mm, leftrule=.75mm, left=2mm, colframe=quarto-callout-tip-color-frame, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, coltitle=black, rightrule=.15mm, colback=white, opacityback=0, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Key idea}, titlerule=0mm, breakable, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, colframe=quarto-callout-tip-color-frame, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Live 12 contains a number of tools and new features which enhance how we
 can make generative music using Ableton Live. Some of these are
@@ -5574,7 +5612,7 @@ of innovative MIDI generation.
 
 \includegraphics{images/Live12_Max_MIDIGenerator.png}
 
-In \href{Chapter-012-Tools-MIDI_Generators.qmd}{Tools - MIDI Generators}
+In \hyperref[Chapter-012-Tools-MIDI_Generators]{Tools - MIDI Generators}
 we looked at MIDI Generator devices including Max for Live devices. But
 having some similar functionality here ``baked into'' the Live MIDI clip
 tools puts these tools at the fingertips of anyone with Live 12 Suite.
@@ -5678,14 +5716,13 @@ demonstrates each of these and it's worth reviewing the content of that
 video to both understand how the devices work, but also to see how he
 Generates, then Transforms clips.
 
-\subsection{Transformer - Develop}\label{transformer---develop}
-
-The Develop tool, which takes a phrase and then over a set number of
-generations (copies) it can include more notes with each generation (or
-Degrade to eliminate notes) through muting notes in the pattern. In the
-screenshot below notice how in the first repeat of the pattern, about
-50\% of the notes are muted, and then as the pattern repeats, more notes
-are unmuted until the final repeat has all notes playing.
+One example is the Develop tool, which takes a phrase and then over a
+set number of generations (copies) it can include more notes with each
+generation (or Degrade to eliminate notes) through muting notes in the
+pattern. In the screenshot below notice how in the first repeat of the
+pattern, about 50\% of the notes are muted, and then as the pattern
+repeats, more notes are unmuted until the final repeat has all notes
+playing.
 
 The Deterministic mode mutes notes in the pattern while a Probabilistic
 mode reduces probability over generations. In Probabilistic mode you can
@@ -5734,6 +5771,11 @@ email
 \href{mailto:thelazyproducer.book@gmail.com?subject=YumCodeRequest}{thelazyproducer.book@gmail.com}
 with proof of purchase and I'll send you a link to download the album
 for free.
+
+I have recorded some video conversations with artists who use
+probability, randomness and generative ideas in their productions, in
+sound design, in live performance and beyond.
+\url{https://www.youtube.com/watch?v=3SxEsqtZFvU&list=PLOjtuTt85TjDmzwym4aZ5VBfgwpWh9mDG}
 
 Ableton Live sets have been prepared and will be shared at
 \url{https://tinyurl.com/tlprecipes}.

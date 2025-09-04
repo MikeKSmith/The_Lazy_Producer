@@ -21,8 +21,8 @@ book:
     - Chapter-005-Process-Routing.qmd
     - Chapter-006-Recipe-MIDI_tools.qmd
     - Chapter-007-Tools-Modulators.qmd
-    - Chapter-008-Process-Tuning_Parameters.qmd
-    - Chapter-009-Process-Balance_unexpected_and_predictable.qmd
+    - Chapter-008-Process-Balance_unexpected_and_predictable.qmd
+    - Chapter-009-Process-Tuning_Parameters.qmd
     - Chapter-010-Recipe-Balance_random_and_predictable.qmd
     - Chapter-011-Process-Workflow-Capturing_Ideas.qmd
     - Chapter-012-Tools-MIDI_Generators.qmd

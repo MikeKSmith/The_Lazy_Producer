@@ -8,6 +8,8 @@ This book is licensed under a [Creative Commons Attribution 4.0 license](https:/
 
 An album containing my versions of recipes and ideas from this book is available on Bandcamp at <https://mikeksmith.bandcamp.com/album/the-lazy-producer>. Purchasing the album on Bandcamp includes a PDF copy of this book. The book is also available via Amazon Kindle Direct Publishing both as an ebook and in paperback. If you purchase the book via Amazon, please email [thelazyproducer.book\@gmail.com](mailto:thelazyproducer.book@gmail.com?subject=YumCodeRequest) with proof of purchase and I'll send you a link to download the album for free.
 
+I have recorded some video conversations with artists who use probability, randomness and generative ideas in their productions, in sound design, in live performance and beyond. <https://www.youtube.com/watch?v=3SxEsqtZFvU&list=PLOjtuTt85TjDmzwym4aZ5VBfgwpWh9mDG>
+
 Ableton Live sets have been prepared and will be shared at <https://tinyurl.com/tlprecipes>.
 
 To contribute to future versions of this book, I welcome your thoughts, corrections, and ideas via the project's GitHub repository. Please submit an Issue here: <https://github.com/MikeKSmith/The_Lazy_Producer/issues>. Feel free to fork the repository and contribute directly via Pull Request (if you know git). The book is written in Quarto but you can use Quarto editors like Posit's RStudio IDE to both pull the content from Github and to edit the Quarto .qmd files. I have used R to import images and provide alt-text for those images. I ask that you do the same. If you would like to contribute but do not know Quarto, then please submit your contributions using the markdown syntax and I can convert it.

@@ -43,6 +43,6 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Fibonacci_FX.p
 presented in earlier chapters to further use MIDI in other instruments e.g.
 pads, or take the resulting audio and process it further.
 
-6\. Press play. Sit back and relax.
+6\. Press play. Listen to what you hear, and refine settings if necessary.
 
 Here is DivKid's version of this recipe: <https://www.instagram.com/reel/C2ID25WqB0l/>

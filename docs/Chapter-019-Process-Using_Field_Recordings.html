@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -194,12 +160,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-008-Process-Tuning_Parameters.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Tuning Parameters</span></a>
+  <a href="./Chapter-008-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Balancing the unexpected and the predictable</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-009-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Balancing the unexpected and the predictable</span></a>
+  <a href="./Chapter-009-Process-Tuning_Parameters.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Tuning Parameters</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -376,7 +342,7 @@ Key idea
 </div>
 <section id="balancing-the-natural-and-the-unnatural-randomness" class="level2">
 <h2 class="anchored" data-anchor-id="balancing-the-natural-and-the-unnatural-randomness">Balancing the natural and the (unnatural) randomness</h2>
-<p>Field recordings of natural, human sounds provide that balance between something familiar, predictable and natural with random bleeps and bloops. In <a href="Chapter-009-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a> we discussed providing musical balance to the randomness. In this chapter we’re talking about using field recordings to provide that balance.</p>
+<p>Field recordings of natural, human sounds provide that balance between something familiar, predictable and natural with random bleeps and bloops. In <a href="Chapter-008-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a> we discussed providing musical balance to the randomness. In this chapter we’re talking about using field recordings to provide that balance.</p>
 </section>
 <section id="natural-and-urban-sounds" class="level2">
 <h2 class="anchored" data-anchor-id="natural-and-urban-sounds">Natural and urban sounds</h2>
@@ -404,7 +370,6 @@ Key idea
 <p>Another possibility is to use devices like Ableton’s <a href="https://roberthenke.com/technology/granulator3.html">Granulator III</a> to process the audio. This takes an audio sample, and rather than playing slices of the audio it can play many grains of the sound, either short or long. The Granulator device needs MIDI input to trigger playback, but within the device you can specify position within the audio file, speed at which the grains scan through the audio, grain size etc. The beauty of this device is that it can take relatively modest length audio samples and using some randomness and LFO provide a constantly changing audio output.</p>
 <p>Another benefit of granular processing is that you can produce audio that is <strong><em>related</em></strong> to the original audio, but processed to a point where it’s not immediately obvious what you’re hearing. The “DNA” of the original audio is still present, but it’s been smeared, chopped, and rearranged.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="at">path =</span> <span class="fu">file.path</span>(here<span class="sc">::</span><span class="fu">here</span>(), <span class="st">"images"</span>, <span class="st">"Granulator.png"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
