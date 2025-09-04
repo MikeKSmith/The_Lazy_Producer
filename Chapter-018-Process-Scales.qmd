@@ -11,9 +11,7 @@ are sometimes notes that will irritate the listener if they happen too
 often - for example in the C Major scale, the note B - one semitone
 below or 11 semitones above the root is always going to be a bit
 jarring. In the context of most Western music that note is often played
-in passing on the way back to the root note C. But in the context of
-random note generators it may pop up a little too often for comfort and
-not always resolve to the C. So what do we do? Avoid Major scales?
+in passing on the way back to the root note C. But with a random note generator, that B might pop up too often for comfort, without resolving to C. So what do we do? Avoid Major scales?
 
 ::: callout-tip
 ## Key idea
@@ -24,21 +22,19 @@ and error to see what you like, but there are a few guiding principles
 that might help inform your choice. Choosing scales or eliminating
 *awkward* notes from a scale can also help make music where the tonal
 centre of the music isn't locked in or ***obvious***, which allows you
-to imply a change of key through a root note change, without having to
-change the scale for the generated (or quantised) MIDI. I'll call this
-being tonally ambiguous.
+to imply a change of key through a root note change in a bass instrument, without having to
+change the scale for the generated (or quantised) MIDI.
   
 :::
 
 ## Pentatonics - Minor and Major
 
-You know how you can play only the black keys on the keyboard and no
-matter what you play it just all somehow "fits" and sounds good? That's
-because you are playing a pentatonic scale. Many guitarists will scoff
+You know how you can play only the black keys on a piano, and no matter what you do, it somehow sounds good? That's
+because you are playing a pentatonic scale. Many "serious musicians" will scoff
 at players who riff away on a pentatonic scale, because it is seen as
 being somehow a "cheat" and avoids having to learn more complex scales.
-modes and harmonies. But for our generative purposes, ***pentatonic
-scales are your absolute number 1 pick***. You can combine any number of
+modes and harmonies. But for most generative purposes, ***pentatonic
+scales are your absolute number 1 safest pick***. You can combine any number of
 generative processes working within a pentatonic scale and they will fit
 together like hand in glove.
 
@@ -64,18 +60,17 @@ from their respective (non-pentatonic) scales.
 
 ## Hirajoshi
 
-The Hirajoshi scale is a scale derived from Japanese shamisen music and the tuning of the koto instrument. It is a pentatonic scale, but with some interesting properties that distinguish it from the more frequently used versions above. It has the minor 3rd in it, which gives it a slightly melancholic feel, but also the minor 6th - C - G# (opening two notes from the theme from Star Trek).
+The Hirajoshi scale is a scale derived from Japanese shamisen music and the tuning of the koto instrument. It is a pentatonic scale, but with some interesting properties that distinguish it from the more frequently used versions above. It has the minor 3rd in it, which gives it a slightly melancholic feel, but also the minor 6th - C - Ab (opening two notes from the theme from Star Trek).
 
 |                        |     |     |     |     |     |
 |------------------------|:---:|:---:|:---:|:---:|:---:|
-| C Hirajoshi            |  C  |  D  |  D# |  G  |  G# |
+| C Hirajoshi            |  C  |  D  |  Eb |  G  |  Ab |
 | Scale tones            |  1  |  2  |  m3 |  5  |  m6 |
 
 
 ## Modes
 
-Modal scales are ***hard*** to wrap your brain around at first. In
-practice, they are very easy. Take the notes in the scale of C, start on
+Modal scales can seem hard to wrap your head around at first, but in practice, they're quite simple.Take the notes in the scale of C, start on
 different note and end on the note one octave above that.
 
 ### Mixolydian mode
@@ -124,15 +119,17 @@ additional notes around or resolve it to a point that it will work
 within the context. When you compose or play with others, you can work
 on the context or resolve these problematic notes towards something more
 comfortable. This tension and release is a great feature of many tunes.
-But within generative music, we can't guarantee that the processes we
-have set up will provide that context or resolve the notes towards
-something more pleasant.
+But in generative music, we can't guarantee our system will provide that context or resolve a dissonant note to something more pleasant.
 
 If you are using generative processes to create something to play along
 with - where ***you*** can provide the context and resolution, then go
 ahead and try out other scales. In fact, this might be a really good
 musical challenge... But this is a little beyond the scope of this book.
 And my skill set.
+
+## Context provided via the bass instrument
+
+Often you will find that the bass notes you program or play against the generative chords and parts in the higher register will be sufficient to provide a solid anchor and context. For this reason I tend not to use random note processes in the bass parts, and in fact in many cases this might be the only part in a composition that I actually "play".
 
 ## Selections of notes - chords
 
@@ -157,6 +154,6 @@ In Western music we have a view of what collections of notes and pitches sound
 "nice" or "harmonious" and, to our ears, what "works" and what "doesn't". Of
 course, there is a huge world of scales in the world across a huge range of
 musical traditions. In this chapter I've only focussed on some example scales.
-With Ableton's Scale plugins and scale awareness you
+With Ableton's Scale MIDI effect and scale awareness you
 might well find others where generative methods would give interesting results.
 Within the DAW, experimenting with these scales is only a click away...

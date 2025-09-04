@@ -1,6 +1,6 @@
 # Tools - Live 12 Overview: MIDI and compositional tools {#Chapter-030-Tools-Live12_Intro}
 
-During the process of writing this book, Ableton released Live 12. With Live 12 there are a whole host of improvements and additions which make the life of someone making generative music a whole lot easier. In this chapter we'll look at the new compositional and MIDI tools. In the next chapter we'll look at new sequencer tools. In subsequent chapters we'll look at updates to modulation, and some specific Transformer and Generator tools.
+During the process of writing this book, Ableton released Live 12. Live 12 introduced a host of improvements and additions that make life much easier for anyone creating generative music. In this chapter we'll look at the new compositional and MIDI tools. In the next chapter we'll look at new sequencer tools. In subsequent chapters we'll look at updates to modulation, and some specific Transformer and Generator tools.
 
 ```{r}
 #| echo: FALSE
@@ -15,7 +15,9 @@ Live 12 contains a number of tools and new features which enhance how we can mak
 
 ## Scale awareness
 
-Live 12 now has a feature where certain MIDI devices, audio effects and instruments are "Scale Aware" so that when you dial in pitch related changes, these will respect the current scale for the Set. The "Current Scale" is set either when you create a new Live Project, in which case new clips inherit the current scale setting, or the clips in a Scene can define the current scale for that scene. For individual song projects, this works very well. If you have a combination of scales defined across a Project - for example in live performance - it pays to be a little careful to ensure that MIDI clips within scenes do have scales defined in order to change the Current Scale setting between scenes. Proceed with a little caution in live performance is my advice!
+Live 12's scale options let you set any clip to a scale of your choice, and through "Scale Awareness" this scale can be applied to many of Live's audio and MIDI effects and instruments. This can do clever things like ensuring that Random MIDI effect notes are within scale, that the Resonator resonances conform to the current scale choice, and that harmonic Tone controls in Meld produce harmonics within the chosen scale.
+
+The "Current Scale" is set either when you create a new Live Project, in which case new clips inherit the current scale setting, or the clips in a Scene can define the current scale for that scene. For individual song projects, this works very well. If you're using multiple scales in a single project (for a live set, for example), it pays to be careful. Ensure that the clips in each scene have the correct scale assigned to them to properly trigger changes to the Current Scale. Proceed with a little caution in live performance is my advice!
 
 The purple b# button means that the Current Scale setting is being honoured by the MIDI effect, audio effect or instrument.
 
@@ -33,7 +35,7 @@ In the "Random" MIDI device below, the purple "Scale Mode" or Scale Awareness bu
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_Random_ScaleAware.png"))
 ```
 
-So now we can chain together MIDI Devices as discussed in [Tools - MIDI tools](#Chapter-004-Tools-MIDI_tools) and used in [Recipe - Doing more with less using MIDI tools and plugins](#Chapter-006-Recipe-MIDI_tools) and by turning on Scale Awareness we'll pick up whatever the Current Scale setting is. Note in the Chord and Arpeggiator devices that instead of "st" semitones for shifting, it is now labelled "sd" scale degrees. This takes a little getting used to because the scale degrees are added onto the MIDI note value - so +4sd is a fifth above the incoming MIDI note.
+So now we can chain together MIDI Devices as discussed in [Tools - MIDI tools](#Chapter-004-Tools-MIDI_tools) and used in [Recipe - Doing more with less using MIDI tools and effects](#Chapter-006-Recipe-MIDI_tools) and by turning on Scale Awareness we'll pick up whatever the Current Scale setting is. Note in the Chord and Arpeggiator devices that instead of "st" semitones for shifting, it is now labelled "sd" scale degrees. This takes a little getting used to because the scale degrees are added onto the MIDI note value - so +4sd is a fifth above the incoming MIDI note.
 
 ```{r}
 #| fig-alt: "The image shows the Random, Chord, Arpeggiator and Random MIDI devices. Each of these has the purple scale awareness button switched on."
@@ -52,7 +54,10 @@ I would continue to use the Scale MIDI Device for live performance just as a fal
 
 ### MIDI Generation
 
-Live 12 now comes with two new features built into MIDI clip creation: MIDI Generation and MIDI Transformation. MIDI Generation does what the name suggests - provides a range of different methods for generating new MIDI parts: rhythm - which creates sequences of MIDI notes by specifying the density of notes within a certain number of steps and then allowing you to choose permutations of these, stacks - which defines chords, seeds - which generates one or more "voices" of completely random notes (but these could conform to the clip scale setting) within the clip, shape - which generates notes by drawing in a pattern or shape, and Euclidean generators. And because what sits behind these generators is the power of Max for Live, the possibilities open up for a huge range of innovative MIDI generation.
+Live 12 now comes with two new features built into MIDI clip creation: MIDI Generation and MIDI Transformation. MIDI Generation does what the name suggests - provides a range of different methods for generating new MIDI parts. There are a number of Generation options available covering rhythmic patterns, chords, melodies. We'll look at some of these in more depth in 
+[Tools - Live 12 MIDI Generation and Transformation](#Chapter-033-Tools-Live12_MIDI_Generation_Transformation.qmd).
+
+One key point is that these Generator tools are designed for creating new MIDI clips during production, not for "on-the-fly" generation during a performance. Unfortunately at this point they cannot be automated.
 
 ```{r}
 #| fig-alt: "The image shows the MIDI Generator choices in Ableton Live 12."
@@ -61,19 +66,16 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDIGen
 
 ### MIDI Transformation
 
-The MIDI Transformation tools includes tools to arpeggiate the notes within the clip, connect - connecting existing notes in the clip with passing tones, ornament - adding additional short notes before the main note, like a flam in drum terms, or mordent in classical notation, quantize - here applying quantisation non-destructively, i.e. you can see the effect of the amount of quantisation on the MIDI notes, recombine - which lets you select notes and then permute these (rotate the order, mirror, shuffle), span - which allows you to change the note lengths by various means, strum - which applies a rhythmic strum pattern to chords, and time warp - which can bend the timing within a bar, so although the bpm clock remains constant, MIDI notes in a clip can trigger with a more fluid timing.
+The MIDI Transformation tools take an existing MIDI clip or region and perform actions on the MIDI information within that clip. A wide range of useful tools are provided to help permute, rearrange, interpolate and transform (shock!) MIDI. We'll look at these in more depth in [Tools - Live 12 MIDI Generation and Transformation](#Chapter-033-Tools-Live12_MIDI_Generation_Transformation). MIDI transformers should not be seen as "one tool to do everything" - instead you can layer transformations or apply transformations more than once to clips.
 
 ```{r}
 #| fig-alt: "The image shows the MIDI Transformer choices in Ableton Live 12."
 knitr::include_graphics(path = file.path(here::here(), "images", "Live12_MIDI_Transformers.png"))
 ```
 
-We'll look at MIDI Generation and Transformation tools a little more in 
-[Tools - Live 12 MIDI Generation and Transformation](#Chapter-033-Tools-Live12_MIDI_Generation_Transformation).
-
 ## Note probability
 
-In [Process - Note-wise probability](#Chapter-002-Process-Note_wise_probability) , we looked at Notewise probability - where we can set the probability for each note in a sequence, so we can generate ever changing patterns even from fairly short sequences of MIDI notes. Live 12 has another fantastic feature where we can ***group*** notes together and either select to play ***all*** notes in the group and adjust the probability of that group of notes, or group notes and select to play ***only one*** of the notes in that group. What this means for the Lazy Producer is that you can specify chords that when triggered play all of the notes (probability acts on the ***chord***) or you can nominate a group of notes where the computer picks which note in the group will play, but you can be sure that exactly one of those notes ***will*** be played.
+In [Process - Note-wise probability](#Chapter-002-Process-Note_wise_probability) , we looked at Notewise probability - where we can set the probability for each note in a sequence, so we can generate ever changing patterns even from fairly short sequences of MIDI notes. Live 12 has another fantastic feature where we can ***group*** notes together and either select to play ***all*** notes in the group and adjust the probability of that group of notes, or group notes and select to play ***only one*** of the notes in that group. What this means for the Lazy Producer is that you can specify chords that when triggered play all of the notes (probability acts on the ***chord***) or you can nominate a group of notes where the computer picks which note in the group will play, but you can ensure that ***exactly one*** of those notes will be played.
 
 ```{r}
 #| fig-alt: "The image shows the option in Ableton Live 12 MIDI clips to Group Notes and Play One or Play All."

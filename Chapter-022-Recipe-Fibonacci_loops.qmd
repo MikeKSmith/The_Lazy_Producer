@@ -5,7 +5,7 @@
 knitr::opts_chunk$set(echo = FALSE)
 ```
   
-This Recipe comes from DivKid (Ben Wilson) who shared it on his
+This Recipe is adapted from an idea presented by DivKid (Ben Wilson) on his
 [Instagram](https://www.instagram.com/divkidvideo) channel. I'm very grateful to
 Ben for giving me permission to share this idea in this Recipe. I would
 encourage you to check out DivKid's content
@@ -20,8 +20,7 @@ sequence length. Initially, set up the loops where 1 = 1/16th Note, so 2 =
 2/16ths, etc. You can experiment with longer loop lengths where 1 = 1/8th Note,
 but obviously these will repeat much more slowly.
 
-2\. You can choose the notes and sounds you wish to use for each track / loop.
-You might like to use a combination of kit sounds and melodic sounds. You can
+2\. Choose the notes and sounds for each loop. You might want to use a combination of drum hits and melodic tones. You can
 choose notes from a scale or from a chord e.g. C, Eb, G, Bb, D.
 
 ```{r}
@@ -33,9 +32,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Fibonacci_Poly
 notes to prevent them from becoming too "samey" or you could add the occasional
 random / quantised pitch shift.
 
-4\. In his example set, DivKid has used plucky Operator with Sine tones but with
-additional tone shaping, sound design and granular delay to the grouped tracks which breathes
-life into the results and prevents them from becoming too stale.
+4\. In his example, DivKid uses plucky sine waves from Operator, but breathes life into the result by adding tone shaping, sound design, and granular delay to the group track.
 
 ```{r}
 #| fig-alt: "The image shows the effect chain which comprises of Phaser, Saturator, Shifter, Corpus, Grain Delay, Erosion and Multiband compressor in OTT preset."
@@ -46,6 +43,6 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Fibonacci_FX.p
 presented in earlier chapters to further use MIDI in other instruments e.g.
 pads, or take the resulting audio and process it further.
 
-6\. Press play. Sit back and relax.
+6\. Press play. Listen to what you hear, and refine settings if necessary.
 
 Here is DivKid's version of this recipe: <https://www.instagram.com/reel/C2ID25WqB0l/>

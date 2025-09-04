@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Attribution</span></a>
+ <span class="menu-text">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></a>
+  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI effects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -160,12 +160,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-008-Process-Tuning_Parameters.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Tuning Parameters</span></a>
+  <a href="./Chapter-008-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Balancing the unexpected and the predictable</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-009-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Balancing the unexpected and the predictable</span></a>
+  <a href="./Chapter-009-Process-Tuning_Parameters.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Tuning Parameters</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -240,17 +240,17 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Random sound design with Instrument Racks</span></a>
+  <a href="./Chapter-024-Tools-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Random sound design with Instrument Racks</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-025-Tool-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
+  <a href="./Chapter-025-Tools-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-026-Tool-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Chain Select</span></a>
+  <a href="./Chapter-026-Tools-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Chain Select</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -273,6 +273,12 @@ ul.task-list li input[type="checkbox"] {
   <a href="./Chapter-033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Live 12 MIDI Generation and Transformation</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-999-Outro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Outro</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -290,6 +296,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#midi-generators" id="toc-midi-generators" class="nav-link" data-scroll-target="#midi-generators">MIDI Generators</a></li>
   <li><a href="#midi-transformer-tracks" id="toc-midi-transformer-tracks" class="nav-link" data-scroll-target="#midi-transformer-tracks">MIDI Transformer tracks</a></li>
   <li><a href="#capturing-the-midi" id="toc-capturing-the-midi" class="nav-link" data-scroll-target="#capturing-the-midi">Capturing the MIDI</a></li>
+  <li><a href="#sidebrains-midi-bounce-effect" id="toc-sidebrains-midi-bounce-effect" class="nav-link" data-scroll-target="#sidebrains-midi-bounce-effect">SideBrain’s MIDI Bounce effect</a></li>
   <li><a href="#rendering-bouncing-down-to-audio" id="toc-rendering-bouncing-down-to-audio" class="nav-link" data-scroll-target="#rendering-bouncing-down-to-audio">Rendering / bouncing down to audio</a></li>
   <li><a href="#group-tracks-to-tidy-your-live-set" id="toc-group-tracks-to-tidy-your-live-set" class="nav-link" data-scroll-target="#group-tracks-to-tidy-your-live-set">Group tracks to tidy your Live set</a></li>
   <li><a href="#modulation-on-track-volume---use-the-utility-device-to-modulate-gain" id="toc-modulation-on-track-volume---use-the-utility-device-to-modulate-gain" class="nav-link" data-scroll-target="#modulation-on-track-volume---use-the-utility-device-to-modulate-gain">Modulation on track volume - use the Utility device to modulate GAIN</a></li>
@@ -320,7 +327,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Setting up an Ableton Live set with lots of MIDI generators, MIDI manipulation and transformation, using that generated MIDI to create a nice collage of sounds that shifts and changes over time is very satisfying. From a performance perspective, once set up, you can press play and let it do its thing. But what if you want to commit the state of the system to share with others. That involves capturing the generated MIDI, modulations and generated audio. This chapter will discuss how you might go about capturing the processes so that you can later release the track.</p>
+<p>Setting up an Ableton Live set with lots of MIDI generators, MIDI manipulation and transformation, using that generated MIDI to create a nice collage of sounds that shifts and changes over time is very satisfying. From a performance perspective, once set up, you can press play and let it do its thing. But what if you want to commit the output of this system to a final, rendered track? That involves capturing the generated MIDI and audio. This chapter will discuss how you might go about capturing the processes so that you can later release the track.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -342,25 +349,25 @@ Key idea
 <h2 class="anchored" data-anchor-id="random-processes-are-random">Random processes are random</h2>
 <p>If you have used any randomness within processes (and if you haven’t why haven’t you been paying attention up to this point?) then what you’ll find is that each time you re-open and play the Live set, you <strong><em>should</em></strong> get a slightly different sounding result. It may not be <strong><em>radically</em></strong> different, but it is likely to be different enough, that when it comes to mixing before committing to a version of the piece, you find some parts that are thinner than expected, or some where there are peaks of volume or resonance that become problematic for mixing.</p>
 <p>In that case, it makes sense to try to capture or “render” the MIDI, instrument and sound design choices so that you can mix and tweak to get towards a consistent output.</p>
-<p>In extreme cases you may find, as you capture the output of the random processes that you don’t like the output. In that case you might want to refine these random processes - maybe make them slightly <strong><em>less</em></strong> random - or tweak settings to try to avoid extreme changes in sound design through reducing modulation levels. But the other option, to be honest is to throw that version away and re-render and re-capture the output to see if the random processes spit out something better next time. Don’t feel you have to be precious about the output of some random process. There are many more versions of the random processes readily available.</p>
+<p>In some cases, you might capture the output of your random processes only to find you don’t like the result. In that case you might want to refine these random processes - maybe make them slightly <strong><em>less</em></strong> random - or tweak settings to try to avoid extreme changes in sound design through reducing modulation levels. But the other option, to be honest is to throw that version away and re-render and re-capture the output to see if the random processes spit out something better next time. Don’t be precious about the output. You can always generate another version.</p>
 </section>
 <section id="how-to-set-up-live-sets---my-experience" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-set-up-live-sets---my-experience">How to set up Live sets - my experience</h2>
 <section id="midi-generators" class="level3">
 <h3 class="anchored" data-anchor-id="midi-generators">MIDI Generators</h3>
-<p>I like to have separate tracks for MIDI generators. These are the “starting point” of a process. They will be generating MIDI notes through random processes, patterns or <a href="Chapter-003-Process-Follow_Actions.html">Follow Actions</a> . I like to keep the generators separate from the transformation MIDI tracks, because you may want to send the <strong><em>same</em></strong> generated MIDI notes into several transformation chains. This will lead to a more coherent result since different transformation chains ingest a consistent set of generated MIDI input notes.</p>
+<p>I like to have separate tracks for MIDI generators. These are the “starting point” of a process. They will be generating MIDI notes through random processes, patterns or <a href="Chapter-003-Process-Follow_Actions.html">Follow Actions</a>. I like to keep the generators separate from the transformation MIDI tracks, because you may want to send the <strong><em>same</em></strong> generated MIDI notes into several transformation chains. This will lead to a more coherent result since different transformation chains ingest a consistent set of generated MIDI input notes.</p>
 </section>
 <section id="midi-transformer-tracks" class="level3">
 <h3 class="anchored" data-anchor-id="midi-transformer-tracks">MIDI Transformer tracks</h3>
-<p>These tracks will take the MIDI generator process outputs and apply MIDI effects and transformations to add additional MIDI notes, information, modulation etc. You could have a virtual instrument / sound generator plugin in this track. If you do that, then you can route the MIDI from this track <strong><em>AFTER</em></strong> (MIDI) FX into another track for further transformation, MIDI effects or to another instrument.</p>
+<p>These tracks will take the MIDI generator process outputs and apply MIDI effects and transformations to add additional MIDI notes, information, modulation etc. You could have a instrument / sound generator device in this track. If you do that, then you can route the MIDI from this track <strong><em>AFTER</em></strong> (MIDI) FX into another track for further transformation, MIDI effects or to another instrument.</p>
 </section>
 <section id="capturing-the-midi" class="level3">
 <h3 class="anchored" data-anchor-id="capturing-the-midi">Capturing the MIDI</h3>
 <p>To capture the random processes from the generation and transformation steps, you should create new MIDI tracks that “listen” to the output of the generation and transformation tracks. In my Live sets I typically have a lot of tracks where the Monitor is set to “In” or “listening” mode. That passes the incoming audio from another track straight through to the effects or instruments on that track. Having separate “capturing” MIDI tracks allows you to pick up the generated and/or transformed MIDI when you record. This is a good thing to be able to “tidy up” or “garden” the generated MIDI information on the road to release. Don’t feel you <strong><em>have</em></strong> to keep the MIDI output from these processes unchanged. It’s just MIDI. Feel free to cut, move, edit, splice until you get something that you prefer.</p>
-<p>If you record only into tracks where there is MIDI effects and instruments then the <strong><em>transformed</em></strong> MIDI is never captured - only the original generated MIDI. This may not be a problem <em>per se</em> but when you render out the final audio, you are at the mercy of Live’s internal random processes and you’ll be crossing your fingers that either the result is <strong><em>the same</em></strong> as you heard previously (if Live replays the randomness in the same way each time) or potentially different (perhaps if you reopen the set in a later version of Live).</p>
-<p>If you capture the generated <strong><em>and</em></strong> transformed MIDI in separate tracks, then you can use these tracks as the input for tracks with virtual instruments / plugins in them. Where these tracks might have had MIDI Monitor set to “In” you can now switch that back to “Auto” so that the captured MIDI is used directly as the input for that instrument.</p>
-<p>Once you have captured the generated and transformed MIDI it’s safe to switch off the generators and MIDI effects in those tracks. This will ensure that it’s only the captured MIDI that is being used to drive the virtual instruments and plugins.</p>
-<p>In the screenshot below I have captured the Follow Action chord sequence, and have added some MIDI effects - Arpeggiator, Pitch and Velocity, before routing these into the LABS virtual instrument. Since the MIDI effects here don’t involve randomness, it’s safe to keep these “inline” with the virtual instrument. If I had used randomness, then it might make more sense to have a separate MIDI track that captures the output of those transformations before sending into the virtual instrument.</p>
+<p>If you record directly onto a track that contains MIDI effects, you will only capture the pre-effect MIDI, not the <strong><em>transformed</em></strong> output. This may not be a problem <em>per se</em> but when you render out the final audio, you are at the mercy of Live’s internal random processes.</p>
+<p>If you capture the generated <strong><em>and</em></strong> transformed MIDI in separate tracks, then you can use these tracks as the input for tracks with instruments / MIDI effects in them. Where these tracks might have had MIDI Monitor set to “In” you can now switch that back to “Auto” so that the captured MIDI is used directly as the input for that instrument.</p>
+<p>Once you have captured the generated and transformed MIDI it’s safe to switch off the generators and MIDI effects in those tracks. This will ensure that it’s only the captured MIDI that is being used to drive the instruments.</p>
+<p>In the screenshot below I have captured the Follow Action chord sequence, and have added some MIDI effects - Arpeggiator, Pitch and Velocity, before routing these into the LABS instrument. Since the MIDI effects here don’t involve randomness, it’s safe to keep these “inline” with the instrument. If I had used randomness, then it might make more sense to have a separate MIDI track that captures the output of those transformations before sending into the virtual instrument.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -371,17 +378,31 @@ Key idea
 </div>
 </div>
 </section>
+<section id="sidebrains-midi-bounce-effect" class="level3">
+<h3 class="anchored" data-anchor-id="sidebrains-midi-bounce-effect">SideBrain’s MIDI Bounce effect</h3>
+<p>Yeuda Ben-Atar, also known as SideBrain, has produced a Max for Live effect “<a href="https://sidebrain.net/midi-bounce/">MIDI Bounce</a>” which captures the output of MIDI effects on tracks, rendering out the transformed MIDI into a single track and turning off the MIDI effects. This is incredibly useful here as bouncing down to MIDI can be done quickly (rather than real-time capture as I’ve described above).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/SideBrain_MIDI_Bounce.png" class="img-fluid figure-img" alt="The image shows Turing Machine Max for Live device, Random effect and Scale effect. These play through an instance of the Drift instrument and at the end of the device chain is Side Brain's MIDI Bounce effect. This effect has a number of options if you click on the Gear icon in the bottom right corner. Options are to set the bpm to 999bpm to speed up the capture process, the choice to remove the bounced temporary track after rendering and to delete or turn off MIDI effects in the track following bouncing."></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
 <section id="rendering-bouncing-down-to-audio" class="level3">
 <h3 class="anchored" data-anchor-id="rendering-bouncing-down-to-audio">Rendering / bouncing down to audio</h3>
-<p>In the screenshot below I’ve rendered the MIDI part and virtual instrument to an audio file. This then will “bake in” any MIDI transformation - in this case the arpeggiator, pitch shift up an octave, and the velocity curve. Note that I render or “bounce” the output to a new track, leaving the original in place. This allows me to come back later and tweak the original settings or re-render without having to undo many actions.</p>
+<p>In the screenshot above I’ve rendered the MIDI part and virtual instrument to an audio file. This then will “bake in” any MIDI transformation - in this case the arpeggiator, pitch shift up an octave, and the velocity curve. Note that I render or “bounce” the output to a new track, leaving the original in place. This allows me to come back later and tweak the original settings or re-render without having to undo many actions.</p>
 <p>Since the MIDI input clips with Follow Actions have probability on each note (see <a href="Chapter-001-Recipe-Changing_Chords.html">Recipe - Changing chords</a> for more information) then there’s a chance that one or two of the generated MIDI chords will have only two notes (down to the probability choices). By rendering and listening back, I can assess whether I think the “choices” made through probability work with what else is going on or not. Perhaps there’s enough going on when the “thin” chord stack happens that it’s essentially hidden in the mix. If I really don’t like the result, I can re-render the audio.</p>
 </section>
 <section id="group-tracks-to-tidy-your-live-set" class="level3">
 <h3 class="anchored" data-anchor-id="group-tracks-to-tidy-your-live-set">Group tracks to tidy your Live set</h3>
-<p>With all of these tracks floating about it can be tricky to keep track of what track does what in your Live set. Live’s ability to group tracks is a really useful feature. It’s <strong><em>your</em></strong> choice how you group them… You can group MIDI generation and transformation tracks - the individual tracks will still send MIDI output to wherever they are routed - as this allows you to “fold away” the generation and transformation processes when it comes to capturing and committing for release (assuming you have captured the MIDI as described above and copied it into the tracks with virtual instruments / plugins).</p>
-<p>Another really useful way to use Groups here is to Group the MIDI + virtual instrument and rendered audio together, then apply creative and mixing effects at the Group level rather than on individual tracks.</p>
-<p>When I render down the MIDI + virtual instruments, I tend to render without creative and mixing effects as I often need to tweak these later, and it’s often problematic if I’ve committed to certain choices early in the process and baked this into the resulting audio. Instead what I have been doing is to Group the MIDI + virtual instrument track and moving the effects to the Group level (including modulation on Gain - see below) so that the rendered audio is purely MIDI + virtual instrument. This leaves space for me to tweak the creative and mixing effects later when I’m trying to tidy up the overall mix.</p>
-<p>In the screenshot below you’ll see that on the Group for “Piano” I’ve got a compressor, EQ, Soothe dynamic EQ and Utility plugins (for automating gain).</p>
+<p>With all of these tracks floating about it can be tricky to keep track of what track does what in your Live set. Live’s ability to group tracks is a really useful feature. It’s <strong><em>your</em></strong> choice how you group them… You can group MIDI generation and transformation tracks - the individual tracks will still send MIDI output to wherever they are routed - as this allows you to “fold away” the generation and transformation processes when it comes to capturing and committing for release (assuming you have captured the MIDI as described above and copied it into the tracks with instruments).</p>
+<p>Another really useful way to use Groups here is to Group the MIDI + instrument and rendered audio together, then apply creative and mixing effects at the Group level rather than on individual tracks.</p>
+<p>When I render down the MIDI + instruments, one idea is to render without creative and mixing effects as I often need to tweak these later, and it’s problematic if I’ve committed to certain choices early in the process and baked this into the resulting audio. Instead what I have been doing is to Group the MIDI + instrument track and moving the effects to the Group level (including automation on Gain - see below) so that the rendered audio in each track is purely MIDI + instrument. This leaves space for me to tweak the creative and mixing effects later when I’m trying to tidy up the overall mix. You could also alternatively route the audio from the instrument through a new track containing creative effects and leave the Group level effects for purely mixing effects like compressor, EQ, frequency shaping, gain etc. This would allow you to tweak the creative effects and render down to audio at each stage - instrument output, then instrument plus effects.</p>
+<p>Committing the audio by rendering allows you to free up processor power, so sometimes it’s beneficial to do this rendering process as you go. The safety net is to retain the original tracks with devices switched off, parts and audio output muted in case you need to return and tweak.</p>
+<p>In the screenshot below you’ll see that on the Group for “Piano” I’ve got a compressor, EQ, Soothe dynamic EQ and Utility effects (for automating gain).</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -394,11 +415,11 @@ Key idea
 </section>
 <section id="modulation-on-track-volume---use-the-utility-device-to-modulate-gain" class="level3">
 <h3 class="anchored" data-anchor-id="modulation-on-track-volume---use-the-utility-device-to-modulate-gain">Modulation on track volume - use the Utility device to modulate GAIN</h3>
-<p>If you have gone completely down the rabbit hole of random modulation of your track volumes, it may have been tempting to modulate the Mixer Volume so that tracks fade in and out in a random way. But let me caution <strong><em>against</em></strong> doing this. This technique is fine for performance, but when it comes to capturing and committing a generative track, the better solution is to modulate the Gain of a Utility plugin. Modulating gain allows you to separately alter the Volume slider on the mixer to change the <strong><em>overall</em></strong> level of a track <strong><em>relative</em></strong> to the others. This is a good tip for audio production generally - automate your track Gain, not your Mixer Volume.</p>
+<p>If you have gone completely down the rabbit hole of random modulation of your track volumes, it may have been tempting to modulate the Mixer Volume so that tracks fade in and out in a random way. But let me caution <strong><em>against</em></strong> doing this. While modulating the mixer volume is fine for live performance, a better solution for recording is to automate the Gain knob on a Utility effect instead. Modulating gain allows you to separately alter the Volume slider on the mixer to change the <strong><em>overall</em></strong> level of a track <strong><em>relative</em></strong> to the others. This is a good tip for audio production generally - automate your track Gain, not your Mixer Volume.</p>
 </section>
 <section id="turn-off-what-youre-not-using" class="level3">
 <h3 class="anchored" data-anchor-id="turn-off-what-youre-not-using">Turn off what you’re not using</h3>
-<p>Having done these steps - Grouping, moving effects and rendering MIDI + virtual instruments I can now “switch off” the virtual instrument channel and save some CPU (as I’ve done in the screenshot below).</p>
+<p>Having done these steps - Grouping, moving effects and rendering MIDI + instruments I can now “switch off” the instrument channel and save some CPU (as I’ve done in the screenshot below).</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>

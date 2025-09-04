@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Attribution</span></a>
+ <span class="menu-text">index.html</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI tools and plugins</span></a>
+  <a href="./Chapter-006-Recipe-MIDI_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Recipe - Doing more with less using MIDI effects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -160,12 +160,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-008-Process-Tuning_Parameters.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Tuning Parameters</span></a>
+  <a href="./Chapter-008-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Balancing the unexpected and the predictable</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-009-Process-Balance_unexpected_and_predictable.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Balancing the unexpected and the predictable</span></a>
+  <a href="./Chapter-009-Process-Tuning_Parameters.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process - Tuning Parameters</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -240,17 +240,17 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-024-Tool-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Random sound design with Instrument Racks</span></a>
+  <a href="./Chapter-024-Tools-Random_Sound_Design.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Random sound design with Instrument Racks</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-025-Tool-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
+  <a href="./Chapter-025-Tools-Variations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Variations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Chapter-026-Tool-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tool - Chain Select</span></a>
+  <a href="./Chapter-026-Tools-ChainSelect.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Chain Select</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -271,6 +271,12 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Chapter-033-Tools-Live12_MIDI_Generation_Transformation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tools - Live 12 MIDI Generation and Transformation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Chapter-999-Outro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Outro</span></a>
   </div>
 </li>
     </ul>
@@ -312,7 +318,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://www.ableton.com/en/live-manual/11/welcome-to-live/#welcome-to-live">Ableton Live 11</a> brought us the ability to specify not just the velocity of each note in a MIDI clip, but the probability that that note would play. This is a game changer for the Lazy Producer. Adding variation to MIDI parts is now much easier if you define the lower probability for “fill” notes and higher probability for notes that you want to “anchor” in the clip. Lower probability means that each note is <strong><em>less</em></strong> likely to play, while higher probability means that each note is <strong><em>more</em></strong> likely to play. A probability of 100% means that the note will <strong><em>ALWAYS</em></strong> play.</p>
+<p><a href="https://www.ableton.com/en/live-manual/11/welcome-to-live/#welcome-to-live">Ableton Live 11</a> introduced the ability to set the probability that any given note in a MIDI clip will play, in addition to its velocity. This is a game changer for the Lazy Producer. Adding variation to MIDI parts is now much easier if you define the lower probability for “fill” notes and higher probability for notes that you want to “anchor” in the clip. Lower probability means that each note is <strong><em>less</em></strong> likely to play, while higher probability means that each note is <strong><em>more</em></strong> likely to play. A probability of 100% means that the note will <strong><em>ALWAYS</em></strong> play.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -323,12 +329,12 @@ Key idea
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Using probability with MIDI notes means that we can create patterns where there are some notes that will definitely play, but some other notes where with each cycle of a loop, there is a chance that the note will play and some chance the note will not play. Using probability moves us away from static and predictable loops into a territory where there is an element of surprise and variation with each loop cycle.</p>
+<p>Using probability with MIDI notes means there is a chance that the note will play and some chance the note will not play. Using probability takes us beyond static, predictable loops and into a territory of surprise and variation with each cycle.</p>
 </div>
 </div>
 <section id="drum-parts" class="level3">
 <h3 class="anchored" data-anchor-id="drum-parts">Drum parts</h3>
-<p>One clear use of this is in drum parts. You can program the core drum part that is constant throughout the clip or song, but then add passing notes, “fills” with lower probability. Or reduce the probability on high-hat parts, shakers, claps, lower velocity snare or kick parts so that these only sound once in a while. With this, it’s possible to specify a clip where core elements happen every time, but the “fills” and extra sounds only happen occasionally. Unfortunately, it isn’t possible to specify exactly <strong><em>when</em></strong> those notes will or won’t play, just probability, so it’s not possible to specify “Play once, then miss for the next 3 bars” (as is possible with Elektron hardware sequencers).</p>
+<p>One clear use of this is in drum parts. You can program the core drum part that is constant throughout the clip or song, but then have additional notes that only occasionally play because these have lower probability. One use of this is to specify “fills” or flams. When playing with a live drummer it would be odd if they played only the core beat absolutely unchanged throughout the song. Usually they will add notes and flourishes to add character to the beat and to express themselves. You can achieve something like this through these lower probability (and often lower velocity) notes in drum parts. Unfortunately, you can only set the probability, not a specific condition like “Play once, then miss the next 3 bars” (a feature found on some hardware sequencers, like those from Elektron).</p>
 <p>To see the note chance, click on the MIDI clip then click on the arrow at the bottom of the piano-roll to show velocity. To see the chance / note probability, click on the button below the velocity.</p>
 <p>In the clip below we’ve set up a Hi-hat pattern of 16th notes. Note that each of them has a 75% probability of playing, and I have added a little random variation to the velocity of the hits. When we play this clip looped, the Hi-hat pattern will be different each loop and will add a little variation and interest.</p>
 <div class="cell">
@@ -355,7 +361,7 @@ Key idea
 </section>
 <section id="lead-parts" class="level3">
 <h3 class="anchored" data-anchor-id="lead-parts">Lead parts</h3>
-<p>In the clip below we have a repeating pattern across the notes Bb2-G3. Notes from Bb3-C5 have lower velocity and also lower probability. When we play this clip, we’ll have a repeating pattern on the lower notes, but a changing pattern on the higher notes. If you then use the velocity information to change the timbre of the note, then this will add some light and shade into the pattern. This can often be very effective when playing monophonic synth parts, where only one note can play at a time. The higher notes will force lower notes to stop playing which will mean that the lower repeating pattern is never exactly the same each time. Adding a little glide to the sound will also give a little “swoop” as the pitch changes.</p>
+<p>In the clip below we have a repeating pattern across the notes C3-C4. Notes from F4-D5 have lower velocity and also lower probability. When we play this clip, we’ll have a repeating pattern on the lower notes, but a changing pattern on the higher notes. If you then use the velocity information to change the timbre of the note, then this will add some light and shade into the pattern. This can often be very effective when playing monophonic synth parts, where only one note can play at a time. The higher notes will force lower notes to stop playing which will mean that the lower repeating pattern is never exactly the same each time. Adding a little glide to the sound will also give a little “swoop” as the pitch changes.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -386,8 +392,9 @@ Key idea
 </div>
 </div>
 </div>
-<p>The advantage of splitting the parts into separate clips (and separate tracks) is that you can shorten the length of the higher note <strong><em>clip</em></strong> - here it’s 15 1/16th notes long. That means with each repetition, the notes appear at different positions in the bar and so evolve against the repeating pattern. This is a key concept in balancing predictable and unexpected, as we’ll discuss later in <a href="Chapter-009-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a></p>
-<p>By having the notes in different tracks, you can also keep the repeating pattern “dry” and apply delay or echo to the upper part. You could also opt to modulate or vary the timbre and sound of either track to keep the repeating part interesting.</p>
+<p>The advantage of splitting the parts into separate clips (and separate tracks) is that you can shorten the length of the higher note <strong><em>clip</em></strong> - here it’s 15 1/16th notes long. That means with each repetition, the notes appear at different positions in the bar and so evolve against the repeating pattern. This is a key concept in balancing predictable and unexpected, as we’ll discuss later in <a href="Chapter-008-Process-Balance_unexpected_and_predictable.html">Process - Balancing the unexpected and the predictable</a>.</p>
+<p>Note that we can route the output of each MIDI track to the same instrument (using the same MIDI channel for external gear). By having some sound design settings in the instrument react to velocity input e.g.&nbsp;filter cutoff we can make the one instrument sound like two, with the two parts interleaving and weaving in an out. sAlternatively, having the notes in different tracks, you can keep the repeating pattern “dry” and apply delay or echo to the upper part.</p>
+<p>In Live 12 the new MIDI Generation and Transformation tools allow us to generate and transform (SHOCK!) MIDI notes in a clip to generate patterns of notes, to adjust velocity, timing and other attributes. We’ll discuss these more in <a href="Chapter-033-Tools-Live12_MIDI_Generation_Transformation.html">Tools - Live 12 MIDI Generation and Transformation</a> but these tools might be helpful in creating interesting clips.</p>
 </section>
 <section id="chord-parts" class="level3">
 <h3 class="anchored" data-anchor-id="chord-parts">Chord parts</h3>
@@ -406,7 +413,7 @@ Key idea
 </section>
 <section id="live-12---grouped-notes" class="level3">
 <h3 class="anchored" data-anchor-id="live-12---grouped-notes">Live 12 - Grouped notes</h3>
-<p>Ableton Live 12 brought the ability to group MIDI notes and then define whether <strong><em>all</em></strong> of the notes in that group will play or only <strong><em>one</em></strong> note within the group. This can apply to notes in a chord, or notes in a sequence - basically any of the notes that you define to be within the group. This can be useful as it means that within the group you can define that <strong><em>exactly one</em></strong> of the notes will play, or that <strong><em>all</em></strong> of the grouped notes will play, which is slightly more deterministic (rules based) than the probability approaches above. Having said that, you can also apply probability to the group, so that with say 50% probability, all of the grouped notes will play - allowing you to write a specific set of “fill” notes in a drum part that will play with a given probability. You can also set probability along with the “play one” group rule. We’ll look at some concrete examples in <a href="Chapter-030-Tools-Live12_Intro.html">Tools - Live12 Overview</a>.</p>
+<p>Ableton Live 12 introduced the ability to group MIDI notes and then define whether <strong><em>all</em></strong> of the notes in that group will play or only <strong><em>one</em></strong> note within the group. This can apply to notes in a chord, or notes in a sequence - basically any of the notes that you define to be within the group. This can be useful as it means that within the group you can define that <strong><em>exactly one</em></strong> of the notes will play, or that <strong><em>all</em></strong> of the grouped notes will play, which is more deterministic (i.e., rules-based) than the purely probabilistic approaches discussed earlier. Having said that, you can also apply probability to the group, so that with say 50% probability, all of the grouped notes will play - allowing you to write a specific set of “fill” notes in a drum part that will play with a given probability. You can also set probability along with the “play one” group rule. We’ll look at some concrete examples in <a href="Chapter-030-Tools-Live12_Intro.html">Tools - Live12 Overview</a>.</p>
 
 
 </section>

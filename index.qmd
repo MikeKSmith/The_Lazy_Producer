@@ -1,9 +1,9 @@
 #  {.unnumbered #index}
 
 ::: {.content-visible when-format=html}
-# Attribution  {.unnumbered}
+#  {.unnumbered}
 
-This version of the book is 0.995. 
+This version of the book is 0.998. 
 
 ```{r}
 #| echo: false
@@ -14,7 +14,7 @@ Rendered on `{r} Date`.
 
 [⬇️ Download PDF](The-Lazy-Producer.pdf){.button .download-pdf target="_blank"}
 
-![](images/Album_Cover.png){fig-alt="Album cover for Mike K Smith's album \"The Lazy Producer\". The cover shows a generative art image created by Danielle Navarro which has two concentric circles white on indigo and black with many white slashes and whispers. The image has four quadrants. Near the centre are three V-shapes" fig-align="center"}
+![](images/Book_Cover.png){fig-alt="Book cover for this book. The cover shows a generative art image created by Danielle Navarro which has two concentric circles white on indigo and black with many white slashes and whispers. The image has four quadrants. Near the centre are three V-shapes" fig-align="center"}
 
-Cover image by D.J. Navarro (https://djnavarro.net) - Image used by agreement with the artist.
+Cover image by D.J. Navarro (https://djnavarro.net) - Image used with kind permission of the artist.
 :::
