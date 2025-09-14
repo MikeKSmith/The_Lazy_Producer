@@ -66,7 +66,7 @@ If the clips are short, then a 50-50% split of next action chance might be more 
 
 You can hear an example of what this sounds like here...
 
-[https://soundcloud.com/mikeksmith/followactions_chords_and_arp/s-CKzkRoOEWrr](https://soundcloud.com/mikeksmith/followactions_chords_and_arp/s-CKzkRoOEWrr?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&si=e1846c9235ff47ad9ae0fa0cd5d52708&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing){.uri}
+[https://soundcloud.com/mikeksmith/1_followactions_chords_and_arp-1](https://soundcloud.com/mikeksmith/1_followactions_chords_and_arp-1){.uri}
 
 ```{r}
 #| results: asis

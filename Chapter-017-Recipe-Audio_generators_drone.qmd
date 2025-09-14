@@ -72,7 +72,7 @@ moments that can catch the listeners ear.
 
 ------------------------------------------------------------------------
 
-You can hear my version of this track here: [https://soundcloud.com/mikeksmith/5_audio_generator_drone/s-Nw7nwUKDhTg](https://soundcloud.com/mikeksmith/5_audio_generator_drone/s-Nw7nwUKDhTg?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&si=14f7efead4c14501a4eac7ae8b892aed&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing){.uri}
+You can hear my version of this track here: [https://soundcloud.com/mikeksmith/5_audio_generator_drone-5](https://soundcloud.com/mikeksmith/5_audio_generator_drone-5){.uri}
 
 ```{r}
 #| results: asis

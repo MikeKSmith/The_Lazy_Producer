@@ -72,7 +72,8 @@ features.
 
 ------------------------------------------------------------------------
 
-You can hear my version of this track here: <https://soundcloud.com/mikeksmith/6_sampler_drone/s-sDz7Ts85Fs9>
+You can hear my version of this track here: 
+[https://soundcloud.com/mikeksmith/6_sampler-drone-6](https://soundcloud.com/mikeksmith/6_sampler-drone-6){.uri}
 
 ```{r}
 #| results: asis

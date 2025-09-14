@@ -211,7 +211,7 @@ It ***might*** be better here to put the MIDI Effects from the Operator track on
 ------------------------------------------------------------------------
 
 You can hear an example of this track here:
-[https://soundcloud.com/mikeksmith/2_single-note-input/s-ijkBeXue1aw](https://soundcloud.com/mikeksmith/2_single-note-input/s-ijkBeXue1aw?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&si=4cb32f77057549d28894966ca45a2715&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing){.uri}
+[https://soundcloud.com/mikeksmith/2_single-note-input-2](https://soundcloud.com/mikeksmith/2_single-note-input-2){.uri}
 
 ```{r}
 #| results: asis

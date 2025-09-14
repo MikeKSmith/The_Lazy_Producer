@@ -84,7 +84,7 @@ knitr::include_graphics(path = file.path(here::here(), "images", "Recipe3_Ableto
 
 ------------------------------------------------------------------------
 
-An example of this recipe can be found here: https://soundcloud.com/mikeksmith/3_balancing_predictable_unpredictable/s-gPj2EkRvfBh
+An example of this recipe can be found here: [https://soundcloud.com/mikeksmith/3_balancing_predictable_unpredictable_l12-3](https://soundcloud.com/mikeksmith/3_balancing_predictable_unpredictable_l12-3){.uri}
 
 ```{r}
 #| results: asis

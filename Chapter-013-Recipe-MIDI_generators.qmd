@@ -94,8 +94,8 @@ but the effects here are used to provide the texture around that sequence.
 
 ------------------------------------------------------------------------
 
-You can hear my version of this track here: [https://soundcloud.com/mikeksmith/4_euclidean_midigenerator/s-qYZKj7UnXXG](https://soundcloud.com/mikeksmith/4_euclidean_midigenerator/s-qYZKj7UnXXG?in=mikeksmith/sets/the-lazy-producer-recipes/s-PGMEWqfwKGz&si=6b1ee90238dd4a3c9fe75f66fd1f6623&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing){.uri}
+You can hear my version of this track here: [https://soundcloud.com/mikeksmith/4_euclidean_midigenerator-4](https://soundcloud.com/mikeksmith/4_euclidean_midigenerator-4){.uri}
 
 ```{r, echo=FALSE, results = "asis"}
-# htmltools::includeHTML(path = file.path("HTML","Recipe3-Euclidean-NonRhythm.html"))
+htmltools::includeHTML(path = file.path("HTML","Recipe4-Euclidean-NonRhythm.html"))
 ```
